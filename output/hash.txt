@@ -1,0 +1,9 @@
+
+Hachage MD5 de SudokuFX-1.0.1.msi :
+6304cf339a8fad663c1d0cba81d3f52d
+CertUtil: -hashfile La commande s’est terminée correctement.
+
+Hachage SHA256 de SudokuFX-1.0.1.msi :
+da542856ffeb5b0e2e1181d8c2b0d52e929a13b6b2fe5197d3f500aa78f65328
+CertUtil: -hashfile La commande s’est terminée correctement.
+

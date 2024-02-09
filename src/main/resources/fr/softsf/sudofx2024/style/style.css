@@ -1,0 +1,50 @@
+
+@font-face {
+    -fx-font-family: 'Open Sans';
+    src: url('../fonts/opensans/opensansregular.ttf');
+}
+
+@font-face {
+    -fx-font-family: 'Open Sans Bold';
+    src: url('../fonts/opensans/opensansbold.ttf');
+}
+
+@font-face {
+    -fx-font-family: 'Open Sans Extra Bold';
+    src: url('../fonts/opensans/opensansextrabold.ttf');
+}
+
+@font-face {
+    -fx-font-family: 'Open Sans Italic';
+    src: url('../fonts/opensans/opensansitalic.ttf');
+}
+
+@font-face {
+    -fx-font-family: 'Material Icons Round Regular';
+    src: url('../fonts/material/materialiconsroundregular.otf');
+}
+
+.bold-text {
+    -fx-font-family: 'Open Sans Bold';
+    -fx-font-weight: bold;
+}
+
+.extra-bold-text {
+    -fx-font-family: 'Open Sans Extra Bold';
+    -fx-font-weight: bolder;
+}
+
+.italic-text {
+    -fx-font-family: 'Open Sans Italic';
+    -fx-font-style: italic;
+}
+
+.material {
+    -fx-font-family: 'Material Icons Round Regular';
+}
+
+.root {
+    -fx-font-family: 'Open Sans';
+    -fx-font-size: 18px;
+    -fx-line-spacing: 1.5;
+}

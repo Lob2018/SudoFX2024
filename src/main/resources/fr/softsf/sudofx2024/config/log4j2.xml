@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+The files are in the logs folder and operate under these conditions:
+    Creation of a new file
+        at JVM startup
+        when its size is greater than 5MB
+        after one day
+    Deletion of files
+        that have been modified more than 30 days
+-->
+<Configuration status="warn" name="MyApp">
+    <Properties>
+        <Property name="LOG_DIR">${sys:logs}/logs-sudofx</Property>
+    </Properties>
+    <Appenders>
+        <RollingFile
+                name="RollingFile"
+                fileName="${LOG_DIR}/app.log"
+                filePattern="${LOG_DIR}/app.%d{yyyy-MM-dd--HH-mm}--%i.log.gz"
+                ignoreExceptions="false">
+            <PatternLayout>
+                <Pattern>%d %p %c{1.} [%t] %m%n</Pattern>
+            </PatternLayout>
+            <Policies>
+                <OnStartupTriggeringPolicy/>
+                <SizeBasedTriggeringPolicy size="5 MB"/>
+                <TimeBasedTriggeringPolicy/>
+            </Policies>
+            <DefaultRolloverStrategy>
+                <Delete basePath="${LOG_DIR}">
+                    <IfFileName glob="app.*.log.gz"/>
+                    <IfLastModified age="P30D"/>
+                </Delete>
+            </DefaultRolloverStrategy>
+        </RollingFile>
+    </Appenders>
+    <Loggers>
+        <Root level="error">
+            <AppenderRef ref="RollingFile"/>
+        </Root>
+    </Loggers>
+</Configuration>
