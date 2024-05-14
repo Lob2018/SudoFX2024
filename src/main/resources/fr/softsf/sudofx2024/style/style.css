@@ -1,0 +1,51 @@
+@font-face {
+    -fx-font-family: 'Luciole';
+    src: url('../fonts/luciole/lucioleregular.ttf');
+}
+@font-face {
+    -fx-font-family: 'Luciole Bold';
+    src: url('../fonts/luciole/luciolebold.ttf');
+}
+@font-face {
+    -fx-font-family: 'Luciole Italic';
+    src: url('../fonts/luciole/lucioleregularitalic.ttf');
+}
+@font-face {
+    -fx-font-family: 'Material Icons Round Regular';
+    src: url('../fonts/material/materialiconsroundregular.otf');
+}
+
+.bold-text {
+    -fx-font-family: 'Luciole Bold';
+    -fx-font-weight: bold;
+    -fx-fill: #333333;
+}
+.italic-text {
+    -fx-font-family: 'Luciole Italic';
+    -fx-font-style: italic;
+    -fx-fill: #333333;
+}
+.material {
+    -fx-font-family: 'Material Icons Round Regular';
+    -fx-font-size: 1.27em;
+    -fx-line-spacing: 1.5;
+    -fx-fill: #333333;
+}
+
+.root {
+    -fx-background-color: #fcfcf9;
+    -fx-font-family: 'Luciole';
+    -fx-font-size: 1em;
+    -fx-line-spacing: 1.5;
+    -fx-fill: #333333;
+}
+
+#splashscreenvbox,#crashscreenvbox  {
+    -fx-padding: 1em;
+    -fx-background-color: radial-gradient(center 50% 150%, radius 100%, #A83449, #12020B);
+}
+
+
+
+
+
