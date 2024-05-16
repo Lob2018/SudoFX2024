@@ -8,9 +8,9 @@ import static fr.softsf.sudofx2024.utils.MyEnums.Paths.I18N_PATH;
 public class I18n {
     private static final Locale LOCALE_FR = Locale.of("fr", "FR");
     private static final Locale LOCALE_EN = Locale.of("en", "US");
-    private static final String I18N_PATH_ = I18N_PATH.getPath();
-    private static final ResourceBundle FRENCH_BUNDLE = ResourceBundle.getBundle(I18N_PATH_, LOCALE_FR);
-    private static final ResourceBundle ENGLISH_BUNDLE = ResourceBundle.getBundle(I18N_PATH_, LOCALE_EN);
+    private static final String I_18_N_PATH = I18N_PATH.getPath();
+    private static final ResourceBundle FRENCH_BUNDLE = ResourceBundle.getBundle(I_18_N_PATH, LOCALE_FR);
+    private static final ResourceBundle ENGLISH_BUNDLE = ResourceBundle.getBundle(I_18_N_PATH, LOCALE_EN);
     private static ResourceBundle bundle = FRENCH_BUNDLE;
 
     private I18n() {}

@@ -20,12 +20,8 @@ public class MyLogback {
     @Getter
     private final String logsFolderPath;
     private static final String LOGS_NAME = "SudokuFX.log";
-    private String logBackPath=CONFIG_LOGBACK_PATH.getPath();
+    private String logBackPath = CONFIG_LOGBACK_PATH.getPath();
 
-    /**
-     * Constructor of Log class
-     * Logback initialization
-     */
     public MyLogback(OsDynamicFolders.IOsFoldersFactory iosFolders) {
         this.logsFolderPath = iosFolders.getOsLogsFolderPath();
         System.setProperty("logs", logsFolderPath + "/" + LOGS_NAME);
@@ -56,7 +52,7 @@ public class MyLogback {
         return context;
     }
 
-    void setLogBackPathForTests(){
-        logBackPath= CONFIG_LOGBACK_INVALID_PATH_FOR_TESTS.getPath();
+    void setLogBackPathForTests() {
+        logBackPath = CONFIG_LOGBACK_INVALID_PATH_FOR_TESTS.getPath();
     }
 }

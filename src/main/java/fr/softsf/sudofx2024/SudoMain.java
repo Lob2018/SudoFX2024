@@ -24,7 +24,7 @@ import org.hibernate.Session;
 import java.io.IOException;
 import java.sql.SQLInvalidAuthorizationSpecException;
 import java.util.Objects;
-import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.atomic.AtomicReference;
 
 import static fr.softsf.sudofx2024.utils.ExceptionTools.getSQLInvalidAuthorizationSpecException;
 import static fr.softsf.sudofx2024.utils.MyEnums.Os.OS_NAME;
@@ -32,7 +32,6 @@ import static fr.softsf.sudofx2024.utils.MyEnums.Paths.*;
 
 @Slf4j
 public class SudoMain extends Application {
-    // OS folders initialization
     @Getter
     private static final OsDynamicFolders.IOsFoldersFactory iOsFolderFactory = new OsDynamicFolders(OS_NAME.getPath()).getIOsFoldersFactory();
     private static FXMLLoader fxmlLoader = new FXMLLoader();
@@ -47,12 +46,10 @@ public class SudoMain extends Application {
 
     @Override
     public void init() {
-        // Logback initialization
         new MyLogback(iOsFolderFactory);
     }
 
     private static void initializeScene() throws IOException {
-        // Keystore initialization
         iKeystore = new ApplicationKeystore(iOsFolderFactory);
         fxmlLoader = getFXMLLoader("splashscreen-view");
         scene = new Scene(fxmlLoader.load(), -1, -1, Color.TRANSPARENT);
@@ -63,36 +60,50 @@ public class SudoMain extends Application {
     public void start(final Stage primaryStageP) {
         try {
             initializeScene();
-            ISplashScreenView iSplashScreenView = fxmlLoader.getController();
+            final ISplashScreenView iSplashScreenView = fxmlLoader.getController();
             new DynamicFontSize(scene);
             iSplashScreenView.showSplashScreen();
             final long startTime = System.currentTimeMillis();
-            CompletableFuture.runAsync(this::initializationAsynchronousTask)
-                    .handle((_, throwable) -> getCompletableFuture(throwable, iSplashScreenView, startTime));
-        } catch (Exception ex) {
-            log.error(String.format("██ Exception catch inside start() : %s", ex.getMessage()), ex);
-            throw new RuntimeException(ex);
+            final AtomicReference<Throwable> throwable = new AtomicReference<>();
+            Thread.ofVirtual().start(() -> {
+                try {
+                    loadingFlywayAndHibernate();
+                } catch (Exception e) {
+                    throwable.set(e);
+                } finally {
+                    Platform.runLater(() -> {
+                        loadingVirtualThreadExecutorResult(throwable, startTime, iSplashScreenView);
+                        // TODO Get & Set latest saved view from initializationAsynchronousTask
+                        System.out.println("'''''''''''''''''''''''''''");
+                    });
+                }
+            });
+        } catch (Exception e) {
+            log.error(String.format("██ Exception catch inside start() : %s", e.getMessage()), e);
+            throw new RuntimeException(e);
         }
     }
 
-    private CompletableFuture<?> getCompletableFuture(Throwable throwable, ISplashScreenView iSplashScreenView, long startTime) {
-        if (throwable != null) {
-            log.error(String.format("██ Error in splash screen initialization virtual thread : %s", throwable.getMessage()), throwable);
-            stop();
-            SQLInvalidAuthorizationSpecException sqlInvalidAuthorizationSpecException = getSQLInvalidAuthorizationSpecException(throwable);
-            if (sqlInvalidAuthorizationSpecException != null) {
-                sqlInvalidAuthorization((Exception) throwable, sqlInvalidAuthorizationSpecException);
-                PauseTransition pause = getPauseTransition("crashscreen-view", 0, iSplashScreenView);
-                return CompletableFuture.runAsync(pause::play, Platform::runLater);
-            } else { // Handle others exceptions like database lock acquisition failure
-                Platform.exit();
-            }
-            return CompletableFuture.completedFuture(null);
-        } else {
+    private void loadingVirtualThreadExecutorResult(AtomicReference<Throwable> throwable, long startTime, ISplashScreenView iSplashScreenView) {
+        if (throwable.get() == null) {
             final long minimumTimelapse = Math.max(0, 1000 - (System.currentTimeMillis() - startTime));
-            // TODO Get & Set latest saved view from initializationAsynchronousTask
             PauseTransition pause = getPauseTransition("fullmenu-view", minimumTimelapse, iSplashScreenView);
-            return CompletableFuture.runAsync(pause::play, Platform::runLater);
+            pause.play();
+        } else {
+            errorInLoadingVirtualThread(throwable.get(), iSplashScreenView);
+        }
+    }
+
+    private void errorInLoadingVirtualThread(Throwable throwable, ISplashScreenView iSplashScreenView) {
+        log.error(String.format("██ Error in splash screen initialization virtual thread : %s", throwable.getMessage()), throwable);
+        stop();
+        SQLInvalidAuthorizationSpecException sqlInvalidAuthorizationSpecException = getSQLInvalidAuthorizationSpecException(throwable);
+        if (sqlInvalidAuthorizationSpecException != null) {
+            sqlInvalidAuthorization((Exception) throwable, sqlInvalidAuthorizationSpecException);
+            PauseTransition pause = getPauseTransition("crashscreen-view", 0, iSplashScreenView);
+            pause.play();
+        } else { // Handle others exceptions like database lock acquisition failure
+            Platform.exit();
         }
     }
 
@@ -121,10 +132,8 @@ public class SudoMain extends Application {
         return pause;
     }
 
-    private void initializationAsynchronousTask() {
-        // Flyway configuration
+    private void loadingFlywayAndHibernate() {
         DatabaseMigration.configure(iKeystore, iOsFolderFactory);
-        // Hibernate initialization
         Session session = HibernateSessionFactoryManager.getSessionFactoryInit(new HSQLDBSessionFactoryConfigurator(iKeystore, iOsFolderFactory)).openSession();
         session.close();
     }
@@ -134,19 +143,13 @@ public class SudoMain extends Application {
     public void stop() {
         try {
             HibernateSessionFactoryManager.closeSessionFactory();
+            log.info("\n▓▓ SessionFactory is successfully closed");
+            super.stop();
         } catch (Exception e) {
             log.error(String.format("██ Exception catch inside stop() : %s", e.getMessage()), e);
-            throw e;
+            Platform.exit();
         } finally {
-            try {
-                log.info("\n▓▓ SessionFactory is successfully closed");
-                super.stop();
-            } catch (Exception e) {
-                log.error(String.format("██ Exception catch inside stop(), unable to stop the application : %s", e.getMessage()), e);
-                Platform.exit();
-            } finally {
-                log.info("\n\n▓▓ Exiting application\n");
-            }
+            log.info("\n\n▓▓ Exiting application\n");
         }
     }
 

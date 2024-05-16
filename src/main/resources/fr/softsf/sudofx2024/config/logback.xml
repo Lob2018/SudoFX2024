@@ -18,7 +18,7 @@
     <logger name="fr.softsf.sudofx2024" level="info" additivity="false">
         <appender-ref ref="FILE-ROLLING"/>
     </logger>
-    <root level="debug">
+    <root level="info">
         <appender-ref ref="FILE-ROLLING"/>
     </root>
 </configuration>

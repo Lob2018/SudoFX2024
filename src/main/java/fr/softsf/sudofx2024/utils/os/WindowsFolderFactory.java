@@ -47,21 +47,11 @@ public final class WindowsFolderFactory implements OsDynamicFolders.IOsFoldersFa
         return new File(folderPath);
     }
 
-    /**
-     * Get data folder path
-     *
-     * @return The data folder path
-     */
     @Override
     public String getOsDataFolderPath() {
         return DATA_FOLDER_FOR_SUDO_FX;
     }
 
-    /**
-     * Get logs folder path
-     *
-     * @return The logs folder path
-     */
     @Override
     public String getOsLogsFolderPath() {
         return LOGS_FOLDER_FOR_SUDO_FX;
