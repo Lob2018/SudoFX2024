@@ -45,6 +45,7 @@ isselected BOOLEAN DEFAULT FALSE,
 createdat TIMESTAMP NOT NULL,
 updatedat TIMESTAMP NOT NULL
 );
+CREATE INDEX idx_player_isselected ON player(isselected);
 -- Création de la table "game"
 CREATE TABLE game (
 gameuuid UUID PRIMARY KEY,
@@ -55,3 +56,4 @@ isselected BOOLEAN DEFAULT FALSE,
 createdat TIMESTAMP NOT NULL,
 updatedat TIMESTAMP NOT NULL
 );
+CREATE INDEX idx_game_isselected ON game(isselected);

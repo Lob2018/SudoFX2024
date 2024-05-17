@@ -24,7 +24,6 @@ import org.hibernate.Session;
 import java.io.IOException;
 import java.sql.SQLInvalidAuthorizationSpecException;
 import java.util.Objects;
-import java.util.concurrent.atomic.AtomicReference;
 
 import static fr.softsf.sudofx2024.utils.ExceptionTools.getSQLInvalidAuthorizationSpecException;
 import static fr.softsf.sudofx2024.utils.MyEnums.Os.OS_NAME;
@@ -64,17 +63,17 @@ public class SudoMain extends Application {
             new DynamicFontSize(scene);
             iSplashScreenView.showSplashScreen();
             final long startTime = System.currentTimeMillis();
-            final AtomicReference<Throwable> throwable = new AtomicReference<>();
             Thread.ofVirtual().start(() -> {
+                Throwable throwable = null;
                 try {
                     loadingFlywayAndHibernate();
                 } catch (Exception e) {
-                    throwable.set(e);
+                    throwable = e;
                 } finally {
+                    Throwable finalThrowable = throwable;
                     Platform.runLater(() -> {
-                        loadingVirtualThreadExecutorResult(throwable, startTime, iSplashScreenView);
+                        loadingVirtualThreadExecutorResult(finalThrowable, startTime, iSplashScreenView);
                         // TODO Get & Set latest saved view from initializationAsynchronousTask
-                        System.out.println("'''''''''''''''''''''''''''");
                     });
                 }
             });
@@ -84,13 +83,13 @@ public class SudoMain extends Application {
         }
     }
 
-    private void loadingVirtualThreadExecutorResult(AtomicReference<Throwable> throwable, long startTime, ISplashScreenView iSplashScreenView) {
-        if (throwable.get() == null) {
+    private void loadingVirtualThreadExecutorResult(final Throwable throwable, final long startTime, final ISplashScreenView iSplashScreenView) {
+        if (throwable == null) {
             final long minimumTimelapse = Math.max(0, 1000 - (System.currentTimeMillis() - startTime));
             PauseTransition pause = getPauseTransition("fullmenu-view", minimumTimelapse, iSplashScreenView);
             pause.play();
         } else {
-            errorInLoadingVirtualThread(throwable.get(), iSplashScreenView);
+            errorInLoadingVirtualThread(throwable, iSplashScreenView);
         }
     }
 

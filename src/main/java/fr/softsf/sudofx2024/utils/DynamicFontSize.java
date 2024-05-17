@@ -9,15 +9,14 @@ public class DynamicFontSize {
     @Getter
     private double currentFontSize;
 
-    public DynamicFontSize(final Scene scene) {
-        this.scene = scene;
+    public DynamicFontSize(final Scene theScene) {
+        this.scene = theScene;
         scene.widthProperty().addListener((obs, oldW, newW) -> updateFontSize());
         scene.heightProperty().addListener((obs, oldH, newH) -> updateFontSize());
     }
 
     private void updateFontSize() {
         currentFontSize = Math.min(scene.getWidth(), scene.getHeight()) * 0.0219;
-        Parent root = scene.getRoot();
-        root.setStyle("-fx-font-size: " + currentFontSize + "px;");
+        scene.getRoot().setStyle("-fx-font-size: " + currentFontSize + "px;");
     }
 }
