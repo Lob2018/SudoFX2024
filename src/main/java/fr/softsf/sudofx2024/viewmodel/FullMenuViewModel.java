@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 import java.util.Optional;
 
 /**
- * FullMenuViewModel with business logic
+ * FullMenuViewModel with business logic (not final)
  */
 public class FullMenuViewModel {
 

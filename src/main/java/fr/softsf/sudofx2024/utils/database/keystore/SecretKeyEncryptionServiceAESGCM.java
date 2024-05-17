@@ -11,13 +11,13 @@ import java.security.*;
 import java.util.Base64;
 
 @Slf4j
-public class SecretKeyEncryptionServiceAESGCM implements ApplicationKeystore.IEncryptionService {
+public final class SecretKeyEncryptionServiceAESGCM implements ApplicationKeystore.IEncryptionService {
     private final SecretKey secretKey;
     private Cipher cipher;
     private static final SecureRandom random = new SecureRandom();
 
     @ExcludedFromCoverageReportGenerated
-    public SecretKeyEncryptionServiceAESGCM(SecretKey secretKey) {
+    public SecretKeyEncryptionServiceAESGCM(final SecretKey secretKey) {
         this.secretKey = secretKey;
         try {
             cipher = Cipher.getInstance("AES/GCM/NoPadding");
@@ -27,7 +27,7 @@ public class SecretKeyEncryptionServiceAESGCM implements ApplicationKeystore.IEn
     }
 
     @Override
-    public String encrypt(@NotBlank String original) {
+    public String encrypt(@NotBlank final String original) {
         byte[] iv = new byte[16]; // Initialization Vector
         try {
             random.nextBytes(iv); // Generate a random IV
@@ -44,7 +44,7 @@ public class SecretKeyEncryptionServiceAESGCM implements ApplicationKeystore.IEn
     }
 
     @Override
-    public String decrypt(@NotBlank String cypher) {
+    public String decrypt(@NotBlank final String cypher) {
         try {
             String[] split = cypher.split("#");
             Base64.Decoder decoder = Base64.getDecoder();

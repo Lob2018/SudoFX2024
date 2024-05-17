@@ -1,10 +1,7 @@
-package fr.softsf.sudofx2024.unit.utils;
+package fr.softsf.sudofx2024.utils;
 
 import ch.qos.logback.classic.Logger;
 import ch.qos.logback.core.read.ListAppender;
-import fr.softsf.sudofx2024.utils.FileSystemManager;
-import fr.softsf.sudofx2024.utils.database.keystore.ApplicationKeystore;
-import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -82,9 +79,9 @@ class FileSystemManagerUTest {
     }
 
     @Test
-    void testFilePathToDelete_fail() {
+    void testDeleteFile_fail() {
         Path mockPath = mock(Path.class);
-        Throwable returnedThrowable = fileSystemManager.filePathToDelete(mockPath);
+        Throwable returnedThrowable = fileSystemManager.deleteFile(mockPath);
         assertInstanceOf(NullPointerException.class, returnedThrowable);
     }
 

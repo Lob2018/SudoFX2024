@@ -7,7 +7,7 @@ import lombok.Getter;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class MyRegex {
+public final class MyRegex {
 
     /**
      * At least 2 lowercase characters

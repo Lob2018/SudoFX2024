@@ -9,7 +9,7 @@ import org.passay.PasswordGenerator;
 import static org.passay.IllegalCharacterRule.ERROR_CODE;
 
 
-public class GenerateSecret {
+public final class GenerateSecret {
 
     @ExcludedFromCoverageReportGenerated
     private GenerateSecret() {

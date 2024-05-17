@@ -18,7 +18,7 @@ import javax.crypto.*;
 import javax.crypto.spec.SecretKeySpec;
 
 @Slf4j
-public class ApplicationKeystore implements IKeystore {
+public final class ApplicationKeystore implements IKeystore {
 
     private static final String KEYSTORE_PASSWORD_FROM_UUID = String.valueOf(UUID.nameUUIDFromBytes(System.getProperty("user.name").getBytes()));
     private static final String KEYSTORE_TYPE = "pkcs12";
@@ -32,7 +32,7 @@ public class ApplicationKeystore implements IKeystore {
     private String username;
     private String password;
 
-    public ApplicationKeystore(OsDynamicFolders.IOsFoldersFactory iOsFolderFactory) {
+    public ApplicationKeystore(final OsDynamicFolders.IOsFoldersFactory iOsFolderFactory) {
         log.info("\n▓▓ ApplicationKeystore starts");
         try {
             ks = KeyStore.getInstance(KEYSTORE_TYPE);
@@ -119,7 +119,7 @@ public class ApplicationKeystore implements IKeystore {
     }
 
     @ExcludedFromCoverageReportGenerated
-    private void setCredentials(String alias) {
+    private void setCredentials(final String alias) {
         try {
             String secret = switch (alias) {
                 case USERNAME_ALIAS -> {
@@ -140,7 +140,7 @@ public class ApplicationKeystore implements IKeystore {
     }
 
     @ExcludedFromCoverageReportGenerated
-    private void getCredentials(String alias) {
+    private void getCredentials(final String alias) {
         try {
             KeyStore.Entry entry = ks.getEntry(alias, new KeyStore.PasswordProtection(pwdArray));
             if (entry instanceof KeyStore.SecretKeyEntry secretEntry) {

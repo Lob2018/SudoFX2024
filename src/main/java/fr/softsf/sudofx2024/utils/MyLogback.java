@@ -16,13 +16,13 @@ import static fr.softsf.sudofx2024.utils.MyEnums.Logo.ASCII_LOGO;
 import static fr.softsf.sudofx2024.utils.MyEnums.Paths.*;
 
 @Slf4j
-public class MyLogback {
+public final class MyLogback {
     @Getter
     private final String logsFolderPath;
     private static final String LOGS_NAME = "SudokuFX.log";
     private String logBackPath = CONFIG_LOGBACK_PATH.getPath();
 
-    public MyLogback(OsDynamicFolders.IOsFoldersFactory iosFolders) {
+    public MyLogback(final OsDynamicFolders.IOsFoldersFactory iosFolders) {
         this.logsFolderPath = iosFolders.getOsLogsFolderPath();
         System.setProperty("logs", logsFolderPath + "/" + LOGS_NAME);
         LoggerContext context = configureLogback();
@@ -34,7 +34,7 @@ public class MyLogback {
         log.info(ASCII_LOGO.getPath());
     }
 
-    private static void printLogStatus(LoggerContext context) {
+    private static void printLogStatus(final LoggerContext context) {
         StatusPrinter2 statusPrinter2 = new StatusPrinter2();
         statusPrinter2.printInCaseOfErrorsOrWarnings(context);
     }

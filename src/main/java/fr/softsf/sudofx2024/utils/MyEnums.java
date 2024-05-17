@@ -2,7 +2,7 @@ package fr.softsf.sudofx2024.utils;
 
 import fr.softsf.sudofx2024.annotations.ExcludedFromCoverageReportGenerated;
 
-public class MyEnums {
+public final class MyEnums {
     private static final String OS_NAME_ = System.getProperty("os.name").toLowerCase();
     private static final String USER_HOME_ = System.getProperty("user.home").replace("\\", "/");
 
@@ -14,11 +14,11 @@ public class MyEnums {
         OS_NAME(OS_NAME_);
         private final String path;
 
-        Os(String path) {
+        Os(final String path) {
             this.path = path;
         }
 
-        public String getPath() {
+        public final String getPath() {
             return path;
         }
     }
@@ -47,11 +47,11 @@ public class MyEnums {
                 """);
         private final String path;
 
-        Logo(String path) {
+        Logo(final String path) {
             this.path = path;
         }
 
-        public String getPath() {
+        public final String getPath() {
             return path;
         }
     }
@@ -72,11 +72,11 @@ public class MyEnums {
 
         private final String path;
 
-        Paths(String path) {
+        Paths(final String path) {
             this.path = path;
         }
 
-        public String getPath() {
+        public final String getPath() {
             return path;
         }
     }

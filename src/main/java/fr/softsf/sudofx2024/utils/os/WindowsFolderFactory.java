@@ -27,7 +27,7 @@ public final class WindowsFolderFactory implements OsDynamicFolders.IOsFoldersFa
         return new String[]{SUDO_FX_BASE_PATH.getPath(), SUDO_FX_BASE_PATH.getPath()};
     }
 
-    boolean isNowCreated(String folderPath) {
+    boolean isNowCreated(final String folderPath) {
         try {
             File folder = getFolder(folderPath);
             if (!folder.exists()) {
@@ -43,7 +43,7 @@ public final class WindowsFolderFactory implements OsDynamicFolders.IOsFoldersFa
         }
     }
 
-    File getFolder(String folderPath) {
+    File getFolder(final String folderPath) {
         return new File(folderPath);
     }
 

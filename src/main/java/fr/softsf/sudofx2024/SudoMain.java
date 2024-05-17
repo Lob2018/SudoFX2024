@@ -30,7 +30,7 @@ import static fr.softsf.sudofx2024.utils.MyEnums.Os.OS_NAME;
 import static fr.softsf.sudofx2024.utils.MyEnums.Paths.*;
 
 @Slf4j
-public class SudoMain extends Application {
+public final class SudoMain extends Application {
     @Getter
     private static final OsDynamicFolders.IOsFoldersFactory iOsFolderFactory = new OsDynamicFolders(OS_NAME.getPath()).getIOsFoldersFactory();
     private static FXMLLoader fxmlLoader = new FXMLLoader();

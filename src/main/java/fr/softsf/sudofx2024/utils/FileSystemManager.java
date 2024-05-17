@@ -9,14 +9,14 @@ import java.util.Comparator;
 import java.util.stream.Stream;
 
 @Slf4j
-public class FileSystemManager implements IFileSystem {
+public final class FileSystemManager implements IFileSystem {
     @Override
-    public boolean deleteFolder(Path folderPath, String mustEndWithThat) {
+    public boolean deleteFolder(final Path folderPath, final String mustEndWithThat) {
         if (folderPath.endsWith(mustEndWithThat)) {
             log.info("▓▓▓▓ The directory path is correct :{}", folderPath);
             try (Stream<Path> stream = Files.walk(folderPath)) {
                 stream.sorted(Comparator.reverseOrder())
-                        .forEach(this::filePathToDelete);
+                        .forEach(this::deleteFile);
                 return true;
             } catch (Exception e) {
                 log.error(String.format("██ Exception catch from deleteFolder : %s", e.getMessage()), e);
@@ -27,8 +27,7 @@ public class FileSystemManager implements IFileSystem {
         return false;
     }
 
-    @Override
-    public Throwable filePathToDelete(Path path) {
+    Throwable deleteFile(final Path path) {
         try {
             Files.delete(path);
         } catch (Exception e) {

@@ -4,7 +4,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import lombok.Getter;
 
-public class DynamicFontSize {
+public final class DynamicFontSize {
     private final Scene scene;
     @Getter
     private double currentFontSize;

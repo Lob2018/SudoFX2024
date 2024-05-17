@@ -13,7 +13,7 @@ import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import java.util.Properties;
 
 @Slf4j
-public class HSQLDBSessionFactoryConfigurator implements HibernateSessionFactoryManager.IHibernateConfiguration {
+public final class HSQLDBSessionFactoryConfigurator implements HibernateSessionFactoryManager.IHibernateConfiguration {
     private static final String SUDOFX_DB_NAME = "sudofx2024db";
     private final String dataFolderPath;
     private final IKeystore iKeystore;
@@ -26,7 +26,7 @@ public class HSQLDBSessionFactoryConfigurator implements HibernateSessionFactory
     }
 
     @Override
-    public final SessionFactory getHibernateSessionFactory() {
+    public SessionFactory getHibernateSessionFactory() {
         if (sessionFactory != null) return sessionFactory;
         try {
             final Properties properties = getProperties();
@@ -61,7 +61,7 @@ public class HSQLDBSessionFactoryConfigurator implements HibernateSessionFactory
         return properties;
     }
 
-    final String getDataFolderPath() {
+    String getDataFolderPath() {
         return dataFolderPath;
     }
 }

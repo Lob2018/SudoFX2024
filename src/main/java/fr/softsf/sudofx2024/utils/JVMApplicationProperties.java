@@ -2,7 +2,7 @@ package fr.softsf.sudofx2024.utils;
 
 import fr.softsf.sudofx2024.annotations.ExcludedFromCoverageReportGenerated;
 
-public class JVMApplicationProperties {
+public final class JVMApplicationProperties {
 
     private static final String APP_NAME_PROPERTY = "app.name";
     private static final String APP_VERSION_PROPERTY = "app.version";

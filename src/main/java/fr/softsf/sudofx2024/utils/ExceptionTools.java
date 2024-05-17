@@ -2,7 +2,7 @@ package fr.softsf.sudofx2024.utils;
 
 import java.sql.SQLInvalidAuthorizationSpecException;
 
-public class ExceptionTools {
+public final class ExceptionTools {
     private ExceptionTools() {
     }
 

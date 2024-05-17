@@ -5,7 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.hibernate.SessionFactory;
 
 @Slf4j
-public class HibernateSessionFactoryManager {
+public final class HibernateSessionFactoryManager {
     private static SessionFactory sessionFactory;
     private static IHibernateConfiguration iDefaultHibernateConfiguration;
 

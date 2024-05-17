@@ -13,13 +13,13 @@ import org.flywaydb.core.api.MigrationInfoService;
 import static fr.softsf.sudofx2024.utils.MyEnums.Paths.DATABASE_MIGRATION_PATH;
 
 @Slf4j
-public class DatabaseMigration {
+public final class DatabaseMigration {
 
     @ExcludedFromCoverageReportGenerated
     private DatabaseMigration() {
     }
 
-    public static void configure(IKeystore iKeystore, OsDynamicFolders.IOsFoldersFactory iOsFolderFactoryP) {
+    public static void configure(final IKeystore iKeystore, final OsDynamicFolders.IOsFoldersFactory iOsFolderFactoryP) {
         log.info("\n▓▓ Start of Flyway migration");
         String databasePath = "jdbc:hsqldb:file:" + iOsFolderFactoryP.getOsDataFolderPath() + String.format("/%s", "sudofx2024db");
         try {
@@ -41,7 +41,7 @@ public class DatabaseMigration {
     }
 
     @ExcludedFromCoverageReportGenerated
-    private static void migrationInformation(Flyway flyway) {
+    private static void migrationInformation(final Flyway flyway) {
         MigrationInfoService infoService = flyway.info();
         StringBuilder migrationInfo = new StringBuilder();
         MigrationInfo currentMigration = infoService.current();
