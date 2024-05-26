@@ -74,7 +74,7 @@ class FileSystemManagerUTest {
             // WHEN
             fileSystemManager.deleteFolder(path1.getParent(), suffix);
             // THEN
-            assert (logWatcher.list.getLast().getFormattedMessage()).contains("Test NullPointerException");
+            assert (logWatcher.list.get(logWatcher.list.size() - 1).getFormattedMessage()).contains("Test NullPointerException");
         }
     }
 

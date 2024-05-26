@@ -1,25 +1,24 @@
 package fr.softsf.sudofx2024.utils.os;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public final class OsDynamicFolders {
-    private final IOsFoldersFactory iOsFolderFactory;
+    private final WindowsFolderFactory iOsFolderFactory;
 
     public OsDynamicFolders(final String os) throws IllegalArgumentException {
         iOsFolderFactory = createOsFolderFactory(os);
     }
 
-    private IOsFoldersFactory createOsFolderFactory(final String os) {
-        return switch (os) {
-            case String s when s.contains("win") -> new WindowsFolderFactory();
-            default -> throw new IllegalArgumentException("Windows OS is needed to run SudoFX");
-        };
+    private WindowsFolderFactory createOsFolderFactory(final String os) {
+        if (os != null && os.contains("win")) {
+            return new WindowsFolderFactory();
+        } else {
+            throw new IllegalArgumentException("Windows OS is needed to run SudoFX");
+        }
     }
 
-    public IOsFoldersFactory getIOsFoldersFactory() {
+    public WindowsFolderFactory getIOsFoldersFactory() {
         return iOsFolderFactory;
-    }
-
-    public interface IOsFoldersFactory {
-        String getOsDataFolderPath();
-        String getOsLogsFolderPath();
     }
 }

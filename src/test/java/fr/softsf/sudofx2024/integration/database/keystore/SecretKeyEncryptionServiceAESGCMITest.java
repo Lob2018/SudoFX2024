@@ -63,20 +63,20 @@ class SecretKeyEncryptionServiceAESGCMITest {
         //  assertThrows(IllegalStateException.class, () -> secretKeyEncryptionServiceAESGCMNullSecretKey.encrypt("_"));
         secretKeyEncryptionServiceAESGCMNullSecretKey.encrypt("_");
         verify(secretKeyEncryptionServiceAESGCMNullSecretKey).encrypt("_");
-        assert (logWatcher.list.getLast().getFormattedMessage()).contains("██ Exception catch inside encrypt");
+        assert (logWatcher.list.get(logWatcher.list.size() - 1).getFormattedMessage()).contains("██ Exception catch inside encrypt");
     }
 
     @Test
     void decryptWithLessThanTwoBytesCypher_fail() {
         secretKeyEncryptionServiceAESGCMNullSecretKey.decrypt("_");
         verify(secretKeyEncryptionServiceAESGCMNullSecretKey).decrypt("_");
-        assert (logWatcher.list.getLast().getFormattedMessage()).contains("██ Exception catch inside decrypt(cypher)");
+        assert (logWatcher.list.get(logWatcher.list.size() - 1).getFormattedMessage()).contains("██ Exception catch inside decrypt(cypher)");
     }
 
     @Test
     void decryptInvalidKeyException_fail() {
         secretKeyEncryptionServiceAESGCMIncorrectSecretKey.decrypt("AB#123");
         verify(secretKeyEncryptionServiceAESGCMIncorrectSecretKey).decrypt("AB#123");
-        assert (logWatcher.list.getLast().getFormattedMessage()).contains("██ Exception catch inside decrypt(cypher)");
+        assert (logWatcher.list.get(logWatcher.list.size() - 1).getFormattedMessage()).contains("██ Exception catch inside decrypt(cypher)");
     }
 }

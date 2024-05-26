@@ -9,16 +9,19 @@ import java.security.cert.CertificateException;
 import java.util.UUID;
 
 import fr.softsf.sudofx2024.annotations.ExcludedFromCoverageReportGenerated;
-import fr.softsf.sudofx2024.interfaces.IKeystore;
 import fr.softsf.sudofx2024.utils.database.GenerateSecret;
-import fr.softsf.sudofx2024.utils.os.OsDynamicFolders;
+import fr.softsf.sudofx2024.utils.os.WindowsFolderFactory;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
 
 import javax.crypto.*;
 import javax.crypto.spec.SecretKeySpec;
 
 @Slf4j
-public final class ApplicationKeystore implements IKeystore {
+@Configuration
+public final class ApplicationKeystore {
 
     private static final String KEYSTORE_PASSWORD_FROM_UUID = String.valueOf(UUID.nameUUIDFromBytes(System.getProperty("user.name").getBytes()));
     private static final String KEYSTORE_TYPE = "pkcs12";
@@ -32,7 +35,7 @@ public final class ApplicationKeystore implements IKeystore {
     private String username;
     private String password;
 
-    public ApplicationKeystore(final OsDynamicFolders.IOsFoldersFactory iOsFolderFactory) {
+    public ApplicationKeystore(final WindowsFolderFactory iOsFolderFactory) {
         log.info("\n▓▓ ApplicationKeystore starts");
         try {
             ks = KeyStore.getInstance(KEYSTORE_TYPE);
@@ -84,8 +87,8 @@ public final class ApplicationKeystore implements IKeystore {
     private void symmetricKeyIsNotInKeystore() {
         try {
             KeyStore.SecretKeyEntry entry = (KeyStore.SecretKeyEntry) ks.getEntry(SYMMETRIC_KEY_ALIAS, new KeyStore.PasswordProtection(pwdArray));
-            if (entry instanceof KeyStore.SecretKeyEntry secretEntry) {
-                iEncryptionService = new SecretKeyEncryptionServiceAESGCM(secretEntry.getSecretKey());
+            if (entry != null) {
+                iEncryptionService = new SecretKeyEncryptionServiceAESGCM(((KeyStore.SecretKeyEntry) entry).getSecretKey());
             }
         } catch (NoSuchAlgorithmException | UnrecoverableEntryException | KeyStoreException e) {
             log.error(String.format("██ Exception catch inside symmetricKeyIsNotInKeystore/ks.getEntry(SYMMETRIC_KEY_ALIAS : %s", e.getMessage()), e);
@@ -181,12 +184,11 @@ public final class ApplicationKeystore implements IKeystore {
         }
     }
 
-    @Override
+    @Bean
     public String getUsername() {
         return username;
     }
-
-    @Override
+    @Bean
     public String getPassword() {
         return password;
     }

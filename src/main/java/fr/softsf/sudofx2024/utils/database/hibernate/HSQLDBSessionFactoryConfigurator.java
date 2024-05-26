@@ -1,8 +1,8 @@
 package fr.softsf.sudofx2024.utils.database.hibernate;
 
-import fr.softsf.sudofx2024.interfaces.IKeystore;
 import fr.softsf.sudofx2024.model.*;
-import fr.softsf.sudofx2024.utils.os.OsDynamicFolders;
+import fr.softsf.sudofx2024.utils.database.keystore.ApplicationKeystore;
+import fr.softsf.sudofx2024.utils.os.WindowsFolderFactory;
 import lombok.extern.slf4j.Slf4j;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.Metadata;
@@ -16,10 +16,10 @@ import java.util.Properties;
 public final class HSQLDBSessionFactoryConfigurator implements HibernateSessionFactoryManager.IHibernateConfiguration {
     private static final String SUDOFX_DB_NAME = "sudofx2024db";
     private final String dataFolderPath;
-    private final IKeystore iKeystore;
+    private final ApplicationKeystore iKeystore;
     private SessionFactory sessionFactory;
 
-    public HSQLDBSessionFactoryConfigurator(IKeystore iKeystore, final OsDynamicFolders.IOsFoldersFactory iOsFolderFactory) {
+    public HSQLDBSessionFactoryConfigurator(ApplicationKeystore iKeystore, final WindowsFolderFactory iOsFolderFactory) {
         log.info("\n▓▓ Start of SessionFactory build");
         this.iKeystore = iKeystore;
         dataFolderPath = iOsFolderFactory.getOsDataFolderPath() + String.format("/%s", SUDOFX_DB_NAME);

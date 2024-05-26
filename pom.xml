@@ -3,6 +3,12 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.3.0</version>
+        <relativePath/><!-- lookup parent from repository -->
+    </parent>
     <groupId>fr.softsf</groupId>
     <artifactId>SudokuFX</artifactId>
     <version>1.0.1</version>
@@ -22,9 +28,10 @@
     <properties>
         <maven.compiler.version>3.13.0</maven.compiler.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.release>22</maven.compiler.release>
-        <javafx.version>22</javafx.version>
+        <maven.compiler.release>19</maven.compiler.release>
+        <javafx.version>19</javafx.version>
         <javafx.maven.version>0.0.8</javafx.maven.version>
+        <ignite.spring.version>1.2.2</ignite.spring.version>
         <junit.version>5.10.2</junit.version>
         <jacoco.version>0.8.11</jacoco.version>
         <hibernate.version>6.5.0.CR1</hibernate.version>
@@ -54,6 +61,22 @@
             <artifactId>javafx-fxml</artifactId>
             <version>${javafx.version}</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.gluonhq</groupId>
+            <artifactId>ignite-spring</artifactId>
+            <version>${ignite.spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
         <dependency>
             <groupId>org.hibernate.orm</groupId>
             <artifactId>hibernate-core</artifactId>

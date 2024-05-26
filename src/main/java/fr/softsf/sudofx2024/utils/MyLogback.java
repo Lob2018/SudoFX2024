@@ -4,7 +4,7 @@ import ch.qos.logback.classic.LoggerContext;
 import ch.qos.logback.classic.joran.JoranConfigurator;
 import ch.qos.logback.core.joran.spi.JoranException;
 import ch.qos.logback.core.util.StatusPrinter2;
-import fr.softsf.sudofx2024.utils.os.OsDynamicFolders;
+import fr.softsf.sudofx2024.utils.os.WindowsFolderFactory;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 import org.slf4j.LoggerFactory;
@@ -22,7 +22,7 @@ public final class MyLogback {
     private static final String LOGS_NAME = "SudokuFX.log";
     private String logBackPath = CONFIG_LOGBACK_PATH.getPath();
 
-    public MyLogback(final OsDynamicFolders.IOsFoldersFactory iosFolders) {
+    public MyLogback(final WindowsFolderFactory iosFolders) {
         this.logsFolderPath = iosFolders.getOsLogsFolderPath();
         System.setProperty("logs", logsFolderPath + "/" + LOGS_NAME);
         LoggerContext context = configureLogback();

@@ -1,9 +1,8 @@
 package fr.softsf.sudofx2024.utils.database;
 
 import fr.softsf.sudofx2024.annotations.ExcludedFromCoverageReportGenerated;
-import fr.softsf.sudofx2024.interfaces.IKeystore;
-import fr.softsf.sudofx2024.utils.MyEnums;
-import fr.softsf.sudofx2024.utils.os.OsDynamicFolders;
+import fr.softsf.sudofx2024.utils.database.keystore.ApplicationKeystore;
+import fr.softsf.sudofx2024.utils.os.WindowsFolderFactory;
 import lombok.extern.slf4j.Slf4j;
 import org.flywaydb.core.Flyway;
 import org.flywaydb.core.api.FlywayException;
@@ -19,7 +18,7 @@ public final class DatabaseMigration {
     private DatabaseMigration() {
     }
 
-    public static void configure(final IKeystore iKeystore, final OsDynamicFolders.IOsFoldersFactory iOsFolderFactoryP) {
+    public static void configure(final ApplicationKeystore iKeystore, final WindowsFolderFactory iOsFolderFactoryP) {
         log.info("\n▓▓ Start of Flyway migration");
         String databasePath = "jdbc:hsqldb:file:" + iOsFolderFactoryP.getOsDataFolderPath() + String.format("/%s", "sudofx2024db");
         try {

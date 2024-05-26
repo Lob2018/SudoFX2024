@@ -1,6 +1,5 @@
 package fr.softsf.sudofx2024.integration.database;
 
-import fr.softsf.sudofx2024.interfaces.IKeystore;
 import fr.softsf.sudofx2024.utils.database.DatabaseMigration;
 import fr.softsf.sudofx2024.utils.database.hibernate.HibernateSessionFactoryManager;
 import fr.softsf.sudofx2024.utils.database.keystore.ApplicationKeystore;

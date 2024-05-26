@@ -1,7 +1,6 @@
 package fr.softsf.sudofx2024.view;
 
 import fr.softsf.sudofx2024.SudoMain;
-import fr.softsf.sudofx2024.utils.MyEnums;
 import fr.softsf.sudofx2024.utils.JVMApplicationProperties;
 import javafx.animation.Animation;
 import javafx.animation.RotateTransition;

@@ -1,6 +1,6 @@
 package fr.softsf.sudofx2024;
 
-import fr.softsf.sudofx2024.interfaces.IKeystore;
+import com.gluonhq.ignite.spring.SpringContext;
 import fr.softsf.sudofx2024.utils.database.DatabaseMigration;
 import fr.softsf.sudofx2024.utils.DynamicFontSize;
 import fr.softsf.sudofx2024.utils.MyLogback;
@@ -8,6 +8,7 @@ import fr.softsf.sudofx2024.utils.database.hibernate.HSQLDBSessionFactoryConfigu
 import fr.softsf.sudofx2024.utils.database.hibernate.HibernateSessionFactoryManager;
 import fr.softsf.sudofx2024.utils.os.OsDynamicFolders;
 import fr.softsf.sudofx2024.utils.database.keystore.ApplicationKeystore;
+import fr.softsf.sudofx2024.utils.os.WindowsFolderFactory;
 import javafx.animation.PauseTransition;
 import javafx.application.Application;
 import javafx.application.Platform;
@@ -20,6 +21,10 @@ import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 
 import org.hibernate.Session;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 
 import java.io.IOException;
 import java.sql.SQLInvalidAuthorizationSpecException;
@@ -31,27 +36,39 @@ import static fr.softsf.sudofx2024.utils.MyEnums.OsName.OS_NAME;
 import static fr.softsf.sudofx2024.utils.MyEnums.Paths.*;
 
 @Slf4j
-public final class SudoMain extends Application {
-    @Getter
-    private static final OsDynamicFolders.IOsFoldersFactory iOsFolderFactory = new OsDynamicFolders(OS_NAME.getOs()).getIOsFoldersFactory();
-    private static FXMLLoader fxmlLoader = new FXMLLoader();
+@SpringBootApplication
+@ComponentScan({
+        "com.gluonhq.ignite.spring"
+})
+public class SudoMain extends Application {
+
+    private final SpringContext context = new SpringContext(this);
+
+    @Autowired
+    private FXMLLoader fxmlLoader;
+
+    private static WindowsFolderFactory windowsFolderFactory = new OsDynamicFolders(OS_NAME.getOs()).getIOsFoldersFactory();
+
     private IPrimaryStageView iPrimaryStageView;
+
     @Getter
     private static Scene scene;
-    private static IKeystore iKeystore;
+
+    private static ApplicationKeystore keystore;
 
     public static void main(String[] args) {
-        launch(args);
+        launch(SudoMain.class, args);
     }
 
     @Override
     public void init() {
-        new MyLogback(iOsFolderFactory);
+        context.init(() -> SpringApplication.run(SudoMain.class));
+        new MyLogback(windowsFolderFactory);
     }
 
-    private static void initializeScene() throws IOException {
-        iKeystore = new ApplicationKeystore(iOsFolderFactory);
-        fxmlLoader = getFXMLLoader("splashscreen-view");
+    private void initializeScene() throws IOException {
+        keystore = new ApplicationKeystore(windowsFolderFactory);
+        fxmlLoader.setLocation(getFXMLLoader("splashscreen-view").getLocation());
         scene = new Scene(fxmlLoader.load(), -1, -1, Color.TRANSPARENT);
         scene.getStylesheets().add((Objects.requireNonNull(SudoMain.class.getResource(RESOURCES_CSS_PATH.getPath()))).toExternalForm());
     }
@@ -60,11 +77,11 @@ public final class SudoMain extends Application {
     public void start(final Stage primaryStageP) {
         try {
             initializeScene();
-            final ISplashScreenView iSplashScreenView = fxmlLoader.getController();
+             final ISplashScreenView iSplashScreenView = fxmlLoader.getController();
             new DynamicFontSize(scene);
             iSplashScreenView.showSplashScreen();
             final long startTime = System.currentTimeMillis();
-            Thread.ofVirtual().start(() -> {
+            new Thread(() -> {
                 Throwable throwable = null;
                 try {
                     loadingFlywayAndHibernate();
@@ -77,7 +94,7 @@ public final class SudoMain extends Application {
                         // TODO Get & Set latest saved view from initializationAsynchronousTask
                     });
                 }
-            });
+            }).start();
         } catch (Exception e) {
             log.error(String.format("██ Exception catch inside start() : %s", e.getMessage()), e);
             throw new RuntimeException(e);
@@ -128,8 +145,8 @@ public final class SudoMain extends Application {
     }
 
     private void loadingFlywayAndHibernate() {
-        DatabaseMigration.configure(iKeystore, iOsFolderFactory);
-        Session session = HibernateSessionFactoryManager.getSessionFactoryInit(new HSQLDBSessionFactoryConfigurator(iKeystore, iOsFolderFactory)).openSession();
+        DatabaseMigration.configure(keystore, windowsFolderFactory);
+        Session session = HibernateSessionFactoryManager.getSessionFactoryInit(new HSQLDBSessionFactoryConfigurator(keystore, windowsFolderFactory)).openSession();
         session.close();
     }
 
@@ -148,7 +165,7 @@ public final class SudoMain extends Application {
         }
     }
 
-    public static void setRootByFXMLName(final String fxml) {
+    public void setRootByFXMLName(final String fxml) {
         try {
             clearFXMLLODER();
             scene.setRoot(getFXMLLoader(fxml).load());
@@ -158,12 +175,12 @@ public final class SudoMain extends Application {
         }
     }
 
-    private static void clearFXMLLODER() {
+    private void clearFXMLLODER() {
         fxmlLoader.setRoot(null);
         fxmlLoader.setController(null);
     }
 
-    private static FXMLLoader getFXMLLoader(final String fxml) {
+    private FXMLLoader getFXMLLoader(final String fxml) {
         fxmlLoader.setLocation(SudoMain.class.getResource(RESOURCES_FXML_PATH.getPath() + fxml + ".fxml"));
         return fxmlLoader;
     }

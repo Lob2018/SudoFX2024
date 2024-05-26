@@ -2,7 +2,6 @@ package fr.softsf.sudofx2024.view;
 
 import fr.softsf.sudofx2024.SudoMain;
 import fr.softsf.sudofx2024.utils.database.DatabaseMigration;
-import fr.softsf.sudofx2024.utils.MyEnums;
 import fr.softsf.sudofx2024.viewmodel.FullMenuViewModel;
 import javafx.animation.FadeTransition;
 import javafx.event.ActionEvent;
@@ -31,6 +30,7 @@ import static fr.softsf.sudofx2024.utils.MyEnums.Paths.LOGO_SUDO_PNG_PATH;
  * FullMenuView view without logic (not tested)
  */
 public final class FullMenuView implements SudoMain.IPrimaryStageView {
+
     @FXML
     private Label welcomeText;
     @FXML
@@ -55,7 +55,7 @@ public final class FullMenuView implements SudoMain.IPrimaryStageView {
         File file = new File(Objects.requireNonNull(DatabaseMigration.class.getResource(DATABASE_MIGRATION_PATH.getPath())).getFile());
         String filePath = file.getAbsolutePath();
 
-        fullMenuViewModel =new FullMenuViewModel();
+        fullMenuViewModel = new FullMenuViewModel();
 
         welcomeText.setText("Coucou");
 
