@@ -12,13 +12,13 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-import static fr.softsf.sudofx2024.utils.MyEnums.Os.OS_NAME;
+import static fr.softsf.sudofx2024.utils.MyEnums.OsName.OS_NAME;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.Mockito.*;
 
 class DatabaseMigrationITest {
 
-    private static final OsDynamicFolders.IOsFoldersFactory iOsFolderFactory = new OsDynamicFolders(OS_NAME.getPath()).getIOsFoldersFactory();
+    private static final OsDynamicFolders.IOsFoldersFactory iOsFolderFactory = new OsDynamicFolders(OS_NAME.getOs()).getIOsFoldersFactory();
     private static final IKeystore iKeystore = new ApplicationKeystore(iOsFolderFactory);
 
     @BeforeAll

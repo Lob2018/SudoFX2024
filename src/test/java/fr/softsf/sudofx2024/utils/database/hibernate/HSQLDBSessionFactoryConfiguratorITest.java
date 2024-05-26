@@ -11,7 +11,7 @@ import org.hibernate.SessionFactory;
 import org.junit.jupiter.api.*;
 import org.mockito.Mockito;
 
-import static fr.softsf.sudofx2024.utils.MyEnums.Os.OS_NAME;
+import static fr.softsf.sudofx2024.utils.MyEnums.OsName.OS_NAME;
 import static fr.softsf.sudofx2024.utils.MyEnums.Paths.USER_HOME;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
@@ -19,7 +19,7 @@ import static org.mockito.Mockito.*;
 class HSQLDBSessionFactoryConfiguratorITest {
 
     private static HSQLDBSessionFactoryConfigurator configurator;
-    private static final OsDynamicFolders.IOsFoldersFactory iOsFolderFactory = new OsDynamicFolders(OS_NAME.getPath()).getIOsFoldersFactory();
+    private static final OsDynamicFolders.IOsFoldersFactory iOsFolderFactory = new OsDynamicFolders(OS_NAME.getOs()).getIOsFoldersFactory();
     private static final IKeystore iKeystore = new ApplicationKeystore(iOsFolderFactory);
 
     @BeforeAll

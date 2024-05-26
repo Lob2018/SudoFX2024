@@ -3,13 +3,13 @@ package fr.softsf.sudofx2024.utils.os;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
-import static fr.softsf.sudofx2024.utils.MyEnums.Os.OS_NAME;
+import static fr.softsf.sudofx2024.utils.MyEnums.OsName.OS_NAME;
 import static fr.softsf.sudofx2024.utils.MyEnums.Paths.*;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-class OsDynamicFoldersITest {
+class OsNameDynamicFoldersITest {
 
     private final OsDynamicFolders.IOsFoldersFactory REF_OBJ_WINDOWS_IOSFOLDERS = new OsDynamicFolders("windows").getIOsFoldersFactory();
 
@@ -35,7 +35,7 @@ class OsDynamicFoldersITest {
         System.setProperty("os.name", os);
         // GIVEN WHEN
         // THEN
-        assertTrue(OS_NAME.getPath().contains("win"));
+        assertTrue(OS_NAME.getOs().contains("win"));
     }
 
     @Test

@@ -26,13 +26,14 @@ import java.sql.SQLInvalidAuthorizationSpecException;
 import java.util.Objects;
 
 import static fr.softsf.sudofx2024.utils.ExceptionTools.getSQLInvalidAuthorizationSpecException;
-import static fr.softsf.sudofx2024.utils.MyEnums.Os.OS_NAME;
+import static fr.softsf.sudofx2024.utils.MyEnums.LogBackTxt.SQL_INVALID_AUTHORIZATION_SPEC_EXCEPTION;
+import static fr.softsf.sudofx2024.utils.MyEnums.OsName.OS_NAME;
 import static fr.softsf.sudofx2024.utils.MyEnums.Paths.*;
 
 @Slf4j
 public final class SudoMain extends Application {
     @Getter
-    private static final OsDynamicFolders.IOsFoldersFactory iOsFolderFactory = new OsDynamicFolders(OS_NAME.getPath()).getIOsFoldersFactory();
+    private static final OsDynamicFolders.IOsFoldersFactory iOsFolderFactory = new OsDynamicFolders(OS_NAME.getOs()).getIOsFoldersFactory();
     private static FXMLLoader fxmlLoader = new FXMLLoader();
     private IPrimaryStageView iPrimaryStageView;
     @Getter
@@ -112,12 +113,7 @@ public final class SudoMain extends Application {
         // HSQLDB invalid authorization specification codes from keystore
         if ("28000".equals(sqlState) || "28501".equals(sqlState)) {
             log.error(String.format("██ SQLInvalidAuthorizationSpecException with sqlstate==(28000||28501) catch : %s", e.getMessage()), e);
-            String message = """      
-                    ██ Risk of loss of application data because database authentication is not valid:
-                    ██ You can say no and try restarting the application and if the problem persists, reset the application database.
-                    ██ In both cases the application will close
-                    """;
-            log.info(String.format("\n\n%s", message));
+            log.info(String.format("%n%n%s", SQL_INVALID_AUTHORIZATION_SPEC_EXCEPTION.getLogBackMessage()));
         }
     }
 

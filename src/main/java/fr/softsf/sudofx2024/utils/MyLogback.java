@@ -12,7 +12,7 @@ import org.slf4j.LoggerFactory;
 import java.io.IOException;
 import java.io.InputStream;
 
-import static fr.softsf.sudofx2024.utils.MyEnums.Logo.ASCII_LOGO;
+import static fr.softsf.sudofx2024.utils.MyEnums.LogBackTxt.ASCII_LOGO;
 import static fr.softsf.sudofx2024.utils.MyEnums.Paths.*;
 
 @Slf4j
@@ -31,7 +31,7 @@ public final class MyLogback {
     }
 
     private static void printLogEntryMessage() {
-        log.info(ASCII_LOGO.getPath());
+        log.info(ASCII_LOGO.getLogBackMessage());
     }
 
     private static void printLogStatus(final LoggerContext context) {

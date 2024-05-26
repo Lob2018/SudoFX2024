@@ -12,14 +12,14 @@ import org.slf4j.Logger;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-import static fr.softsf.sudofx2024.utils.MyEnums.Os.OS_NAME;
+import static fr.softsf.sudofx2024.utils.MyEnums.OsName.OS_NAME;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
 class MyLogbackITest {
 
-    private final OsDynamicFolders osDynamicFolders = new OsDynamicFolders(OS_NAME.getPath());
+    private final OsDynamicFolders osDynamicFolders = new OsDynamicFolders(OS_NAME.getOs());
     private MyLogback REF_OBJ_MyLogback;
 
     @BeforeEach

@@ -5,7 +5,7 @@ import fr.softsf.sudofx2024.utils.os.OsDynamicFolders;
 
 import org.junit.jupiter.api.*;
 
-import static fr.softsf.sudofx2024.utils.MyEnums.Os.OS_NAME;
+import static fr.softsf.sudofx2024.utils.MyEnums.OsName.OS_NAME;
 import static fr.softsf.sudofx2024.utils.MyEnums.Paths.SUPPOSED_DATA_FOLDER_FOR_SUDO_FX;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.*;
@@ -30,9 +30,9 @@ class ApplicationKeystoreITest {
 
     @BeforeAll
     static void setupAll() {
-        OsDynamicFolders.IOsFoldersFactory iOsFolderFactoryInit = new OsDynamicFolders(OS_NAME.getPath()).getIOsFoldersFactory();
+        OsDynamicFolders.IOsFoldersFactory iOsFolderFactoryInit = new OsDynamicFolders(OS_NAME.getOs()).getIOsFoldersFactory();
         new FileSystemManager().deleteFolder(Paths.get(iOsFolderFactoryInit.getOsDataFolderPath()), SUPPOSED_DATA_FOLDER_FOR_SUDO_FX.getPath());
-        iOsFolderFactory = new OsDynamicFolders(OS_NAME.getPath()).getIOsFoldersFactory();
+        iOsFolderFactory = new OsDynamicFolders(OS_NAME.getOs()).getIOsFoldersFactory();
     }
 
     @BeforeEach
