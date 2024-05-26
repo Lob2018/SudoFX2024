@@ -12,6 +12,7 @@ import fr.softsf.sudofx2024.annotations.ExcludedFromCoverageReportGenerated;
 import fr.softsf.sudofx2024.utils.database.GenerateSecret;
 import fr.softsf.sudofx2024.utils.os.WindowsFolderFactory;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
@@ -35,6 +36,7 @@ public final class ApplicationKeystore {
     private String username;
     private String password;
 
+    @Autowired
     public ApplicationKeystore(final WindowsFolderFactory iOsFolderFactory) {
         log.info("\n▓▓ ApplicationKeystore starts");
         try {

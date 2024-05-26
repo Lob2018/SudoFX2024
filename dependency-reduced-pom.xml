@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <parent>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <groupId>org.springframework.boot</groupId>
+    <version>3.3.0</version>
+    <relativePath>pom.xml</relativePath>
+  </parent>
   <modelVersion>4.0.0</modelVersion>
   <groupId>fr.softsf</groupId>
   <artifactId>SudokuFX</artifactId>
@@ -52,12 +58,6 @@
           </execution>
         </executions>
         <configuration>
-          <transformers>
-            <transformer>
-              <mainClass>fr.softsf.sudofx2024.Launcher</mainClass>
-            </transformer>
-            <transformer />
-          </transformers>
           <filters>
             <filter>
               <artifact>*:*</artifact>
@@ -150,10 +150,142 @@
   </build>
   <dependencies>
     <dependency>
+      <groupId>org.openjfx</groupId>
+      <artifactId>javafx-controls</artifactId>
+      <version>19</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.openjfx</groupId>
+      <artifactId>javafx-fxml</artifactId>
+      <version>19</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.gluonhq</groupId>
+      <artifactId>ignite-spring</artifactId>
+      <version>1.2.2</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter</artifactId>
+      <version>3.3.0</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-test</artifactId>
+      <version>3.3.0</version>
+      <scope>test</scope>
+      <exclusions>
+        <exclusion>
+          <artifactId>spring-boot-test</artifactId>
+          <groupId>org.springframework.boot</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>spring-boot-test-autoconfigure</artifactId>
+          <groupId>org.springframework.boot</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>json-path</artifactId>
+          <groupId>com.jayway.jsonpath</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>json-smart</artifactId>
+          <groupId>net.minidev</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>assertj-core</artifactId>
+          <groupId>org.assertj</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>awaitility</artifactId>
+          <groupId>org.awaitility</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>junit-jupiter</artifactId>
+          <groupId>org.junit.jupiter</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>jsonassert</artifactId>
+          <groupId>org.skyscreamer</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>spring-test</artifactId>
+          <groupId>org.springframework</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>xmlunit-core</artifactId>
+          <groupId>org.xmlunit</groupId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>org.hibernate.orm</groupId>
+      <artifactId>hibernate-core</artifactId>
+      <version>6.5.0.CR1</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
       <groupId>org.hibernate</groupId>
       <artifactId>hibernate-c3p0</artifactId>
       <version>7.0.0.Alpha1</version>
       <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.hsqldb</groupId>
+      <artifactId>hsqldb</artifactId>
+      <version>2.7.2</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.flywaydb</groupId>
+      <artifactId>flyway-core</artifactId>
+      <version>10.12.0</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.flywaydb</groupId>
+      <artifactId>flyway-database-hsqldb</artifactId>
+      <version>10.12.0</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.32</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>jakarta.validation</groupId>
+      <artifactId>jakarta.validation-api</artifactId>
+      <version>3.1.0-M2</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>jakarta.persistence</groupId>
+      <artifactId>jakarta.persistence-api</artifactId>
+      <version>3.2.0-M2</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.passay</groupId>
+      <artifactId>passay</artifactId>
+      <version>1.6.4</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-core</artifactId>
+      <version>1.5.6</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+      <version>1.5.6</version>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.junit.jupiter</groupId>
@@ -238,7 +370,7 @@
   </dependencies>
   <properties>
     <flyway.version>10.12.0</flyway.version>
-    <javafx.version>22</javafx.version>
+    <javafx.version>19</javafx.version>
     <junit.version>5.10.2</junit.version>
     <logback.version>1.5.6</logback.version>
     <jacoco.version>0.8.11</jacoco.version>
@@ -246,8 +378,9 @@
     <javafx.maven.version>0.0.8</javafx.maven.version>
     <jakarta.validation.version>3.1.0-M2</jakarta.validation.version>
     <jakarta.persitence.version>3.2.0-M2</jakarta.persitence.version>
+    <start-class>fr.softsf.sudofx2024.Launcher</start-class>
     <passay.version>1.6.4</passay.version>
-    <maven.compiler.release>22</maven.compiler.release>
+    <maven.compiler.release>19</maven.compiler.release>
     <hamcrest.version>2.2</hamcrest.version>
     <surefire.version>3.2.5</surefire.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -257,6 +390,7 @@
     <maven.compiler.version>3.13.0</maven.compiler.version>
     <hsqldb.version>2.7.2</hsqldb.version>
     <mockito.version>5.11.0</mockito.version>
+    <ignite.spring.version>1.2.2</ignite.spring.version>
     <lombok.version>1.18.32</lombok.version>
     <c3p0.version>7.0.0.Alpha1</c3p0.version>
   </properties>

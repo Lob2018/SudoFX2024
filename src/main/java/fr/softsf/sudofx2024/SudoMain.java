@@ -57,7 +57,7 @@ public class SudoMain extends Application {
     private static ApplicationKeystore keystore;
 
     public static void main(String[] args) {
-        launch(SudoMain.class, args);
+        launch(args);
     }
 
     @Override
