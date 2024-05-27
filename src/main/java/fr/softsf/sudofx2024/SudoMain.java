@@ -46,7 +46,8 @@ public class SudoMain extends Application {
     @Autowired
     private FXMLLoader fxmlLoader;
 
-    private static final OsDynamicFolders.IOsFoldersFactory windowsFolderFactory = new OsDynamicFolders(OS_NAME.getOs()).getIOsFoldersFactory();
+    @Getter
+    private static final OsDynamicFolders.IOsFoldersFactory folderFactory = new OsDynamicFolders(OS_NAME.getOs()).getIOsFoldersFactory();
 
     private IPrimaryStageView iPrimaryStageView;
 
@@ -62,11 +63,11 @@ public class SudoMain extends Application {
     @Override
     public void init() {
         context.init(() -> SpringApplication.run(SudoMain.class));
-        new MyLogback(windowsFolderFactory);
+        new MyLogback(folderFactory);
     }
 
     private void initializeScene() throws IOException {
-        keystore = new ApplicationKeystore(windowsFolderFactory);
+        keystore = new ApplicationKeystore(folderFactory);
         fxmlLoader.setLocation(getFXMLLoader("splashscreen-view").getLocation());
         scene = new Scene(fxmlLoader.load(), -1, -1, Color.TRANSPARENT);
         scene.getStylesheets().add((Objects.requireNonNull(SudoMain.class.getResource(RESOURCES_CSS_PATH.getPath()))).toExternalForm());
@@ -144,8 +145,8 @@ public class SudoMain extends Application {
     }
 
     private void loadingFlywayAndHibernate() {
-        DatabaseMigration.configure(keystore, windowsFolderFactory);
-        Session session = HibernateSessionFactoryManager.getSessionFactoryInit(new HSQLDBSessionFactoryConfigurator(keystore, windowsFolderFactory)).openSession();
+        DatabaseMigration.configure(keystore, folderFactory);
+        Session session = HibernateSessionFactoryManager.getSessionFactoryInit(new HSQLDBSessionFactoryConfigurator(keystore, folderFactory)).openSession();
         session.close();
     }
 

@@ -4,7 +4,6 @@ import fr.softsf.sudofx2024.SudoMain;
 import fr.softsf.sudofx2024.utils.FileSystemManager;
 import fr.softsf.sudofx2024.utils.I18n;
 import fr.softsf.sudofx2024.utils.JVMApplicationProperties;
-import fr.softsf.sudofx2024.utils.os.WindowsFolderFactory;
 import javafx.animation.*;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
@@ -24,7 +23,6 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javafx.util.Duration;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -40,8 +38,7 @@ import static fr.softsf.sudofx2024.utils.MyEnums.Paths.SUPPOSED_DATA_FOLDER_FOR_
 @Slf4j
 public final class CrashScreenView implements SudoMain.IPrimaryStageView {
 
-    @Autowired
-    private WindowsFolderFactory windowsFolderFactory;
+    private static final String OS_DATA_FOLDER_PATH = SudoMain.getFolderFactory().getOsDataFolderPath();
 
     @FXML
     private VBox crashscreenvbox;
@@ -74,8 +71,7 @@ public final class CrashScreenView implements SudoMain.IPrimaryStageView {
     @FXML
     private void resetButtonClick() {
         log.info("▓▓▓▓ The user choose to reset the application data");
-        String dataPath = windowsFolderFactory.getOsDataFolderPath();
-        Path pathToDelete = Paths.get(dataPath);
+        Path pathToDelete = Paths.get(OS_DATA_FOLDER_PATH);
         if (new FileSystemManager().deleteFolder(pathToDelete, SUPPOSED_DATA_FOLDER_FOR_SUDO_FX.getPath())) {
             log.info("▓▓▓▓ The directory is deleted");
         } else {
@@ -110,7 +106,7 @@ public final class CrashScreenView implements SudoMain.IPrimaryStageView {
         crashscreenvboxCenterhboxLabel.setText(I18n.getValue("crashscreen.message"));
         crashscreenvboxCenterhboxLabel.setWrapText(true);
         crashscreenvboxCenterhboxLabel.setTextFill(crashDefaultFontColor);
-        crashscreenvboxCenterhboxLabel2.setText(I18n.getValue("crashscreen.extramessage") + "\n" + windowsFolderFactory.getOsDataFolderPath());
+        crashscreenvboxCenterhboxLabel2.setText(I18n.getValue("crashscreen.extramessage") + "\n" + OS_DATA_FOLDER_PATH);
         crashscreenvboxCenterhboxLabel2.setWrapText(true);
         crashscreenvboxCenterhboxLabel2.setTextFill(crashDefaultFontColor);
         buttonReset.setText(I18n.getValue("crashscreen.reset"));
