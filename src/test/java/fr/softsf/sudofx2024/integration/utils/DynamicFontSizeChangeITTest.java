@@ -24,33 +24,33 @@ import static org.mockito.Mockito.mockStatic;
 @ExtendWith(ApplicationExtension.class)
 class DynamicFontSizeChangeITTest {
 
-//    private DynamicFontSize dynamicFontSize;
-//    private Stage stage;
-//
-//    @Start
-//    private void start(Stage primarystage) throws IOException {
-//        // GIVEN
-//        stage = primarystage;
-//        stage.initStyle(StageStyle.UNDECORATED);
-//        Scene scene = new Scene(new VBox(), 500, 500);
-//        stage.setScene(scene);
-//        dynamicFontSize = new DynamicFontSize(scene);
-//        stage.show();
-//    }
-//
-//    @Test
-//    void testUpdateFontSizeOnResize(FxRobot robot) {
-//        // WHEN
-//        robot.interact(() -> {
-//            stage.setWidth(300);
-//            stage.setHeight(350);
-//        });
-//        // THEN
-//        assertEquals(6.57, dynamicFontSize.getCurrentFontSize(), 0.01);
-//    }
-//
-//    @AfterEach
-//    void cleanup() throws TimeoutException {
-//        FxToolkit.cleanupStages();
-//    }
+    private DynamicFontSize dynamicFontSize;
+    private Stage stage;
+
+    @Start
+    private void start(Stage primarystage) throws IOException {
+        // GIVEN
+        stage = primarystage;
+        stage.initStyle(StageStyle.UNDECORATED);
+        Scene scene = new Scene(new VBox(), 500, 500);
+        stage.setScene(scene);
+        dynamicFontSize = new DynamicFontSize(scene);
+        stage.show();
+    }
+
+    @Test
+    void testUpdateFontSizeOnResize(FxRobot robot) {
+        // WHEN
+        robot.interact(() -> {
+            stage.setWidth(300);
+            stage.setHeight(350);
+        });
+        // THEN
+        assertEquals(6.57, dynamicFontSize.getCurrentFontSize(), 0.01);
+    }
+
+    @AfterEach
+    void cleanup() throws TimeoutException {
+        FxToolkit.cleanupStages();
+    }
 }

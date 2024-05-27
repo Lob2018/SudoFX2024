@@ -9,20 +9,17 @@ import java.security.cert.CertificateException;
 import java.util.UUID;
 
 import fr.softsf.sudofx2024.annotations.ExcludedFromCoverageReportGenerated;
+import fr.softsf.sudofx2024.interfaces.IKeystore;
 import fr.softsf.sudofx2024.utils.database.GenerateSecret;
-import fr.softsf.sudofx2024.utils.os.WindowsFolderFactory;
+import fr.softsf.sudofx2024.utils.os.OsDynamicFolders;
+import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.stereotype.Component;
 
 import javax.crypto.*;
 import javax.crypto.spec.SecretKeySpec;
 
 @Slf4j
-@Configuration
-public final class ApplicationKeystore {
+public final class ApplicationKeystore implements IKeystore {
 
     private static final String KEYSTORE_PASSWORD_FROM_UUID = String.valueOf(UUID.nameUUIDFromBytes(System.getProperty("user.name").getBytes()));
     private static final String KEYSTORE_TYPE = "pkcs12";
@@ -33,11 +30,12 @@ public final class ApplicationKeystore {
     private static final String USERNAME_ALIAS = "db-user-alias";
     private static final String PASS_ALIAS = "db-pass-alias";
     private IEncryptionService iEncryptionService;
+    @Getter
     private String username;
+    @Getter
     private String password;
 
-    @Autowired
-    public ApplicationKeystore(final WindowsFolderFactory iOsFolderFactory) {
+    public ApplicationKeystore(final OsDynamicFolders.IOsFoldersFactory iOsFolderFactory) {
         log.info("\n▓▓ ApplicationKeystore starts");
         try {
             ks = KeyStore.getInstance(KEYSTORE_TYPE);
@@ -184,15 +182,6 @@ public final class ApplicationKeystore {
         } catch (Exception e) {
             log.error(String.format("██ Exception catch inside writeTheKeystore/fos : %s", e.getMessage()), e);
         }
-    }
-
-    @Bean
-    public String getUsername() {
-        return username;
-    }
-    @Bean
-    public String getPassword() {
-        return password;
     }
 
     public interface IEncryptionService {

@@ -1,16 +1,13 @@
 package fr.softsf.sudofx2024.utils.os;
 
-import org.springframework.stereotype.Component;
-
-@Component
 public final class OsDynamicFolders {
-    private final WindowsFolderFactory iOsFolderFactory;
+    private final IOsFoldersFactory iOsFolderFactory;
 
     public OsDynamicFolders(final String os) throws IllegalArgumentException {
         iOsFolderFactory = createOsFolderFactory(os);
     }
 
-    private WindowsFolderFactory createOsFolderFactory(final String os) {
+    private IOsFoldersFactory createOsFolderFactory(final String os) {
         if (os != null && os.contains("win")) {
             return new WindowsFolderFactory();
         } else {
@@ -18,7 +15,12 @@ public final class OsDynamicFolders {
         }
     }
 
-    public WindowsFolderFactory getIOsFoldersFactory() {
+    public IOsFoldersFactory getIOsFoldersFactory() {
         return iOsFolderFactory;
+    }
+
+    public interface IOsFoldersFactory {
+        String getOsDataFolderPath();
+        String getOsLogsFolderPath();
     }
 }

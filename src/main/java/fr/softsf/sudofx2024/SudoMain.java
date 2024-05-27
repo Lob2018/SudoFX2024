@@ -8,7 +8,6 @@ import fr.softsf.sudofx2024.utils.database.hibernate.HSQLDBSessionFactoryConfigu
 import fr.softsf.sudofx2024.utils.database.hibernate.HibernateSessionFactoryManager;
 import fr.softsf.sudofx2024.utils.os.OsDynamicFolders;
 import fr.softsf.sudofx2024.utils.database.keystore.ApplicationKeystore;
-import fr.softsf.sudofx2024.utils.os.WindowsFolderFactory;
 import javafx.animation.PauseTransition;
 import javafx.application.Application;
 import javafx.application.Platform;
@@ -47,7 +46,7 @@ public class SudoMain extends Application {
     @Autowired
     private FXMLLoader fxmlLoader;
 
-    private static WindowsFolderFactory windowsFolderFactory = new OsDynamicFolders(OS_NAME.getOs()).getIOsFoldersFactory();
+    private static final OsDynamicFolders.IOsFoldersFactory windowsFolderFactory = new OsDynamicFolders(OS_NAME.getOs()).getIOsFoldersFactory();
 
     private IPrimaryStageView iPrimaryStageView;
 

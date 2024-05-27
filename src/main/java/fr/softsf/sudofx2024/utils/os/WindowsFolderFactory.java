@@ -2,17 +2,13 @@ package fr.softsf.sudofx2024.utils.os;
 
 import fr.softsf.sudofx2024.utils.MyEnums;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.stereotype.Component;
 
 import java.io.File;
 
 import static fr.softsf.sudofx2024.utils.MyEnums.Paths.*;
 
 @Slf4j
-@Configuration
-public final class WindowsFolderFactory {
+public final class WindowsFolderFactory implements OsDynamicFolders.IOsFoldersFactory {
     private final String LOGS_FOLDER_FOR_SUDO_FX;
     private final String DATA_FOLDER_FOR_SUDO_FX;
 
@@ -51,11 +47,12 @@ public final class WindowsFolderFactory {
         return new File(folderPath);
     }
 
-    @Bean
+    @Override
     public String getOsDataFolderPath() {
         return DATA_FOLDER_FOR_SUDO_FX;
     }
-    @Bean
+
+    @Override
     public String getOsLogsFolderPath() {
         return LOGS_FOLDER_FOR_SUDO_FX;
     }
