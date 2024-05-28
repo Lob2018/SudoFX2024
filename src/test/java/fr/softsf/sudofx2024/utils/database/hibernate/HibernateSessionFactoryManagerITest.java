@@ -2,24 +2,27 @@ package fr.softsf.sudofx2024.utils.database.hibernate;
 
 import fr.softsf.sudofx2024.utils.database.DatabaseMigration;
 import fr.softsf.sudofx2024.utils.database.keystore.ApplicationKeystore;
-import fr.softsf.sudofx2024.utils.os.OsDynamicFolders;
+import fr.softsf.sudofx2024.utils.os.WindowsFolderFactory;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.junit.jupiter.api.*;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
 
-import static fr.softsf.sudofx2024.utils.MyEnums.OsName.OS_NAME;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
+@SpringBootTest
 class HibernateSessionFactoryManagerITest {
 
-    private static final OsDynamicFolders.IOsFoldersFactory iOsFolderFactory = new OsDynamicFolders(OS_NAME.getOs()).getIOsFoldersFactory();
-    private static final ApplicationKeystore keystore = new ApplicationKeystore(iOsFolderFactory);
+    @Autowired
+    static WindowsFolderFactory osFolderFactory;
+    private static final ApplicationKeystore keystore = new ApplicationKeystore(osFolderFactory);
 
     @BeforeAll
     static void setUpAll() {
         // Flyway configuration
-        DatabaseMigration.configure(keystore, iOsFolderFactory);
+        DatabaseMigration.configure(keystore, osFolderFactory);
     }
 
     @AfterEach
@@ -53,7 +56,7 @@ class HibernateSessionFactoryManagerITest {
     @Test
     void testOpenAndCloseSession_Success() {
         // GIVEN
-        Session session = HibernateSessionFactoryManager.getSessionFactoryInit(new HSQLDBSessionFactoryConfigurator(keystore, iOsFolderFactory)).openSession();
+        Session session = HibernateSessionFactoryManager.getSessionFactoryInit(new HSQLDBSessionFactoryConfigurator(keystore, osFolderFactory)).openSession();
         // WHEN THEN
         assertTrue(session.isOpen(), "Expected the session to be open before closeSessionFactory()");
         HibernateSessionFactoryManager.closeSessionFactory();
@@ -65,7 +68,7 @@ class HibernateSessionFactoryManagerITest {
     @Test
     void testOpenAndCloseSessionAfterCloseFactoryCall_Success() {
         // GIVEN
-        Session session = HibernateSessionFactoryManager.getSessionFactoryInit(new HSQLDBSessionFactoryConfigurator(keystore, iOsFolderFactory)).openSession();
+        Session session = HibernateSessionFactoryManager.getSessionFactoryInit(new HSQLDBSessionFactoryConfigurator(keystore, osFolderFactory)).openSession();
         // WHEN THEN
         assertTrue(session.isOpen(), "Expected the session to be open before close()");
         HibernateSessionFactoryManager.getSessionFactory().close();

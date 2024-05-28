@@ -1,6 +1,8 @@
 package fr.softsf.sudofx2024.utils;
 
 import fr.softsf.sudofx2024.utils.os.OsDynamicFolders;
+import fr.softsf.sudofx2024.utils.os.WindowsFolderFactory;
+import lombok.Getter;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -8,29 +10,33 @@ import org.mockito.ArgumentCaptor;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.slf4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
 
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-import static fr.softsf.sudofx2024.utils.MyEnums.OsName.OS_NAME;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
+@SpringBootTest
 @ExtendWith(MockitoExtension.class)
 class MyLogbackITest {
 
-    private final OsDynamicFolders osDynamicFolders = new OsDynamicFolders(OS_NAME.getOs());
+    @Autowired
+    WindowsFolderFactory osFolderFactory;
+
     private MyLogback REF_OBJ_MyLogback;
 
     @BeforeEach
     void setup() {
-        REF_OBJ_MyLogback = new MyLogback(this.osDynamicFolders.getIOsFoldersFactory());
+        REF_OBJ_MyLogback = new MyLogback(osFolderFactory);
     }
 
     @Test
     void testLogs_real_folder_path_is_correct() {
         // GIVEN WHEN THEN
-        assertEquals(REF_OBJ_MyLogback.getLogsFolderPath(), osDynamicFolders.getIOsFoldersFactory().getOsLogsFolderPath());
+        assertEquals(REF_OBJ_MyLogback.getLogsFolderPath(), osFolderFactory.getOsLogsFolderPath());
     }
 
     @Test

@@ -3,9 +3,9 @@ package fr.softsf.sudofx2024.utils.database.keystore;
 import fr.softsf.sudofx2024.utils.FileSystemManager;
 import fr.softsf.sudofx2024.utils.os.OsDynamicFolders;
 
+import fr.softsf.sudofx2024.utils.os.WindowsFolderFactory;
 import org.junit.jupiter.api.*;
 
-import static fr.softsf.sudofx2024.utils.MyEnums.OsName.OS_NAME;
 import static fr.softsf.sudofx2024.utils.MyEnums.Paths.SUPPOSED_DATA_FOLDER_FOR_SUDO_FX;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.*;
@@ -14,11 +14,16 @@ import org.slf4j.LoggerFactory;
 import ch.qos.logback.core.read.ListAppender;
 import ch.qos.logback.classic.spi.ILoggingEvent;
 import ch.qos.logback.classic.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
 
 import java.nio.file.Paths;
 
-
+@SpringBootTest
 class ApplicationKeystoreITest {
+
+    @Autowired
+    static WindowsFolderFactory osFolderFactory;
 
     private static OsDynamicFolders.IOsFoldersFactory iOsFolderFactoryMocked;
     private static OsDynamicFolders.IOsFoldersFactory iOsFolderFactory;
@@ -30,9 +35,9 @@ class ApplicationKeystoreITest {
 
     @BeforeAll
     static void setupAll() {
-        OsDynamicFolders.IOsFoldersFactory iOsFolderFactoryInit = new OsDynamicFolders(OS_NAME.getOs()).getIOsFoldersFactory();
+        OsDynamicFolders.IOsFoldersFactory iOsFolderFactoryInit = osFolderFactory;
         new FileSystemManager().deleteFolder(Paths.get(iOsFolderFactoryInit.getOsDataFolderPath()), SUPPOSED_DATA_FOLDER_FOR_SUDO_FX.getPath());
-        iOsFolderFactory = new OsDynamicFolders(OS_NAME.getOs()).getIOsFoldersFactory();
+        iOsFolderFactory = osFolderFactory;
     }
 
     @BeforeEach

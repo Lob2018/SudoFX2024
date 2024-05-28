@@ -6,8 +6,8 @@ import fr.softsf.sudofx2024.utils.DynamicFontSize;
 import fr.softsf.sudofx2024.utils.MyLogback;
 import fr.softsf.sudofx2024.utils.database.hibernate.HSQLDBSessionFactoryConfigurator;
 import fr.softsf.sudofx2024.utils.database.hibernate.HibernateSessionFactoryManager;
-import fr.softsf.sudofx2024.utils.os.OsDynamicFolders;
 import fr.softsf.sudofx2024.utils.database.keystore.ApplicationKeystore;
+import fr.softsf.sudofx2024.utils.os.WindowsFolderFactory;
 import javafx.animation.PauseTransition;
 import javafx.application.Application;
 import javafx.application.Platform;
@@ -31,13 +31,13 @@ import java.util.Objects;
 
 import static fr.softsf.sudofx2024.utils.ExceptionTools.getSQLInvalidAuthorizationSpecException;
 import static fr.softsf.sudofx2024.utils.MyEnums.LogBackTxt.SQL_INVALID_AUTHORIZATION_SPEC_EXCEPTION;
-import static fr.softsf.sudofx2024.utils.MyEnums.OsName.OS_NAME;
 import static fr.softsf.sudofx2024.utils.MyEnums.Paths.*;
 
 @Slf4j
 @SpringBootApplication
 @ComponentScan({
-        "com.gluonhq.ignite.spring"
+        "com.gluonhq.ignite.spring",
+        "fr.softsf.sudofx2024.utils",
 })
 public class SudoMain extends Application {
 
@@ -47,7 +47,8 @@ public class SudoMain extends Application {
     private FXMLLoader fxmlLoader;
 
     @Getter
-    private static final OsDynamicFolders.IOsFoldersFactory folderFactory = new OsDynamicFolders(OS_NAME.getOs()).getIOsFoldersFactory();
+    @Autowired
+    WindowsFolderFactory osFolderFactory;
 
     private IPrimaryStageView iPrimaryStageView;
 
@@ -63,11 +64,11 @@ public class SudoMain extends Application {
     @Override
     public void init() {
         context.init(() -> SpringApplication.run(SudoMain.class));
-        new MyLogback(folderFactory);
+        new MyLogback(osFolderFactory);
     }
 
     private void initializeScene() throws IOException {
-        keystore = new ApplicationKeystore(folderFactory);
+        keystore = new ApplicationKeystore(osFolderFactory);
         fxmlLoader.setLocation(getFXMLLoader("splashscreen-view").getLocation());
         scene = new Scene(fxmlLoader.load(), -1, -1, Color.TRANSPARENT);
         scene.getStylesheets().add((Objects.requireNonNull(SudoMain.class.getResource(RESOURCES_CSS_PATH.getPath()))).toExternalForm());
@@ -145,8 +146,8 @@ public class SudoMain extends Application {
     }
 
     private void loadingFlywayAndHibernate() {
-        DatabaseMigration.configure(keystore, folderFactory);
-        Session session = HibernateSessionFactoryManager.getSessionFactoryInit(new HSQLDBSessionFactoryConfigurator(keystore, folderFactory)).openSession();
+        DatabaseMigration.configure(keystore, osFolderFactory);
+        Session session = HibernateSessionFactoryManager.getSessionFactoryInit(new HSQLDBSessionFactoryConfigurator(keystore, osFolderFactory)).openSession();
         session.close();
     }
 

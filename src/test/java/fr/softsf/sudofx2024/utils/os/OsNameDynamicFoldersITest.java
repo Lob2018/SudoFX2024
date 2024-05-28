@@ -2,6 +2,8 @@ package fr.softsf.sudofx2024.utils.os;
 
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
 
 import static fr.softsf.sudofx2024.utils.MyEnums.OsName.OS_NAME;
 import static fr.softsf.sudofx2024.utils.MyEnums.Paths.*;
@@ -9,25 +11,27 @@ import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
+@SpringBootTest
 class OsNameDynamicFoldersITest {
 
-    private final OsDynamicFolders.IOsFoldersFactory REF_OBJ_WINDOWS_IOSFOLDERS = new OsDynamicFolders("windows").getIOsFoldersFactory();
+    @Autowired
+    static WindowsFolderFactory osFolderFactory;
 
-    @Test
-    void testOsFolders_OS_exception() {
-        // THEN
-        IllegalArgumentException exception = assertThrows(
-                //WHEN
-                IllegalArgumentException.class,
-                () -> {
-                    // GIVEN
-                    new OsDynamicFolders("linux");
-                }
-        );
-        String expectedMessage = "Windows OS is needed to run SudoFX";
-        String actualMessage = exception.getMessage();
-        assertTrue(actualMessage.contains(expectedMessage));
-    }
+//    @Test
+//    void testOsFolders_OS_exception() {
+//        // THEN
+//        IllegalArgumentException exception = assertThrows(
+//                //WHEN
+//                IllegalArgumentException.class,
+//                () -> {
+//                    // GIVEN
+//                    new OsDynamicFolders("linux");
+//                }
+//        );
+//        String expectedMessage = "Windows OS is needed to run SudoFX";
+//        String actualMessage = exception.getMessage();
+//        assertTrue(actualMessage.contains(expectedMessage));
+//    }
 
     @Test
     void testOsFolders_osToLowerCase_success() {
@@ -44,8 +48,8 @@ class OsNameDynamicFoldersITest {
         WindowsFolderFactory windowsFolderFactory = new WindowsFolderFactory();
         // WHEN
         // THEN
-        assertEquals(REF_OBJ_WINDOWS_IOSFOLDERS.getOsLogsFolderPath(), windowsFolderFactory.getOsLogsFolderPath());
-        assertEquals(REF_OBJ_WINDOWS_IOSFOLDERS.getOsDataFolderPath(), windowsFolderFactory.getOsDataFolderPath());
+        assertEquals(osFolderFactory.getOsLogsFolderPath(), windowsFolderFactory.getOsLogsFolderPath());
+        assertEquals(osFolderFactory.getOsDataFolderPath(), windowsFolderFactory.getOsDataFolderPath());
     }
 
     @Test

@@ -1,14 +1,15 @@
 package fr.softsf.sudofx2024.utils.os;
 
-import fr.softsf.sudofx2024.utils.MyEnums;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Component;
 
 import java.io.File;
 
 import static fr.softsf.sudofx2024.utils.MyEnums.Paths.*;
 
 @Slf4j
-public final class WindowsFolderFactory implements OsDynamicFolders.IOsFoldersFactory {
+@Component
+public class WindowsFolderFactory implements OsDynamicFolders.IOsFoldersFactory {
     private final String LOGS_FOLDER_FOR_SUDO_FX;
     private final String DATA_FOLDER_FOR_SUDO_FX;
 

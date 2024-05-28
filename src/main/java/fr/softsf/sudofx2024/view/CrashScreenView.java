@@ -4,6 +4,7 @@ import fr.softsf.sudofx2024.SudoMain;
 import fr.softsf.sudofx2024.utils.FileSystemManager;
 import fr.softsf.sudofx2024.utils.I18n;
 import fr.softsf.sudofx2024.utils.JVMApplicationProperties;
+import fr.softsf.sudofx2024.utils.os.WindowsFolderFactory;
 import javafx.animation.*;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
@@ -22,7 +23,9 @@ import javafx.stage.Screen;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javafx.util.Duration;
+import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -38,7 +41,11 @@ import static fr.softsf.sudofx2024.utils.MyEnums.Paths.SUPPOSED_DATA_FOLDER_FOR_
 @Slf4j
 public final class CrashScreenView implements SudoMain.IPrimaryStageView {
 
-    private static final String OS_DATA_FOLDER_PATH = SudoMain.getFolderFactory().getOsDataFolderPath();
+    @Getter
+    @Autowired
+    static WindowsFolderFactory osFolderFactory;
+
+    private static final String OS_DATA_FOLDER_PATH = osFolderFactory.getOsDataFolderPath();
 
     @FXML
     private VBox crashscreenvbox;
