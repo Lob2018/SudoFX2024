@@ -46,7 +46,6 @@ public class SudoMain extends Application {
     @Autowired
     private FXMLLoader fxmlLoader;
 
-    @Getter
     @Autowired
     WindowsFolderFactory osFolderFactory;
 
@@ -91,7 +90,7 @@ public class SudoMain extends Application {
                 } finally {
                     Throwable finalThrowable = throwable;
                     Platform.runLater(() -> {
-                        loadingVirtualThreadExecutorResult(finalThrowable, startTime, iSplashScreenView);
+                        loadingThreadExecutorResult(finalThrowable, startTime, iSplashScreenView);
                         // TODO Get & Set latest saved view from initializationAsynchronousTask
                     });
                 }
@@ -102,18 +101,18 @@ public class SudoMain extends Application {
         }
     }
 
-    private void loadingVirtualThreadExecutorResult(final Throwable throwable, final long startTime, final ISplashScreenView iSplashScreenView) {
+    private void loadingThreadExecutorResult(final Throwable throwable, final long startTime, final ISplashScreenView iSplashScreenView) {
         if (throwable == null) {
             final long minimumTimelapse = Math.max(0, 1000 - (System.currentTimeMillis() - startTime));
             PauseTransition pause = getPauseTransition("fullmenu-view", minimumTimelapse, iSplashScreenView);
             pause.play();
         } else {
-            errorInLoadingVirtualThread(throwable, iSplashScreenView);
+            errorInLoadingThread(throwable, iSplashScreenView);
         }
     }
 
-    private void errorInLoadingVirtualThread(Throwable throwable, ISplashScreenView iSplashScreenView) {
-        log.error(String.format("██ Error in splash screen initialization virtual thread : %s", throwable.getMessage()), throwable);
+    private void errorInLoadingThread(Throwable throwable, ISplashScreenView iSplashScreenView) {
+        log.error(String.format("██ Error in splash screen initialization thread : %s", throwable.getMessage()), throwable);
         stop();
         SQLInvalidAuthorizationSpecException sqlInvalidAuthorizationSpecException = getSQLInvalidAuthorizationSpecException(throwable);
         if (sqlInvalidAuthorizationSpecException != null) {
