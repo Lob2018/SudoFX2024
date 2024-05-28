@@ -37,7 +37,7 @@ import static fr.softsf.sudofx2024.utils.MyEnums.Paths.*;
 @SpringBootApplication
 @ComponentScan({
         "com.gluonhq.ignite.spring",
-        "fr.softsf.sudofx2024.utils",
+        "fr.softsf.sudofx2024.*",
 })
 public class SudoMain extends Application {
 

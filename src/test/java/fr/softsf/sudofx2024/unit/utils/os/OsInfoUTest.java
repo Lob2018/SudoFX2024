@@ -6,7 +6,7 @@ import static fr.softsf.sudofx2024.utils.MyEnums.OsName.OS_NAME;
 import static fr.softsf.sudofx2024.utils.MyEnums.Paths.USER_HOME;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class OsNameInfoUTest {
+class OsInfoUTest {
 
     @Test
     void testOsInfoTest_UserHomePath_success() {

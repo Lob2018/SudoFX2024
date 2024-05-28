@@ -12,26 +12,42 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 @SpringBootTest
-class OsNameDynamicFoldersITest {
+class OsDynamicFoldersITest {
 
     @Autowired
-    static WindowsFolderFactory osFolderFactory;
+    WindowsFolderFactory osFolderFactory;
 
-//    @Test
-//    void testOsFolders_OS_exception() {
-//        // THEN
-//        IllegalArgumentException exception = assertThrows(
-//                //WHEN
-//                IllegalArgumentException.class,
-//                () -> {
-//                    // GIVEN
-//                    new OsDynamicFolders("linux");
-//                }
-//        );
-//        String expectedMessage = "Windows OS is needed to run SudoFX";
-//        String actualMessage = exception.getMessage();
-//        assertTrue(actualMessage.contains(expectedMessage));
-//    }
+    @Test
+    void testOsFolders_OS_exception() {
+        OsDynamicFolders osDynamicFolders = new OsDynamicFolders();
+        osDynamicFolders.setWrongOsForTests();
+        // THEN
+        // GIVEN
+        IllegalArgumentException exception = assertThrows(
+                //WHEN
+                IllegalArgumentException.class,
+                osDynamicFolders::osFolderFactory
+        );
+        String expectedMessage = "Windows OS is needed to run SudoFX2024";
+        String actualMessage = exception.getMessage();
+        assertTrue(actualMessage.contains(expectedMessage));
+    }
+
+    @Test
+    void testOsFolders_OS_IS_NULL_exception() {
+        OsDynamicFolders osDynamicFolders = new OsDynamicFolders();
+        osDynamicFolders.setNullOsForTests();
+        // THEN
+        // GIVEN
+        IllegalArgumentException exception = assertThrows(
+                //WHEN
+                IllegalArgumentException.class,
+                osDynamicFolders::osFolderFactory
+        );
+        String expectedMessage = "Windows OS is needed to run SudoFX2024";
+        String actualMessage = exception.getMessage();
+        assertTrue(actualMessage.contains(expectedMessage));
+    }
 
     @Test
     void testOsFolders_osToLowerCase_success() {

@@ -1,5 +1,6 @@
 package fr.softsf.sudofx2024.integration.database;
 
+import fr.softsf.sudofx2024.SudoMain;
 import fr.softsf.sudofx2024.interfaces.IKeystore;
 import fr.softsf.sudofx2024.utils.database.DatabaseMigration;
 import fr.softsf.sudofx2024.utils.database.hibernate.HibernateSessionFactoryManager;
@@ -10,6 +11,7 @@ import org.flywaydb.core.api.FlywayException;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -22,14 +24,11 @@ import static org.mockito.Mockito.*;
 class DatabaseMigrationITest {
 
     @Autowired
-    static WindowsFolderFactory osFolderFactory;
+    WindowsFolderFactory osFolderFactory;
 
-    private static final IKeystore iKeystore = new ApplicationKeystore(osFolderFactory);
-
-    @BeforeAll
-    static void setUpAll() {
-        // Flyway configuration
-        DatabaseMigration.configure(iKeystore, osFolderFactory);
+    @BeforeEach
+    void beforeEach() {
+        DatabaseMigration.configure(new ApplicationKeystore(osFolderFactory), osFolderFactory);
     }
 
     @AfterEach
@@ -39,7 +38,7 @@ class DatabaseMigrationITest {
 
     @Test
     void testConfigureWithWrongPassword_fail() {
-        IKeystore iKeystoreMock=mock(IKeystore.class);
+        IKeystore iKeystoreMock = mock(IKeystore.class);
         when(iKeystoreMock.getUsername()).thenReturn("");
         assertThrows(FlywayException.class, () -> DatabaseMigration.configure(iKeystoreMock, osFolderFactory));
     }

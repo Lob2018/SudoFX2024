@@ -1,5 +1,6 @@
 package fr.softsf.sudofx2024.utils.database.keystore;
 
+import fr.softsf.sudofx2024.SudoMain;
 import fr.softsf.sudofx2024.utils.FileSystemManager;
 import fr.softsf.sudofx2024.utils.os.OsDynamicFolders;
 
@@ -23,10 +24,9 @@ import java.nio.file.Paths;
 class ApplicationKeystoreITest {
 
     @Autowired
-    static WindowsFolderFactory osFolderFactory;
+    WindowsFolderFactory osFolderFactory;
 
     private static OsDynamicFolders.IOsFoldersFactory iOsFolderFactoryMocked;
-    private static OsDynamicFolders.IOsFoldersFactory iOsFolderFactory;
 
     private ListAppender<ILoggingEvent> logWatcher;
 
@@ -35,9 +35,7 @@ class ApplicationKeystoreITest {
 
     @BeforeAll
     static void setupAll() {
-        OsDynamicFolders.IOsFoldersFactory iOsFolderFactoryInit = osFolderFactory;
-        new FileSystemManager().deleteFolder(Paths.get(iOsFolderFactoryInit.getOsDataFolderPath()), SUPPOSED_DATA_FOLDER_FOR_SUDO_FX.getPath());
-        iOsFolderFactory = osFolderFactory;
+        new FileSystemManager().deleteFolder(Paths.get(SUPPOSED_DATA_FOLDER_FOR_SUDO_FX.getPath()), SUPPOSED_DATA_FOLDER_FOR_SUDO_FX.getPath());
     }
 
     @BeforeEach
@@ -57,7 +55,7 @@ class ApplicationKeystoreITest {
     @Test
     @Order(0)
     void constructorForKeystoreInitialization_success() {
-        ApplicationKeystore applicationKeystoreInit = new ApplicationKeystore(iOsFolderFactory);
+        ApplicationKeystore applicationKeystoreInit = new ApplicationKeystore(osFolderFactory);
         passInit = applicationKeystoreInit.getPassword();
         userInit = applicationKeystoreInit.getUsername();
         assertEquals(passInit.length(), userInit.length(), 24);
@@ -66,7 +64,7 @@ class ApplicationKeystoreITest {
     @Test
     @Order(1)
     void constructorForAlreadyExistingKeystore_success() {
-        ApplicationKeystore applicationKeystoreInit = new ApplicationKeystore(iOsFolderFactory);
+        ApplicationKeystore applicationKeystoreInit = new ApplicationKeystore(osFolderFactory);
         String pass = applicationKeystoreInit.getPassword();
         String user = applicationKeystoreInit.getUsername();
         assertEquals(pass.length(), user.length(), 24);

@@ -1,5 +1,6 @@
 package fr.softsf.sudofx2024.utils.database.hibernate;
 
+import fr.softsf.sudofx2024.interfaces.IKeystore;
 import fr.softsf.sudofx2024.model.*;
 import fr.softsf.sudofx2024.utils.database.DatabaseMigration;
 import fr.softsf.sudofx2024.utils.database.keystore.ApplicationKeystore;
@@ -13,6 +14,7 @@ import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import static fr.softsf.sudofx2024.utils.MyEnums.OsName.OS_NAME;
 import static fr.softsf.sudofx2024.utils.MyEnums.Paths.USER_HOME;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
@@ -21,15 +23,15 @@ import static org.mockito.Mockito.*;
 class HSQLDBSessionFactoryConfiguratorITest {
 
     @Autowired
-    static WindowsFolderFactory osFolderFactory;
+    WindowsFolderFactory osFolderFactory;
+    private ApplicationKeystore iKeystore;
+    private HSQLDBSessionFactoryConfigurator configurator;
 
-    private static HSQLDBSessionFactoryConfigurator configurator;
-    private static final ApplicationKeystore iKeystore = new ApplicationKeystore(osFolderFactory);
-
-    @BeforeAll
-    static void setUpAll() {
+    @BeforeEach
+    void beforeEach() {
+        iKeystore= new ApplicationKeystore(osFolderFactory);
         DatabaseMigration.configure(iKeystore, osFolderFactory);
-        configurator = new HSQLDBSessionFactoryConfigurator(iKeystore, osFolderFactory);
+        configurator= new HSQLDBSessionFactoryConfigurator(iKeystore, osFolderFactory);
     }
 
     @AfterEach

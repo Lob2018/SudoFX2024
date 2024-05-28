@@ -1,5 +1,6 @@
 package fr.softsf.sudofx2024.utils.database.hibernate;
 
+import fr.softsf.sudofx2024.SudoMain;
 import fr.softsf.sudofx2024.utils.database.DatabaseMigration;
 import fr.softsf.sudofx2024.utils.database.keystore.ApplicationKeystore;
 import fr.softsf.sudofx2024.utils.os.WindowsFolderFactory;
@@ -16,12 +17,12 @@ import static org.mockito.Mockito.*;
 class HibernateSessionFactoryManagerITest {
 
     @Autowired
-    static WindowsFolderFactory osFolderFactory;
-    private static final ApplicationKeystore keystore = new ApplicationKeystore(osFolderFactory);
+    WindowsFolderFactory osFolderFactory;
+    private ApplicationKeystore keystore;
 
-    @BeforeAll
-    static void setUpAll() {
-        // Flyway configuration
+    @BeforeEach
+    void beforeEach() {
+        keystore = new ApplicationKeystore(osFolderFactory);
         DatabaseMigration.configure(keystore, osFolderFactory);
     }
 

@@ -4,22 +4,32 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import static fr.softsf.sudofx2024.utils.MyEnums.OsName.WRONG_OS_FOR_TESTS;
 import static fr.softsf.sudofx2024.utils.MyEnums.OsName.OS_NAME;
 
 @Configuration
 public class OsDynamicFolders {
+
+    private String os = OS_NAME.getOs();
 
     @Autowired
     WindowsFolderFactory windowsFolderFactory;
 
     @Bean
     public WindowsFolderFactory osFolderFactory() throws IllegalArgumentException {
-        String os = OS_NAME.getOs();
         if (os != null && os.contains("win")) {
             return windowsFolderFactory;
         } else {
-            throw new IllegalArgumentException("Windows OS is needed to run SudoFX");
+            throw new IllegalArgumentException("Windows OS is needed to run SudoFX2024");
         }
+    }
+
+    void setWrongOsForTests() {
+        os = WRONG_OS_FOR_TESTS.getOs();
+    }
+
+    void setNullOsForTests() {
+        os = null;
     }
 
     public interface IOsFoldersFactory {
