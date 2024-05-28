@@ -43,9 +43,9 @@ public final class CrashScreenView implements SudoMain.IPrimaryStageView {
 
     @Getter
     @Autowired
-    static WindowsFolderFactory osFolderFactory;
+    WindowsFolderFactory osFolderFactory;
 
-    private static final String OS_DATA_FOLDER_PATH = osFolderFactory.getOsDataFolderPath();
+   // private final String OS_DATA_FOLDER_PATH = osFolderFactory.getOsDataFolderPath();
 
     @FXML
     private VBox crashscreenvbox;
@@ -78,7 +78,7 @@ public final class CrashScreenView implements SudoMain.IPrimaryStageView {
     @FXML
     private void resetButtonClick() {
         log.info("▓▓▓▓ The user choose to reset the application data");
-        Path pathToDelete = Paths.get(OS_DATA_FOLDER_PATH);
+        Path pathToDelete = Paths.get(osFolderFactory.getOsDataFolderPath());
         if (new FileSystemManager().deleteFolder(pathToDelete, SUPPOSED_DATA_FOLDER_FOR_SUDO_FX.getPath())) {
             log.info("▓▓▓▓ The directory is deleted");
         } else {
@@ -113,7 +113,7 @@ public final class CrashScreenView implements SudoMain.IPrimaryStageView {
         crashscreenvboxCenterhboxLabel.setText(I18n.getValue("crashscreen.message"));
         crashscreenvboxCenterhboxLabel.setWrapText(true);
         crashscreenvboxCenterhboxLabel.setTextFill(crashDefaultFontColor);
-        crashscreenvboxCenterhboxLabel2.setText(I18n.getValue("crashscreen.extramessage") + "\n" + OS_DATA_FOLDER_PATH);
+        crashscreenvboxCenterhboxLabel2.setText(I18n.getValue("crashscreen.extramessage") + "\n" + osFolderFactory.getOsDataFolderPath());
         crashscreenvboxCenterhboxLabel2.setWrapText(true);
         crashscreenvboxCenterhboxLabel2.setTextFill(crashDefaultFontColor);
         buttonReset.setText(I18n.getValue("crashscreen.reset"));

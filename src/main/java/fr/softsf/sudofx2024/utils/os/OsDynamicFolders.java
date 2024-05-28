@@ -23,11 +23,11 @@ public class OsDynamicFolders {
             throw new IllegalArgumentException("Windows OS is needed to run SudoFX2024");
         }
     }
-
+    // Only for tests
     void setWrongOsForTests() {
         os = WRONG_OS_FOR_TESTS.getOs();
     }
-
+    // Only for tests
     void setNullOsForTests() {
         os = null;
     }

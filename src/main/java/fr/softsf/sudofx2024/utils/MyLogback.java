@@ -52,6 +52,7 @@ public final class MyLogback {
         return context;
     }
 
+    // Only for tests
     void setLogBackPathForTests() {
         logBackPath = CONFIG_LOGBACK_INVALID_PATH_FOR_TESTS.getPath();
     }
