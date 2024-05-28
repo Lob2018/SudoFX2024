@@ -1,8 +1,6 @@
 package fr.softsf.sudofx2024.utils;
 
-import fr.softsf.sudofx2024.utils.os.OsDynamicFolders;
 import fr.softsf.sudofx2024.utils.os.WindowsFolderFactory;
-import lombok.Getter;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -26,11 +24,14 @@ class MyLogbackITest {
     @Autowired
     WindowsFolderFactory osFolderFactory;
 
+    @Autowired
+    MyLogback setupMyLogback;
+
     private MyLogback REF_OBJ_MyLogback;
 
     @BeforeEach
     void setup() {
-        REF_OBJ_MyLogback = new MyLogback(osFolderFactory);
+        REF_OBJ_MyLogback = setupMyLogback;
     }
 
     @Test

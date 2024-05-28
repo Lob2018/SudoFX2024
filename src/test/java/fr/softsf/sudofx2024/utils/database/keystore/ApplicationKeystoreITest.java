@@ -1,6 +1,5 @@
 package fr.softsf.sudofx2024.utils.database.keystore;
 
-import fr.softsf.sudofx2024.SudoMain;
 import fr.softsf.sudofx2024.utils.FileSystemManager;
 import fr.softsf.sudofx2024.utils.os.OsDynamicFolders;
 
@@ -25,6 +24,8 @@ class ApplicationKeystoreITest {
 
     @Autowired
     WindowsFolderFactory osFolderFactory;
+    @Autowired
+    ApplicationKeystore keystore;
 
     private static OsDynamicFolders.IOsFoldersFactory iOsFolderFactoryMocked;
 
@@ -55,18 +56,18 @@ class ApplicationKeystoreITest {
     @Test
     @Order(0)
     void constructorForKeystoreInitialization_success() {
-        ApplicationKeystore applicationKeystoreInit = new ApplicationKeystore(osFolderFactory);
-        passInit = applicationKeystoreInit.getPassword();
-        userInit = applicationKeystoreInit.getUsername();
+        keystore.setupApplicationKeystore();
+        passInit = keystore.getPassword();
+        userInit = keystore.getUsername();
         assertEquals(passInit.length(), userInit.length(), 24);
     }
 
     @Test
     @Order(1)
     void constructorForAlreadyExistingKeystore_success() {
-        ApplicationKeystore applicationKeystoreInit = new ApplicationKeystore(osFolderFactory);
-        String pass = applicationKeystoreInit.getPassword();
-        String user = applicationKeystoreInit.getUsername();
+        keystore.setupApplicationKeystore();
+        String pass = keystore.getPassword();
+        String user = keystore.getUsername();
         assertEquals(pass.length(), user.length(), 24);
         assertEquals(user, userInit);
         assertEquals(pass, passInit);
@@ -74,12 +75,14 @@ class ApplicationKeystoreITest {
 
     @Test
     void constructorException_fail() {
+        WindowsFolderFactory osFolderFactoryMock=mock(WindowsFolderFactory.class);
         // GIVEN
-        when(iOsFolderFactoryMocked.getOsDataFolderPath()).thenThrow(new RuntimeException(new Exception("██ Exception")));
+        when(osFolderFactoryMock.getOsDataFolderPath()).thenThrow(new RuntimeException(new Exception("██ Exception")));
+        keystore.setIosFolderFactory(osFolderFactoryMock);
         // WHEN
-        new ApplicationKeystore(iOsFolderFactoryMocked);
+        keystore.setupApplicationKeystore();
         // THEN
-        verify(iOsFolderFactoryMocked).getOsDataFolderPath();
+        verify(osFolderFactoryMock).getOsDataFolderPath();
         assert (logWatcher.list.get(1).getFormattedMessage()).contains("██ Exception");
     }
 }

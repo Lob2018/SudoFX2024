@@ -12,14 +12,20 @@ import fr.softsf.sudofx2024.annotations.ExcludedFromCoverageReportGenerated;
 import fr.softsf.sudofx2024.interfaces.IKeystore;
 import fr.softsf.sudofx2024.utils.database.GenerateSecret;
 import fr.softsf.sudofx2024.utils.os.OsDynamicFolders;
+import fr.softsf.sudofx2024.utils.os.WindowsFolderFactory;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import javax.crypto.*;
 import javax.crypto.spec.SecretKeySpec;
 
 @Slf4j
-public final class ApplicationKeystore implements IKeystore {
+@Component
+public class ApplicationKeystore implements IKeystore {
+    @Autowired
+    WindowsFolderFactory osFolderFactory;
 
     private static final String KEYSTORE_PASSWORD_FROM_UUID = String.valueOf(UUID.nameUUIDFromBytes(System.getProperty("user.name").getBytes()));
     private static final String KEYSTORE_TYPE = "pkcs12";
@@ -30,23 +36,24 @@ public final class ApplicationKeystore implements IKeystore {
     private static final String USERNAME_ALIAS = "db-user-alias";
     private static final String PASS_ALIAS = "db-pass-alias";
     private IEncryptionService iEncryptionService;
+
     @Getter
     private String username;
     @Getter
     private String password;
 
-    public ApplicationKeystore(final OsDynamicFolders.IOsFoldersFactory iOsFolderFactory) {
+    public void setupApplicationKeystore() {
         log.info("\n▓▓ ApplicationKeystore starts");
         try {
             ks = KeyStore.getInstance(KEYSTORE_TYPE);
-            keystoreFilePath = iOsFolderFactory.getOsDataFolderPath() + "/SudokuFX2024KeyStore.p12";
+            keystoreFilePath = osFolderFactory.getOsDataFolderPath() + "/SudokuFX2024KeyStore.p12";
             createOrUpdateKeystore();
             loadKeyStore();
             symmetricKey();
             credentials(USERNAME_ALIAS);
             credentials(PASS_ALIAS);
         } catch (Exception e) {
-            log.error(String.format("██ Exception catch inside ApplicationKeystore constructor : %s", e.getMessage()), e);
+            log.error(String.format("██ Exception catch inside ApplicationKeystore setupApplicationKeystore() : %s", e.getMessage()), e);
         }
         log.info("\n▓▓ ApplicationKeystore is ready");
     }
@@ -188,6 +195,11 @@ public final class ApplicationKeystore implements IKeystore {
         String encrypt(String original);
 
         String decrypt(String cypher);
+    }
+
+    // Only for tests
+    void setIosFolderFactory(WindowsFolderFactory osFolderFactory){
+        this.osFolderFactory = osFolderFactory;
     }
 
 }

@@ -1,6 +1,7 @@
 package fr.softsf.sudofx2024;
 
 import com.gluonhq.ignite.spring.SpringContext;
+import fr.softsf.sudofx2024.interfaces.IKeystore;
 import fr.softsf.sudofx2024.utils.database.DatabaseMigration;
 import fr.softsf.sudofx2024.utils.DynamicFontSize;
 import fr.softsf.sudofx2024.utils.MyLogback;
@@ -45,16 +46,17 @@ public class SudoMain extends Application {
 
     @Autowired
     private FXMLLoader fxmlLoader;
-
     @Autowired
     WindowsFolderFactory osFolderFactory;
+    @Autowired
+    MyLogback setupMyLogback;
+    @Autowired
+    ApplicationKeystore keystore;
 
     private IPrimaryStageView iPrimaryStageView;
 
     @Getter
     private static Scene scene;
-
-    private static ApplicationKeystore keystore;
 
     public static void main(String[] args) {
         launch(args);
@@ -63,11 +65,10 @@ public class SudoMain extends Application {
     @Override
     public void init() {
         context.init(() -> SpringApplication.run(SudoMain.class));
-        new MyLogback(osFolderFactory);
     }
 
     private void initializeScene() throws IOException {
-        keystore = new ApplicationKeystore(osFolderFactory);
+        keystore.setupApplicationKeystore();
         fxmlLoader.setLocation(getFXMLLoader("splashscreen-view").getLocation());
         scene = new Scene(fxmlLoader.load(), -1, -1, Color.TRANSPARENT);
         scene.getStylesheets().add((Objects.requireNonNull(SudoMain.class.getResource(RESOURCES_CSS_PATH.getPath()))).toExternalForm());

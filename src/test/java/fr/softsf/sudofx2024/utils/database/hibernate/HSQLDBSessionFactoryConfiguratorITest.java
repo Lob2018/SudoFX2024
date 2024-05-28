@@ -14,7 +14,6 @@ import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import static fr.softsf.sudofx2024.utils.MyEnums.OsName.OS_NAME;
 import static fr.softsf.sudofx2024.utils.MyEnums.Paths.USER_HOME;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
@@ -24,25 +23,21 @@ class HSQLDBSessionFactoryConfiguratorITest {
 
     @Autowired
     WindowsFolderFactory osFolderFactory;
-    private ApplicationKeystore iKeystore;
+    @Autowired
+    ApplicationKeystore keystore;
+
     private HSQLDBSessionFactoryConfigurator configurator;
 
     @BeforeEach
     void beforeEach() {
-        iKeystore= new ApplicationKeystore(osFolderFactory);
-        DatabaseMigration.configure(iKeystore, osFolderFactory);
-        configurator= new HSQLDBSessionFactoryConfigurator(iKeystore, osFolderFactory);
+        keystore.setupApplicationKeystore();
+        DatabaseMigration.configure(keystore, osFolderFactory);
+        configurator= new HSQLDBSessionFactoryConfigurator(keystore, osFolderFactory);
     }
 
     @AfterEach
     void tearDown() {
         HibernateSessionFactoryManager.closeSessionFactory();
-    }
-
-    private static OsDynamicFolders.IOsFoldersFactory init() {
-        OsDynamicFolders.IOsFoldersFactory mockIOsFolderFactory = Mockito.mock(OsDynamicFolders.IOsFoldersFactory.class);
-        Mockito.when(mockIOsFolderFactory.getOsDataFolderPath()).thenReturn(USER_HOME.getPath().replace("\\", "/") + "/AppData/Local/Soft64.fr/SudokuFX/data-sudofx");
-        return mockIOsFolderFactory;
     }
 
     @Test

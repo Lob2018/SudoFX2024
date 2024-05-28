@@ -10,7 +10,6 @@ import fr.softsf.sudofx2024.utils.os.WindowsFolderFactory;
 import org.flywaydb.core.api.FlywayException;
 
 import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,9 +25,13 @@ class DatabaseMigrationITest {
     @Autowired
     WindowsFolderFactory osFolderFactory;
 
+    @Autowired
+    ApplicationKeystore keystore;
+
     @BeforeEach
     void beforeEach() {
-        DatabaseMigration.configure(new ApplicationKeystore(osFolderFactory), osFolderFactory);
+        keystore.setupApplicationKeystore();
+        DatabaseMigration.configure(keystore, osFolderFactory);
     }
 
     @AfterEach

@@ -18,11 +18,12 @@ class HibernateSessionFactoryManagerITest {
 
     @Autowired
     WindowsFolderFactory osFolderFactory;
-    private ApplicationKeystore keystore;
+    @Autowired
+    ApplicationKeystore keystore;
 
     @BeforeEach
     void beforeEach() {
-        keystore = new ApplicationKeystore(osFolderFactory);
+        keystore.setupApplicationKeystore();
         DatabaseMigration.configure(keystore, osFolderFactory);
     }
 
