@@ -23,13 +23,14 @@ import java.util.Calendar;
 import java.util.Objects;
 
 import javafx.animation.Interpolator;
+import org.springframework.stereotype.Component;
 
 import static fr.softsf.sudofx2024.utils.MyEnums.Paths.LOGO_SUDO_PNG_PATH;
 
 /**
  * SplashScreenView view without logic (not tested)
  */
-public final class SplashScreenView implements SudoMain.ISplashScreenView {
+public class SplashScreenView implements SudoMain.ISplashScreenView {
 
     @FXML
     private VBox splashscreenvbox;

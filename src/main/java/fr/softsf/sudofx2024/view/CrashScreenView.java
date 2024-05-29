@@ -39,7 +39,7 @@ import lombok.extern.slf4j.Slf4j;
  * CrashScreenView view without logic (not tested)
  */
 @Slf4j
-public final class CrashScreenView implements SudoMain.IPrimaryStageView {
+public class CrashScreenView implements SudoMain.IPrimaryStageView {
 
     @Getter
     @Autowired

@@ -44,13 +44,14 @@ public class FullMenuView implements SudoMain.IPrimaryStageView {
         hbox.setAlignment(Pos.BOTTOM_CENTER);
         buttonHello.setGraphic(hbox);
         buttonHello.setStyle("-fx-background-color: #00FF00;");
+        //
+        welcomeText.textProperty().bindBidirectional(fullMenuViewModel.welcomeProperty());
     }
 
     @FXML
     private void onHelloButtonClick(ActionEvent event) {
 
         fullMenuViewModel.test();
-        welcomeText.setText("Coucou");
 
     }
 

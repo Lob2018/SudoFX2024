@@ -1,7 +1,6 @@
 package fr.softsf.sudofx2024;
 
 import com.gluonhq.ignite.spring.SpringContext;
-import fr.softsf.sudofx2024.service.SoftwareService;
 import fr.softsf.sudofx2024.utils.database.DatabaseMigration;
 import fr.softsf.sudofx2024.utils.DynamicFontSize;
 import fr.softsf.sudofx2024.utils.MyLogback;
@@ -53,6 +52,7 @@ public class SudoMain extends Application {
     @Autowired
     ApplicationKeystore keystore;
 
+    private ISplashScreenView isplashScreenView;
     private IPrimaryStageView iPrimaryStageView;
 
     @Getter
@@ -78,9 +78,9 @@ public class SudoMain extends Application {
     public void start(final Stage primaryStageP) {
         try {
             initializeScene();
-            final ISplashScreenView iSplashScreenView = fxmlLoader.getController();
+            isplashScreenView = fxmlLoader.getController();
             new DynamicFontSize(scene);
-            iSplashScreenView.showSplashScreen();
+            isplashScreenView.showSplashScreen();
             final long startTime = System.currentTimeMillis();
             new Thread(() -> {
                 Throwable throwable = null;
@@ -91,7 +91,7 @@ public class SudoMain extends Application {
                 } finally {
                     Throwable finalThrowable = throwable;
                     Platform.runLater(() -> {
-                        loadingThreadExecutorResult(finalThrowable, startTime, iSplashScreenView);
+                        loadingThreadExecutorResult(finalThrowable, startTime);
                         // TODO Get & Set latest saved view from initializationAsynchronousTask
                     });
                 }
@@ -102,17 +102,17 @@ public class SudoMain extends Application {
         }
     }
 
-    private void loadingThreadExecutorResult(final Throwable throwable, final long startTime, final ISplashScreenView iSplashScreenView) {
+    private void loadingThreadExecutorResult(final Throwable throwable, final long startTime) {
         if (throwable == null) {
             final long minimumTimelapse = Math.max(0, 1000 - (System.currentTimeMillis() - startTime));
-            PauseTransition pause = getPauseTransition("fullmenu-view", minimumTimelapse, iSplashScreenView);
+            PauseTransition pause = getPauseTransition("fullmenu-view", minimumTimelapse);
             pause.play();
         } else {
-            errorInLoadingThread(throwable, iSplashScreenView);
+            errorInLoadingThread(throwable);
         }
     }
 
-    private void errorInLoadingThread(Throwable throwable, ISplashScreenView iSplashScreenView) {
+    private void errorInLoadingThread(Throwable throwable) {
         log.error(String.format("██ Error in splash screen initialization thread : %s", throwable.getMessage()), throwable);
         stop();
         SQLInvalidAuthorizationSpecException sqlInvalidAuthorizationSpecException = getSQLInvalidAuthorizationSpecException(throwable);
@@ -120,7 +120,7 @@ public class SudoMain extends Application {
             Platform.exit();
         } else {
             sqlInvalidAuthorization((Exception) throwable, sqlInvalidAuthorizationSpecException);
-            PauseTransition pause = getPauseTransition("crashscreen-view", 0, iSplashScreenView);
+            PauseTransition pause = getPauseTransition("crashscreen-view", 0);
             pause.play();
         }
     }
@@ -134,12 +134,12 @@ public class SudoMain extends Application {
         }
     }
 
-    private PauseTransition getPauseTransition(String fxmlName, long minimumTimelapse, ISplashScreenView iSplashScreenView) {
+    private PauseTransition getPauseTransition(String fxmlName, long minimumTimelapse) {
         PauseTransition pause = new PauseTransition(Duration.millis(minimumTimelapse));
         pause.setOnFinished(e -> {
             setRootByFXMLName(fxmlName);
             iPrimaryStageView = fxmlLoader.getController();
-            iPrimaryStageView.showPrimaryStage(iSplashScreenView);
+            iPrimaryStageView.showPrimaryStage(isplashScreenView);
         });
         return pause;
     }
