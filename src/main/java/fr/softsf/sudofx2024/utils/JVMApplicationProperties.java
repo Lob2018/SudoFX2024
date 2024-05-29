@@ -13,6 +13,11 @@ public final class JVMApplicationProperties {
     private JVMApplicationProperties() {
     }
 
+    /**
+     * Get the current application name
+     *
+     * @return The current application name
+     */
     public static String getAppName() {
         if (appName.isEmpty()) {
             appName = MyRegex.isValidatedByRegex(System.getProperty(APP_NAME_PROPERTY), MyRegex.getALPHANUMERIC()) ? System.getProperty(APP_NAME_PROPERTY) : "";
@@ -20,6 +25,11 @@ public final class JVMApplicationProperties {
         return appName;
     }
 
+    /**
+     * Get the current application version
+     *
+     * @return The current application version
+     */
     public static String getAppVersion() {
         if (appVersion.isEmpty()) {
             appVersion = MyRegex.isValidatedByRegex(System.getProperty(APP_VERSION_PROPERTY), MyRegex.getVERSION()) ? "v" + System.getProperty(APP_VERSION_PROPERTY) : "";
@@ -27,10 +37,16 @@ public final class JVMApplicationProperties {
         return appVersion;
     }
 
+    /**
+     * Stubbing setter for empty app name
+     */
     static void setEmptyAppNamePropertyForTests() {
         appName = "";
     }
 
+    /**
+     * Stubbing setter for empty app version
+     */
     static void setEmptyAppVersionPropertyForTests() {
         appVersion = "";
     }

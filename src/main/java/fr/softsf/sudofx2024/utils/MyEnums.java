@@ -8,6 +8,9 @@ public final class MyEnums {
     private MyEnums() {
     }
 
+    /**
+     * Enum for OS name
+     */
     public enum OsName {
         OS_NAME(System.getProperty("os.name").toLowerCase()),
         WRONG_OS_FOR_TESTS("wrongOs");
@@ -23,7 +26,11 @@ public final class MyEnums {
         }
     }
 
+    /**
+     * Enum for logs
+     */
     public enum LogBackTxt {
+        EMPTY_HIBERNATE_CONFIGURATION_EXCEPTION("Default Hibernate configuration not set. Please call getSessionFactory(final IHibernateConfiguration iHibernateConfiguration) first."),
         SQL_INVALID_AUTHORIZATION_SPEC_EXCEPTION("""      
                 ██ Risk of loss of application data because database authentication is not valid:
                 ██ You can say no and try restarting the application and if the problem persists, reset the application database.
@@ -61,6 +68,9 @@ public final class MyEnums {
         }
     }
 
+    /**
+     * Enum for paths
+     */
     public enum Paths {
         RESOURCES_FXML_PATH("/fr/softsf/sudofx2024/fxml/"),
         RESOURCES_CSS_PATH("/fr/softsf/sudofx2024/style/style.css"),

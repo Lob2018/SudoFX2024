@@ -31,7 +31,7 @@ public class MyLogback {
 
     @Bean
     public MyLogback setupMyLogback() {
-        logsFolderPath=osFolderFactory.getOsLogsFolderPath();
+        logsFolderPath = osFolderFactory.getOsLogsFolderPath();
         System.setProperty("logs", logsFolderPath + "/" + LOGS_NAME);
         LoggerContext context = configureLogback();
         printLogEntryMessage();
@@ -39,15 +39,28 @@ public class MyLogback {
         return this;
     }
 
+    /**
+     * Prints entry message to the log
+     */
     private static void printLogEntryMessage() {
         log.info(ASCII_LOGO.getLogBackMessage());
     }
 
+    /**
+     * Prints logger status to the log
+     *
+     * @param context The current logger context
+     */
     private static void printLogStatus(final LoggerContext context) {
         StatusPrinter2 statusPrinter2 = new StatusPrinter2();
         statusPrinter2.printInCaseOfErrorsOrWarnings(context);
     }
 
+    /**
+     * Configure LogBack
+     *
+     * @return The Logger context
+     */
     LoggerContext configureLogback() {
         LoggerContext context = (LoggerContext) LoggerFactory.getILoggerFactory();
         try (InputStream inputStream = MyLogback.class.getResourceAsStream(logBackPath)) {
@@ -61,7 +74,9 @@ public class MyLogback {
         return context;
     }
 
-    // Only for tests
+    /**
+     * Stubbing setter for logback path
+     */
     void setLogBackPathForTests() {
         logBackPath = CONFIG_LOGBACK_INVALID_PATH_FOR_TESTS.getPath();
     }

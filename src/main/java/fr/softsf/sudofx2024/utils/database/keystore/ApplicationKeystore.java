@@ -11,7 +11,6 @@ import java.util.UUID;
 import fr.softsf.sudofx2024.annotations.ExcludedFromCoverageReportGenerated;
 import fr.softsf.sudofx2024.interfaces.IKeystore;
 import fr.softsf.sudofx2024.utils.database.GenerateSecret;
-import fr.softsf.sudofx2024.utils.os.OsDynamicFolders;
 import fr.softsf.sudofx2024.utils.os.WindowsFolderFactory;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
@@ -58,6 +57,9 @@ public class ApplicationKeystore implements IKeystore {
         log.info("\n▓▓ ApplicationKeystore is ready");
     }
 
+    /**
+     * Create or update the Keystore
+     */
     @ExcludedFromCoverageReportGenerated
     private void createOrUpdateKeystore() {
         try (FileOutputStream fos = new FileOutputStream(keystoreFilePath, true)) {
@@ -68,6 +70,9 @@ public class ApplicationKeystore implements IKeystore {
         }
     }
 
+    /**
+     * Load the Keystore
+     */
     @ExcludedFromCoverageReportGenerated
     private void loadKeyStore() {
         try (FileInputStream fileInputStream = new FileInputStream(keystoreFilePath)) {
@@ -77,21 +82,27 @@ public class ApplicationKeystore implements IKeystore {
         }
     }
 
+    /**
+     * Check the symmetric key presence
+     */
     @ExcludedFromCoverageReportGenerated
     private void symmetricKey() {
         try {
-            if (!ks.containsAlias(SYMMETRIC_KEY_ALIAS)) {
+            if (ks.containsAlias(SYMMETRIC_KEY_ALIAS)) {
                 symmetricKeyIsInKeystore();
             } else {
-                symmetricKeyIsNotInKeystore();
+                symmetricKeyNotInKeystore();
             }
         } catch (KeyStoreException e) {
             log.error(String.format("██ Exception catch inside symmetricKey/ks.containsAlias(SYMMETRIC_KEY_ALIAS) : %s", e.getMessage()), e);
         }
     }
 
+    /**
+     * Get the symmetric key and set encryption service
+     */
     @ExcludedFromCoverageReportGenerated
-    private void symmetricKeyIsNotInKeystore() {
+    private void symmetricKeyIsInKeystore() {
         try {
             KeyStore.SecretKeyEntry entry = (KeyStore.SecretKeyEntry) ks.getEntry(SYMMETRIC_KEY_ALIAS, new KeyStore.PasswordProtection(pwdArray));
             if (entry != null) {
@@ -102,8 +113,11 @@ public class ApplicationKeystore implements IKeystore {
         }
     }
 
+    /**
+     * Set the symmetric key and set encryption service
+     */
     @ExcludedFromCoverageReportGenerated
-    private void symmetricKeyIsInKeystore() {
+    private void symmetricKeyNotInKeystore() {
         try {
             KeyGenerator keyGen = KeyGenerator.getInstance("AES");
             keyGen.init(256, new SecureRandom());
@@ -115,6 +129,11 @@ public class ApplicationKeystore implements IKeystore {
         }
     }
 
+    /**
+     * Get or set credentials by alias
+     *
+     * @param alias The alias to use
+     */
     @ExcludedFromCoverageReportGenerated
     private void credentials(final String alias) {
         try {
@@ -128,6 +147,11 @@ public class ApplicationKeystore implements IKeystore {
         }
     }
 
+    /**
+     * Set credential by alias
+     *
+     * @param alias The alias
+     */
     @ExcludedFromCoverageReportGenerated
     private void setCredentials(final String alias) {
         try {
@@ -149,6 +173,11 @@ public class ApplicationKeystore implements IKeystore {
         }
     }
 
+    /**
+     * Get credential by alias
+     *
+     * @param alias The alias
+     */
     @ExcludedFromCoverageReportGenerated
     private void getCredentials(final String alias) {
         try {
@@ -170,6 +199,12 @@ public class ApplicationKeystore implements IKeystore {
         }
     }
 
+    /**
+     * Add alias:secret in the Keystore
+     *
+     * @param alias     The alias
+     * @param secretKey The secret
+     */
     @ExcludedFromCoverageReportGenerated
     private void addToKeystore(final String alias, final SecretKey secretKey) {
         KeyStore.SecretKeyEntry secret = new KeyStore.SecretKeyEntry(secretKey);
@@ -182,6 +217,13 @@ public class ApplicationKeystore implements IKeystore {
         writeTheKeystore(ks, keystoreFilePath, pwdArray);
     }
 
+    /**
+     * Write data to the keystore file
+     *
+     * @param ks               The Keystore
+     * @param keystoreFileName The Keystore filename
+     * @param pwdArray         The keystore password
+     */
     @ExcludedFromCoverageReportGenerated
     private static void writeTheKeystore(final KeyStore ks, final String keystoreFileName, final char[] pwdArray) {
         try (FileOutputStream fos = new FileOutputStream(keystoreFileName)) {
@@ -191,16 +233,31 @@ public class ApplicationKeystore implements IKeystore {
         }
     }
 
-    public interface IEncryptionService {
-        String encrypt(String original);
-
-        String decrypt(String cypher);
-    }
-
-    // Only for tests
-    void setIosFolderFactory(WindowsFolderFactory osFolderFactory){
+    /**
+     * Stubbing setter for OS folder factory
+     *
+     * @param osFolderFactory The OS folder factory
+     */
+    void setOsFolderFactoryForTests(WindowsFolderFactory osFolderFactory) {
         this.osFolderFactory = osFolderFactory;
     }
 
+    public interface IEncryptionService {
+        /**
+         * Encrypt original
+         *
+         * @param original The original
+         * @return The encrypted original
+         */
+        String encrypt(String original);
+
+        /**
+         * Decrypt original
+         *
+         * @param cypher The cypher
+         * @return The decrypted cypher
+         */
+        String decrypt(String cypher);
+    }
 }
 

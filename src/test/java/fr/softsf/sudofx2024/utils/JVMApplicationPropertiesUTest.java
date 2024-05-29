@@ -14,20 +14,16 @@ class JVMApplicationPropertiesUTest {
 
     @Test
     void testIsValidatedByRegex_Success() {
-        // GIVEN
         String validName = "MyApp";
         String validVersion = "0.0.1";
-        // WHEN THEN
         assertTrue(MyRegex.isValidatedByRegex(validName, ALPHANUMERIC_REGEX));
         assertTrue(MyRegex.isValidatedByRegex(validVersion, VERSION_REGEX));
     }
 
     @Test
     void testIsValidatedByRegex_Fail() {
-        // GIVEN
         String invalidName = "MyApp123!";
         String invalidVersion = "0.0.";
-        // WHEN THEN
         assertFalse(MyRegex.isValidatedByRegex(invalidName, ALPHANUMERIC_REGEX));
         assertFalse(MyRegex.isValidatedByRegex(invalidVersion, VERSION_REGEX));
         assertFalse(MyRegex.isValidatedByRegex("", VERSION_REGEX));
@@ -41,13 +37,10 @@ class JVMApplicationPropertiesUTest {
         assertEquals("", JVMApplicationProperties.getAppVersion());
         JVMApplicationProperties.setEmptyAppVersionPropertyForTests();
         JVMApplicationProperties.setEmptyAppNamePropertyForTests();
-        // GIVEN APP PROPERTIES
         System.setProperty(APP_NAME_PROPERTY, "MyApp");
         System.setProperty(APP_VERSION_PROPERTY, "1.0.0");
-        // WHEN THEN
         assertEquals("MyApp", JVMApplicationProperties.getAppName());
         assertEquals("v1.0.0", JVMApplicationProperties.getAppVersion());
-        // STORED VALUES
         assertEquals("MyApp", JVMApplicationProperties.getAppName());
         assertEquals("v1.0.0", JVMApplicationProperties.getAppVersion());
     }

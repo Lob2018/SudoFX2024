@@ -1,14 +1,18 @@
 package fr.softsf.sudofx2024.utils.database.keystore;
 
+import java.nio.charset.StandardCharsets;
+import java.security.NoSuchAlgorithmException;
+import java.security.SecureRandom;
+import java.util.Base64;
+
+import javax.crypto.Cipher;
+import javax.crypto.NoSuchPaddingException;
+import javax.crypto.SecretKey;
+import javax.crypto.spec.GCMParameterSpec;
+
 import fr.softsf.sudofx2024.annotations.ExcludedFromCoverageReportGenerated;
 import jakarta.validation.constraints.NotBlank;
 import lombok.extern.slf4j.Slf4j;
-
-import javax.crypto.*;
-import javax.crypto.spec.GCMParameterSpec;
-import java.nio.charset.StandardCharsets;
-import java.security.*;
-import java.util.Base64;
 
 @Slf4j
 public final class SecretKeyEncryptionServiceAESGCM implements ApplicationKeystore.IEncryptionService {
@@ -16,6 +20,10 @@ public final class SecretKeyEncryptionServiceAESGCM implements ApplicationKeysto
     private Cipher cipher;
     private static final SecureRandom random = new SecureRandom();
 
+    /**
+     * SecretKey encryption service
+     * @param secretKey The SecretKey
+     */
     @ExcludedFromCoverageReportGenerated
     public SecretKeyEncryptionServiceAESGCM(final SecretKey secretKey) {
         this.secretKey = secretKey;
@@ -28,9 +36,9 @@ public final class SecretKeyEncryptionServiceAESGCM implements ApplicationKeysto
 
     @Override
     public String encrypt(@NotBlank final String original) {
-        byte[] iv = new byte[16]; // Initialization Vector
+        byte[] iv = new byte[16];
         try {
-            random.nextBytes(iv); // Generate a random IV
+            random.nextBytes(iv);
             cipher.init(Cipher.ENCRYPT_MODE, secretKey, new GCMParameterSpec(128, iv));
             byte[] encryptedData = cipher.doFinal(original.getBytes());
             Base64.Encoder encoder = Base64.getEncoder();

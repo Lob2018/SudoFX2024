@@ -15,6 +15,11 @@ public final class GenerateSecret {
     private GenerateSecret() {
     }
 
+    /**
+     * Define the secret special characters
+     *
+     * @return The special characters
+     */
     private static CharacterData createSpecialChars() {
         return new CharacterData() {
             @ExcludedFromCoverageReportGenerated
@@ -28,6 +33,11 @@ public final class GenerateSecret {
         };
     }
 
+    /**
+     * Generate Passay secret
+     *
+     * @return The Passay secret
+     */
     public static String generatePassaySecret() {
         PasswordGenerator gen = new PasswordGenerator();
         CharacterData lowerCaseChars = EnglishCharacterData.LowerCase;

@@ -19,6 +19,12 @@ public final class HSQLDBSessionFactoryConfigurator implements HibernateSessionF
     private final ApplicationKeystore iKeystore;
     private SessionFactory sessionFactory;
 
+    /**
+     * HSQLDB SessionFactory configurator
+     *
+     * @param iKeystore        The current Keystore
+     * @param iOsFolderFactory The folder factory
+     */
     public HSQLDBSessionFactoryConfigurator(ApplicationKeystore iKeystore, final OsDynamicFolders.IOsFoldersFactory iOsFolderFactory) {
         log.info("\n▓▓ Start of SessionFactory build");
         this.iKeystore = iKeystore;
@@ -43,10 +49,15 @@ public final class HSQLDBSessionFactoryConfigurator implements HibernateSessionF
         return sessionFactory;
     }
 
+    /**
+     * Get Hibernate properties
+     *
+     * @return The Hibernate properties
+     */
     private Properties getProperties() {
         final Properties properties = new Properties();
         properties.setProperty("hibernate.connection.driver_class", "org.hsqldb.jdbcDriver");
-        properties.setProperty("hibernate.connection.url", "jdbc:hsqldb:file:" + getDataFolderPath() + ";shutdown=true");
+        properties.setProperty("hibernate.connection.url", "jdbc:hsqldb:file:" + getDataFolderPathForTests() + ";shutdown=true");
         properties.setProperty("hibernate.connection.username", iKeystore.getUsername());
         properties.setProperty("hibernate.connection.password", iKeystore.getPassword());
         properties.setProperty("hibernate.c3p0.min_size", "2");
@@ -61,7 +72,12 @@ public final class HSQLDBSessionFactoryConfigurator implements HibernateSessionF
         return properties;
     }
 
-    String getDataFolderPath() {
+    /**
+     * Stubbing getter for database path
+     *
+     * @return The database path
+     */
+    String getDataFolderPathForTests() {
         return dataFolderPath;
     }
 }

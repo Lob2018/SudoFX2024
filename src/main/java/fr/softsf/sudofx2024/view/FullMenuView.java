@@ -1,6 +1,9 @@
 package fr.softsf.sudofx2024.view;
 
+import java.util.Objects;
+
 import fr.softsf.sudofx2024.SudoMain;
+import static fr.softsf.sudofx2024.utils.MyEnums.Paths.LOGO_SUDO_PNG_PATH;
 import fr.softsf.sudofx2024.viewmodel.FullMenuViewModel;
 import javafx.animation.FadeTransition;
 import javafx.event.ActionEvent;
@@ -18,14 +21,7 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javafx.util.Duration;
 
-import java.util.Objects;
 
-import static fr.softsf.sudofx2024.utils.MyEnums.Paths.LOGO_SUDO_PNG_PATH;
-
-
-/**
- * FullMenuView view without logic (not tested)
- */
 public final class FullMenuView implements SudoMain.IPrimaryStageView {
 
     @FXML
@@ -55,7 +51,6 @@ public final class FullMenuView implements SudoMain.IPrimaryStageView {
 
     }
 
-    // ↓ Splashscreen related code ↓
     private static final double FADE_IN_IN_SECONDS_AFTER_SPLASHSCREEN = 0.5;
     private final Stage primaryStage = new Stage();
 

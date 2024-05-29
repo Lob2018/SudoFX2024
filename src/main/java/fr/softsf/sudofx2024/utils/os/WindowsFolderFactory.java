@@ -19,6 +19,11 @@ public class WindowsFolderFactory implements OsDynamicFolders.IOsFoldersFactory 
         LOGS_FOLDER_FOR_SUDO_FX = folders[1];
     }
 
+    /**
+     * Create data and logs folders
+     *
+     * @return The array of data and logs folders paths
+     */
     public String[] createFolders() {
         boolean bData = isNowCreated(SUPPOSED_DATA_FOLDER_FOR_SUDO_FX.getPath());
         boolean bLogs = isNowCreated(SUPPOSED_LOGS_FOLDER_FOR_SUDO_FX.getPath());
@@ -28,6 +33,12 @@ public class WindowsFolderFactory implements OsDynamicFolders.IOsFoldersFactory 
         return new String[]{SUDO_FX_BASE_PATH.getPath(), SUDO_FX_BASE_PATH.getPath()};
     }
 
+    /**
+     * Confirm folder creation
+     *
+     * @param folderPath The folder path
+     * @return True for created folder, False otherwise
+     */
     boolean isNowCreated(final String folderPath) {
         try {
             File folder = getFolder(folderPath);
@@ -44,6 +55,12 @@ public class WindowsFolderFactory implements OsDynamicFolders.IOsFoldersFactory 
         }
     }
 
+    /**
+     * Stubbing getter for folder path
+     *
+     * @param folderPath The folder path
+     * @return The file
+     */
     File getFolder(final String folderPath) {
         return new File(folderPath);
     }

@@ -18,6 +18,10 @@ public final class MyRegex {
      */
     @Getter
     private static final String SECRET = "^(?=(?:[^a-z]*[a-z]){2})(?=(?:[^A-Z]*[A-Z]){2})(?=(?:[^0-9]*[0-9]){2})(?=(?:[^@#$%^&()!]*[@#$%^&()!]){2})[a-zA-Z0-9@#$%^&()!]{24}$";
+
+    /**
+     * Semantic versioning format (X.Y.Z)
+     */
     @Getter
     private static final String VERSION = "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)$";
     @Getter
@@ -27,6 +31,13 @@ public final class MyRegex {
     private MyRegex() {
     }
 
+    /**
+     * Validate test with regular expression
+     *
+     * @param text  The text to validate
+     * @param regex The regular expression
+     * @return True if the text is validated by regex, False otherwise
+     */
     public static boolean isValidatedByRegex(@NotNull final String text, @NotNull final String regex) {
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(text);

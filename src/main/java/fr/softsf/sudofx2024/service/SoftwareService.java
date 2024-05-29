@@ -1,13 +1,14 @@
 package fr.softsf.sudofx2024.service;
 
+import java.util.Optional;
+
+import org.hibernate.Session;
+import org.hibernate.query.Query;
+
 import fr.softsf.sudofx2024.model.SoftwareModel;
 import fr.softsf.sudofx2024.utils.database.hibernate.HibernateSessionFactoryManager;
 import jakarta.persistence.NoResultException;
 import lombok.extern.slf4j.Slf4j;
-import org.hibernate.Session;
-import org.hibernate.query.Query;
-
-import java.util.Optional;
 
 @Slf4j
 public class SoftwareService {
@@ -29,10 +30,10 @@ public class SoftwareService {
         try (Session session = HibernateSessionFactoryManager.getSessionFactory().openSession()) {
             Query<SoftwareModel> query = session.createNativeQuery(nativeQuery, SoftwareModel.class);
             SoftwareModel software = query.uniqueResult();
-            return Optional.of(software); // Return Optional.of if successful
+            return Optional.of(software);
         } catch (NoResultException e) {
-            log.error(String.format("██ No software found : %s", e.getMessage()), e);// Log at debug level (optional)
-            return Optional.empty();  // Return Optional.empty() on exception
+            log.error(String.format("██ No software found : %s", e.getMessage()), e);
+            return Optional.empty();
         } catch (Exception e) {
             log.error(String.format("██ Exception retrieving software : %s", e.getMessage()), e);
             return Optional.empty();

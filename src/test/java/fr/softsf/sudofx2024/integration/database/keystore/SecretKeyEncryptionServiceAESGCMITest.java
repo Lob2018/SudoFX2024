@@ -1,21 +1,24 @@
 package fr.softsf.sudofx2024.integration.database.keystore;
 
+import java.security.NoSuchAlgorithmException;
+import java.security.SecureRandom;
+
+import javax.crypto.KeyGenerator;
+import javax.crypto.SecretKey;
+
+import org.junit.jupiter.api.AfterEach;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import static org.mockito.Mockito.spy;
+import static org.mockito.Mockito.verify;
+import org.slf4j.LoggerFactory;
+
 import ch.qos.logback.classic.Logger;
 import ch.qos.logback.classic.spi.ILoggingEvent;
 import ch.qos.logback.core.read.ListAppender;
 import fr.softsf.sudofx2024.utils.database.keystore.SecretKeyEncryptionServiceAESGCM;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-import org.slf4j.LoggerFactory;
-
-import javax.crypto.*;
-import java.security.NoSuchAlgorithmException;
-import java.security.SecureRandom;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.mockito.Mockito.*;
 
 class SecretKeyEncryptionServiceAESGCMITest {
 
@@ -60,7 +63,6 @@ class SecretKeyEncryptionServiceAESGCMITest {
 
     @Test
     void encryptWithNullSecretKey_fail() {
-        //  assertThrows(IllegalStateException.class, () -> secretKeyEncryptionServiceAESGCMNullSecretKey.encrypt("_"));
         secretKeyEncryptionServiceAESGCMNullSecretKey.encrypt("_");
         verify(secretKeyEncryptionServiceAESGCMNullSecretKey).encrypt("_");
         assert (logWatcher.list.get(logWatcher.list.size() - 1).getFormattedMessage()).contains("██ Exception catch inside encrypt");

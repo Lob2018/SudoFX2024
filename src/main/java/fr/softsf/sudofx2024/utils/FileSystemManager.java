@@ -11,7 +11,7 @@ import java.util.stream.Stream;
 @Slf4j
 public final class FileSystemManager implements IFileSystem {
     @Override
-    public boolean deleteFolder(final Path folderPath, final String mustEndWithThat) {
+    public boolean deleteFolderRecursively(final Path folderPath, final String mustEndWithThat) {
         if (folderPath.endsWith(mustEndWithThat)) {
             log.info("▓▓▓▓ The directory path is correct :{}", folderPath);
             try (Stream<Path> stream = Files.walk(folderPath)) {
@@ -27,6 +27,11 @@ public final class FileSystemManager implements IFileSystem {
         return false;
     }
 
+    /**
+     * Delete the file or throw Exception
+     * @param path The file path
+     * @return Null if file deleted otherwise the Exception
+     */
     Throwable deleteFile(final Path path) {
         try {
             Files.delete(path);

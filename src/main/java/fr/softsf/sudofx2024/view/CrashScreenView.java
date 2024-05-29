@@ -1,11 +1,20 @@
 package fr.softsf.sudofx2024.view;
 
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.Calendar;
+import java.util.Objects;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
 import fr.softsf.sudofx2024.SudoMain;
 import fr.softsf.sudofx2024.utils.FileSystemManager;
 import fr.softsf.sudofx2024.utils.I18n;
 import fr.softsf.sudofx2024.utils.JVMApplicationProperties;
+import static fr.softsf.sudofx2024.utils.MyEnums.Paths.LOGO_SUDO_PNG_PATH;
+import static fr.softsf.sudofx2024.utils.MyEnums.Paths.SUPPOSED_DATA_FOLDER_FOR_SUDO_FX;
 import fr.softsf.sudofx2024.utils.os.WindowsFolderFactory;
-import javafx.animation.*;
+import javafx.animation.FadeTransition;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
@@ -25,15 +34,6 @@ import javafx.stage.StageStyle;
 import javafx.util.Duration;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
-
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.Calendar;
-import java.util.Objects;
-
-import static fr.softsf.sudofx2024.utils.MyEnums.Paths.LOGO_SUDO_PNG_PATH;
-import static fr.softsf.sudofx2024.utils.MyEnums.Paths.SUPPOSED_DATA_FOLDER_FOR_SUDO_FX;
 
 /**
  * CrashScreenView view without logic (not tested)
@@ -44,8 +44,6 @@ public final class CrashScreenView implements SudoMain.IPrimaryStageView {
     @Getter
     @Autowired
     WindowsFolderFactory osFolderFactory;
-
-   // private final String OS_DATA_FOLDER_PATH = osFolderFactory.getOsDataFolderPath();
 
     @FXML
     private VBox crashscreenvbox;
@@ -79,7 +77,7 @@ public final class CrashScreenView implements SudoMain.IPrimaryStageView {
     private void resetButtonClick() {
         log.info("▓▓▓▓ The user choose to reset the application data");
         Path pathToDelete = Paths.get(osFolderFactory.getOsDataFolderPath());
-        if (new FileSystemManager().deleteFolder(pathToDelete, SUPPOSED_DATA_FOLDER_FOR_SUDO_FX.getPath())) {
+        if (new FileSystemManager().deleteFolderRecursively(pathToDelete, SUPPOSED_DATA_FOLDER_FOR_SUDO_FX.getPath())) {
             log.info("▓▓▓▓ The directory is deleted");
         } else {
             log.info("▓▓▓▓ The directory isn't deleted");
@@ -92,6 +90,22 @@ public final class CrashScreenView implements SudoMain.IPrimaryStageView {
     private double crashScreenFontSize;
     private final Screen primaryScreen = Screen.getPrimary();
     private final DropShadow dropShadow = new DropShadow();
+
+    private static final double FADE_IN_IN_SECONDS_AFTER_SPLASHSCREEN = 0.5;
+    private final Stage primaryStage = new Stage();
+    private void fadeIn(final Node node) {
+        FadeTransition fadeIn = new FadeTransition(Duration.seconds(FADE_IN_IN_SECONDS_AFTER_SPLASHSCREEN), node);
+        fadeIn.setFromValue(0.0);
+        fadeIn.setToValue(1.0);
+        fadeIn.play();
+        primaryStage.setMaximized(true);
+    }
+    @Override
+    public void showPrimaryStage(SudoMain.ISplashScreenView iSplashScreenView) {
+        fadeIn(SudoMain.getScene().getRoot());
+        showcrashscreen();
+        iSplashScreenView.hideSplashScreen();
+    }
 
     @FXML
     private void initialize() {
@@ -145,25 +159,6 @@ public final class CrashScreenView implements SudoMain.IPrimaryStageView {
         crashscreenvboxTophboxRegionsudosvg.setStyle("-fx-background-color: linear-gradient(to bottom, #FFBE99, #FF4340);-fx-border-color: #1D1D30;-fx-border-width: " + strokeWidth + "px;-fx-border-insets: -" + strokeWidth + " -" + strokeWidth + " -" + strokeWidth + " -" + strokeWidth + ";");
     }
 
-    // ↓ Splashscreen related code ↓
-    private static final double FADE_IN_IN_SECONDS_AFTER_SPLASHSCREEN = 0.5;
-    private final Stage primaryStage = new Stage();
-
-    private void fadeIn(final Node node) {
-        FadeTransition fadeIn = new FadeTransition(Duration.seconds(FADE_IN_IN_SECONDS_AFTER_SPLASHSCREEN), node);
-        fadeIn.setFromValue(0.0);
-        fadeIn.setToValue(1.0);
-        fadeIn.play();
-        primaryStage.setMaximized(true);
-    }
-
-    @Override
-    public void showPrimaryStage(SudoMain.ISplashScreenView iSplashScreenView) {
-        fadeIn(SudoMain.getScene().getRoot());
-        showcrashscreen();
-        iSplashScreenView.hideSplashScreen();
-    }
-
     private void createSVG(final Region region, final String path, final double width, final double height, final double offsetX, final double offsetY) {
         final SVGPath svgPath = new SVGPath();
         svgPath.setContent(path);
@@ -174,6 +169,4 @@ public final class CrashScreenView implements SudoMain.IPrimaryStageView {
         region.setTranslateX(offsetX);
         region.setTranslateY(offsetY);
     }
-
-
 }

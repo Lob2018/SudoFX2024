@@ -1,10 +1,8 @@
 package fr.softsf.sudofx2024.utils.database.hibernate;
 
-import fr.softsf.sudofx2024.interfaces.IKeystore;
 import fr.softsf.sudofx2024.model.*;
 import fr.softsf.sudofx2024.utils.database.DatabaseMigration;
 import fr.softsf.sudofx2024.utils.database.keystore.ApplicationKeystore;
-import fr.softsf.sudofx2024.utils.os.OsDynamicFolders;
 import fr.softsf.sudofx2024.utils.os.WindowsFolderFactory;
 import jakarta.persistence.metamodel.EntityType;
 import jakarta.persistence.metamodel.Metamodel;
@@ -14,7 +12,6 @@ import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import static fr.softsf.sudofx2024.utils.MyEnums.Paths.USER_HOME;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
@@ -44,7 +41,6 @@ class HSQLDBSessionFactoryConfiguratorITest {
     void testGetSessionFactory_Success() {
         SessionFactory sessionFactory = configurator.getHibernateSessionFactory();
         Assertions.assertNotNull(sessionFactory);
-        // All entity classes are available
         Metamodel metamodel = sessionFactory.getMetamodel();
         for (EntityType<?> entityType : metamodel.getEntities()) {
             if (entityType.getJavaType().getName().equals(SoftwareModel.class.getName())
@@ -67,10 +63,8 @@ class HSQLDBSessionFactoryConfiguratorITest {
 
     @Test
     void testGetSessionFactory_throws_Exception() {
-        // Stubbing getDataFolderPath() to throw an Exception
         HSQLDBSessionFactoryConfigurator configuratorSpy = Mockito.spy(configurator);
-        when(configuratorSpy.getDataFolderPath()).thenThrow(new NullPointerException("Simulated exception"));
-        // WHEN & THEN
+        when(configuratorSpy.getDataFolderPathForTests()).thenThrow(new NullPointerException("Simulated exception"));
         NullPointerException exception = assertThrows(NullPointerException.class, configuratorSpy::getHibernateSessionFactory);
         assertEquals("Simulated exception", exception.getMessage());
     }

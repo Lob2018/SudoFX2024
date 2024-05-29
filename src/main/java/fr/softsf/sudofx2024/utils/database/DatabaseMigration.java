@@ -18,9 +18,15 @@ public final class DatabaseMigration {
     private DatabaseMigration() {
     }
 
-    public static void configure(final IKeystore iKeystore, final OsDynamicFolders.IOsFoldersFactory iOsFolderFactoryP) {
+    /**
+     * Configure Flyway migration
+     *
+     * @param iKeystore         The Keystore
+     * @param iOsFolderFactory_ The folder factory
+     */
+    public static void configure(final IKeystore iKeystore, final OsDynamicFolders.IOsFoldersFactory iOsFolderFactory_) {
         log.info("\n▓▓ Start of Flyway migration");
-        String databasePath = "jdbc:hsqldb:file:" + iOsFolderFactoryP.getOsDataFolderPath() + String.format("/%s", "sudofx2024db");
+        String databasePath = "jdbc:hsqldb:file:" + iOsFolderFactory_.getOsDataFolderPath() + String.format("/%s", "sudofx2024db");
         try {
             Flyway flyway = Flyway.configure()
                     .dataSource(
@@ -39,15 +45,20 @@ public final class DatabaseMigration {
         }
     }
 
+    /**
+     * Format Flyway information
+     *
+     * @param flyway The Flyway
+     */
     @ExcludedFromCoverageReportGenerated
     private static void migrationInformation(final Flyway flyway) {
         MigrationInfoService infoService = flyway.info();
         StringBuilder migrationInfo = new StringBuilder();
         MigrationInfo currentMigration = infoService.current();
-        if (currentMigration != null) {
-            migrationInfo.append("\tCurrent version: ").append(currentMigration.getVersion()).append("\n");
-        } else {
+        if (currentMigration == null) {
             migrationInfo.append("\tNo current migration\n");
+        } else {
+            migrationInfo.append("\tCurrent version: ").append(currentMigration.getVersion()).append("\n");
         }
         migrationInfo.append("\tApplied migrations (installed rank - version - description - date) :\n");
         for (MigrationInfo migration : infoService.applied()) {

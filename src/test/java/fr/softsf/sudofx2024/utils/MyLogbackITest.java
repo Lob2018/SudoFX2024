@@ -27,39 +27,30 @@ class MyLogbackITest {
     @Autowired
     MyLogback setupMyLogback;
 
-    private MyLogback REF_OBJ_MyLogback;
-
-    @BeforeEach
-    void setup() {
-        REF_OBJ_MyLogback = setupMyLogback;
-    }
-
     @Test
     void testLogs_real_folder_path_is_correct() {
-        // GIVEN WHEN THEN
-        assertEquals(REF_OBJ_MyLogback.getLogsFolderPath(), osFolderFactory.getOsLogsFolderPath());
+        assertEquals(setupMyLogback.getLogsFolderPath(), osFolderFactory.getOsLogsFolderPath());
     }
 
     @Test
     void testLogs_real_folder_exists() {
-        // GIVEN WHEN THEN
-        Path dossier = Path.of(REF_OBJ_MyLogback.getLogsFolderPath());
+        Path dossier = Path.of(setupMyLogback.getLogsFolderPath());
         assertTrue(Files.exists(dossier));
     }
 
     @Test
     void testLog_as_fatal(@Mock Logger logger) {
-        // GIVEN WHEN
         ArgumentCaptor<String> stringCaptor = ArgumentCaptor.forClass(String.class);
         logger.error("This is a critical message");
-        // THEN
         verify(logger, times(1)).error(stringCaptor.capture());
         assertEquals("This is a critical message", stringCaptor.getValue());
     }
 
     @Test
     void testConfigureLogbackWithInvalidPath() {
-        REF_OBJ_MyLogback.setLogBackPathForTests();
-        assertThrows(RuntimeException.class, () -> REF_OBJ_MyLogback.configureLogback());
+        setupMyLogback.setLogBackPathForTests();
+        assertThrows(RuntimeException.class, () -> {
+            setupMyLogback.configureLogback();
+        });
     }
 }

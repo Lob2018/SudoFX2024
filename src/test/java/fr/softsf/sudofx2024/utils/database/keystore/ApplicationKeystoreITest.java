@@ -36,7 +36,7 @@ class ApplicationKeystoreITest {
 
     @BeforeAll
     static void setupAll() {
-        new FileSystemManager().deleteFolder(Paths.get(SUPPOSED_DATA_FOLDER_FOR_SUDO_FX.getPath()), SUPPOSED_DATA_FOLDER_FOR_SUDO_FX.getPath());
+        new FileSystemManager().deleteFolderRecursively(Paths.get(SUPPOSED_DATA_FOLDER_FOR_SUDO_FX.getPath()), SUPPOSED_DATA_FOLDER_FOR_SUDO_FX.getPath());
     }
 
     @BeforeEach
@@ -76,12 +76,9 @@ class ApplicationKeystoreITest {
     @Test
     void constructorException_fail() {
         WindowsFolderFactory osFolderFactoryMock=mock(WindowsFolderFactory.class);
-        // GIVEN
         when(osFolderFactoryMock.getOsDataFolderPath()).thenThrow(new RuntimeException(new Exception("██ Exception")));
-        keystore.setIosFolderFactory(osFolderFactoryMock);
-        // WHEN
+        keystore.setOsFolderFactoryForTests(osFolderFactoryMock);
         keystore.setupApplicationKeystore();
-        // THEN
         verify(osFolderFactoryMock).getOsDataFolderPath();
         assert (logWatcher.list.get(1).getFormattedMessage()).contains("██ Exception");
     }

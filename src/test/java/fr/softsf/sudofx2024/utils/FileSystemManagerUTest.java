@@ -53,17 +53,13 @@ class FileSystemManagerUTest {
 
     @Test
     void testDeleteFolder_success() throws Exception {
-        // GIVEN WHEN
-        boolean result = fileSystemManager.deleteFolder(path1.getParent(), suffix);
-        // THEN
+        boolean result = fileSystemManager.deleteFolderRecursively(path1.getParent(), suffix);
         assertTrue(result);
     }
 
     @Test
     void testDeleteFolderIncorrectDirectoryPath_fail() throws Exception {
-        // GIVEN WHEN
-        boolean result = fileSystemManager.deleteFolder(path1.getParent(), suffix + "/toto.txt");
-        // THEN
+        boolean result = fileSystemManager.deleteFolderRecursively(path1.getParent(), suffix + "/toto.txt");
         assertFalse(result);
     }
 
@@ -71,9 +67,7 @@ class FileSystemManagerUTest {
     void testFilesWalkHandleNullPointerException_fail() {
         try (MockedStatic<Files> mocked = Mockito.mockStatic(Files.class)) {
             mocked.when(() -> Files.walk(path1.getParent())).thenThrow(new NullPointerException("Test NullPointerException"));
-            // WHEN
-            fileSystemManager.deleteFolder(path1.getParent(), suffix);
-            // THEN
+            fileSystemManager.deleteFolderRecursively(path1.getParent(), suffix);
             assert (logWatcher.list.get(logWatcher.list.size() - 1).getFormattedMessage()).contains("Test NullPointerException");
         }
     }

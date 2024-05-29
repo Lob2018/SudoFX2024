@@ -1,7 +1,6 @@
 package fr.softsf.sudofx2024;
 
 import com.gluonhq.ignite.spring.SpringContext;
-import fr.softsf.sudofx2024.interfaces.IKeystore;
 import fr.softsf.sudofx2024.utils.database.DatabaseMigration;
 import fr.softsf.sudofx2024.utils.DynamicFontSize;
 import fr.softsf.sudofx2024.utils.MyLogback;
@@ -78,7 +77,7 @@ public class SudoMain extends Application {
     public void start(final Stage primaryStageP) {
         try {
             initializeScene();
-             final ISplashScreenView iSplashScreenView = fxmlLoader.getController();
+            final ISplashScreenView iSplashScreenView = fxmlLoader.getController();
             new DynamicFontSize(scene);
             iSplashScreenView.showSplashScreen();
             final long startTime = System.currentTimeMillis();
@@ -116,19 +115,18 @@ public class SudoMain extends Application {
         log.error(String.format("██ Error in splash screen initialization thread : %s", throwable.getMessage()), throwable);
         stop();
         SQLInvalidAuthorizationSpecException sqlInvalidAuthorizationSpecException = getSQLInvalidAuthorizationSpecException(throwable);
-        if (sqlInvalidAuthorizationSpecException != null) {
+        if (sqlInvalidAuthorizationSpecException == null) {
+            Platform.exit();
+        } else {
             sqlInvalidAuthorization((Exception) throwable, sqlInvalidAuthorizationSpecException);
             PauseTransition pause = getPauseTransition("crashscreen-view", 0, iSplashScreenView);
             pause.play();
-        } else { // Handle others exceptions like database lock acquisition failure
-            Platform.exit();
         }
     }
 
     private static void sqlInvalidAuthorization(Exception e, SQLInvalidAuthorizationSpecException sqlException) {
         log.error(String.format("██ SQLInvalidAuthorizationSpecException catch : %s", e.getMessage()), e);
         String sqlState = sqlException.getSQLState();
-        // HSQLDB invalid authorization specification codes from keystore
         if ("28000".equals(sqlState) || "28501".equals(sqlState)) {
             log.error(String.format("██ SQLInvalidAuthorizationSpecException with sqlstate==(28000||28501) catch : %s", e.getMessage()), e);
             log.info(String.format("%n%n%s", SQL_INVALID_AUTHORIZATION_SPEC_EXCEPTION.getLogBackMessage()));
@@ -147,7 +145,7 @@ public class SudoMain extends Application {
 
     private void loadingFlywayAndHibernate() {
         DatabaseMigration.configure(keystore, osFolderFactory);
-        Session session = HibernateSessionFactoryManager.getSessionFactoryInit(new HSQLDBSessionFactoryConfigurator(keystore, osFolderFactory)).openSession();
+        Session session = HibernateSessionFactoryManager.getSessionFactory(new HSQLDBSessionFactoryConfigurator(keystore, osFolderFactory)).openSession();
         session.close();
     }
 
