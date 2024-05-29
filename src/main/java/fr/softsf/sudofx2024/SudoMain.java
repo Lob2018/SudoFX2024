@@ -1,6 +1,7 @@
 package fr.softsf.sudofx2024;
 
 import com.gluonhq.ignite.spring.SpringContext;
+import fr.softsf.sudofx2024.service.SoftwareService;
 import fr.softsf.sudofx2024.utils.database.DatabaseMigration;
 import fr.softsf.sudofx2024.utils.DynamicFontSize;
 import fr.softsf.sudofx2024.utils.MyLogback;

@@ -7,16 +7,20 @@ import fr.softsf.sudofx2024.model.SoftwareModel;
 import fr.softsf.sudofx2024.service.SoftwareService;
 import fr.softsf.sudofx2024.utils.JVMApplicationProperties;
 import fr.softsf.sudofx2024.view.FullMenuView;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 /**
  * FullMenuViewModel with business logic (not final)
  */
+@Component
 public class FullMenuViewModel {
+    @Autowired
+    SoftwareService softwareService;
 
-    private FullMenuView fullMenuView;
+//    private FullMenuView fullMenuView;
 
-    public FullMenuViewModel() {
-        SoftwareService softwareService = new SoftwareService();
+    public void test() {
         Optional<SoftwareModel> currentSoftware = softwareService.getSoftware();
         System.out.println("###### GET ####### " + currentSoftware);
         if (currentSoftware.isPresent()) {

@@ -9,8 +9,10 @@ import fr.softsf.sudofx2024.model.SoftwareModel;
 import fr.softsf.sudofx2024.utils.database.hibernate.HibernateSessionFactoryManager;
 import jakarta.persistence.NoResultException;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Service;
 
 @Slf4j
+@Service
 public class SoftwareService {
 
     public Optional<SoftwareModel> createSoftware(SoftwareModel software) {

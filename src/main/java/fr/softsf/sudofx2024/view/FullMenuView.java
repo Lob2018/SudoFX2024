@@ -20,9 +20,10 @@ import javafx.stage.Screen;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javafx.util.Duration;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
-
-public final class FullMenuView implements SudoMain.IPrimaryStageView {
+public class FullMenuView implements SudoMain.IPrimaryStageView {
 
     @FXML
     private Label welcomeText;
@@ -30,7 +31,9 @@ public final class FullMenuView implements SudoMain.IPrimaryStageView {
     private Button buttonHello;
     private Text text1 = new Text("Helloj! ");
     private Text text2 = new Text("\ue86c");
-    private FullMenuViewModel fullMenuViewModel;
+
+    @Autowired
+    FullMenuViewModel fullMenuViewModel;
 
     @FXML
     private void initialize() {
@@ -46,7 +49,7 @@ public final class FullMenuView implements SudoMain.IPrimaryStageView {
     @FXML
     private void onHelloButtonClick(ActionEvent event) {
 
-        fullMenuViewModel = new FullMenuViewModel();
+        fullMenuViewModel.test();
         welcomeText.setText("Coucou");
 
     }
