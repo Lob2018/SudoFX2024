@@ -60,11 +60,6 @@ public final class HSQLDBSessionFactoryConfigurator implements HibernateSessionF
         properties.setProperty("hibernate.connection.url", "jdbc:hsqldb:file:" + getDataFolderPathForTests() + ";shutdown=true");
         properties.setProperty("hibernate.connection.username", iKeystore.getUsername());
         properties.setProperty("hibernate.connection.password", iKeystore.getPassword());
-        properties.setProperty("hibernate.c3p0.min_size", "2");
-        properties.setProperty("hibernate.c3p0.max_size", "9");
-        properties.setProperty("hibernate.c3p0.timeout", "300");
-        properties.setProperty("hibernate.c3p0.max_statements", "50");
-        properties.setProperty("hibernate.c3p0.idle_test_period", "180");
         properties.setProperty("hibernate.format_sql", "true");
         properties.setProperty("hibernate.use_sql_comments", "true");
         properties.setProperty("hibernate.show_sql", "true");

@@ -28,13 +28,12 @@
     <properties>
         <maven.compiler.version>3.13.0</maven.compiler.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.release>19</maven.compiler.release>
-        <javafx.version>19</javafx.version>
+        <maven.compiler.release>21</maven.compiler.release>
+        <javafx.version>21</javafx.version>
         <javafx.maven.version>0.0.8</javafx.maven.version>
         <ignite.spring.version>1.2.2</ignite.spring.version>
         <junit.version>5.10.2</junit.version>
         <jacoco.version>0.8.11</jacoco.version>
-        <c3p0.version>7.0.0.Alpha1</c3p0.version>
         <hsqldb.version>2.7.2</hsqldb.version>
         <logback.version>1.5.6</logback.version>
         <mockito.version>5.11.0</mockito.version>
@@ -79,11 +78,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-c3p0</artifactId>
-            <version>${c3p0.version}</version>
         </dependency>
         <dependency>
             <groupId>org.hsqldb</groupId>
@@ -164,8 +158,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>${maven.compiler.version}</version>
                 <configuration>
-                    <source>19</source>
-                    <target>19</target>
+                    <source>21</source>
+                    <target>21</target>
                 </configuration>
             </plugin>
             <plugin>
