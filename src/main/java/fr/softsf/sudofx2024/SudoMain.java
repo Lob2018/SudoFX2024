@@ -82,7 +82,7 @@ public class SudoMain extends Application {
             new DynamicFontSize(scene);
             isplashScreenView.showSplashScreen();
             final long startTime = System.currentTimeMillis();
-            new Thread(() -> {
+            Thread.ofVirtual().start(() -> {
                 Throwable throwable = null;
                 try {
                     loadingFlywayAndHibernate();
@@ -95,7 +95,7 @@ public class SudoMain extends Application {
                         // TODO Get & Set latest saved view from initializationAsynchronousTask
                     });
                 }
-            }).start();
+            });
         } catch (Exception e) {
             log.error(String.format("██ Exception catch inside start() : %s", e.getMessage()), e);
             throw new RuntimeException(e);
