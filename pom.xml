@@ -30,18 +30,12 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>19</maven.compiler.release>
         <javafx.version>19</javafx.version>
-
-        <start-class>fr.softsf.sudofx2024.Launcher</start-class>
-
         <javafx.maven.version>0.0.8</javafx.maven.version>
         <ignite.spring.version>1.2.2</ignite.spring.version>
         <junit.version>5.10.2</junit.version>
         <jacoco.version>0.8.11</jacoco.version>
-        <hibernate.version>6.5.0.CR1</hibernate.version>
         <c3p0.version>7.0.0.Alpha1</c3p0.version>
         <hsqldb.version>2.7.2</hsqldb.version>
-        <jakarta.validation.version>3.1.0-M2</jakarta.validation.version>
-        <jakarta.persitence.version>3.2.0-M2</jakarta.persitence.version>
         <logback.version>1.5.6</logback.version>
         <mockito.version>5.11.0</mockito.version>
         <testfx.version>4.0.17</testfx.version>
@@ -64,7 +58,6 @@
             <artifactId>javafx-fxml</artifactId>
             <version>${javafx.version}</version>
         </dependency>
-
         <dependency>
             <groupId>com.gluonhq</groupId>
             <artifactId>ignite-spring</artifactId>
@@ -76,14 +69,16 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-validation</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.hibernate.orm</groupId>
-            <artifactId>hibernate-core</artifactId>
-            <version>${hibernate.version}</version>
         </dependency>
         <dependency>
             <groupId>org.hibernate</groupId>
@@ -109,16 +104,6 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>${lombok.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>jakarta.validation</groupId>
-            <artifactId>jakarta.validation-api</artifactId>
-            <version>${jakarta.validation.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>jakarta.persistence</groupId>
-            <artifactId>jakarta.persistence-api</artifactId>
-            <version>${jakarta.persitence.version}</version>
         </dependency>
         <dependency>
             <groupId>org.passay</groupId>
