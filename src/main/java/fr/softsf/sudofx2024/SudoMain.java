@@ -146,6 +146,8 @@ public class SudoMain extends Application {
 
     private void loadingFlywayAndHibernate() {
         DatabaseMigration.configure(keystore, osFolderFactory);
+
+
         Session session = HibernateSessionFactoryManager.getSessionFactory(new HSQLDBSessionFactoryConfigurator(keystore, osFolderFactory)).openSession();
         session.close();
     }
