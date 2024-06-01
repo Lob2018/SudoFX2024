@@ -1,14 +1,10 @@
 package fr.softsf.sudofx2024;
 
 import com.gluonhq.ignite.spring.SpringContext;
-import fr.softsf.sudofx2024.utils.database.DatabaseMigration;
 import fr.softsf.sudofx2024.utils.DynamicFontSize;
 import fr.softsf.sudofx2024.utils.MyLogback;
-import fr.softsf.sudofx2024.utils.database.configuration.DatabaseConfigurationProvider;
-import fr.softsf.sudofx2024.utils.database.hibernate.HibernateSessionFactoryManager;
 import fr.softsf.sudofx2024.utils.database.keystore.ApplicationKeystore;
 import fr.softsf.sudofx2024.utils.os.WindowsFolderFactory;
-import jakarta.persistence.EntityManagerFactory;
 import javafx.animation.PauseTransition;
 import javafx.application.Application;
 import javafx.application.Platform;
@@ -23,15 +19,9 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.jdbc.DataSourceBuilder;
-import org.springframework.boot.orm.jpa.EntityManagerFactoryBuilder;
 import org.springframework.context.annotation.ComponentScan;
-import org.springframework.core.env.Environment;
-import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 
-import javax.sql.DataSource;
 import java.io.IOException;
-import java.sql.SQLException;
 import java.sql.SQLInvalidAuthorizationSpecException;
 import java.util.Objects;
 
@@ -57,11 +47,6 @@ public class SudoMain extends Application {
     private MyLogback setupMyLogback;
     @Autowired
     private ApplicationKeystore keystore;
-    @Autowired
-    private DatabaseConfigurationProvider databaseConfigurationProvider;
-
-    @Autowired
-    private EntityManagerFactory entityManagerFactory;
 
 
     private ISplashScreenView isplashScreenView;
@@ -80,7 +65,6 @@ public class SudoMain extends Application {
     }
 
     private void initializeScene() throws IOException {
-        keystore.setupApplicationKeystore();
         fxmlLoader.setLocation(getFXMLLoader("splashscreen-view").getLocation());
         scene = new Scene(fxmlLoader.load(), -1, -1, Color.TRANSPARENT);
         scene.getStylesheets().add((Objects.requireNonNull(SudoMain.class.getResource(RESOURCES_CSS_PATH.getPath()))).toExternalForm());
@@ -97,7 +81,7 @@ public class SudoMain extends Application {
             Thread.ofVirtual().start(() -> {
                 Throwable throwable = null;
                 try {
-                    loadingFlywayAndHibernate();
+                    // TODO mes actions asynchrones
                 } catch (Exception e) {
                     throwable = e;
                 } finally {
@@ -126,7 +110,6 @@ public class SudoMain extends Application {
 
     private void errorInLoadingThread(Throwable throwable) {
         log.error(String.format("██ Error in splash screen initialization thread : %s", throwable.getMessage()), throwable);
-        stop();
         SQLInvalidAuthorizationSpecException sqlInvalidAuthorizationSpecException = getSQLInvalidAuthorizationSpecException(throwable);
         if (sqlInvalidAuthorizationSpecException == null) {
             Platform.exit();
@@ -156,54 +139,6 @@ public class SudoMain extends Application {
         return pause;
     }
 
-    private void loadingFlywayAndHibernate() throws SQLException {
-        DatabaseMigration.configure(keystore, osFolderFactory);
-
-//        DataSource dataSource = new DataSource();
-//        dataSource.setUrl(databaseConfigurationProvider.getUrl());
-//        dataSource.setUsername(databaseConfigurationProvider.getUsername());
-//        dataSource.setPassword(databaseConfigurationProvider.getPassword());
-
-
-       System.out.println("##########"+databaseConfigurationProvider.getUrl());
-        System.out.println("##########"+databaseConfigurationProvider.getUsername());
-        System.out.println("##########"+databaseConfigurationProvider.getPassword());
-
-
-        DataSource dataSource =  DataSourceBuilder.create()
-                .driverClassName("org.hsqldb.jdbc.JDBCDriver")
-                .url("jdbc:hsqldb:file:" + osFolderFactory.getOsDataFolderPath() + String.format("/%s", "sudofx2024db"))
-                .username(keystore.getUsername())
-                .password(keystore.getPassword())
-                .build();
-        LocalContainerEntityManagerFactoryBean emf = (LocalContainerEntityManagerFactoryBean) entityManagerFactory;
-
-
-
-        emf.setDataSource(dataSource);
-//        emf.setPackagesToScan("fr.softsf.sudofx2024.model");
-//        emf.setJpaVendorAdapter(new HibernateJpaVendorAdapter());
-//        // Changement de la source de données
-//        emf.setDataSource(dataSource);
-
-//        Session session = HibernateSessionFactoryManager.getSessionFactory(new HSQLDBSessionFactoryConfigurator(keystore, osFolderFactory)).openSession();
-//        session.close();
-    }
-
-
-    @Override
-    public void stop() {
-        try {
-            HibernateSessionFactoryManager.closeSessionFactory();
-            log.info("\n▓▓ SessionFactory is successfully closed");
-            super.stop();
-        } catch (Exception e) {
-            log.error(String.format("██ Exception catch inside stop() : %s", e.getMessage()), e);
-            Platform.exit();
-        } finally {
-            log.info("\n\n▓▓ Exiting application\n");
-        }
-    }
 
     public void setRootByFXMLName(final String fxml) {
         try {

@@ -1,15 +1,12 @@
 package fr.softsf.sudofx2024.integration.database;
 
-import fr.softsf.sudofx2024.SudoMain;
 import fr.softsf.sudofx2024.interfaces.IKeystore;
 import fr.softsf.sudofx2024.utils.database.DatabaseMigration;
-import fr.softsf.sudofx2024.utils.database.hibernate.HibernateSessionFactoryManager;
 import fr.softsf.sudofx2024.utils.database.keystore.ApplicationKeystore;
 
 import fr.softsf.sudofx2024.utils.os.WindowsFolderFactory;
 import org.flywaydb.core.api.FlywayException;
 
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,11 +29,6 @@ class DatabaseMigrationITest {
     void beforeEach() {
         keystore.setupApplicationKeystore();
         DatabaseMigration.configure(keystore, osFolderFactory);
-    }
-
-    @AfterEach
-    void tearDown() {
-        HibernateSessionFactoryManager.closeSessionFactory();
     }
 
     @Test
