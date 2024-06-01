@@ -17,22 +17,22 @@ import java.util.UUID;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class PlayerModel {
+public class Player {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID playeruuid;
 
     @ManyToOne
     @JoinColumn(name = "playerlanguageplayerlanguageuuid")
-    private PlayerLanguageModel playerlanguageuuid;
+    private PlayerLanguage playerlanguageuuid;
 
     @ManyToOne
     @JoinColumn(name = "backgroundbackgrounduuid")
-    private BackgroundModel backgrounduuid;
+    private Background backgrounduuid;
 
     @ManyToOne
     @JoinColumn(name = "menumenuuuid")
-    private MenuModel menuuuid;
+    private Menu menuuuid;
 
     @NotNull
     @Size(max = 256)

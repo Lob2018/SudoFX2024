@@ -43,14 +43,14 @@ class HSQLDBSessionFactoryConfiguratorITest {
         Assertions.assertNotNull(sessionFactory);
         Metamodel metamodel = sessionFactory.getMetamodel();
         for (EntityType<?> entityType : metamodel.getEntities()) {
-            if (entityType.getJavaType().getName().equals(SoftwareModel.class.getName())
-                    || entityType.getJavaType().getName().equals(PlayerLanguageModel.class.getName())
-                    || entityType.getJavaType().getName().equals(BackgroundModel.class.getName())
-                    || entityType.getJavaType().getName().equals(GameLevelModel.class.getName())
-                    || entityType.getJavaType().getName().equals(GridModel.class.getName())
-                    || entityType.getJavaType().getName().equals(PlayerModel.class.getName())
-                    || entityType.getJavaType().getName().equals(MenuModel.class.getName())
-                    || entityType.getJavaType().getName().equals(GameModel.class.getName())) {
+            if (entityType.getJavaType().getName().equals(Software.class.getName())
+                    || entityType.getJavaType().getName().equals(PlayerLanguage.class.getName())
+                    || entityType.getJavaType().getName().equals(Background.class.getName())
+                    || entityType.getJavaType().getName().equals(GameLevel.class.getName())
+                    || entityType.getJavaType().getName().equals(Grid.class.getName())
+                    || entityType.getJavaType().getName().equals(Player.class.getName())
+                    || entityType.getJavaType().getName().equals(Menu.class.getName())
+                    || entityType.getJavaType().getName().equals(Game.class.getName())) {
                 Assertions.assertTrue(true);
             } else {
                 Assertions.fail("Entité non trouvée : " + entityType.getJavaType().getName());

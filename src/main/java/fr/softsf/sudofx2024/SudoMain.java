@@ -4,10 +4,11 @@ import com.gluonhq.ignite.spring.SpringContext;
 import fr.softsf.sudofx2024.utils.database.DatabaseMigration;
 import fr.softsf.sudofx2024.utils.DynamicFontSize;
 import fr.softsf.sudofx2024.utils.MyLogback;
-import fr.softsf.sudofx2024.utils.database.hibernate.HSQLDBSessionFactoryConfigurator;
+import fr.softsf.sudofx2024.utils.database.configuration.DatabaseConfigurationProvider;
 import fr.softsf.sudofx2024.utils.database.hibernate.HibernateSessionFactoryManager;
 import fr.softsf.sudofx2024.utils.database.keystore.ApplicationKeystore;
 import fr.softsf.sudofx2024.utils.os.WindowsFolderFactory;
+import jakarta.persistence.EntityManagerFactory;
 import javafx.animation.PauseTransition;
 import javafx.application.Application;
 import javafx.application.Platform;
@@ -19,13 +20,18 @@ import javafx.util.Duration;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 
-import org.hibernate.Session;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.jdbc.DataSourceBuilder;
+import org.springframework.boot.orm.jpa.EntityManagerFactoryBuilder;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.core.env.Environment;
+import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 
+import javax.sql.DataSource;
 import java.io.IOException;
+import java.sql.SQLException;
 import java.sql.SQLInvalidAuthorizationSpecException;
 import java.util.Objects;
 
@@ -46,11 +52,17 @@ public class SudoMain extends Application {
     @Autowired
     private FXMLLoader fxmlLoader;
     @Autowired
-    WindowsFolderFactory osFolderFactory;
+    private WindowsFolderFactory osFolderFactory;
     @Autowired
-    MyLogback setupMyLogback;
+    private MyLogback setupMyLogback;
     @Autowired
-    ApplicationKeystore keystore;
+    private ApplicationKeystore keystore;
+    @Autowired
+    private DatabaseConfigurationProvider databaseConfigurationProvider;
+
+    @Autowired
+    private EntityManagerFactory entityManagerFactory;
+
 
     private ISplashScreenView isplashScreenView;
     private IPrimaryStageView iPrimaryStageView;
@@ -144,12 +156,38 @@ public class SudoMain extends Application {
         return pause;
     }
 
-    private void loadingFlywayAndHibernate() {
+    private void loadingFlywayAndHibernate() throws SQLException {
         DatabaseMigration.configure(keystore, osFolderFactory);
 
+//        DataSource dataSource = new DataSource();
+//        dataSource.setUrl(databaseConfigurationProvider.getUrl());
+//        dataSource.setUsername(databaseConfigurationProvider.getUsername());
+//        dataSource.setPassword(databaseConfigurationProvider.getPassword());
 
-        Session session = HibernateSessionFactoryManager.getSessionFactory(new HSQLDBSessionFactoryConfigurator(keystore, osFolderFactory)).openSession();
-        session.close();
+
+       System.out.println("##########"+databaseConfigurationProvider.getUrl());
+        System.out.println("##########"+databaseConfigurationProvider.getUsername());
+        System.out.println("##########"+databaseConfigurationProvider.getPassword());
+
+
+        DataSource dataSource =  DataSourceBuilder.create()
+                .driverClassName("org.hsqldb.jdbc.JDBCDriver")
+                .url("jdbc:hsqldb:file:" + osFolderFactory.getOsDataFolderPath() + String.format("/%s", "sudofx2024db"))
+                .username(keystore.getUsername())
+                .password(keystore.getPassword())
+                .build();
+        LocalContainerEntityManagerFactoryBean emf = (LocalContainerEntityManagerFactoryBean) entityManagerFactory;
+
+
+
+        emf.setDataSource(dataSource);
+//        emf.setPackagesToScan("fr.softsf.sudofx2024.model");
+//        emf.setJpaVendorAdapter(new HibernateJpaVendorAdapter());
+//        // Changement de la source de données
+//        emf.setDataSource(dataSource);
+
+//        Session session = HibernateSessionFactoryManager.getSessionFactory(new HSQLDBSessionFactoryConfigurator(keystore, osFolderFactory)).openSession();
+//        session.close();
     }
 
 

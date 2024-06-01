@@ -1,6 +1,7 @@
 package fr.softsf.sudofx2024.model;
 
 import jakarta.persistence.*;
+
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
@@ -11,17 +12,23 @@ import lombok.NoArgsConstructor;
 import java.util.UUID;
 
 @Entity
-@Table(name = "gamelevel")
+@Table(name = "background")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class GameLevelModel {
+public class Background {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private UUID leveluuid;
+    private UUID backgrounduuid;
 
     @NotNull
-    @Size(max = 64)
-    private String levelname;
+    @Size(max = 7)
+    private String hexcolor;
+
+    @Size(max = 260)
+    private String imagepath;
+
+    @Builder.Default
+    private boolean isimage = false;
 }

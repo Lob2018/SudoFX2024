@@ -37,7 +37,7 @@ public final class HSQLDBSessionFactoryConfigurator implements HibernateSessionF
         try {
             final Properties properties = getProperties();
             final StandardServiceRegistry standardRegistry = new StandardServiceRegistryBuilder().applySettings(properties).build();
-            MetadataSources metadataSources = new MetadataSources(standardRegistry).addAnnotatedClass(SoftwareModel.class).addAnnotatedClass(MenuModel.class).addAnnotatedClass(PlayerLanguageModel.class).addAnnotatedClass(BackgroundModel.class).addAnnotatedClass(GameLevelModel.class).addAnnotatedClass(GridModel.class).addAnnotatedClass(PlayerModel.class).addAnnotatedClass(GameModel.class);
+            MetadataSources metadataSources = new MetadataSources(standardRegistry).addAnnotatedClass(Software.class).addAnnotatedClass(Menu.class).addAnnotatedClass(PlayerLanguage.class).addAnnotatedClass(Background.class).addAnnotatedClass(GameLevel.class).addAnnotatedClass(Grid.class).addAnnotatedClass(Player.class).addAnnotatedClass(Game.class);
             Metadata metadata = metadataSources.buildMetadata();
             sessionFactory = metadata.getSessionFactoryBuilder().build();
         } catch (Exception e) {

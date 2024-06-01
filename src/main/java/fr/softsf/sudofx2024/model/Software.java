@@ -8,20 +8,31 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Entity
-@Table(name = "playerlanguage")
+@Table(name = "software")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class PlayerLanguageModel {
+public class Software {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private UUID playerlanguageuuid;
+    private UUID softwareuuid;
+
+    @Size(max = 128)
+    private String currentversion;
+
+    @Size(max = 128)
+    private String lastversion;
 
     @NotNull
-    @Size(max = 2)
-    private String iso;
+    private LocalDateTime createdat;
+
+    @NotNull
+    private LocalDateTime updatedat;
 }
+
+

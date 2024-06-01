@@ -16,22 +16,22 @@ import java.util.UUID;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class GameModel {
+public class Game {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID gameuuid;
 
     @ManyToOne
     @JoinColumn(name = "gridgriduuid")
-    private GridModel griduuid;
+    private Grid griduuid;
 
     @ManyToOne
     @JoinColumn(name = "playerplayeruuid")
-    private PlayerModel playeruuid;
+    private Player playeruuid;
 
     @ManyToOne
     @JoinColumn(name = "levelleveluuid")
-    private GameLevelModel leveluuid;
+    private GameLevel leveluuid;
 
     @Builder.Default
     private boolean isselected = false;
