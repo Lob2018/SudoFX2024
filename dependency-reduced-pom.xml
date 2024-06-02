@@ -264,18 +264,6 @@
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>ch.qos.logback</groupId>
-      <artifactId>logback-core</artifactId>
-      <version>1.5.6</version>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>ch.qos.logback</groupId>
-      <artifactId>logback-classic</artifactId>
-      <version>1.5.6</version>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-api</artifactId>
       <version>5.10.2</version>
@@ -364,7 +352,6 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <javafx.version>21</javafx.version>
     <junit.version>5.10.2</junit.version>
-    <logback.version>1.5.6</logback.version>
     <shade.version>3.5.2</shade.version>
     <exec.version>1.6.0</exec.version>
     <maven.compiler.version>3.13.0</maven.compiler.version>
