@@ -35,7 +35,6 @@
         <junit.version>5.10.2</junit.version>
         <jacoco.version>0.8.11</jacoco.version>
         <hsqldb.version>2.7.2</hsqldb.version>
-        <logback.version>1.5.6</logback.version>
         <mockito.version>5.11.0</mockito.version>
         <testfx.version>4.0.17</testfx.version>
         <hamcrest.version>2.2</hamcrest.version>
@@ -103,16 +102,6 @@
             <groupId>org.passay</groupId>
             <artifactId>passay</artifactId>
             <version>${passay.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>ch.qos.logback</groupId>
-            <artifactId>logback-core</artifactId>
-            <version>${logback.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>ch.qos.logback</groupId>
-            <artifactId>logback-classic</artifactId>
-            <version>${logback.version}</version>
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
