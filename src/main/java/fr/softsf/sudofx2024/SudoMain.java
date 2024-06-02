@@ -2,7 +2,6 @@ package fr.softsf.sudofx2024;
 
 import com.gluonhq.ignite.spring.SpringContext;
 import fr.softsf.sudofx2024.utils.DynamicFontSize;
-import fr.softsf.sudofx2024.utils.MyLogback;
 import javafx.animation.PauseTransition;
 import javafx.application.Application;
 import javafx.application.Platform;
@@ -39,11 +38,11 @@ public class SudoMain extends Application {
 
     @Autowired
     private FXMLLoader fxmlLoader;
-    @Autowired
-    private MyLogback setupMyLogback;
 
     private ISplashScreenView isplashScreenView;
     private IPrimaryStageView iPrimaryStageView;
+
+    private Throwable t=null;
 
     @Getter
     private static Scene scene;
@@ -54,7 +53,12 @@ public class SudoMain extends Application {
 
     @Override
     public void init() {
-        context.init(() -> SpringApplication.run(SudoMain.class));
+        try {
+            context.init(() -> SpringApplication.run(SudoMain.class));
+        } catch (Throwable t_) {
+            t = t_;
+            fxmlLoader=new FXMLLoader();
+        }
     }
 
     private void initializeScene() throws IOException {
@@ -70,21 +74,7 @@ public class SudoMain extends Application {
             isplashScreenView = fxmlLoader.getController();
             new DynamicFontSize(scene);
             isplashScreenView.showSplashScreen();
-            final long startTime = System.currentTimeMillis();
-            Thread.ofVirtual().start(() -> {
-                Throwable throwable = null;
-                try {
-                    // TODO mes actions asynchrones
-                } catch (Exception e) {
-                    throwable = e;
-                } finally {
-                    Throwable finalThrowable = throwable;
-                    Platform.runLater(() -> {
-                        loadingThreadExecutorResult(finalThrowable, startTime);
-                        // TODO Get & Set latest saved view from initializationAsynchronousTask
-                    });
-                }
-            });
+            loadingThreadExecutorResult(t, System.currentTimeMillis());
         } catch (Exception e) {
             log.error(String.format("██ Exception catch inside start() : %s", e.getMessage()), e);
             throw new RuntimeException(e);
@@ -116,7 +106,7 @@ public class SudoMain extends Application {
     private static void sqlInvalidAuthorization(Exception e, SQLInvalidAuthorizationSpecException sqlException) {
         log.error(String.format("██ SQLInvalidAuthorizationSpecException catch : %s", e.getMessage()), e);
         String sqlState = sqlException.getSQLState();
-        if ("28000" .equals(sqlState) || "28501" .equals(sqlState)) {
+        if ("28000".equals(sqlState) || "28501".equals(sqlState)) {
             log.error(String.format("██ SQLInvalidAuthorizationSpecException with sqlstate==(28000||28501) catch : %s", e.getMessage()), e);
             log.info(String.format("%n%n%s", SQL_INVALID_AUTHORIZATION_SPEC_EXCEPTION.getLogBackMessage()));
         }

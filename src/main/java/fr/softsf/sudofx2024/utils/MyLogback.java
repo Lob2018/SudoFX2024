@@ -8,8 +8,6 @@ import fr.softsf.sudofx2024.utils.os.WindowsFolderFactory;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import java.io.IOException;
@@ -21,28 +19,24 @@ import static fr.softsf.sudofx2024.utils.MyEnums.Paths.*;
 @Slf4j
 @Configuration
 public class MyLogback {
-    @Autowired
-    WindowsFolderFactory osFolderFactory;
+    WindowsFolderFactory osFolderFactory=new WindowsFolderFactory();
 
     @Getter
     private String logsFolderPath;
     private static final String LOGS_NAME = "SudokuFX.log";
     private String logBackPath = CONFIG_LOGBACK_PATH.getPath();
 
-    @Bean
-    public MyLogback setupMyLogback() {
+    public MyLogback() {
         logsFolderPath = osFolderFactory.getOsLogsFolderPath();
         System.setProperty("logs", logsFolderPath + "/" + LOGS_NAME);
         LoggerContext context = configureLogback();
-        printLogEntryMessage();
         printLogStatus(context);
-        return this;
     }
 
     /**
      * Prints entry message to the log
      */
-    private static void printLogEntryMessage() {
+    public void printLogEntryMessage() {
         log.info(ASCII_LOGO.getLogBackMessage());
     }
 

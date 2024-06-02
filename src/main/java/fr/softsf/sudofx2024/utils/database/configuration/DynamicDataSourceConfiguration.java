@@ -1,5 +1,6 @@
 package fr.softsf.sudofx2024.utils.database.configuration;
 
+import fr.softsf.sudofx2024.utils.MyLogback;
 import fr.softsf.sudofx2024.utils.database.DatabaseMigration;
 import fr.softsf.sudofx2024.utils.database.keystore.ApplicationKeystore;
 import fr.softsf.sudofx2024.utils.os.WindowsFolderFactory;
@@ -7,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.jdbc.DataSourceBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.DependsOn;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 
@@ -16,9 +18,22 @@ import javax.sql.DataSource;
 public class DynamicDataSourceConfiguration {
 
     @Bean
-    public DataSource dynamicDataSource(@Autowired WindowsFolderFactory osFolderFactory, @Autowired ApplicationKeystore keystore) {
+    int logbackInitialization(@Autowired MyLogback myLogback) {
+        myLogback.printLogEntryMessage();
+        return 0;
+    }
+
+    @DependsOn({"logbackInitialization"})
+    @Bean
+    int databaseMigration(@Autowired WindowsFolderFactory osFolderFactory, @Autowired ApplicationKeystore keystore) {
         keystore.setupApplicationKeystore();
         DatabaseMigration.configure(keystore, osFolderFactory);
+        return 0;
+    }
+
+    @DependsOn({"databaseMigration"})
+    @Bean
+    public DataSource dataSourceInitialization(@Autowired WindowsFolderFactory osFolderFactory, @Autowired ApplicationKeystore keystore) {
         return DataSourceBuilder.create()
                 .driverClassName("org.hsqldb.jdbcDriver")
                 .url("jdbc:hsqldb:file:" + osFolderFactory.getOsDataFolderPath() + "/sudofx2024db;shutdown=true")
@@ -28,9 +43,9 @@ public class DynamicDataSourceConfiguration {
     }
 
     @Bean
-    public LocalContainerEntityManagerFactoryBean entityManagerFactory(@Autowired DataSource dynamicDataSource) {
+    public LocalContainerEntityManagerFactoryBean entityManagerFactory(@Autowired DataSource dataSourceInitialization) {
         LocalContainerEntityManagerFactoryBean entityManagerFactory = new LocalContainerEntityManagerFactoryBean();
-        entityManagerFactory.setDataSource(dynamicDataSource);
+        entityManagerFactory.setDataSource(dataSourceInitialization);
         entityManagerFactory.setPackagesToScan("fr.softsf.sudofx2024.model");
         entityManagerFactory.setJpaVendorAdapter(new HibernateJpaVendorAdapter());
         entityManagerFactory.getJpaPropertyMap().put("hibernate.format_sql", "true");

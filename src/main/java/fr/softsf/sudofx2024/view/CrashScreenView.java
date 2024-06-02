@@ -41,9 +41,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class CrashScreenView implements SudoMain.IPrimaryStageView {
 
-    @Getter
-    @Autowired
-    WindowsFolderFactory osFolderFactory;
+    WindowsFolderFactory osFolderFactory=new WindowsFolderFactory();
 
     @FXML
     private VBox crashscreenvbox;
