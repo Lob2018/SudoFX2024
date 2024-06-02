@@ -1,6 +1,5 @@
 package fr.softsf.sudofx2024;
 
-import ch.qos.logback.core.util.Loader;
 import com.gluonhq.ignite.spring.SpringContext;
 import fr.softsf.sudofx2024.utils.DynamicFontSize;
 import javafx.animation.PauseTransition;
