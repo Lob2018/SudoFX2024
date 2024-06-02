@@ -101,7 +101,7 @@ public class SudoMain extends Application {
                         isplashScreenView = fxmlLoader.getController();
                         new DynamicFontSize(scene);
                         primaryStageP.hide();
-                        // TODO afficher fullmenu ou autre view
+                        // TODO gérer fullmenuView ET crashView
 
 
                         isplashScreenView.showSplashScreen();
