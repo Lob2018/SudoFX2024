@@ -3,8 +3,6 @@ package fr.softsf.sudofx2024;
 import com.gluonhq.ignite.spring.SpringContext;
 import fr.softsf.sudofx2024.utils.DynamicFontSize;
 import fr.softsf.sudofx2024.utils.MyLogback;
-import fr.softsf.sudofx2024.utils.database.keystore.ApplicationKeystore;
-import fr.softsf.sudofx2024.utils.os.WindowsFolderFactory;
 import javafx.animation.PauseTransition;
 import javafx.application.Application;
 import javafx.application.Platform;
@@ -42,12 +40,7 @@ public class SudoMain extends Application {
     @Autowired
     private FXMLLoader fxmlLoader;
     @Autowired
-    private WindowsFolderFactory osFolderFactory;
-    @Autowired
     private MyLogback setupMyLogback;
-    @Autowired
-    private ApplicationKeystore keystore;
-
 
     private ISplashScreenView isplashScreenView;
     private IPrimaryStageView iPrimaryStageView;
@@ -123,7 +116,7 @@ public class SudoMain extends Application {
     private static void sqlInvalidAuthorization(Exception e, SQLInvalidAuthorizationSpecException sqlException) {
         log.error(String.format("██ SQLInvalidAuthorizationSpecException catch : %s", e.getMessage()), e);
         String sqlState = sqlException.getSQLState();
-        if ("28000".equals(sqlState) || "28501".equals(sqlState)) {
+        if ("28000" .equals(sqlState) || "28501" .equals(sqlState)) {
             log.error(String.format("██ SQLInvalidAuthorizationSpecException with sqlstate==(28000||28501) catch : %s", e.getMessage()), e);
             log.info(String.format("%n%n%s", SQL_INVALID_AUTHORIZATION_SPEC_EXCEPTION.getLogBackMessage()));
         }
