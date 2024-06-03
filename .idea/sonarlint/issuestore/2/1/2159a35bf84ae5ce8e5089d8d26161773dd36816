@@ -1,0 +1,11 @@
+
+L	java:S1061"+Replace this use of System.out by a logger.(¤ª¸¾øÿÿÿÿ8æìÓøı1
+G	java:S1062"+Replace this use of System.out by a logger.(Ë¿±²8èìÓøı1
+^
+java:S34579"AFormat specifiers should be used instead of string concatenation.(Ñªñ8ëìÓøı1
+c
+java:S3457C"AFormat specifiers should be used instead of string concatenation.(û¥õşşÿÿÿÿ8”íÓøı1
+b
+java:S1128"ERemove this unused import 'fr.softsf.sudofx2024.model.SoftwareModel'.(ÁÑë8—íÓøı1
+Q
+java:S1128"/Remove this unused import 'java.util.Optional'.(¨˜ëİüÿÿÿÿ8˜íÓøı1

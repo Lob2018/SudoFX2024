@@ -1,0 +1,6 @@
+
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8áÆ™¯ý1J$2957be18-1059-4e97-adc7-b99f2b38276f
+y
+java:S1905o"1Remove this unnecessary cast to "SecretKeyEntry".(Ùñø¨ûÿÿÿÿ8ƒÇ™¯ý1J$b81cd669-8827-44e6-9bf0-ce2a085077b0
+n	java:S106Ã"+Replace this use of System.out by a logger.(Ù×Ëø8¦Ç™¯ý1J$9920c141-dad8-4d46-9957-fea76af07492

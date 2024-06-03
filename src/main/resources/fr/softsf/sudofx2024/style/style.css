@@ -1,0 +1,40 @@
+
+@font-face {
+    -fx-font-family: 'Luciole';
+    src: url('../fonts/luciole/lucioleregular.ttf');
+}
+
+@font-face {
+    -fx-font-family: 'Luciole Bold';
+    src: url('../fonts/luciole/luciolebold.ttf');
+}
+
+@font-face {
+    -fx-font-family: 'Luciole Italic';
+    src: url('../fonts/luciole/lucioleregularitalic.ttf');
+}
+
+@font-face {
+    -fx-font-family: 'Material Icons Round Regular';
+    src: url('../fonts/material/materialiconsroundregular.otf');
+}
+
+.bold-text {
+    -fx-font-family: 'Luciole Bold';
+    -fx-font-weight: bold;
+}
+
+.italic-text {
+    -fx-font-family: 'Luciole Italic';
+    -fx-font-style: italic;
+}
+
+.material {
+    -fx-font-family: 'Material Icons Round Regular';
+}
+
+.root {
+    -fx-font-family: 'Luciole';
+    -fx-font-size: 18px;
+    -fx-line-spacing: 1.5;
+}

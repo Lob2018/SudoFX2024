@@ -1,0 +1,28 @@
+name: Sudoku CI/CD
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  create-release:
+    name: Create release and tag it
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Extract version
+        run: echo "POM_VERSION=$(cat pom.xml | grep -oPm1 '(?<=<version>)[^<]+')" >> $GITHUB_ENV
+      - name: Create Release
+        uses: ncipollo/release-action@v1
+        with:
+          name: SudokuFX release v${{ env.POM_VERSION }}
+          tag: v${{ env.POM_VERSION }}
+          body: New release of SudokuFX
+          artifacts: 'output/*'
+      - name: Create Tag
+        run: git tag v${{ env.POM_VERSION }}
+      - name: Push Tag
+        run: git push --tags
