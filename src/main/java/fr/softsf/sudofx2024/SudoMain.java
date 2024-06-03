@@ -40,8 +40,6 @@ public class SudoMain extends Application {
     private ISplashScreenView isplashScreenView;
     private IPrimaryStageView iPrimaryStageView;
 
-    private Throwable t = null;
-
     @Getter
     private static Scene scene;
 
