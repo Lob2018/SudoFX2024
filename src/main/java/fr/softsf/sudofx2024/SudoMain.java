@@ -2,13 +2,12 @@ package fr.softsf.sudofx2024;
 
 import com.gluonhq.ignite.spring.SpringContext;
 import fr.softsf.sudofx2024.utils.DynamicFontSize;
-import fr.softsf.sudofx2024.view.MySplashScreenView;
+import fr.softsf.sudofx2024.view.SplashScreenView;
 import javafx.animation.PauseTransition;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 import lombok.Getter;
@@ -19,9 +18,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
-import java.io.IOException;
 import java.sql.SQLInvalidAuthorizationSpecException;
-import java.util.Objects;
 
 import static fr.softsf.sudofx2024.utils.ExceptionTools.getSQLInvalidAuthorizationSpecException;
 import static fr.softsf.sudofx2024.utils.MyEnums.LogBackTxt.SQL_INVALID_AUTHORIZATION_SPEC_EXCEPTION;
@@ -52,28 +49,21 @@ public class SudoMain extends Application {
         launch(args);
     }
 
-    private void initializeScene() throws IOException {
-        fxmlLoader.setLocation(getFXMLLoader("splashscreen-view").getLocation());
-        scene = new Scene(fxmlLoader.load(), -1, -1, Color.TRANSPARENT);
-        scene.getStylesheets().add((Objects.requireNonNull(SudoMain.class.getResource(RESOURCES_CSS_PATH.getPath()))).toExternalForm());
-    }
-
     @Override
     public void start(final Stage splashScreenStage) {
         try {
-            isplashScreenView = new MySplashScreenView(splashScreenStage);
+            isplashScreenView = new SplashScreenView(splashScreenStage);
+            scene = splashScreenStage.getScene();
             Platform.runLater(() -> {
                 Throwable throwable = null;
                 try {
                     context.init(() -> SpringApplication.run(SudoMain.class));
-                    initializeScene();
                     new DynamicFontSize(scene);
                 } catch (Exception e) {
                     throwable = e;
                     fxmlLoader = new FXMLLoader();
                 } finally {
-                    Throwable finalThrowable = throwable;
-                    loadingThreadExecutorResult(finalThrowable, System.currentTimeMillis());
+                    loadingThreadExecutorResult(throwable, System.currentTimeMillis());
                 }
             });
         } catch (Exception e) {

@@ -5,14 +5,14 @@ import java.nio.file.Paths;
 import java.util.Calendar;
 import java.util.Objects;
 
-import org.springframework.beans.factory.annotation.Autowired;
-
 import fr.softsf.sudofx2024.SudoMain;
 import fr.softsf.sudofx2024.utils.FileSystemManager;
 import fr.softsf.sudofx2024.utils.I18n;
 import fr.softsf.sudofx2024.utils.JVMApplicationProperties;
 import static fr.softsf.sudofx2024.utils.MyEnums.Paths.LOGO_SUDO_PNG_PATH;
 import static fr.softsf.sudofx2024.utils.MyEnums.Paths.SUPPOSED_DATA_FOLDER_FOR_SUDO_FX;
+import static fr.softsf.sudofx2024.utils.MyEnums.ScreenSize.DISPOSABLE_SIZE;
+
 import fr.softsf.sudofx2024.utils.os.WindowsFolderFactory;
 import javafx.animation.FadeTransition;
 import javafx.application.Platform;
@@ -28,11 +28,9 @@ import javafx.scene.layout.Region;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.SVGPath;
-import javafx.stage.Screen;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javafx.util.Duration;
-import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 
 /**
@@ -86,7 +84,6 @@ public class CrashScreenView implements SudoMain.IPrimaryStageView {
 
     private final Stage crashscreenStage = new Stage();
     private double crashScreenFontSize;
-    private final Screen primaryScreen = Screen.getPrimary();
     private final DropShadow dropShadow = new DropShadow();
 
     private static final double FADE_IN_IN_SECONDS_AFTER_SPLASHSCREEN = 0.5;
@@ -111,10 +108,9 @@ public class CrashScreenView implements SudoMain.IPrimaryStageView {
         crashscreenStage.getIcons().add(new Image((Objects.requireNonNull(SudoMain.class.getResource(LOGO_SUDO_PNG_PATH.getPath()))).toExternalForm()));
         crashscreenStage.initStyle(StageStyle.UNDECORATED);
         crashscreenStage.centerOnScreen();
-        final double minDisposable = Math.min(primaryScreen.getVisualBounds().getWidth(), primaryScreen.getVisualBounds().getHeight());
-        crashscreenvbox.setPrefWidth(minDisposable * .7);
-        crashscreenvbox.setPrefHeight(minDisposable * .7);
-        crashScreenFontSize = minDisposable * 0.02;
+        crashscreenvbox.setPrefWidth(DISPOSABLE_SIZE.getSize() * .7);
+        crashscreenvbox.setPrefHeight(DISPOSABLE_SIZE.getSize() * .7);
+        crashScreenFontSize = DISPOSABLE_SIZE.getSize() * 0.02;
         dropShadow.setColor(Color.BLACK);
         dropShadow.setRadius(crashScreenFontSize / 2);
         dropShadow.setOffsetX(crashScreenFontSize / 8);
@@ -146,6 +142,8 @@ public class CrashScreenView implements SudoMain.IPrimaryStageView {
     private void showcrashscreen() {
         final Scene s = SudoMain.getScene();
         crashscreenStage.setScene(s);
+        crashscreenStage.setWidth(DISPOSABLE_SIZE.getSize()*.7);
+        crashscreenStage.setHeight(DISPOSABLE_SIZE.getSize()*.7);
         crashscreenStage.show();
         s.getRoot().setStyle("-fx-font-size: " + crashScreenFontSize + "px;");
         buttonClose.requestFocus();

@@ -1,73 +1,79 @@
 package fr.softsf.sudofx2024.view;
 
 import fr.softsf.sudofx2024.SudoMain;
+import fr.softsf.sudofx2024.utils.I18n;
 import fr.softsf.sudofx2024.utils.JVMApplicationProperties;
-import javafx.animation.Animation;
-import javafx.animation.RotateTransition;
-import javafx.animation.ScaleTransition;
-import javafx.fxml.FXML;
+import javafx.geometry.Pos;
+import javafx.scene.Cursor;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
-import javafx.scene.control.ProgressIndicator;
 import javafx.scene.effect.DropShadow;
 import javafx.scene.image.Image;
-import javafx.scene.layout.*;
-import javafx.scene.paint.*;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.Pane;
+import javafx.scene.layout.Region;
+import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
 import javafx.scene.shape.SVGPath;
-import javafx.stage.Screen;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
-import javafx.util.Duration;
 
 import java.util.Calendar;
 import java.util.Objects;
 
-import javafx.animation.Interpolator;
-import org.springframework.stereotype.Component;
+import static fr.softsf.sudofx2024.utils.MyEnums.Paths.*;
+import static fr.softsf.sudofx2024.utils.MyEnums.ScreenSize.DISPOSABLE_SIZE;
+import static javafx.scene.layout.Priority.ALWAYS;
 
-import static fr.softsf.sudofx2024.utils.MyEnums.Paths.LOGO_SUDO_PNG_PATH;
-
-/**
- * SplashScreenView view without logic (not tested)
- */
 public class SplashScreenView implements SudoMain.ISplashScreenView {
 
-    @FXML
-    private VBox splashscreenvbox;
-    @FXML
-    private Region splashscreenvboxTophboxRegionsudosvg;
-    @FXML
-    private Label splashscreenvboxTophboxNamelabel;
-    @FXML
-    private HBox splashscreenvboxCenterhbox;
-    @FXML
-    private Region splashscreenvboxCenterhboxRegionflowersvg;
-    @FXML
-    private Region splashscreenvboxCenterhboxRegiontextsvg;
-    @FXML
-    private Label splashscreenvboxBottomhboxYearlabel;
-    @FXML
-    private ProgressIndicator splashscreenvboxBottomhboxHboxLoaderProgressIndicator;
-    @FXML
-    private Label splashscreenvboxBottomhboxVersionlabel;
+    public static final String FX_FONT_SIZE_1_EM = "-fx-font-size: 1em;";
+    private final VBox splashscreenvbox = new VBox();
+    private Scene scene;
 
-    private final Stage splashScreenStage = new Stage();
+    private final HBox splashScreenvboxtophbox = new HBox();
+    private final Region splashscreenvboxTophboxRegionsudosvg = new Region();
+    private final Pane splashScreenvboxtophboxpane = new Pane();
+    private final Label splashscreenvboxTophboxNamelabel = new Label();
+    private final HBox splashscreenvboxCenterhbox = new HBox();
+    private final Region splashscreenvboxCenterhboxRegionflowersvg = new Region();
+    private final Region splashscreenvboxCenterhboxRegiontextsvg = new Region();
+    private final HBox splashscreenvboxbottomhbox = new HBox();
+    private final Label splashscreenvboxBottomhboxYearlabel = new Label();
+    private final HBox splashscreenvboxbottomhboxhbox = new HBox();
+    private final Label splashscreenvboxBottomhboxHboxLoaderlabel = new Label();
+    private final Label splashscreenvboxBottomhboxVersionlabel = new Label();
+
+    private final Stage splashScreenStage;
     private double splashScreenFontSize;
-    private final Screen primaryScreen = Screen.getPrimary();
-    private ScaleTransition flowerScaleTransition;
-    private RotateTransition rotateTransition;
     private final DropShadow dropShadow = new DropShadow();
 
-    @FXML
-    private void initialize() {
+    public SplashScreenView(final Stage splashScreenStage_) {
+        splashScreenStage = splashScreenStage_;
+        fxmlLikeStructure();
+        nodesConfiguration();
+        nestingOfNodes();
+        showSplashScreen();
+    }
+
+    private void nestingOfNodes() {
+        splashScreenvboxtophbox.getChildren().addAll(splashscreenvboxTophboxRegionsudosvg, splashScreenvboxtophboxpane, splashscreenvboxTophboxNamelabel);
+        splashscreenvboxCenterhbox.getChildren().addAll(splashscreenvboxCenterhboxRegionflowersvg, splashscreenvboxCenterhboxRegiontextsvg);
+        splashscreenvboxbottomhboxhbox.getChildren().addAll(splashscreenvboxBottomhboxHboxLoaderlabel);
+        splashscreenvboxbottomhbox.getChildren().addAll(splashscreenvboxBottomhboxYearlabel, splashscreenvboxbottomhboxhbox, splashscreenvboxBottomhboxVersionlabel);
+        splashscreenvbox.getChildren().addAll(splashScreenvboxtophbox, splashscreenvboxCenterhbox, splashscreenvboxbottomhbox);
+    }
+
+    private void nodesConfiguration() {
+        scene = new Scene(splashscreenvbox, DISPOSABLE_SIZE.getSize() * .612, DISPOSABLE_SIZE.getSize() * .3);
+        scene.getStylesheets().add((Objects.requireNonNull(SudoMain.class.getResource(RESOURCES_CSS_PATH.getPath()))).toExternalForm());
         final Color splashDefaultFontColor = Color.web("#ffffff");
-        splashScreenStage.getIcons().add(new Image((Objects.requireNonNull(SudoMain.class.getResource(LOGO_SUDO_PNG_PATH.getPath()))).toExternalForm()));
-        splashScreenStage.initStyle(StageStyle.UNDECORATED);
-        splashScreenStage.centerOnScreen();
-        final double minDisposable = Math.min(primaryScreen.getVisualBounds().getWidth(), primaryScreen.getVisualBounds().getHeight());
-        splashscreenvbox.setPrefWidth(minDisposable * .612);
-        splashscreenvbox.setPrefHeight(minDisposable * .3);
-        splashScreenFontSize = minDisposable * 0.0219;
+        this.splashScreenStage.getIcons().add(new Image((Objects.requireNonNull(SudoMain.class.getResource(LOGO_SUDO_PNG_PATH.getPath()))).toExternalForm()));
+        this.splashScreenStage.initStyle(StageStyle.UNDECORATED);
+        this.splashScreenStage.centerOnScreen();
+        splashscreenvbox.setPrefWidth(DISPOSABLE_SIZE.getSize() * .612);
+        splashscreenvbox.setPrefHeight(DISPOSABLE_SIZE.getSize() * .3);
+        splashScreenFontSize = DISPOSABLE_SIZE.getSize() * 0.0219;
         dropShadow.setColor(Color.BLACK);
         dropShadow.setRadius(splashScreenFontSize / 2);
         dropShadow.setOffsetX(splashScreenFontSize / 8);
@@ -78,12 +84,32 @@ public class SplashScreenView implements SudoMain.ISplashScreenView {
         splashscreenvboxCenterhbox.setSpacing(splashScreenFontSize);
         setSplashscreenvboxCenterhboxStackpaneLogoflowersvg();
         splashscreenvboxBottomhboxYearlabel.setText(Calendar.getInstance().get(Calendar.YEAR) + "");
-        splashscreenvboxBottomhboxVersionlabel.setText(JVMApplicationProperties.getAppVersion());
-        splashscreenvboxBottomhboxHboxLoaderProgressIndicator.setPrefHeight(splashScreenFontSize);
-        splashscreenvboxBottomhboxHboxLoaderProgressIndicator.setStyle("-fx-progress-color: #FFFFFF;");
         splashscreenvboxBottomhboxYearlabel.setTextFill(splashDefaultFontColor);
+        splashscreenvboxBottomhboxHboxLoaderlabel.setText(I18n.getValue("splashscreen.loading"));
+        splashscreenvboxBottomhboxHboxLoaderlabel.setTextFill(splashDefaultFontColor);
+        splashscreenvboxBottomhboxVersionlabel.setText(JVMApplicationProperties.getAppVersion());
         splashscreenvboxBottomhboxVersionlabel.setTextFill(splashDefaultFontColor);
         setSplashscreenvboxCenterhboxLogosoft64textsvg();
+    }
+
+    private void fxmlLikeStructure() {
+        splashscreenvbox.setAlignment(Pos.CENTER);
+        splashscreenvbox.setId("splashscreenvbox");
+        splashScreenvboxtophbox.setAlignment(Pos.CENTER_LEFT);
+        HBox.setHgrow(splashScreenvboxtophbox, ALWAYS);
+        HBox.setHgrow(splashScreenvboxtophboxpane, ALWAYS);
+        splashscreenvboxTophboxNamelabel.setStyle(FX_FONT_SIZE_1_EM);
+        splashscreenvboxCenterhbox.setAlignment(Pos.CENTER);
+        HBox.setHgrow(splashscreenvboxCenterhbox, ALWAYS);
+        VBox.setVgrow(splashscreenvboxCenterhbox, ALWAYS);
+        splashscreenvboxbottomhbox.setAlignment(Pos.CENTER_RIGHT);
+        HBox.setHgrow(splashscreenvboxbottomhbox, ALWAYS);
+        splashscreenvboxBottomhboxYearlabel.setStyle(FX_FONT_SIZE_1_EM);
+        HBox.setHgrow(splashscreenvboxBottomhboxYearlabel, ALWAYS);
+        splashscreenvboxbottomhboxhbox.setAlignment(Pos.CENTER);
+        HBox.setHgrow(splashscreenvboxbottomhboxhbox, ALWAYS);
+        splashscreenvboxBottomhboxHboxLoaderlabel.setStyle(FX_FONT_SIZE_1_EM);
+        splashscreenvboxBottomhboxVersionlabel.setStyle(FX_FONT_SIZE_1_EM);
     }
 
     @Override
@@ -94,12 +120,10 @@ public class SplashScreenView implements SudoMain.ISplashScreenView {
 
     @Override
     public void showSplashScreen() {
-        final Scene s = SudoMain.getScene();
-        splashScreenStage.setScene(s);
+        scene.setCursor(Cursor.WAIT);
+        splashScreenStage.setScene(scene);
         splashScreenStage.show();
-        s.getRoot().setStyle("-fx-font-size: " + splashScreenFontSize + "px;");
-        flowerScaleTransition.play();
-        rotateTransition.play();
+        scene.getRoot().setStyle("-fx-font-size: " + splashScreenFontSize + "px;");
     }
 
     private void setSplashscreenvboxCenterhboxStackpaneLogoflowersvg() {
@@ -116,25 +140,6 @@ public class SplashScreenView implements SudoMain.ISplashScreenView {
                         "#e5bbd6 0.66, #e5bbd6 1);" +
                         "-fx-background-position: center center;"
         );
-        flowerAnimation();
-    }
-
-    private void flowerAnimation() {
-        splashscreenvboxCenterhboxRegionflowersvg.setScaleX(0.9);
-        splashscreenvboxCenterhboxRegionflowersvg.setScaleY(0.9);
-        flowerScaleTransition = new ScaleTransition(Duration.seconds(1.5), splashscreenvboxCenterhboxRegionflowersvg);
-        flowerScaleTransition.setFromX(0.9);
-        flowerScaleTransition.setFromY(0.9);
-        flowerScaleTransition.setToX(1);
-        flowerScaleTransition.setToY(1);
-        flowerScaleTransition.setInterpolator(Interpolator.SPLINE(0, .9, 1, .7));
-        splashscreenvboxCenterhboxRegionflowersvg.setEffect(dropShadow);
-        rotateTransition = new RotateTransition(Duration.seconds(2), splashscreenvboxCenterhboxRegionflowersvg);
-        rotateTransition.setFromAngle(-5);
-        flowerScaleTransition.setInterpolator(Interpolator.EASE_BOTH);
-        rotateTransition.setToAngle(0);
-        rotateTransition.setAutoReverse(true);
-        rotateTransition.setCycleCount(Animation.INDEFINITE);
     }
 
     private void setSplashscreenvboxCenterhboxLogosoft64textsvg() {

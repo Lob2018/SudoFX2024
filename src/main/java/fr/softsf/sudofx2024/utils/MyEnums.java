@@ -1,12 +1,31 @@
 package fr.softsf.sudofx2024.utils;
 
 import fr.softsf.sudofx2024.annotations.ExcludedFromCoverageReportGenerated;
+import javafx.stage.Screen;
 
 public final class MyEnums {
 
     @ExcludedFromCoverageReportGenerated
     private MyEnums() {
     }
+
+    /**
+     * Enum for screen minimum size
+     */
+    public enum ScreenSize {
+        DISPOSABLE_SIZE(Math.min(Screen.getPrimary().getVisualBounds().getWidth(), Screen.getPrimary().getVisualBounds().getHeight()));
+
+        private final double size;
+
+        ScreenSize(final double size_) {
+            this.size = size_;
+        }
+
+        public final double getSize() {
+            return size;
+        }
+    }
+
 
     /**
      * Enum for OS name
@@ -39,7 +58,7 @@ public final class MyEnums {
         ASCII_LOGO("""
                                 
                                 
-                ▓▓ Entering application
+                ▓▓ Application entry
                                 
                          ▒▒▒▒▒                                                                                     \s
                         ▒▒▒▒▒▒▒                                                                                    \s
