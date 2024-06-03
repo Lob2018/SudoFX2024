@@ -32,17 +32,17 @@ application allows you to solve the current Sudoku grid, but also other entries 
     - Development
         - javafx-controls
         - javafx-fxml
-    - SGBDR & ORM
+    - SGBDR & SPRING BOOT
         - HSQLDB
-        - hibernate
-        - c3p0 (connection pool)
-        - flyway (database-migration)
+        - Spring boot
+          - Starter
+          - Gluon Ignite with Spring
+          - Starter data JPA
+          - Starter validation
+        - flyway (database migration)
         - passay (generate and validate passwords)
-        - jakarta.validation
-        - jakarta.persistence
     - Logs
-        - logback-core
-        - logback-classic
+        - logback from Spring Boot
     - Build dependencies :
         - maven-compiler-plugin
         - javafx-maven-plugin
@@ -55,6 +55,7 @@ application allows you to solve the current Sudoku grid, but also other entries 
         - jacoco
         - testfx-junit5 (ex. : FxRobot to execute actions within the UI)
         - hamcrest (ex. : TestFX custom Hamcrest matchers org.testfx.matcher.*.)
+        - spring boot starter test
 
 ## Project
 
