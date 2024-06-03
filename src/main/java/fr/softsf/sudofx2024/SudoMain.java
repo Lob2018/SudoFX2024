@@ -2,16 +2,13 @@ package fr.softsf.sudofx2024;
 
 import com.gluonhq.ignite.spring.SpringContext;
 import fr.softsf.sudofx2024.utils.DynamicFontSize;
+import fr.softsf.sudofx2024.view.MySplashScreenView;
 import javafx.animation.PauseTransition;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Cursor;
 import javafx.scene.Scene;
-import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
-import javafx.scene.text.Font;
-import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 import lombok.Getter;
@@ -62,39 +59,20 @@ public class SudoMain extends Application {
     }
 
     @Override
-    public void start(final Stage primaryStageP) {
+    public void start(final Stage splashScreenStage) {
         try {
-
-            // TODO MY SPLASH SCREEN MANNUALLY (sans FXML)
-            Text text = new Text("Chargement en cours!");
-            // Configuration du texte
-            text.setFont(Font.font("Verdana", 20));
-            text.setFill(Color.RED);
-            StackPane stackPane = new StackPane();
-            stackPane.getChildren().add(text);
-            // Création de la scène et ajout du texte
-            scene = new Scene(stackPane, 300, 200, Color.TRANSPARENT);
-            scene.getStylesheets().add((Objects.requireNonNull(SudoMain.class.getResource(RESOURCES_CSS_PATH.getPath()))).toExternalForm());
-            primaryStageP.setScene(scene);
-            primaryStageP.setTitle("JavaFX App");
-            scene.setCursor(Cursor.WAIT);
-            primaryStageP.show();
-
+            isplashScreenView = new MySplashScreenView(splashScreenStage);
             Platform.runLater(() -> {
                 Throwable throwable = null;
                 try {
                     context.init(() -> SpringApplication.run(SudoMain.class));
                     initializeScene();
-                    isplashScreenView = fxmlLoader.getController();
                     new DynamicFontSize(scene);
-                    primaryStageP.hide();
-                    isplashScreenView.showSplashScreen();
                 } catch (Exception e) {
                     throwable = e;
                     fxmlLoader = new FXMLLoader();
                 } finally {
                     Throwable finalThrowable = throwable;
-                    // TODO gérer fullmenuView ET crashView (puis mçj la vue sauvegardée)
                     loadingThreadExecutorResult(finalThrowable, System.currentTimeMillis());
                 }
             });
