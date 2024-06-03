@@ -17,15 +17,6 @@ public class SoftwareService {
     @Autowired
     private SoftwareRepository softwareRepository;
 
-    public Optional<Software> createSoftware(Software software) {
-        try {
-            return Optional.of(softwareRepository.save(software));
-        } catch (Exception e) {
-            log.error(String.format("██ Error creating software :  %s", e.getMessage()), e);
-            return Optional.empty();
-        }
-    }
-
     public Optional<Software> getSoftware() {
         try {
             return Optional.of(softwareRepository.findAll().get(0));
@@ -36,8 +27,6 @@ public class SoftwareService {
             log.error(String.format("██ Exception retrieving software : %s", e.getMessage()), e);
             return Optional.empty();
         }
-
-
     }
 
     public Optional<Software> updateSoftware(Software software) {

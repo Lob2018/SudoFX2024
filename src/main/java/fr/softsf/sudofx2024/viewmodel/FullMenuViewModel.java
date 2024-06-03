@@ -32,7 +32,6 @@ public class FullMenuViewModel {
         welcomeProperty().set(output);
     }
 
-
     public void test() {
         Optional<Software> currentSoftware = softwareService.getSoftware();
         System.out.println("###### GET ####### " + currentSoftware);
