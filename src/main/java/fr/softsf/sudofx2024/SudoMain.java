@@ -49,11 +49,15 @@ public class SudoMain extends Application {
         launch(args);
     }
 
+    public static void initScene(Stage splashScreenStage) {
+        scene = splashScreenStage.getScene();
+    }
+
     @Override
     public void start(final Stage splashScreenStage) {
         try {
             isplashScreenView = new SplashScreenView(splashScreenStage);
-            scene = splashScreenStage.getScene();
+            initScene(splashScreenStage);
             Platform.runLater(() -> {
                 Throwable throwable = null;
                 try {
