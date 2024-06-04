@@ -25,7 +25,7 @@ public class Game {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID gameuuid;
 
-    @ManyToOne
+    @OneToOne
     @Cascade(CascadeType.ALL)
     @Fetch(FetchMode.JOIN)
     @JoinColumn(name = "gridgriduuid")
