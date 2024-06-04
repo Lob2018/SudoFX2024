@@ -96,7 +96,7 @@ public class CrashScreenView implements SudoMain.IPrimaryStageView {
         primaryStage.setMaximized(true);
     }
     @Override
-    public void showPrimaryStage(SudoMain.ISplashScreenView iSplashScreenView) {
+    public void openingMainStage(SudoMain.ISplashScreenView iSplashScreenView) {
         fadeIn(SudoMain.getScene().getRoot());
         showcrashscreen();
         iSplashScreenView.hideSplashScreen();

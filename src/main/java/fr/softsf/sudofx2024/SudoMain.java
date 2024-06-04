@@ -110,7 +110,7 @@ public class SudoMain extends Application {
         pause.setOnFinished(e -> {
             setRootByFXMLName(fxmlName);
             iPrimaryStageView = fxmlLoader.getController();
-            iPrimaryStageView.showPrimaryStage(isplashScreenView);
+            iPrimaryStageView.openingMainStage(isplashScreenView);
         });
         return pause;
     }
@@ -137,7 +137,7 @@ public class SudoMain extends Application {
     }
 
     public interface IPrimaryStageView {
-        void showPrimaryStage(ISplashScreenView iSplashScreenView);
+        void openingMainStage(ISplashScreenView iSplashScreenView);
     }
 
     public interface ISplashScreenView {

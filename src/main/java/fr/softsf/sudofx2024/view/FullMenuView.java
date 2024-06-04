@@ -21,7 +21,6 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javafx.util.Duration;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
 public class FullMenuView implements SudoMain.IPrimaryStageView {
 
@@ -55,17 +54,17 @@ public class FullMenuView implements SudoMain.IPrimaryStageView {
 
     }
 
-    private static final double FADE_IN_IN_SECONDS_AFTER_SPLASHSCREEN = 0.5;
+    private static final double FADE_IN_IN_SECONDS_AFTER_SPLASHSCREEN = 0.3;
     private final Stage primaryStage = new Stage();
 
-    private void configureStage() {
+    private void openingConfigureStage() {
         primaryStage.getIcons().add(new Image((Objects.requireNonNull(SudoMain.class.getResource(LOGO_SUDO_PNG_PATH.getPath()))).toExternalForm()));
         primaryStage.initStyle(StageStyle.DECORATED);
         primaryStage.setScene(SudoMain.getScene());
         primaryStage.centerOnScreen();
     }
 
-    private void maximizePrimaryStage() {
+    private void openingMaximizePrimaryStage() {
         Rectangle2D r = Screen.getPrimary().getVisualBounds();
         primaryStage.setX(r.getMinX());
         primaryStage.setY(r.getMinY());
@@ -73,7 +72,7 @@ public class FullMenuView implements SudoMain.IPrimaryStageView {
         primaryStage.setHeight(r.getHeight());
     }
 
-    private void fadeIn(final Node node) {
+    private void openingFadeIn(final Node node) {
         FadeTransition fadeIn = new FadeTransition(Duration.seconds(FADE_IN_IN_SECONDS_AFTER_SPLASHSCREEN), node);
         fadeIn.setFromValue(0.0);
         fadeIn.setToValue(1.0);
@@ -81,16 +80,16 @@ public class FullMenuView implements SudoMain.IPrimaryStageView {
         primaryStage.setMaximized(true);
     }
 
-    private void showStage() {
+    private void openingShowStage() {
         primaryStage.show();
     }
 
     @Override
-    public void showPrimaryStage(final SudoMain.ISplashScreenView iSplashScreenView) {
-        configureStage();
-        maximizePrimaryStage();
-        fadeIn(SudoMain.getScene().getRoot());
-        showStage();
+    public void openingMainStage(final SudoMain.ISplashScreenView iSplashScreenView) {
+        openingConfigureStage();
+        openingMaximizePrimaryStage();
+        openingFadeIn(SudoMain.getScene().getRoot());
+        openingShowStage();
         iSplashScreenView.hideSplashScreen();
     }
 }
