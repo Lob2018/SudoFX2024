@@ -6,6 +6,10 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.CascadeType;
+import org.hibernate.annotations.Cascade;
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
 
 import java.time.LocalDateTime;
 import java.util.UUID;
@@ -22,14 +26,28 @@ public class Game {
     private UUID gameuuid;
 
     @ManyToOne
+    @Cascade(CascadeType.ALL)
+    @Fetch(FetchMode.JOIN)
     @JoinColumn(name = "gridgriduuid")
     private Grid griduuid;
 
     @ManyToOne
+    @Cascade(CascadeType.ALL)
+    @Fetch(FetchMode.JOIN)
     @JoinColumn(name = "playerplayeruuid")
     private Player playeruuid;
 
+    public Player getPlayer() {
+        return playeruuid;
+    }
+
+    public void setPlayer(Player player) {
+        this.playeruuid = player;
+    }
+
     @ManyToOne
+    @Cascade(CascadeType.ALL)
+    @Fetch(FetchMode.JOIN)
     @JoinColumn(name = "levelleveluuid")
     private GameLevel leveluuid;
 

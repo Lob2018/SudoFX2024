@@ -1,11 +1,9 @@
 package fr.softsf.sudofx2024.unit.utils;
 
-import fr.softsf.sudofx2024.utils.MyEnums;
 import org.junit.jupiter.api.Test;
 
 import static fr.softsf.sudofx2024.utils.MyEnums.Paths.*;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 
 class MyEnumsUTest {

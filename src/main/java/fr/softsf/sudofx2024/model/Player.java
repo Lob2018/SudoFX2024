@@ -7,8 +7,14 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.Cascade;
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
+import org.hibernate.annotations.CascadeType;
 
 import java.time.LocalDateTime;
+import java.util.LinkedHashSet;
+import java.util.Set;
 import java.util.UUID;
 
 @Entity
@@ -23,16 +29,41 @@ public class Player {
     private UUID playeruuid;
 
     @ManyToOne
+    @Cascade(CascadeType.ALL)
+    @Fetch(FetchMode.JOIN)
     @JoinColumn(name = "playerlanguageplayerlanguageuuid")
     private PlayerLanguage playerlanguageuuid;
 
-    @ManyToOne
+    @OneToOne
+    @Cascade(CascadeType.ALL)
+    @Fetch(FetchMode.JOIN)
     @JoinColumn(name = "backgroundbackgrounduuid")
     private Background backgrounduuid;
 
     @ManyToOne
+    @Cascade(CascadeType.ALL)
+    @Fetch(FetchMode.JOIN)
     @JoinColumn(name = "menumenuuuid")
     private Menu menuuuid;
+
+    @OneToMany(mappedBy = "playeruuid", orphanRemoval = true)
+    @Cascade(CascadeType.ALL)
+    @OrderBy("updatedat")
+    private Set<Game> games = new LinkedHashSet();
+
+    public Set<Game> getGames() {
+        return games;
+    }
+
+    public void addGame(Game game) {
+        games.add(game);
+        game.setPlayer(this);
+    }
+
+    public void removeGame(Game game) {
+        games.remove(game);
+        game.setPlayer(null);
+    }
 
     @NotNull
     @Size(max = 256)
