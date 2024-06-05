@@ -10,13 +10,10 @@ import java.util.UUID;
 
 import fr.softsf.sudofx2024.annotations.ExcludedFromCoverageReportGenerated;
 import fr.softsf.sudofx2024.interfaces.IKeystore;
-import fr.softsf.sudofx2024.utils.database.GenerateSecret;
 import fr.softsf.sudofx2024.utils.os.WindowsFolderFactory;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.DependsOn;
 import org.springframework.stereotype.Component;
 
 import javax.crypto.*;
@@ -238,10 +235,10 @@ public class ApplicationKeystore implements IKeystore {
     /**
      * Stubbing setter for OS folder factory
      *
-     * @param osFolderFactory The OS folder factory
+     * @param osFolderFactoryP The OS folder factory
      */
-    void setOsFolderFactoryForTests(WindowsFolderFactory osFolderFactory) {
-        this.osFolderFactory = osFolderFactory;
+    void setOsFolderFactoryForTests(WindowsFolderFactory osFolderFactoryP) {
+        osFolderFactory = osFolderFactoryP;
     }
 
     public interface IEncryptionService {

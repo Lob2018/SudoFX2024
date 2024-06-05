@@ -68,9 +68,9 @@ public class SplashScreenView implements SudoMain.ISplashScreenView {
         scene = new Scene(splashscreenvbox, DISPOSABLE_SIZE.getSize() * .612, DISPOSABLE_SIZE.getSize() * .3);
         scene.getStylesheets().add((Objects.requireNonNull(SudoMain.class.getResource(RESOURCES_CSS_PATH.getPath()))).toExternalForm());
         final Color splashDefaultFontColor = Color.web("#ffffff");
-        this.splashScreenStage.getIcons().add(new Image((Objects.requireNonNull(SudoMain.class.getResource(LOGO_SUDO_PNG_PATH.getPath()))).toExternalForm()));
-        this.splashScreenStage.initStyle(StageStyle.UNDECORATED);
-        this.splashScreenStage.centerOnScreen();
+        splashScreenStage.getIcons().add(new Image((Objects.requireNonNull(SudoMain.class.getResource(LOGO_SUDO_PNG_PATH.getPath()))).toExternalForm()));
+        splashScreenStage.initStyle(StageStyle.UNDECORATED);
+        splashScreenStage.centerOnScreen();
         splashscreenvbox.setPrefWidth(DISPOSABLE_SIZE.getSize() * .612);
         splashscreenvbox.setPrefHeight(DISPOSABLE_SIZE.getSize() * .3);
         splashScreenFontSize = DISPOSABLE_SIZE.getSize() * 0.0219;

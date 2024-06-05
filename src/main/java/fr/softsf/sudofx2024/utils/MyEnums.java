@@ -18,7 +18,7 @@ public final class MyEnums {
         private final double size;
 
         ScreenSize(final double size_) {
-            this.size = size_;
+            size = size_;
         }
 
         public final double getSize() {
@@ -37,7 +37,7 @@ public final class MyEnums {
         private final String os;
 
         OsName(final String os_) {
-            this.os = os_;
+            os = os_;
         }
 
         public final String getOs() {
@@ -79,7 +79,7 @@ public final class MyEnums {
         private final String logBackMessage;
 
         LogBackTxt(final String logBackMessage_) {
-            this.logBackMessage = logBackMessage_;
+            logBackMessage = logBackMessage_;
         }
 
         public final String getLogBackMessage() {
@@ -107,7 +107,7 @@ public final class MyEnums {
         private final String path;
 
         Paths(final String path_) {
-            this.path = path_;
+            path = path_;
         }
 
         public final String getPath() {

@@ -14,7 +14,7 @@ public final class DynamicFontSize {
      * @param theScene The Scene
      */
     public DynamicFontSize(final Scene theScene) {
-        this.scene = theScene;
+        scene = theScene;
         scene.widthProperty().addListener((obs, oldW, newW) -> updateFontSize());
         scene.heightProperty().addListener((obs, oldH, newH) -> updateFontSize());
     }

@@ -22,11 +22,11 @@ public final class SecretKeyEncryptionServiceAESGCM implements ApplicationKeysto
 
     /**
      * SecretKey encryption service
-     * @param secretKey The SecretKey
+     * @param secretKeyP The SecretKey
      */
     @ExcludedFromCoverageReportGenerated
-    public SecretKeyEncryptionServiceAESGCM(final SecretKey secretKey) {
-        this.secretKey = secretKey;
+    public SecretKeyEncryptionServiceAESGCM(final SecretKey secretKeyP) {
+        secretKey = secretKeyP;
         try {
             cipher = Cipher.getInstance("AES/GCM/NoPadding");
         } catch (NoSuchAlgorithmException | NoSuchPaddingException e) {

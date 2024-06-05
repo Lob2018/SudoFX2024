@@ -1,7 +1,7 @@
 package fr.softsf.sudofx2024.integration.database;
 
 import fr.softsf.sudofx2024.utils.MyRegex;
-import fr.softsf.sudofx2024.utils.database.GenerateSecret;
+import fr.softsf.sudofx2024.utils.database.keystore.GenerateSecret;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

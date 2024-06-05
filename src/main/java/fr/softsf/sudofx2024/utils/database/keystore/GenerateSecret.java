@@ -1,4 +1,4 @@
-package fr.softsf.sudofx2024.utils.database;
+package fr.softsf.sudofx2024.utils.database.keystore;
 
 import fr.softsf.sudofx2024.annotations.ExcludedFromCoverageReportGenerated;
 import org.passay.CharacterData;

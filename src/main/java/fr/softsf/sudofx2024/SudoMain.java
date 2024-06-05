@@ -49,6 +49,7 @@ public class SudoMain extends Application {
 
     public static void initScene(Stage splashScreenStage) {
         scene = splashScreenStage.getScene();
+        new DynamicFontSize(scene);
     }
 
     @Override
@@ -60,7 +61,6 @@ public class SudoMain extends Application {
                 Throwable throwable = null;
                 try {
                     context.init(() -> SpringApplication.run(SudoMain.class));
-                    new DynamicFontSize(scene);
                 } catch (Exception e) {
                     throwable = e;
                     fxmlLoader = new FXMLLoader();

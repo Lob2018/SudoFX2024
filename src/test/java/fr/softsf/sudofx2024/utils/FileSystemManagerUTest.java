@@ -47,7 +47,7 @@ class FileSystemManagerUTest {
             Files.createDirectories(tempDir.resolve("testFolder/" + suffix + "/toto.txt"));
             path1 = tempDir.resolve("testFolder/" + suffix + "/toto.txt");
         } catch (InvalidPathException | IOException ipe) {
-            System.err.println("error creating temporary test file in " + this.getClass().getSimpleName());
+            System.err.println("error creating temporary test file in " + getClass().getSimpleName());
         }
     }
 
