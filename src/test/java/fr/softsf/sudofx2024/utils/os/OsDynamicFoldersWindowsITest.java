@@ -12,7 +12,7 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 @SpringBootTest
-class OsDynamicFoldersITest {
+class OsDynamicFoldersWindowsITest {
 
     @Autowired
     WindowsFolderFactory osFolderFactory;

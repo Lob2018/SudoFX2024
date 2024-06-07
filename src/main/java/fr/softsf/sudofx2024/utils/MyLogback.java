@@ -4,10 +4,11 @@ import ch.qos.logback.classic.LoggerContext;
 import ch.qos.logback.classic.joran.JoranConfigurator;
 import ch.qos.logback.core.joran.spi.JoranException;
 import ch.qos.logback.core.util.StatusPrinter2;
-import fr.softsf.sudofx2024.utils.os.WindowsFolderFactory;
+import fr.softsf.sudofx2024.utils.os.OsDynamicFolders;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 
 import java.io.IOException;
@@ -19,15 +20,14 @@ import static fr.softsf.sudofx2024.utils.MyEnums.Paths.*;
 @Slf4j
 @Configuration
 public class MyLogback {
-    WindowsFolderFactory osFolderFactory=new WindowsFolderFactory();
 
     @Getter
     private String logsFolderPath;
     private static final String LOGS_NAME = "SudokuFX.log";
     private String logBackPath = CONFIG_LOGBACK_PATH.getPath();
 
-    public MyLogback() {
-        logsFolderPath = osFolderFactory.getOsLogsFolderPath();
+    public MyLogback(@Autowired OsDynamicFolders osFolderFactory) {
+        logsFolderPath = osFolderFactory.osFolderFactory().getOsLogsFolderPath();
         System.setProperty("logs", logsFolderPath + "/" + LOGS_NAME);
         LoggerContext context = configureLogback();
         printLogStatus(context);

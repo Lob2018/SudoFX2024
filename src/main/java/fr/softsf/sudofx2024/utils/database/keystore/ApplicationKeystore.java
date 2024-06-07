@@ -10,7 +10,7 @@ import java.util.UUID;
 
 import fr.softsf.sudofx2024.annotations.ExcludedFromCoverageReportGenerated;
 import fr.softsf.sudofx2024.interfaces.IKeystore;
-import fr.softsf.sudofx2024.utils.os.WindowsFolderFactory;
+import fr.softsf.sudofx2024.utils.os.OsDynamicFolders;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,7 +23,7 @@ import javax.crypto.spec.SecretKeySpec;
 @Component
 public class ApplicationKeystore implements IKeystore {
     @Autowired
-    WindowsFolderFactory osFolderFactory;
+    OsDynamicFolders.IOsFoldersFactory osFolderFactory;
 
     private static final String KEYSTORE_PASSWORD_FROM_UUID = String.valueOf(UUID.nameUUIDFromBytes(System.getProperty("user.name").getBytes()));
     private static final String KEYSTORE_TYPE = "pkcs12";
@@ -237,7 +237,7 @@ public class ApplicationKeystore implements IKeystore {
      *
      * @param osFolderFactoryP The OS folder factory
      */
-    void setOsFolderFactoryForTests(WindowsFolderFactory osFolderFactoryP) {
+    void setOsFolderFactoryForTests(OsDynamicFolders.IOsFoldersFactory osFolderFactoryP) {
         osFolderFactory = osFolderFactoryP;
     }
 

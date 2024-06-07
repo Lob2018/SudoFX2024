@@ -9,11 +9,12 @@ import fr.softsf.sudofx2024.SudoMain;
 import fr.softsf.sudofx2024.utils.FileSystemManager;
 import fr.softsf.sudofx2024.utils.I18n;
 import fr.softsf.sudofx2024.utils.JVMApplicationProperties;
+
 import static fr.softsf.sudofx2024.utils.MyEnums.Paths.LOGO_SUDO_PNG_PATH;
 import static fr.softsf.sudofx2024.utils.MyEnums.Paths.SUPPOSED_DATA_FOLDER_FOR_SUDO_FX;
 import static fr.softsf.sudofx2024.utils.MyEnums.ScreenSize.DISPOSABLE_SIZE;
 
-import fr.softsf.sudofx2024.utils.os.WindowsFolderFactory;
+import fr.softsf.sudofx2024.utils.os.OsDynamicFolders;
 import javafx.animation.FadeTransition;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
@@ -32,6 +33,7 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javafx.util.Duration;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  * CrashScreenView view without logic (not tested)
@@ -39,7 +41,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class CrashScreenView implements SudoMain.IPrimaryStageView {
 
-    WindowsFolderFactory osFolderFactory=new WindowsFolderFactory();
+    private static final OsDynamicFolders.IOsFoldersFactory iOsFolderFactory = new OsDynamicFolders().osFolderFactory();
 
     @FXML
     private VBox crashscreenvbox;
@@ -72,7 +74,7 @@ public class CrashScreenView implements SudoMain.IPrimaryStageView {
     @FXML
     private void resetButtonClick() {
         log.info("▓▓▓▓ The user choose to reset the application data");
-        Path pathToDelete = Paths.get(osFolderFactory.getOsDataFolderPath());
+        Path pathToDelete = Paths.get(iOsFolderFactory.getOsDataFolderPath());
         if (new FileSystemManager().deleteFolderRecursively(pathToDelete, SUPPOSED_DATA_FOLDER_FOR_SUDO_FX.getPath())) {
             log.info("▓▓▓▓ The directory is deleted");
         } else {
@@ -88,6 +90,7 @@ public class CrashScreenView implements SudoMain.IPrimaryStageView {
 
     private static final double FADE_IN_IN_SECONDS_AFTER_SPLASHSCREEN = 0.5;
     private final Stage primaryStage = new Stage();
+
     private void fadeIn(final Node node) {
         FadeTransition fadeIn = new FadeTransition(Duration.seconds(FADE_IN_IN_SECONDS_AFTER_SPLASHSCREEN), node);
         fadeIn.setFromValue(0.0);
@@ -95,6 +98,7 @@ public class CrashScreenView implements SudoMain.IPrimaryStageView {
         fadeIn.play();
         primaryStage.setMaximized(true);
     }
+
     @Override
     public void openingMainStage(SudoMain.ISplashScreenView iSplashScreenView) {
         fadeIn(SudoMain.getScene().getRoot());
@@ -121,7 +125,7 @@ public class CrashScreenView implements SudoMain.IPrimaryStageView {
         crashscreenvboxCenterhboxLabel.setText(I18n.getValue("crashscreen.message"));
         crashscreenvboxCenterhboxLabel.setWrapText(true);
         crashscreenvboxCenterhboxLabel.setTextFill(crashDefaultFontColor);
-        crashscreenvboxCenterhboxLabel2.setText(I18n.getValue("crashscreen.extramessage") + "\n" + osFolderFactory.getOsDataFolderPath());
+        crashscreenvboxCenterhboxLabel2.setText(I18n.getValue("crashscreen.extramessage") + "\n" + iOsFolderFactory.getOsDataFolderPath());
         crashscreenvboxCenterhboxLabel2.setWrapText(true);
         crashscreenvboxCenterhboxLabel2.setTextFill(crashDefaultFontColor);
         buttonReset.setText(I18n.getValue("crashscreen.reset"));
@@ -142,8 +146,8 @@ public class CrashScreenView implements SudoMain.IPrimaryStageView {
     private void showcrashscreen() {
         final Scene s = SudoMain.getScene();
         crashscreenStage.setScene(s);
-        crashscreenStage.setWidth(DISPOSABLE_SIZE.getSize()*.7);
-        crashscreenStage.setHeight(DISPOSABLE_SIZE.getSize()*.7);
+        crashscreenStage.setWidth(DISPOSABLE_SIZE.getSize() * .7);
+        crashscreenStage.setHeight(DISPOSABLE_SIZE.getSize() * .7);
         crashscreenStage.show();
         s.getRoot().setStyle("-fx-font-size: " + crashScreenFontSize + "px;");
         buttonClose.requestFocus();

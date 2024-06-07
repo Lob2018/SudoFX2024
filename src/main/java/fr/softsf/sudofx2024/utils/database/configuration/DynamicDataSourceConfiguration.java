@@ -3,7 +3,7 @@ package fr.softsf.sudofx2024.utils.database.configuration;
 import fr.softsf.sudofx2024.utils.MyLogback;
 import fr.softsf.sudofx2024.utils.database.DatabaseMigration;
 import fr.softsf.sudofx2024.utils.database.keystore.ApplicationKeystore;
-import fr.softsf.sudofx2024.utils.os.WindowsFolderFactory;
+import fr.softsf.sudofx2024.utils.os.OsDynamicFolders;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.jdbc.DataSourceBuilder;
 import org.springframework.context.annotation.Bean;
@@ -25,18 +25,18 @@ public class DynamicDataSourceConfiguration {
 
     @DependsOn({"logbackInitialization"})
     @Bean
-    int databaseMigration(@Autowired WindowsFolderFactory osFolderFactory, @Autowired ApplicationKeystore keystore) {
+    int databaseMigration(@Autowired OsDynamicFolders osFolderFactory, @Autowired ApplicationKeystore keystore) {
         keystore.setupApplicationKeystore();
-        DatabaseMigration.configure(keystore, osFolderFactory);
+        DatabaseMigration.configure(keystore, osFolderFactory.osFolderFactory());
         return 0;
     }
 
     @DependsOn({"databaseMigration"})
     @Bean
-    public DataSource dataSourceInitialization(@Autowired WindowsFolderFactory osFolderFactory, @Autowired ApplicationKeystore keystore) {
+    public DataSource dataSourceInitialization(@Autowired OsDynamicFolders osFolderFactory, @Autowired ApplicationKeystore keystore) {
         return DataSourceBuilder.create()
                 .driverClassName("org.hsqldb.jdbcDriver")
-                .url("jdbc:hsqldb:file:" + osFolderFactory.getOsDataFolderPath() + "/sudofx2024db;shutdown=true")
+                .url("jdbc:hsqldb:file:" + osFolderFactory.osFolderFactory().getOsDataFolderPath() + "/sudofx2024db;shutdown=true")
                 .username(keystore.getUsername())
                 .password(keystore.getPassword())
                 .build();

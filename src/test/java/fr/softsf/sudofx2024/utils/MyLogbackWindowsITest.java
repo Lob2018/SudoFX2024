@@ -1,7 +1,6 @@
 package fr.softsf.sudofx2024.utils;
 
 import fr.softsf.sudofx2024.utils.os.WindowsFolderFactory;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.ArgumentCaptor;
@@ -19,7 +18,7 @@ import static org.mockito.Mockito.*;
 
 @SpringBootTest
 @ExtendWith(MockitoExtension.class)
-class MyLogbackITest {
+class MyLogbackWindowsITest {
 
     @Autowired
     WindowsFolderFactory osFolderFactory;

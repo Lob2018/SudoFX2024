@@ -115,7 +115,6 @@ public class SudoMain extends Application {
         return pause;
     }
 
-
     public void setRootByFXMLName(final String fxml) {
         try {
             clearFXMLLODER();

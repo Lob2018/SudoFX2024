@@ -20,7 +20,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import java.nio.file.Paths;
 
 @SpringBootTest
-class ApplicationKeystoreITest {
+class ApplicationKeystoreWindowsITest {
 
     @Autowired
     WindowsFolderFactory osFolderFactory;
