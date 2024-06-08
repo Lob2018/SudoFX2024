@@ -3,6 +3,7 @@ package fr.softsf.sudofx2024.unit.utils;
 import org.junit.jupiter.api.Test;
 
 import static fr.softsf.sudofx2024.utils.MyEnums.Paths.*;
+import static fr.softsf.sudofx2024.utils.MyEnums.ToastLevels.*;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 
@@ -35,6 +36,13 @@ class MyEnumsUTest {
     @Test
     void testBasePath() {
         assertNotNull(BASE_PATH.getPath());
+    }
+
+    @Test
+    void testToastLevels() {
+        assertNotNull(INFO.getLevel());
+        assertNotNull(WARN.getLevel());
+        assertNotNull(ERROR.getLevel());
     }
 
 }

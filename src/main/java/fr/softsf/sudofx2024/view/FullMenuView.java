@@ -3,7 +3,12 @@ package fr.softsf.sudofx2024.view;
 import java.util.Objects;
 
 import fr.softsf.sudofx2024.SudoMain;
+
 import static fr.softsf.sudofx2024.utils.MyEnums.Paths.LOGO_SUDO_PNG_PATH;
+import static fr.softsf.sudofx2024.utils.MyEnums.ToastLevels.*;
+
+import fr.softsf.sudofx2024.utils.I18n;
+import fr.softsf.sudofx2024.view.components.ToasterVBox;
 import fr.softsf.sudofx2024.viewmodel.FullMenuViewModel;
 import javafx.animation.FadeTransition;
 import javafx.event.ActionEvent;
@@ -17,7 +22,6 @@ import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.input.Clipboard;
 import javafx.scene.input.ClipboardContent;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
@@ -35,6 +39,10 @@ public class FullMenuView implements SudoMain.IPrimaryStageView {
     private Button buttonHello;
     private Text text1 = new Text("Helloj! ");
     private Text text2 = new Text("\ue86c");
+
+    @FXML
+    @Autowired
+    private ToasterVBox toaster;
 
     @Autowired
     FullMenuViewModel fullMenuViewModel;
@@ -54,9 +62,8 @@ public class FullMenuView implements SudoMain.IPrimaryStageView {
 
     @FXML
     private void onHelloButtonClick(ActionEvent event) {
-
+        toaster.addToast("TOTO", WARN);
         fullMenuViewModel.test();
-
     }
 
     @FXML
@@ -72,7 +79,6 @@ public class FullMenuView implements SudoMain.IPrimaryStageView {
             vbox.getChildren().remove(button);
         }
     }
-
 
 
     private static final double FADE_IN_IN_SECONDS_AFTER_SPLASHSCREEN = 0.3;

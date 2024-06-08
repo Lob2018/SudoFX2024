@@ -48,8 +48,8 @@ public class SplashScreenView implements SudoMain.ISplashScreenView {
     private double splashScreenFontSize;
     private final DropShadow dropShadow = new DropShadow();
 
-    public SplashScreenView(final Stage splashScreenStage_) {
-        splashScreenStage = splashScreenStage_;
+    public SplashScreenView(final Stage splashScreenStageP) {
+        splashScreenStage = splashScreenStageP;
         fxmlLikeStructure();
         nodesConfiguration();
         nestingOfNodes();

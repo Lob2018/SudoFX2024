@@ -26,6 +26,25 @@ public final class MyEnums {
         }
     }
 
+    /**
+     * Enum for toast levels
+     */
+    public enum ToastLevels {
+        INFO("toast-info"),
+        WARN("toast-warn"),
+        ERROR("toast-error");
+
+        private final String level;
+
+        ToastLevels(final String level_) {
+            level = level_;
+        }
+
+        public final String getLevel() {
+            return level;
+        }
+    }
+
 
     /**
      * Enum for OS name
