@@ -45,6 +45,20 @@
     -fx-background-color: radial-gradient(center 50% 150%, radius 100%, #A83449, #12020B);
 }
 
+#toaster  {
+    -fx-spacing: 0.5em;
+    -fx-padding: 1em;
+}
+.toast  {
+    -fx-background-color:green;
+    -fx-padding: 0.3em;
+    -fx-background-radius:0.2em;
+    -fx-pref-width: infinity;
+}
+:focused {
+    -fx-border-color: blue;
+    -fx-border-width: 2px;
+}
 
 
 

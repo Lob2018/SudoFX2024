@@ -27,7 +27,7 @@ import static javafx.scene.layout.Priority.ALWAYS;
 
 public class SplashScreenView implements SudoMain.ISplashScreenView {
 
-    public static final String FX_FONT_SIZE_1_EM = "-fx-font-size: 1em;";
+    public static final String FX_FONT_SIZE_0_8_EM = "-fx-font-size: 0.8em;";
     private final VBox splashscreenvbox = new VBox();
     private Scene scene;
 
@@ -98,18 +98,18 @@ public class SplashScreenView implements SudoMain.ISplashScreenView {
         splashScreenvboxtophbox.setAlignment(Pos.CENTER_LEFT);
         HBox.setHgrow(splashScreenvboxtophbox, ALWAYS);
         HBox.setHgrow(splashScreenvboxtophboxpane, ALWAYS);
-        splashscreenvboxTophboxNamelabel.setStyle(FX_FONT_SIZE_1_EM);
+        splashscreenvboxTophboxNamelabel.setStyle(FX_FONT_SIZE_0_8_EM);
         splashscreenvboxCenterhbox.setAlignment(Pos.CENTER);
         HBox.setHgrow(splashscreenvboxCenterhbox, ALWAYS);
         VBox.setVgrow(splashscreenvboxCenterhbox, ALWAYS);
         splashscreenvboxbottomhbox.setAlignment(Pos.CENTER_RIGHT);
         HBox.setHgrow(splashscreenvboxbottomhbox, ALWAYS);
-        splashscreenvboxBottomhboxYearlabel.setStyle(FX_FONT_SIZE_1_EM);
+        splashscreenvboxBottomhboxYearlabel.setStyle(FX_FONT_SIZE_0_8_EM);
         HBox.setHgrow(splashscreenvboxBottomhboxYearlabel, ALWAYS);
         splashscreenvboxbottomhboxhbox.setAlignment(Pos.CENTER);
         HBox.setHgrow(splashscreenvboxbottomhboxhbox, ALWAYS);
-        splashscreenvboxBottomhboxHboxLoaderlabel.setStyle(FX_FONT_SIZE_1_EM);
-        splashscreenvboxBottomhboxVersionlabel.setStyle(FX_FONT_SIZE_1_EM);
+        splashscreenvboxBottomhboxHboxLoaderlabel.setStyle(FX_FONT_SIZE_0_8_EM);
+        splashscreenvboxBottomhboxVersionlabel.setStyle(FX_FONT_SIZE_0_8_EM);
     }
 
     @Override

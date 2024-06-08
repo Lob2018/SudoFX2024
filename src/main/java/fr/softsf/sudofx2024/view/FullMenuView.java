@@ -11,10 +11,15 @@ import javafx.fxml.FXML;
 import javafx.geometry.Pos;
 import javafx.geometry.Rectangle2D;
 import javafx.scene.Node;
+import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
+import javafx.scene.input.Clipboard;
+import javafx.scene.input.ClipboardContent;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
+import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
@@ -53,6 +58,22 @@ public class FullMenuView implements SudoMain.IPrimaryStageView {
         fullMenuViewModel.test();
 
     }
+
+    @FXML
+    private void copyTextToClipboard(ActionEvent event) {
+        String text = ((Button) event.getSource()).getText();
+        Clipboard clipboard = Clipboard.getSystemClipboard();
+        ClipboardContent content = new ClipboardContent();
+        content.putString(text);
+        clipboard.setContent(content);
+
+        Node button = (Node) event.getSource();
+        if (button.getParent() instanceof VBox vbox) {
+            vbox.getChildren().remove(button);
+        }
+    }
+
+
 
     private static final double FADE_IN_IN_SECONDS_AFTER_SPLASHSCREEN = 0.3;
     private final Stage primaryStage = new Stage();
