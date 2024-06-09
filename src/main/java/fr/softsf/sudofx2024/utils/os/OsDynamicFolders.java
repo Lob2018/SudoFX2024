@@ -1,10 +1,10 @@
 package fr.softsf.sudofx2024.utils.os;
 
+import java.util.Objects;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-
-import java.util.Objects;
 
 import static fr.softsf.sudofx2024.utils.MyEnums.OsName.OS_NAME;
 import static fr.softsf.sudofx2024.utils.MyEnums.OsName.WRONG_OS_FOR_TESTS;
@@ -20,11 +20,11 @@ public class OsDynamicFolders {
     /**
      * The OS folder factory
      *
-     * @return The OS folder factory
+     * @return The OS folder factory interface
      * @throws IllegalArgumentException The OS is not supported
      */
     @Bean
-    public WindowsFolderFactory osFolderFactory() throws IllegalArgumentException {
+    public IOsFoldersFactory osFolderFactory() throws IllegalArgumentException {
         if (os == null || !os.contains("windows")) {
             throw new IllegalArgumentException("Windows OS is needed to run SudoFX2024");
         } else {

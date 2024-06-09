@@ -23,23 +23,30 @@ public class ToasterVBox extends VBox {
         setAlignment(Pos.BOTTOM_CENTER);
     }
 
+    /**
+     * Add a toast to this ToasterVBox
+     *
+     * @param text       The text to show
+     * @param toastLevel The toast level (info, warn, error)
+     * @param duration   The toast display duration
+     */
     @FXML
-    public void addToast(String text, MyEnums.ToastLevels toastLevel) {
+    public void addToast(final String text, final MyEnums.ToastLevels toastLevel, final double duration) {
         Button toast = new Button(text);
         setToastStyle(toast, toastLevel);
         setAccessibility(toast, toastLevel);
         toast.setAlignment(Pos.CENTER);
-        temporizeToast(toast);
-        toast.setOnAction(this::toastAction);
+        temporizeToast(toast, duration);
+        toast.setOnAction(this::toastActions);
         getChildren().add(toast);
     }
 
-    private void setToastStyle(Button toast, MyEnums.ToastLevels toastLevel) {
+    private void setToastStyle(final Button toast, final MyEnums.ToastLevels toastLevel) {
         toast.getStyleClass().add("toast");
         toast.getStyleClass().add(toastLevel.getLevel());
     }
 
-    private static void setAccessibility(Button toast, MyEnums.ToastLevels toastLevel) {
+    private static void setAccessibility(final Button toast, final MyEnums.ToastLevels toastLevel) {
         switch (toastLevel) {
             case WARN:
                 toast.setAccessibleText(I18n.getValue("toastlevel.warn"));
@@ -53,25 +60,26 @@ public class ToasterVBox extends VBox {
         }
     }
 
-    private void toastAction(ActionEvent event) {
-        copyText(event);
-        removeToast(event);
+    private void toastActions(final ActionEvent event) {
+        Button toast = (Button) event.getSource();
+        copyToClipboard(toast);
+        removeToast(toast);
     }
 
-    private void copyText(ActionEvent event) {
-        String text = ((Button) event.getSource()).getText();
+    private void copyToClipboard(final Button button) {
+        String text = button.getText();
         Clipboard clipboard = Clipboard.getSystemClipboard();
         ClipboardContent content = new ClipboardContent();
         content.putString(text);
         clipboard.setContent(content);
     }
 
-    private void temporizeToast(Button toast) {
-        Timeline timeline = new Timeline(new KeyFrame(Duration.millis(7000), event -> getChildren().remove(toast)));
+    private void temporizeToast(final Button toast, final double duration) {
+        Timeline timeline = new Timeline(new KeyFrame(Duration.millis(duration), event -> getChildren().remove(toast)));
         timeline.play();
     }
 
-    private void removeToast(ActionEvent event) {
-        getChildren().remove((Node) event.getSource());
+    private void removeToast(final Button button) {
+        getChildren().remove(button);
     }
 }

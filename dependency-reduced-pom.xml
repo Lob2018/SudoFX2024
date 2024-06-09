@@ -220,6 +220,14 @@
           <groupId>org.junit.jupiter</groupId>
         </exclusion>
         <exclusion>
+          <artifactId>mockito-core</artifactId>
+          <groupId>org.mockito</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>mockito-junit-jupiter</artifactId>
+          <groupId>org.mockito</groupId>
+        </exclusion>
+        <exclusion>
           <artifactId>jsonassert</artifactId>
           <groupId>org.skyscreamer</groupId>
         </exclusion>
@@ -264,64 +272,6 @@
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>org.junit.jupiter</groupId>
-      <artifactId>junit-jupiter-api</artifactId>
-      <version>5.10.2</version>
-      <scope>test</scope>
-      <exclusions>
-        <exclusion>
-          <artifactId>opentest4j</artifactId>
-          <groupId>org.opentest4j</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>junit-platform-commons</artifactId>
-          <groupId>org.junit.platform</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>apiguardian-api</artifactId>
-          <groupId>org.apiguardian</groupId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>org.junit.jupiter</groupId>
-      <artifactId>junit-jupiter-engine</artifactId>
-      <version>5.10.2</version>
-      <scope>test</scope>
-      <exclusions>
-        <exclusion>
-          <artifactId>junit-platform-engine</artifactId>
-          <groupId>org.junit.platform</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>apiguardian-api</artifactId>
-          <groupId>org.apiguardian</groupId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>org.mockito</groupId>
-      <artifactId>mockito-core</artifactId>
-      <version>5.11.0</version>
-      <scope>test</scope>
-      <exclusions>
-        <exclusion>
-          <artifactId>byte-buddy-agent</artifactId>
-          <groupId>net.bytebuddy</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>objenesis</artifactId>
-          <groupId>org.objenesis</groupId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>org.mockito</groupId>
-      <artifactId>mockito-junit-jupiter</artifactId>
-      <version>5.11.0</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
       <groupId>org.testfx</groupId>
       <artifactId>testfx-junit5</artifactId>
       <version>4.0.17</version>
@@ -351,12 +301,10 @@
     <surefire.version>3.2.5</surefire.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <javafx.version>21</javafx.version>
-    <junit.version>5.10.2</junit.version>
     <shade.version>3.5.2</shade.version>
     <exec.version>1.6.0</exec.version>
     <maven.compiler.version>3.13.0</maven.compiler.version>
     <hsqldb.version>2.7.2</hsqldb.version>
-    <mockito.version>5.11.0</mockito.version>
     <ignite.spring.version>1.2.2</ignite.spring.version>
     <jacoco.version>0.8.11</jacoco.version>
     <testfx.version>4.0.17</testfx.version>
