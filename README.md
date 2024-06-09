@@ -40,7 +40,7 @@ application allows you to solve the current Sudoku grid, but also other entries 
           - Starter data JPA
           - Starter validation
         - flyway (database migration)
-        - passay (generate and validate passwords)
+        - passay (generate and validate secrets)
     - Logs
         - logback from Spring Boot
     - Build dependencies :
