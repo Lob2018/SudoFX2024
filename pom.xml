@@ -35,7 +35,6 @@
         <jacoco.version>0.8.11</jacoco.version>
         <hsqldb.version>2.7.2</hsqldb.version>
         <testfx.version>4.0.17</testfx.version>
-        <hamcrest.version>2.2</hamcrest.version>
         <shade.version>3.5.2</shade.version>
         <surefire.version>3.2.5</surefire.version>
         <exec.version>1.6.0</exec.version>
@@ -105,12 +104,6 @@
             <groupId>org.testfx</groupId>
             <artifactId>testfx-junit5</artifactId>
             <version>${testfx.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.hamcrest</groupId>
-            <artifactId>hamcrest</artifactId>
-            <version>${hamcrest.version}</version>
             <scope>test</scope>
         </dependency>
     </dependencies>

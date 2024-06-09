@@ -49,13 +49,10 @@ application allows you to solve the current Sudoku grid, but also other entries 
         - maven-shade-plugin (create the uber JAR)
         - exec-maven-plugin (batch to generate MSI)
     - Test dependencies :
-        - junit 5
-        - mockito
+        - spring boot starter test (JUnit, Mockito, Hamcrest)
         - surefire
         - jacoco
-        - testfx-junit5 (ex. : FxRobot to execute actions within the UI)
-        - hamcrest (ex. : TestFX custom Hamcrest matchers org.testfx.matcher.*.)
-        - spring boot starter test
+        - testfx-junit5 (ex. : FxRobot to execute actions within the UI, or custom Hamcrest matchers org.testfx.matcher.*.)
 
 ## Project
 
