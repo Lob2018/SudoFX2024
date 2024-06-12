@@ -17,8 +17,8 @@ import java.util.UUID;
 @Builder
 public class Grid {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private UUID griduuid;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long gridid;
 
     @Size(max = 162)
     private String defaultgridvalue;

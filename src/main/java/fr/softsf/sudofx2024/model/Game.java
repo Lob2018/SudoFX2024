@@ -22,34 +22,34 @@ import java.util.UUID;
 @Builder
 public class Game {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private UUID gameuuid;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long gameid;
 
     @OneToOne
     @Cascade(CascadeType.ALL)
     @Fetch(FetchMode.JOIN)
-    @JoinColumn(name = "gridgriduuid")
-    private Grid griduuid;
+    @JoinColumn(name = "gridgridid")
+    private Grid gridid;
 
     @ManyToOne
     @Cascade(CascadeType.ALL)
     @Fetch(FetchMode.JOIN)
-    @JoinColumn(name = "playerplayeruuid")
-    private Player playeruuid;
+    @JoinColumn(name = "playerplayerid")
+    private Player playerid;
 
     public Player getPlayer() {
-        return playeruuid;
+        return playerid;
     }
 
     public void setPlayer(Player player) {
-        this.playeruuid = player;
+        this.playerid = player;
     }
 
     @ManyToOne
     @Cascade(CascadeType.ALL)
     @Fetch(FetchMode.JOIN)
-    @JoinColumn(name = "levelleveluuid")
-    private GameLevel leveluuid;
+    @JoinColumn(name = "levellevelid")
+    private GameLevel levelid;
 
     @Builder.Default
     private boolean isselected = false;

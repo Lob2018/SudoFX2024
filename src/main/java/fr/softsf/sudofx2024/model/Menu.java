@@ -18,8 +18,8 @@ import java.util.UUID;
 public class Menu {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private UUID menuuuid;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long menuid;
 
     @NotNull
     private int mode;

@@ -19,8 +19,8 @@ import java.util.UUID;
 @Builder
 public class Software {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private UUID softwareuuid;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long softwareid;
 
     @Size(max = 128)
     private String currentversion;

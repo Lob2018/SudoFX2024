@@ -18,8 +18,8 @@ import java.util.UUID;
 @Builder
 public class GameLevel {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private UUID leveluuid;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long levelid;
 
     @NotNull
     @Size(max = 64)

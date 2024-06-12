@@ -25,28 +25,28 @@ import java.util.UUID;
 @Builder
 public class Player {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private UUID playeruuid;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long playerid;
 
     @ManyToOne
     @Cascade(CascadeType.ALL)
     @Fetch(FetchMode.JOIN)
-    @JoinColumn(name = "playerlanguageplayerlanguageuuid")
-    private PlayerLanguage playerlanguageuuid;
+    @JoinColumn(name = "playerlanguageplayerlanguageid")
+    private PlayerLanguage playerlanguageid;
 
     @OneToOne
     @Cascade(CascadeType.ALL)
     @Fetch(FetchMode.JOIN)
-    @JoinColumn(name = "backgroundbackgrounduuid")
-    private Background backgrounduuid;
+    @JoinColumn(name = "backgroundbackgroundid")
+    private Background backgroundid;
 
     @ManyToOne
     @Cascade(CascadeType.ALL)
     @Fetch(FetchMode.JOIN)
-    @JoinColumn(name = "menumenuuuid")
-    private Menu menuuuid;
+    @JoinColumn(name = "menumenuid")
+    private Menu menuid;
 
-    @OneToMany(mappedBy = "playeruuid", orphanRemoval = true)
+    @OneToMany(mappedBy = "playerid", orphanRemoval = true)
     @Cascade(CascadeType.ALL)
     @OrderBy("updatedat")
     private Set<Game> games = new LinkedHashSet();

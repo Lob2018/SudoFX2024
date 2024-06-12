@@ -18,8 +18,8 @@ import java.util.UUID;
 @Builder
 public class PlayerLanguage {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private UUID playerlanguageuuid;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long playerlanguageid;
 
     @NotNull
     @Size(max = 2)

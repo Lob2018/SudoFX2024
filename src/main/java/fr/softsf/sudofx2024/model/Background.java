@@ -19,8 +19,8 @@ import java.util.UUID;
 @Builder
 public class Background {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private UUID backgrounduuid;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long backgroundid;
 
     @NotNull
     @Size(max = 7)

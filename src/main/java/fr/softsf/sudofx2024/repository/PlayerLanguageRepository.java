@@ -7,5 +7,5 @@ import org.springframework.stereotype.Repository;
 import java.util.UUID;
 
 @Repository
-public interface PlayerLanguageRepository extends JpaRepository<PlayerLanguage, UUID> {
+public interface PlayerLanguageRepository extends JpaRepository<PlayerLanguage, Long> {
 }
