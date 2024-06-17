@@ -39,7 +39,7 @@
         <version>${javafx.maven.version}</version>
         <configuration>
           <jlinkVerbose>true</jlinkVerbose>
-          <mainClass>fr.softsf.sudofx2024.Launcher</mainClass>
+          <mainClass>${start-class}</mainClass>
           <options>
             <option>-Dapp.name=${project.artifactId}</option>
             <option>-Dapp.version=${project.version}</option>
@@ -140,7 +140,7 @@
                 <argument>${project.artifactId}</argument>
                 <argument>${project.version}</argument>
                 <argument>${project.organization.name}</argument>
-                <argument>fr.softsf.sudofx2024.Launcher</argument>
+                <argument>${start-class}</argument>
               </arguments>
             </configuration>
           </execution>
@@ -216,6 +216,10 @@
           <groupId>org.awaitility</groupId>
         </exclusion>
         <exclusion>
+          <artifactId>hamcrest</artifactId>
+          <groupId>org.hamcrest</groupId>
+        </exclusion>
+        <exclusion>
           <artifactId>junit-jupiter</artifactId>
           <groupId>org.junit.jupiter</groupId>
         </exclusion>
@@ -282,22 +286,19 @@
           <groupId>org.testfx</groupId>
         </exclusion>
         <exclusion>
+          <artifactId>hamcrest</artifactId>
+          <groupId>org.hamcrest</groupId>
+        </exclusion>
+        <exclusion>
           <artifactId>assertj-core</artifactId>
           <groupId>org.assertj</groupId>
         </exclusion>
       </exclusions>
     </dependency>
-    <dependency>
-      <groupId>org.hamcrest</groupId>
-      <artifactId>hamcrest</artifactId>
-      <version>2.2</version>
-      <scope>test</scope>
-    </dependency>
   </dependencies>
   <properties>
     <maven.compiler.release>21</maven.compiler.release>
     <flyway.version>10.12.0</flyway.version>
-    <hamcrest.version>2.2</hamcrest.version>
     <surefire.version>3.2.5</surefire.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <javafx.version>21</javafx.version>
@@ -310,6 +311,7 @@
     <testfx.version>4.0.17</testfx.version>
     <lombok.version>1.18.32</lombok.version>
     <javafx.maven.version>0.0.8</javafx.maven.version>
+    <start-class>fr.softsf.sudofx2024.Launcher</start-class>
     <passay.version>1.6.4</passay.version>
   </properties>
 </project>

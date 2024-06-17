@@ -32,7 +32,7 @@ public final class MyRegex {
     }
 
     /**
-     * Validate test with regular expression
+     * Validate text with regular expression
      *
      * @param text  The text to validate
      * @param regex The regular expression
