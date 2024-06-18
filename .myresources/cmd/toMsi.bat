@@ -78,6 +78,7 @@
         echo     echo         ▒▒▒▒▒
         echo     echo.
         echo     echo.
+        echo     timeout /t 1 /nobreak ^>nul
         echo     set JAVA_VERSION=0
         echo     for /f "tokens=3" %%%%g in ('java -version 2^^^>^^^&1 ^^^| findstr /i "version"'^) do (
         echo         set JAVA_VERSION=%%%%g
