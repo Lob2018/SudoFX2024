@@ -115,8 +115,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>${maven.compiler.version}</version>
                 <configuration>
-                    <source>21</source>
-                    <target>21</target>
+                    <source>${javafx.version}</source>
+                    <target>${javafx.version}</target>
                 </configuration>
             </plugin>
             <plugin>
@@ -231,6 +231,7 @@
                                 <argument>${project.organization.name}</argument>
                                 <!-- The main module to execute -->
                                 <argument>${start-class}</argument>
+                                <argument>${javafx.version}</argument>
                             </arguments>
                         </configuration>
                     </execution>
