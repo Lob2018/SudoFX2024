@@ -43,7 +43,7 @@
 	rmdir /s /q output 2>nul
 	cd ./target
 	echo.
-	echo # TARGET   : DELETE ALL BUT CURRENT JAR
+	echo # TARGET   : DELETE ALL BUT UBERJAR
 	for %%I in (*.jar) do (
 	    if /I not "%%~nxI"=="%jarName%" (
 	        del "%%I"
@@ -54,7 +54,7 @@
 	cd ../
     jpackage --input ./target  --dest output --name %1 --type msi --main-jar %jarName% --main-class %4 --win-shortcut --win-menu --win-menu-group %1 --java-options "-Xmx2048m -Dapp.name=%1 -Dapp.version=%2" --vendor %3 --copyright "Copyright © %year% %3" --icon src/main/resources/fr/softsf/sudofx2024/images/icon.ico --app-version %2 --description "%1 %year%" --license-file LICENSE.txt --verbose
     echo.
-    echo # TARGET   : THE BATCH FOR THE UBERJAR
+    echo # TARGET   : THE BATCH TO LAUNCH THE UBERJAR
 	cd ./target
     (
         echo @echo off
@@ -106,9 +106,11 @@
         echo exit
     ) > %1-%2.bat
     echo.
-    echo # TARGET   : COPY THE BATCH AND THE UBERJAR TO OUTPUT
-    copy %1-%2.bat ..\output
-    copy %jarName% ..\output
+    echo # TARGET   : COPY THE BATCH AND THE UBERJAR TO OUTPUT AS A ZIP FILE
+    set "zipName=%1-%2.zip"
+
+    powershell -command "& {Compress-Archive -Path '%1-%2.bat', '%jarName%' -DestinationPath '..\output\%zipName%'}"
+
     echo.
     echo # OUTPUT   : THE HASH FILE
     set "msiFile=%1-%2.msi"
@@ -120,13 +122,9 @@
 	    echo.
 	    CertUtil -hashfile %msiFile% SHA256
 	    echo.
-        CertUtil -hashfile %1-%2.bat MD5
+        CertUtil -hashfile %zipName% MD5
         echo.
-	    CertUtil -hashfile %1-%2.bat SHA256
-        echo.
-        CertUtil -hashfile %jarName% MD5
-        echo.
-        CertUtil -hashfile %jarName% SHA256
+	    CertUtil -hashfile %zipName% SHA256
         echo.
 	) > hash.txt
 	echo.

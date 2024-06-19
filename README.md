@@ -47,7 +47,7 @@ application allows you to solve the current Sudoku grid, but also other entries 
         - maven-compiler-plugin
         - javafx-maven-plugin
         - maven-shade-plugin (create the uber JAR)
-        - exec-maven-plugin (batch to generate MSI)
+        - exec-maven-plugin (batch to generate MSI and uber JAR with his run batch)
     - Test dependencies :
         - spring boot starter test (JUnit, Mockito, Hamcrest)
         - surefire
@@ -61,13 +61,20 @@ application allows you to solve the current Sudoku grid, but also other entries 
 
 ## Installation (Windows)
 
-[Download and install the latest Windows version of the file **SudokuFX-v.v.v.msi
+- Without Java Runtime Environment included ([the latest JRE must be installed](https://adoptium.net))
+
+  [Download, decompress, and keep the two files together (SudokuFX-v.v.v.bat to launch), from the latest Windows version of the file **SudokuFX-v.v.v.zip
 **, available in Assets.](https://github.com/Lob2018/SudoFX2024/releases/latest)
 
-This file does not have a code signing certificate (paid service), Microsoft Defender SmartScreen informs you of this
+- With Java Runtime Environment included
+
+  [Download and install the latest Windows version of the file **SudokuFX-v.v.v.msi
+**, available in Assets.](https://github.com/Lob2018/SudoFX2024/releases/latest)
+
+  The MSI file does not have a code signing certificate (paid service), Microsoft Defender SmartScreen informs you of this
 during installation; to continue the installation click on **additional information**, then **Run anyway**.
 
-<sub>[This other software may be useful to you to check the integrity of the downloaded file (see the version fingerprints inside hash.txt).](https://www.clubic.com/telecharger-fiche56914-hashtab.html)</sub>
+  <sub>[This other software may be useful to you to check the integrity of the downloaded file (see the version fingerprints inside hash.txt).](https://www.clubic.com/telecharger-fiche56914-hashtab.html)</sub>
 
 ## Use
 
@@ -97,7 +104,7 @@ Lob2018.
 ## Feedback
 
 - [File an issue](https://github.com/Lob2018/SudoFX2024/issues)
-    - You can attach the application logs you find :
+    - If you want you can attach the application logs you find :
         - For Windows
             - Inside C:/Users/\<USERNAME\>**[^1]**/AppData/Local/Soft64.fr/SudokuFX/logs-sudofx
 
