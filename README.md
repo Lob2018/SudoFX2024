@@ -61,12 +61,12 @@ application allows you to solve the current Sudoku grid, but also other entries 
 
 ## Installation (Windows)
 
-- Without Java Runtime Environment included ([the latest JRE must be installed](https://adoptium.net))
+- Application without Java Runtime Environment included ([the latest JRE must be installed on your machine](https://adoptium.net))
 
   [Download, decompress, and keep the two files together (SudokuFX-v.v.v.bat to launch), from the latest Windows version of the file **SudokuFX-v.v.v.zip
 **, available in Assets.](https://github.com/Lob2018/SudoFX2024/releases/latest)
 
-- With Java Runtime Environment included
+- Application with Java Runtime Environment included
 
   [Download and install the latest Windows version of the file **SudokuFX-v.v.v.msi
 **, available in Assets.](https://github.com/Lob2018/SudoFX2024/releases/latest)
