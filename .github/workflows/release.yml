@@ -1,0 +1,65 @@
+name: Sudoku CI/CD
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  install_JDK-install_wix-package_and_create_release:
+    name: Install JDK, Wix v3.11, then compile, test, package, and upload the files
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install JDK
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '21'
+      - name: Verify Java Installation
+        run: java -version
+        shell: cmd
+      - name: Install WiX Toolset
+        run: |
+          $url = 'https://github.com/wixtoolset/wix3/releases/download/wix3111rtm/wix311.exe'
+          $output = 'wix311.exe'
+          Invoke-WebRequest -Uri $url -OutFile $output
+          Start-Process -FilePath $output -ArgumentList '/quiet' -Wait -NoNewWindow
+      - name: Add WiX Toolset to PATH
+        run: |
+          $newPath = 'C:\Program Files (x86)\WiX Toolset v3.11\bin'
+          $currentPath = [Environment]::GetEnvironmentVariable('PATH', 'Machine')
+          [Environment]::SetEnvironmentVariable('PATH', "$newPath;$currentPath", 'Machine')
+      - name: Compile, Test, and Package with Maven
+        run: mvn package -f pom.xml
+      - name: Upload output folder
+        uses: actions/upload-artifact@v3
+        with:
+          name: output-folder
+          path: output
+
+  publish_release:
+    name: Publish the release and tag it
+    needs: install_JDK-install_wix-package_and_create_release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Extract version
+        run: echo "POM_VERSION=$(cat pom.xml | grep -oPm1 '(?<=<version>)[^<]+')" >> $GITHUB_ENV
+      - name: Download output folder
+        uses: actions/download-artifact@v3
+        with:
+          name: output-folder
+          path: output
+      - name: Create Release
+        uses: ncipollo/release-action@v1
+        with:
+          name: SudokuFX release v${{ env.POM_VERSION }}
+          tag: v${{ env.POM_VERSION }}
+          body: <br>- The Zip file is the application without Java Runtime Environment included (the latest JRE must be installed on your machine), the .bat file launches the application.<br><br>- The MSI file includes the Java runtime environment and installs the application on your machine.<br><br>- The hash.txt file contains the files fingerprints.
+          artifacts: 'output/*'
+      - name: Create Tag
+        run: git tag v${{ env.POM_VERSION }}
+      - name: Push Tag
+        run: git push --tags
