@@ -32,7 +32,7 @@ public class FullMenuView implements SudoMain.IPrimaryStageView {
     private Label welcomeText;
     @FXML
     private Button buttonHello;
-    private Text text1 = new Text("Helloj! ");
+    private final Text text1 = new Text("Helloj! ");
     private Text text2 = new Text("\ue86c");
 
     @FXML
