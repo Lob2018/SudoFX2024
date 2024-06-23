@@ -22,7 +22,7 @@ import static fr.softsf.sudofx2024.utils.MyEnums.Paths.*;
 public class MyLogback {
 
     @Getter
-    private String logsFolderPath;
+    private final String logsFolderPath;
     private static final String LOGS_NAME = "SudokuFX.log";
     private String logBackPath = CONFIG_LOGBACK_PATH.getPath();
 

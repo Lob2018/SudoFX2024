@@ -105,7 +105,7 @@ public class ApplicationKeystore implements IKeystore {
         try {
             KeyStore.SecretKeyEntry entry = (KeyStore.SecretKeyEntry) ks.getEntry(SYMMETRIC_KEY_ALIAS, new KeyStore.PasswordProtection(pwdArray));
             if (entry != null) {
-                iEncryptionService = new SecretKeyEncryptionServiceAESGCM(((KeyStore.SecretKeyEntry) entry).getSecretKey());
+                iEncryptionService = new SecretKeyEncryptionServiceAESGCM(entry.getSecretKey());
             }
         } catch (NoSuchAlgorithmException | UnrecoverableEntryException | KeyStoreException e) {
             log.error(String.format("██ Exception catch inside symmetricKeyIsNotInKeystore/ks.getEntry(SYMMETRIC_KEY_ALIAS : %s", e.getMessage()), e);

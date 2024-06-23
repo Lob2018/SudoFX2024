@@ -3,10 +3,7 @@ package fr.softsf.sudofx2024.model;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.hibernate.annotations.Cascade;
 import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.FetchMode;
@@ -15,7 +12,6 @@ import org.hibernate.annotations.CascadeType;
 import java.time.LocalDateTime;
 import java.util.LinkedHashSet;
 import java.util.Set;
-import java.util.UUID;
 
 @Entity
 @Table(name = "player")
@@ -46,14 +42,11 @@ public class Player {
     @JoinColumn(name = "menumenuid")
     private Menu menuid;
 
+    @Getter
     @OneToMany(mappedBy = "playerid", orphanRemoval = true)
     @Cascade(CascadeType.ALL)
     @OrderBy("updatedat")
-    private Set<Game> games = new LinkedHashSet();
-
-    public Set<Game> getGames() {
-        return games;
-    }
+    private Set<Game> games = new LinkedHashSet<>();
 
     public void addGame(Game game) {
         games.add(game);
