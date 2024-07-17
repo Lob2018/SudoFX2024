@@ -57,7 +57,7 @@ jobs:
         with:
           name: SudokuFX release v${{ env.POM_VERSION }}
           tag: v${{ env.POM_VERSION }}
-          body: <br>- The Zip file is the application without Java Runtime Environment included (the latest JRE must be installed on your machine), the .bat file launches the application.<br><br>- The MSI file includes the Java runtime environment and installs the application on your machine.<br><br>- The hash.txt file contains the files fingerprints.
+          body: <br>- The Zip file is the application without Java Runtime Environment included (the latest JRE must be installed on your machine), the .bat file launches the application.<br><br>- The MSI file includes the Java runtime environment and installs the application on your machine.<br><br>- The hash.txt file contains the Zip file and the MSI file fingerprints.
           artifacts: 'output/*'
       - name: Create Tag
         run: git tag v${{ env.POM_VERSION }}
