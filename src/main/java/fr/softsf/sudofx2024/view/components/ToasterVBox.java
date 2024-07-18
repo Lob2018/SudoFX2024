@@ -23,18 +23,36 @@ public class ToasterVBox extends VBox {
     }
 
     /**
-     * Add a toast to this ToasterVBox
+     * Add a toast to this ToasterVBox with its duration
      *
      * @param text       The text to show
      * @param toastLevel The toast level (info, warn, error)
      * @param duration   The toast display duration
      */
     @FXML
-    public void addToast(final String text, final MyEnums.ToastLevels toastLevel, final double duration) {
-        Button toast = new Button(text);
+    public void addToastWithDuration(final String text, final MyEnums.ToastLevels toastLevel, final double duration) {
+        final Button toast = new Button(text);
         setToastStyle(toast, toastLevel);
         setAccessibility(toast, toastLevel);
         toast.setAlignment(Pos.CENTER);
+        temporizeToast(toast, duration);
+        toast.setOnAction(this::toastActions);
+        getChildren().add(toast);
+    }
+
+    /**
+     * Add a toast to this ToasterVBox (estimated duration)
+     *
+     * @param text       The text to show
+     * @param toastLevel The toast level (info, warn, error)
+     */
+    @FXML
+    public void addToast(final String text, final MyEnums.ToastLevels toastLevel) {
+        final Button toast = new Button(text);
+        setToastStyle(toast, toastLevel);
+        setAccessibility(toast, toastLevel);
+        toast.setAlignment(Pos.CENTER);
+        final double duration = Math.max(1000, (double)text.length()*1000 / 8);
         temporizeToast(toast, duration);
         toast.setOnAction(this::toastActions);
         getChildren().add(toast);
