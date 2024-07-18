@@ -102,7 +102,7 @@
         echo         pause
         echo         exit /b 1
         echo     ^)
-        echo     start /min cmd /c "java -Dapp.name=SudokuFX -Dapp.version=1.0.1 -jar SudokuFX-1.0.1.jar & exit"
+        echo     start /min cmd /c "java -Xmx2048m -Dapp.name=%1 -Dapp.version=%2 -jar %1-%2.jar & exit"
         echo exit
     ) > %1-%2.bat
     echo.

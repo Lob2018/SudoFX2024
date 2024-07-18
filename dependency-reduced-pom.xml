@@ -10,7 +10,7 @@
   <groupId>fr.softsf</groupId>
   <artifactId>SudokuFX</artifactId>
   <name>Sudoku</name>
-  <version>1.0.1</version>
+  <version>1.0.8</version>
   <developers>
     <developer>
       <email>soft64.fr@gmail.com</email>
