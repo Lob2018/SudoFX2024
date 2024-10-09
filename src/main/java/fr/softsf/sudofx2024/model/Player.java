@@ -46,6 +46,7 @@ public class Player {
     @OneToMany(mappedBy = "playerid", orphanRemoval = true)
     @Cascade(CascadeType.ALL)
     @OrderBy("updatedat")
+    @Builder.Default
     private Set<Game> games = new LinkedHashSet<>();
 
     public void addGame(Game game) {
