@@ -1,21 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <version>1.0.8</version>
+    <!-- Spring Boot parent configuration -->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>3.3.0</version>
-        <relativePath/><!-- lookup parent from repository -->
+        <relativePath /><!-- lookup parent from repository -->
     </parent>
+    <!-- Project information -->
     <groupId>fr.softsf</groupId>
     <artifactId>SudokuFX</artifactId>
     <name>Sudoku</name>
     <organization>
         <name>Soft64.fr</name>
     </organization>
+    <!-- Developer information -->
     <developers>
         <developer>
             <email>soft64.fr@gmail.com</email>
@@ -25,25 +28,28 @@
             </roles>
         </developer>
     </developers>
+    <!-- Project properties -->
     <properties>
-        <start-class>fr.softsf.sudofx2024.Launcher</start-class>
-        <maven.compiler.version>3.13.0</maven.compiler.version>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.release>21</maven.compiler.release>
-        <javafx.version>21</javafx.version>
-        <javafx.maven.version>0.0.8</javafx.maven.version>
+        <exec.version>1.6.0</exec.version>
+        <flyway.version>10.12.0</flyway.version>
+        <hsqldb.version>2.7.2</hsqldb.version>
         <ignite.spring.version>1.2.2</ignite.spring.version>
         <jacoco.version>0.8.11</jacoco.version>
-        <hsqldb.version>2.7.2</hsqldb.version>
-        <testfx.version>4.0.17</testfx.version>
+        <javafx.maven.version>0.0.8</javafx.maven.version>
+        <javafx.version>21</javafx.version>
+        <lombok.version>1.18.32</lombok.version>
+        <maven.compiler.release>21</maven.compiler.release>
+        <maven.compiler.version>3.13.0</maven.compiler.version>
+        <passay.version>1.6.4</passay.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <shade.version>3.5.2</shade.version>
         <surefire.version>3.2.5</surefire.version>
-        <exec.version>1.6.0</exec.version>
-        <lombok.version>1.18.32</lombok.version>
-        <flyway.version>10.12.0</flyway.version>
-        <passay.version>1.6.4</passay.version>
+        <testfx.version>4.0.17</testfx.version>
+        <start-class>fr.softsf.sudofx2024.Launcher</start-class>
     </properties>
+    <!-- Project dependencies -->
     <dependencies>
+        <!-- JavaFX dependencies -->
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
@@ -54,11 +60,13 @@
             <artifactId>javafx-fxml</artifactId>
             <version>${javafx.version}</version>
         </dependency>
+        <!-- Ignite Spring dependency -->
         <dependency>
             <groupId>com.gluonhq</groupId>
             <artifactId>ignite-spring</artifactId>
             <version>${ignite.spring.version}</version>
         </dependency>
+        <!-- Spring Boot dependencies -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
@@ -76,11 +84,13 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <!-- HSQLDB database dependency -->
         <dependency>
             <groupId>org.hsqldb</groupId>
             <artifactId>hsqldb</artifactId>
             <version>${hsqldb.version}</version>
         </dependency>
+        <!-- Flyway database migration dependencies -->
         <dependency>
             <groupId>org.flywaydb</groupId>
             <artifactId>flyway-core</artifactId>
@@ -91,16 +101,19 @@
             <artifactId>flyway-database-hsqldb</artifactId>
             <version>${flyway.version}</version>
         </dependency>
+        <!-- Lombok for reducing boilerplate code -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>${lombok.version}</version>
         </dependency>
+        <!-- Passay for password validation -->
         <dependency>
             <groupId>org.passay</groupId>
             <artifactId>passay</artifactId>
             <version>${passay.version}</version>
         </dependency>
+        <!-- TestFX for JavaFX testing -->
         <dependency>
             <groupId>org.testfx</groupId>
             <artifactId>testfx-junit5</artifactId>
@@ -108,8 +121,10 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+    <!-- Build configuration -->
     <build>
         <plugins>
+            <!-- Java compiler plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -119,6 +134,7 @@
                     <target>${javafx.version}</target>
                 </configuration>
             </plugin>
+            <!-- JavaFX Maven plugin -->
             <plugin>
                 <groupId>org.openjfx</groupId>
                 <artifactId>javafx-maven-plugin</artifactId>
@@ -132,6 +148,7 @@
                     </options>
                 </configuration>
             </plugin>
+            <!-- Shade plugin for creating the uber-jar -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
@@ -158,11 +175,13 @@
                     </execution>
                 </executions>
             </plugin>
+            <!-- Surefire plugin for running tests -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>${surefire.version}</version>
             </plugin>
+            <!-- JaCoCo plugin for code coverage -->
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
@@ -209,13 +228,14 @@
                     </execution>
                 </executions>
             </plugin>
+            <!-- Exec plugin for running external scripts -->
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>${exec.version}</version>
                 <executions>
                     <execution>
-                        <!-- To msi with batch -->
+                        <!-- Create MSI file using batch script -->
                         <id>exec-batch</id>
                         <phase>package</phase>
                         <goals>
