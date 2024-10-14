@@ -14,6 +14,10 @@ import fr.softsf.sudofx2024.annotations.ExcludedFromCoverageReportGenerated;
 import jakarta.validation.constraints.NotBlank;
 import lombok.extern.slf4j.Slf4j;
 
+/**
+ * Implementation of the ApplicationKeystore.IEncryptionService interface
+ * using AES-GCM (Galois/Counter Mode) encryption.
+ */
 @Slf4j
 public final class SecretKeyEncryptionServiceAESGCM implements ApplicationKeystore.IEncryptionService {
     private final SecretKey secretKey;
@@ -21,8 +25,10 @@ public final class SecretKeyEncryptionServiceAESGCM implements ApplicationKeysto
     private static final SecureRandom random = new SecureRandom();
 
     /**
-     * SecretKey encryption service
-     * @param secretKeyP The SecretKey
+     * Constructor for the SecretKeyEncryptionServiceAESGCM.
+     * Initializes the cipher with AES/GCM/NoPadding algorithm.
+     *
+     * @param secretKeyP The SecretKey to be used for encryption and decryption
      */
     @ExcludedFromCoverageReportGenerated
     public SecretKeyEncryptionServiceAESGCM(final SecretKey secretKeyP) {
@@ -34,6 +40,12 @@ public final class SecretKeyEncryptionServiceAESGCM implements ApplicationKeysto
         }
     }
 
+    /**
+     * Encrypts the given string using AES-GCM encryption.
+     *
+     * @param original The string to be encrypted
+     * @return A Base64 encoded string containing the encrypted data and IV, separated by '#'
+     */
     @Override
     public String encrypt(@NotBlank final String original) {
         byte[] iv = new byte[16];
@@ -51,6 +63,12 @@ public final class SecretKeyEncryptionServiceAESGCM implements ApplicationKeysto
         }
     }
 
+    /**
+     * Decrypts the given cipher text using AES-GCM decryption.
+     *
+     * @param cypher The Base64 encoded string containing the encrypted data and IV, separated by '#'
+     * @return The decrypted string, or an empty string if decryption fails
+     */
     @Override
     public String decrypt(@NotBlank final String cypher) {
         try {

@@ -24,12 +24,16 @@ import static fr.softsf.sudofx2024.utils.ExceptionTools.getSQLInvalidAuthorizati
 import static fr.softsf.sudofx2024.utils.MyEnums.LogBackTxt.SQL_INVALID_AUTHORIZATION_SPEC_EXCEPTION;
 import static fr.softsf.sudofx2024.utils.MyEnums.Paths.*;
 
+/**
+ * Main application class for the Sudoku game. This class initializes the
+ * application, manages the splash screen, and handles the transition to the
+ * main application view.
+ */
 @Slf4j
 @SpringBootApplication
 @ComponentScan({
-        "com.gluonhq.ignite.spring",
-        "fr.softsf.sudofx2024.*",
-})
+    "com.gluonhq.ignite.spring",
+    "fr.softsf.sudofx2024.*",})
 public class SudoMain extends Application {
 
     private final SpringContext context = new SpringContext(this);
@@ -43,15 +47,31 @@ public class SudoMain extends Application {
     @Getter
     private static Scene scene;
 
+    /**
+     * Main entry point for the application.
+     *
+     * @param args Command line arguments
+     */
     public static void main(String[] args) {
         launch(args);
     }
 
+    /**
+     * Initializes the main scene and sets up dynamic font sizing.
+     *
+     * @param splashScreenStage The stage used for the splash screen
+     */
     public static void initScene(Stage splashScreenStage) {
         scene = splashScreenStage.getScene();
         new DynamicFontSize(scene);
     }
 
+    /**
+     * Starts the application, initializes the splash screen, and begins loading
+     * the main application.
+     *
+     * @param splashScreenStage The primary stage for the application
+     */
     @Override
     public void start(final Stage splashScreenStage) {
         try {
@@ -74,6 +94,13 @@ public class SudoMain extends Application {
         }
     }
 
+    /**
+     * Handles the result of the loading thread, either transitioning to the
+     * main view or handling errors.
+     *
+     * @param throwable Any exception that occurred during loading
+     * @param startTime The start time of the loading process
+     */
     private void loadingThreadExecutorResult(final Throwable throwable, final long startTime) {
         if (throwable == null) {
             final long minimumTimelapse = Math.max(0, 1000 - (System.currentTimeMillis() - startTime));
@@ -84,6 +111,11 @@ public class SudoMain extends Application {
         }
     }
 
+    /**
+     * Handles errors that occur during the loading process.
+     *
+     * @param throwable The exception that occurred
+     */
     private void errorInLoadingThread(Throwable throwable) {
         log.error(String.format("██ Error in splash screen initialization thread : %s", throwable.getMessage()), throwable);
         SQLInvalidAuthorizationSpecException sqlInvalidAuthorizationSpecException = getSQLInvalidAuthorizationSpecException(throwable);
@@ -96,6 +128,12 @@ public class SudoMain extends Application {
         }
     }
 
+    /**
+     * Handles SQL invalid authorization exceptions.
+     *
+     * @param e The general exception
+     * @param sqlException The specific SQL invalid authorization exception
+     */
     private static void sqlInvalidAuthorization(Exception e, SQLInvalidAuthorizationSpecException sqlException) {
         log.error(String.format("██ SQLInvalidAuthorizationSpecException catch : %s", e.getMessage()), e);
         String sqlState = sqlException.getSQLState();
@@ -105,6 +143,13 @@ public class SudoMain extends Application {
         }
     }
 
+    /**
+     * Creates a PauseTransition to delay loading of the next view.
+     *
+     * @param fxmlName The name of the FXML file to load
+     * @param minimumTimelapse The minimum time to pause
+     * @return A PauseTransition object
+     */
     private PauseTransition getPauseTransition(String fxmlName, long minimumTimelapse) {
         PauseTransition pause = new PauseTransition(Duration.millis(minimumTimelapse));
         pause.setOnFinished(e -> {
@@ -115,6 +160,11 @@ public class SudoMain extends Application {
         return pause;
     }
 
+    /**
+     * Sets the root of the scene based on the given FXML file name.
+     *
+     * @param fxml The name of the FXML file to load
+     */
     public void setRootByFXMLName(final String fxml) {
         try {
             clearFXMLLODER();
@@ -125,25 +175,40 @@ public class SudoMain extends Application {
         }
     }
 
+    /**
+     * Clears the current FXML loader.
+     */
     private void clearFXMLLODER() {
         fxmlLoader.setRoot(null);
         fxmlLoader.setController(null);
     }
 
+    /**
+     * Gets an FXMLLoader for the specified FXML file.
+     *
+     * @param fxml The name of the FXML file
+     * @return An FXMLLoader object
+     */
     private FXMLLoader getFXMLLoader(final String fxml) {
         fxmlLoader.setLocation(SudoMain.class.getResource(RESOURCES_FXML_PATH.getPath() + fxml + ".fxml"));
         return fxmlLoader;
     }
 
+    /**
+     * Interface for the primary stage view.
+     */
     public interface IPrimaryStageView {
+
         void openingMainStage(ISplashScreenView iSplashScreenView);
     }
 
+    /**
+     * Interface for the splash screen view.
+     */
     public interface ISplashScreenView {
+
         void hideSplashScreen();
 
         void showSplashScreen();
     }
 }
-
-

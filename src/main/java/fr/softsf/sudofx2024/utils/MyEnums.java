@@ -3,9 +3,15 @@ package fr.softsf.sudofx2024.utils;
 import fr.softsf.sudofx2024.annotations.ExcludedFromCoverageReportGenerated;
 import javafx.stage.Screen;
 
+/**
+ * Utility class containing various enums used throughout the application.
+ */
 public final class MyEnums {
 
     @ExcludedFromCoverageReportGenerated
+    /**
+     * Private constructor to prevent instantiation of this utility class.
+     */
     private MyEnums() {
     }
 
@@ -27,7 +33,7 @@ public final class MyEnums {
     }
 
     /**
-     * Enum for toast levels
+     * Enum for toast notification levels.
      */
     public enum ToastLevels {
         INFO("toast-info"),
@@ -45,9 +51,8 @@ public final class MyEnums {
         }
     }
 
-
     /**
-     * Enum for OS name
+     * Enum for operating system names.
      */
     public enum OsName {
         OS_NAME(System.getProperty("os.name").toLowerCase()),
@@ -65,7 +70,7 @@ public final class MyEnums {
     }
 
     /**
-     * Enum for logs
+     * Enum for log messages and ASCII art.
      */
     public enum LogBackTxt {
         EMPTY_HIBERNATE_CONFIGURATION_EXCEPTION("Default Hibernate configuration not set. Please call getSessionFactory(final IHibernateConfiguration iHibernateConfiguration) first."),
@@ -107,7 +112,7 @@ public final class MyEnums {
     }
 
     /**
-     * Enum for paths
+     * Enum for various application-specific paths.
      */
     public enum Paths {
         RESOURCES_FXML_PATH("/fr/softsf/sudofx2024/fxml/"),

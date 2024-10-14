@@ -1,14 +1,16 @@
 package fr.softsf.sudofx2024.utils.database.keystore;
 
-import fr.softsf.sudofx2024.annotations.ExcludedFromCoverageReportGenerated;
 import org.passay.CharacterData;
 import org.passay.CharacterRule;
 import org.passay.EnglishCharacterData;
+import static org.passay.IllegalCharacterRule.ERROR_CODE;
 import org.passay.PasswordGenerator;
 
-import static org.passay.IllegalCharacterRule.ERROR_CODE;
+import fr.softsf.sudofx2024.annotations.ExcludedFromCoverageReportGenerated;
 
-
+/**
+ * Utility class for generating secure passwords using the Passay library.
+ */
 public final class GenerateSecret {
 
     @ExcludedFromCoverageReportGenerated

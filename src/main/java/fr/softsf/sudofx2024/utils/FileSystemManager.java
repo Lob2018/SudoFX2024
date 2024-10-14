@@ -8,8 +8,22 @@ import java.nio.file.Path;
 import java.util.Comparator;
 import java.util.stream.Stream;
 
+/**
+ * Manages file system operations, particularly folder deletion. This class
+ * implements the IFileSystem interface.
+ */
 @Slf4j
 public final class FileSystemManager implements IFileSystem {
+
+    /**
+     * Recursively deletes a folder and its contents if the folder path ends
+     * with the specified string.
+     *
+     * @param folderPath The path of the folder to be deleted.
+     * @param mustEndWithThat The string that the folder path must end with for
+     * deletion to proceed.
+     * @return true if the folder was successfully deleted, false otherwise.
+     */
     @Override
     public boolean deleteFolderRecursively(final Path folderPath, final String mustEndWithThat) {
         if (folderPath.endsWith(mustEndWithThat)) {
@@ -28,9 +42,11 @@ public final class FileSystemManager implements IFileSystem {
     }
 
     /**
-     * Delete the file or throw Exception
-     * @param path The file path
-     * @return Null if file deleted otherwise the Exception
+     * Attempts to delete a single file or directory.
+     *
+     * @param path The path of the file or directory to be deleted.
+     * @return null if the file was successfully deleted, otherwise returns the
+     * Exception that occurred.
      */
     Throwable deleteFile(final Path path) {
         try {

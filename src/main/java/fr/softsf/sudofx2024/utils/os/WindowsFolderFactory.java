@@ -1,18 +1,27 @@
 package fr.softsf.sudofx2024.utils.os;
 
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.stereotype.Component;
-
 import java.io.File;
 
-import static fr.softsf.sudofx2024.utils.MyEnums.Paths.*;
+import org.springframework.stereotype.Component;
 
+import static fr.softsf.sudofx2024.utils.MyEnums.Paths.SUDO_FX_BASE_PATH;
+import static fr.softsf.sudofx2024.utils.MyEnums.Paths.SUPPOSED_DATA_FOLDER_FOR_SUDO_FX;
+import static fr.softsf.sudofx2024.utils.MyEnums.Paths.SUPPOSED_LOGS_FOLDER_FOR_SUDO_FX;
+import lombok.extern.slf4j.Slf4j;
+
+/**
+ * Factory class for creating and managing Windows-specific folders for the SudoFX application.
+ * Implements the OsDynamicFolders.IOsFoldersFactory interface.
+ */
 @Slf4j
 @Component
 public class WindowsFolderFactory implements OsDynamicFolders.IOsFoldersFactory {
     private final String LOGS_FOLDER_FOR_SUDO_FX;
     private final String DATA_FOLDER_FOR_SUDO_FX;
 
+    /**
+     * Constructor that initializes the data and logs folder paths.
+     */
     public WindowsFolderFactory() {
         final String[] folders = createFolders();
         DATA_FOLDER_FOR_SUDO_FX = folders[0];
@@ -20,9 +29,9 @@ public class WindowsFolderFactory implements OsDynamicFolders.IOsFoldersFactory 
     }
 
     /**
-     * Create data and logs folders
+     * Creates data and logs folders for the application.
      *
-     * @return The array of data and logs folders paths
+     * @return An array of Strings containing the paths to the data and logs folders.
      */
     public String[] createFolders() {
         boolean bData = isNowCreated(SUPPOSED_DATA_FOLDER_FOR_SUDO_FX.getPath());
@@ -34,10 +43,10 @@ public class WindowsFolderFactory implements OsDynamicFolders.IOsFoldersFactory 
     }
 
     /**
-     * Confirm folder creation
+     * Attempts to create a folder at the specified path and confirms its creation.
      *
-     * @param folderPath The folder path
-     * @return True for created folder, False otherwise
+     * @param folderPath The path where the folder should be created.
+     * @return true if the folder exists or was successfully created, false otherwise.
      */
     boolean isNowCreated(final String folderPath) {
         try {
@@ -56,20 +65,31 @@ public class WindowsFolderFactory implements OsDynamicFolders.IOsFoldersFactory 
     }
 
     /**
-     * Stubbing getter for folder path
+     * Creates a File object for the given folder path.
+     * This method can be overridden for testing purposes.
      *
-     * @param folderPath The folder path
-     * @return The file
+     * @param folderPath The path of the folder.
+     * @return A File object representing the folder.
      */
     File getFolder(final String folderPath) {
         return new File(folderPath);
     }
 
+    /**
+     * Returns the path to the data folder for the SudoFX application.
+     *
+     * @return A String representing the path to the data folder.
+     */
     @Override
     public String getOsDataFolderPath() {
         return DATA_FOLDER_FOR_SUDO_FX;
     }
 
+    /**
+     * Returns the path to the logs folder for the SudoFX application.
+     *
+     * @return A String representing the path to the logs folder.
+     */
     @Override
     public String getOsLogsFolderPath() {
         return LOGS_FOLDER_FOR_SUDO_FX;

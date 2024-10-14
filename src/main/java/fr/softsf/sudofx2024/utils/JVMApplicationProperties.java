@@ -2,6 +2,10 @@ package fr.softsf.sudofx2024.utils;
 
 import fr.softsf.sudofx2024.annotations.ExcludedFromCoverageReportGenerated;
 
+/**
+ * Utility class for managing JVM application properties. This class provides
+ * methods to retrieve the application name and version from system properties.
+ */
 public final class JVMApplicationProperties {
 
     private static final String APP_NAME_PROPERTY = "app.name";
@@ -9,14 +13,19 @@ public final class JVMApplicationProperties {
     private static String appName = "";
     private static String appVersion = "";
 
+    /**
+     * Private constructor to prevent instantiation of this utility class.
+     */
     @ExcludedFromCoverageReportGenerated
     private JVMApplicationProperties() {
     }
 
     /**
-     * Get the current application name
+     * Retrieves the current application name from system properties. The
+     * application name is validated against an alphanumeric regex pattern.
      *
-     * @return The current application name
+     * @return The current application name if valid, or an empty string if
+     * invalid or not set.
      */
     public static String getAppName() {
         if (appName.isEmpty()) {
@@ -26,9 +35,12 @@ public final class JVMApplicationProperties {
     }
 
     /**
-     * Get the current application version
+     * Retrieves the current application version from system properties. The
+     * version is validated against a version regex pattern and prefixed with
+     * 'v'.
      *
-     * @return The current application version
+     * @return The current application version prefixed with 'v' if valid, or an
+     * empty string if invalid or not set.
      */
     public static String getAppVersion() {
         if (appVersion.isEmpty()) {
@@ -38,14 +50,16 @@ public final class JVMApplicationProperties {
     }
 
     /**
-     * Stubbing setter for empty app name
+     * Resets the application name to an empty string. This method is intended
+     * for testing purposes only.
      */
     static void setEmptyAppNamePropertyForTests() {
         appName = "";
     }
 
     /**
-     * Stubbing setter for empty app version
+     * Resets the application version to an empty string. This method is
+     * intended for testing purposes only.
      */
     static void setEmptyAppVersionPropertyForTests() {
         appVersion = "";

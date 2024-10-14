@@ -14,20 +14,28 @@ import javafx.scene.layout.VBox;
 import javafx.util.Duration;
 import org.springframework.stereotype.Component;
 
+/**
+ * A custom VBox component for displaying toast notifications. This class
+ * extends JavaFX's VBox and provides methods to add and manage toast messages.
+ */
 @Component
 public class ToasterVBox extends VBox {
 
+    /**
+     * Constructor for ToasterVBox. Initializes the VBox and sets its alignment
+     * to bottom center.
+     */
     public ToasterVBox() {
         super();
         setAlignment(Pos.BOTTOM_CENTER);
     }
 
     /**
-     * Add a toast to this ToasterVBox with its duration
+     * Adds a toast notification with a specified duration.
      *
-     * @param text       The text to show
-     * @param toastLevel The toast level (info, warn, error)
-     * @param duration   The toast display duration
+     * @param text The text content of the toast
+     * @param toastLevel The severity level of the toast (info, warn, error)
+     * @param duration The display duration of the toast in milliseconds
      */
     @FXML
     public void addToastWithDuration(final String text, final MyEnums.ToastLevels toastLevel, final double duration) {
@@ -41,10 +49,11 @@ public class ToasterVBox extends VBox {
     }
 
     /**
-     * Add a toast to this ToasterVBox (estimated duration)
+     * Adds a toast notification with an automatically calculated duration based
+     * on text length.
      *
-     * @param text       The text to show
-     * @param toastLevel The toast level (info, warn, error)
+     * @param text The text content of the toast
+     * @param toastLevel The severity level of the toast (info, warn, error)
      */
     @FXML
     public void addToast(final String text, final MyEnums.ToastLevels toastLevel) {
@@ -52,17 +61,29 @@ public class ToasterVBox extends VBox {
         setToastStyle(toast, toastLevel);
         setAccessibility(toast, toastLevel);
         toast.setAlignment(Pos.CENTER);
-        final double duration = Math.max(1000, (double)text.length()*1000 / 8);
+        final double duration = Math.max(1000, (double) text.length() * 1000 / 8);
         temporizeToast(toast, duration);
         toast.setOnAction(this::toastActions);
         getChildren().add(toast);
     }
 
+    /**
+     * Sets the style of the toast based on its level.
+     *
+     * @param toast The toast button
+     * @param toastLevel The severity level of the toast
+     */
     private void setToastStyle(final Button toast, final MyEnums.ToastLevels toastLevel) {
         toast.getStyleClass().add("toast");
         toast.getStyleClass().add(toastLevel.getLevel());
     }
 
+    /**
+     * Sets the accessibility text for the toast based on its level.
+     *
+     * @param toast The toast button
+     * @param toastLevel The severity level of the toast
+     */
     private static void setAccessibility(final Button toast, final MyEnums.ToastLevels toastLevel) {
         switch (toastLevel) {
             case WARN:
@@ -77,12 +98,23 @@ public class ToasterVBox extends VBox {
         }
     }
 
+    /**
+     * Handles actions when a toast is clicked. Copies the toast text to
+     * clipboard and removes the toast.
+     *
+     * @param event The action event triggered by clicking the toast
+     */
     private void toastActions(final ActionEvent event) {
         Button toast = (Button) event.getSource();
         copyToClipboard(toast);
         removeToast(toast);
     }
 
+    /**
+     * Copies the text content of a toast to the system clipboard.
+     *
+     * @param button The toast button whose text is to be copied
+     */
     private void copyToClipboard(final Button button) {
         String text = button.getText();
         Clipboard clipboard = Clipboard.getSystemClipboard();
@@ -91,11 +123,24 @@ public class ToasterVBox extends VBox {
         clipboard.setContent(content);
     }
 
+    /**
+     * Sets a timer to automatically remove the toast after a specified
+     * duration.
+     *
+     * @param toast The toast button to be removed
+     * @param duration The duration in milliseconds after which the toast should
+     * be removed
+     */
     private void temporizeToast(final Button toast, final double duration) {
         Timeline timeline = new Timeline(new KeyFrame(Duration.millis(duration), event -> getChildren().remove(toast)));
         timeline.play();
     }
 
+    /**
+     * Removes a specific toast from the ToasterVBox.
+     *
+     * @param button The toast button to be removed
+     */
     private void removeToast(final Button button) {
         getChildren().remove(button);
     }

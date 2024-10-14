@@ -1,16 +1,19 @@
 package fr.softsf.sudofx2024.utils.database;
 
-import fr.softsf.sudofx2024.annotations.ExcludedFromCoverageReportGenerated;
-import fr.softsf.sudofx2024.interfaces.IKeystore;
-import fr.softsf.sudofx2024.utils.os.OsDynamicFolders;
-import lombok.extern.slf4j.Slf4j;
 import org.flywaydb.core.Flyway;
 import org.flywaydb.core.api.FlywayException;
 import org.flywaydb.core.api.MigrationInfo;
 import org.flywaydb.core.api.MigrationInfoService;
 
+import fr.softsf.sudofx2024.annotations.ExcludedFromCoverageReportGenerated;
+import fr.softsf.sudofx2024.interfaces.IKeystore;
 import static fr.softsf.sudofx2024.utils.MyEnums.Paths.DATABASE_MIGRATION_PATH;
+import fr.softsf.sudofx2024.utils.os.OsDynamicFolders;
+import lombok.extern.slf4j.Slf4j;
 
+/**
+ * Utility class for managing database migrations using Flyway.
+ */
 @Slf4j
 public final class DatabaseMigration {
 
@@ -19,10 +22,10 @@ public final class DatabaseMigration {
     }
 
     /**
-     * Configure Flyway migration
+     * Configures and executes Flyway migration.
      *
-     * @param iKeystore         The Keystore
-     * @param iOsFolderFactory_ The folder factory
+     * @param iKeystore         The Keystore containing database credentials
+     * @param iOsFolderFactory_ The factory for creating OS-specific folders
      */
     public static void configure(final IKeystore iKeystore, final OsDynamicFolders.IOsFoldersFactory iOsFolderFactory_) {
         log.info("\n▓▓ Start of Flyway migration");
@@ -45,10 +48,10 @@ public final class DatabaseMigration {
         }
     }
 
-    /**
-     * Format Flyway information
+   /**
+     * Formats and logs Flyway migration information.
      *
-     * @param flyway The Flyway
+     * @param flyway The configured Flyway instance
      */
     @ExcludedFromCoverageReportGenerated
     private static void migrationInformation(final Flyway flyway) {

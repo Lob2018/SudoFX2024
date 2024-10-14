@@ -17,6 +17,10 @@ import java.io.InputStream;
 import static fr.softsf.sudofx2024.utils.MyEnums.LogBackTxt.ASCII_LOGO;
 import static fr.softsf.sudofx2024.utils.MyEnums.Paths.*;
 
+/**
+ * Configuration class for Logback logging framework. This class sets up and
+ * configures Logback for the application.
+ */
 @Slf4j
 @Configuration
 public class MyLogback {
@@ -26,6 +30,11 @@ public class MyLogback {
     private static final String LOGS_NAME = "SudokuFX.log";
     private String logBackPath = CONFIG_LOGBACK_PATH.getPath();
 
+    /**
+     * Constructor that initializes the logging configuration.
+     *
+     * @param osFolderFactory Factory for creating OS-specific folders
+     */
     public MyLogback(@Autowired OsDynamicFolders osFolderFactory) {
         logsFolderPath = osFolderFactory.osFolderFactory().getOsLogsFolderPath();
         System.setProperty("logs", logsFolderPath + "/" + LOGS_NAME);
@@ -34,14 +43,14 @@ public class MyLogback {
     }
 
     /**
-     * Prints entry message to the log
+     * Prints the application's ASCII logo to the log as an entry message.
      */
     public void printLogEntryMessage() {
         log.info(ASCII_LOGO.getLogBackMessage());
     }
 
     /**
-     * Prints logger status to the log
+     * Prints the logger status to the log in case of errors or warnings.
      *
      * @param context The current logger context
      */
@@ -51,9 +60,10 @@ public class MyLogback {
     }
 
     /**
-     * Configure LogBack
+     * Configures Logback using the specified configuration file.
      *
-     * @return The Logger context
+     * @return The configured LoggerContext
+     * @throws RuntimeException if there's an error during configuration
      */
     LoggerContext configureLogback() {
         LoggerContext context = (LoggerContext) LoggerFactory.getILoggerFactory();
@@ -69,7 +79,8 @@ public class MyLogback {
     }
 
     /**
-     * Stubbing setter for logback path
+     * Sets an invalid logback configuration path for testing purposes. This
+     * method should only be used in test scenarios.
      */
     void setLogBackPathForTests() {
         logBackPath = CONFIG_LOGBACK_INVALID_PATH_FOR_TESTS.getPath();
