@@ -9,10 +9,13 @@
 - [Description](#description)
 - [Build with](#build-with)
 - [Project](#project)
-- [Installation](#installation)
+  - [Roadmap](#roadmap)
+  - [Mockup](#mockup)
+  - [Windows how to run in IntelliJ IDEA](#windows-how-to-run-in-intellij-idea)
+- [Installation](#installation-windows)
 - [Use](#use)
 - [Examples](#examples)
-- [Uninstallation](#uninstallation)
+- [Uninstallation](#uninstallation-windows)
 - [Documentation](#documentation)
 - [Contributors](#contributors)
 - [Feedback](#feedback)
@@ -56,8 +59,39 @@ application allows you to solve the current Sudoku grid, but also other entries 
 
 ## Project
 
+### Roadmap
+
 - [The project roadmap](https://github.com/users/Lob2018/projects/4)
+
+### Mockup
+
 - [The app mockup (Figma)](https://www.figma.com/file/GiSwlg2mZofXalf1Quaa5w/SudokuFX2024?type=design&node-id=0%3A1&mode=design&t=D4N04MRdsbArO6fu-1)
+
+### Windows how to run in IntelliJ IDEA
+
+- Download and install the JDK
+- Download and install WiX Toolset v3.11
+  - Activate .NET framework 3.5.1 (Control Panel > Programs > Programs and Features > Turn Windows features on or off)
+  - Launch [wix311.exe](https://github.com/wixtoolset/wix3/releases/tag/wix3112rtm)
+- Configured the necessary environment variables
+  - JDK
+    - name : JAVA_HOME
+    - value : C:\Program Files\Eclipse Adoptium\jdk-21.0.3.9-hotspot
+  - WiX
+    - name : WIX
+    - value : C:\Program Files (x86)\WiX Toolset v3.11\
+- IntelliJ IDEA
+  - Clone the repository
+  - Select the project's JDK
+    - File > Project Structure > SDK > Add SDK from disk (select the JDK)
+  - Run the app (top right corner)
+    - Run / Debug Configurations > Edit Configurations...
+      - Run (in order to run the application)
+        - Add New Configuration > Maven > Run: clean javafx:run > Apply
+        - Open and select SudoMain.java then run **SudokuFX [clean,javafx:run]**
+      - Run with details (optional)
+        - Add New Configuration > Maven > Run: clean -X javafx:run -Dprism.verbose=true -f pom.xml > Apply
+        - Open and select SudoMain.java then run **SudokuFX [run details]**
 
 ## Installation (Windows)
 
