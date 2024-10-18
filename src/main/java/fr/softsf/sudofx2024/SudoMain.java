@@ -17,6 +17,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.PropertySource;
 
 import java.sql.SQLInvalidAuthorizationSpecException;
 
@@ -31,6 +32,7 @@ import static fr.softsf.sudofx2024.utils.MyEnums.Paths.*;
  */
 @Slf4j
 @SpringBootApplication
+@PropertySource("classpath:/fr/softsf/sudofx2024/application.properties")
 @ComponentScan({
     "com.gluonhq.ignite.spring",
     "fr.softsf.sudofx2024.*",})
