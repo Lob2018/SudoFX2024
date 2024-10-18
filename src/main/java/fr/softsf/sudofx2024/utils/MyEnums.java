@@ -8,10 +8,10 @@ import javafx.stage.Screen;
  */
 public final class MyEnums {
 
-    @ExcludedFromCoverageReportGenerated
     /**
      * Private constructor to prevent instantiation of this utility class.
      */
+    @ExcludedFromCoverageReportGenerated
     private MyEnums() {
     }
 
