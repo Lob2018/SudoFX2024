@@ -26,7 +26,6 @@ import javafx.stage.Screen;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javafx.util.Duration;
-import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  * View class for the full menu screen of the Sudoku application. This class is
