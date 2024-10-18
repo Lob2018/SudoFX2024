@@ -2,6 +2,7 @@ package fr.softsf.sudofx2024.utils.database.configuration;
 
 import javax.sql.DataSource;
 
+import com.zaxxer.hikari.HikariDataSource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.jdbc.DataSourceBuilder;
 import org.springframework.context.annotation.Bean;
@@ -38,7 +39,7 @@ public class DynamicDataSourceConfiguration {
      * logbackInitialization to ensure logging is set up first.
      *
      * @param osFolderFactory Factory for creating OS-specific folders
-     * @param keystore Application keystore for secure storage
+     * @param keystore        Application keystore for secure storage
      * @return Always returns 0
      */
     @DependsOn({"logbackInitialization"})
@@ -54,13 +55,14 @@ public class DynamicDataSourceConfiguration {
      * depends on databaseMigration to ensure the database is properly set up.
      *
      * @param osFolderFactory Factory for creating OS-specific folders
-     * @param keystore Application keystore for secure storage
+     * @param keystore        Application keystore for secure storage
      * @return Configured DataSource
      */
     @DependsOn({"databaseMigration"})
     @Bean
     public DataSource dataSourceInitialization(@Autowired OsDynamicFolders osFolderFactory, @Autowired ApplicationKeystore keystore) {
         return DataSourceBuilder.create()
+                .type(HikariDataSource.class)
                 .driverClassName("org.hsqldb.jdbcDriver")
                 .url("jdbc:hsqldb:file:" + osFolderFactory.osFolderFactory().getOsDataFolderPath() + "/sudofx2024db;shutdown=true")
                 .username(keystore.getUsername())
@@ -83,7 +85,6 @@ public class DynamicDataSourceConfiguration {
         entityManagerFactory.getJpaPropertyMap().put("hibernate.format_sql", "true");
         entityManagerFactory.getJpaPropertyMap().put("hibernate.use_sql_comments", "true");
         entityManagerFactory.getJpaPropertyMap().put("hibernate.show_sql", "true");
-        entityManagerFactory.getJpaPropertyMap().put("hibernate.hbm2ddl.auto", "validate");
         entityManagerFactory.getJpaPropertyMap().put("spring.jpa.open-in-view", "false");
         entityManagerFactory.getJpaPropertyMap().put("spring.datasource.hikari.auto-commit", "false");
         return entityManagerFactory;
