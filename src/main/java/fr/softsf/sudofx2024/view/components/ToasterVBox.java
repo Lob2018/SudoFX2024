@@ -8,6 +8,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.geometry.Pos;
 import javafx.scene.control.Button;
+import javafx.scene.control.Tooltip;
 import javafx.scene.input.Clipboard;
 import javafx.scene.input.ClipboardContent;
 import javafx.scene.layout.VBox;
@@ -33,9 +34,9 @@ public class ToasterVBox extends VBox {
     /**
      * Adds a toast notification with a specified duration.
      *
-     * @param text The text content of the toast
+     * @param text       The text content of the toast
      * @param toastLevel The severity level of the toast (info, warn, error)
-     * @param duration The display duration of the toast in milliseconds
+     * @param duration   The display duration of the toast in milliseconds
      */
     @FXML
     public void addToastWithDuration(final String text, final MyEnums.ToastLevels toastLevel, final double duration) {
@@ -52,7 +53,7 @@ public class ToasterVBox extends VBox {
      * Adds a toast notification with an automatically calculated duration based
      * on text length.
      *
-     * @param text The text content of the toast
+     * @param text       The text content of the toast
      * @param toastLevel The severity level of the toast (info, warn, error)
      */
     @FXML
@@ -70,7 +71,7 @@ public class ToasterVBox extends VBox {
     /**
      * Sets the style of the toast based on its level.
      *
-     * @param toast The toast button
+     * @param toast      The toast button
      * @param toastLevel The severity level of the toast
      */
     private void setToastStyle(final Button toast, final MyEnums.ToastLevels toastLevel) {
@@ -80,22 +81,39 @@ public class ToasterVBox extends VBox {
 
     /**
      * Sets the accessibility text for the toast based on its level.
+     * <p>
+     * This method configures the accessibility text and tooltip for a toast button
+     * according to the specified severity level. The tooltip will provide additional
+     * information to users, enhancing the accessibility of the application.
      *
-     * @param toast The toast button
-     * @param toastLevel The severity level of the toast
+     * @param toast      The toast button to which the accessibility text and tooltip will be applied.
+     * @param toastLevel The severity level of the toast, which determines the content of the accessibility text and tooltip.
      */
-    private static void setAccessibility(final Button toast, final MyEnums.ToastLevels toastLevel) {
-        switch (toastLevel) {
-            case WARN:
-                toast.setAccessibleText(I18n.getValue("toastlevel.warn"));
-                break;
-            case ERROR:
-                toast.setAccessibleText(I18n.getValue("toastlevel.error"));
-                break;
-            default:
-                toast.setAccessibleText(I18n.getValue("toastlevel.info"));
-                break;
-        }
+    private void setAccessibility(final Button toast, final MyEnums.ToastLevels toastLevel) {
+        Tooltip tooltip = new Tooltip();
+        tooltip.setShowDelay(Duration.millis(0));
+        String info = getToastInfo(toastLevel);
+        toast.setAccessibleText(info);
+        tooltip.setText(info);
+        Tooltip.install(toast, tooltip);
+    }
+
+    /**
+     * Retrieves the information text corresponding to the specified toast level.
+     * <p>
+     * This method uses a switch expression to return the appropriate message
+     * based on the severity level of the toast. It fetches the localized
+     * string from the I18n resource bundle.
+     *
+     * @param toastLevel The severity level of the toast, which can be WARN, ERROR, or INFO.
+     * @return A string containing the localized message for the specified toast level.
+     */
+    private String getToastInfo(MyEnums.ToastLevels toastLevel) {
+        return switch (toastLevel) {
+            case WARN -> I18n.getValue("toastlevel.warn");
+            case ERROR -> I18n.getValue("toastlevel.error");
+            default -> I18n.getValue("toastlevel.info");
+        };
     }
 
     /**
@@ -127,9 +145,9 @@ public class ToasterVBox extends VBox {
      * Sets a timer to automatically remove the toast after a specified
      * duration.
      *
-     * @param toast The toast button to be removed
+     * @param toast    The toast button to be removed
      * @param duration The duration in milliseconds after which the toast should
-     * be removed
+     *                 be removed
      */
     private void temporizeToast(final Button toast, final double duration) {
         Timeline timeline = new Timeline(new KeyFrame(Duration.millis(duration), event -> getChildren().remove(toast)));
