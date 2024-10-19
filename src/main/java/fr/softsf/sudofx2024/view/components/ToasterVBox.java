@@ -7,6 +7,7 @@ import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.geometry.Pos;
+import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.Tooltip;
 import javafx.scene.input.Clipboard;
@@ -142,15 +143,26 @@ public class ToasterVBox extends VBox {
     }
 
     /**
-     * Sets a timer to automatically remove the toast after a specified
-     * duration.
+     * Sets a timer to automatically remove the toast after a specified duration.
      *
-     * @param toast    The toast button to be removed
+     * This method ensures that the currently focused node is preserved when the toast
+     * is removed, allowing for a seamless user experience. Additionally, it guarantees
+     * that the narrator continues to read the toast message without interruption,
+     * providing accessibility for users who rely on screen readers.
+     *
+     * @param toast    The toast button to be removed.
      * @param duration The duration in milliseconds after which the toast should
-     *                 be removed
+     *                 be removed. The toast will be removed without disrupting
+     *                 the focus of the currently active node.
      */
     private void temporizeToast(final Button toast, final double duration) {
-        Timeline timeline = new Timeline(new KeyFrame(Duration.millis(duration), event -> getChildren().remove(toast)));
+        Timeline timeline = new Timeline(new KeyFrame(Duration.millis(duration), event -> {
+            Node focusedNode = this.getScene().getFocusOwner();
+            getChildren().remove(toast);
+            if (focusedNode != null) {
+                focusedNode.requestFocus();
+            }
+        }));
         timeline.play();
     }
 
