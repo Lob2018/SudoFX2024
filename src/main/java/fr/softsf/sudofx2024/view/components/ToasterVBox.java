@@ -42,7 +42,7 @@ public class ToasterVBox extends VBox {
     public void addToastWithDuration(final String text, final MyEnums.ToastLevels toastLevel, final double duration) {
         final Button toast = new Button(text);
         setToastStyle(toast, toastLevel);
-        setAccessibility(toast, toastLevel);
+        setAccessibility(toast, toastLevel, text);
         toast.setAlignment(Pos.CENTER);
         temporizeToast(toast, duration);
         toast.setOnAction(this::toastActions);
@@ -60,7 +60,7 @@ public class ToasterVBox extends VBox {
     public void addToast(final String text, final MyEnums.ToastLevels toastLevel) {
         final Button toast = new Button(text);
         setToastStyle(toast, toastLevel);
-        setAccessibility(toast, toastLevel);
+        setAccessibility(toast, toastLevel, text);
         toast.setAlignment(Pos.CENTER);
         final double duration = Math.max(1000, (double) text.length() * 1000 / 8);
         temporizeToast(toast, duration);
@@ -89,11 +89,11 @@ public class ToasterVBox extends VBox {
      * @param toast      The toast button to which the accessibility text and tooltip will be applied.
      * @param toastLevel The severity level of the toast, which determines the content of the accessibility text and tooltip.
      */
-    private void setAccessibility(final Button toast, final MyEnums.ToastLevels toastLevel) {
+    private void setAccessibility(final Button toast, final MyEnums.ToastLevels toastLevel, final String text) {
         Tooltip tooltip = new Tooltip();
         tooltip.setShowDelay(Duration.millis(0));
         String info = getToastInfo(toastLevel);
-        toast.setAccessibleText(info);
+        toast.setAccessibleText(info + text);
         tooltip.setText(info);
         Tooltip.install(toast, tooltip);
     }
