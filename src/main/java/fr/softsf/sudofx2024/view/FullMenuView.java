@@ -72,7 +72,7 @@ public class FullMenuView implements SudoMain.IPrimaryStageView {
      */
     @FXML
     private void onHelloButtonClick(ActionEvent event) {
-        toaster.addToastWithDuration("TOTO EST LÀ", INFO, 1000);
+        toaster.addToastWithDuration("TOTO EST LÀ", INFO, 6000);
         toaster.addToast("TOTO N'EST PAS LÀ", WARN);
         toaster.addToast("TOTO EST PARTI VOTER, IL N'EST PAS SUPERMAN, MAIS ÇA LUI PERMET DE FAIRE ENTENDRE SA PETITE VOIX DANS SON GRAND PAYS", ERROR);
         fullMenuViewModel.test();
