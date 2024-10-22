@@ -2,16 +2,13 @@ package fr.softsf.sudofx2024.model;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Entity
 @Table(name = "menu")
-@Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Getter
 @Builder
 public class Menu {
 
@@ -20,5 +17,6 @@ public class Menu {
     private Long menuid;
 
     @NotNull
+    @Setter
     private int mode;
 }

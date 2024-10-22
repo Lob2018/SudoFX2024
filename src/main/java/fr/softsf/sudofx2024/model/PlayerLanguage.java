@@ -3,16 +3,13 @@ package fr.softsf.sudofx2024.model;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Entity
 @Table(name = "playerlanguage")
-@Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Getter
 @Builder
 public class PlayerLanguage {
     @Id
@@ -20,6 +17,7 @@ public class PlayerLanguage {
     private Long playerlanguageid;
 
     @NotNull
+    @Setter
     @Size(max = 2)
     private String iso;
 }

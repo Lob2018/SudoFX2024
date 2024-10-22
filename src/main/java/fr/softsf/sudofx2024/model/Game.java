@@ -2,10 +2,7 @@ package fr.softsf.sudofx2024.model;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.hibernate.annotations.CascadeType;
 import org.hibernate.annotations.Cascade;
 import org.hibernate.annotations.Fetch;
@@ -15,9 +12,9 @@ import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "game")
-@Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Getter
 @Builder
 public class Game {
     @Id
@@ -51,11 +48,13 @@ public class Game {
     private GameLevel levelid;
 
     @Builder.Default
+    @Setter
     private boolean isselected = false;
 
     @NotNull
     private LocalDateTime createdat;
 
     @NotNull
+    @Setter
     private LocalDateTime updatedat;
 }

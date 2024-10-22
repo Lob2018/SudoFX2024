@@ -4,16 +4,13 @@ import jakarta.persistence.*;
 
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Entity
 @Table(name = "background")
-@Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Getter
 @Builder
 public class Background {
     @Id
@@ -21,12 +18,15 @@ public class Background {
     private Long backgroundid;
 
     @NotNull
+    @Setter
     @Size(max = 7)
     private String hexcolor;
 
     @Size(max = 260)
+    @Setter
     private String imagepath;
 
     @Builder.Default
+    @Setter
     private boolean isimage = false;
 }

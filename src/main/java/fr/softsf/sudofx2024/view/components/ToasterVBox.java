@@ -144,7 +144,7 @@ public class ToasterVBox extends VBox {
 
     /**
      * Sets a timer to automatically remove the toast after a specified duration.
-     *
+     * <p>
      * This method ensures that the currently focused node is preserved when the toast
      * is removed, allowing for a seamless user experience. Additionally, it guarantees
      * that the narrator continues to read the toast message without interruption,

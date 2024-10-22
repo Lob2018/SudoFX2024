@@ -3,27 +3,26 @@ package fr.softsf.sudofx2024.model;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "software")
-@Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Getter
 @Builder
 public class Software {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long softwareid;
 
+    @Setter
     @Size(max = 128)
     private String currentversion;
 
+    @Setter
     @Size(max = 128)
     private String lastversion;
 
@@ -31,6 +30,7 @@ public class Software {
     private LocalDateTime createdat;
 
     @NotNull
+    @Setter
     private LocalDateTime updatedat;
 }
 

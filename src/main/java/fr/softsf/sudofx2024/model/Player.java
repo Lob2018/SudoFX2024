@@ -15,9 +15,9 @@ import java.util.Set;
 
 @Entity
 @Table(name = "player")
-@Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Getter
 @Builder
 public class Player {
     @Id
@@ -42,7 +42,6 @@ public class Player {
     @JoinColumn(name = "menumenuid")
     private Menu menuid;
 
-    @Getter
     @OneToMany(mappedBy = "playerid", orphanRemoval = true)
     @Cascade(CascadeType.ALL)
     @OrderBy("updatedat")
@@ -60,16 +59,19 @@ public class Player {
     }
 
     @NotNull
+    @Setter
     @Size(max = 256)
     @Column(nullable = false, unique = true)
     private String name;
 
     @Builder.Default
+    @Setter
     private boolean isselected = false;
 
     @NotNull
     private LocalDateTime createdat;
 
     @NotNull
+    @Setter
     private LocalDateTime updatedat;
 }
