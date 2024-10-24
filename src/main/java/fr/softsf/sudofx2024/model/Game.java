@@ -28,18 +28,11 @@ public class Game {
     private Grid gridid;
 
     @ManyToOne
+    @Setter
     @Cascade(CascadeType.ALL)
     @Fetch(FetchMode.JOIN)
     @JoinColumn(name = "playerplayerid")
     private Player playerid;
-
-    public Player getPlayer() {
-        return playerid;
-    }
-
-    public void setPlayer(Player player) {
-        this.playerid = player;
-    }
 
     @ManyToOne
     @Cascade(CascadeType.ALL)

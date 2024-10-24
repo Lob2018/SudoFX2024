@@ -50,12 +50,12 @@ public class Player {
 
     public void addGame(Game game) {
         games.add(game);
-        game.setPlayer(this);
+        game.setPlayerid(this);
     }
 
     public void removeGame(Game game) {
         games.remove(game);
-        game.setPlayer(null);
+        game.setPlayerid(null);
     }
 
     @NotNull
