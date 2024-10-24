@@ -33,9 +33,7 @@ import static fr.softsf.sudofx2024.utils.MyEnums.Paths.*;
 @Slf4j
 @SpringBootApplication
 @PropertySource("classpath:/fr/softsf/sudofx2024/application.properties")
-@ComponentScan({
-    "com.gluonhq.ignite.spring",
-    "fr.softsf.sudofx2024.*",})
+@ComponentScan({"com.gluonhq.ignite.spring", "fr.softsf.sudofx2024.*",})
 public class SudoMain extends Application {
 
     private final SpringContext context = new SpringContext(this);
@@ -133,7 +131,7 @@ public class SudoMain extends Application {
     /**
      * Handles SQL invalid authorization exceptions.
      *
-     * @param e The general exception
+     * @param e            The general exception
      * @param sqlException The specific SQL invalid authorization exception
      */
     private static void sqlInvalidAuthorization(Exception e, SQLInvalidAuthorizationSpecException sqlException) {
@@ -148,7 +146,7 @@ public class SudoMain extends Application {
     /**
      * Creates a PauseTransition to delay loading of the next view.
      *
-     * @param fxmlName The name of the FXML file to load
+     * @param fxmlName         The name of the FXML file to load
      * @param minimumTimelapse The minimum time to pause
      * @return A PauseTransition object
      */
