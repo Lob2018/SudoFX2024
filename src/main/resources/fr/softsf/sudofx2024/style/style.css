@@ -45,6 +45,10 @@
     -fx-border-width: 2px;
 }
 
+.button {
+    -fx-cursor: hand;
+}
+
 #splashscreenvbox,#crashscreenvbox  {
     -fx-padding: 1em;
     -fx-background-color: radial-gradient(center 50% 150%, radius 100%, #A83449, #12020B);
