@@ -12,6 +12,7 @@
   - [Roadmap](#roadmap)
   - [Mockup](#mockup)
   - [Windows how to run in IntelliJ IDEA](#windows-how-to-run-in-intellij-idea)
+  - [Required Application Properties to Run](#required-application-properties-to-run)
 - [Installation](#installation-windows)
 - [Use](#use)
 - [Examples](#examples)
@@ -92,6 +93,20 @@ application allows you to solve the current Sudoku grid, but also other entries 
       - Run with details (optional)
         - Add New Configuration > Maven > Run: clean -X javafx:run -Dprism.verbose=true -f pom.xml > Apply
         - Open and select SudoMain.java then run **SudokuFX [run details]**
+
+### Required Application Properties to Run
+
+For the application to function correctly, the following application properties must be set at the JVM level:
+
+- app.name: This property specifies the name of the application.
+- app.version: This property specifies the version of the application.
+  - This SemVer-like format is only numeric MAJOR.MINOR.PATCH (e.g., 1.0.0, 2.1.3).
+
+These properties can be defined when starting the uberjar using the -D flag, as shown below:
+
+    java -Djarmode=tools -Dapp.name=SudokuFX -Dapp.version=1.0.8 -jar SudokuFX-1.0.8.jar extract
+
+Ensuring these properties are correctly set will help maintain a consistent and secure configuration for the application.
 
 ## Installation (Windows)
 
