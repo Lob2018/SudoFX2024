@@ -139,6 +139,7 @@ public class SplashScreenView implements SudoMain.ISplashScreenView {
     public void hideSplashScreen() {
         splashScreenStage.hide();
         splashScreenStage.close();
+        scene.setCursor(Cursor.DEFAULT);
     }
 
     /**

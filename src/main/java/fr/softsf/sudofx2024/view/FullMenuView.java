@@ -2,6 +2,7 @@ package fr.softsf.sudofx2024.view;
 
 import java.util.Objects;
 
+import javafx.scene.Cursor;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import fr.softsf.sudofx2024.SudoMain;
