@@ -11,8 +11,8 @@
 - [Project](#project)
   - [Roadmap](#roadmap)
   - [Mockup](#mockup)
-  - [Windows how to run in IntelliJ IDEA](#windows-how-to-run-in-intellij-idea)
   - [Required Application Properties to Run](#required-application-properties-to-run)
+  - [Windows how to run in IntelliJ IDEA](#windows-how-to-run-in-intellij-idea)
 - [Installation](#installation-windows)
 - [Use](#use)
 - [Examples](#examples)
@@ -68,6 +68,22 @@ application allows you to solve the current Sudoku grid, but also other entries 
 
 - [The app mockup (Figma)](https://www.figma.com/file/GiSwlg2mZofXalf1Quaa5w/SudokuFX2024?type=design&node-id=0%3A1&mode=design&t=D4N04MRdsbArO6fu-1)
 
+> [!IMPORTANT]
+>
+>### Required Application Properties to Run
+>
+>For the application to function correctly, the following application properties must be set at the JVM level:
+>
+>- app.name: This property specifies the name of the application.
+>- app.version: This property specifies the version of the application.
+>   - This SemVer-like format is only numeric MAJOR.MINOR.PATCH (e.g., 1.0.0, 2.1.3).
+>
+>These properties are automatically applied (either by Maven or the .bat file) but can also be defined manually when starting the uberjar using the -D flag, as shown below:
+>
+>     java -Djarmode=tools -Dapp.name=SudokuFX -Dapp.version=1.0.8 -jar SudokuFX-1.0.8.jar extract
+>
+>Ensuring these properties are correctly set will help maintain a consistent and secure configuration for the application.
+
 ### Windows how to run in IntelliJ IDEA
 
 - Download and install the JDK
@@ -93,20 +109,6 @@ application allows you to solve the current Sudoku grid, but also other entries 
       - Run with details (optional)
         - Add New Configuration > Maven > Run: clean -X javafx:run -Dprism.verbose=true -f pom.xml > Apply
         - Open and select SudoMain.java then run **SudokuFX [run details]**
-
-### Required Application Properties to Run
-
-For the application to function correctly, the following application properties must be set at the JVM level:
-
-- app.name: This property specifies the name of the application.
-- app.version: This property specifies the version of the application.
-  - This SemVer-like format is only numeric MAJOR.MINOR.PATCH (e.g., 1.0.0, 2.1.3).
-
-These properties are automatically applied (either by Maven or the .bat file) but can also be defined manually when starting the uberjar using the -D flag, as shown below:
-
-    java -Djarmode=tools -Dapp.name=SudokuFX -Dapp.version=1.0.8 -jar SudokuFX-1.0.8.jar extract
-
-Ensuring these properties are correctly set will help maintain a consistent and secure configuration for the application.
 
 ## Installation (Windows)
 
@@ -137,8 +139,11 @@ during installation; to continue the installation click on **additional informat
         2. Select **Programs > Programs and Features**.
         3. Press and hold (or right-click) on the program you want to remove and select **Uninstall** or *
            *Uninstall/Change**. Then follow the directions on the screen.
-    - To completely delete your app data and logs, you need to manually delete this folder:
-        - **C:/Users/\<USERNAME\>**[^1]**/AppData/Local/Soft64.fr/SudokuFX/**.
+> [!IMPORTANT]
+>- Windows
+>   - To completely delete your app data and logs, you need to manually delete this folder:
+>     
+>     **C:/Users/\<USERNAME\>**[^1]**/AppData/Local/Soft64.fr/SudokuFX/**.
 
 [^1]: Replace \<USERNAME\> with your Windows username
 
