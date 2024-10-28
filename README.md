@@ -1,7 +1,7 @@
 # SudokuFX2024
 
 <p align="center">
-  <img alt="SudokuFX2024 in action" src="https://github.com/Lob2018/SudoFX2024/blob/main/.myresources/design%20and%20modeling/images/SudokuFX2024_in_action.jpg">
+  <img alt="SudokuFX2024 in action" src="./.myresources/design%20and%20modeling/images/SudokuFX2024_in_action.jpg">
 </p>
 
 ## Contents
