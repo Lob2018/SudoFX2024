@@ -153,7 +153,7 @@ during installation; to continue the installation click on **additional informat
 
 ## Contributors
 
-Lob2018.
+[Lob2018](https://github.com/Lob2018)
 
 ## Feedback
 
