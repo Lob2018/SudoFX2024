@@ -149,7 +149,7 @@ during installation; to continue the installation click on **additional informat
 
 ## Documentation
 
-- [JavaDoc](https://lob2018.github.io/SudoFX2024/)
+- <a href="./.myresources/docs/index.html" target="_blank">Javadoc</a>
 
 ## Contributors
 
