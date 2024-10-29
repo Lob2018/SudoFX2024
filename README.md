@@ -50,7 +50,7 @@ application allows you to solve the current Sudoku grid, but also other entries 
     - Build dependencies :
         - maven-compiler-plugin
         - javafx-maven-plugin
-        - maven-shade-plugin (create the uber JAR)
+        - spring-boot-maven-plugin (create the uber JAR)
         - exec-maven-plugin (batch to generate MSI and uber JAR with his run batch)
     - Test dependencies :
         - spring boot starter test (JUnit, Mockito, Hamcrest)

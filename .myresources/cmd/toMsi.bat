@@ -52,7 +52,7 @@
 	echo.
 	echo # OUTPUT   : CREATING THE MSI...
 	cd ../
-    jpackage --input ./target  --dest output --name %1 --type msi --main-jar %jarName% --main-class %4 --win-shortcut --win-menu --win-menu-group %1 --java-options "-Xmx2048m -Dapp.name=%1 -Dapp.version=%2" --vendor %3 --copyright "Copyright © %year% %3" --icon src/main/resources/fr/softsf/sudofx2024/images/icon.ico --app-version %2 --description "%1 %year%" --license-file LICENSE.txt --verbose
+    jpackage --input ./target  --dest output --name %1 --type msi --main-jar %jarName% --main-class org.springframework.boot.loader.launch.JarLauncher --win-shortcut --win-menu --win-menu-group %1 --java-options "-Xmx2048m -Dapp.name=%1 -Dapp.version=%2" --vendor %3 --copyright "Copyright © %year% %3" --icon src/main/resources/fr/softsf/sudofx2024/images/icon.ico --app-version %2 --description "%1 %year%" --license-file LICENSE.txt --verbose
     echo.
     echo # TARGET   : THE BATCH TO LAUNCH THE UBERJAR
 	cd ./target

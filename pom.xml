@@ -42,10 +42,9 @@
         <maven.compiler.version>3.13.0</maven.compiler.version>
         <passay.version>1.6.4</passay.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <shade.version>3.5.2</shade.version>
+        <start-class>fr.softsf.sudofx2024.Launcher</start-class>
         <surefire.version>3.2.5</surefire.version>
         <testfx.version>4.0.17</testfx.version>
-        <start-class>fr.softsf.sudofx2024.Launcher</start-class>
     </properties>
     <!-- Project dependencies -->
     <dependencies>
@@ -149,29 +148,21 @@
                     </options>
                 </configuration>
             </plugin>
-            <!-- Shade plugin for creating the uber-jar -->
+            <!-- Spring Boot Maven Plugin for uberjar -->
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-shade-plugin</artifactId>
-                <version>${shade.version}</version>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <filters>
-                        <filter>
-                            <artifact>*:*</artifact>
-                            <excludes>
-                                <exclude>META-INF/maven/**</exclude>
-                                <exclude>META-INF/*.SF</exclude>
-                                <exclude>META-INF/*.DSA</exclude>
-                                <exclude>META-INF/*.RSA</exclude>
-                            </excludes>
-                        </filter>
-                    </filters>
+                    <mainClass>${start-class}</mainClass>
+                    <jvmArguments>
+                        <jvmArgument>-Dapp.name=${project.artifactId}</jvmArgument>
+                        <jvmArgument>-Dapp.version=${project.version}</jvmArgument>
+                    </jvmArguments>
                 </configuration>
                 <executions>
                     <execution>
-                        <phase>package</phase>
                         <goals>
-                            <goal>shade</goal>
+                            <goal>repackage</goal>
                         </goals>
                     </execution>
                 </executions>
