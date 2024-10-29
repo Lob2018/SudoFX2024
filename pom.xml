@@ -30,6 +30,7 @@
     </developers>
     <!-- Project properties -->
     <properties>
+        <deployment-folder>output</deployment-folder>
         <exec.version>1.6.0</exec.version>
         <flyway.version>10.12.0</flyway.version>
         <hsqldb.version>2.7.2</hsqldb.version>
@@ -244,6 +245,7 @@
                                 <!-- The main module to execute -->
                                 <argument>${start-class}</argument>
                                 <argument>${javafx.version}</argument>
+                                <argument>${deployment-folder}</argument>
                             </arguments>
                         </configuration>
                     </execution>

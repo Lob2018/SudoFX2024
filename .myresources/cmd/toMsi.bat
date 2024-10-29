@@ -34,6 +34,7 @@
 	echo # Organization's name :"%3"
 	echo # Main's path         :"%4"
 	echo # JRE version         :"%5"
+	echo # Deployment folder   :"%6"
 
     echo.
 	set "jarName=%1-%2.jar"
@@ -41,7 +42,7 @@
 	set "appNameWithTheJVM=%1+JVM"
 	echo.
 	echo # OUTPUT   : CLEAN
-	rmdir /s /q output 2>nul
+	rmdir /s /q %6 2>nul
 	cd ./target
 	echo.
 	echo # TARGET   : DELETE ALL BUT UBERJAR
@@ -53,7 +54,7 @@
 	echo.
 	echo # OUTPUT   : CREATING THE MSI...
 	cd ../
-    jpackage --input ./target  --dest output --name %appNameWithTheJVM% --type msi --main-jar %jarName% --main-class org.springframework.boot.loader.launch.JarLauncher --win-shortcut --win-menu --win-menu-group %1 --java-options "-Xmx2048m -Dapp.name=%1 -Dapp.version=%2" --vendor %3 --copyright "Copyright © %year% %3" --icon src/main/resources/fr/softsf/sudofx2024/images/icon.ico --app-version %2 --description "%1 %year%" --license-file LICENSE.txt --verbose
+    jpackage --input ./target  --dest %6 --name %appNameWithTheJVM% --type msi --main-jar %jarName% --main-class org.springframework.boot.loader.launch.JarLauncher --win-shortcut --win-menu --win-menu-group %1 --java-options "-Xmx2048m -Dapp.name=%1 -Dapp.version=%2" --vendor %3 --copyright "Copyright © %year% %3" --icon src/main/resources/fr/softsf/sudofx2024/images/icon.ico --app-version %2 --description "%1 %year%" --license-file LICENSE.txt --verbose
     echo.
     echo # TARGET   : THE BATCH TO LAUNCH THE UBERJAR
 	cd ./target
@@ -110,13 +111,13 @@
     echo # TARGET   : COPY THE BATCH AND THE UBERJAR TO OUTPUT AS A ZIP FILE
     set "zipName=%1-%2.zip"
 
-    powershell -command "& {Compress-Archive -Path '%1-%2.bat', '%jarName%' -DestinationPath '..\output\%zipName%'}"
+    powershell -command "& {Compress-Archive -Path '%1-%2.bat', '%jarName%' -DestinationPath '..\%6\%zipName%'}"
 
     echo.
     echo # OUTPUT   : THE HASH FILE
     set "msiFile=%appNameWithTheJVM%-%2.msi"
 	cd ../
-	cd ./output
+	cd ./%6
 	(
 		echo.
 		CertUtil -hashfile %msiFile% MD5
