@@ -121,7 +121,7 @@ application allows you to solve the current Sudoku grid, but also other entries 
 
 - Application with Java Runtime Environment included
 
-  [Download and install the latest Windows version of the file **SudokuFX-v.v.v.msi
+  [Download and install the latest Windows version of the file **SudokuFX+JVM-v.v.v.msi
 **, available in Assets.](https://github.com/Lob2018/SudoFX2024/releases/latest)
 
   The MSI file does not have a code signing certificate (paid service), Microsoft Defender SmartScreen informs you of this
