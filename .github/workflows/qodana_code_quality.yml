@@ -20,6 +20,8 @@ jobs:
         with:
           fetch-depth: 0
           node-version: 'lts'
+      - name: 'Remove .idea changes'
+        run: git rm -r --cached .idea || true
       - name: 'Qodana Scan'
         uses: JetBrains/qodana-action@latest
         with:
