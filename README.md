@@ -78,9 +78,11 @@ application allows you to solve the current Sudoku grid, but also other entries 
 >- app.version: This property specifies the version of the application.
 >   - This SemVer-like format is only numeric MAJOR.MINOR.PATCH (e.g., 1.0.0, 2.1.3).
 >
->These properties are automatically applied (either by Maven or the .bat file) but can also be defined manually when starting the uberjar using the -D flag, as shown below:
+>These properties are automatically applied (either by Maven or the .bat file) but can also be defined manually when starting the app using the -D flag after the extract, as shown below:
 >
->     java -Djarmode=tools -Dapp.name=SudokuFX -Dapp.version=1.0.8 -jar SudokuFX-1.0.8.jar extract
+>     java -Djarmode=tools -jar SudokuFX-1.0.8.jar extract
+>     cd SudokuFX-1.0.8
+>     java -jar -Dapp.name=SudokuFX -Dapp.version=1.0.8 SudokuFX-1.0.8.jar
 >
 >Ensuring these properties are correctly set will help maintain a consistent and secure configuration for the application.
 
