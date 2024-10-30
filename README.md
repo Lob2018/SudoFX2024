@@ -78,11 +78,16 @@ application allows you to solve the current Sudoku grid, but also other entries 
 >- app.version: This property specifies the version of the application.
 >   - This SemVer-like format is only numeric MAJOR.MINOR.PATCH (e.g., 1.0.0, 2.1.3).
 >
->These properties are automatically applied (either by Maven or the .bat file) but can also be defined manually when starting the app using the -D flag after the extract, as shown below:
+>These properties are automatically applied (either by Maven or the .bat file) but can also be defined manually if needed, using the -D flag after the jar extract, as shown below:
 >
->     java -Djarmode=tools -jar SudokuFX-1.0.8.jar extract
->     cd SudokuFX-1.0.8
->     java -jar -Dapp.name=SudokuFX -Dapp.version=1.0.8 SudokuFX-1.0.8.jar
+>     # Extract the contents of the SudokuFX JAR file to the 'SudokuFX' directory
+>     java -Djarmode=tools -jar SudokuFX-1.0.8.jar extract --destination SudokuFX
+>     # Change the current working directory to 'SudokuFX'
+>     cd SudokuFX
+>     # Perform a training run on your SudokuFX (long process, the application closes at the end)
+>     java -Xmx2048m -XX:ArchiveClassesAtExit=SudokuFX.jsa -Dspring.context.exit=onRefresh -Dapp.name=SudokuFX -Dapp.version=1.0.8 -jar SudokuFX-1.0.8.jar
+>     # Run the SudokuFX game (using the shared archive file and cache for faster startup)
+>     java -Xmx2048m -XX:SharedArchiveFile=SudokuFX.jsa -Dapp.name=SudokuFX -Dapp.version=1.0.8 -jar SudokuFX-1.0.8.jar
 >
 >Ensuring these properties are correctly set will help maintain a consistent and secure configuration for the application.
 
@@ -116,7 +121,7 @@ application allows you to solve the current Sudoku grid, but also other entries 
 
 - Application without Java Runtime Environment included ([the latest JRE must be installed on your machine](https://adoptium.net))
 
-  [Download, unzip, and keep the two files together (SudokuFX-v.v.v.bat to launch), from the latest Windows version of the file **SudokuFX-v.v.v.zip
+  [Download, unzip, and keep all the files together (SudokuFX-v.v.v.bat to launch), from the latest Windows version of the file **SudokuFX-v.v.v.zip
 **, available in Assets.](https://github.com/Lob2018/SudoFX2024/releases/latest)
 
 - Application with Java Runtime Environment included

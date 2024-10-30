@@ -57,7 +57,7 @@
     jpackage --input ./target  --dest %6 --name %appNameWithTheJVM% --type msi --main-jar %jarName% --main-class org.springframework.boot.loader.launch.JarLauncher --win-shortcut --win-menu --win-menu-group %1 --java-options "-Xmx2048m -Dapp.name=%1 -Dapp.version=%2" --vendor %3 --copyright "Copyright © %year% %3" --icon src/main/resources/fr/softsf/sudofx2024/images/icon.ico --app-version %2 --description "%1 %year%" --license-file LICENSE.txt --verbose
     echo.
     echo # TARGET   : THE BATCH TO LAUNCH THE UBERJAR
-	cd ./target
+    cd ./target
     (
         echo @echo off
         echo     chcp 65001
@@ -87,6 +87,7 @@
         echo     ^)
         echo     set JAVA_VERSION=%%JAVA_VERSION:"=%%
         echo     set /a JAVA_REQUIRED=%5
+        echo     set FOLDER=%1
         echo     if %%JAVA_VERSION%% EQU 0 (
         echo         echo.
         echo         echo  ██ Java minimum version %%JAVA_REQUIRED%% is required to run this application.
@@ -104,8 +105,23 @@
         echo         pause
         echo         exit /b 1
         echo     ^)
-        echo     start /min cmd /c "java -Xmx2048m -Dapp.name=%1 -Dapp.version=%2 -jar %1-%2.jar & exit"
-        echo exit
+        echo     if not exist %%FOLDER%% (
+        echo         mkdir %%FOLDER%%
+        echo         echo Extracting the contents of the SudokuFX JAR file...
+        echo         java -Djarmode=tools -jar SudokuFX-1.0.8.jar extract --destination %%FOLDER%%
+        echo         echo Training the SudokuFX application...
+        echo         cd %%FOLDER%%
+        echo         java -Xmx2048m -XX:ArchiveClassesAtExit=%%FOLDER%%.jsa -Dspring.context.exit=onRefresh -Dapp.name=%1 -Dapp.version=%2 -jar  %1-%2.jar
+        echo         start /min cmd /c "java -Xmx2048m -XX:SharedArchiveFile=%%FOLDER%%.jsa -Dapp.name=%1 -Dapp.version=%2 -jar  %1-%2.jar & exit"
+        echo     ^)
+        echo     if exist %%FOLDER%% (
+        echo         echo Running the SudokuFX application...
+        echo         if not "%%cd%%"=="%%~dp0%%FOLDER%%\" (
+        echo             cd %1
+        echo         ^)
+        echo         start /min cmd /c "java -Xmx2048m -XX:SharedArchiveFile=%%FOLDER%%.jsa -Dapp.name=%1 -Dapp.version=%2 -jar  %1-%2.jar & exit"
+        echo     ^)
+        echo     exit
     ) > %1-%2.bat
     echo.
     echo # TARGET   : COPY THE BATCH AND THE UBERJAR TO OUTPUT AS A ZIP FILE
