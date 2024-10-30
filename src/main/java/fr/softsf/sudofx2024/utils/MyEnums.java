@@ -80,9 +80,7 @@ public final class MyEnums {
                 ██ In both cases the application will close
                 """),
         ASCII_LOGO("""
-                
-                
-                ▓▓ Application entry
+                ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ Application entry ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
                 
                          ▒▒▒▒▒                                                                                     \s
                         ▒▒▒▒▒▒▒                                                                                    \s
