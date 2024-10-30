@@ -109,6 +109,7 @@ public class FullMenuView implements SudoMain.IPrimaryStageView {
      * @param node The node to apply the fade-in effect to
      */
     private void openingFadeIn(final Node node) {
+        primaryStage.setAlwaysOnTop(true);
         FadeTransition fadeIn = new FadeTransition(Duration.seconds(FADE_IN_IN_SECONDS_AFTER_SPLASHSCREEN), node);
         fadeIn.setFromValue(0.0);
         fadeIn.setToValue(1.0);
@@ -136,5 +137,6 @@ public class FullMenuView implements SudoMain.IPrimaryStageView {
         openingFadeIn(SudoMain.getScene().getRoot());
         openingShowStage();
         iSplashScreenView.hideSplashScreen();
+        primaryStage.setAlwaysOnTop(false);
     }
 }

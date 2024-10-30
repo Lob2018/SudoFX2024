@@ -108,18 +108,18 @@
         echo     if not exist %%FOLDER%% (
         echo         mkdir %%FOLDER%%
         echo         echo Extracting the contents of the SudokuFX JAR file...
-        echo         java -Djarmode=tools -jar SudokuFX-1.0.8.jar extract --destination %%FOLDER%%
+        echo         java -Djarmode=tools -jar %1-%2.jar extract --destination %%FOLDER%%
+        echo         echo Delete the SudokuFX JAR file...
+        echo         del %1-%2.jar
         echo         echo Training the SudokuFX application...
         echo         cd %%FOLDER%%
-        echo         java -Xmx2048m -XX:ArchiveClassesAtExit=%%FOLDER%%.jsa -Dspring.context.exit=onRefresh -Dapp.name=%1 -Dapp.version=%2 -jar  %1-%2.jar
-        echo         start /min cmd /c "java -Xmx2048m -XX:SharedArchiveFile=%%FOLDER%%.jsa -Dapp.name=%1 -Dapp.version=%2 -jar  %1-%2.jar & exit"
+        echo         start /min cmd /c "java -Xmx2048m -XX:ArchiveClassesAtExit=%%FOLDER%%.jsa -Dspring.context.exit=onRefresh -Dapp.name=%1 -Dapp.version=%2 -jar  %1-%2.jar > nul & exit"
+        echo         start /min cmd /c "java -Xmx2048m -XX:SharedArchiveFile=%%FOLDER%%.jsa -Dapp.name=%1 -Dapp.version=%2 -jar  %1-%2.jar > nul & exit"
         echo     ^)
         echo     if exist %%FOLDER%% (
         echo         echo Running the SudokuFX application...
-        echo         if not "%%cd%%"=="%%~dp0%%FOLDER%%\" (
-        echo             cd %1
-        echo         ^)
-        echo         start /min cmd /c "java -Xmx2048m -XX:SharedArchiveFile=%%FOLDER%%.jsa -Dapp.name=%1 -Dapp.version=%2 -jar  %1-%2.jar & exit"
+        echo         cd %%FOLDER%%
+        echo         start /min cmd /c "java -Xmx2048m -XX:SharedArchiveFile=%%FOLDER%%.jsa -Dapp.name=%1 -Dapp.version=%2 -jar %1-%2.jar > nul & exit"
         echo     ^)
         echo     exit
     ) > %1-%2.bat

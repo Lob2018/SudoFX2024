@@ -10,14 +10,31 @@ public final class JVMApplicationProperties {
 
     private static final String APP_NAME_PROPERTY = "app.name";
     private static final String APP_VERSION_PROPERTY = "app.version";
+    private static final String SPRING_CONTEXT_EXIT_ON_REFRESH = "spring.context.exit";
     private static String appName = "";
     private static String appVersion = "";
+    private static String springContextExit = "";
 
     /**
      * Private constructor to prevent instantiation of this utility class.
      */
     @ExcludedFromCoverageReportGenerated
     private JVMApplicationProperties() {
+    }
+
+    /**
+     * Checks if the Spring context should exit on refresh.
+     * If the 'springContextExit' variable is empty, it retrieves the value
+     * from the system property specified by SPRING_CONTEXT_EXIT_ON_REFRESH.
+     * The method returns true if the value is "onRefresh"; otherwise, it returns false.
+     *
+     * @return true if the context should exit on refresh; false otherwise.
+     */
+    public static boolean isSpringContextExitOnRefresh() {
+        if (springContextExit.isEmpty()) {
+            springContextExit = System.getProperty(SPRING_CONTEXT_EXIT_ON_REFRESH);
+        }
+        return "onRefresh".equals(springContextExit);
     }
 
     /**
@@ -48,6 +65,16 @@ public final class JVMApplicationProperties {
         }
         return appVersion;
     }
+
+    /**
+     * Sets the Spring context exit behavior to "onRefresh" for testing purposes.
+     * This method modifies the static variable 'springContextExit' to simulate
+     * the condition where the Spring context is configured to exit on refresh.
+     */
+    static void setOnRefreshSpringContextExitForTests() {
+        springContextExit = "onRefresh";
+    }
+
 
     /**
      * Resets the application name to an empty string. This method is intended

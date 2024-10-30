@@ -21,6 +21,7 @@ import javafx.stage.StageStyle;
 import java.util.Calendar;
 import java.util.Objects;
 
+import static fr.softsf.sudofx2024.utils.JVMApplicationProperties.isSpringContextExitOnRefresh;
 import static fr.softsf.sudofx2024.utils.MyEnums.Paths.*;
 import static fr.softsf.sudofx2024.utils.MyEnums.ScreenSize.DISPOSABLE_SIZE;
 import static javafx.scene.layout.Priority.ALWAYS;
@@ -101,11 +102,21 @@ public class SplashScreenView implements SudoMain.ISplashScreenView {
         setSplashscreenvboxCenterhboxStackpaneLogoflowersvg();
         splashscreenvboxBottomhboxYearlabel.setText(Calendar.getInstance().get(Calendar.YEAR) + "");
         splashscreenvboxBottomhboxYearlabel.setTextFill(splashDefaultFontColor);
-        splashscreenvboxBottomhboxHboxLoaderlabel.setText(I18n.getValue("splashscreen.loading"));
+        splashscreenvboxBottomhboxHboxLoaderlabel.setText(getLoadingOrOptimizingMessage());
         splashscreenvboxBottomhboxHboxLoaderlabel.setTextFill(splashDefaultFontColor);
         splashscreenvboxBottomhboxVersionlabel.setText(JVMApplicationProperties.getAppVersion());
         splashscreenvboxBottomhboxVersionlabel.setTextFill(splashDefaultFontColor);
         setSplashscreenvboxCenterhboxLogosoft64textsvg();
+    }
+
+    /**
+     * Retrieves a message indicating the current loading or optimizing state.
+     * The message returned depends on whether the Spring context is set to exit on refresh.
+     *
+     * @return A string message indicating either a loading or optimizing state.
+     */
+    private String getLoadingOrOptimizingMessage(){
+        return isSpringContextExitOnRefresh() ? I18n.getValue("splashscreen.optimizing") : I18n.getValue("splashscreen.loading");
     }
 
     /**

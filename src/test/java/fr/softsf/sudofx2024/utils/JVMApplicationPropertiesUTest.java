@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.*;
+import static org.springframework.data.util.Predicates.isFalse;
 
 class JVMApplicationPropertiesUTest {
 
@@ -11,6 +12,7 @@ class JVMApplicationPropertiesUTest {
     private static final String ALPHANUMERIC_REGEX = "^[a-zA-Z0-9\\s]+$";
     private static final String APP_NAME_PROPERTY = "app.name";
     private static final String APP_VERSION_PROPERTY = "app.version";
+    private static final String SPRING_CONTEXT_EXIT_ON_REFRESH = "spring.context.exit";
 
     @Test
     void testIsValidatedByRegex_Success() {
@@ -33,15 +35,20 @@ class JVMApplicationPropertiesUTest {
     void testGetAppProperties_Success() {
         System.setProperty(APP_NAME_PROPERTY, "_");
         System.setProperty(APP_VERSION_PROPERTY, "_");
+        System.setProperty(SPRING_CONTEXT_EXIT_ON_REFRESH, "_");
         assertEquals("", JVMApplicationProperties.getAppName());
         assertEquals("", JVMApplicationProperties.getAppVersion());
+        assertFalse(JVMApplicationProperties.isSpringContextExitOnRefresh());
         JVMApplicationProperties.setEmptyAppVersionPropertyForTests();
         JVMApplicationProperties.setEmptyAppNamePropertyForTests();
+        JVMApplicationProperties.setOnRefreshSpringContextExitForTests();
         System.setProperty(APP_NAME_PROPERTY, "MyApp");
         System.setProperty(APP_VERSION_PROPERTY, "1.0.0");
         assertEquals("MyApp", JVMApplicationProperties.getAppName());
         assertEquals("v1.0.0", JVMApplicationProperties.getAppVersion());
+        assertTrue(JVMApplicationProperties.isSpringContextExitOnRefresh());
         assertEquals("MyApp", JVMApplicationProperties.getAppName());
         assertEquals("v1.0.0", JVMApplicationProperties.getAppVersion());
+        assertTrue(JVMApplicationProperties.isSpringContextExitOnRefresh());
     }
 }
