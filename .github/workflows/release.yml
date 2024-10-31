@@ -42,7 +42,7 @@ jobs:
   publish_release:
     name: Publish the release and tag it
     needs: install_JDK-install_wix-package_and_create_release
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
       - uses: actions/checkout@v4
       - name: Extract version
