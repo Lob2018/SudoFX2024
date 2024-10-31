@@ -18,6 +18,10 @@ profile:
 #    paths:
 #      - <path/where/not/run/inspection>
 
+#Exclude specific directories or files from analysis
+excludes:
+  - .idea/**
+
 projectJDK: 21 #(Applied in CI/CD pipeline)
 
 #Execute shell command before Qodana execution (Applied in CI/CD pipeline)
