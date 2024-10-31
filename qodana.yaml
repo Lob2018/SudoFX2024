@@ -13,14 +13,10 @@ profile:
 #  - name: <SomeEnabledInspectionId>
 
 #Disable inspections
-#exclude:
-#  - name: <SomeDisabledInspectionId>
-#    paths:
-#      - <path/where/not/run/inspection>
-
-#Exclude specific directories or files from analysis
-excludes:
-  - .idea/**
+exclude:
+  - name: SomeInspectionId
+    paths:
+      - .idea/**
 
 projectJDK: 21 #(Applied in CI/CD pipeline)
 
