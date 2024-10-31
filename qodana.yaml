@@ -16,8 +16,7 @@ profile:
 exclude:
   - name: All
     paths:
-      - ..idea
-      - src
+      - .idea
 
 projectJDK: 21 #(Applied in CI/CD pipeline)
 
