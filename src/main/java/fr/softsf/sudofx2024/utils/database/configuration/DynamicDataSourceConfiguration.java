@@ -63,7 +63,7 @@ public class DynamicDataSourceConfiguration {
     public DataSource dataSourceInitialization(@Autowired OsDynamicFolders osFolderFactory, @Autowired ApplicationKeystore keystore) {
         return DataSourceBuilder.create()
                 .type(HikariDataSource.class)
-                .driverClassName("org.hsqldb.jdbcDriver")
+                .driverClassName("org.hsqldb.jdbc.JDBCDriver")
                 .url("jdbc:hsqldb:file:" + osFolderFactory.osFolderFactory().getOsDataFolderPath() + "/sudofx2024db;shutdown=true")
                 .username(keystore.getUsername())
                 .password(keystore.getPassword())
