@@ -78,7 +78,7 @@ application allows you to solve the current Sudoku grid, but also other entries 
 >- app.version: This property specifies the version of the application.
 >   - This SemVer-like format is only numeric MAJOR.MINOR.PATCH (e.g., 1.0.0, 2.1.3).
 >
->These properties are automatically applied (either by Maven or the .bat file) but can also be defined manually if needed, using the -D flag after the jar extract, as shown below:
+>These properties are applied automatically (either by Maven or by the .bat file) but can also be set manually if needed, using the -D flag after extracting the jar file, for example for version 1.0.8:
 >
 >     # Extract the contents of the SudokuFX JAR file to the 'SudokuFX' directory
 >     java -Djarmode=tools -jar SudokuFX-1.0.8.jar extract --destination SudokuFX
@@ -115,7 +115,21 @@ application allows you to solve the current Sudoku grid, but also other entries 
         - Open and select SudoMain.java then run **SudokuFX [clean,javafx:run]**
       - Run with details (optional)
         - Add New Configuration > Maven > Run: clean -X javafx:run -Dprism.verbose=true -f pom.xml > Apply
-        - Open and select SudoMain.java then run **SudokuFX [run details]**
+        - Open and select SudoMain.java then run **SudokuFX [run details]**  
+- Available Maven commands:
+
+>     #Run
+>     mvn clean javafx:run
+>     #Clean
+>     mvn clean -f pom.xml
+>     #Validate
+>     mvn validate -f pom.xml
+>     #Compile
+>     mvn compile -f pom.xml
+>     #Test
+>     mvn test -f pom.xml
+>     #Package (WiX is required)
+>     mvn package -f pom.xml
 
 ## Installation (Windows)
 
