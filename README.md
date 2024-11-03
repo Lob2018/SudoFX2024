@@ -29,8 +29,8 @@ application allows you to solve the current Sudoku grid, but also other entries 
 
 ## Build with
 
-- Java 21
-- JavaFX 21
+- Java LTS (e.g. 21)
+- JavaFX LTS (e.g. 21)
 - WiX Toolset v3.11
 - Dependencies :
     - Development
@@ -93,14 +93,14 @@ application allows you to solve the current Sudoku grid, but also other entries 
 
 ### Windows how to run in IntelliJ IDEA
 
-- Download and install [the version 21 of the JDK Adoptium Temurin JDK](https://adoptium.net)
+- Download and install [the version LTS (e.g. 21) of the JDK Adoptium Temurin JDK](https://adoptium.net)
 - Download and install WiX Toolset v3.11
   - Activate .NET framework 3.5.1 (Control Panel > Programs > Programs and Features > Turn Windows features on or off)
   - Launch [wix311.exe](https://github.com/wixtoolset/wix3/releases/tag/wix3112rtm)
 - Configured the necessary environment variables
   - JDK
     - name : JAVA_HOME
-    - value : C:\Program Files\Eclipse Adoptium\jdk-21.0.3.9-hotspot
+    - value LTS (e.g. 21) : C:\Program Files\Eclipse Adoptium\jdk-21.0.3.9-hotspot
   - WiX
     - name : WIX
     - value : C:\Program Files (x86)\WiX Toolset v3.11\
