@@ -108,10 +108,13 @@ application allows you to solve the current Sudoku grid, but also other entries 
   - Clone the repository
   - Select the project's JDK
     - File > Project Structure > SDK > Add SDK from disk (select the JDK)
-  - Run the app (top right corner)
+  - Run the app at top right corner (SudoMain.java is the main class)
     - Run / Debug Configurations > Edit Configurations...
       - Run (in order to run the application)
         - Add New Configuration > Maven > Run: clean javafx:run > Apply
+        <p>
+          <img alt="Run with Maven for JavaFX" src="./.myresources/design%20and%20modeling/images/Run_with_Maven_for_JavaFX.jpg">
+        </p>
         - Open and select SudoMain.java then run **SudokuFX [clean,javafx:run]**
       - Run with details (optional)
         - Add New Configuration > Maven > Run: clean -X javafx:run -Dprism.verbose=true -f pom.xml > Apply
