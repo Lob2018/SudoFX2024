@@ -2,6 +2,9 @@
 
 ![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)
 ![GitHub release](https://img.shields.io/github/v/release/lob2018/SudoFX2024)
+![Windows](https://img.shields.io/badge/Windows-Compatible-brightgreen)
+![Linux](https://img.shields.io/badge/Linux-Incompatible-red)
+![MacOS](https://img.shields.io/badge/MacOS-Incompatible-red)
 ![Open Issues](https://img.shields.io/github/issues/lob2018/SudoFX2024)
 ![Open Pull Requests](https://img.shields.io/github/issues-pr/lob2018/SudoFX2024)
 [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/Lob2018/SudoFX2024/badge)](https://scorecard.dev/viewer/?uri=github.com/Lob2018/SudoFX2024)
@@ -67,6 +70,10 @@ application allows you to solve the current Sudoku grid, but also other entries 
 
 ## Project
 
+![Windows Dev](https://img.shields.io/badge/Windows_Dev-Compatible-brightgreen)
+![Linux Dev](https://img.shields.io/badge/Linux_Dev-Incompatible-red)
+![MacOS Dev](https://img.shields.io/badge/MacOS_Dev-Incompatible-red)
+
 ### Roadmap
 
 - [The project roadmap](https://github.com/users/Lob2018/projects/4)
@@ -79,7 +86,7 @@ application allows you to solve the current Sudoku grid, but also other entries 
 >
 >### Required Application Properties to Run
 >
->For the application to function correctly, the following application properties must be set at the JVM level:
+>For the application to work properly, the following application properties must be set at the JVM level:
 >
 >- app.name: This property specifies the name of the application.
 >- app.version: This property specifies the version of the application.
@@ -143,6 +150,10 @@ application allows you to solve the current Sudoku grid, but also other entries 
 >     mvn package -f pom.xml
 
 ## Installation
+
+![Windows](https://img.shields.io/badge/Windows-Compatible-brightgreen)
+![Linux](https://img.shields.io/badge/Linux-Incompatible-red)
+![macOS](https://img.shields.io/badge/macOS-Incompatible-red)
 
 - Windows
   - Application without Java Runtime Environment included ([the latest JRE must be installed on your machine](https://adoptium.net))
