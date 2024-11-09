@@ -37,7 +37,7 @@
         <ignite.spring.version>1.2.2</ignite.spring.version>
         <jacoco.version>0.8.11</jacoco.version>
         <javafx.maven.version>0.0.8</javafx.maven.version>
-        <javafx.version>21</javafx.version>
+        <javafx.version>24-ea+15</javafx.version>
         <lombok.version>1.18.32</lombok.version>
         <maven.compiler.release>21</maven.compiler.release>
         <maven.compiler.version>3.13.0</maven.compiler.version>
