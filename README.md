@@ -19,10 +19,11 @@
   - [Mockup](#mockup)
   - [Required Application Properties to Run](#required-application-properties-to-run)
   - [Windows how to run in IntelliJ IDEA](#windows-how-to-run-in-intellij-idea)
-- [Installation](#installation-windows)
+- [Installation](#installation)
 - [Use](#use)
 - [Examples](#examples)
-- [Uninstallation](#uninstallation-windows)
+- [Update](#update)
+- [Uninstallation](#uninstallation)
 - [Documentation](#documentation)
 - [Contributors](#contributors)
 - [Feedback](#feedback)
@@ -141,19 +142,20 @@ application allows you to solve the current Sudoku grid, but also other entries 
 >     #Package (WiX is required)
 >     mvn package -f pom.xml
 
-## Installation (Windows)
+## Installation
 
-- Application without Java Runtime Environment included ([the latest JRE must be installed on your machine](https://adoptium.net))
+- Windows
+  - Application without Java Runtime Environment included ([the latest JRE must be installed on your machine](https://adoptium.net))
 
-  [Download, unzip, and keep all the files together (SudokuFX-v.v.v.bat to launch), from the latest Windows version of the file **SudokuFX-v.v.v.zip
+    [Download, unzip, and keep all the files together (SudokuFX-v.v.v.bat to launch), from the latest Windows version of the file **SudokuFX-v.v.v.zip
 **, available in Assets.](https://github.com/Lob2018/SudoFX2024/releases/latest)
 
-- Application with Java Runtime Environment included
+  - Application with Java Runtime Environment included
 
-  [Download and install the latest Windows version of the file **SudokuFX+JVM-v.v.v.msi
+    [Download and install the latest Windows version of the file **SudokuFX+JVM-v.v.v.msi
 **, available in Assets.](https://github.com/Lob2018/SudoFX2024/releases/latest)
 
-  The MSI file does not have a code signing certificate (paid service), Microsoft Defender SmartScreen informs you of this
+    The MSI file does not have a code signing certificate (paid service), Microsoft Defender SmartScreen informs you of this
 during installation; to continue the installation click on **additional information**, then **Run anyway**.
 
   <sub>[This other software may be useful to you to check the integrity of the downloaded file (see the version fingerprints inside hash.txt).](https://www.clubic.com/telecharger-fiche56914-hashtab.html)</sub>
@@ -162,9 +164,20 @@ during installation; to continue the installation click on **additional informat
 
 ## Examples
 
-## Uninstallation (Windows)
+## Update
 
-- For Windows :
+- Windows
+  - Application without Java Runtime Environment included (ZIP file with the .bat file and the JAR)
+    - [Delete your old unzipped folder from SudokuFX-v.v.v.zip, and follow the installation instructions](#installation)
+  - Application with Java Runtime Environment included (from MSI file)
+    - [Follow the installation instructions](#installation)
+
+## Uninstallation
+
+- Windows
+  - Application without Java Runtime Environment included (ZIP file with the .bat file and the JAR)
+    - **Delete your unzipped folder from SudokuFX-v.v.v.zip**
+  - Application with Java Runtime Environment included (from MSI file)
     - **Uninstall from the Control Panel (for programs)**
         1. In the search box on the taskbar, type **Control Panel** and select it from the results.
         2. Select **Programs > Programs and Features**.
@@ -190,7 +203,7 @@ during installation; to continue the installation click on **additional informat
 
 - [File an issue](https://github.com/Lob2018/SudoFX2024/issues)
     - If you want you can attach the application logs you find :
-        - For Windows
+        - Windows
             - Inside C:/Users/\<USERNAME\>**[^1]**/AppData/Local/Soft64.fr/SudokuFX/logs-sudofx
 
 ## Licence
