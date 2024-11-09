@@ -1,5 +1,11 @@
 # SudokuFX2024
 
+![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)
+![GitHub release](https://img.shields.io/github/v/release/lob2018/SudoFX2024)
+![Open Issues](https://img.shields.io/github/issues/lob2018/SudoFX2024)
+![Open Pull Requests](https://img.shields.io/github/issues-pr/lob2018/SudoFX2024)
+[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/lob2018/SudoFX2024/badge)](https://scorecard.dev/viewer/?uri=github.com/lob2018/SudoFX2024)
+
 <p align="center">
   <img alt="SudokuFX2024 in action" src="./.myresources/design%20and%20modeling/images/SudokuFX2024_in_action.jpg">
 </p>
