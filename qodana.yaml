@@ -13,10 +13,10 @@ profile:
 #  - name: <SomeEnabledInspectionId>
 
 #Disable inspections
-exclude:
-  - name: All
-    paths:
-      - .idea/misc.xml
+#exclude:
+#  - name: <SomeDisabledInspectionId>
+#    paths:
+#      - <path/where/not/run/inspection>
 
 projectJDK: 21 #(Applied in CI/CD pipeline)
 
