@@ -139,7 +139,7 @@ public class SudoMain extends Application {
         String sqlState = sqlException.getSQLState();
         if ("28000".equals(sqlState) || "28501".equals(sqlState)) {
             log.error(String.format("██ SQLInvalidAuthorizationSpecException with sqlstate==(28000||28501) catch : %s", e.getMessage()), e);
-            log.info(String.format("%n%n%s", SQL_INVALID_AUTHORIZATION_SPEC_EXCEPTION.getLogBackMessage()));
+            log.info("\n\n{}", SQL_INVALID_AUTHORIZATION_SPEC_EXCEPTION.getLogBackMessage());
         }
     }
 
