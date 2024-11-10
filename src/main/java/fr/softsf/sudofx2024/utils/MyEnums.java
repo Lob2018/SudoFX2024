@@ -73,7 +73,6 @@ public final class MyEnums {
      * Enum for log messages and ASCII art.
      */
     public enum LogBackTxt {
-        EMPTY_HIBERNATE_CONFIGURATION_EXCEPTION("Default Hibernate configuration not set. Please call getSessionFactory(final IHibernateConfiguration iHibernateConfiguration) first."),
         SQL_INVALID_AUTHORIZATION_SPEC_EXCEPTION("""      
                 ██ Risk of loss of application data because database authentication is not valid:
                 ██ You can say no and try restarting the application and if the problem persists, reset the application database.
