@@ -46,6 +46,8 @@ application allows you to solve the current Sudoku grid, but also other entries 
     - Development
         - javafx-controls
         - javafx-fxml
+    - DTOs
+      - MapStruct
     - SGBDR & SPRING BOOT
         - HSQLDB
         - Spring boot
@@ -59,6 +61,10 @@ application allows you to solve the current Sudoku grid, but also other entries 
         - logback from Spring Boot
     - Build dependencies :
         - maven-compiler-plugin
+          - annotationProcessorPaths: 
+            - MapStruct processor (for code generation)
+            - Lombok (for generating boilerplate code)
+            - Lombok MapStruct Binding (to integrate Lombok with MapStruct)
         - javafx-maven-plugin
         - spring-boot-maven-plugin (create the uber JAR)
         - exec-maven-plugin (batch to generate MSI and uber JAR with his run batch)

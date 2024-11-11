@@ -2,13 +2,15 @@ package fr.softsf.sudofx2024.service;
 
 import java.util.Optional;
 
+import fr.softsf.sudofx2024.dto.SoftwareDto;
+import fr.softsf.sudofx2024.interfaces.mapper.ISoftwareMapper;
 import fr.softsf.sudofx2024.repository.SoftwareRepository;
 
 import fr.softsf.sudofx2024.model.Software;
-import jakarta.persistence.NoResultException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 @Slf4j
 @Service
@@ -17,21 +19,28 @@ public class SoftwareService {
     @Autowired
     private SoftwareRepository softwareRepository;
 
-    public Optional<Software> getSoftware() {
+    private final ISoftwareMapper iSoftwareMapper = ISoftwareMapper.INSTANCE;
+
+    public Optional<SoftwareDto> getSoftware() {
         try {
-            return Optional.of(softwareRepository.findAll().get(0));
-        } catch (NoResultException e) {
-            log.error(String.format("██ No software found : %s", e.getMessage()), e);
-            return Optional.empty();
+            return softwareRepository.findFirstSoftware()
+                    .map(iSoftwareMapper::mapSoftwareToDto)
+                    .or(() -> {
+                        log.error("██ No software found.");
+                        return Optional.empty();
+                    });
         } catch (Exception e) {
             log.error(String.format("██ Exception retrieving software : %s", e.getMessage()), e);
             return Optional.empty();
         }
     }
 
-    public Optional<Software> updateSoftware(Software software) {
+    @Transactional
+    public Optional<SoftwareDto> updateSoftware(SoftwareDto softwareDto) {
         try {
-            return Optional.of(softwareRepository.save(software));
+            Software software = iSoftwareMapper.mapSoftwareDtoToSoftware(softwareDto);
+            Software updatedSoftware = softwareRepository.save(software);
+            return Optional.ofNullable(iSoftwareMapper.mapSoftwareToDto(updatedSoftware));
         } catch (Exception e) {
             log.error(String.format("██ Error updating software : %s", e.getMessage()), e);
             return Optional.empty();
