@@ -45,7 +45,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <start-class>fr.softsf.sudofx2024.Launcher</start-class>
         <surefire.version>3.5.2</surefire.version>
-        <testfx.version>4.0.17</testfx.version>
+        <testfx.version>4.0.18</testfx.version>
     </properties>
     <!-- Project dependencies -->
     <dependencies>
