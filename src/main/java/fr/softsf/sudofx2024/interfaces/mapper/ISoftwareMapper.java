@@ -7,7 +7,9 @@ import org.mapstruct.factory.Mappers;
 
 @Mapper
 public interface ISoftwareMapper {
-    ISoftwareMapper INSTANCE= Mappers.getMapper(ISoftwareMapper.class);
+    ISoftwareMapper INSTANCE = Mappers.getMapper(ISoftwareMapper.class);
+
     SoftwareDto mapSoftwareToDto(Software software);
+
     Software mapSoftwareDtoToSoftware(SoftwareDto dto);
 }
