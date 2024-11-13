@@ -18,10 +18,12 @@ public class Software {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long softwareid;
 
+    @NotNull
     @Setter
     @Size(max = 128)
     private String currentversion;
 
+    @NotNull
     @Setter
     @Size(max = 128)
     private String lastversion;

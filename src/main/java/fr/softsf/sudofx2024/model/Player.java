@@ -65,6 +65,7 @@ public class Player {
     private String name;
 
     @Builder.Default
+    @NotNull
     @Setter
     private boolean isselected = false;
 

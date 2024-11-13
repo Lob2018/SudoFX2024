@@ -1,6 +1,7 @@
 package fr.softsf.sudofx2024.model;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.*;
 
@@ -16,10 +17,12 @@ public class Grid {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long gridid;
 
+    @NotNull
     @Setter
     @Size(max = 162)
     private String defaultgridvalue;
 
+    @NotNull
     @Setter
     @Size(max = 162)
     private String gridvalue;

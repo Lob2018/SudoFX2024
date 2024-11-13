@@ -27,6 +27,7 @@ public class Background {
     private String imagepath;
 
     @Builder.Default
+    @NotNull
     @Setter
     private boolean isimage = false;
 }

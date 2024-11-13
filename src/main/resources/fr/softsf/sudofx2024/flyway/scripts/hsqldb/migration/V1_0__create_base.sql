@@ -1,8 +1,8 @@
 -- Création de la table "software"
 CREATE TABLE software (
 softwareid BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-currentversion VARCHAR(128),
-lastversion VARCHAR(128),
+currentversion VARCHAR(128) NOT NULL,
+lastversion VARCHAR(128) NOT NULL,
 createdat TIMESTAMP NOT NULL,
 updatedat TIMESTAMP NOT NULL
 );
@@ -21,7 +21,7 @@ CREATE TABLE background (
 backgroundid BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
 hexcolor VARCHAR(7) NOT NULL,
 imagepath VARCHAR(260),
-isimage BOOLEAN DEFAULT FALSE,
+isimage BOOLEAN DEFAULT FALSE NOT NULL,
 );
 -- Création de la table "gamelevel"
 CREATE TABLE gamelevel (
@@ -31,8 +31,8 @@ levelname VARCHAR(64) NOT NULL
 -- Création de la table "grid"
 CREATE TABLE grid (
 gridid BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-defaultgridvalue VARCHAR(162),
-gridvalue VARCHAR(162)
+defaultgridvalue VARCHAR(162) NOT NULL,
+gridvalue VARCHAR(162) NOT NULL
 );
 -- Création de la table "player"
 CREATE TABLE player (
@@ -41,7 +41,7 @@ playerlanguageplayerlanguageid BIGINT FOREIGN KEY REFERENCES playerlanguage(play
 backgroundbackgroundid BIGINT FOREIGN KEY REFERENCES background(backgroundid),
 menumenuid BIGINT FOREIGN KEY REFERENCES menu(menuid),
 name VARCHAR(256) NOT NULL UNIQUE,
-isselected BOOLEAN DEFAULT FALSE,
+isselected BOOLEAN DEFAULT FALSE NOT NULL,
 createdat TIMESTAMP NOT NULL,
 updatedat TIMESTAMP NOT NULL
 );

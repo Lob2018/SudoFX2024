@@ -9,13 +9,18 @@ import java.util.Set;
 
 public record PlayerDto(
         Long playerid,
+        @NotNull
         PlayerLanguageDto playerlanguageidDto,
+        @NotNull
         BackgroundDto backgroundidDto,
+        @NotNull
         MenuDto menuidDto,
+        @NotNull
         Set<GameDto> gamesDto,
         @NotNull
         @Size(max = 256)
         String name,
+        @NotNull
         boolean isselected,
         @NotNull
         LocalDateTime createdat,

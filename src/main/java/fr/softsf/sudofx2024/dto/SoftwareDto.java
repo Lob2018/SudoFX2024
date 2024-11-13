@@ -7,8 +7,10 @@ import java.time.LocalDateTime;
 
 public record SoftwareDto(
         Long softwareid,
+        @NotNull
         @Size(max = 128)
         String currentversion,
+        @NotNull
         @Size(max = 128)
         String lastversion,
         @NotNull

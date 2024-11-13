@@ -41,6 +41,7 @@ public class Game {
     private GameLevel levelid;
 
     @Builder.Default
+    @NotNull
     @Setter
     private boolean isselected = false;
 

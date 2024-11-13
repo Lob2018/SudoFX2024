@@ -6,9 +6,13 @@ import java.time.LocalDateTime;
 
 public record GameDto(
         Long gameid,
+        @NotNull
         GridDto grididDto,
+        @NotNull
         PlayerDto playeridDto,
+        @NotNull
         GameLevelDto levelidDto,
+        @NotNull
         boolean isselected,
         @NotNull
         LocalDateTime createdat,

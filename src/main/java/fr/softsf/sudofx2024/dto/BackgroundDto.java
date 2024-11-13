@@ -10,6 +10,7 @@ public record BackgroundDto(
         String hexcolor,
         @Size(max = 260)
         String imagepath,
+        @NotNull
         boolean isimage
 ) {
 }
