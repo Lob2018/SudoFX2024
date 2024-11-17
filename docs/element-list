@@ -1,6 +1,8 @@
 fr.softsf.sudofx2024
 fr.softsf.sudofx2024.annotations
+fr.softsf.sudofx2024.dto
 fr.softsf.sudofx2024.interfaces
+fr.softsf.sudofx2024.interfaces.mapper
 fr.softsf.sudofx2024.model
 fr.softsf.sudofx2024.repository
 fr.softsf.sudofx2024.service
