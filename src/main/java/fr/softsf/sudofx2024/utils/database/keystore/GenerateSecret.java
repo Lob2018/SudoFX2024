@@ -1,12 +1,13 @@
 package fr.softsf.sudofx2024.utils.database.keystore;
 
-import org.passay.CharacterData;
-import org.passay.CharacterRule;
-import org.passay.EnglishCharacterData;
-import static org.passay.IllegalCharacterRule.ERROR_CODE;
-import org.passay.PasswordGenerator;
-
 import fr.softsf.sudofx2024.annotations.ExcludedFromCoverageReportGenerated;
+import org.passay.CharacterData;
+import org.passay.*;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import static org.passay.IllegalCharacterRule.ERROR_CODE;
 
 /**
  * Utility class for generating secure passwords using the Passay library.
@@ -54,6 +55,11 @@ public final class GenerateSecret {
         CharacterData specialChars = createSpecialChars();
         CharacterRule specialCharsRule = new CharacterRule(specialChars);
         specialCharsRule.setNumberOfCharacters(2);
-        return gen.generatePassword(24, specialCharsRule, lowerCaseRule, upperCaseRule, digitRule);
+        List<Rule> rules = new ArrayList<>();
+        rules.add(specialCharsRule);
+        rules.add(lowerCaseRule);
+        rules.add(upperCaseRule);
+        rules.add(digitRule);
+        return gen.generatePassword(24, rules);
     }
 }
