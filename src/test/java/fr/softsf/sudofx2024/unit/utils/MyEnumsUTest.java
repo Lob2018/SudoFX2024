@@ -34,9 +34,27 @@ class MyEnumsUTest {
     }
 
     @Test
-    void testBasePath() {
-        assertNotNull(BASE_PATH.getPath());
+    void testUserHome() {
+        assertNotNull(USER_HOME.getPath());
     }
+
+    @Test
+    void testDataFolder() {
+        assertNotNull(DATA_FOLDER.getPath());
+    }
+
+    @Test
+    void testLogsFolder() {
+        assertNotNull(LOGS_FOLDER.getPath());
+    }
+
+    @Test
+    void testBasePaths() {
+        assertNotNull(WINDOWS_BASE_PATH.getPath());
+        assertNotNull(LINUX_BASE_PATH.getPath());
+        assertNotNull(MACOS_BASE_PATH.getPath());
+    }
+
 
     @Test
     void testToastLevels() {

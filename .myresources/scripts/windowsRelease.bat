@@ -1,8 +1,8 @@
 @echo off
 	chcp 65001
 	color 0A
-	:: JPACKAGE
-	title JPACKAGE CREATE THE MSI
+	:: WINDOWS RELEASE
+	title WINDOWS RELEASE
     echo.
     echo          ▒▒▒▒▒
     echo         ▒▒▒▒▒▒▒

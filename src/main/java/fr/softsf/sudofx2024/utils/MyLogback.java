@@ -4,7 +4,7 @@ import ch.qos.logback.classic.LoggerContext;
 import ch.qos.logback.classic.joran.JoranConfigurator;
 import ch.qos.logback.core.joran.spi.JoranException;
 import ch.qos.logback.core.util.StatusPrinter2;
-import fr.softsf.sudofx2024.utils.os.OsDynamicFolders;
+import fr.softsf.sudofx2024.utils.os.OsFolderFactoryManager;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 import org.slf4j.LoggerFactory;
@@ -35,7 +35,7 @@ public class MyLogback {
      *
      * @param osFolderFactory Factory for creating OS-specific folders
      */
-    public MyLogback(@Autowired OsDynamicFolders osFolderFactory) {
+    public MyLogback(@Autowired OsFolderFactoryManager osFolderFactory) {
         logsFolderPath = osFolderFactory.osFolderFactory().getOsLogsFolderPath();
         System.setProperty("logs", logsFolderPath + "/" + LOGS_NAME);
         LoggerContext context = configureLogback();

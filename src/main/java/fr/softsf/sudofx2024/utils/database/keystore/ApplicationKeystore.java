@@ -21,7 +21,7 @@ import org.springframework.stereotype.Component;
 
 import fr.softsf.sudofx2024.annotations.ExcludedFromCoverageReportGenerated;
 import fr.softsf.sudofx2024.interfaces.IKeystore;
-import fr.softsf.sudofx2024.utils.os.OsDynamicFolders;
+import fr.softsf.sudofx2024.utils.os.OsFolderFactoryManager;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 
@@ -32,7 +32,7 @@ import lombok.extern.slf4j.Slf4j;
 @Component
 public class ApplicationKeystore implements IKeystore {
     @Autowired
-    OsDynamicFolders.IOsFoldersFactory osFolderFactory;
+    OsFolderFactoryManager.IOsFolderFactory osFolderFactory;
 
     private static final String KEYSTORE_PASSWORD_FROM_UUID = String.valueOf(UUID.nameUUIDFromBytes(System.getProperty("user.name").getBytes()));
     private static final String KEYSTORE_TYPE = "pkcs12";
@@ -246,7 +246,7 @@ public class ApplicationKeystore implements IKeystore {
      *
      * @param osFolderFactoryP The OS folder factory
      */
-    void setOsFolderFactoryForTests(OsDynamicFolders.IOsFoldersFactory osFolderFactoryP) {
+    void setOsFolderFactoryForTests(OsFolderFactoryManager.IOsFolderFactory osFolderFactoryP) {
         osFolderFactory = osFolderFactoryP;
     }
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <version>0.0.1</version>
     <!-- Spring Boot parent configuration -->
@@ -9,7 +9,7 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>3.3.5</version>
-        <relativePath /><!-- lookup parent from repository -->
+        <relativePath/><!-- lookup parent from repository -->
     </parent>
     <!-- Project information -->
     <groupId>fr.softsf</groupId>
@@ -209,6 +209,9 @@
                         <exclude>fr/softsf/sudofx2024/Launcher.class</exclude>
                         <exclude>fr/softsf/sudofx2024/SudoMain.class</exclude>
                         <exclude>fr/softsf/sudofx2024/view/**</exclude>
+                        <exclude>fr/softsf/sudofx2024/model/**</exclude>
+                        <exclude>fr/softsf/sudofx2024/dto/**</exclude>
+                        <exclude>fr/softsf/sudofx2024/interfaces/**</exclude>
                     </excludes>
                 </configuration>
                 <executions>
@@ -246,36 +249,130 @@
                     </execution>
                 </executions>
             </plugin>
-            <!-- Exec plugin for running external scripts -->
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>exec-maven-plugin</artifactId>
-                <version>${exec.version}</version>
-                <executions>
-                    <execution>
-                        <!-- Create MSI file using batch script -->
-                        <id>exec-batch</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>exec</goal>
-                        </goals>
-                        <configuration>
-                            <executable>cmd</executable>
-                            <arguments>
-                                <argument>/c</argument>
-                                <argument>.myresources\cmd\toMsi.bat</argument>
-                                <argument>${project.artifactId}</argument>
-                                <argument>${project.version}</argument>
-                                <argument>${project.organization.name}</argument>
-                                <!-- The main module to execute -->
-                                <argument>${start-class}</argument>
-                                <argument>${javafx.version}</argument>
-                                <argument>${deployment-folder}</argument>
-                            </arguments>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
         </plugins>
     </build>
+    <profiles>
+        <!-- Exec plugin for running external scripts for RELEASES, suitable for Windows, Linux, macOS operating systems -->
+        <profile>
+            <id>windows</id>
+            <activation>
+                <os>
+                    <family>windows</family>
+                </os>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>exec-maven-plugin</artifactId>
+                        <version>${exec.version}</version>
+                        <executions>
+                            <execution>
+                                <!-- Windows package using batch script -->
+                                <id>exec-batch</id>
+                                <phase>package</phase>
+                                <goals>
+                                    <goal>exec</goal>
+                                </goals>
+                                <configuration>
+                                    <executable>cmd</executable>
+                                    <arguments>
+                                        <argument>/c</argument>
+                                        <argument>.myresources\scripts\windowsRelease.bat</argument>
+                                        <argument>${project.artifactId}</argument>
+                                        <argument>${project.version}</argument>
+                                        <argument>${project.organization.name}</argument>
+                                        <!-- The main module to execute -->
+                                        <argument>${start-class}</argument>
+                                        <argument>${javafx.version}</argument>
+                                        <argument>${deployment-folder}</argument>
+                                    </arguments>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>linux</id>
+            <activation>
+                <os>
+                    <family>unix</family>
+                </os>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>exec-maven-plugin</artifactId>
+                        <version>${exec.version}</version>
+                        <executions>
+                            <execution>
+                                <!-- Linux package using shell script -->
+                                <id>exec-shell</id>
+                                <phase>package</phase>
+                                <goals>
+                                    <goal>exec</goal>
+                                </goals>
+                                <configuration>
+                                    <executable>bash</executable>
+                                    <arguments>
+                                        <argument>myresources/scripts/linuxRelease.sh</argument>
+                                        <argument>${project.artifactId}</argument>
+                                        <argument>${project.version}</argument>
+                                        <argument>${project.organization.name}</argument>
+                                        <!-- The main module to execute -->
+                                        <argument>${start-class}</argument>
+                                        <argument>${javafx.version}</argument>
+                                        <argument>${deployment-folder}</argument>
+                                    </arguments>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>mac</id>
+            <activation>
+                <os>
+                    <family>mac</family>
+                </os>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>exec-maven-plugin</artifactId>
+                        <version>${exec.version}</version>
+                        <executions>
+                            <execution>
+                                <!-- macOS package using shell script -->
+                                <id>exec-macos</id>
+                                <phase>package</phase>
+                                <goals>
+                                    <goal>exec</goal>
+                                </goals>
+                                <configuration>
+                                    <executable>bash</executable>
+                                    <arguments>
+                                        <argument>myresources/scripts/macosRelease.sh</argument>
+                                        <argument>${project.artifactId}</argument>
+                                        <argument>${project.version}</argument>
+                                        <argument>${project.organization.name}</argument>
+                                        <!-- The main module to execute -->
+                                        <argument>${start-class}</argument>
+                                        <argument>${javafx.version}</argument>
+                                        <argument>${deployment-folder}</argument>
+                                    </arguments>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
 </project>

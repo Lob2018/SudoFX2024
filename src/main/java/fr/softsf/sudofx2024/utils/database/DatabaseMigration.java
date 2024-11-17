@@ -8,7 +8,7 @@ import org.flywaydb.core.api.MigrationInfoService;
 import fr.softsf.sudofx2024.annotations.ExcludedFromCoverageReportGenerated;
 import fr.softsf.sudofx2024.interfaces.IKeystore;
 import static fr.softsf.sudofx2024.utils.MyEnums.Paths.DATABASE_MIGRATION_PATH;
-import fr.softsf.sudofx2024.utils.os.OsDynamicFolders;
+import fr.softsf.sudofx2024.utils.os.OsFolderFactoryManager;
 import lombok.extern.slf4j.Slf4j;
 
 /**
@@ -27,7 +27,7 @@ public final class DatabaseMigration {
      * @param iKeystore         The Keystore containing database credentials
      * @param iOsFolderFactory_ The factory for creating OS-specific folders
      */
-    public static void configure(final IKeystore iKeystore, final OsDynamicFolders.IOsFoldersFactory iOsFolderFactory_) {
+    public static void configure(final IKeystore iKeystore, final OsFolderFactoryManager.IOsFolderFactory iOsFolderFactory_) {
         log.info("\n▓▓ Start of Flyway migration");
         String databasePath = "jdbc:hsqldb:file:" + iOsFolderFactory_.getOsDataFolderPath() + String.format("/%s", "sudofx2024db");
         try {

@@ -14,7 +14,7 @@ import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import fr.softsf.sudofx2024.utils.MyLogback;
 import fr.softsf.sudofx2024.utils.database.DatabaseMigration;
 import fr.softsf.sudofx2024.utils.database.keystore.ApplicationKeystore;
-import fr.softsf.sudofx2024.utils.os.OsDynamicFolders;
+import fr.softsf.sudofx2024.utils.os.OsFolderFactoryManager;
 
 /**
  * Configuration class for setting up dynamic data sources and related beans.
@@ -44,7 +44,7 @@ public class DynamicDataSourceConfiguration {
      */
     @DependsOn({"logbackInitialization"})
     @Bean
-    int databaseMigration(@Autowired OsDynamicFolders osFolderFactory, @Autowired ApplicationKeystore keystore) {
+    int databaseMigration(@Autowired OsFolderFactoryManager osFolderFactory, @Autowired ApplicationKeystore keystore) {
         keystore.setupApplicationKeystore();
         DatabaseMigration.configure(keystore, osFolderFactory.osFolderFactory());
         return 0;
@@ -60,7 +60,7 @@ public class DynamicDataSourceConfiguration {
      */
     @DependsOn({"databaseMigration"})
     @Bean
-    public DataSource dataSourceInitialization(@Autowired OsDynamicFolders osFolderFactory, @Autowired ApplicationKeystore keystore) {
+    public DataSource dataSourceInitialization(@Autowired OsFolderFactoryManager osFolderFactory, @Autowired ApplicationKeystore keystore) {
         return DataSourceBuilder.create()
                 .type(HikariDataSource.class)
                 .driverClassName("org.hsqldb.jdbc.JDBCDriver")

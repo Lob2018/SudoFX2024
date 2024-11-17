@@ -11,10 +11,10 @@ import fr.softsf.sudofx2024.utils.I18n;
 import fr.softsf.sudofx2024.utils.JVMApplicationProperties;
 
 import static fr.softsf.sudofx2024.utils.MyEnums.Paths.LOGO_SUDO_PNG_PATH;
-import static fr.softsf.sudofx2024.utils.MyEnums.Paths.SUPPOSED_DATA_FOLDER_FOR_SUDO_FX;
+import static fr.softsf.sudofx2024.utils.MyEnums.Paths.WINDOWS_SUPPOSED_DATA_FOLDER_FOR_SUDO_FX;
 import static fr.softsf.sudofx2024.utils.MyEnums.ScreenSize.DISPOSABLE_SIZE;
 
-import fr.softsf.sudofx2024.utils.os.OsDynamicFolders;
+import fr.softsf.sudofx2024.utils.os.OsFolderFactoryManager;
 import javafx.animation.FadeTransition;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
@@ -41,7 +41,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class CrashScreenView implements SudoMain.IPrimaryStageView {
 
-    private static final OsDynamicFolders.IOsFoldersFactory iOsFolderFactory = new OsDynamicFolders().osFolderFactory();
+    private static final OsFolderFactoryManager.IOsFolderFactory iOsFolderFactory = new OsFolderFactoryManager().osFolderFactory();
 
     // FXML injected components
     @FXML
@@ -84,7 +84,7 @@ public class CrashScreenView implements SudoMain.IPrimaryStageView {
     private void resetButtonClick() {
         log.info("▓▓▓▓ The user choose to reset the application data");
         Path pathToDelete = Paths.get(iOsFolderFactory.getOsDataFolderPath());
-        if (new FileSystemManager().deleteFolderRecursively(pathToDelete, SUPPOSED_DATA_FOLDER_FOR_SUDO_FX.getPath())) {
+        if (new FileSystemManager().deleteFolderRecursively(pathToDelete, WINDOWS_SUPPOSED_DATA_FOLDER_FOR_SUDO_FX.getPath())) {
             log.info("▓▓▓▓ The directory is deleted");
         } else {
             log.info("▓▓▓▓ The directory isn't deleted");

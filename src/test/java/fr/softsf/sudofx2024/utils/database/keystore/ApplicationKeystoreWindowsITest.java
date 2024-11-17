@@ -1,12 +1,12 @@
 package fr.softsf.sudofx2024.utils.database.keystore;
 
 import fr.softsf.sudofx2024.utils.FileSystemManager;
-import fr.softsf.sudofx2024.utils.os.OsDynamicFolders;
+import fr.softsf.sudofx2024.utils.os.OsFolderFactoryManager;
 
 import fr.softsf.sudofx2024.utils.os.WindowsFolderFactory;
 import org.junit.jupiter.api.*;
 
-import static fr.softsf.sudofx2024.utils.MyEnums.Paths.SUPPOSED_DATA_FOLDER_FOR_SUDO_FX;
+import static fr.softsf.sudofx2024.utils.MyEnums.Paths.WINDOWS_SUPPOSED_DATA_FOLDER_FOR_SUDO_FX;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.*;
 
@@ -27,7 +27,7 @@ class ApplicationKeystoreWindowsITest {
     @Autowired
     ApplicationKeystore keystore;
 
-    private static OsDynamicFolders.IOsFoldersFactory iOsFolderFactoryMocked;
+    private static OsFolderFactoryManager.IOsFolderFactory iOsFolderFactoryMocked;
 
     private ListAppender<ILoggingEvent> logWatcher;
 
@@ -36,12 +36,12 @@ class ApplicationKeystoreWindowsITest {
 
     @BeforeAll
     static void setupAll() {
-        new FileSystemManager().deleteFolderRecursively(Paths.get(SUPPOSED_DATA_FOLDER_FOR_SUDO_FX.getPath()), SUPPOSED_DATA_FOLDER_FOR_SUDO_FX.getPath());
+        new FileSystemManager().deleteFolderRecursively(Paths.get(WINDOWS_SUPPOSED_DATA_FOLDER_FOR_SUDO_FX.getPath()), WINDOWS_SUPPOSED_DATA_FOLDER_FOR_SUDO_FX.getPath());
     }
 
     @BeforeEach
     void setup() {
-        iOsFolderFactoryMocked = mock(OsDynamicFolders.IOsFoldersFactory.class);
+        iOsFolderFactoryMocked = mock(OsFolderFactoryManager.IOsFolderFactory.class);
         logWatcher = new ListAppender<>();
         logWatcher.start();
         ((Logger) LoggerFactory.getLogger(ApplicationKeystore.class)).addAppender(logWatcher);
