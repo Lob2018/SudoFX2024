@@ -48,9 +48,9 @@ public class OsFolderInitializer {
                     log.error(String.format("██ Failed to create folder with mkdirs(): %s", folder.getAbsolutePath()));
                     throw new RuntimeException("Failed to create folder with mkdirs(): " + folder.getAbsolutePath());
                 }
-                log.info("Folder created successfully: " + folder.getAbsolutePath());
+                log.info(String.format("▓▓ Folder created successfully: %s", folder.getAbsolutePath()));
             } else {
-                log.info("Folder already exists: " + folder.getAbsolutePath());
+                log.info(String.format("▓▓ Folder already exists: %s", folder.getAbsolutePath()));
             }
         } catch (SecurityException e) {
             log.error(String.format("██ Security error when creating needed folder: %s. █ Path: %s", e.getMessage(), folder.getAbsolutePath()), e);
