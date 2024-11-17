@@ -4,7 +4,6 @@ import java.time.LocalDateTime;
 import java.util.Optional;
 
 import fr.softsf.sudofx2024.dto.SoftwareDto;
-import fr.softsf.sudofx2024.model.Software;
 import fr.softsf.sudofx2024.service.SoftwareService;
 import fr.softsf.sudofx2024.utils.JVMApplicationProperties;
 import javafx.beans.property.SimpleStringProperty;
