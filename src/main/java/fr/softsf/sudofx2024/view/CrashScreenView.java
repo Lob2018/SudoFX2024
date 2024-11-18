@@ -10,8 +10,7 @@ import fr.softsf.sudofx2024.utils.FileSystemManager;
 import fr.softsf.sudofx2024.utils.I18n;
 import fr.softsf.sudofx2024.utils.JVMApplicationProperties;
 
-import static fr.softsf.sudofx2024.utils.MyEnums.Paths.LOGO_SUDO_PNG_PATH;
-import static fr.softsf.sudofx2024.utils.MyEnums.Paths.WINDOWS_SUPPOSED_DATA_FOLDER_FOR_SUDO_FX;
+import static fr.softsf.sudofx2024.utils.MyEnums.Paths.*;
 import static fr.softsf.sudofx2024.utils.MyEnums.ScreenSize.DISPOSABLE_SIZE;
 
 import fr.softsf.sudofx2024.utils.os.OsFolderFactoryManager;
@@ -84,7 +83,7 @@ public class CrashScreenView implements SudoMain.IPrimaryStageView {
     private void resetButtonClick() {
         log.info("▓▓▓▓ The user choose to reset the application data");
         Path pathToDelete = Paths.get(iOsFolderFactory.getOsDataFolderPath());
-        if (new FileSystemManager().deleteFolderRecursively(pathToDelete, WINDOWS_SUPPOSED_DATA_FOLDER_FOR_SUDO_FX.getPath())) {
+        if (new FileSystemManager().deleteFolderRecursively(pathToDelete, DATA_FOLDER.getPath())) {
             log.info("▓▓▓▓ The directory is deleted");
         } else {
             log.info("▓▓▓▓ The directory isn't deleted");
