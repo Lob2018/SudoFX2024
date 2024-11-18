@@ -36,7 +36,7 @@ public final class SecretKeyEncryptionServiceAESGCM implements ApplicationKeysto
         try {
             cipher = Cipher.getInstance("AES/GCM/NoPadding");
         } catch (NoSuchAlgorithmException | NoSuchPaddingException e) {
-            log.error(String.format("██ Exception catch inside SecretKeyEncryptionServiceAESGCM(SecretKey) constructor : %s", e.getMessage()), e);
+            log.error("██ Exception catch inside SecretKeyEncryptionServiceAESGCM(SecretKey) constructor : {}", e.getMessage(), e);
         }
     }
 
@@ -58,7 +58,7 @@ public final class SecretKeyEncryptionServiceAESGCM implements ApplicationKeysto
             String iv64 = encoder.encodeToString(iv);
             return encrypt64 + "#" + iv64;
         } catch (Exception e) {
-            log.error(String.format("██ Exception catch inside encrypt(original) : %s", e.getMessage()), e);
+            log.error("██ Exception catch inside encrypt(original) : {}", e.getMessage(), e);
             return "";
         }
     }
@@ -81,7 +81,7 @@ public final class SecretKeyEncryptionServiceAESGCM implements ApplicationKeysto
             byte[] decryptedData = cipher.doFinal(cypherText);
             return new String(decryptedData, StandardCharsets.UTF_8);
         } catch (Exception e) {
-            log.error(String.format("██ Exception catch inside decrypt(cypher) : %s", e.getMessage()), e);
+            log.error("██ Exception catch inside decrypt(cypher) : {}", e.getMessage(), e);
             return "";
         }
     }

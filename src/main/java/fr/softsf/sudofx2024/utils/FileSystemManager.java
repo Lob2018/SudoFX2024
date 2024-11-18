@@ -33,7 +33,7 @@ public final class FileSystemManager implements IFileSystem {
                         .forEach(this::deleteFile);
                 return true;
             } catch (Exception e) {
-                log.error(String.format("██ Exception catch from deleteFolder : %s", e.getMessage()), e);
+                log.error("██ Exception catch from deleteFolder : {}", e.getMessage(), e);
             }
         } else {
             log.info("▓▓▓▓ The directory path is not correct :{}", folderPath);

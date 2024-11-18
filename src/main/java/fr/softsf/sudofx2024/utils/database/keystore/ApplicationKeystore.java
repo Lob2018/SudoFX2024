@@ -60,7 +60,7 @@ public class ApplicationKeystore implements IKeystore {
             credentials(USERNAME_ALIAS);
             credentials(PASS_ALIAS);
         } catch (Exception e) {
-            log.error(String.format("██ Exception catch inside ApplicationKeystore setupApplicationKeystore() : %s", e.getMessage()), e);
+            log.error("██ Exception catch inside ApplicationKeystore setupApplicationKeystore() : {}", e.getMessage(), e);
         }
         log.info("\n▓▓ ApplicationKeystore is ready");
     }
@@ -74,7 +74,7 @@ public class ApplicationKeystore implements IKeystore {
             ks.load(null, pwdArray);
             ks.store(fos, pwdArray);
         } catch (IOException | NoSuchAlgorithmException | CertificateException | KeyStoreException e) {
-            log.error(String.format("██ Exception catch inside createOrUpdateKeystore() : %s", e.getMessage()), e);
+            log.error("██ Exception catch inside createOrUpdateKeystore() : {}", e.getMessage(), e);
         }
     }
 
@@ -86,7 +86,7 @@ public class ApplicationKeystore implements IKeystore {
         try (FileInputStream fileInputStream = new FileInputStream(keystoreFilePath)) {
             ks.load(fileInputStream, pwdArray);
         } catch (Exception e) {
-            log.error(String.format("██ Exception catch inside loadKeyStore() - JVM doesn't support type OR password is wrong : %s", e.getMessage()), e);
+            log.error("██ Exception catch inside loadKeyStore() - JVM doesn't support type OR password is wrong : {}", e.getMessage(), e);
         }
     }
 
@@ -102,7 +102,7 @@ public class ApplicationKeystore implements IKeystore {
                 symmetricKeyNotInKeystore();
             }
         } catch (KeyStoreException e) {
-            log.error(String.format("██ Exception catch inside symmetricKey/ks.containsAlias(SYMMETRIC_KEY_ALIAS) : %s", e.getMessage()), e);
+            log.error("██ Exception catch inside symmetricKey/ks.containsAlias(SYMMETRIC_KEY_ALIAS) : {}", e.getMessage(), e);
         }
     }
 
@@ -117,7 +117,7 @@ public class ApplicationKeystore implements IKeystore {
                 iEncryptionService = new SecretKeyEncryptionServiceAESGCM(entry.getSecretKey());
             }
         } catch (NoSuchAlgorithmException | UnrecoverableEntryException | KeyStoreException e) {
-            log.error(String.format("██ Exception catch inside symmetricKeyIsNotInKeystore/ks.getEntry(SYMMETRIC_KEY_ALIAS : %s", e.getMessage()), e);
+            log.error("██ Exception catch inside symmetricKeyIsNotInKeystore/ks.getEntry(SYMMETRIC_KEY_ALIAS :{}", e.getMessage(), e);
         }
     }
 
@@ -133,7 +133,7 @@ public class ApplicationKeystore implements IKeystore {
             iEncryptionService = new SecretKeyEncryptionServiceAESGCM(symmetricKey);
             addToKeystore(SYMMETRIC_KEY_ALIAS, symmetricKey);
         } catch (NoSuchAlgorithmException e) {
-            log.error(String.format("██ Exception catch inside symmetricKeyIsInKeystore/keyGen = KeyGenerator.getInstance : %s", e.getMessage()), e);
+            log.error("██ Exception catch inside symmetricKeyIsInKeystore/keyGen = KeyGenerator.getInstance : {}", e.getMessage(), e);
         }
     }
 
@@ -151,7 +151,7 @@ public class ApplicationKeystore implements IKeystore {
                 setCredentials(alias);
             }
         } catch (KeyStoreException e) {
-            log.error(String.format("██ Exception catch inside credentials/ks.containsAlias(alias) : %s", e.getMessage()), e);
+            log.error("██ Exception catch inside credentials/ks.containsAlias(alias) : {}", e.getMessage(), e);
         }
     }
 
@@ -177,7 +177,7 @@ public class ApplicationKeystore implements IKeystore {
             SecretKey secretKey = new SecretKeySpec(secret.getBytes(), "AES");
             addToKeystore(alias, secretKey);
         } catch (Exception e) {
-            log.error(String.format("██ Exception catch inside setCredentials(alias) : %s", e.getMessage()), e);
+            log.error("██ Exception catch inside setCredentials(alias) : {}", e.getMessage(), e);
         }
     }
 
@@ -203,7 +203,7 @@ public class ApplicationKeystore implements IKeystore {
                 log.warn("▒▒ Entry is not an instance of the Keystore");
             }
         } catch (Exception e) {
-            log.error(String.format("██ Exception catch inside getCredentials(alias) : %s", e.getMessage()), e);
+            log.error("██ Exception catch inside getCredentials(alias) : {}", e.getMessage(), e);
         }
     }
 
@@ -220,7 +220,7 @@ public class ApplicationKeystore implements IKeystore {
         try {
             ks.setEntry(alias, secret, entryPassword);
         } catch (KeyStoreException e) {
-            log.error(String.format("██ Exception catch inside addToKeystore/ks.setEntry(alias, secret, entryPassword) : %s", e.getMessage()), e);
+            log.error("██ Exception catch inside addToKeystore/ks.setEntry(alias, secret, entryPassword) : {}", e.getMessage(), e);
         }
         writeTheKeystore(ks, keystoreFilePath, pwdArray);
     }
@@ -237,7 +237,7 @@ public class ApplicationKeystore implements IKeystore {
         try (FileOutputStream fos = new FileOutputStream(keystoreFileName)) {
             ks.store(fos, pwdArray);
         } catch (Exception e) {
-            log.error(String.format("██ Exception catch inside writeTheKeystore/fos : %s", e.getMessage()), e);
+            log.error("██ Exception catch inside writeTheKeystore/fos : {}", e.getMessage(), e);
         }
     }
 

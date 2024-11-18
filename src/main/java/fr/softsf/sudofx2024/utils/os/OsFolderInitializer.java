@@ -45,18 +45,18 @@ public class OsFolderInitializer {
         try {
             if (!folder.exists()) {
                 if (!folder.mkdirs()) {
-                    log.error(String.format("██ Failed to create folder with mkdirs(): %s", folder.getAbsolutePath()));
-                    throw new RuntimeException("Failed to create folder with mkdirs(): " + folder.getAbsolutePath());
+                    log.error("██ Failed to create folder with mkdirs(): {}", folder.getAbsolutePath());
+                    throw new RuntimeException("Failed to create folder with mkdirs(): {}" + folder.getAbsolutePath());
                 }
-                log.info(String.format("▓▓ Folder created successfully: %s", folder.getAbsolutePath()));
+                log.info("▓▓ Folder created successfully: {}", folder.getAbsolutePath());
             } else {
-                log.info(String.format("▓▓ Folder already exists: %s", folder.getAbsolutePath()));
+                log.info("▓▓ Folder already exists: {}", folder.getAbsolutePath());
             }
         } catch (SecurityException e) {
-            log.error(String.format("██ Security error when creating needed folder: %s. █ Path: %s", e.getMessage(), folder.getAbsolutePath()), e);
+            log.error("██ Security error when creating needed folder: {}. █ Path: {}", e.getMessage(), folder.getAbsolutePath(), e);
             throw new RuntimeException("Security error when creating needed folder: " + folder.getAbsolutePath(), e);
         } catch (Exception e) {
-            log.error(String.format("██ Error when creating needed folder: %s. █ Path: %s", e.getMessage(), folder.getAbsolutePath()), e);
+            log.error("██ Error when creating needed folder: {}. █ Path: {}", e.getMessage(), folder.getAbsolutePath(), e);
             throw new RuntimeException("Error when creating needed folder: " + folder.getAbsolutePath(), e);
         }
     }

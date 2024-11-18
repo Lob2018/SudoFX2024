@@ -30,7 +30,7 @@ public class SoftwareService {
                         return Optional.empty();
                     });
         } catch (Exception e) {
-            log.error(String.format("██ Exception retrieving software : %s", e.getMessage()), e);
+            log.error("██ Exception retrieving software : {}", e.getMessage(), e);
             return Optional.empty();
         }
     }
@@ -42,7 +42,7 @@ public class SoftwareService {
             Software updatedSoftware = softwareRepository.save(software);
             return Optional.ofNullable(iSoftwareMapper.mapSoftwareToDto(updatedSoftware));
         } catch (Exception e) {
-            log.error(String.format("██ Error updating software : %s", e.getMessage()), e);
+            log.error("██ Error updating software : {}", e.getMessage(), e);
             return Optional.empty();
         }
     }

@@ -29,7 +29,7 @@ public final class DatabaseMigration {
      */
     public static void configure(final IKeystore iKeystore, final OsFolderFactoryManager.IOsFolderFactory iOsFolderFactory_) {
         log.info("\n▓▓ Start of Flyway migration");
-        String databasePath = "jdbc:hsqldb:file:" + iOsFolderFactory_.getOsDataFolderPath() + String.format("/%s", "sudofx2024db");
+        String databasePath = "jdbc:hsqldb:file:" + iOsFolderFactory_.getOsDataFolderPath() + "/sudofx2024db";
         try {
             Flyway flyway = Flyway.configure()
                     .dataSource(
@@ -43,7 +43,7 @@ public final class DatabaseMigration {
             flyway.migrate();
             migrationInformation(flyway);
         } catch (FlywayException e) {
-            log.error(String.format("██ FlywayException catch : %s", e.getMessage()), e);
+            log.error("██ FlywayException catch : {}", e.getMessage(), e);
             throw e;
         }
     }

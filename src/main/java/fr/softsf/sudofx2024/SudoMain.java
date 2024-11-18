@@ -12,7 +12,6 @@ import javafx.stage.Stage;
 import javafx.util.Duration;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -24,7 +23,7 @@ import java.util.concurrent.CompletableFuture;
 
 import static fr.softsf.sudofx2024.utils.ExceptionTools.getSQLInvalidAuthorizationSpecException;
 import static fr.softsf.sudofx2024.utils.MyEnums.LogBackTxt.SQL_INVALID_AUTHORIZATION_SPEC_EXCEPTION;
-import static fr.softsf.sudofx2024.utils.MyEnums.Paths.*;
+import static fr.softsf.sudofx2024.utils.MyEnums.Paths.RESOURCES_FXML_PATH;
 
 /**
  * Main application class for the Sudoku game. This class initializes the
@@ -37,16 +36,13 @@ import static fr.softsf.sudofx2024.utils.MyEnums.Paths.*;
 @ComponentScan({"com.gluonhq.ignite.spring", "fr.softsf.sudofx2024.*",})
 public class SudoMain extends Application {
 
-    private final SpringContext context = new SpringContext(this);
-
-    @Autowired
-    private FXMLLoader fxmlLoader;
-
-    private ISplashScreenView isplashScreenView;
-    private IPrimaryStageView iPrimaryStageView;
-
     @Getter
     private static Scene scene;
+    private final SpringContext context = new SpringContext(this);
+    @Autowired
+    private FXMLLoader fxmlLoader;
+    private ISplashScreenView isplashScreenView;
+    private IPrimaryStageView iPrimaryStageView;
 
     /**
      * Main entry point for the application.
@@ -65,6 +61,21 @@ public class SudoMain extends Application {
     public static void initScene(Stage splashScreenStage) {
         scene = splashScreenStage.getScene();
         new DynamicFontSize(scene);
+    }
+
+    /**
+     * Handles SQL invalid authorization exceptions.
+     *
+     * @param e            The general exception
+     * @param sqlException The specific SQL invalid authorization exception
+     */
+    private static void sqlInvalidAuthorization(Exception e, SQLInvalidAuthorizationSpecException sqlException) {
+        log.error("██ SQLInvalidAuthorizationSpecException catch : {}", e.getMessage(), e);
+        String sqlState = sqlException.getSQLState();
+        if ("28000".equals(sqlState) || "28501".equals(sqlState)) {
+            log.error("██ SQLInvalidAuthorizationSpecException with sqlstate==(28000||28501) catch : {}", e.getMessage(), e);
+            log.info("\n\n{}", SQL_INVALID_AUTHORIZATION_SPEC_EXCEPTION.getLogBackMessage());
+        }
     }
 
     /**
@@ -94,7 +105,7 @@ public class SudoMain extends Application {
                 }
             });
         } catch (Exception e) {
-            log.error(String.format("██ Exception catch inside start() : %s", e.getMessage()), e);
+            log.error("██ Exception catch inside start() : {}", e.getMessage(), e);
             throw new RuntimeException(e);
         }
     }
@@ -105,7 +116,7 @@ public class SudoMain extends Application {
      * @param throwable The exception that occurred
      */
     private void errorInLoadingThread(Throwable throwable) {
-        log.error(String.format("██ Error in splash screen initialization thread : %s", throwable.getMessage()), throwable);
+        log.error("██ Error in splash screen initialization thread : {}", throwable.getMessage(), throwable);
         SQLInvalidAuthorizationSpecException sqlInvalidAuthorizationSpecException = getSQLInvalidAuthorizationSpecException(throwable);
         if (sqlInvalidAuthorizationSpecException == null) {
             Platform.exit();
@@ -113,21 +124,6 @@ public class SudoMain extends Application {
             sqlInvalidAuthorization((Exception) throwable, sqlInvalidAuthorizationSpecException);
             PauseTransition pause = getPauseTransition("crashscreen-view", 0);
             pause.play();
-        }
-    }
-
-    /**
-     * Handles SQL invalid authorization exceptions.
-     *
-     * @param e            The general exception
-     * @param sqlException The specific SQL invalid authorization exception
-     */
-    private static void sqlInvalidAuthorization(Exception e, SQLInvalidAuthorizationSpecException sqlException) {
-        log.error(String.format("██ SQLInvalidAuthorizationSpecException catch : %s", e.getMessage()), e);
-        String sqlState = sqlException.getSQLState();
-        if ("28000".equals(sqlState) || "28501".equals(sqlState)) {
-            log.error(String.format("██ SQLInvalidAuthorizationSpecException with sqlstate==(28000||28501) catch : %s", e.getMessage()), e);
-            log.info("\n\n{}", SQL_INVALID_AUTHORIZATION_SPEC_EXCEPTION.getLogBackMessage());
         }
     }
 
@@ -158,7 +154,7 @@ public class SudoMain extends Application {
             clearFXMLLODER();
             scene.setRoot(getFXMLLoader(fxml).load());
         } catch (Exception e) {
-            log.error(String.format("██ Exception catch inside setRootByFXMLName(String) : %s", e.getMessage()), e);
+            log.error("██ Exception catch inside setRootByFXMLName(String) : {}", e.getMessage(), e);
             Platform.exit();
         }
     }
