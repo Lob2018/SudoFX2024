@@ -1,14 +1,6 @@
 package fr.softsf.sudofx2024.view;
 
-import java.util.Objects;
-
-import org.springframework.beans.factory.annotation.Autowired;
-
 import fr.softsf.sudofx2024.SudoMain;
-import static fr.softsf.sudofx2024.utils.MyEnums.Paths.LOGO_SUDO_PNG_PATH;
-import static fr.softsf.sudofx2024.utils.MyEnums.ToastLevels.ERROR;
-import static fr.softsf.sudofx2024.utils.MyEnums.ToastLevels.INFO;
-import static fr.softsf.sudofx2024.utils.MyEnums.ToastLevels.WARN;
 import fr.softsf.sudofx2024.view.components.ToasterVBox;
 import fr.softsf.sudofx2024.viewmodel.FullMenuViewModel;
 import javafx.animation.FadeTransition;
@@ -26,6 +18,12 @@ import javafx.stage.Screen;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javafx.util.Duration;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import java.util.Objects;
+
+import static fr.softsf.sudofx2024.utils.MyEnums.Paths.LOGO_SUDO_PNG_PATH;
+import static fr.softsf.sudofx2024.utils.MyEnums.ToastLevels.*;
 
 /**
  * View class for the full menu screen of the Sudoku application. This class is
@@ -33,19 +31,19 @@ import javafx.util.Duration;
  */
 public class FullMenuView implements SudoMain.IPrimaryStageView {
 
+    private static final double FADE_IN_IN_SECONDS_AFTER_SPLASHSCREEN = 0.3;
+    private final Text text1 = new Text("Helloj! ");
+    private final Stage primaryStage = new Stage();
+    @Autowired
+    FullMenuViewModel fullMenuViewModel;
+    @FXML
+    @Autowired
+    private ToasterVBox toaster;
     @FXML
     private Label welcomeText;
     @FXML
     private Button buttonHello;
-    private final Text text1 = new Text("Helloj! ");
     private Text text2 = new Text("\ue86c");
-
-    @FXML
-    @Autowired
-    private ToasterVBox toaster;
-
-    @Autowired
-    FullMenuViewModel fullMenuViewModel;
 
     /**
      * Initializes the full menu view. This method is automatically called by
@@ -72,14 +70,11 @@ public class FullMenuView implements SudoMain.IPrimaryStageView {
      */
     @FXML
     private void onHelloButtonClick(ActionEvent event) {
-        toaster.addToastWithDuration("TOTO EST LÀ", INFO, 6000);
-        toaster.addToast("TOTO N'EST PAS LÀ", WARN);
-        toaster.addToast("TOTO EST PARTI VOTER, IL N'EST PAS SUPERMAN, MAIS ÇA LUI PERMET DE FAIRE ENTENDRE SA PETITE VOIX DANS SON GRAND PAYS", ERROR);
+        toaster.addToastWithDuration("INFO", INFO, 6000);
+        toaster.addToast("WARN", WARN);
+        toaster.addToast("(130 CHAR) ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR", ERROR);
         fullMenuViewModel.test();
     }
-
-    private static final double FADE_IN_IN_SECONDS_AFTER_SPLASHSCREEN = 0.3;
-    private final Stage primaryStage = new Stage();
 
     /**
      * Configures the primary stage for the full menu view.
