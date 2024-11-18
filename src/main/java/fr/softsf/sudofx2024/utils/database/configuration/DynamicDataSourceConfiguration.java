@@ -1,8 +1,10 @@
 package fr.softsf.sudofx2024.utils.database.configuration;
 
-import javax.sql.DataSource;
-
 import com.zaxxer.hikari.HikariDataSource;
+import fr.softsf.sudofx2024.utils.MyLogback;
+import fr.softsf.sudofx2024.utils.database.DatabaseMigration;
+import fr.softsf.sudofx2024.utils.database.keystore.ApplicationKeystore;
+import fr.softsf.sudofx2024.utils.os.OsFolderFactoryManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.jdbc.DataSourceBuilder;
 import org.springframework.context.annotation.Bean;
@@ -11,10 +13,9 @@ import org.springframework.context.annotation.DependsOn;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 
-import fr.softsf.sudofx2024.utils.MyLogback;
-import fr.softsf.sudofx2024.utils.database.DatabaseMigration;
-import fr.softsf.sudofx2024.utils.database.keystore.ApplicationKeystore;
-import fr.softsf.sudofx2024.utils.os.OsFolderFactoryManager;
+import javax.sql.DataSource;
+
+import static fr.softsf.sudofx2024.utils.MyEnums.Paths.DATABASE_NAME;
 
 /**
  * Configuration class for setting up dynamic data sources and related beans.
@@ -64,7 +65,7 @@ public class DynamicDataSourceConfiguration {
         return DataSourceBuilder.create()
                 .type(HikariDataSource.class)
                 .driverClassName("org.hsqldb.jdbc.JDBCDriver")
-                .url("jdbc:hsqldb:file:" + osFolderFactory.osFolderFactory().getOsDataFolderPath() + "/sudofx2024db;shutdown=true")
+                .url("jdbc:hsqldb:file:" + osFolderFactory.osFolderFactory().getOsDataFolderPath() + "/" + DATABASE_NAME.getPath() + ";shutdown=true")
                 .username(keystore.getUsername())
                 .password(keystore.getPassword())
                 .build();

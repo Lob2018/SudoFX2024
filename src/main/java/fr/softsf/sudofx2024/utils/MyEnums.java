@@ -120,6 +120,7 @@ public final class MyEnums {
         CONFIG_LOGBACK_PATH("/fr/softsf/sudofx2024/config/logback.xml"),
         CONFIG_LOGBACK_INVALID_PATH_FOR_TESTS("/invalid/path"),
         USER_HOME(System.getProperty("user.home").replace("\\", "/")),
+        DATABASE_NAME("sudofx2024db"),
         DATA_FOLDER("data-sudofx"),
         LOGS_FOLDER("logs-sudofx"),
         WINDOWS_BASE_PATH("/AppData/Local/Soft64.fr/SudokuFX/"),

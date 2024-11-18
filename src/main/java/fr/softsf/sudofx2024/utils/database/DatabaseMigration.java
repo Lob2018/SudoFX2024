@@ -1,15 +1,16 @@
 package fr.softsf.sudofx2024.utils.database;
 
+import fr.softsf.sudofx2024.annotations.ExcludedFromCoverageReportGenerated;
+import fr.softsf.sudofx2024.interfaces.IKeystore;
+import fr.softsf.sudofx2024.utils.os.OsFolderFactoryManager;
+import lombok.extern.slf4j.Slf4j;
 import org.flywaydb.core.Flyway;
 import org.flywaydb.core.api.FlywayException;
 import org.flywaydb.core.api.MigrationInfo;
 import org.flywaydb.core.api.MigrationInfoService;
 
-import fr.softsf.sudofx2024.annotations.ExcludedFromCoverageReportGenerated;
-import fr.softsf.sudofx2024.interfaces.IKeystore;
 import static fr.softsf.sudofx2024.utils.MyEnums.Paths.DATABASE_MIGRATION_PATH;
-import fr.softsf.sudofx2024.utils.os.OsFolderFactoryManager;
-import lombok.extern.slf4j.Slf4j;
+import static fr.softsf.sudofx2024.utils.MyEnums.Paths.DATABASE_NAME;
 
 /**
  * Utility class for managing database migrations using Flyway.
@@ -29,7 +30,7 @@ public final class DatabaseMigration {
      */
     public static void configure(final IKeystore iKeystore, final OsFolderFactoryManager.IOsFolderFactory iOsFolderFactory_) {
         log.info("\n▓▓ Start of Flyway migration");
-        String databasePath = "jdbc:hsqldb:file:" + iOsFolderFactory_.getOsDataFolderPath() + "/sudofx2024db";
+        String databasePath = "jdbc:hsqldb:file:" + iOsFolderFactory_.getOsDataFolderPath() + "/" + DATABASE_NAME.getPath();
         try {
             Flyway flyway = Flyway.configure()
                     .dataSource(
@@ -48,7 +49,7 @@ public final class DatabaseMigration {
         }
     }
 
-   /**
+    /**
      * Formats and logs Flyway migration information.
      *
      * @param flyway The configured Flyway instance
