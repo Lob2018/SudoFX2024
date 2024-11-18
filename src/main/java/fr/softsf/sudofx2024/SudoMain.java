@@ -86,10 +86,10 @@ public class SudoMain extends Application {
                         long minimumTimelapse = Math.max(0, 1000 - (System.currentTimeMillis() - startTime));
                         getPauseTransition("fullmenu-view", minimumTimelapse).play();
                     });
-                } catch (Throwable throwable) {
+                } catch (Exception e) {
                     Platform.runLater(() -> {
                         fxmlLoader = new FXMLLoader();
-                        errorInLoadingThread(throwable);
+                        errorInLoadingThread(e);
                     });
                 }
             });
