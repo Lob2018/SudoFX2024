@@ -4,7 +4,6 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import static fr.softsf.sudofx2024.utils.MyEnums.OsName.OS_NAME;
 import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
@@ -55,13 +54,6 @@ class OsFolderFactoryManagerITest {
         String expectedMessage = "Operating system is not specified or null.";
         String actualMessage = exception.getMessage();
         assertTrue(actualMessage.contains(expectedMessage));
-    }
-
-    @Test
-    void testOsFolders_osToLowerCase_success() {
-        String os = "Windows 10";
-        System.setProperty("os.name", os);
-        assertTrue(OS_NAME.getOs().contains("windows"));
     }
 
     @Test

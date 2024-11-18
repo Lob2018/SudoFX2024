@@ -1,6 +1,7 @@
 package fr.softsf.sudofx2024.utils;
 
-import fr.softsf.sudofx2024.utils.os.WindowsFolderFactory;
+import fr.softsf.sudofx2024.utils.os.OsFolderFactoryManager;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.ArgumentCaptor;
@@ -20,15 +21,20 @@ import static org.mockito.Mockito.*;
 @ExtendWith(MockitoExtension.class)
 class MyLogbackITest {
 
-    @Autowired
-    WindowsFolderFactory osFolderFactory;
+    private static OsFolderFactoryManager.IOsFolderFactory currentIOsFolderFactory;
 
     @Autowired
     MyLogback setupMyLogback;
 
+    @BeforeAll
+    public static void setUp() {
+        OsFolderFactoryManager osFolderFactoryManager = new OsFolderFactoryManager();
+        currentIOsFolderFactory = osFolderFactoryManager.osFolderFactory();
+    }
+
     @Test
     void testLogs_real_folder_path_is_correct() {
-        assertEquals(setupMyLogback.getLogsFolderPath(), osFolderFactory.getOsLogsFolderPath());
+        assertEquals(setupMyLogback.getLogsFolderPath(), currentIOsFolderFactory.getOsLogsFolderPath());
     }
 
     @Test
