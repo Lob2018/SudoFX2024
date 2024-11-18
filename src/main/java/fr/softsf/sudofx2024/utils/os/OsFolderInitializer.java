@@ -60,6 +60,4 @@ public class OsFolderInitializer {
             throw new RuntimeException("Error when creating needed folder: " + folder.getAbsolutePath(), e);
         }
     }
-
-
 }

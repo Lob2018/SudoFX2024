@@ -17,7 +17,7 @@ import static org.mockito.Mockito.*;
 
 
 @SpringBootTest
-class DatabaseMigrationWindowsITest {
+class DatabaseMigrationITest {
 
     @Autowired
     WindowsFolderFactory osFolderFactory;

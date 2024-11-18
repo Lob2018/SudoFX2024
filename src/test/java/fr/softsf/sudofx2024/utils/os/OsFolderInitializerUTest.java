@@ -8,10 +8,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.Mockito.*;
 
-public class OsFolderInitializerUTest {
+class OsFolderInitializerUTest {
 
     @Test
-    public void testCreateFolderWhenNotExists() {
+    void testCreateFolderWhenNotExists() {
         File mockFolder = mock(File.class);
         when(mockFolder.exists()).thenReturn(false);
         when(mockFolder.mkdirs()).thenReturn(true);
@@ -23,7 +23,7 @@ public class OsFolderInitializerUTest {
     }
 
     @Test
-    public void testCreateFolderWhenCreationFails() {
+    void testCreateFolderWhenCreationFails() {
         File mockFolder = mock(File.class);
         when(mockFolder.exists()).thenReturn(false);
         when(mockFolder.mkdirs()).thenReturn(false);
@@ -36,7 +36,7 @@ public class OsFolderInitializerUTest {
     }
 
     @Test
-    public void testCreateFolderWhenAlreadyExists() {
+    void testCreateFolderWhenAlreadyExists() {
         File mockFolder = mock(File.class);
         when(mockFolder.exists()).thenReturn(true);
 
@@ -47,7 +47,7 @@ public class OsFolderInitializerUTest {
     }
 
     @Test
-    public void testInitializeFolderSecurityException() {
+    void testInitializeFolderSecurityException() {
         File mockFolder = mock(File.class);
         when(mockFolder.exists()).thenReturn(false);
         when(mockFolder.mkdirs()).thenThrow(new SecurityException("Security violation"));
@@ -60,7 +60,7 @@ public class OsFolderInitializerUTest {
     }
 
     @Test
-    public void testCreateFolderGeneralException() {
+    void testCreateFolderGeneralException() {
         File mockFolder = mock(File.class);
         when(mockFolder.exists()).thenReturn(false);
         when(mockFolder.mkdirs()).thenThrow(new RuntimeException("General error"));

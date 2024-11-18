@@ -8,7 +8,7 @@ import static fr.softsf.sudofx2024.utils.MyEnums.OsName.OS_NAME;
 import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
-class OsFolderFactoryManagerWindowsUTest {
+class OsFolderFactoryManagerITest {
 
     private static OsFolderFactoryManager.IOsFolderFactory currentIOsFolderFactory;
 
@@ -90,22 +90,4 @@ class OsFolderFactoryManagerWindowsUTest {
         assertEquals(factory.getOsDataFolderPath(), currentIOsFolderFactory.getOsDataFolderPath());
         assertEquals(factory.getOsLogsFolderPath(), currentIOsFolderFactory.getOsLogsFolderPath());
     }
-
-//    @Test
-//    void testOsFolderFactoryReturnsLinuxFolderFactory() {
-//        LinuxFolderFactory mockLinuxFactory = Mockito.mock(LinuxFolderFactory.class);
-//        OsFolderFactoryManager osFolderFactoryManager = Mockito.spy(new OsFolderFactoryManager());
-//        osFolderFactoryManager.setLinuxOsForTests(mockLinuxFactory);
-//        OsFolderFactoryManager.IOsFolderFactory factory = osFolderFactoryManager.osFolderFactory();
-//        assertSame(mockLinuxFactory, factory);
-//    }
-//
-//    @Test
-//    void testOsFolderFactoryReturnsMacosFolderFactory() {
-//        MacosFolderFactory mockMacosFactory = Mockito.mock(MacosFolderFactory.class);
-//        OsFolderFactoryManager osFolderFactoryManager = Mockito.spy(new OsFolderFactoryManager());
-//        osFolderFactoryManager.setMacOSForTests(mockMacosFactory);
-//        OsFolderFactoryManager.IOsFolderFactory factory = osFolderFactoryManager.osFolderFactory();
-//        assertSame(mockMacosFactory, factory);
-//    }
 }

@@ -18,7 +18,7 @@ import static org.mockito.Mockito.*;
 
 @SpringBootTest
 @ExtendWith(MockitoExtension.class)
-class MyLogbackWindowsITest {
+class MyLogbackITest {
 
     @Autowired
     WindowsFolderFactory osFolderFactory;
