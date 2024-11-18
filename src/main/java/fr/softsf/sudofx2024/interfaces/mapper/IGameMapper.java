@@ -3,6 +3,7 @@ package fr.softsf.sudofx2024.interfaces.mapper;
 import fr.softsf.sudofx2024.dto.GameDto;
 import fr.softsf.sudofx2024.model.Game;
 import org.mapstruct.Mapper;
+import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;
 
 /**
@@ -11,7 +12,7 @@ import org.mapstruct.factory.Mappers;
  * It uses MapStruct to automatically generate the implementations of
  * these mapping methods.
  */
-@Mapper
+@Mapper(uses = {IPlayerMapper.class, IGridMapper.class, IGameLevelMapper.class})
 public interface IGameMapper {
     /**
      * This instance is created by MapStruct and provides access to the
@@ -26,6 +27,10 @@ public interface IGameMapper {
      * @return a GameDto object representing the data of the
      * provided Game object.
      */
+    @Mapping(target = "gameid", source = "game.gameid")
+    @Mapping(target = "grididDto", source = "game.gridid")
+    @Mapping(target = "playeridDto", source = "game.playerid")
+    @Mapping(target = "levelidDto", source = "game.levelid")
     GameDto mapGameToDto(Game game);
 
     /**
@@ -35,5 +40,9 @@ public interface IGameMapper {
      * @return a Game object representing the data of the
      * provided GameDto object.
      */
+    @Mapping(target = "gameid", source = "dto.gameid")
+    @Mapping(target = "gridid", source = "dto.grididDto")
+    @Mapping(target = "playerid", source = "dto.playeridDto")
+    @Mapping(target = "levelid", source = "dto.levelidDto")
     Game mapGameDtoToGame(GameDto dto);
 }
