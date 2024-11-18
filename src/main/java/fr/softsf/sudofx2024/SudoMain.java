@@ -78,7 +78,7 @@ public class SudoMain extends Application {
         try {
             isplashScreenView = new SplashScreenView(splashScreenStage);
             initScene(splashScreenStage);
-            Thread.startVirtualThread(() -> {
+            CompletableFuture.runAsync(() -> {
                 try {
                     long startTime = System.currentTimeMillis();
                     context.init(() -> SpringApplication.run(SudoMain.class));
