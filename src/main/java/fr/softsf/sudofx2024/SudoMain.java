@@ -20,6 +20,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.PropertySource;
 
 import java.sql.SQLInvalidAuthorizationSpecException;
+import java.util.concurrent.CompletableFuture;
 
 import static fr.softsf.sudofx2024.utils.ExceptionTools.getSQLInvalidAuthorizationSpecException;
 import static fr.softsf.sudofx2024.utils.MyEnums.LogBackTxt.SQL_INVALID_AUTHORIZATION_SPEC_EXCEPTION;
@@ -77,37 +78,24 @@ public class SudoMain extends Application {
         try {
             isplashScreenView = new SplashScreenView(splashScreenStage);
             initScene(splashScreenStage);
-            Platform.runLater(() -> {
-                Throwable throwable = null;
+            Thread.startVirtualThread(() -> {
                 try {
+                    long startTime = System.currentTimeMillis();
                     context.init(() -> SpringApplication.run(SudoMain.class));
-                } catch (Exception e) {
-                    throwable = e;
-                    fxmlLoader = new FXMLLoader();
-                } finally {
-                    loadingThreadExecutorResult(throwable, System.currentTimeMillis());
+                    Platform.runLater(() -> {
+                        long minimumTimelapse = Math.max(0, 1000 - (System.currentTimeMillis() - startTime));
+                        getPauseTransition("fullmenu-view", minimumTimelapse).play();
+                    });
+                } catch (Throwable throwable) {
+                    Platform.runLater(() -> {
+                        fxmlLoader = new FXMLLoader();
+                        errorInLoadingThread(throwable);
+                    });
                 }
             });
         } catch (Exception e) {
             log.error(String.format("██ Exception catch inside start() : %s", e.getMessage()), e);
             throw new RuntimeException(e);
-        }
-    }
-
-    /**
-     * Handles the result of the loading thread, either transitioning to the
-     * main view or handling errors.
-     *
-     * @param throwable Any exception that occurred during loading
-     * @param startTime The start time of the loading process
-     */
-    private void loadingThreadExecutorResult(final Throwable throwable, final long startTime) {
-        if (throwable == null) {
-            final long minimumTimelapse = Math.max(0, 1000 - (System.currentTimeMillis() - startTime));
-            PauseTransition pause = getPauseTransition("fullmenu-view", minimumTimelapse);
-            pause.play();
-        } else {
-            errorInLoadingThread(throwable);
         }
     }
 
