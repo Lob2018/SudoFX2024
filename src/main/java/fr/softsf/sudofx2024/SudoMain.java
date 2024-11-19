@@ -144,33 +144,14 @@ public class SudoMain extends Application {
      *
      * @param fxml The name of the FXML file to load
      */
-    public void setRootByFXMLName(final String fxml) {
+    private void setRootByFXMLName(final String fxml) {
         try {
-            clearFXMLLODER();
-            scene.setRoot(getFXMLLoader(fxml).load());
+            fxmlLoader.setLocation(SudoMain.class.getResource(RESOURCES_FXML_PATH.getPath() + fxml + ".fxml"));
+            scene.setRoot(fxmlLoader.load());
         } catch (Exception e) {
-            log.error("██ Exception catch inside setRootByFXMLName(String) : {}", e.getMessage(), e);
+            log.error("██ Exception catch when setting root by FXML name : {}", e.getMessage(), e);
             Platform.exit();
         }
-    }
-
-    /**
-     * Clears the current FXML loader.
-     */
-    private void clearFXMLLODER() {
-        fxmlLoader.setRoot(null);
-        fxmlLoader.setController(null);
-    }
-
-    /**
-     * Gets an FXMLLoader for the specified FXML file.
-     *
-     * @param fxml The name of the FXML file
-     * @return An FXMLLoader object
-     */
-    private FXMLLoader getFXMLLoader(final String fxml) {
-        fxmlLoader.setLocation(SudoMain.class.getResource(RESOURCES_FXML_PATH.getPath() + fxml + ".fxml"));
-        return fxmlLoader;
     }
 
     /**
@@ -191,3 +172,11 @@ public class SudoMain extends Application {
         void showSplashScreen();
     }
 }
+
+
+
+
+
+
+
+
