@@ -88,17 +88,21 @@ public class SudoMain extends Application {
         try {
             isplashScreenView = new SplashScreenView(splashScreenStage);
             initScene(splashScreenStage);
-            Platform.runLater(() -> {
-                try {
-                    long startTime = System.currentTimeMillis();
-                    context.init(() -> SpringApplication.run(SudoMain.class));
-                    long minimumTimelapse = Math.max(0, 1000 - (System.currentTimeMillis() - startTime));
-                    getPauseTransition("fullmenu-view", minimumTimelapse).play();
-                } catch (Exception e) {
-                    fxmlLoader = new FXMLLoader();
-                    errorInLoadingThread(e);
-                }
+            PauseTransition pause = new PauseTransition(Duration.millis(100));
+            pause.setOnFinished(e -> {
+                Platform.runLater(() -> {
+                    try {
+                        long startTime = System.currentTimeMillis();
+                        context.init(() -> SpringApplication.run(SudoMain.class));
+                        long minimumTimelapse = Math.max(0, 1000 - (System.currentTimeMillis() - startTime));
+                        getPauseTransition("fullmenu-view", minimumTimelapse).play();
+                    } catch (Exception ex) {
+                        fxmlLoader = new FXMLLoader();
+                        errorInLoadingThread(ex);
+                    }
+                });
             });
+            pause.play();
         } catch (Exception e) {
             log.error("██ Exception catch inside start() : {}", e.getMessage(), e);
             throw new RuntimeException(e);
