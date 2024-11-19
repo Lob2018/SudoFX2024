@@ -19,7 +19,6 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.PropertySource;
 
 import java.sql.SQLInvalidAuthorizationSpecException;
-import java.util.concurrent.CompletableFuture;
 
 import static fr.softsf.sudofx2024.utils.ExceptionTools.getSQLInvalidAuthorizationSpecException;
 import static fr.softsf.sudofx2024.utils.MyEnums.LogBackTxt.SQL_INVALID_AUTHORIZATION_SPEC_EXCEPTION;
@@ -89,19 +88,15 @@ public class SudoMain extends Application {
         try {
             isplashScreenView = new SplashScreenView(splashScreenStage);
             initScene(splashScreenStage);
-            CompletableFuture.runAsync(() -> {
+            Platform.runLater(() -> {
                 try {
                     long startTime = System.currentTimeMillis();
                     context.init(() -> SpringApplication.run(SudoMain.class));
-                    Platform.runLater(() -> {
-                        long minimumTimelapse = Math.max(0, 1000 - (System.currentTimeMillis() - startTime));
-                        getPauseTransition("fullmenu-view", minimumTimelapse).play();
-                    });
+                    long minimumTimelapse = Math.max(0, 1000 - (System.currentTimeMillis() - startTime));
+                    getPauseTransition("fullmenu-view", minimumTimelapse).play();
                 } catch (Exception e) {
-                    Platform.runLater(() -> {
-                        fxmlLoader = new FXMLLoader();
-                        errorInLoadingThread(e);
-                    });
+                    fxmlLoader = new FXMLLoader();
+                    errorInLoadingThread(e);
                 }
             });
         } catch (Exception e) {
