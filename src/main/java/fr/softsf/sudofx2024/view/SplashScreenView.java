@@ -22,7 +22,8 @@ import java.util.Calendar;
 import java.util.Objects;
 
 import static fr.softsf.sudofx2024.utils.JVMApplicationProperties.isSpringContextExitOnRefresh;
-import static fr.softsf.sudofx2024.utils.MyEnums.Paths.*;
+import static fr.softsf.sudofx2024.utils.MyEnums.Paths.LOGO_SUDO_PNG_PATH;
+import static fr.softsf.sudofx2024.utils.MyEnums.Paths.RESOURCES_CSS_PATH;
 import static fr.softsf.sudofx2024.utils.MyEnums.ScreenSize.DISPOSABLE_SIZE;
 import static javafx.scene.layout.Priority.ALWAYS;
 
@@ -34,8 +35,6 @@ public class SplashScreenView implements SudoMain.ISplashScreenView {
 
     public static final String FX_FONT_SIZE_0_8_EM = "-fx-font-size: 0.8em;";
     private final VBox splashscreenvbox = new VBox();
-    private Scene scene;
-
     private final HBox splashScreenvboxtophbox = new HBox();
     private final Region splashscreenvboxTophboxRegionsudosvg = new Region();
     private final Pane splashScreenvboxtophboxpane = new Pane();
@@ -48,10 +47,10 @@ public class SplashScreenView implements SudoMain.ISplashScreenView {
     private final HBox splashscreenvboxbottomhboxhbox = new HBox();
     private final Label splashscreenvboxBottomhboxHboxLoaderlabel = new Label();
     private final Label splashscreenvboxBottomhboxVersionlabel = new Label();
-
     private final Stage splashScreenStage;
-    private double splashScreenFontSize;
     private final DropShadow dropShadow = new DropShadow();
+    private Scene scene;
+    private double splashScreenFontSize;
 
     /**
      * Constructor for SplashScreenView. Initializes the splash screen UI and
@@ -82,7 +81,7 @@ public class SplashScreenView implements SudoMain.ISplashScreenView {
      * Configures the properties and styles of the UI nodes.
      */
     private void nodesConfiguration() {
-        scene = new Scene(splashscreenvbox, DISPOSABLE_SIZE.getSize() * .612, DISPOSABLE_SIZE.getSize() * .3);
+        scene = new Scene(splashscreenvbox, DISPOSABLE_SIZE.getSize() * .612, DISPOSABLE_SIZE.getSize() * .3, Color.TRANSPARENT);
         scene.getStylesheets().add((Objects.requireNonNull(SudoMain.class.getResource(RESOURCES_CSS_PATH.getPath()))).toExternalForm());
         final Color splashDefaultFontColor = Color.web("#ffffff");
         splashScreenStage.getIcons().add(new Image((Objects.requireNonNull(SudoMain.class.getResource(LOGO_SUDO_PNG_PATH.getPath()))).toExternalForm()));
@@ -115,7 +114,7 @@ public class SplashScreenView implements SudoMain.ISplashScreenView {
      *
      * @return A string message indicating either a loading or optimizing state.
      */
-    private String getLoadingOrOptimizingMessage(){
+    private String getLoadingOrOptimizingMessage() {
         return isSpringContextExitOnRefresh() ? I18n.getValue("splashscreen.optimizing") : I18n.getValue("splashscreen.loading");
     }
 
@@ -171,15 +170,15 @@ public class SplashScreenView implements SudoMain.ISplashScreenView {
         createSVG(splashscreenvboxCenterhboxRegionflowersvg, "M103.66,67.17c-3.1-4.5-9.91-6.87-17.22-8.08,12.33-.6,15.14-3.6,19.08-7.05,5.85-5.14,5-19.7,2.28-24.67s-14-10.16-30.83-2.46a22.84,22.84,0,0,0-8.06,6.25c.13-8.55-3.56-12.44-4.64-15.1-1.86-4.56-20.13-22.12-27.12-13.84s-7.43,25.41-3.93,34.21c1,2.41,3.43,5.14,6.51,7.82a30.76,30.76,0,0,0-7.38-1.91c-13.76-1.58-27-.44-31.46,7s8.85,19.53,13.42,22.33c3.57,2.19,11.64,4,18.89,3.21-5.19,5.1-6.12,9.17-7.16,13-2,7.3,1.54,20.39,3.89,23.24s16.64,1.14,28.63-9.42c5.63-5,6.38-14.88,5.59-24a52.72,52.72,0,0,0,9.54,19.15c3.73,5,21.69,6.85,26.55,3.85S111.94,79.17,103.66,67.17Z", splashScreenFontSize * 5.474, splashScreenFontSize * 5.474, 0, 0);
         splashscreenvboxCenterhboxRegionflowersvg.setStyle(
                 "-fx-background-color: radial-gradient("
-                + "focus-angle 45deg, focus-distance 5%, "
-                + "center 50% 50%, radius 55%, "
-                + "#1a0a26 0, #1b0a28 0.12, #1f0c2f 0.17, #220d33 0.18, "
-                + "#44123a 0.18, #701844 0.18, #961e4c 0.19, #b72353 0.19, "
-                + "#d12658 0.19, #e6295d 0.19, #f42b60 0.2, #fc2d61 0.2, "
-                + "#ff2d62 0.21, #fb4374 0.23, #f5638e 0.25, #f07ea4 0.29, "
-                + "#ec95b7 0.32, #e9a6c5 0.36, #e7b2cf 0.41, #e5b9d4 0.48, "
-                + "#e5bbd6 0.66, #e5bbd6 1);"
-                + "-fx-background-position: center center;"
+                        + "focus-angle 45deg, focus-distance 5%, "
+                        + "center 50% 50%, radius 55%, "
+                        + "#1a0a26 0, #1b0a28 0.12, #1f0c2f 0.17, #220d33 0.18, "
+                        + "#44123a 0.18, #701844 0.18, #961e4c 0.19, #b72353 0.19, "
+                        + "#d12658 0.19, #e6295d 0.19, #f42b60 0.2, #fc2d61 0.2, "
+                        + "#ff2d62 0.21, #fb4374 0.23, #f5638e 0.25, #f07ea4 0.29, "
+                        + "#ec95b7 0.32, #e9a6c5 0.36, #e7b2cf 0.41, #e5b9d4 0.48, "
+                        + "#e5bbd6 0.66, #e5bbd6 1);"
+                        + "-fx-background-position: center center;"
         );
     }
 
@@ -206,10 +205,10 @@ public class SplashScreenView implements SudoMain.ISplashScreenView {
     /**
      * Creates an SVG shape and applies it to a Region.
      *
-     * @param region The Region to which the SVG shape will be applied
-     * @param path The SVG path data
-     * @param width The width of the SVG
-     * @param height The height of the SVG
+     * @param region  The Region to which the SVG shape will be applied
+     * @param path    The SVG path data
+     * @param width   The width of the SVG
+     * @param height  The height of the SVG
      * @param offsetX The X offset of the SVG
      * @param offsetY The Y offset of the SVG
      */
