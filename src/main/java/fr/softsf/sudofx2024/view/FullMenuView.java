@@ -4,8 +4,10 @@ import fr.softsf.sudofx2024.SudoMain;
 import fr.softsf.sudofx2024.view.components.ToasterVBox;
 import fr.softsf.sudofx2024.viewmodel.FullMenuViewModel;
 import javafx.animation.FadeTransition;
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.geometry.Pos;
 import javafx.geometry.Rectangle2D;
 import javafx.scene.Node;
@@ -18,17 +20,19 @@ import javafx.stage.Screen;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javafx.util.Duration;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.Objects;
 
 import static fr.softsf.sudofx2024.utils.MyEnums.Paths.LOGO_SUDO_PNG_PATH;
-import static fr.softsf.sudofx2024.utils.MyEnums.ToastLevels.*;
+import static fr.softsf.sudofx2024.utils.MyEnums.Paths.RESOURCES_FXML_PATH;
 
 /**
  * View class for the full menu screen of the Sudoku application. This class is
  * responsible for displaying and managing the full menu UI.
  */
+@Slf4j
 public class FullMenuView implements SudoMain.IPrimaryStageView {
 
     private static final double FADE_IN_IN_SECONDS_AFTER_SPLASHSCREEN = 0.3;
@@ -36,6 +40,8 @@ public class FullMenuView implements SudoMain.IPrimaryStageView {
     private final Stage primaryStage = new Stage();
     @Autowired
     FullMenuViewModel fullMenuViewModel;
+    @Autowired
+    private FXMLLoader fxmlLoader;
     @FXML
     @Autowired
     private ToasterVBox toaster;
@@ -70,10 +76,18 @@ public class FullMenuView implements SudoMain.IPrimaryStageView {
      */
     @FXML
     private void onHelloButtonClick(ActionEvent event) {
-        toaster.addToastWithDuration("INFO", INFO, 6000);
-        toaster.addToast("WARN", WARN);
-        toaster.addToast("(130 CHAR) ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR", ERROR);
-        fullMenuViewModel.test();
+//        toaster.addToastWithDuration("INFO", INFO, 6000);
+//        toaster.addToast("WARN", WARN);
+//        toaster.addToast("(130 CHAR) ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR", ERROR);
+//        fullMenuViewModel.test();
+
+        try {
+            fxmlLoader.setLocation(SudoMain.class.getResource(RESOURCES_FXML_PATH.getPath() + "crashscreen-view" + ".fxml"));
+            SudoMain.getScene().setRoot(fxmlLoader.load());
+        } catch (Exception e) {
+            log.error("██ Exception catch when setting root by FXML name : {}", e.getMessage(), e);
+            Platform.exit();
+        }
     }
 
     /**
