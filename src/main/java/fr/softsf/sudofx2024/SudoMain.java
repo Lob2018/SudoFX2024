@@ -88,8 +88,8 @@ public class SudoMain extends Application {
         try {
             isplashScreenView = new SplashScreenView(splashScreenStage);
             initScene(splashScreenStage);
-            PauseTransition pause = new PauseTransition(Duration.millis(100));
-            pause.setOnFinished(e -> Platform.runLater(() -> {
+            PauseTransition waitSplashScreenRendering = new PauseTransition(Duration.millis(1));
+            waitSplashScreenRendering.setOnFinished(e -> Platform.runLater(() -> {
                 try {
                     long startTime = System.currentTimeMillis();
                     context.init(() -> SpringApplication.run(SudoMain.class));
@@ -100,7 +100,7 @@ public class SudoMain extends Application {
                     errorInLoadingThread(ex);
                 }
             }));
-            pause.play();
+            waitSplashScreenRendering.play();
         } catch (Exception e) {
             log.error("██ Exception catch inside start() : {}", e.getMessage(), e);
             throw new RuntimeException(e);
