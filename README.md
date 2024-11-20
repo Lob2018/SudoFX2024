@@ -173,7 +173,7 @@ application allows you to solve the current Sudoku grid, but also other entries 
     The MSI file does not have a code signing certificate (paid service), Microsoft Defender SmartScreen informs you of this
 during installation; to continue the installation click on **additional information**, then **Run anyway**.
 
-  <sub>[This other software may be useful to you to check the integrity of the downloaded file (see the version fingerprints inside hash.txt).](https://www.clubic.com/telecharger-fiche56914-hashtab.html)</sub>
+  <sub>[This other software may be useful to you to check the integrity of the downloaded file (see the version fingerprints).](https://www.clubic.com/telecharger-fiche56914-hashtab.html)</sub>
 
 - Linux (Debian-based distribution, amd64 architecture)
   - Application without Java Runtime Environment included ([the latest JRE must be installed on your machine](https://adoptium.net))
