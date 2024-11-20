@@ -72,7 +72,7 @@ public class SudoMain extends Application {
      *
      * @param splashScreenStage The stage used for the splash screen
      */
-    public static void initScene(Stage splashScreenStage) {
+    private static void initScene(Stage splashScreenStage) {
         scene = splashScreenStage.getScene();
     }
 
