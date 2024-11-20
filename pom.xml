@@ -318,7 +318,7 @@
                                 <configuration>
                                     <executable>bash</executable>
                                     <arguments>
-                                        <argument>myresources/scripts/linuxRelease.sh</argument>
+                                        <argument>.myresources/scripts/linuxRelease.sh</argument>
                                         <argument>${project.artifactId}</argument>
                                         <argument>${project.version}</argument>
                                         <argument>${project.organization.name}</argument>
@@ -358,7 +358,7 @@
                                 <configuration>
                                     <executable>bash</executable>
                                     <arguments>
-                                        <argument>myresources/scripts/macosRelease.sh</argument>
+                                        <argument>.myresources/scripts/macosRelease.sh</argument>
                                         <argument>${project.artifactId}</argument>
                                         <argument>${project.version}</argument>
                                         <argument>${project.organization.name}</argument>
