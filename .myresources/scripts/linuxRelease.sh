@@ -113,7 +113,7 @@ EOF
 chmod +x "$1-$2.sh"
 
 echo "# TARGET   : COPY THE SHELL SCRIPT AND THE UBERJAR TO OUTPUT AS A ZIP FILE"
-zipName="$1-$2.zip"
+zipName="$1-$2_linux.zip"
 zip -j "../$6/$zipName" "$1-$2.sh" "$jarName"
 
 echo "# OUTPUT   : THE HASH FILE"
@@ -129,7 +129,7 @@ cd "../$6"
     echo
     sha256sum --tag "$zipName"
     echo
-} > hash.txt
+} > hash_linux.txt
 cd ..
 
 echo "###################################################################################################"

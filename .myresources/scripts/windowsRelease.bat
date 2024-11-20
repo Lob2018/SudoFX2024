@@ -123,7 +123,7 @@
     ) > %1-%2.bat
     echo.
     echo # TARGET   : COPY THE BATCH AND THE UBERJAR TO OUTPUT AS A ZIP FILE
-    set "zipName=%1-%2.zip"
+    set "zipName=%1-%2_windows.zip"
 
     powershell -command "& {Compress-Archive -Path '%1-%2.bat', '%jarName%' -DestinationPath '..\%6\%zipName%'}"
 
@@ -142,7 +142,7 @@
         echo.
 	    CertUtil -hashfile %zipName% SHA256
         echo.
-	) > hash.txt
+	) > hash_windows.txt
 	cd ../
 	echo.
     echo ###################################################################################################
