@@ -25,6 +25,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import java.util.Objects;
 
 import static fr.softsf.sudofx2024.utils.MyEnums.Paths.LOGO_SUDO_PNG_PATH;
+import static fr.softsf.sudofx2024.utils.MyEnums.ToastLevels.*;
 
 /**
  * View class for the full menu screen of the Sudoku application. This class is
@@ -74,12 +75,12 @@ public class FullMenuView implements SudoMain.IPrimaryStageView {
      */
     @FXML
     private void onHelloButtonClick(ActionEvent event) {
-//        toaster.addToastWithDuration("INFO", INFO, 6000);
-//        toaster.addToast("WARN", WARN);
-//        toaster.addToast("(130 CHAR) ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR", ERROR);
-//        fullMenuViewModel.test();
+        toaster.addToastWithDuration("INFO 🔹 Work in progress... 🔹", INFO, 6000);
+        toaster.addToast("WARN", WARN);
+        toaster.addToast("(130 CHAR) ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR", ERROR);
+        fullMenuViewModel.test();
 
-        fxmlService.setRootByFXMLName("crashscreen-view");
+//        fxmlService.setRootByFXMLName("crashscreen-view");
     }
 
     /**

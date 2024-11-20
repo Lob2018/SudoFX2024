@@ -220,7 +220,7 @@ during installation; to continue the installation click on **additional informat
     - **Delete your unzipped folder from SudokuFX-v.v.v_linux.zip**
   - Application with Java Runtime Environment included (from .deb file)
 
->     sudo apt purge sudokufx-jvm_v.v.v_amd64.deb
+>     sudo apt purge sudokufx-jvm
 
 > [!IMPORTANT]
 >- Windows
