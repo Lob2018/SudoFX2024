@@ -10,8 +10,8 @@ permissions: # added using https://github.com/step-security/secure-repo
   contents: read
 
 jobs:
-  install_JDK-install_wix-package_and_create_release:
-    name: Install JDK, Wix v3.11, then compile, test, package, and upload the files (Windows)
+  package_for_windows:
+    name: Package for windows
     runs-on: windows-latest
     steps:
       - name: Harden Runner
@@ -47,8 +47,8 @@ jobs:
           name: output-folder
           path: output
 
-  install_JDK-install_package_and_create_release_linux:
-    name: Install JDK, then compile, test, package, and upload the files (Linux)
+  package_for_linux:
+    name: Package for Linux
     runs-on: ubuntu-latest
     steps:
       - name: Harden Runner
@@ -64,6 +64,12 @@ jobs:
           java-version: '21'
       - name: Verify Java Installation
         run: java -version
+      - name: Install Xvfb
+        run: sudo apt-get install -y xvfb
+      - name: Start Xvfb
+        run: |
+          Xvfb :99 -screen 0 1920x1080x24 &
+          echo "DISPLAY=:99" >> $GITHUB_ENV
       - name: Compile, Test, and Package with Maven (Linux)
         run: mvn package -P linux -f pom.xml
       - name: Upload output folder (Linux)
@@ -76,7 +82,7 @@ jobs:
     permissions:
       contents: write  # for ncipollo/release-action to create a release
     name: Publish the release and tag it
-    needs: install_JDK-install_wix-package_and_create_release
+    needs: [ package_for_windows, package_for_linux ]
     runs-on: ubuntu-latest
     steps:
       - name: Harden Runner
