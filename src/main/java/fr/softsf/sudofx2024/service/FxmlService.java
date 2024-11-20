@@ -1,9 +1,11 @@
 package fr.softsf.sudofx2024.service;
 
 import fr.softsf.sudofx2024.SudoMain;
+import fr.softsf.sudofx2024.utils.DynamicFontSize;
 import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
@@ -23,6 +25,9 @@ public class FxmlService {
 
     private final FXMLLoader fxmlLoader; // The FXML loader used to load FXML files
 
+    @Setter
+    private DynamicFontSize dynamicFontSize;
+
     /**
      * Constructor for FxmlService.
      * <p>
@@ -36,7 +41,7 @@ public class FxmlService {
     }
 
     /**
-     * Sets the root of the scene based on the given FXML file name.
+     * Sets the root of the scene based on the given FXML file name, and adapt the font size dynamically
      *
      * @param fxml The name of the FXML file to load (without the .fxml extension)
      * @throws IllegalArgumentException if the FXML file is not found
@@ -49,6 +54,7 @@ public class FxmlService {
             fxmlLoader.setController(null);
             fxmlLoader.setLocation(getClass().getResource(path));
             scene.setRoot(fxmlLoader.load());
+            dynamicFontSize.updateFontSize();
         } catch (Exception e) {
             log.error("██ Exception caught when setting root by FXML name: {} █ The FXML path was: {}", e.getMessage(), path, e);
             Platform.exit();

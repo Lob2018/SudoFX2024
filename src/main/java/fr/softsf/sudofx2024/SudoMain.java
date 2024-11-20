@@ -53,16 +53,6 @@ public class SudoMain extends Application {
     }
 
     /**
-     * Initializes the main scene and sets up dynamic font sizing.
-     *
-     * @param splashScreenStage The stage used for the splash screen
-     */
-    public static void initScene(Stage splashScreenStage) {
-        scene = splashScreenStage.getScene();
-        new DynamicFontSize(scene);
-    }
-
-    /**
      * Handles SQL invalid authorization exceptions.
      *
      * @param e            The general exception
@@ -87,18 +77,17 @@ public class SudoMain extends Application {
     public void start(final Stage splashScreenStage) {
         try {
             isplashScreenView = new SplashScreenView(splashScreenStage);
-            initScene(splashScreenStage);
+            scene = splashScreenStage.getScene();
             PauseTransition waitSplashScreenRendering = new PauseTransition(Duration.millis(1));
             waitSplashScreenRendering.setOnFinished(e -> Platform.runLater(() -> {
                 try {
                     long startTime = System.currentTimeMillis();
                     context.init(() -> SpringApplication.run(SudoMain.class));
+                    initializeFxmlService();
                     long minimumTimelapse = Math.max(0, 1000 - (System.currentTimeMillis() - startTime));
                     getPauseTransition("fullmenu-view", minimumTimelapse).play();
                 } catch (Exception ex) {
-                    if (fxmlService == null) {
-                        fxmlService = new FxmlService(new FXMLLoader());
-                    }
+                    initializeFxmlService();
                     errorInLoadingThread(ex);
                 }
             }));
@@ -107,6 +96,16 @@ public class SudoMain extends Application {
             log.error("██ Exception catch inside start() : {}", e.getMessage(), e);
             throw new RuntimeException(e);
         }
+    }
+
+    /**
+     * Initialize the FxmlService if needed and set his DynamicFontSize
+     */
+    private void initializeFxmlService() {
+        if (fxmlService == null) {
+            fxmlService = new FxmlService(new FXMLLoader());
+        }
+        fxmlService.setDynamicFontSize(new DynamicFontSize(scene));
     }
 
     /**

@@ -2,6 +2,7 @@ package fr.softsf.sudofx2024.utils;
 
 import javafx.scene.Scene;
 import lombok.Getter;
+import org.springframework.stereotype.Component;
 
 /**
  * Manages dynamic font sizing based on the dimensions of a JavaFX Scene. This
@@ -35,7 +36,7 @@ public final class DynamicFontSize {
      * The font size is calculated as 2.19% of the smaller dimension (width or height) of the Scene.
      * This method is called automatically when the Scene's dimensions change.
      */
-    private void updateFontSize() {
+    public void updateFontSize() {
         currentFontSize = Math.min(scene.getWidth(), scene.getHeight()) * 0.0219;
         scene.getRoot().setStyle("-fx-font-size: " + currentFontSize + "px;");
     }
