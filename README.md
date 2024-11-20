@@ -3,7 +3,7 @@
 ![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)
 ![GitHub release](https://img.shields.io/github/v/release/lob2018/SudoFX2024)
 ![Windows](https://img.shields.io/badge/Windows-Compatible-brightgreen)
-![Linux](https://img.shields.io/badge/Linux-Incompatible-red)
+![Linux](https://img.shields.io/badge/Linux-Compatible-brightgreen)
 ![MacOS](https://img.shields.io/badge/MacOS-Incompatible-red)
 ![Open Issues](https://img.shields.io/github/issues/lob2018/SudoFX2024)
 ![Open Pull Requests](https://img.shields.io/github/issues-pr/lob2018/SudoFX2024)
@@ -77,7 +77,7 @@ application allows you to solve the current Sudoku grid, but also other entries 
 ## Project
 
 ![Windows Dev](https://img.shields.io/badge/Windows_Dev-Compatible-brightgreen)
-![Linux Dev](https://img.shields.io/badge/Linux_Dev-Incompatible-red)
+![Linux Dev](https://img.shields.io/badge/Linux_Dev-Compatible-brightgreen)
 ![MacOS Dev](https://img.shields.io/badge/MacOS_Dev-Incompatible-red)
 
 ### Roadmap
@@ -158,24 +158,33 @@ application allows you to solve the current Sudoku grid, but also other entries 
 ## Installation
 
 ![Windows](https://img.shields.io/badge/Windows-Compatible-brightgreen)
-![Linux](https://img.shields.io/badge/Linux-Incompatible-red)
+![Linux](https://img.shields.io/badge/Linux-Compatible-brightgreen)
 ![macOS](https://img.shields.io/badge/macOS-Incompatible-red)
 
 - Windows
   - Application without Java Runtime Environment included ([the latest JRE must be installed on your machine](https://adoptium.net))
 
-    [Download, unzip, and keep all the files together (SudokuFX-v.v.v.bat to launch), from the latest Windows version of the file **SudokuFX-v.v.v.zip
-**, available in Assets.](https://github.com/Lob2018/SudoFX2024/releases/latest)
+    [Download, unzip, and keep all the files together (SudokuFX-v.v.v.bat to launch), from the latest Windows version of the file SudokuFX-v.v.v_windows.zip, available in Assets.](https://github.com/Lob2018/SudoFX2024/releases/latest)
 
   - Application with Java Runtime Environment included
 
-    [Download and install the latest Windows version of the file **SudokuFX_JVM-v.v.v.msi
-**, available in Assets.](https://github.com/Lob2018/SudoFX2024/releases/latest)
+    [Download and install the latest Windows version of the file SudokuFX_JVM-v.v.v.msi, available in Assets.](https://github.com/Lob2018/SudoFX2024/releases/latest)
 
     The MSI file does not have a code signing certificate (paid service), Microsoft Defender SmartScreen informs you of this
 during installation; to continue the installation click on **additional information**, then **Run anyway**.
 
   <sub>[This other software may be useful to you to check the integrity of the downloaded file (see the version fingerprints inside hash.txt).](https://www.clubic.com/telecharger-fiche56914-hashtab.html)</sub>
+
+- Linux (Debian-based distribution, amd64 architecture)
+  - Application without Java Runtime Environment included ([the latest JRE must be installed on your machine](https://adoptium.net))
+
+    [Download, unzip, and keep all the files together (SudokuFX-v.v.v.sh to launch), from the latest Linux version of the file SudokuFX-v.v.v_linux.zip, available in Assets.](https://github.com/Lob2018/SudoFX2024/releases/latest)
+
+  - Application with Java Runtime Environment included
+
+    [Download and install the latest Linux version of the file sudokufx-jvm_v.v.v_amd64.deb, available in Assets.](https://github.com/Lob2018/SudoFX2024/releases/latest)
+
+>     sudo apt install ./sudokufx-jvm_v.v.v_amd64.deb
 
 ## Use
 
@@ -185,26 +194,47 @@ during installation; to continue the installation click on **additional informat
 
 - Windows
   - Application without Java Runtime Environment included (ZIP file with the .bat file and the JAR)
-    - [Delete your old unzipped folder from SudokuFX-v.v.v.zip, and follow the installation instructions](#installation)
+    - [Delete your old unzipped folder from SudokuFX-v.v.v_windows.zip, and follow the installation instructions](#installation)
   - Application with Java Runtime Environment included (from MSI file)
+    - [Follow the installation instructions](#installation)
+
+- Linux
+  - Application without Java Runtime Environment included (ZIP file with the .sh file and the JAR)
+    - [Delete your old unzipped folder from SudokuFX-v.v.v_linux.zip, and follow the installation instructions](#installation)
+  - Application with Java Runtime Environment included (from .deb file)
     - [Follow the installation instructions](#installation)
 
 ## Uninstallation
 
 - Windows
   - Application without Java Runtime Environment included (ZIP file with the .bat file and the JAR)
-    - **Delete your unzipped folder from SudokuFX-v.v.v.zip**
+    - **Delete your unzipped folder from SudokuFX-v.v.v_windows.zip**
   - Application with Java Runtime Environment included (from MSI file)
     - **Uninstall from the Control Panel (for programs)**
         1. In the search box on the taskbar, type **Control Panel** and select it from the results.
         2. Select **Programs > Programs and Features**.
         3. Press and hold (or right-click) on the program you want to remove and select **Uninstall** or *
            *Uninstall/Change**. Then follow the directions on the screen.
+- Linux
+  - Application without Java Runtime Environment included (ZIP file with the .sh file and the JAR)
+    - **Delete your unzipped folder from SudokuFX-v.v.v_linux.zip**
+  - Application with Java Runtime Environment included (from .deb file)
+
+>     sudo apt purge sudokufx-jvm_v.v.v_amd64.deb
+
 > [!IMPORTANT]
 >- Windows
 >   - To completely delete your app data and logs, you need to manually delete this folder:
 >     
 >     **C:/Users/\<USERNAME\>**[^1]**/AppData/Local/Soft64.fr/SudokuFX/**.
+>- Linux
+>   - To completely delete your app data and logs, you need to manually delete this folder:
+>     
+>     **/home/\<USERNAME\>**[^1]**/.local/share/Soft64.fr/SudokuFX**.
+>- MacOS
+>   - To completely delete your app data and logs, you need to manually delete this folder:
+>     
+>     **/Users/\<USERNAME\>**[^1]**/Library/Application Support/Soft64.fr/SudokuFX**.
 
 [^1]: Replace \<USERNAME\> with your Windows username
 
