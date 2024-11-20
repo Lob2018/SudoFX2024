@@ -11,7 +11,7 @@ permissions: # added using https://github.com/step-security/secure-repo
 
 jobs:
   package_for_windows:
-    name: Package for windows
+    name: Package for Windows
     runs-on: windows-latest
     steps:
       - name: Harden Runner
@@ -44,7 +44,7 @@ jobs:
       - name: Upload output folder
         uses: actions/upload-artifact@b4b15b8c7c6ac21ea08fcf65892d2ee8f75cf882 # v4.4.3
         with:
-          name: output-folder
+          name: output-folder-windows
           path: output
 
   package_for_linux:
@@ -75,7 +75,7 @@ jobs:
       - name: Upload output folder (Linux)
         uses: actions/upload-artifact@b4b15b8c7c6ac21ea08fcf65892d2ee8f75cf882 # v4.4.3
         with:
-          name: output-folder
+          name: output-folder-linux
           path: output
 
   publish_release:
