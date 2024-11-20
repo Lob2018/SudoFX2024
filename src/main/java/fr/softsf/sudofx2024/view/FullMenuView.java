@@ -1,13 +1,12 @@
 package fr.softsf.sudofx2024.view;
 
 import fr.softsf.sudofx2024.SudoMain;
+import fr.softsf.sudofx2024.service.FxmlService;
 import fr.softsf.sudofx2024.view.components.ToasterVBox;
 import fr.softsf.sudofx2024.viewmodel.FullMenuViewModel;
 import javafx.animation.FadeTransition;
-import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.geometry.Pos;
 import javafx.geometry.Rectangle2D;
 import javafx.scene.Node;
@@ -26,7 +25,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import java.util.Objects;
 
 import static fr.softsf.sudofx2024.utils.MyEnums.Paths.LOGO_SUDO_PNG_PATH;
-import static fr.softsf.sudofx2024.utils.MyEnums.Paths.RESOURCES_FXML_PATH;
 
 /**
  * View class for the full menu screen of the Sudoku application. This class is
@@ -41,7 +39,7 @@ public class FullMenuView implements SudoMain.IPrimaryStageView {
     @Autowired
     FullMenuViewModel fullMenuViewModel;
     @Autowired
-    private FXMLLoader fxmlLoader;
+    private FxmlService fxmlService;
     @FXML
     @Autowired
     private ToasterVBox toaster;
@@ -81,13 +79,7 @@ public class FullMenuView implements SudoMain.IPrimaryStageView {
 //        toaster.addToast("(130 CHAR) ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR", ERROR);
 //        fullMenuViewModel.test();
 
-        try {
-            fxmlLoader.setLocation(SudoMain.class.getResource(RESOURCES_FXML_PATH.getPath() + "crashscreen-view" + ".fxml"));
-            SudoMain.getScene().setRoot(fxmlLoader.load());
-        } catch (Exception e) {
-            log.error("██ Exception catch when setting root by FXML name : {}", e.getMessage(), e);
-            Platform.exit();
-        }
+        fxmlService.setRootByFXMLName("crashscreen-view");
     }
 
     /**

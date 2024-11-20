@@ -1,18 +1,9 @@
 package fr.softsf.sudofx2024.view;
 
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.Calendar;
-import java.util.Objects;
-
 import fr.softsf.sudofx2024.SudoMain;
 import fr.softsf.sudofx2024.utils.FileSystemManager;
 import fr.softsf.sudofx2024.utils.I18n;
 import fr.softsf.sudofx2024.utils.JVMApplicationProperties;
-
-import static fr.softsf.sudofx2024.utils.MyEnums.Paths.*;
-import static fr.softsf.sudofx2024.utils.MyEnums.ScreenSize.DISPOSABLE_SIZE;
-
 import fr.softsf.sudofx2024.utils.os.OsFolderFactoryManager;
 import javafx.animation.FadeTransition;
 import javafx.application.Platform;
@@ -33,6 +24,15 @@ import javafx.stage.StageStyle;
 import javafx.util.Duration;
 import lombok.extern.slf4j.Slf4j;
 
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.Calendar;
+import java.util.Objects;
+
+import static fr.softsf.sudofx2024.utils.MyEnums.Paths.DATA_FOLDER;
+import static fr.softsf.sudofx2024.utils.MyEnums.Paths.LOGO_SUDO_PNG_PATH;
+import static fr.softsf.sudofx2024.utils.MyEnums.ScreenSize.DISPOSABLE_SIZE;
+
 /**
  * View class for the crash screen without business logic. This class is
  * responsible for displaying and managing the crash screen UI.
@@ -41,7 +41,10 @@ import lombok.extern.slf4j.Slf4j;
 public class CrashScreenView implements SudoMain.IPrimaryStageView {
 
     private static final OsFolderFactoryManager.IOsFolderFactory iOsFolderFactory = new OsFolderFactoryManager().osFolderFactory();
-
+    private static final double FADE_IN_IN_SECONDS_AFTER_SPLASHSCREEN = 0.5;
+    private final Stage crashscreenStage = new Stage();
+    private final DropShadow dropShadow = new DropShadow();
+    private final Stage primaryStage = new Stage();
     // FXML injected components
     @FXML
     private VBox crashscreenvbox;
@@ -63,6 +66,7 @@ public class CrashScreenView implements SudoMain.IPrimaryStageView {
     private Label crashscreenvboxBottomhboxYearlabel;
     @FXML
     private Label crashscreenvboxBottomhboxVersionlabel;
+    private double crashScreenFontSize;
 
     /**
      * Handles the close button click event. Logs the action and exits the
@@ -91,13 +95,6 @@ public class CrashScreenView implements SudoMain.IPrimaryStageView {
         hidecrashscreen();
         Platform.exit();
     }
-
-    private final Stage crashscreenStage = new Stage();
-    private double crashScreenFontSize;
-    private final DropShadow dropShadow = new DropShadow();
-
-    private static final double FADE_IN_IN_SECONDS_AFTER_SPLASHSCREEN = 0.5;
-    private final Stage primaryStage = new Stage();
 
     /**
      * Applies a fade-in effect to the given node.
@@ -193,10 +190,10 @@ public class CrashScreenView implements SudoMain.IPrimaryStageView {
     /**
      * Creates an SVG shape and applies it to a Region.
      *
-     * @param region The Region to apply the SVG shape to
-     * @param path The SVG path data
-     * @param width The width of the SVG
-     * @param height The height of the SVG
+     * @param region  The Region to apply the SVG shape to
+     * @param path    The SVG path data
+     * @param width   The width of the SVG
+     * @param height  The height of the SVG
      * @param offsetX The X offset of the SVG
      * @param offsetY The Y offset of the SVG
      */

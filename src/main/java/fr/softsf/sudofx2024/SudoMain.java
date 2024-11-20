@@ -1,6 +1,7 @@
 package fr.softsf.sudofx2024;
 
 import com.gluonhq.ignite.spring.SpringContext;
+import fr.softsf.sudofx2024.service.FxmlService;
 import fr.softsf.sudofx2024.utils.DynamicFontSize;
 import fr.softsf.sudofx2024.view.SplashScreenView;
 import javafx.animation.PauseTransition;
@@ -22,7 +23,6 @@ import java.sql.SQLInvalidAuthorizationSpecException;
 
 import static fr.softsf.sudofx2024.utils.ExceptionTools.getSQLInvalidAuthorizationSpecException;
 import static fr.softsf.sudofx2024.utils.MyEnums.LogBackTxt.SQL_INVALID_AUTHORIZATION_SPEC_EXCEPTION;
-import static fr.softsf.sudofx2024.utils.MyEnums.Paths.RESOURCES_FXML_PATH;
 
 /**
  * Main application class for the Sudoku game. This class initializes the
@@ -38,10 +38,10 @@ public class SudoMain extends Application {
     @Getter
     private static Scene scene;
     private final SpringContext context = new SpringContext(this);
-    @Autowired
-    private FXMLLoader fxmlLoader;
     private ISplashScreenView isplashScreenView;
     private IPrimaryStageView iPrimaryStageView;
+    @Autowired
+    private FxmlService fxmlService;
 
     /**
      * Main entry point for the application.
@@ -96,7 +96,9 @@ public class SudoMain extends Application {
                     long minimumTimelapse = Math.max(0, 1000 - (System.currentTimeMillis() - startTime));
                     getPauseTransition("fullmenu-view", minimumTimelapse).play();
                 } catch (Exception ex) {
-                    fxmlLoader = new FXMLLoader();
+                    if (fxmlService == null) {
+                        fxmlService = new FxmlService(new FXMLLoader());
+                    }
                     errorInLoadingThread(ex);
                 }
             }));
@@ -134,26 +136,11 @@ public class SudoMain extends Application {
     private PauseTransition getPauseTransition(String fxmlName, long minimumTimelapse) {
         PauseTransition pause = new PauseTransition(Duration.millis(minimumTimelapse));
         pause.setOnFinished(e -> {
-            setRootByFXMLName(fxmlName);
-            iPrimaryStageView = fxmlLoader.getController();
+            fxmlService.setRootByFXMLName(fxmlName);
+            iPrimaryStageView = fxmlService.getController();
             iPrimaryStageView.openingMainStage(isplashScreenView);
         });
         return pause;
-    }
-
-    /**
-     * Sets the root of the scene based on the given FXML file name.
-     *
-     * @param fxml The name of the FXML file to load
-     */
-    private void setRootByFXMLName(final String fxml) {
-        try {
-            fxmlLoader.setLocation(SudoMain.class.getResource(RESOURCES_FXML_PATH.getPath() + fxml + ".fxml"));
-            scene.setRoot(fxmlLoader.load());
-        } catch (Exception e) {
-            log.error("██ Exception catch when setting root by FXML name : {}", e.getMessage(), e);
-            Platform.exit();
-        }
     }
 
     /**
