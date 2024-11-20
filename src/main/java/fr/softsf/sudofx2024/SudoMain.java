@@ -68,6 +68,15 @@ public class SudoMain extends Application {
     }
 
     /**
+     * Initializes the main scene.
+     *
+     * @param splashScreenStage The stage used for the splash screen
+     */
+    public static void initScene(Stage splashScreenStage) {
+        scene = splashScreenStage.getScene();
+    }
+
+    /**
      * Starts the application, initializes the splash screen, and begins loading
      * the main application.
      *
@@ -77,7 +86,7 @@ public class SudoMain extends Application {
     public void start(final Stage splashScreenStage) {
         try {
             isplashScreenView = new SplashScreenView(splashScreenStage);
-            scene = splashScreenStage.getScene();
+            initScene(splashScreenStage);
             PauseTransition waitSplashScreenRendering = new PauseTransition(Duration.millis(1));
             waitSplashScreenRendering.setOnFinished(e -> Platform.runLater(() -> {
                 try {
