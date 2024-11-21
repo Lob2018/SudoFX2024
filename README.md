@@ -2,11 +2,12 @@
 
 ![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)
 ![GitHub release](https://img.shields.io/github/v/release/lob2018/SudoFX2024)
+![Open Issues](https://img.shields.io/github/issues/lob2018/SudoFX2024)
+![Open Pull Requests](https://img.shields.io/github/issues-pr/lob2018/SudoFX2024)</br>
 ![Windows](https://img.shields.io/badge/Windows-Compatible-brightgreen)
 ![Linux](https://img.shields.io/badge/Linux-Compatible-brightgreen)
-![MacOS](https://img.shields.io/badge/MacOS-Incompatible-red)
-![Open Issues](https://img.shields.io/github/issues/lob2018/SudoFX2024)
-![Open Pull Requests](https://img.shields.io/github/issues-pr/lob2018/SudoFX2024)
+![MacOS](https://img.shields.io/badge/MacOS-Incompatible-red)</br>
+![CodeQL Analysis](https://github.com/lob2018/SudoFX2024/actions/workflows/codeql.yml/badge.svg)
 [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/Lob2018/SudoFX2024/badge)](https://scorecard.dev/viewer/?uri=github.com/Lob2018/SudoFX2024)
 
 <p align="center">
@@ -251,7 +252,11 @@ during installation; to continue the installation click on **additional informat
 - [File an issue](https://github.com/Lob2018/SudoFX2024/issues)
     - If you want you can attach the application logs you find :
         - Windows
-            - Inside C:/Users/\<USERNAME\>**[^1]**/AppData/Local/Soft64.fr/SudokuFX/logs-sudofx
+          - Inside C:/Users/\<USERNAME\>**[^1]**/AppData/Local/Soft64.fr/SudokuFX/logs-sudofx
+        - Linux
+          - Inside /home/\<USERNAME\>**[^1]**/.local/share/Soft64.fr/SudokuFX/logs-sudofx
+        - MacOS
+          - Inside /Users/\<USERNAME\>**[^1]**/Library/Application Support/Soft64.fr/SudokuFX/logs-sudofx
 
 ## Licence
 
