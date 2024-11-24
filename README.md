@@ -237,7 +237,7 @@ during installation; to continue the installation click on **additional informat
 >     
 >     **/Users/\<USERNAME\>**[^1]**/Library/Application Support/Soft64.fr/SudokuFX**.
 
-[^1]: Replace \<USERNAME\> with your Windows username
+[^1]: Replace \<USERNAME\> with your currently logged-in username.
 
 ## Documentation
 
