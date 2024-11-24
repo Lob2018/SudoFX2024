@@ -108,7 +108,7 @@ jobs:
         with:
           name: SudokuFX release v${{ env.POM_VERSION }}
           tag: v${{ env.POM_VERSION }}
-          body: <br>- The compressed files for Windows (ZIP) and Linux (TAR) do not include the Java Runtime Environment (the latest JRE must be installed on your machine), the .bat file (for Windows) and the .sh file (for Linux) launch the application.<br><br>- The MSI file and the .deb file includes the Java Runtime Environment and installs the application on your machine.<br><br>- The hash_windows.txt file and the hash_linux.txt file contains the files fingerprints.
+          body: <br>🔹 The compressed files for Windows (ZIP) and Linux (TAR) do not include the Java Runtime Environment (the latest JRE must be installed on your machine), the .bat file (for Windows) and the .sh file (for Linux) launch the application.<br><br>🔹 Both the MSI and .deb files include the Java Runtime Environment and install the application on your machine.<br><br>🔹 The hash_windows.txt file and the hash_linux.txt file contain the files fingerprints.
           artifacts: 'output/*'
       - name: Create Tag
         run: git tag v${{ env.POM_VERSION }}
