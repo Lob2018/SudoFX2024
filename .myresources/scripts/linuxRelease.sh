@@ -112,9 +112,9 @@ EOF
 
 chmod +x "$1-$2.sh"
 
-echo "# TARGET   : COPY THE SHELL SCRIPT AND THE UBERJAR TO OUTPUT AS A ZIP FILE"
-zipName="$1-$2_linux.zip"
-zip -j "../$6/$zipName" "$1-$2.sh" "$jarName"
+echo "# TARGET   : COPY THE SHELL SCRIPT AND THE UBERJAR TO OUTPUT AS A TAR FILE"
+tarName="$1-$2_linux.tar.gz"
+tar -czf "../$6/$tarName" "$1-$2.sh" "$jarName"
 
 echo "# OUTPUT   : THE HASH FILE"
 debFile="${appNameWithTheJVM,,}_${2}_amd64.deb"
@@ -125,9 +125,9 @@ cd "../$6"
     echo
     sha256sum --tag "$debFile"
     echo
-    md5sum --tag "$zipName"
+    md5sum --tag "$tarName"
     echo
-    sha256sum --tag "$zipName"
+    sha256sum --tag "$tarName"
     echo
 } > hash_linux.txt
 cd ..

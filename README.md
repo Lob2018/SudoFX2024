@@ -179,7 +179,7 @@ during installation; to continue the installation click on **additional informat
 - Linux (Debian-based distribution, amd64 architecture)
   - Application without Java Runtime Environment included ([the latest JRE must be installed on your machine](https://adoptium.net))
 
-    [Download, unzip, and keep all the files together (SudokuFX-v.v.v.sh to launch), from the latest Linux version of the file SudokuFX-v.v.v_linux.zip, available in Assets.](https://github.com/Lob2018/SudoFX2024/releases/latest)
+    [Download, untar, and keep all the files together (SudokuFX-v.v.v.sh to launch), from the latest Linux version of the file SudokuFX-v.v.v_linux.tar.gz, available in Assets.](https://github.com/Lob2018/SudoFX2024/releases/latest)
 
   - Application with Java Runtime Environment included
 
@@ -200,8 +200,8 @@ during installation; to continue the installation click on **additional informat
     - [Follow the installation instructions](#installation)
 
 - Linux
-  - Application without Java Runtime Environment included (ZIP file with the .sh file and the JAR)
-    - [Delete your old unzipped folder from SudokuFX-v.v.v_linux.zip, and follow the installation instructions](#installation)
+  - Application without Java Runtime Environment included (TAR file with the .sh file and the JAR)
+    - [Delete your old untarred folder from SudokuFX-v.v.v_linux.tar.gz, and follow the installation instructions](#installation)
   - Application with Java Runtime Environment included (from .deb file)
     - [Follow the installation instructions](#installation)
 
@@ -217,8 +217,8 @@ during installation; to continue the installation click on **additional informat
         3. Press and hold (or right-click) on the program you want to remove and select **Uninstall** or *
            *Uninstall/Change**. Then follow the directions on the screen.
 - Linux
-  - Application without Java Runtime Environment included (ZIP file with the .sh file and the JAR)
-    - **Delete your unzipped folder from SudokuFX-v.v.v_linux.zip**
+  - Application without Java Runtime Environment included (TAR file with the .sh file and the JAR)
+    - **Delete your untarred folder from SudokuFX-v.v.v_linux.tar.gz**
   - Application with Java Runtime Environment included (from .deb file)
 
 >     sudo apt purge sudokufx-jvm
