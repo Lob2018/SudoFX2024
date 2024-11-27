@@ -42,13 +42,20 @@ rm -rf "$6" 2>/dev/null
 echo "# TARGET/INPUT   : CREATE"
 cd ./target
 mkdir -p input
-
 echo "# TARGET/INPUT   : PASTE UBERJAR"
 cp "$jarName" "input/$jarName"
 
+echo "# TARGET/temp_dir_license   : CREATE"
+temp_dir_license=$(mktemp -d)
+echo "# TARGET/temp_dir_license   : PASTE LICENSE.txt"
+cp ../LICENSE.txt "$temp_dir_license"
+
 echo "# OUTPUT   : CREATING THE APP FROM TARGET/INPUT..."
 cd ..
-jpackage --input ./target/input --dest "$6" --name "$appNameWithTheJVM" --type app-image --main-jar "$jarName" --main-class org.springframework.boot.loader.launch.JarLauncher --mac-package-name "$1" --vendor "$3" --copyright "Copyright © $year $3" --icon src/main/resources/fr/softsf/sudofx2024/images/Sudoku.icns --app-version "$2" --description "$1 $year" --license-file LICENSE.txt --verbose
+jpackage --input ./target/input --dest "$6" --name "$appNameWithTheJVM" --type app-image --main-jar "$jarName" --main-class org.springframework.boot.loader.launch.JarLauncher --mac-package-name "$1" --vendor "$3" --copyright "Copyright © $year $3" --icon src/main/resources/fr/softsf/sudofx2024/images/Sudoku.icns --app-version "$2" --description "$1 $year" --resource-dir "$temp_dir_license" --verbose
+
+echo "# TARGET/temp_dir_license   : REMOVE"
+rm -rf "$temp_dir_license"
 
 echo "# TARGET   : THE SHELL SCRIPT TO LAUNCH THE UBERJAR"
 cd ./target
