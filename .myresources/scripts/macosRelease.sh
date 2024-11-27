@@ -52,7 +52,7 @@ cp ../LICENSE.txt "$temp_dir_license"
 
 echo "# OUTPUT   : CREATING THE APP FROM TARGET/INPUT..."
 cd ..
-jpackage --input ./target/input --dest "$6" --name "$appNameWithTheJVM" --type app-image --main-jar "$jarName" --main-class org.springframework.boot.loader.launch.JarLauncher --mac-package-name "$1" --vendor "$3" --copyright "Copyright © $year $3" --icon src/main/resources/fr/softsf/sudofx2024/images/icon.icns --app-version "$2" --description "$1 $year" --resource-dir "$temp_dir_license" --verbose
+jpackage --input ./target/input --dest "$6" --name "$appNameWithTheJVM" --type dmg --main-jar "$jarName" --main-class org.springframework.boot.loader.launch.JarLauncher --mac-package-name "$1" --vendor "$3" --copyright "Copyright © $year $3" --icon src/main/resources/fr/softsf/sudofx2024/images/icon.icns --app-version "$2" --description "$1 $year" --resource-dir "$temp_dir_license" --verbose
 
 echo "# TARGET/temp_dir_license   : REMOVE"
 rm -rf "$temp_dir_license"
