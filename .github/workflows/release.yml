@@ -113,7 +113,7 @@ jobs:
     permissions:
       contents: write  # for ncipollo/release-action to create a release
     name: Publish the release and tag it
-    needs: [ package_for_windows, package_for_linux ]
+    needs: [ package_for_windows, package_for_linux, package_for_macos ]
     runs-on: ubuntu-latest
     steps:
       - name: Harden Runner
