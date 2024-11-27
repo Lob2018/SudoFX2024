@@ -124,7 +124,7 @@ zipName="$1-$2_macos.zip"
 zip -j "../$6/$zipName" "$1-$2.sh" "$jarName"
 
 echo "# OUTPUT   : THE HASH FILE"
-appFile="${appNameWithTheJVM}.app"
+appFile="${appNameWithTheJVM}.dmg"
 cd "../$6"
 {
     echo
