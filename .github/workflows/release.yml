@@ -80,7 +80,7 @@ jobs:
           
   package_for_macos:
     name: Package for MacOS
-    runs-on: macos-latest-large
+    runs-on: macos-13-large
     steps:
       - name: Harden Runner
         uses: step-security/harden-runner@91182cccc01eb5e619899d80e4e971d6181294a7 # v2.10.1
