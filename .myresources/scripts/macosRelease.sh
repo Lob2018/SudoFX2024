@@ -124,13 +124,13 @@ zipName="$1-$2_macos.zip"
 zip -j "../$6/$zipName" "$1-$2.sh" "$jarName"
 
 echo "# OUTPUT   : THE HASH FILE"
-appFile="${appNameWithTheJVM}.dmg"
+dmgFile="${appNameWithTheJVM}-${2}.dmg"
 cd "../$6"
 {
     echo
-    md5 -r "$appFile" | sed 's/^/MD5 (/; s/$/)/'
+    md5 -r "$dmgFile" | sed 's/^/MD5 (/; s/$/)/'
     echo
-    shasum -a 256 "$appFile" | sed 's/^/SHA256 (/; s/$/)/'
+    shasum -a 256 "$dmgFile" | sed 's/^/SHA256 (/; s/$/)/'
     echo
     md5 -r "$zipName" | sed 's/^/MD5 (/; s/$/)/'
     echo
