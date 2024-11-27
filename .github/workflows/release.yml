@@ -77,6 +77,37 @@ jobs:
         with:
           name: output-folder-linux
           path: output
+          
+  package_for_macos:
+    name: Package for macOS
+    runs-on: macos-latest
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@91182cccc01eb5e619899d80e4e971d6181294a7 # v2.10.1
+        with:
+          egress-policy: audit
+
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - name: Install JDK
+        uses: actions/setup-java@8df1039502a15bceb9433410b1a100fbe190c53b # v4.5.0
+        with:
+          distribution: 'temurin'
+          java-version: '21'
+      - name: Verify Java Installation
+        run: java -version
+      - name: Install Xvfb
+        run: brew install XQuartz
+      - name: Start Xvfb
+        run: |
+          Xvfb :99 -screen 0 1920x1080x24 &
+          echo "DISPLAY=:99" >> $GITHUB_ENV
+      - name: Compile, Test, and Package with Maven (macOS)
+        run: mvn package -P mac -f pom.xml
+      - name: Upload output folder (macOS)
+        uses: actions/upload-artifact@b4b15b8c7c6ac21ea08fcf65892d2ee8f75cf882 # v4.4.3
+        with:
+          name: output-folder-macos
+          path: output
 
   publish_release:
     permissions:
@@ -103,12 +134,17 @@ jobs:
         with:
           name: output-folder-linux
           path: output
+      - name: Download output folder (MacOS)
+        uses: actions/download-artifact@fa0a91b85d4f404e444e00e005971372dc801d16 # v4.1.8
+        with:
+          name: output-folder-macos
+          path: output
       - name: Create Release
         uses: ncipollo/release-action@2c591bcc8ecdcd2db72b97d6147f871fcd833ba5 # v1.14.0
         with:
           name: SudokuFX release v${{ env.POM_VERSION }}
           tag: v${{ env.POM_VERSION }}
-          body: <br>🔹 The compressed files for Windows (ZIP) and Linux (TAR) do not include the Java Runtime Environment (the latest JRE must be installed on your machine), the .bat file (for Windows) and the .sh file (for Linux) launch the application.<br><br>🔹 Both the MSI and .deb files include the Java Runtime Environment and install the application on your machine.<br><br>🔹 The hash_windows.txt file and the hash_linux.txt file contain the files fingerprints.
+          body: <br>🔹 The compressed files for Windows MacOS (ZIP) and Linux (TAR) do not include the Java Runtime Environment (the latest JRE must be installed on your machine), the .bat file (for Windows) and the .sh file (for Linux) launch the application.<br><br>🔹 Both the MSI .dmg and .deb files include the Java Runtime Environment and install the application on your machine.<br><br>🔹 The hash_windows.txt file, the hash_linux.txt file, and the hash_macos.txt file, contain the files fingerprints.
           artifacts: 'output/*'
       - name: Create Tag
         run: git tag v${{ env.POM_VERSION }}
