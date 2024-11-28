@@ -1,0 +1,7 @@
+<map id="fr.softsf.sudofx2024.utils.os.OsFolderFactoryManagerITest.testOsFolderFactoryWithWindowsFolderFactory" name="fr.softsf.sudofx2024.utils.os.OsFolderFactoryManagerITest.testOsFolderFactoryWithWindowsFolderFactory">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,34,308,89"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1os_1_1OsFolderFactoryManager.html#a75e9b28a167f8b8a5dc25dc08939a216" title="Creates and returns an OS&#45;specific folder factory." alt="" coords="356,5,644,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="308,43,342,39,342,45,309,48"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1os_1_1OsFolderFactoryManager.html#a891aeb2168434d01127b63b19defedcb" title="Sets Windows OS and set current paths for testing purposes." alt="" coords="367,70,633,125"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="309,75,354,79,353,85,308,80"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="fr.softsf.sudofx2024.model.Player" name="fr.softsf.sudofx2024.model.Player">
+<area shape="rect" id="Node000001" title=" " alt="" coords="405,69,604,109"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudofx2024_1_1model_1_1PlayerLanguage.html" title=" " alt="" coords="23,5,222,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="236,42,405,70,404,75,235,47"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudofx2024_1_1model_1_1Background.html" title=" " alt="" coords="23,69,222,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="236,87,405,87,405,92,236,92"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudofx2024_1_1model_1_1Menu.html" title=" " alt="" coords="5,134,240,159"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="228,129,381,107,404,103,405,108,382,112,229,135"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudofx2024.utils.os.OsFolderInitializerUTest.testCreateFolderWhenAlreadyExists" name="fr.softsf.sudofx2024.utils.os.OsFolderInitializerUTest.testCreateFolderWhenAlreadyExists">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,253,60"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1os_1_1OsFolderInitializer.html#a4c412e835bb05ed4fe185f9df504cc46" title="Attempts to create a folder at the specified path and confirms its creation." alt="" coords="301,13,525,53"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="254,30,288,30,288,35,254,35"/>
+</map>
