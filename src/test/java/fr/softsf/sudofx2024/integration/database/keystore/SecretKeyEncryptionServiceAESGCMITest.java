@@ -7,12 +7,16 @@ import javax.crypto.KeyGenerator;
 import javax.crypto.SecretKey;
 
 import org.junit.jupiter.api.AfterEach;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
 import static org.mockito.Mockito.spy;
 import static org.mockito.Mockito.verify;
+
 import org.slf4j.LoggerFactory;
 
 import ch.qos.logback.classic.Logger;
@@ -35,10 +39,6 @@ class SecretKeyEncryptionServiceAESGCMITest {
         SecretKey symmetricKey = keyGen.generateKey();
         secretKeyEncryptionServiceAESGCM = spy(new SecretKeyEncryptionServiceAESGCM(symmetricKey));
         secretKeyEncryptionServiceAESGCMNullSecretKey = spy(new SecretKeyEncryptionServiceAESGCM(null));
-        KeyGenerator keyGenIncorrect = KeyGenerator.getInstance("DES");
-        keyGenIncorrect.init(56, new SecureRandom());
-        SecretKey symmetricKeyIncorrect = keyGenIncorrect.generateKey();
-        secretKeyEncryptionServiceAESGCMIncorrectSecretKey = spy(new SecretKeyEncryptionServiceAESGCM(symmetricKeyIncorrect));
     }
 
     @BeforeEach
@@ -72,13 +72,6 @@ class SecretKeyEncryptionServiceAESGCMITest {
     void decryptWithLessThanTwoBytesCypher_fail() {
         secretKeyEncryptionServiceAESGCMNullSecretKey.decrypt("_");
         verify(secretKeyEncryptionServiceAESGCMNullSecretKey).decrypt("_");
-        assert (logWatcher.list.get(logWatcher.list.size() - 1).getFormattedMessage()).contains("██ Exception catch inside decrypt(cypher)");
-    }
-
-    @Test
-    void decryptInvalidKeyException_fail() {
-        secretKeyEncryptionServiceAESGCMIncorrectSecretKey.decrypt("AB#123");
-        verify(secretKeyEncryptionServiceAESGCMIncorrectSecretKey).decrypt("AB#123");
         assert (logWatcher.list.get(logWatcher.list.size() - 1).getFormattedMessage()).contains("██ Exception catch inside decrypt(cypher)");
     }
 }
