@@ -11,7 +11,7 @@
 [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/Lob2018/SudoFX2024/badge)](https://scorecard.dev/viewer/?uri=github.com/Lob2018/SudoFX2024)
 
 <p align="center">
-  <img alt="SudokuFX2024 in action" src="./.myresources/design%20and%20modeling/images/SudokuFX2024_in_action.jpg">
+  <img alt="SudokuFX2024 in action" src="./.myresources/design_and_modeling/images/SudokuFX2024_in_action.jpg">
 </p>
 
 ## Contents
@@ -134,7 +134,7 @@ application allows you to solve the current Sudoku grid, but also other entries 
       - Run (in order to run the application)
         - Add New Configuration > Maven > Run: clean javafx:run > Apply
         <p>
-          <img alt="Run with Maven for JavaFX" src="./.myresources/design%20and%20modeling/images/Run_with_Maven_for_JavaFX.jpg">
+          <img alt="Run with Maven for JavaFX" src="./.myresources/design_and_modeling/images/Run_with_Maven_for_JavaFX.jpg">
         </p>
                 
         - Open and select SudoMain.java then run **SudokuFX [clean,javafx:run]**
