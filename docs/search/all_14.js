@@ -1,0 +1,10 @@
+var searchData=
+[
+  ['updatedat_0',['updatedat',['../classfr_1_1softsf_1_1sudofx2024_1_1model_1_1Game.html#a8fbbf63d301ecc6b9508ec7ba597d386',1,'fr.softsf.sudofx2024.model.Game.updatedat'],['../classfr_1_1softsf_1_1sudofx2024_1_1model_1_1Player.html#a08b1af04238099650069c92454653fc4',1,'fr.softsf.sudofx2024.model.Player.updatedat'],['../classfr_1_1softsf_1_1sudofx2024_1_1model_1_1Software.html#aabba5a8715104a2519780a180bdc4dda',1,'fr.softsf.sudofx2024.model.Software.updatedat']]],
+  ['updatefontsize_1',['updateFontSize',['../classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1DynamicFontSize.html#a1bc835c3deae920bc386895199a86338',1,'fr::softsf::sudofx2024::utils::DynamicFontSize']]],
+  ['updatesoftware_2',['updatesoftware',['../classfr_1_1softsf_1_1sudofx2024_1_1service_1_1SoftwareService.html#af3b46a9cd51e0734ee7e641f53fde8f0',1,'fr.softsf.sudofx2024.service.SoftwareService.updateSoftware()'],['../classfr_1_1softsf_1_1sudofx2024_1_1viewmodel_1_1FullMenuViewModel.html#af9cf300bfaf8c2d060f9edf70f93a3d0',1,'fr.softsf.sudofx2024.viewmodel.FullMenuViewModel.updateSoftware()']]],
+  ['user_5fhome_3',['USER_HOME',['../enumfr_1_1softsf_1_1sudofx2024_1_1utils_1_1MyEnums_1_1Paths.html#a76f6747516d6b0b9e01d3533e90bcd95',1,'fr::softsf::sudofx2024::utils::MyEnums::Paths']]],
+  ['userinit_4',['userInit',['../classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1database_1_1keystore_1_1ApplicationKeystoreITest.html#aaf7d2ff8a3ea728743db1168a8c50997',1,'fr::softsf::sudofx2024::utils::database::keystore::ApplicationKeystoreITest']]],
+  ['username_5',['username',['../classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1database_1_1keystore_1_1ApplicationKeystore.html#a42f74ae30b216ad38a42b8622561c3a6',1,'fr::softsf::sudofx2024::utils::database::keystore::ApplicationKeystore']]],
+  ['username_5falias_6',['USERNAME_ALIAS',['../classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1database_1_1keystore_1_1ApplicationKeystore.html#ade6e8cad6a4fde35c4033a7ffc30459e',1,'fr::softsf::sudofx2024::utils::database::keystore::ApplicationKeystore']]]
+];

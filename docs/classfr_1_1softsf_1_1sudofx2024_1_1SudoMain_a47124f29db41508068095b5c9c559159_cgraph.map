@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudofx2024.SudoMain.getPauseTransition" name="fr.softsf.sudofx2024.SudoMain.getPauseTransition">
+<area shape="rect" id="Node000001" title="Creates a PauseTransition to delay loading of the next view." alt="" coords="5,13,192,53"/>
+<area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudofx2024_1_1SudoMain_1_1IPrimaryStageView.html#af9db2de476fffbb2feb7dbd83ecab967" title=" " alt="" coords="240,5,477,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="192,30,226,30,226,35,192,35"/>
+</map>
