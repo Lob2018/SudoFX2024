@@ -25,7 +25,7 @@ import static fr.softsf.sudofx2024.utils.ExceptionTools.getSQLInvalidAuthorizati
 import static fr.softsf.sudofx2024.utils.MyEnums.LogBackTxt.SQL_INVALID_AUTHORIZATION_SPEC_EXCEPTION;
 
 /**
- * 🔹 Main application class for the Sudoku game. This class initializes the
+ * The application main class. This class initializes the
  * application, manages the splash screen, and handles the transition to the
  * main application view.
  */
