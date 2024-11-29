@@ -1,5 +1,5 @@
 <map id="fr.softsf.sudofx2024.SudoMain" name="fr.softsf.sudofx2024.SudoMain">
-<area shape="rect" id="Node000001" title="Main application class for the Sudoku game." alt="" coords="369,63,588,88"/>
+<area shape="rect" id="Node000001" title="The application main class." alt="" coords="369,63,588,88"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="51,5,146,31"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,24,394,60,393,65,159,30"/>
 <area shape="rect" id="Node000003" href="$interfacefr_1_1softsf_1_1sudofx2024_1_1SudoMain_1_1ISplashScreenView.html" title="Interface for the splash screen view." alt="" coords="5,55,192,95"/>
