@@ -1,5 +1,0 @@
-<map id="fr.softsf.sudofx2024.view.components.ToasterVBox.setAccessibility" name="fr.softsf.sudofx2024.view.components.ToasterVBox.setAccessibility">
-<area shape="rect" id="Node000001" title="Sets the accessibility text for the toast based on its level." alt="" coords="5,5,277,45"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudofx2024_1_1view_1_1components_1_1ToasterVBox.html#ab49d8033825c5980dd1459e0d6e1cc0e" title="Retrieves the information text corresponding to the specified toast level." alt="" coords="325,5,597,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="278,23,311,23,311,28,278,28"/>
-</map>

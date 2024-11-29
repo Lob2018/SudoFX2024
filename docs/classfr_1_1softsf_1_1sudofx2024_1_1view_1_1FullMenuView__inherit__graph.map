@@ -1,5 +1,0 @@
-<map id="fr.softsf.sudofx2024.view.FullMenuView" name="fr.softsf.sudofx2024.view.FullMenuView">
-<area shape="rect" id="Node000001" title="View class for the full menu screen of the Sudoku application." alt="" coords="5,93,193,133"/>
-<area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudofx2024_1_1SudoMain_1_1IPrimaryStageView.html" title="Interface for the primary stage view." alt="" coords="6,5,193,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="102,59,102,93,97,93,97,59"/>
-</map>

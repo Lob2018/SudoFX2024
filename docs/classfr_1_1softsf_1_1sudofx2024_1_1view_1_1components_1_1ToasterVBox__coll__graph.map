@@ -1,5 +1,0 @@
-<map id="fr.softsf.sudofx2024.view.components.ToasterVBox" name="fr.softsf.sudofx2024.view.components.ToasterVBox">
-<area shape="rect" id="Node000001" title="A custom VBox component for displaying toast notifications." alt="" coords="5,79,277,119"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="113,5,169,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,44,144,79,139,79,139,44"/>
-</map>

@@ -141,7 +141,11 @@ application allows you to solve the current Sudoku grid, but also other entries 
         - Open and select SudoMain.java then run **SudokuFX [clean,javafx:run]**
       - Run with details (optional)
         - Add New Configuration > Maven > Run: clean -X javafx:run -Dprism.verbose=true -f pom.xml > Apply
-        - Open and select SudoMain.java then run **SudokuFX [run details]**  
+        - Open and select SudoMain.java then run **SudokuFX [run details]** 
+      - Run that generate documentation with Doxygen 
+        - Install Doxygen and GraphViz (Doxygen must be added to the system PATH).
+        - Add New Configuration > Maven > Run: clean -X javafx:run prepare-package -P generate-docs -f pom.xml > Apply
+        - Run **SudokuFX [prepare-package]**
 - Available Maven commands:
 
 >     #Run

@@ -252,7 +252,35 @@
         </plugins>
     </build>
     <profiles>
-        <!-- Exec plugin for running external scripts for RELEASES, suitable for Windows, Linux, macOS operating systems -->
+        <!-- Exec plugin to generate Doxygen documentation for id:generate-docs -->
+        <profile>
+            <id>generate-docs</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>exec-maven-plugin</artifactId>
+                        <version>${exec.version}</version>
+                        <executions>
+                            <execution>
+                                <id>generate-doxygen-docs</id>
+                                <phase>prepare-package</phase>
+                                <goals>
+                                    <goal>exec</goal>
+                                </goals>
+                                <configuration>
+                                    <executable>doxygen</executable>
+                                    <arguments>
+                                        <argument>Doxyfile</argument>
+                                    </arguments>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <!-- Exec plugin for running external scripts for RELEASES, suitable for id:windows, id:linux, id:mac operating systems -->
         <profile>
             <id>windows</id>
             <activation>
