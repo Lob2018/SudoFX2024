@@ -78,10 +78,6 @@ application allows you to solve the current Sudoku grid, but also other entries 
 
 ## Project
 
-![Windows Dev](https://img.shields.io/badge/Windows_Dev-Compatible-brightgreen)
-![Linux Dev](https://img.shields.io/badge/Linux_Dev-Compatible-brightgreen)
-![MacOS Dev](https://img.shields.io/badge/MacOS_Dev-Compatible-brightgreen)
-
 ### Roadmap
 
 - [The project roadmap](https://github.com/users/Lob2018/projects/4)
@@ -172,7 +168,7 @@ application allows you to solve the current Sudoku grid, but also other entries 
 
     [Download, unzip, and keep all the files together (SudokuFX-v.v.v.bat to launch), from the latest Windows version of the file SudokuFX-v.v.v_windows.zip, available in Assets.](https://github.com/Lob2018/SudoFX2024/releases/latest)
 
-  - Application with Java Runtime Environment included
+  - Application with Java Runtime Environment included (latest distribution with x64 architecture)
 
     [Download and install the latest Windows version of the file SudokuFX_JVM-v.v.v.msi, available in Assets.](https://github.com/Lob2018/SudoFX2024/releases/latest)
 
@@ -181,23 +177,23 @@ during installation; to continue the installation click on **additional informat
 
   <sub>[This other software may be useful to you to check the integrity of the downloaded file (see the version fingerprints).](https://www.clubic.com/telecharger-fiche56914-hashtab.html)</sub>
 
-- Linux Debian-based distribution, with amd64 architecture
+- Linux
   - Application without Java Runtime Environment included ([the latest JRE must be installed on your machine](https://adoptium.net))
 
     [Download, untar, and keep all the files together (SudokuFX-v.v.v.sh to launch), from the latest Linux version of the file SudokuFX-v.v.v_linux.tar.gz, available in Assets.](https://github.com/Lob2018/SudoFX2024/releases/latest)
 
-  - Application with Java Runtime Environment included
+  - Application with Java Runtime Environment included (Debian-based distribution with AMD64 architecture)
 
     [Download and install the latest Linux version of the file sudokufx-jvm_v.v.v_amd64.deb, available in Assets.](https://github.com/Lob2018/SudoFX2024/releases/latest)
 
 >     sudo apt install ./sudokufx-jvm_v.v.v_amd64.deb
 
-- MacOS latest distribution, with ARM64 architecture
+- MacOS
     - Application without Java Runtime Environment included ([the latest JRE must be installed on your machine](https://adoptium.net))
 
       [Download, unzip, and keep all the files together (SudokuFX-v.v.v.sh to launch), from the latest MacOS version of the file SudokuFX-v.v.v_macos.zip, available in Assets.](https://github.com/Lob2018/SudoFX2024/releases/latest)
 
-    - Application with Java Runtime Environment included
+    - Application with Java Runtime Environment included (latest distribution with ARM64 architecture)
 
       [Download and install the latest MacOS version of the file SudokuFX-JVM-1.0.0.dmg, available in Assets.](https://github.com/Lob2018/SudoFX2024/releases/latest)
 
