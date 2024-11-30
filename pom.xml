@@ -327,7 +327,7 @@
             <id>linux</id>
             <activation>
                 <os>
-                    <family>unix</family>
+                    <family>Linux</family>
                 </os>
             </activation>
             <build>
