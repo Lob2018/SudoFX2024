@@ -51,7 +51,7 @@ cp ../LICENSE.txt ./input
 
 echo "# OUTPUT   : CREATING THE APP FROM TARGET/INPUT..."
 cd ..
-jpackage --input ./target/input --dest "$6" --name "$appNameWithTheJVM" --type dmg --main-jar "$jarName" --main-class org.springframework.boot.loader.launch.JarLauncher --mac-package-name "$1" --mac-package-identifier "$7" --vendor "$3" --copyright "Copyright © $year $3" --icon src/main/resources/fr/softsf/sudofx2024/images/SudokuFX-JVM.icns --app-version "$2" --description "$1 $year" --verbose
+jpackage --input ./target/input --dest "$6" --name "$appNameWithTheJVM" --type dmg --main-jar "$jarName" --main-class org.springframework.boot.loader.launch.JarLauncher --mac-package-name "$1" --mac-package-identifier "$7" --java-options "-Xmx2048m -Dapp.name=$1 -Dapp.version=$2" --vendor "$3" --copyright "Copyright © $year $3" --icon src/main/resources/fr/softsf/sudofx2024/images/SudokuFX-JVM.icns --app-version "$2" --description "$1 $year" --verbose
 
 echo "# TARGET   : THE SHELL SCRIPT TO LAUNCH THE UBERJAR"
 cd ./target
