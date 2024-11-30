@@ -181,7 +181,7 @@ during installation; to continue the installation click on **additional informat
 
   <sub>[This other software may be useful to you to check the integrity of the downloaded file (see the version fingerprints).](https://www.clubic.com/telecharger-fiche56914-hashtab.html)</sub>
 
-- Linux (Debian-based distribution, amd64 architecture)
+- Linux Debian-based distribution, with amd64 architecture
   - Application without Java Runtime Environment included ([the latest JRE must be installed on your machine](https://adoptium.net))
 
     [Download, untar, and keep all the files together (SudokuFX-v.v.v.sh to launch), from the latest Linux version of the file SudokuFX-v.v.v_linux.tar.gz, available in Assets.](https://github.com/Lob2018/SudoFX2024/releases/latest)
@@ -192,7 +192,7 @@ during installation; to continue the installation click on **additional informat
 
 >     sudo apt install ./sudokufx-jvm_v.v.v_amd64.deb
 
-- MacOS (latest distribution, arm64 architecture)
+- MacOS latest distribution, with ARM64 architecture
     - Application without Java Runtime Environment included ([the latest JRE must be installed on your machine](https://adoptium.net))
 
       [Download, unzip, and keep all the files together (SudokuFX-v.v.v.sh to launch), from the latest MacOS version of the file SudokuFX-v.v.v_macos.zip, available in Assets.](https://github.com/Lob2018/SudoFX2024/releases/latest)
