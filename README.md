@@ -6,7 +6,7 @@
 ![Open Pull Requests](https://img.shields.io/github/issues-pr/lob2018/SudoFX2024)<br>
 ![Windows](https://img.shields.io/badge/Windows-Compatible-brightgreen)
 ![Linux](https://img.shields.io/badge/Linux-Compatible-brightgreen)
-![MacOS](https://img.shields.io/badge/MacOS-Incompatible-red)<br>
+![MacOS](https://img.shields.io/badge/MacOS-Compatible-brightgreen)<br>
 ![CodeQL Analysis](https://github.com/lob2018/SudoFX2024/actions/workflows/codeql.yml/badge.svg)
 [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/Lob2018/SudoFX2024/badge)](https://scorecard.dev/viewer/?uri=github.com/Lob2018/SudoFX2024)
 [![Known Vulnerabilities](https://snyk.io/test/github/Lob2018/SudoFX2024/badge.svg)](https://snyk.io/test/github/Lob2018/SudoFX2024)
@@ -80,7 +80,7 @@ application allows you to solve the current Sudoku grid, but also other entries 
 
 ![Windows Dev](https://img.shields.io/badge/Windows_Dev-Compatible-brightgreen)
 ![Linux Dev](https://img.shields.io/badge/Linux_Dev-Compatible-brightgreen)
-![MacOS Dev](https://img.shields.io/badge/MacOS_Dev-Incompatible-red)
+![MacOS Dev](https://img.shields.io/badge/MacOS_Dev-Compatible-brightgreen)
 
 ### Roadmap
 
@@ -165,7 +165,7 @@ application allows you to solve the current Sudoku grid, but also other entries 
 
 ![Windows](https://img.shields.io/badge/Windows-Compatible-brightgreen)
 ![Linux](https://img.shields.io/badge/Linux-Compatible-brightgreen)
-![macOS](https://img.shields.io/badge/macOS-Incompatible-red)
+![MacOS](https://img.shields.io/badge/MacOS-Compatible-brightgreen)
 
 - Windows
   - Application without Java Runtime Environment included ([the latest JRE must be installed on your machine](https://adoptium.net))
@@ -192,6 +192,15 @@ during installation; to continue the installation click on **additional informat
 
 >     sudo apt install ./sudokufx-jvm_v.v.v_amd64.deb
 
+- MacOS (latest distribution, arm64 architecture)
+    - Application without Java Runtime Environment included ([the latest JRE must be installed on your machine](https://adoptium.net))
+
+      [Download, unzip, and keep all the files together (SudokuFX-v.v.v.sh to launch), from the latest MacOS version of the file SudokuFX-v.v.v_macos.zip, available in Assets.](https://github.com/Lob2018/SudoFX2024/releases/latest)
+
+    - Application with Java Runtime Environment included
+
+      [Download and install the latest MacOS version of the file SudokuFX-JVM-1.0.0.dmg, available in Assets.](https://github.com/Lob2018/SudoFX2024/releases/latest)
+
 ## Use
 
 ## Examples
@@ -210,6 +219,12 @@ during installation; to continue the installation click on **additional informat
   - Application with Java Runtime Environment included (from .deb file)
     - [Follow the installation instructions](#installation)
 
+- MacOS
+    - Application without Java Runtime Environment included (ZIP file with the .sh file and the JAR)
+        - [Delete your old unzipped folder from SudokuFX-v.v.v_macos.zip, and follow the installation instructions](#installation)
+    - Application with Java Runtime Environment included (from .dmg file)
+        - [Follow the installation instructions](#installation)
+
 ## Uninstallation
 
 - Windows
@@ -227,6 +242,12 @@ during installation; to continue the installation click on **additional informat
   - Application with Java Runtime Environment included (from .deb file)
 
 >     sudo apt purge sudokufx-jvm
+
+- MacOS
+  - Application without Java Runtime Environment included (ZIP file with the .sh file and the JAR)
+    - **Delete your unzipped folder from SudokuFX-v.v.v_macos.zip**
+  - Application with Java Runtime Environment included (from .dmg file)
+    - Drag the application to the Trash
 
 > [!IMPORTANT]
 >- Windows
