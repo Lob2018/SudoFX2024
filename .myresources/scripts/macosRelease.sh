@@ -31,6 +31,7 @@ echo "# Organization's name  : $3"
 echo "# Main's path          : $4"
 echo "# JRE version          : $5"
 echo "# Deployment folder    : $6"
+echo "# MacOS package ID     : $7"
 
 jarName="$1-$2.jar"
 year=$(date +%Y)
@@ -50,7 +51,7 @@ cp ../LICENSE.txt ./input
 
 echo "# OUTPUT   : CREATING THE APP FROM TARGET/INPUT..."
 cd ..
-jpackage --input ./target/input --dest "$6" --name "$appNameWithTheJVM" --type dmg --main-jar "$jarName" --main-class org.springframework.boot.loader.launch.JarLauncher --mac-package-name "$1" --vendor "$3" --copyright "Copyright © $year $3" --icon src/main/resources/fr/softsf/sudofx2024/images/SudokuFX-JVM.icns --app-version "$2" --description "$1 $year" --verbose
+jpackage --input ./target/input --dest "$6" --name "$appNameWithTheJVM" --type dmg --main-jar "$jarName" --main-class org.springframework.boot.loader.launch.JarLauncher --mac-package-name "$1" --mac-package-identifier "$7" --vendor "$3" --copyright "Copyright © $year $3" --icon src/main/resources/fr/softsf/sudofx2024/images/SudokuFX-JVM.icns --app-version "$2" --description "$1 $year" --verbose
 
 echo "# TARGET   : THE SHELL SCRIPT TO LAUNCH THE UBERJAR"
 cd ./target

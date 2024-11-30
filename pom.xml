@@ -30,6 +30,7 @@
     </developers>
     <!-- Project properties -->
     <properties>
+        <macos-package-id>fr.soft64.sudokufx</macos-package-id>
         <deployment-folder>output</deployment-folder>
         <exec.version>3.5.0</exec.version>
         <flyway.version>10.21.0</flyway.version>
@@ -394,6 +395,7 @@
                                         <argument>${start-class}</argument>
                                         <argument>${javafx.version}</argument>
                                         <argument>${deployment-folder}</argument>
+                                        <argument>${macos-package-id}</argument>
                                     </arguments>
                                 </configuration>
                             </execution>
