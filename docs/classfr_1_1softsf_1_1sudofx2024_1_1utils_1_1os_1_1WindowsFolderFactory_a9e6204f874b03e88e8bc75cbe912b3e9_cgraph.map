@@ -1,0 +1,7 @@
+<map id="fr.softsf.sudofx2024.utils.os.WindowsFolderFactory.WindowsFolderFactory" name="fr.softsf.sudofx2024.utils.os.WindowsFolderFactory.WindowsFolderFactory">
+<area shape="rect" id="Node000001" title="Constructor that initializes the data and logs folder paths." alt="" coords="5,5,275,60"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1os_1_1OsFolderInitializer.html#a6b37f8f1f300e4d7b6c6a5cb403fa872" title="Creates folders for data and logs." alt="" coords="323,13,569,53"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="275,30,309,30,309,35,275,35"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1os_1_1OsFolderInitializer.html#a4c412e835bb05ed4fe185f9df504cc46" title="Attempts to create a folder at the specified path and confirms its creation." alt="" coords="617,13,841,53"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="570,30,604,30,604,35,570,35"/>
+</map>

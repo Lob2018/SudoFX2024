@@ -1,0 +1,9 @@
+<map id="fr.softsf.sudofx2024.utils.os.OsFolderFactoryManager.IOsFolderFactory" name="fr.softsf.sudofx2024.utils.os.OsFolderFactoryManager.IOsFolderFactory">
+<area shape="rect" id="Node000001" title="Interface defining methods for accessing OS&#45;specific folder paths." alt="" coords="5,62,252,117"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1os_1_1LinuxFolderFactory.html" title="Factory class for creating and managing LINUX OS&#45;specific folders for the SudoFX application." alt="" coords="300,5,505,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="259,56,316,43,317,48,260,61"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1os_1_1MacosFolderFactory.html" title="Factory class for creating and managing MACOS OS&#45;specific folders for the SudoFX application." alt="" coords="300,69,505,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="266,87,300,87,300,92,266,92"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1os_1_1WindowsFolderFactory.html" title="Factory class for creating and managing WINDOWS OS&#45;specific folders for the SudoFX application." alt="" coords="300,133,505,173"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="260,117,317,131,316,136,259,122"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudofx2024.utils.DynamicFontSize.DynamicFontSize" name="fr.softsf.sudofx2024.utils.DynamicFontSize.DynamicFontSize">
+<area shape="rect" id="Node000001" title="Constructs a DynamicFontSize instance and initializes Scene listeners." alt="" coords="5,5,257,45"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1DynamicFontSize.html#a1bc835c3deae920bc386895199a86338" title="Updates the font size based on the current Scene dimensions." alt="" coords="305,5,544,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="258,23,291,23,291,28,258,28"/>
+</map>
