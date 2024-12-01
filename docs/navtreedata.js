@@ -26,7 +26,7 @@ var NAVTREE =
 [
   [ "SudokuFX2024", "index.html", [
     [ "Namespaces", "namespaces.html", [
-      [ "Namespace List", "namespaces.html", null ],
+      [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", null ],
         [ "Functions", "namespacemembers_func.html", null ]
@@ -50,9 +50,12 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"ApplicationKeystoreITest_8java.html",
-"classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1JVMApplicationProperties.html#a1a4f70ae6704fde87a90f7d398ed1133",
-"dir_0a947f10668a8aec44901ec0a5fce180.html"
+"_application_keystore_8java.html",
+"classfr_1_1softsf_1_1sudofx2024_1_1model_1_1_player.html#ad11245f4c1053b347c90a89ac7f015f3",
+"classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1_my_regex.html#ac02c5988417e98d2141ea6c1509c7f50",
+"classfr_1_1softsf_1_1sudofx2024_1_1view_1_1_crash_screen_view.html#a8a0159ef20a23ad634a107c5bb494b19",
+"enumfr_1_1softsf_1_1sudofx2024_1_1utils_1_1_my_enums_1_1_paths.html#a4c9927dc31562a34897f85d3e5353e8b",
+"namespacefr_1_1softsf_1_1sudofx2024_1_1integration_1_1database_1_1keystore.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

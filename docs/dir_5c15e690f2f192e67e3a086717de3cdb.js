@@ -9,6 +9,6 @@ var dir_5c15e690f2f192e67e3a086717de3cdb =
     [ "utils", "dir_3f7430799e87a990ddece8ec808f2c86.html", "dir_3f7430799e87a990ddece8ec808f2c86" ],
     [ "view", "dir_65d34779519f2355f2f0d727287158a4.html", "dir_65d34779519f2355f2f0d727287158a4" ],
     [ "viewmodel", "dir_367e7a96bcc3e70d031f056fc9ce2673.html", "dir_367e7a96bcc3e70d031f056fc9ce2673" ],
-    [ "Launcher.java", "Launcher_8java.html", "Launcher_8java" ],
-    [ "SudoMain.java", "SudoMain_8java.html", "SudoMain_8java" ]
+    [ "Launcher.java", "_launcher_8java.html", "_launcher_8java" ],
+    [ "SudoMain.java", "_sudo_main_8java.html", "_sudo_main_8java" ]
 ];

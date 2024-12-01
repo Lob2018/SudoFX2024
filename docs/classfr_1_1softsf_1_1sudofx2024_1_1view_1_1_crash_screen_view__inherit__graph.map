@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudofx2024.view.CrashScreenView" name="fr.softsf.sudofx2024.view.CrashScreenView">
+<area shape="rect" id="Node000001" title="View class for the crash screen without business logic." alt="" coords="5,96,177,139"/>
+<area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudofx2024_1_1_sudo_main_1_1_i_primary_stage_view.html" title="Interface for the primary stage view." alt="" coords="5,5,177,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,64,94,96,88,96,88,64"/>
+</map>

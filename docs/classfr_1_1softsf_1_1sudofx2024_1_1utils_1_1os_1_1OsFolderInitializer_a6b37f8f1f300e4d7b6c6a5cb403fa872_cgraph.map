@@ -1,5 +1,0 @@
-<map id="fr.softsf.sudofx2024.utils.os.OsFolderInitializer.initializeFolders" name="fr.softsf.sudofx2024.utils.os.OsFolderInitializer.initializeFolders">
-<area shape="rect" id="Node000001" title="Creates folders for data and logs." alt="" coords="5,5,252,45"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1os_1_1OsFolderInitializer.html#a4c412e835bb05ed4fe185f9df504cc46" title="Attempts to create a folder at the specified path and confirms its creation." alt="" coords="300,5,524,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="252,23,286,23,286,28,252,28"/>
-</map>

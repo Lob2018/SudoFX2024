@@ -1,0 +1,7 @@
+<map id="fr.softsf.sudofx2024.unit.utils.I18nUTest.testChange_english_language_to_french" name="fr.softsf.sudofx2024.unit.utils.I18nUTest.testChange_english_language_to_french">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,206,89"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1_i18n.html#ae6e5beaf9c6e573f50f4eb244e099942" title="Retrieves the localized string value for a given key." alt="" coords="254,5,423,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="206,43,238,38,239,44,206,48"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1_i18n.html#a4dc8c199c1b1b8767afe04ac6396ddd9" title="Sets the current language for the application." alt="" coords="254,72,423,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="206,72,239,76,238,82,206,77"/>
+</map>

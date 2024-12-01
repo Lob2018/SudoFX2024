@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudofx2024.view.SplashScreenView.getLoadingOrOptimizingMessage" name="fr.softsf.sudofx2024.view.SplashScreenView.getLoadingOrOptimizingMessage">
+<area shape="rect" id="Node000001" title="Retrieves a message indicating the current loading or optimizing state." alt="" coords="5,5,279,64"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1_i18n.html#ae6e5beaf9c6e573f50f4eb244e099942" title="Retrieves the localized string value for a given key." alt="" coords="327,13,496,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="279,32,311,32,311,37,279,37"/>
+</map>

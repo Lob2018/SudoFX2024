@@ -1,0 +1,11 @@
+<map id="fr.softsf.sudofx2024.view.FullMenuView.openingMainStage" name="fr.softsf.sudofx2024.view.FullMenuView.openingMainStage">
+<area shape="rect" id="Node000001" title="Opens the main stage and handles the transition from splash screen to full menu." alt="" coords="5,105,219,148"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudofx2024_1_1view_1_1_full_menu_view.html#a54c9fa2f80d9e90ad2b5f617834904ad" title="Configures the primary stage for the full menu view." alt="" coords="289,5,530,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,103,208,79,266,57,290,50,291,55,268,63,210,84,159,107"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudofx2024_1_1view_1_1_full_menu_view.html#aac7199e762729a483f0b031a3baebc78" title="Applies a fade&#45;in effect to the given node." alt="" coords="314,72,506,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="219,112,298,103,299,108,219,117"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudofx2024_1_1view_1_1_full_menu_view.html#a66e9003bac689360d53d9a052e59285d" title="Maximizes the primary stage to fill the primary screen." alt="" coords="267,139,553,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="219,136,252,140,251,145,219,141"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudofx2024_1_1view_1_1_full_menu_view.html#ab5ff7e8f782048e410a01a3e4bd08aa0" title="Shows the primary stage." alt="" coords="301,205,519,248"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="159,146,210,169,268,191,291,198,290,203,266,196,208,174,156,151"/>
+</map>

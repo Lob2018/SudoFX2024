@@ -1,0 +1,21 @@
+<map id="fr.softsf.sudofx2024.view.SplashScreenView" name="fr.softsf.sudofx2024.view.SplashScreenView">
+<area shape="rect" id="Node000001" title="View class for the splash screen of the Sudoku application." alt="" coords="481,308,652,351"/>
+<area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudofx2024_1_1_sudo_main_1_1_i_splash_screen_view.html" title="Interface for the splash screen view." alt="" coords="5,13,177,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="192,10,256,4,326,5,361,11,395,20,428,33,458,51,488,78,511,110,529,145,543,182,560,253,567,307,561,308,555,254,538,184,525,148,507,113,484,81,455,55,426,38,394,25,360,16,325,11,256,9,192,15"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="64,80,118,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="132,82,199,73,284,71,329,76,374,84,418,99,458,120,482,139,502,162,532,214,552,266,563,307,558,308,547,267,527,216,497,165,478,143,455,125,416,104,373,90,329,81,284,77,200,79,133,88"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="64,175,118,201"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="134,185,305,191,395,200,431,207,458,216,488,235,515,259,553,306,549,309,511,263,485,239,456,221,429,212,394,205,305,196,134,191"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="60,267,122,293"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="138,280,281,291,457,309,481,313,480,318,456,315,280,297,138,286"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="65,317,117,344"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="132,328,480,327,480,332,132,333"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="65,423,117,449"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="133,439,197,444,279,445,369,436,413,427,456,414,482,401,506,384,544,349,548,353,509,388,484,405,458,418,414,432,369,442,279,450,197,450,133,444"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="63,473,119,500"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="134,493,199,502,282,505,326,502,371,496,415,484,455,467,489,443,517,411,538,378,553,350,558,352,543,381,521,414,493,447,458,472,416,489,372,501,327,508,282,510,199,507,133,498"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="43,524,139,551"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="155,541,233,546,321,548,401,543,433,536,455,527,478,510,497,489,527,440,547,391,558,350,563,352,552,392,532,443,501,492,481,514,458,532,434,541,402,548,321,553,233,551,154,546"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="62,575,120,601"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="136,597,203,609,287,614,331,612,375,604,417,591,455,570,481,548,502,521,520,491,533,460,552,399,560,351,565,352,557,400,538,462,525,494,507,524,485,551,458,574,419,596,376,609,331,617,287,620,202,614,135,602"/>
+</map>

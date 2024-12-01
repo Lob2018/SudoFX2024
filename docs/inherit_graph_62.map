@@ -1,5 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" title=" " alt="" coords="5,13,88,38"/>
-<area shape="rect" id="Node000001" href="$classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1database_1_1keystore_1_1ApplicationKeystore.html" title="Manages the application&#39;s keystore for secure storage of keys and database credentials." alt="" coords="136,5,447,45"/>
-<area shape="poly" id="edge10_Node000000_Node000001" title=" " alt="" coords="102,23,136,23,136,28,102,28"/>
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,13,59,40"/>
+<area shape="rect" id="Node000001" href="$classfr_1_1softsf_1_1sudofx2024_1_1view_1_1components_1_1_toaster_v_box.html" title="A custom VBox component for displaying toast notifications." alt="" coords="107,5,353,48"/>
+<area shape="poly" id="edge19_Node000000_Node000001" title=" " alt="" coords="74,24,106,24,106,29,74,29"/>
 </map>

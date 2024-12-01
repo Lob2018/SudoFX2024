@@ -1,5 +1,0 @@
-<map id="fr.softsf.sudofx2024.utils.database.DatabaseMigration.configure" name="fr.softsf.sudofx2024.utils.database.DatabaseMigration.configure">
-<area shape="rect" id="Node000001" title="Configures and executes Flyway migration." alt="" coords="5,5,256,45"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1database_1_1DatabaseMigration.html#a5708e0fbea10dc71b0f8ca82921b8bcc" title="Formats and logs Flyway migration information." alt="" coords="304,5,593,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="256,23,290,23,290,28,256,28"/>
-</map>

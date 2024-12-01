@@ -1,11 +1,11 @@
 var dir_01eb42c67dafc965cd2cef504e8f0344 =
 [
-    [ "BackgroundDto.java", "BackgroundDto_8java.html", "BackgroundDto_8java" ],
-    [ "GameDto.java", "GameDto_8java.html", "GameDto_8java" ],
-    [ "GameLevelDto.java", "GameLevelDto_8java.html", "GameLevelDto_8java" ],
-    [ "GridDto.java", "GridDto_8java.html", "GridDto_8java" ],
-    [ "MenuDto.java", "MenuDto_8java.html", "MenuDto_8java" ],
-    [ "PlayerDto.java", "PlayerDto_8java.html", "PlayerDto_8java" ],
-    [ "PlayerLanguageDto.java", "PlayerLanguageDto_8java.html", "PlayerLanguageDto_8java" ],
-    [ "SoftwareDto.java", "SoftwareDto_8java.html", "SoftwareDto_8java" ]
+    [ "BackgroundDto.java", "_background_dto_8java.html", "_background_dto_8java" ],
+    [ "GameDto.java", "_game_dto_8java.html", "_game_dto_8java" ],
+    [ "GameLevelDto.java", "_game_level_dto_8java.html", "_game_level_dto_8java" ],
+    [ "GridDto.java", "_grid_dto_8java.html", "_grid_dto_8java" ],
+    [ "MenuDto.java", "_menu_dto_8java.html", "_menu_dto_8java" ],
+    [ "PlayerDto.java", "_player_dto_8java.html", "_player_dto_8java" ],
+    [ "PlayerLanguageDto.java", "_player_language_dto_8java.html", "_player_language_dto_8java" ],
+    [ "SoftwareDto.java", "_software_dto_8java.html", "_software_dto_8java" ]
 ];
