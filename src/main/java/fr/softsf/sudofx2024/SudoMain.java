@@ -7,6 +7,7 @@ import fr.softsf.sudofx2024.view.SplashScreenView;
 import javafx.animation.PauseTransition;
 import javafx.application.Application;
 import javafx.application.Platform;
+import javafx.concurrent.Task;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -77,33 +78,69 @@ public class SudoMain extends Application {
     }
 
     /**
-     * Starts the application, initializes the splash screen, and begins loading
-     * the main application.
+     * Initializes the application by setting up the splash screen and loading
+     * the main application context.
+     * <p>
+     * This method performs the following:
+     * 1. Initializes the splash screen view with the provided stage.
+     * 2. Sets up the main scene for the splash screen.
+     * 3. Creates and starts a background task to initialize the Spring context,
+     * ensuring the JavaFX application thread remains unblocked.
+     * 4. Sets a handler to manage actions upon successful completion of the initialization.
      *
-     * @param splashScreenStage The primary stage for the application
+     * @param splashScreenStage The primary stage for displaying the splash screen.
      */
     @Override
     public void start(final Stage splashScreenStage) {
         try {
             isplashScreenView = new SplashScreenView(splashScreenStage);
             initScene(splashScreenStage);
-            PauseTransition waitSplashScreenRendering = new PauseTransition(Duration.millis(1));
-            waitSplashScreenRendering.setOnFinished(e -> Platform.runLater(() -> {
+            Task<Void> springContextTask = createSpringContextTask();
+            new Thread(springContextTask).start();
+            long startTime = System.currentTimeMillis();
+            springContextTask.setOnSucceeded(event -> handleSpringContextTaskSuccess(startTime));
+        } catch (Exception ex) {
+            log.error("██ Exception catch inside start() : {}", ex.getMessage(), ex);
+            throw new RuntimeException(ex);
+        }
+    }
+
+    /**
+     * Creates a new Task that initializes the Spring context.
+     * This task is intended to be run in a background thread to avoid blocking the JavaFX application thread.
+     *
+     * @return A Task<Void> that performs the Spring context initialization.
+     */
+    private Task<Void> createSpringContextTask() {
+        return new Task<Void>() {
+            @Override
+            protected Void call() {
                 try {
-                    long startTime = System.currentTimeMillis();
                     context.init(() -> SpringApplication.run(SudoMain.class));
-                    initializeFxmlService();
-                    long minimumTimelapse = Math.max(0, 1000 - (System.currentTimeMillis() - startTime));
-                    getPauseTransition("fullmenu-view", minimumTimelapse).play();
                 } catch (Exception ex) {
-                    initializeFxmlService();
-                    errorInLoadingThread(ex);
+                    log.error("██ Exception caught during Spring Context initialization: {}", ex.getMessage(), ex);
+                    throw new RuntimeException(ex);
                 }
-            }));
-            waitSplashScreenRendering.play();
-        } catch (Exception e) {
-            log.error("██ Exception catch inside start() : {}", e.getMessage(), e);
-            throw new RuntimeException(e);
+                return null;
+            }
+        };
+    }
+
+    /**
+     * Handles the success of the Spring context initialization task.
+     * This method is called when the initialization task completes successfully.
+     *
+     * @param startTime The time (in milliseconds) when the initialization started.
+     *                  This is used to apply the minimum delay of 1s before starting the transition.
+     */
+    private void handleSpringContextTaskSuccess(long startTime) {
+        try {
+            initializeFxmlService();
+            long minimumTimelapse = Math.max(0, 1000 - (System.currentTimeMillis() - startTime));
+            getPauseTransition("fullmenu-view", minimumTimelapse).play();
+        } catch (Exception ex) {
+            initializeFxmlService();
+            errorInLoadingThread(ex);
         }
     }
 
