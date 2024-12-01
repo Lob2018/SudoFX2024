@@ -87,6 +87,7 @@ public class SudoMain extends Application {
      * 3. Creates and starts a background task to initialize the Spring context,
      * ensuring the JavaFX application thread remains unblocked.
      * 4. Sets a handler to manage actions upon successful completion of the initialization.
+     * 5. Sets a handler to manage errors that occur during the initialization process.
      *
      * @param splashScreenStage The primary stage for displaying the splash screen.
      */
@@ -99,6 +100,10 @@ public class SudoMain extends Application {
             new Thread(springContextTask).start();
             long startTime = System.currentTimeMillis();
             springContextTask.setOnSucceeded(event -> handleSpringContextTaskSuccess(startTime));
+            springContextTask.setOnFailed(event -> {
+                Throwable th = springContextTask.getException();
+                handleSpringContextTaskFailed(th);
+            });
         } catch (Exception ex) {
             log.error("██ Exception catch inside start() : {}", ex.getMessage(), ex);
             throw new RuntimeException(ex);
@@ -115,12 +120,7 @@ public class SudoMain extends Application {
         return new Task<Void>() {
             @Override
             protected Void call() {
-                try {
-                    context.init(() -> SpringApplication.run(SudoMain.class));
-                } catch (Exception ex) {
-                    log.error("██ Exception caught during Spring Context initialization: {}", ex.getMessage(), ex);
-                    throw new RuntimeException(ex);
-                }
+                context.init(() -> SpringApplication.run(SudoMain.class));
                 return null;
             }
         };
@@ -139,8 +139,32 @@ public class SudoMain extends Application {
             long minimumTimelapse = Math.max(0, 1000 - (System.currentTimeMillis() - startTime));
             getPauseTransition("fullmenu-view", minimumTimelapse).play();
         } catch (Exception ex) {
-            initializeFxmlService();
-            errorInLoadingThread(ex);
+            log.error("██ Exception caught after Spring Context initialization with FXML : {}", ex.getMessage(), ex);
+            throw new RuntimeException(ex);
+        }
+    }
+
+    /**
+     * Handles errors that occur during the Spring context initialization task.
+     * This method is called when the initialization task fails.
+     * <p>
+     * It attempts to initialize the FXML service, logs the error, and manages
+     * the response based on the type of exception encountered. If the exception
+     * is related to SQL authorization, it displays an appropriate error screen;
+     * otherwise, it exits the application.
+     *
+     * @param throwable The exception that occurred during the initialization process.
+     */
+    private void handleSpringContextTaskFailed(Throwable throwable) {
+        initializeFxmlService();
+        log.error("██ Error in splash screen initialization thread : {}", throwable.getMessage(), throwable);
+        SQLInvalidAuthorizationSpecException sqlInvalidAuthorizationSpecException = getSQLInvalidAuthorizationSpecException(throwable);
+        if (sqlInvalidAuthorizationSpecException == null) {
+            Platform.exit();
+        } else {
+            sqlInvalidAuthorization((Exception) throwable, sqlInvalidAuthorizationSpecException);
+            PauseTransition pause = getPauseTransition("crashscreen-view", 0);
+            pause.play();
         }
     }
 
@@ -152,23 +176,6 @@ public class SudoMain extends Application {
             fxmlService = new FxmlService(new FXMLLoader());
         }
         fxmlService.setDynamicFontSize(new DynamicFontSize(scene));
-    }
-
-    /**
-     * Handles errors that occur during the loading process.
-     *
-     * @param throwable The exception that occurred
-     */
-    private void errorInLoadingThread(Throwable throwable) {
-        log.error("██ Error in splash screen initialization thread : {}", throwable.getMessage(), throwable);
-        SQLInvalidAuthorizationSpecException sqlInvalidAuthorizationSpecException = getSQLInvalidAuthorizationSpecException(throwable);
-        if (sqlInvalidAuthorizationSpecException == null) {
-            Platform.exit();
-        } else {
-            sqlInvalidAuthorization((Exception) throwable, sqlInvalidAuthorizationSpecException);
-            PauseTransition pause = getPauseTransition("crashscreen-view", 0);
-            pause.play();
-        }
     }
 
     /**
