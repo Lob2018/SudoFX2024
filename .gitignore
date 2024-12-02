@@ -1,8 +1,8 @@
+# Ignore target and output
 output/
 target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+# Ignore Maven Wrapper binary files
+.mvn/wrapper/maven-wrapper.jar
 
 ### IntelliJ IDEA ###
 .idea/modules.xml
