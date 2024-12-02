@@ -25,6 +25,7 @@
   - [Required Application Properties to Run](#required-application-properties-to-run)
   - [Windows how to run in IntelliJ IDEA](#windows-how-to-run-in-intellij-idea)
 - [Installation](#installation)
+- [Security](#security)
 - [Use](#use)
 - [Examples](#examples)
 - [Update](#update)
@@ -196,6 +197,10 @@ during installation; to continue the installation click on **additional informat
     - Application with Java Runtime Environment included (latest distribution with ARM64 architecture)
 
       [Download and install the latest MacOS version of the file SudokuFX-JVM-1.0.0.dmg, available in Assets.](https://github.com/Lob2018/SudoFX2024/releases/latest)
+
+## Security
+
+We take security very seriously. To report security vulnerabilities, please refer to our [security policy](SECURITY.md).
 
 ## Use
 
