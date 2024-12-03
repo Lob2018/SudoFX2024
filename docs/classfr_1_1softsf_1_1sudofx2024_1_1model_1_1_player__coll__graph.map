@@ -1,0 +1,13 @@
+<map id="fr.softsf.sudofx2024.model.Player" name="fr.softsf.sudofx2024.model.Player">
+<area shape="rect" id="Node000001" title=" " alt="" coords="367,131,547,173"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudofx2024_1_1model_1_1_player_language.html" title=" " alt="" coords="21,5,202,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="217,49,280,67,344,90,421,128,418,133,342,94,279,72,216,54"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudofx2024_1_1model_1_1_background.html" title=" " alt="" coords="21,72,202,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="217,107,343,128,367,132,366,138,342,133,216,112"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudofx2024_1_1model_1_1_menu.html" title=" " alt="" coords="5,139,218,165"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="233,149,366,149,366,155,233,155"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="5,189,218,232"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="233,189,342,171,366,166,367,172,343,176,234,194"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="57,257,166,284"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="181,263,260,250,302,239,342,226,389,200,428,172,431,176,392,205,344,230,303,245,261,255,182,268"/>
+</map>

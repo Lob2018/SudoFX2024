@@ -1,0 +1,6 @@
+<map id="fr.softsf.sudofx2024.interfaces.mapper.IGameLevelMapper" name="fr.softsf.sudofx2024.interfaces.mapper.IGameLevelMapper">
+<area shape="rect" id="Node000001" title="This interface defines methods for mapping objects of type GameLevel to objects of type GameLevelDto ..." alt="" coords="5,112,255,155"/>
+<area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudofx2024_1_1interfaces_1_1mapper_1_1_i_game_level_mapper.html" title="This interface defines methods for mapping objects of type GameLevel to objects of type GameLevelDto ..." alt="" coords="5,5,255,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,64,133,111,127,111,127,64"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="272,19,281,27,273,34,256,38,255,33,271,29,276,27,269,23"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudofx2024.utils.os.MacosFolderFactory" name="fr.softsf.sudofx2024.utils.os.MacosFolderFactory">
+<area shape="rect" id="Node000001" title="Factory class for creating and managing MACOS OS&#45;specific folders for the SudoFX application." alt="" coords="26,112,214,155"/>
+<area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudofx2024_1_1utils_1_1os_1_1_os_folder_factory_manager_1_1_i_os_folder_factory.html" title="Interface defining methods for accessing OS&#45;specific folder paths." alt="" coords="5,5,235,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,79,123,112,117,112,117,79"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="fr.softsf.sudofx2024.SudoMain.getPauseTransition" name="fr.softsf.sudofx2024.SudoMain.getPauseTransition">
+<area shape="rect" id="Node000001" title="Creates a PauseTransition to delay loading of the next view." alt="" coords="5,80,177,123"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudofx2024_1_1service_1_1_fxml_service.html#ad0755c115f6de1b29902644947a51046" title="Retrieves the controller associated with the loaded FXML file." alt="" coords="246,5,434,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,77,224,57,248,50,249,55,225,63,162,82"/>
+<area shape="rect" id="Node000003" href="$interfacefr_1_1softsf_1_1sudofx2024_1_1_sudo_main_1_1_i_primary_stage_view.html#af9db2de476fffbb2feb7dbd83ecab967" title=" " alt="" coords="233,72,446,131"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="177,99,217,99,217,104,177,104"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudofx2024_1_1service_1_1_fxml_service.html#aab6ca18eddd23a7289d0b99919947aa0" title="Sets the root of the scene based on the given FXML file name, and adapt the font size dynamically." alt="" coords="225,155,455,197"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="162,121,225,140,249,147,248,152,224,145,161,126"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1_dynamic_font_size.html#a1bc835c3deae920bc386895199a86338" title="Updates the font size based on the current Scene dimensions." alt="" coords="503,155,723,197"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="456,173,488,173,488,179,456,179"/>
+</map>

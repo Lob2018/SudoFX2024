@@ -1,0 +1,7 @@
+<map id="fr.softsf.sudofx2024.utils.MyLogbackITest" name="fr.softsf.sudofx2024.utils.MyLogbackITest">
+<area shape="rect" id="Node000001" title=" " alt="" coords="386,39,555,81"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1os_1_1_os_folder_factory_manager.html" title="Configuration class for managing OS&#45;specific dynamically." alt="" coords="5,5,193,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="208,34,385,50,385,55,208,39"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1_my_logback.html" title="Configuration class for Logback logging framework." alt="" coords="14,72,184,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="199,83,361,69,385,67,386,72,362,75,199,89"/>
+</map>

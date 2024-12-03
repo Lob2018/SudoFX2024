@@ -1,0 +1,14 @@
+<map id="fr.softsf.sudofx2024.integration.database.DatabaseMigrationITest" name="fr.softsf.sudofx2024.integration.database.DatabaseMigrationITest">
+<area shape="rect" id="Node000001" title=" " alt="" coords="829,43,1091,85"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1os_1_1_os_folder_factory_manager.html" title="Configuration class for managing OS&#45;specific dynamically." alt="" coords="52,5,239,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="255,29,829,55,828,61,255,34"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1database_1_1keystore_1_1_application_keystore.html" title="Manages the application&#39;s keystore for secure storage of keys and database credentials." alt="" coords="447,83,727,125"/>
+<area shape="poly" id="edge4_Node000003_Node000002" title=" " alt="" coords="255,46,310,56,447,79,446,85,309,61,254,51"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="742,85,828,75,829,81,742,90"/>
+<area shape="rect" id="Node000004" href="$interfacefr_1_1softsf_1_1sudofx2024_1_1interfaces_1_1_i_keystore.html" title=" " alt="" coords="44,79,247,121"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="262,98,446,100,446,105,262,104"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="108,145,183,172"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="198,150,446,119,447,124,199,155"/>
+<area shape="rect" id="Node000006" href="$interfacefr_1_1softsf_1_1sudofx2024_1_1utils_1_1database_1_1keystore_1_1_application_keystore_1_1_i_encryption_service.html" title=" " alt="" coords="5,196,286,239"/>
+<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="279,190,422,156,525,123,526,128,423,161,280,195"/>
+</map>
