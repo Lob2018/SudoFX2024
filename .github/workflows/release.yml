@@ -36,9 +36,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: wix311.exe
-          key: ${{ runner.os }}-wix311-${{ hashFiles('**/wix311.exe') }}
-          restore-keys: |
-            ${{ runner.os }}-wix311-
+          key: ${{ runner.os }}-wix311
 
       - name: Install WiX Toolset
         run: |
