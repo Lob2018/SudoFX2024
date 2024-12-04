@@ -1,4 +1,4 @@
-name: Generate the packages for Windows, Linux and MacOS
+name: "Packages (Windows, Linux, MacOS)"
 
 on:
   push:

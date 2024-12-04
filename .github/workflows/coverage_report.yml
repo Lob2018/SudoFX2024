@@ -1,4 +1,4 @@
-name: Generate the JaCoCo coverage report
+name: "Code coverage"
 
 on:
   push:
