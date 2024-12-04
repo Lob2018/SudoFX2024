@@ -2,9 +2,9 @@ name: "Code coverage"
 
 on:
   push:
-    branches: [ "main,develop" ]
+    branches: [ "main","develop" ]
   pull_request:
-    branches: [ "main,develop" ]
+    branches: [ "main","develop" ]
 
 permissions: # added using https://github.com/step-security/secure-repo
   checks: write
