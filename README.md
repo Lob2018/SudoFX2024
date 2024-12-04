@@ -7,6 +7,7 @@
 ![Windows](https://img.shields.io/badge/Windows-Compatible-brightgreen)
 ![Linux](https://img.shields.io/badge/Linux-Compatible-brightgreen)
 ![MacOS](https://img.shields.io/badge/MacOS-Compatible-brightgreen)<br>
+[![Code coverage](https://github.com/Lob2018/SudoFX2024/actions/workflows/coverage_report.yml/badge.svg)](https://github.com/Lob2018/SudoFX2024/actions/workflows/coverage_report.yml)
 ![CodeQL Analysis](https://github.com/lob2018/SudoFX2024/actions/workflows/codeql.yml/badge.svg)
 [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/Lob2018/SudoFX2024/badge)](https://scorecard.dev/viewer/?uri=github.com/Lob2018/SudoFX2024)
 [![Known Vulnerabilities](https://snyk.io/test/github/Lob2018/SudoFX2024/badge.svg)](https://snyk.io/test/github/Lob2018/SudoFX2024)
