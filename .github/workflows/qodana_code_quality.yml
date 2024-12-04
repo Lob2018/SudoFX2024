@@ -27,12 +27,12 @@ jobs:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
           fetch-depth: 0
-          node-version: 'lts'
       - name: 'Qodana Scan'
         uses: JetBrains/qodana-action@b29f1a719a65aa354f7b0b1c6dc4a94b07ed71dd # latest
         with:
           args: --apply-fixes
           pr-mode: false
           push-fixes: pull-request
+          cache-default-branch-only: true
         env:
           QODANA_TOKEN: ${{ secrets.QODANA_TOKEN }}
