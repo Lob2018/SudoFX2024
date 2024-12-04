@@ -52,6 +52,7 @@ jobs:
         with:
           java-version: '21'
           distribution: 'adopt'
+          cache: 'maven'
       - name: Verify Java Installation
         run: java -version
       - name: Install Xvfb
