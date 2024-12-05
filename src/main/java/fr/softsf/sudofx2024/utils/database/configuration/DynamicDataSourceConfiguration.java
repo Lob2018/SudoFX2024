@@ -1,5 +1,6 @@
 package fr.softsf.sudofx2024.utils.database.configuration;
 
+import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 import fr.softsf.sudofx2024.utils.MyLogback;
 import fr.softsf.sudofx2024.utils.database.keystore.ApplicationKeystore;
@@ -8,6 +9,7 @@ import org.flywaydb.core.Flyway;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.DependsOn;
+import org.springframework.context.annotation.PropertySource;
 
 import static fr.softsf.sudofx2024.utils.MyEnums.Paths.DATABASE_NAME;
 
@@ -15,6 +17,7 @@ import static fr.softsf.sudofx2024.utils.MyEnums.Paths.DATABASE_NAME;
  * Configuration class for setting up dynamic data sources and related beans.
  */
 @Configuration
+@PropertySource("classpath:fr/softsf/sudofx2024/application.properties")
 public class DynamicDataSourceConfiguration {
 
     /**
@@ -24,7 +27,7 @@ public class DynamicDataSourceConfiguration {
      * @return Always returns 0
      */
     @Bean
-    int logbackInitialization(MyLogback myLogback) {
+    int logbackInitialization(final MyLogback myLogback) {
         myLogback.printLogEntryMessage();
         return 0;
     }
@@ -39,18 +42,20 @@ public class DynamicDataSourceConfiguration {
      */
     @Bean
     @DependsOn({"logbackInitialization"})
-    HikariDataSource hikariDataSource(OsFolderFactoryManager osFolderFactory, ApplicationKeystore keystore) {
-        System.setProperty("hibernate.hbm2ddl.auto", "validate");
+    HikariDataSource hikariDataSource(final OsFolderFactoryManager osFolderFactory, final ApplicationKeystore keystore) {
         keystore.setupApplicationKeystore();
-        HikariDataSource dataSource = new HikariDataSource();
-        dataSource.setDriverClassName("org.hsqldb.jdbc.JDBCDriver");
-        dataSource.setJdbcUrl("jdbc:hsqldb:file:" + osFolderFactory.osFolderFactory().getOsDataFolderPath() + "/" + DATABASE_NAME.getPath() + ";shutdown=true");
-        dataSource.setUsername(keystore.getUsername());
-        dataSource.setPassword(keystore.getPassword());
-        dataSource.setMaximumPoolSize(2);
-        dataSource.setMinimumIdle(1);
-        dataSource.setAutoCommit(false);
-        return dataSource;
+        final HikariConfig config = new HikariConfig();
+        config.setDriverClassName("org.hsqldb.jdbc.JDBCDriver");
+        config.setJdbcUrl("jdbc:hsqldb:file:" + osFolderFactory.osFolderFactory().getOsDataFolderPath() + "/" + DATABASE_NAME.getPath() + ";shutdown=true");
+        config.setUsername(keystore.getUsername());
+        config.setPassword(keystore.getPassword());
+        config.setMaximumPoolSize(2);
+        config.setMinimumIdle(1);
+        config.setAutoCommit(false);
+        config.addDataSourceProperty("cachePrepStmts", "true");
+        config.addDataSourceProperty("prepStmtCacheSize", "250");
+        config.addDataSourceProperty("prepStmtCacheSqlLimit", "2048");
+        return new HikariDataSource(config);
     }
 
     /**
@@ -61,14 +66,14 @@ public class DynamicDataSourceConfiguration {
      * which Flyway will execute to ensure the database schema is up-to-date.
      *
      * @param hikariDataSource the HikariDataSource used by Flyway to connect to the database.
-     *                   This data source should be properly configured with the necessary
-     *                   connection details (URL, username, password).
+     *                         This data source should be properly configured with the necessary
+     *                         connection details (URL, username, password).
      * @return a Flyway instance configured with the specified data source and migration script location.
      * The initMethod "migrate" will be called automatically after the bean is created,
      * applying any pending migrations to the database.
      */
     @Bean(initMethod = "migrate")
-    Flyway flyway(HikariDataSource hikariDataSource) {
+    Flyway flyway(final HikariDataSource hikariDataSource) {
         return Flyway.configure()
                 .dataSource(hikariDataSource)
                 .locations("classpath:fr/softsf/sudofx2024/flyway/scripts/hsqldb/migration")
