@@ -328,15 +328,14 @@
                                 </goals>
                                 <configuration>
                                     <executable>java</executable>
-                                    <workingDirectory>${project.build.directory}
-                                    </workingDirectory> <!-- Répertoire de travail -->
+                                    <workingDirectory>${project.build.directory}</workingDirectory>
                                     <arguments>
                                         <argument>-Xmx2048m</argument>
                                         <argument>-Dapp.name=${project.artifactId}</argument>
                                         <argument>-Dapp.version=${project.version}</argument>
                                         <argument>-classpath</argument>
                                         <classpath/>
-                                        <argument>${mainClass}</argument>
+                                        <argument>${start-class}</argument>
                                     </arguments>
                                 </configuration>
                             </execution>
