@@ -3,6 +3,9 @@ package fr.softsf.sudofx2024.view;
 import fr.softsf.sudofx2024.SudoMain;
 import fr.softsf.sudofx2024.utils.I18n;
 import fr.softsf.sudofx2024.utils.JVMApplicationProperties;
+import javafx.animation.Animation;
+import javafx.animation.Interpolator;
+import javafx.animation.RotateTransition;
 import javafx.geometry.Pos;
 import javafx.scene.Cursor;
 import javafx.scene.Scene;
@@ -17,6 +20,7 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.SVGPath;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import javafx.util.Duration;
 
 import java.util.Calendar;
 import java.util.Objects;
@@ -99,6 +103,7 @@ public class SplashScreenView implements SudoMain.ISplashScreenView {
         setSplashscreenvboxTophboxLogosudosvg();
         splashscreenvboxCenterhbox.setSpacing(splashScreenFontSize);
         setSplashscreenvboxCenterhboxStackpaneLogoflowersvg();
+        animateFlowerSvg();
         splashscreenvboxBottomhboxYearlabel.setText(Calendar.getInstance().get(Calendar.YEAR) + "");
         splashscreenvboxBottomhboxYearlabel.setTextFill(splashDefaultFontColor);
         splashscreenvboxBottomhboxHboxLoaderlabel.setText(getLoadingOrOptimizingMessage());
@@ -106,6 +111,19 @@ public class SplashScreenView implements SudoMain.ISplashScreenView {
         splashscreenvboxBottomhboxVersionlabel.setText(JVMApplicationProperties.getAppVersion());
         splashscreenvboxBottomhboxVersionlabel.setTextFill(splashDefaultFontColor);
         setSplashscreenvboxCenterhboxLogosoft64textsvg();
+    }
+
+    /**
+     * Animates the SVG flower
+     */
+    private void animateFlowerSvg() {
+        RotateTransition rotateTransition = new RotateTransition(Duration.seconds(3), splashscreenvboxCenterhboxRegionflowersvg);
+        rotateTransition.setFromAngle(-4);
+        rotateTransition.setToAngle(4);
+        rotateTransition.setCycleCount(Animation.INDEFINITE);
+        rotateTransition.setAutoReverse(true);
+        rotateTransition.setInterpolator(Interpolator.SPLINE(0.5, 0.0, 0.5, 1.0));
+        rotateTransition.play();
     }
 
     /**
