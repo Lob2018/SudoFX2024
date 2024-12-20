@@ -18,6 +18,12 @@ jobs:
         with:
           java-version: 21
           distribution: 'temurin' # Alternative distribution options are available.
+      - name: Install Xvfb
+        run: brew install XQuartz
+      - name: Start Xvfb
+        run: |
+          Xvfb :99 -screen 0 1920x1080x24 &
+          echo "DISPLAY=:99" >> $GITHUB_ENV
       - name: Cache SonarQube packages
         uses: actions/cache@v4
         with:
