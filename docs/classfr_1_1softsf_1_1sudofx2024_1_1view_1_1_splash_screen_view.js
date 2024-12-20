@@ -1,6 +1,7 @@
 var classfr_1_1softsf_1_1sudofx2024_1_1view_1_1_splash_screen_view =
 [
     [ "SplashScreenView", "classfr_1_1softsf_1_1sudofx2024_1_1view_1_1_splash_screen_view.html#a3de6a5cbe81a2f3f2f7d5f4dfe70e45a", null ],
+    [ "animateFlowerSvg", "classfr_1_1softsf_1_1sudofx2024_1_1view_1_1_splash_screen_view.html#a2b93424a2f3aed2d4d5657907882bf32", null ],
     [ "createSVG", "classfr_1_1softsf_1_1sudofx2024_1_1view_1_1_splash_screen_view.html#ad9ca7207c3215d181ab11a4c97956850", null ],
     [ "fxmlLikeStructure", "classfr_1_1softsf_1_1sudofx2024_1_1view_1_1_splash_screen_view.html#a71d28774db7c6ae95c42c12c811a595c", null ],
     [ "getLoadingOrOptimizingMessage", "classfr_1_1softsf_1_1sudofx2024_1_1view_1_1_splash_screen_view.html#a4af4a75277695a0f5cc59b1a3a0aa7d9", null ],

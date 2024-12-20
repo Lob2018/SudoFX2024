@@ -1,11 +1,13 @@
 <map id="fr.softsf.sudofx2024.utils.FileSystemManagerUTest" name="fr.softsf.sudofx2024.utils.FileSystemManagerUTest">
-<area shape="rect" id="Node000001" title=" " alt="" coords="77,220,249,263"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,105,54,132"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="56,141,113,194,140,218,137,222,110,198,52,145"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1_file_system_manager.html" title="Manages file system operations, particularly folder deletion." alt="" coords="78,97,248,140"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="166,155,166,220,160,220,160,155"/>
-<area shape="rect" id="Node000004" href="$interfacefr_1_1softsf_1_1sudofx2024_1_1interfaces_1_1_i_file_system.html" title=" " alt="" coords="62,5,264,48"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="166,64,166,97,160,97,160,64"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="271,105,476,132"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="353,145,322,172,285,198,234,222,232,217,283,194,319,168,350,141"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="74,405,273,683"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,213,43,283"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="39,282,57,324,90,389,85,392,52,326,34,284"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1_file_system_manager.html" title="Manages file system operations, particularly folder deletion." alt="" coords="67,171,280,325"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="176,325,176,389,171,389,171,325"/>
+<area shape="rect" id="Node000004" href="$interfacefr_1_1softsf_1_1sudofx2024_1_1interfaces_1_1_i_file_system.html" title=" " alt="" coords="37,5,310,107"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="176,122,176,171,171,171,171,122"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="305,213,498,283"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="378,284,286,403,281,399,374,281"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="358,21,445,91"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="404,105,404,213,399,213,399,105"/>
 </map>

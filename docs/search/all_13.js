@@ -47,9 +47,10 @@ var searchData=
   ['testuserhome_44',['testUserHome',['../classfr_1_1softsf_1_1sudofx2024_1_1unit_1_1utils_1_1_my_enums_u_test.html#a55baa251042b0abfe0663c3ead6f582b',1,'fr::softsf::sudofx2024::unit::utils::MyEnumsUTest']]],
   ['text1_45',['text1',['../classfr_1_1softsf_1_1sudofx2024_1_1view_1_1_full_menu_view.html#accf884c2d49b405500eb712c476e5147',1,'fr::softsf::sudofx2024::view::FullMenuView']]],
   ['text2_46',['text2',['../classfr_1_1softsf_1_1sudofx2024_1_1view_1_1_full_menu_view.html#a9a150c8d1ffb2af91b278770cc8b8e4d',1,'fr::softsf::sudofx2024::view::FullMenuView']]],
-  ['toastactions_47',['toastActions',['../classfr_1_1softsf_1_1sudofx2024_1_1view_1_1components_1_1_toaster_v_box.html#a24b354e181359046813afba54da7a023',1,'fr::softsf::sudofx2024::view::components::ToasterVBox']]],
-  ['toaster_48',['toaster',['../classfr_1_1softsf_1_1sudofx2024_1_1view_1_1_full_menu_view.html#af980f8dea860ca57172e45d2d8b2d53d',1,'fr::softsf::sudofx2024::view::FullMenuView']]],
-  ['toastervbox_49',['ToasterVBox',['../classfr_1_1softsf_1_1sudofx2024_1_1view_1_1components_1_1_toaster_v_box.html',1,'fr.softsf.sudofx2024.view.components.ToasterVBox'],['../classfr_1_1softsf_1_1sudofx2024_1_1view_1_1components_1_1_toaster_v_box.html#a26a7dedeb05efeba9226660e9aa91b75',1,'fr.softsf.sudofx2024.view.components.ToasterVBox.ToasterVBox()']]],
-  ['toastervbox_2ejava_50',['ToasterVBox.java',['../_toaster_v_box_8java.html',1,'']]],
-  ['toastlevels_51',['ToastLevels',['../enumfr_1_1softsf_1_1sudofx2024_1_1utils_1_1_my_enums_1_1_toast_levels.html',1,'fr.softsf.sudofx2024.utils.MyEnums.ToastLevels'],['../enumfr_1_1softsf_1_1sudofx2024_1_1utils_1_1_my_enums_1_1_toast_levels.html#ab8e32d2bfbd04f02f34bc2c4f13da2c2',1,'fr.softsf.sudofx2024.utils.MyEnums.ToastLevels.ToastLevels()']]]
+  ['to_20run_20in_20intellij_20idea_47',['Windows how to run in IntelliJ IDEA',['../md__r_e_a_d_m_e.html#autotoc_md9',1,'']]],
+  ['toastactions_48',['toastActions',['../classfr_1_1softsf_1_1sudofx2024_1_1view_1_1components_1_1_toaster_v_box.html#a24b354e181359046813afba54da7a023',1,'fr::softsf::sudofx2024::view::components::ToasterVBox']]],
+  ['toaster_49',['toaster',['../classfr_1_1softsf_1_1sudofx2024_1_1view_1_1_full_menu_view.html#af980f8dea860ca57172e45d2d8b2d53d',1,'fr::softsf::sudofx2024::view::FullMenuView']]],
+  ['toastervbox_50',['ToasterVBox',['../classfr_1_1softsf_1_1sudofx2024_1_1view_1_1components_1_1_toaster_v_box.html',1,'fr.softsf.sudofx2024.view.components.ToasterVBox'],['../classfr_1_1softsf_1_1sudofx2024_1_1view_1_1components_1_1_toaster_v_box.html#a26a7dedeb05efeba9226660e9aa91b75',1,'fr.softsf.sudofx2024.view.components.ToasterVBox.ToasterVBox()']]],
+  ['toastervbox_2ejava_51',['ToasterVBox.java',['../_toaster_v_box_8java.html',1,'']]],
+  ['toastlevels_52',['ToastLevels',['../enumfr_1_1softsf_1_1sudofx2024_1_1utils_1_1_my_enums_1_1_toast_levels.html',1,'fr.softsf.sudofx2024.utils.MyEnums.ToastLevels'],['../enumfr_1_1softsf_1_1sudofx2024_1_1utils_1_1_my_enums_1_1_toast_levels.html#ab8e32d2bfbd04f02f34bc2c4f13da2c2',1,'fr.softsf.sudofx2024.utils.MyEnums.ToastLevels.ToastLevels()']]]
 ];

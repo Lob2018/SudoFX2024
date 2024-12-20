@@ -1,10 +1,10 @@
 <map id="fr.softsf.sudofx2024.service.FxmlService" name="fr.softsf.sudofx2024.service.FxmlService">
-<area shape="rect" id="Node000001" title="FxmlService is a Spring service that manages the loading of FXML files and updating the root of the J..." alt="" coords="68,203,255,245"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,64,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="27,47,18,92,20,115,27,137,42,157,60,174,103,200,100,204,57,179,38,161,22,140,14,116,13,91,22,46"/>
-<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1_dynamic_font_size.html" title="Manages dynamic font sizing based on the dimensions of a JavaFX Scene." alt="" coords="76,96,246,139"/>
-<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="65,40,136,93,132,97,62,44"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="270,104,365,131"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="305,146,291,164,273,181,231,204,229,200,270,177,287,161,300,142"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="164,154,164,202,158,202,158,154"/>
+<area shape="rect" id="Node000001" title="FxmlService is a Spring service that manages the loading of FXML files and updating the root of the J..." alt="" coords="62,325,248,485"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,53,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="22,75,14,114,9,161,10,212,22,260,36,287,53,312,49,315,31,290,17,262,5,212,4,161,9,113,17,74"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1_dynamic_font_size.html" title="Manages dynamic font sizing based on the dimensions of a JavaFX Scene." alt="" coords="75,139,234,261"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="55,69,99,124,95,128,51,73"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="258,165,342,235"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="297,235,288,269,272,303,260,318,256,315,267,300,283,267,292,234"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="157,261,157,308,152,308,152,261"/>
 </map>

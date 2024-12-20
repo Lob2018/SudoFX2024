@@ -1,14 +1,14 @@
 <map id="fr.softsf.sudofx2024.viewmodel.FullMenuViewModel" name="fr.softsf.sudofx2024.viewmodel.FullMenuViewModel">
-<area shape="rect" id="Node000001" title="FullMenuViewModel with business logic (not final)" alt="" coords="976,88,1183,131"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudofx2024_1_1service_1_1_software_service.html" title=" " alt="" coords="642,52,830,95"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="845,82,975,96,975,101,845,87"/>
-<area shape="rect" id="Node000003" href="$interfacefr_1_1softsf_1_1sudofx2024_1_1repository_1_1_software_repository.html" title=" " alt="" coords="252,5,453,48"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="469,38,643,59,642,65,468,43"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="5,5,179,48"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="194,24,252,24,252,29,194,29"/>
-<area shape="rect" id="Node000005" href="$interfacefr_1_1softsf_1_1sudofx2024_1_1interfaces_1_1mapper_1_1_i_software_mapper.html" title="This interface defines methods for mapping objects of type Software to objects of type SoftwareDto an..." alt="" coords="228,112,477,155"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="492,109,641,85,642,91,493,114"/>
-<area shape="poly" id="edge5_Node000005_Node000005" title=" " alt="" coords="326,94,336,88,353,85,368,87,378,93,383,102,382,112,377,111,378,103,374,97,366,92,353,91,338,93,329,99"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="684,119,788,145"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="803,129,951,123,975,121,975,126,952,128,804,134"/>
+<area shape="rect" id="Node000001" title="FullMenuViewModel with business logic (not final)" alt="" coords="196,561,416,764"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudofx2024_1_1service_1_1_software_service.html" title=" " alt="" coords="115,343,323,497"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="247,496,261,536,264,545,259,546,256,538,242,498"/>
+<area shape="rect" id="Node000003" href="$interfacefr_1_1softsf_1_1sudofx2024_1_1repository_1_1_software_repository.html" title=" " alt="" coords="5,159,196,260"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="131,259,170,327,166,330,126,261"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="19,5,182,91"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="103,105,103,159,98,159,98,105"/>
+<area shape="rect" id="Node000005" href="$interfacefr_1_1softsf_1_1sudofx2024_1_1interfaces_1_1mapper_1_1_i_software_mapper.html" title="This interface defines methods for mapping objects of type Software to objects of type SoftwareDto an..." alt="" coords="220,140,459,279"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="310,279,288,320,283,329,278,327,284,317,305,277"/>
+<area shape="poly" id="edge5_Node000005_Node000005" title=" " alt="" coords="459,192,478,198,485,209,477,221,473,218,480,209,474,202,458,197"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="347,385,441,455"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="390,455,367,538,364,547,359,545,362,537,385,454"/>
 </map>

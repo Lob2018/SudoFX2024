@@ -1,21 +1,21 @@
 <map id="fr.softsf.sudofx2024.view.CrashScreenView" name="fr.softsf.sudofx2024.view.CrashScreenView">
-<area shape="rect" id="Node000001" title="View class for the crash screen without business logic." alt="" coords="483,229,654,272"/>
-<area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudofx2024_1_1_sudo_main_1_1_i_primary_stage_view.html" title="Interface for the primary stage view." alt="" coords="13,5,185,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="200,9,262,7,330,12,398,27,430,40,460,56,482,74,502,95,532,142,552,189,564,228,559,230,547,191,527,145,497,98,479,78,457,61,428,45,396,32,329,17,262,12,200,15"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1os_1_1_os_folder_factory_manager.html" title="Configuration class for managing OS&#45;specific dynamically." alt="" coords="5,72,193,115"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="208,79,268,78,333,83,398,96,460,120,493,143,520,172,558,227,554,230,516,175,489,147,457,125,397,102,332,88,268,83,208,84"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="71,139,127,165"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="142,151,309,163,397,173,459,185,502,204,539,227,536,231,500,209,458,191,396,178,309,168,142,157"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="51,189,147,216"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="163,203,299,213,459,229,483,233,482,238,458,235,298,218,162,209"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="72,240,126,267"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="141,250,482,248,482,254,141,256"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="68,291,130,317"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="146,299,286,290,458,271,482,267,482,272,459,276,286,295,146,305"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="73,409,125,436"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="141,428,205,435,287,437,331,434,375,426,417,414,457,396,492,370,520,336,541,301,556,271,561,274,546,304,524,339,496,374,460,401,419,419,376,432,332,439,287,443,205,441,140,433"/>
-<area shape="rect" id="Node000009" title=" " alt="" coords="72,460,126,487"/>
-<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="142,474,219,479,312,481,399,476,433,469,457,459,481,441,500,418,531,366,550,314,561,272,566,273,555,316,536,369,505,421,484,445,460,464,434,474,399,481,312,487,219,485,142,480"/>
-<area shape="rect" id="Node000010" title=" " alt="" coords="69,521,129,548"/>
-<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="144,544,211,557,293,563,336,561,379,553,420,540,457,519,485,494,508,464,526,430,540,394,557,325,563,272,568,273,562,326,545,396,531,432,513,466,489,498,460,524,422,545,380,559,337,566,293,569,210,562,143,550"/>
+<area shape="rect" id="Node000001" title="View class for the crash screen without business logic." alt="" coords="692,763,914,1216"/>
+<area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudofx2024_1_1_sudo_main_1_1_i_primary_stage_view.html" title="Interface for the primary stage view." alt="" coords="5,245,235,363"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,376,187,486,216,545,251,601,297,659,350,713,407,763,467,807,587,883,694,938,691,943,585,887,464,812,404,767,346,717,293,663,246,604,212,548,182,488,139,378"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1os_1_1_os_folder_factory_manager.html" title="Configuration class for managing OS&#45;specific dynamically." alt="" coords="260,5,522,603"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="396,602,415,672,445,737,467,769,493,799,552,853,616,897,679,932,676,937,613,901,548,857,489,803,463,773,441,740,410,674,390,603"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="546,269,591,339"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="565,339,555,413,550,514,552,570,557,627,569,684,586,738,604,777,628,814,683,881,679,884,624,817,600,779,581,740,563,685,552,628,546,570,545,514,550,412,560,338"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="650,269,735,339"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="694,338,696,511,704,624,720,738,722,746,717,747,715,739,698,625,690,511,689,338"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="782,269,824,339"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="806,338,806,746,800,746,800,338"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="914,269,966,339"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="945,338,946,412,943,512,934,625,914,739,912,747,907,746,908,738,928,625,938,511,940,411,939,339"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="1197,269,1238,339"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="1221,338,1222,429,1219,547,1207,661,1197,707,1184,740,1160,775,1132,807,1068,862,998,908,930,943,928,938,996,903,1065,858,1129,803,1156,772,1179,737,1192,705,1202,660,1213,546,1217,429,1216,338"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="1441,269,1485,339"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="1467,339,1470,430,1468,549,1457,663,1446,708,1431,740,1381,796,1323,842,1259,880,1191,912,1122,936,1054,955,931,979,930,974,1053,950,1121,931,1189,907,1257,876,1320,838,1377,792,1426,737,1441,706,1452,662,1463,549,1465,430,1462,339"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="1675,269,1723,339"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="1711,338,1726,417,1732,469,1734,524,1731,581,1720,638,1701,692,1670,740,1649,762,1620,782,1545,821,1452,856,1347,887,1236,914,1125,937,931,972,930,967,1124,932,1234,909,1345,881,1451,850,1543,816,1617,778,1645,758,1666,737,1696,689,1715,637,1726,581,1729,524,1727,469,1721,418,1706,339"/>
 </map>
