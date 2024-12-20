@@ -16,10 +16,13 @@ import org.springframework.transaction.annotation.Transactional;
 @Service
 public class SoftwareService {
 
-    @Autowired
-    private SoftwareRepository softwareRepository;
+    private final SoftwareRepository softwareRepository;
 
     private final ISoftwareMapper iSoftwareMapper = ISoftwareMapper.INSTANCE;
+
+    public SoftwareService(SoftwareRepository softwareRepository) {
+        this.softwareRepository = softwareRepository;
+    }
 
     public Optional<SoftwareDto> getSoftware() {
         try {
