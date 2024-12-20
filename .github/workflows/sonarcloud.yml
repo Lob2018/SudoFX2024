@@ -19,7 +19,7 @@ jobs:
           java-version: 21
           distribution: 'temurin' # Alternative distribution options are available.
       - name: Install Xvfb
-        run: brew install XQuartz
+        run: sudo apt-get install -y xvfb
       - name: Start Xvfb
         run: |
           Xvfb :99 -screen 0 1920x1080x24 &
