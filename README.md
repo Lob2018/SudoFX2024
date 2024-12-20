@@ -97,24 +97,11 @@ application allows you to solve the current Sudoku grid, but also other entries 
 >- app.name: This property specifies the name of the application.
 >- app.version: This property specifies the version of the application.
 >   - This SemVer-like format is only numeric MAJOR.MINOR.PATCH (e.g., 1.0.0, 2.1.3).
->
->These properties are applied automatically (either by Maven or by the .bat file) but can also be set manually if needed, using the -D flag after extracting the jar file, for example for version 1.0.8:
->
->     # Extract the contents of the SudokuFX JAR file to the 'SudokuFX' directory
->     java -Djarmode=tools -jar SudokuFX-1.0.8.jar extract --destination SudokuFX
->     # Change the current working directory to 'SudokuFX'
->     cd SudokuFX
->     # Perform a training run on your SudokuFX (long process, the application closes at the end)
->     java -Xmx2048m -XX:ArchiveClassesAtExit=SudokuFX.jsa -Dspring.context.exit=onRefresh -Dapp.name=SudokuFX -Dapp.version=1.0.8 -jar SudokuFX-1.0.8.jar
->     # Run the SudokuFX game (using the shared archive file and cache for faster startup)
->     java -Xmx2048m -XX:SharedArchiveFile=SudokuFX.jsa -Dapp.name=SudokuFX -Dapp.version=1.0.8 -jar SudokuFX-1.0.8.jar
->
->Ensuring these properties are correctly set will help maintain a consistent and secure configuration for the application.
 
 ### Windows how to run in IntelliJ IDEA
 
 - Download and install [the version LTS (e.g. 21) of the JDK Adoptium Temurin JDK](https://adoptium.net)
-- Download and install WiX Toolset v3.11
+- Download and install WiX Toolset v3.11 (in order to package the application)
   - Activate .NET framework 3.5.1 (Control Panel > Programs > Programs and Features > Turn Windows features on or off)
   - Launch [wix311.exe](https://github.com/wixtoolset/wix3/releases/tag/wix3112rtm)
 - Configured the necessary environment variables
@@ -144,20 +131,6 @@ application allows you to solve the current Sudoku grid, but also other entries 
         - Install Doxygen and GraphViz (Doxygen must be added to the system PATH).
         - Add New Configuration > Maven > Run: clean -X javafx:run prepare-package -P generate-docs -f pom.xml > Apply
         - Run **SudokuFX [prepare-package]**
-- Available Maven commands:
-
->     #Run
->     mvn clean javafx:run
->     #Clean
->     mvn clean -f pom.xml
->     #Validate
->     mvn validate -f pom.xml
->     #Compile
->     mvn compile -f pom.xml
->     #Test
->     mvn test -f pom.xml
->     #Package (WiX is required)
->     mvn package -f pom.xml
 
 ## Installation
 
