@@ -11,6 +11,7 @@
 [![Dependabot Updates](https://github.com/Lob2018/SudoFX2024/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/Lob2018/SudoFX2024/actions/workflows/dependabot/dependabot-updates)
 [![Qodana](https://github.com/Lob2018/SudoFX2024/actions/workflows/qodana_code_quality.yml/badge.svg)](https://github.com/Lob2018/SudoFX2024/actions/workflows/qodana_code_quality.yml)
 [![Code coverage](https://github.com/Lob2018/SudoFX2024/actions/workflows/coverage_report.yml/badge.svg)](https://github.com/Lob2018/SudoFX2024/actions/workflows/coverage_report.yml)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Lob2018_SudoFX2024&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=Lob2018_SudoFX2024)
 
 <p align="center">
   <img alt="SudokuFX2024 in action" src="./.myresources/design_and_modeling/images/SudokuFX2024_in_action.jpg">
@@ -71,7 +72,7 @@ application allows you to solve the current Sudoku grid, but also other entries 
             - Lombok MapStruct Binding (to integrate Lombok with MapStruct)
         - javafx-maven-plugin
         - spring-boot-maven-plugin (create the uber JAR)
-        - exec-maven-plugin (batch to generate MSI and uber JAR with his run batch)
+        - exec-maven-plugin (for scripts generating the packages)
     - Test dependencies :
         - spring boot starter test (JUnit, Mockito, Hamcrest)
         - surefire

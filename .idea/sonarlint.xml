@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SonarLintProjectSettings">
+    <option name="bindingEnabled" value="true" />
     <option name="fileExclusions">
       <list>
-        <option value="DIRECTORY:.myresources" />
-        <option value="DIRECTORY:docs" />
+        <option value="DIRECTORY:.myresources/**" />
+        <option value="DIRECTORY:docs/**" />
       </list>
     </option>
+    <option name="projectKey" value="Lob2018_SudoFX2024" />
+    <option name="serverId" value="SudoFX2024" />
   </component>
 </project>
