@@ -11,7 +11,7 @@ permissions: # added using https://github.com/step-security/secure-repo
 
 jobs:
   package_for_linux:
-    name: Package for Linux
+    name: Package for Linux and Analyze with SonarCloud
     runs-on: ubuntu-latest
     environment: production
     steps:
@@ -46,7 +46,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: mvn -B package -P linux -f pom.xml org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=Lob2018_SudoFX2024 -X
+        run: mvn -B package -P linux -f pom.xml org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=Lob2018_SudoFX2024
       - name: Upload output folder (Linux)
         uses: actions/upload-artifact@b4b15b8c7c6ac21ea08fcf65892d2ee8f75cf882 # v4.4.3
         with:
