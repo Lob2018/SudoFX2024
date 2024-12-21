@@ -336,9 +336,9 @@
                         <version>3.5.0</version>
                         <executions>
                             <execution>
-                                <!-- Linux package then verify using shell script -->
+                                <!-- Linux package using shell script -->
                                 <id>exec-shell</id>
-                                <phase>verify</phase>
+                                <phase>package</phase>
                                 <goals>
                                     <goal>exec</goal>
                                 </goals>
