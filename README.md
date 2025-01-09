@@ -31,7 +31,7 @@
 - [Examples](#examples)
 - [Update](#update)
 - [Uninstallation](#uninstallation)
-- [Documentation](#documentation)
+- [Documentation](https://lob2018.github.io/SudoFX2024/)
 - [Contributors](#contributors)
 - [Feedback](#feedback)
 - [Licence](https://github.com/Lob2018/SudoFX2024?tab=License-1-ov-file#readme)
@@ -235,10 +235,6 @@ during installation; to continue the installation click on **additional informat
 >     **/Users/\<USERNAME\>**[^1]**/Library/Application Support/Soft64.fr/SudokuFX**.
 
 [^1]: Replace \<USERNAME\> with your currently logged-in username.
-
-## Documentation
-
-- <a href="https://lob2018.github.io/SudoFX2024/" target="_blank">Doxygen</a>
 
 ## Contributors
 
