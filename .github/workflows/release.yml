@@ -3,8 +3,6 @@ name: "Analysis with SonarCloud and package for Windows, Linux, MacOS"
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
 
 permissions: # added using https://github.com/step-security/secure-repo
   contents: read
@@ -55,6 +53,7 @@ jobs:
 
   package_for_windows:
     name: Package for Windows
+    needs: [ package_for_linux ]
     runs-on: windows-latest
     steps:
       - name: Harden Runner
@@ -110,6 +109,7 @@ jobs:
 
   package_for_macos:
     name: Package for MacOS
+    needs: [ package_for_linux ]
     runs-on: macos-latest
     steps:
       - name: Harden Runner
