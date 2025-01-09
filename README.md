@@ -1,17 +1,16 @@
 # SudokuFX2024
 
-![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)
-![GitHub release](https://img.shields.io/github/v/release/lob2018/SudoFX2024)
-![Open Issues](https://img.shields.io/github/issues/lob2018/SudoFX2024)
-![Open Pull Requests](https://img.shields.io/github/issues-pr/lob2018/SudoFX2024)
+[![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/Lob2018/SudoFX2024?tab=License-1-ov-file#readme)<br>
 [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/Lob2018/SudoFX2024/badge)](https://scorecard.dev/viewer/?uri=github.com/Lob2018/SudoFX2024)
-[![Known Vulnerabilities](https://snyk.io/test/github/Lob2018/SudoFX2024/badge.svg)](https://snyk.io/test/github/Lob2018/SudoFX2024)<br>
-[![Packages (Windows, Linux, MacOS)](https://github.com/Lob2018/SudoFX2024/actions/workflows/release.yml/badge.svg)](https://github.com/Lob2018/SudoFX2024/actions/workflows/release.yml)
-![CodeQL Analysis](https://github.com/lob2018/SudoFX2024/actions/workflows/codeql.yml/badge.svg)
-[![Dependabot Updates](https://github.com/Lob2018/SudoFX2024/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/Lob2018/SudoFX2024/actions/workflows/dependabot/dependabot-updates)
-[![Qodana](https://github.com/Lob2018/SudoFX2024/actions/workflows/qodana_code_quality.yml/badge.svg)](https://github.com/Lob2018/SudoFX2024/actions/workflows/qodana_code_quality.yml)
-[![Code coverage](https://github.com/Lob2018/SudoFX2024/actions/workflows/coverage_report.yml/badge.svg)](https://github.com/Lob2018/SudoFX2024/actions/workflows/coverage_report.yml)
+[![Known Vulnerabilities](https://snyk.io/test/github/Lob2018/SudoFX2024/badge.svg)](https://snyk.io/test/github/Lob2018/SudoFX2024)
+[![CodeQL Analysis](https://github.com/lob2018/SudoFX2024/actions/workflows/codeql.yml/badge.svg)](https://github.com/lob2018/SudoFX2024/actions/workflows/codeql.yml)<br>
+[![Dependabot Updates](https://github.com/Lob2018/SudoFX2024/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/Lob2018/SudoFX2024/actions/workflows/dependabot/dependabot-updates)<br>
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Lob2018_SudoFX2024&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=Lob2018_SudoFX2024)
+[![Code coverage](https://github.com/Lob2018/SudoFX2024/actions/workflows/coverage_report.yml/badge.svg)](https://github.com/Lob2018/SudoFX2024/actions/workflows/coverage_report.yml)
+[![Qodana](https://github.com/Lob2018/SudoFX2024/actions/workflows/qodana_code_quality.yml/badge.svg)](https://github.com/Lob2018/SudoFX2024/actions/workflows/qodana_code_quality.yml)<br>
+[![Open Issues](https://img.shields.io/github/issues/lob2018/SudoFX2024)](https://github.com/Lob2018/SudoFX2024/issues)
+[![Open Pull Requests](https://img.shields.io/github/issues-pr/lob2018/SudoFX2024)](https://github.com/Lob2018/SudoFX2024/pulls)
+[![GitHub release](https://img.shields.io/github/v/release/lob2018/SudoFX2024)](https://github.com/Lob2018/SudoFX2024/releases)
 
 <p align="center">
   <img alt="SudokuFX2024 in action" src="./.myresources/design_and_modeling/images/SudokuFX2024_in_action.jpg">
