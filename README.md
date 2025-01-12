@@ -12,9 +12,7 @@
 [![Open Pull Requests](https://img.shields.io/github/issues-pr/lob2018/SudoFX2024)](https://github.com/Lob2018/SudoFX2024/pulls)
 [![GitHub release](https://img.shields.io/github/v/release/lob2018/SudoFX2024)](https://github.com/Lob2018/SudoFX2024/releases)
 
-<p align="center">
-  <img alt="SudokuFX2024 in action" src="./.myresources/design_and_modeling/images/SudokuFX2024_in_action.jpg">
-</p>
+# [![SudokuFX2024 in action](https://raw.githubusercontent.com/Lob2018/SudoFX2024/master/.myresources/design_and_modeling/images/SudokuFX2024_in_action.jpg)](https://github.com/Lob2018/SudoFX2024/releases/latest)
 
 ## Contents
 
@@ -134,9 +132,10 @@ application allows you to solve the current Sudoku grid, but also other entries 
 
 ## Installation
 
-![Windows](https://img.shields.io/badge/Windows-Compatible-brightgreen)
-![Linux](https://img.shields.io/badge/Linux-Compatible-brightgreen)
-![MacOS_(jj)](https://img.shields.io/badge/MacOS_Arm64,_x86__64-Compatible-brightgreen)
+[![Windows](https://img.shields.io/badge/Windows-Compatible-brightgreen)](https://github.com/Lob2018/SudoFX2024/releases/latest)
+[![Linux](https://img.shields.io/badge/Linux-Compatible-brightgreen)](https://github.com/Lob2018/SudoFX2024/releases/latest)
+[![MacOS_Arm64,_x86__64](https://img.shields.io/badge/MacOS_Arm64,_x86__64-Compatible-brightgreen)](https://github.com/Lob2018/SudoFX2024/releases/latest)
+
 
 - Windows
   - Application without Java Runtime Environment included ([the latest JRE must be installed on your machine](https://adoptium.net))
