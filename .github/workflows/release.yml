@@ -161,7 +161,7 @@ jobs:
           echo "DISPLAY=:99" >> $GITHUB_ENV
       - name: Compile, Test, and Package with Maven (macOS)
         run: mvn package -P mac-x86_64 -f pom.xml
-      - name: Upload output folder (macOS)
+      - name: Upload output folder (macOS-x86_64)
         uses: actions/upload-artifact@b4b15b8c7c6ac21ea08fcf65892d2ee8f75cf882 # v4.4.3
         with:
           name: output-folder-macos-x86_64
