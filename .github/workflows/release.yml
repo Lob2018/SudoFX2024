@@ -134,11 +134,44 @@ jobs:
           name: output-folder-macos
           path: output
 
+  package_for_macos_x86_64:
+    name: Package for MacOS x86_64
+    needs: [ package_for_linux ]
+    runs-on: macos-13
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@c95a14d0e5bab51a9f56296a4eb0e416910cd350 # v2.10.3
+        with:
+          egress-policy: audit
+
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - name: Install JDK
+        uses: actions/setup-java@7a6d8a8234af8eb26422e24e3006232cccaa061b # v4.6.0
+        with:
+          distribution: 'temurin'
+          java-version: '21'
+          cache: "maven"
+      - name: Verify Java Installation
+        run: java -version
+      - name: Install Xvfb
+        run: brew install XQuartz
+      - name: Start Xvfb
+        run: |
+          Xvfb :99 -screen 0 1920x1080x24 &
+          echo "DISPLAY=:99" >> $GITHUB_ENV
+      - name: Compile, Test, and Package with Maven (macOS)
+        run: mvn package -P mac-x86_64 -f pom.xml
+      - name: Upload output folder (macOS)
+        uses: actions/upload-artifact@b4b15b8c7c6ac21ea08fcf65892d2ee8f75cf882 # v4.4.3
+        with:
+          name: output-folder-macos-x86_64
+          path: output
+
   publish_release:
     permissions:
       contents: write  # for ncipollo/release-action to create a release
     name: Publish the release and tag it
-    needs: [ package_for_windows, package_for_linux, package_for_macos ]
+    needs: [ package_for_windows, package_for_linux, package_for_macos, package_for_macos_x86_64 ]
     runs-on: ubuntu-latest
     steps:
       - name: Harden Runner
@@ -163,6 +196,11 @@ jobs:
         uses: actions/download-artifact@fa0a91b85d4f404e444e00e005971372dc801d16 # v4.1.8
         with:
           name: output-folder-macos
+          path: output
+      - name: Download output folder (MacOS-x86_64)
+        uses: actions/download-artifact@fa0a91b85d4f404e444e00e005971372dc801d16 # v4.1.8
+        with:
+          name: output-folder-macos-x86_64
           path: output
       - name: Create Release
         uses: ncipollo/release-action@2c591bcc8ecdcd2db72b97d6147f871fcd833ba5 # v1.14.0
