@@ -136,7 +136,7 @@ application allows you to solve the current Sudoku grid, but also other entries 
 
 ![Windows](https://img.shields.io/badge/Windows-Compatible-brightgreen)
 ![Linux](https://img.shields.io/badge/Linux-Compatible-brightgreen)
-![MacOS](https://img.shields.io/badge/MacOS-Compatible-brightgreen)
+![MacOS_(jj)](https://img.shields.io/badge/MacOS_Arm64,_x86__64-Compatible-brightgreen)
 
 - Windows
   - Application without Java Runtime Environment included ([the latest JRE must be installed on your machine](https://adoptium.net))
@@ -164,6 +164,7 @@ during installation; to continue the installation click on **additional informat
 >     sudo apt install ./sudokufx-jvm_v.v.v_amd64.deb
 
 - MacOS
+    - Arm64 package by default and x86_64 is specified if needed
     - Application without Java Runtime Environment included ([the latest JRE must be installed on your machine](https://adoptium.net))
 
       [Download, unzip, and keep all the files together (SudokuFX-v.v.v.sh to launch), from the latest MacOS version of the file SudokuFX-v.v.v_macos.zip, available in Assets.](https://github.com/Lob2018/SudoFX2024/releases/latest)
@@ -191,6 +192,7 @@ during installation; to continue the installation click on **additional informat
     - [Follow the installation instructions](#installation)
 
 - MacOS
+    - Arm64 package by default and x86_64 is specified if needed
     - Application without Java Runtime Environment included (ZIP file with the .sh file and the JAR)
         - [Delete your old unzipped folder from SudokuFX-v.v.v_macos.zip, and follow the installation instructions](#installation)
     - Application with Java Runtime Environment included (from .dmg file)
@@ -215,6 +217,7 @@ during installation; to continue the installation click on **additional informat
 >     sudo apt purge sudokufx-jvm
 
 - MacOS
+  - Arm64 package by default and x86_64 is specified if needed
   - Application without Java Runtime Environment included (ZIP file with the .sh file and the JAR)
     - **Delete your unzipped folder from SudokuFX-v.v.v_macos.zip**
   - Application with Java Runtime Environment included (from .dmg file)
