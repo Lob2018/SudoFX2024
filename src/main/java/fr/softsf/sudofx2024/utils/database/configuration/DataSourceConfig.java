@@ -18,7 +18,7 @@ import static fr.softsf.sudofx2024.utils.MyEnums.Paths.DATABASE_NAME;
  */
 @Configuration
 @PropertySource("classpath:fr/softsf/sudofx2024/application.properties")
-public class DynamicDataSourceConfiguration {
+public class DataSourceConfig {
 
     /**
      * Initializes Logback logging framework.
@@ -45,6 +45,7 @@ public class DynamicDataSourceConfiguration {
     HikariDataSource hikariDataSource(final OsFolderFactoryManager osFolderFactory, final ApplicationKeystore keystore) {
         keystore.setupApplicationKeystore();
         final HikariConfig config = new HikariConfig();
+        config.setPoolName("SudoFXHikariConnection");
         config.setDriverClassName("org.hsqldb.jdbc.JDBCDriver");
         config.setJdbcUrl("jdbc:hsqldb:file:" + osFolderFactory.osFolderFactory().getOsDataFolderPath() + "/" + DATABASE_NAME.getPath() + ";shutdown=true");
         config.setUsername(keystore.getUsername());
