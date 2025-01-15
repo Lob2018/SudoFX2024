@@ -2,7 +2,7 @@ var hierarchy =
 [
     [ "fr.softsf.sudofx2024.utils.database.keystore.ApplicationKeystoreITest", "classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1database_1_1keystore_1_1_application_keystore_i_test.html", null ],
     [ "fr.softsf.sudofx2024.model.Background", "classfr_1_1softsf_1_1sudofx2024_1_1model_1_1_background.html", null ],
-    [ "fr.softsf.sudofx2024.utils.database.configuration.DynamicDataSourceConfiguration", "classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1database_1_1configuration_1_1_dynamic_data_source_configuration.html", null ],
+    [ "fr.softsf.sudofx2024.utils.database.configuration.DataSourceConfig", "classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1database_1_1configuration_1_1_data_source_config.html", null ],
     [ "fr.softsf.sudofx2024.utils.DynamicFontSize", "classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1_dynamic_font_size.html", null ],
     [ "fr.softsf.sudofx2024.e2e.utils.DynamicFontSizeChangeE2ETest", "classfr_1_1softsf_1_1sudofx2024_1_1e2e_1_1utils_1_1_dynamic_font_size_change_e2_e_test.html", null ],
     [ "fr.softsf.sudofx2024.utils.ExceptionTools", "classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1_exception_tools.html", null ],

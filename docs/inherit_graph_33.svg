@@ -11,10 +11,10 @@
 <!-- Node0 -->
 <g id="Node000000" class="node">
 <title>Node0</title>
-<g id="a_Node000000"><a xlink:href="classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1database_1_1configuration_1_1_dynamic_data_source_configuration.html" target="_top" xlink:title="Configuration class for setting up dynamic data sources and related beans.">
+<g id="a_Node000000"><a xlink:href="classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1database_1_1configuration_1_1_data_source_config.html" target="_top" xlink:title="Configuration class for setting up dynamic data sources and related beans.">
 <polygon fill="white" stroke="#666666" points="228.25,-32 0,-32 0,0 228.25,0 228.25,-32"/>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudofx2024.utils.database.configuration.</text>
-<text text-anchor="middle" x="114.13" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">DynamicDataSourceConfiguration</text>
+<text text-anchor="middle" x="114.13" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">DataSourceConfig</text>
 </a>
 </g>
 </g>

@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudofx2024.utils.database.configuration.DynamicDataSourceConfiguration.flyway" name="fr.softsf.sudofx2024.utils.database.configuration.DynamicDataSourceConfiguration.flyway">
+<map id="fr.softsf.sudofx2024.utils.database.configuration.DataSourceConfig.flyway" name="fr.softsf.sudofx2024.utils.database.configuration.DataSourceConfig.flyway">
 <area shape="rect" id="Node000001" title="Configures Flyway with a specified location for migration scripts." alt="" coords="5,155,310,197"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1database_1_1configuration_1_1_dynamic_data_source_configuration.html#ab5c5d570ede214c8b4b657f419104a5c" title="Creates and configures the main DataSource for the application." alt="" coords="358,155,662,197"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="310,173,342,173,342,179,310,179"/>

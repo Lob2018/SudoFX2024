@@ -41,12 +41,14 @@ var searchData=
   ['gettoastinfo_38',['getToastInfo',['../classfr_1_1softsf_1_1sudofx2024_1_1view_1_1components_1_1_toaster_v_box.html#ab49d8033825c5980dd1459e0d6e1cc0e',1,'fr::softsf::sudofx2024::view::components::ToasterVBox']]],
   ['getusername_39',['getUsername',['../interfacefr_1_1softsf_1_1sudofx2024_1_1interfaces_1_1_i_keystore.html#aae82a77e5844a291350ed127f9a850c8',1,'fr::softsf::sudofx2024::interfaces::IKeystore']]],
   ['getvalue_40',['getValue',['../classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1_i18n.html#ae6e5beaf9c6e573f50f4eb244e099942',1,'fr::softsf::sudofx2024::utils::I18n']]],
-  ['grid_41',['Grid',['../classfr_1_1softsf_1_1sudofx2024_1_1model_1_1_grid.html',1,'fr::softsf::sudofx2024::model']]],
-  ['grid_2ejava_42',['Grid.java',['../_grid_8java.html',1,'']]],
-  ['griddto_43',['GridDto',['../namespacefr_1_1softsf_1_1sudofx2024_1_1dto.html#a66996e4b3dee619ac93a67ac637699d3',1,'fr::softsf::sudofx2024::dto']]],
-  ['griddto_2ejava_44',['GridDto.java',['../_grid_dto_8java.html',1,'']]],
-  ['gridid_45',['gridid',['../classfr_1_1softsf_1_1sudofx2024_1_1model_1_1_game.html#a8440fd3c0b21cae7b82c9d94824d42e4',1,'fr.softsf.sudofx2024.model.Game.gridid'],['../classfr_1_1softsf_1_1sudofx2024_1_1model_1_1_grid.html#a7efe2bfa660962a1c181d92447eb3eae',1,'fr.softsf.sudofx2024.model.Grid.gridid']]],
-  ['gridrepository_46',['GridRepository',['../interfacefr_1_1softsf_1_1sudofx2024_1_1repository_1_1_grid_repository.html',1,'fr::softsf::sudofx2024::repository']]],
-  ['gridrepository_2ejava_47',['GridRepository.java',['../_grid_repository_8java.html',1,'']]],
-  ['gridvalue_48',['gridvalue',['../classfr_1_1softsf_1_1sudofx2024_1_1model_1_1_grid.html#a5deea599dab65cefd1d48c241373988d',1,'fr::softsf::sudofx2024::model::Grid']]]
+  ['github_20com_20lob2018_20sudofx2024_20releases_20latest_20target_20_5fblank_20img_20src_20https_3a_20raw_20githubusercontent_20com_20lob2018_20sudofx2024_20master_20myresources_20design_5fand_5fmodeling_20images_20sudokufx2024_5fin_5faction_20jpg_20alt_20sudokufx2024_20in_20action_20a_41',['&lt;a href=&quot;https://github.com/Lob2018/SudoFX2024/releases/latest&quot; target=&quot;_blank&quot; &gt;&lt;img src=&quot;https://raw.githubusercontent.com/Lob2018/SudoFX2024/master/.myresources/design_and_modeling/images/SudokuFX2024_in_action.jpg&quot; alt=&quot;SudokuFX2024 in action&quot;/&gt;&lt;/a&gt;',['../md__r_e_a_d_m_e.html#autotoc_md3',1,'']]],
+  ['githubusercontent_20com_20lob2018_20sudofx2024_20master_20myresources_20design_5fand_5fmodeling_20images_20sudokufx2024_5fin_5faction_20jpg_20alt_20sudokufx2024_20in_20action_20a_42',['&lt;a href=&quot;https://github.com/Lob2018/SudoFX2024/releases/latest&quot; target=&quot;_blank&quot; &gt;&lt;img src=&quot;https://raw.githubusercontent.com/Lob2018/SudoFX2024/master/.myresources/design_and_modeling/images/SudokuFX2024_in_action.jpg&quot; alt=&quot;SudokuFX2024 in action&quot;/&gt;&lt;/a&gt;',['../md__r_e_a_d_m_e.html#autotoc_md3',1,'']]],
+  ['grid_43',['Grid',['../classfr_1_1softsf_1_1sudofx2024_1_1model_1_1_grid.html',1,'fr::softsf::sudofx2024::model']]],
+  ['grid_2ejava_44',['Grid.java',['../_grid_8java.html',1,'']]],
+  ['griddto_45',['GridDto',['../namespacefr_1_1softsf_1_1sudofx2024_1_1dto.html#a66996e4b3dee619ac93a67ac637699d3',1,'fr::softsf::sudofx2024::dto']]],
+  ['griddto_2ejava_46',['GridDto.java',['../_grid_dto_8java.html',1,'']]],
+  ['gridid_47',['gridid',['../classfr_1_1softsf_1_1sudofx2024_1_1model_1_1_game.html#a8440fd3c0b21cae7b82c9d94824d42e4',1,'fr.softsf.sudofx2024.model.Game.gridid'],['../classfr_1_1softsf_1_1sudofx2024_1_1model_1_1_grid.html#a7efe2bfa660962a1c181d92447eb3eae',1,'fr.softsf.sudofx2024.model.Grid.gridid']]],
+  ['gridrepository_48',['GridRepository',['../interfacefr_1_1softsf_1_1sudofx2024_1_1repository_1_1_grid_repository.html',1,'fr::softsf::sudofx2024::repository']]],
+  ['gridrepository_2ejava_49',['GridRepository.java',['../_grid_repository_8java.html',1,'']]],
+  ['gridvalue_50',['gridvalue',['../classfr_1_1softsf_1_1sudofx2024_1_1model_1_1_grid.html#a5deea599dab65cefd1d48c241373988d',1,'fr::softsf::sudofx2024::model::Grid']]]
 ];

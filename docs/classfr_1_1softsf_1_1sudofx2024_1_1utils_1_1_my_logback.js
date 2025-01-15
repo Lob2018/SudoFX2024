@@ -1,6 +1,6 @@
 var classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1_my_logback =
 [
-    [ "MyLogback", "classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1_my_logback.html#a85b389ea9b3d9a274db1e11c77e3c8d8", null ],
+    [ "MyLogback", "classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1_my_logback.html#ab78dd03b7c7836bcf278fb3d8b22248c", null ],
     [ "configureLogback", "classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1_my_logback.html#a7524245bb9d078465da71d084c712b60", null ],
     [ "printLogEntryMessage", "classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1_my_logback.html#a5bb8714c70751ad279c1c607d60351b1", null ],
     [ "printLogStatus", "classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1_my_logback.html#a94e53357d5b6e38ca3cda531bff5f56b", null ],

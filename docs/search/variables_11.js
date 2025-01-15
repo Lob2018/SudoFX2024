@@ -9,7 +9,7 @@ var searchData=
   ['setupmylogback_6',['setupMyLogback',['../classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1_my_logback_i_test.html#a2e4b37e61f2f43f37f247e699af66dbb',1,'fr::softsf::sudofx2024::utils::MyLogbackITest']]],
   ['size_7',['size',['../enumfr_1_1softsf_1_1sudofx2024_1_1utils_1_1_my_enums_1_1_screen_size.html#aa28bb28451c451b49f4918e1f32d7226',1,'fr::softsf::sudofx2024::utils::MyEnums::ScreenSize']]],
   ['softwareid_8',['softwareid',['../classfr_1_1softsf_1_1sudofx2024_1_1model_1_1_software.html#abad6e8144c55a813f6b5384d2e15b625',1,'fr::softsf::sudofx2024::model::Software']]],
-  ['softwarerepository_9',['softwareRepository',['../classfr_1_1softsf_1_1sudofx2024_1_1service_1_1_software_service.html#a3de20f9cc2a907f004bf985c4a949f6b',1,'fr::softsf::sudofx2024::service::SoftwareService']]],
+  ['softwarerepository_9',['softwareRepository',['../classfr_1_1softsf_1_1sudofx2024_1_1service_1_1_software_service.html#a49e972433fc1db1013cb69a2c4927ae8',1,'fr::softsf::sudofx2024::service::SoftwareService']]],
   ['softwareservice_10',['softwareService',['../classfr_1_1softsf_1_1sudofx2024_1_1viewmodel_1_1_full_menu_view_model.html#a36247c135e27d8eeb8e0a96974513778',1,'fr::softsf::sudofx2024::viewmodel::FullMenuViewModel']]],
   ['splashscreenfontsize_11',['splashScreenFontSize',['../classfr_1_1softsf_1_1sudofx2024_1_1view_1_1_splash_screen_view.html#aaea3369b9184d4aa9588fe08bdf1244f',1,'fr::softsf::sudofx2024::view::SplashScreenView']]],
   ['splashscreenstage_12',['splashScreenStage',['../classfr_1_1softsf_1_1sudofx2024_1_1view_1_1_splash_screen_view.html#aff589b2c0213e3d16c5a0a0cb29bd31c',1,'fr::softsf::sudofx2024::view::SplashScreenView']]],

@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudofx2024.utils.database.configuration.DynamicDataSourceConfiguration.hikariDataSource" name="fr.softsf.sudofx2024.utils.database.configuration.DynamicDataSourceConfiguration.hikariDataSource">
+<map id="fr.softsf.sudofx2024.utils.database.configuration.DataSourceConfig.hikariDataSource" name="fr.softsf.sudofx2024.utils.database.configuration.DataSourceConfig.hikariDataSource">
 <area shape="rect" id="Node000001" title="Creates and configures the main DataSource for the application." alt="" coords="5,155,329,197"/>
 <area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudofx2024_1_1utils_1_1os_1_1_os_folder_factory_manager_1_1_i_os_folder_factory.html#ad90f0abe53e6c4384a673eff77108b0f" title="Retrieves the path to the OS&#45;specific data folder." alt="" coords="407,5,636,64"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="208,152,285,113,376,74,394,67,396,72,378,78,287,118,210,156"/>

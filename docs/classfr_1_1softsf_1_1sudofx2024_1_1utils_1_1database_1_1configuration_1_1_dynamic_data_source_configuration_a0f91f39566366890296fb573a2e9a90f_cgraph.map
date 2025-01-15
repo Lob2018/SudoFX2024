@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudofx2024.utils.database.configuration.DynamicDataSourceConfiguration.entityManagerFactory" name="fr.softsf.sudofx2024.utils.database.configuration.DynamicDataSourceConfiguration.entityManagerFactory">
+<map id="fr.softsf.sudofx2024.utils.database.configuration.DataSourceConfig.entityManagerFactory" name="fr.softsf.sudofx2024.utils.database.configuration.DataSourceConfig.entityManagerFactory">
 <area shape="rect" id="Node000001" title="Creates and configures the EntityManagerFactory for JPA." alt="" coords="5,29,355,72"/>
 <area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="106,30,103,19,115,10,141,5,180,3,223,5,249,12,247,17,222,10,180,8,141,10,117,15,108,21,111,28"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1database_1_1configuration_1_1_dynamic_data_source_configuration.html#a416a5308b0dd9328b2a0a9cee262016f" title="Creates and configures the main DataSource for the application." alt="" coords="403,29,761,72"/>

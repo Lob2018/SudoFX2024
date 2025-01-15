@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudofx2024.utils.database.configuration.DynamicDataSourceConfiguration.logbackInitialization" name="fr.softsf.sudofx2024.utils.database.configuration.DynamicDataSourceConfiguration.logbackInitialization">
+<map id="fr.softsf.sudofx2024.utils.database.configuration.DataSourceConfig.logbackInitialization" name="fr.softsf.sudofx2024.utils.database.configuration.DataSourceConfig.logbackInitialization">
 <area shape="rect" id="Node000001" title="Initializes Logback logging framework." alt="" coords="5,5,343,48"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1_my_logback.html#a5bb8714c70751ad279c1c607d60351b1" title="Prints the application&#39;s ASCII logo to the log as an entry message." alt="" coords="391,5,613,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="343,24,375,24,375,29,343,29"/>

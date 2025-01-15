@@ -108,33 +108,32 @@
 <g id="Node000003" class="node">
 <title>Node3</title>
 <g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1_my_logback.html" target="_top" xlink:title="Configuration class for Logback logging framework.">
-<polygon fill="white" stroke="none" points="381.88,-552 214.62,-552 214.62,-344 381.88,-344 381.88,-552"/>
-<text text-anchor="start" x="242.75" y="-538.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudofx2024.utils.</text>
-<text text-anchor="start" x="273.12" y="-526.5" font-family="Helvetica,sans-Serif" font-size="10.00">MyLogback</text>
-<text text-anchor="start" x="220.12" y="-510.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="228.62" y="-510.5" font-family="Helvetica,sans-Serif" font-size="10.00">String logBackPath</text>
-<text text-anchor="start" x="220.12" y="-494.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="228.62" y="-494.5" font-family="Helvetica,sans-Serif" font-size="10.00">final String logsFolderPath</text>
-<text text-anchor="start" x="220.12" y="-478.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="228.62" y="-478.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
-<text text-anchor="start" x="228.62" y="-466.5" font-family="Helvetica,sans-Serif" font-size="10.00"> LOGS_NAME</text>
-<text text-anchor="start" x="218.62" y="-450.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="228.62" y="-450.5" font-family="Helvetica,sans-Serif" font-size="10.00">MyLogback(@Autowired</text>
-<text text-anchor="start" x="228.62" y="-438.5" font-family="Helvetica,sans-Serif" font-size="10.00"> OsFolderFactoryManager</text>
-<text text-anchor="start" x="228.62" y="-426.5" font-family="Helvetica,sans-Serif" font-size="10.00"> osFolderFactory)</text>
-<text text-anchor="start" x="218.62" y="-410.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="228.62" y="-410.5" font-family="Helvetica,sans-Serif" font-size="10.00">void printLogEntryMessage()</text>
-<text text-anchor="start" x="218.62" y="-394.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="228.62" y="-394.5" font-family="Helvetica,sans-Serif" font-size="10.00">LoggerContext configureLogback()</text>
-<text text-anchor="start" x="218.62" y="-378.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="228.62" y="-378.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setLogBackPathForTests()</text>
-<text text-anchor="start" x="220.12" y="-362.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="228.62" y="-362.5" font-family="Helvetica,sans-Serif" font-size="10.00">static void printLogStatus</text>
-<text text-anchor="start" x="228.62" y="-350.5" font-family="Helvetica,sans-Serif" font-size="10.00">(final LoggerContext context)</text>
-<polygon fill="#666666" stroke="#666666" points="214.62,-522 214.62,-522 381.88,-522 381.88,-522 214.62,-522"/>
-<polygon fill="#666666" stroke="#666666" points="214.62,-462 214.62,-462 226.62,-462 226.62,-462 214.62,-462"/>
-<polygon fill="#666666" stroke="#666666" points="226.62,-462 226.62,-462 381.88,-462 381.88,-462 226.62,-462"/>
-<polygon fill="none" stroke="#666666" points="214.62,-344 214.62,-552 381.88,-552 381.88,-344 214.62,-344"/>
+<polygon fill="white" stroke="none" points="381.88,-546 214.62,-546 214.62,-350 381.88,-350 381.88,-546"/>
+<text text-anchor="start" x="242.75" y="-532.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudofx2024.utils.</text>
+<text text-anchor="start" x="273.12" y="-520.5" font-family="Helvetica,sans-Serif" font-size="10.00">MyLogback</text>
+<text text-anchor="start" x="220.12" y="-504.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="228.62" y="-504.5" font-family="Helvetica,sans-Serif" font-size="10.00">String logBackPath</text>
+<text text-anchor="start" x="220.12" y="-488.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="228.62" y="-488.5" font-family="Helvetica,sans-Serif" font-size="10.00">final String logsFolderPath</text>
+<text text-anchor="start" x="220.12" y="-472.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="228.62" y="-472.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
+<text text-anchor="start" x="228.62" y="-460.5" font-family="Helvetica,sans-Serif" font-size="10.00"> LOGS_NAME</text>
+<text text-anchor="start" x="218.62" y="-444.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="228.62" y="-444.5" font-family="Helvetica,sans-Serif" font-size="10.00">MyLogback(OsFolderFactory</text>
+<text text-anchor="start" x="228.62" y="-432.5" font-family="Helvetica,sans-Serif" font-size="10.00">Manager osFolderFactory)</text>
+<text text-anchor="start" x="218.62" y="-416.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="228.62" y="-416.5" font-family="Helvetica,sans-Serif" font-size="10.00">void printLogEntryMessage()</text>
+<text text-anchor="start" x="218.62" y="-400.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="228.62" y="-400.5" font-family="Helvetica,sans-Serif" font-size="10.00">LoggerContext configureLogback()</text>
+<text text-anchor="start" x="218.62" y="-384.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="228.62" y="-384.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setLogBackPathForTests()</text>
+<text text-anchor="start" x="220.12" y="-368.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="228.62" y="-368.5" font-family="Helvetica,sans-Serif" font-size="10.00">static void printLogStatus</text>
+<text text-anchor="start" x="228.62" y="-356.5" font-family="Helvetica,sans-Serif" font-size="10.00">(final LoggerContext context)</text>
+<polygon fill="#666666" stroke="#666666" points="214.62,-516 214.62,-516 381.88,-516 381.88,-516 214.62,-516"/>
+<polygon fill="#666666" stroke="#666666" points="214.62,-456 214.62,-456 226.62,-456 226.62,-456 214.62,-456"/>
+<polygon fill="#666666" stroke="#666666" points="226.62,-456 226.62,-456 381.88,-456 381.88,-456 226.62,-456"/>
+<polygon fill="none" stroke="#666666" points="214.62,-350 214.62,-546 381.88,-546 381.88,-350 214.62,-350"/>
 </a>
 </g>
 </g>
@@ -142,7 +141,7 @@
 <g id="edge2_Node000001_Node000003" class="edge">
 <title>Node3&#45;&gt;Node1</title>
 <g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M301.95,-344.13C300.49,-297.03 294.21,-241.3 276.25,-194 274.76,-190.07 273.08,-186.16 271.24,-182.29"/>
+<path fill="none" stroke="#63b8ff" d="M302.11,-350.23C301.01,-301.9 294.99,-243.36 276.25,-194 274.76,-190.07 273.08,-186.16 271.24,-182.29"/>
 <polygon fill="none" stroke="#63b8ff" points="271.22,-182.26 264.91,-178.78 265.7,-171.61 272.01,-175.1 271.22,-182.26"/>
 </a>
 </g>

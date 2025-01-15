@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudofx2024.utils.database.configuration.DynamicDataSourceConfiguration.dataSource" name="fr.softsf.sudofx2024.utils.database.configuration.DynamicDataSourceConfiguration.dataSource">
+<map id="fr.softsf.sudofx2024.utils.database.configuration.DataSourceConfig.dataSource" name="fr.softsf.sudofx2024.utils.database.configuration.DataSourceConfig.dataSource">
 <area shape="rect" id="Node000001" title="Creates and configures the main DataSource for the application." alt="" coords="5,155,310,197"/>
 <area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="93,155,91,144,102,135,124,130,158,128,194,130,216,137,215,142,193,136,157,133,124,135,104,140,96,146,98,153"/>
 <area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudofx2024_1_1utils_1_1os_1_1_os_folder_factory_manager_1_1_i_os_folder_factory.html#ad90f0abe53e6c4384a673eff77108b0f" title="Retrieves the path to the OS&#45;specific data folder." alt="" coords="388,5,617,64"/>

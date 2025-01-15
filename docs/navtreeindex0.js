@@ -7,7 +7,7 @@ var NAVTREEINDEX0 =
 "_background_dto_8java.html#ad8ac067bab83b9d044a4d99016915717":[4,0,1,0,0,0,0,0,1,0,0],
 "_background_repository_8java.html":[4,0,1,0,0,0,0,0,4,0],
 "_crash_screen_view_8java.html":[4,0,1,0,0,0,0,0,7,1],
-"_dynamic_data_source_configuration_8java.html":[4,0,1,0,0,0,0,0,6,0,0,0],
+"_data_source_config_8java.html":[4,0,1,0,0,0,0,0,6,0,0,0],
 "_dynamic_font_size_8java.html":[4,0,1,0,0,0,0,0,6,3],
 "_dynamic_font_size_change_e2_e_test_8java.html":[4,0,1,1,0,0,0,0,0,0,0],
 "_exception_tools_8java.html":[4,0,1,0,0,0,0,0,6,4],

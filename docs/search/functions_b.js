@@ -20,6 +20,6 @@ var searchData=
   ['mapsoftwaretodto_17',['mapSoftwareToDto',['../interfacefr_1_1softsf_1_1sudofx2024_1_1interfaces_1_1mapper_1_1_i_software_mapper.html#a686b0da91e5e205e6d2410c711cc64aa',1,'fr::softsf::sudofx2024::interfaces::mapper::ISoftwareMapper']]],
   ['menudto_18',['MenuDto',['../namespacefr_1_1softsf_1_1sudofx2024_1_1dto.html#a63618860895ed3b2dd799885b1d16738',1,'fr::softsf::sudofx2024::dto']]],
   ['myenums_19',['MyEnums',['../classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1_my_enums.html#aaef13643eac8730ad3b770a19a7de934',1,'fr::softsf::sudofx2024::utils::MyEnums']]],
-  ['mylogback_20',['MyLogback',['../classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1_my_logback.html#a85b389ea9b3d9a274db1e11c77e3c8d8',1,'fr::softsf::sudofx2024::utils::MyLogback']]],
+  ['mylogback_20',['MyLogback',['../classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1_my_logback.html#ab78dd03b7c7836bcf278fb3d8b22248c',1,'fr::softsf::sudofx2024::utils::MyLogback']]],
   ['myregex_21',['MyRegex',['../classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1_my_regex.html#a6a9446dbb1dc155280eec7c84c1f5de5',1,'fr::softsf::sudofx2024::utils::MyRegex']]]
 ];
