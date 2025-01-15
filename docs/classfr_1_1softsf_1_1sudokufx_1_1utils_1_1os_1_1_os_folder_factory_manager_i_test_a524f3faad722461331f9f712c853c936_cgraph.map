@@ -1,0 +1,7 @@
+<map id="fr.softsf.sudokufx.utils.os.OsFolderFactoryManagerITest.testOsFolderFactoryWithWindowsFolderFactory" name="fr.softsf.sudokufx.utils.os.OsFolderFactoryManagerITest.testOsFolderFactoryWithWindowsFolderFactory">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,47,285,105"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_os_folder_factory_manager.html#abe170d1d4c6183a0a6e9d7dd7904fd19" title="Creates and returns an OS&#45;specific folder factory." alt="" coords="344,5,566,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="285,55,328,49,329,54,285,60"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_os_folder_factory_manager.html#ad0b26ec5da1068e26f4de647e0771edc" title="Sets Windows OS and set current paths for testing purposes." alt="" coords="333,88,577,147"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="285,92,318,96,317,102,285,97"/>
+</map>

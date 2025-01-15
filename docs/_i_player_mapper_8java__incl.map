@@ -1,5 +1,5 @@
-<map id="src/main/java/fr/softsf/sudofx2024/interfaces/mapper/IPlayerMapper.java" name="src/main/java/fr/softsf/sudofx2024/interfaces/mapper/IPlayerMapper.java">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,190,64"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="16,112,179,155"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,64,100,97,95,97,95,64"/>
+<map id="src/main/java/fr/softsf/sudokufx/interfaces/mapper/IPlayerMapper.java" name="src/main/java/fr/softsf/sudokufx/interfaces/mapper/IPlayerMapper.java">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,192,64"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="15,112,182,155"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,64,101,97,96,97,96,64"/>
 </map>

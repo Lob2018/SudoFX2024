@@ -37,7 +37,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <sonar.organization>lob2018</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-        <start-class>fr.softsf.sudofx2024.Launcher</start-class>
+        <start-class>fr.softsf.sudokufx.Launcher</start-class>
     </properties>
     <!-- Project dependencies -->
     <dependencies>
@@ -191,12 +191,12 @@
                 <version>0.8.12</version>
                 <configuration>
                     <excludes>
-                        <exclude>fr/softsf/sudofx2024/Launcher.class</exclude>
-                        <exclude>fr/softsf/sudofx2024/SudoMain.class</exclude>
-                        <exclude>fr/softsf/sudofx2024/view/**</exclude>
-                        <exclude>fr/softsf/sudofx2024/model/**</exclude>
-                        <exclude>fr/softsf/sudofx2024/dto/**</exclude>
-                        <exclude>fr/softsf/sudofx2024/interfaces/**</exclude>
+                        <exclude>fr/softsf/sudokufx/Launcher.class</exclude>
+                        <exclude>fr/softsf/sudokufx/SudoMain.class</exclude>
+                        <exclude>fr/softsf/sudokufx/view/**</exclude>
+                        <exclude>fr/softsf/sudokufx/model/**</exclude>
+                        <exclude>fr/softsf/sudokufx/dto/**</exclude>
+                        <exclude>fr/softsf/sudokufx/interfaces/**</exclude>
                     </excludes>
                 </configuration>
                 <executions>

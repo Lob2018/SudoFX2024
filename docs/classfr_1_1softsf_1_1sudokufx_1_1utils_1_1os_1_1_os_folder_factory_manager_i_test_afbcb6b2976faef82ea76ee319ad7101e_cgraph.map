@@ -1,0 +1,7 @@
+<map id="fr.softsf.sudokufx.utils.os.OsFolderFactoryManagerITest.testOsFolderFactoryWithMacOSFolderFactory" name="fr.softsf.sudokufx.utils.os.OsFolderFactoryManagerITest.testOsFolderFactoryWithMacOSFolderFactory">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,43,275,101"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_os_folder_factory_manager.html#abe170d1d4c6183a0a6e9d7dd7904fd19" title="Creates and returns an OS&#45;specific folder factory." alt="" coords="354,5,576,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="275,54,338,47,339,52,275,59"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_os_folder_factory_manager.html#ab07aeb68b793354c2fee844712b55c56" title="Sets macOS OS and set current paths for testing purposes." alt="" coords="323,88,608,131"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="275,85,307,89,307,94,275,90"/>
+</map>

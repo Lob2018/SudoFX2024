@@ -1,7 +1,0 @@
-<map id="fr.softsf.sudofx2024.utils.os.OsFolderFactoryManagerITest.testOsFolderFactoryWithMacOSFolderFactory" name="fr.softsf.sudofx2024.utils.os.OsFolderFactoryManagerITest.testOsFolderFactoryWithMacOSFolderFactory">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,275,89"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1os_1_1_os_folder_factory_manager.html#a75e9b28a167f8b8a5dc25dc08939a216" title="Creates and returns an OS&#45;specific folder factory." alt="" coords="332,5,598,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="275,44,316,39,317,45,275,49"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1os_1_1_os_folder_factory_manager.html#abea49f0f12043316f9e62a4ba3cb6f20" title="Sets macOS OS and set current paths for testing purposes." alt="" coords="323,72,608,115"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="275,71,307,74,307,80,275,76"/>
-</map>

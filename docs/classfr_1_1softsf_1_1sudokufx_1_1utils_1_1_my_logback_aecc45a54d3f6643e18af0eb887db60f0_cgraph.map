@@ -1,0 +1,11 @@
+<map id="fr.softsf.sudokufx.utils.MyLogback.MyLogback" name="fr.softsf.sudokufx.utils.MyLogback.MyLogback">
+<area shape="rect" id="Node000001" title="Constructor that initializes the logging configuration." alt="" coords="5,121,165,164"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback.html#a49cad47e15edac6d7737bf5b9810ba0c" title="Configures Logback using the specified configuration file." alt="" coords="230,5,424,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="113,119,158,87,211,58,226,51,228,56,214,62,161,92,116,123"/>
+<area shape="rect" id="Node000003" href="$interfacefr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_os_folder_factory_manager_1_1_i_os_folder_factory.html#a653a4eaaff7c2ab12db1e5f7f28ae184" title="Retrieves the path to the OS&#45;specific logs folder." alt="" coords="213,72,442,131"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="164,127,197,121,198,126,165,132"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_os_folder_factory_manager.html#abe170d1d4c6183a0a6e9d7dd7904fd19" title="Creates and returns an OS&#45;specific folder factory." alt="" coords="216,155,438,213"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="165,154,201,160,200,165,164,159"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback.html#a28243428de9550b4b0a3055854ab6f06" title="Prints the logger status to the log in case of errors or warnings." alt="" coords="239,237,416,280"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="116,162,161,193,214,223,228,229,226,234,211,228,158,198,113,167"/>
+</map>

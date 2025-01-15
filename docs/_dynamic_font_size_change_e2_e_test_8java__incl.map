@@ -1,5 +1,5 @@
-<map id="src/test/java/fr/softsf/sudofx2024/e2e/utils/DynamicFontSizeChangeE2ETest.java" name="src/test/java/fr/softsf/sudofx2024/e2e/utils/DynamicFontSizeChangeE2ETest.java">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,258,64"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="64,112,199,139"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,64,134,96,129,96,129,64"/>
+<map id="src/test/java/fr/softsf/sudokufx/e2e/utils/DynamicFontSizeChangeE2ETest.java" name="src/test/java/fr/softsf/sudokufx/e2e/utils/DynamicFontSizeChangeE2ETest.java">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,219,64"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="44,112,180,139"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,64,115,96,109,96,109,64"/>
 </map>

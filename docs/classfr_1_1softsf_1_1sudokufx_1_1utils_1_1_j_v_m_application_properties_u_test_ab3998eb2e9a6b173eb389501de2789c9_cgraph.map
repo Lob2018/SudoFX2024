@@ -1,0 +1,18 @@
+<map id="fr.softsf.sudokufx.utils.JVMApplicationPropertiesUTest.testGetAppProperties_Success" name="fr.softsf.sudokufx.utils.JVMApplicationPropertiesUTest.testGetAppProperties_Success">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,196,238,255"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties.html#a3c1aafe7e06f8e614ae7a2c249f364a6" title="Retrieves the current application name from system properties." alt="" coords="286,5,537,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="142,194,201,125,240,89,284,58,295,52,297,57,287,62,244,93,205,129,146,197"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties.html#afd79a2aeab3fe69dbb2ace62b5eddf83" title="Retrieves the current application version from system properties." alt="" coords="303,72,520,131"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="175,193,285,140,300,134,302,139,287,145,178,198"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties.html#a7d07880db5617906582d43a95925ba8d" title="Checks if the Spring context should exit on refresh." alt="" coords="300,155,522,213"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="238,206,285,199,285,205,238,211"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties.html#a9e08bf2d6e7311c1758254bec4580bf6" title="Resets the application name to an empty string." alt="" coords="296,237,527,296"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="238,239,281,245,280,251,238,245"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties.html#af21e767828933fa183e5f98e01bd5ea7" title="Resets the application version to an empty string." alt="" coords="296,320,527,379"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="178,253,287,306,302,312,300,317,285,310,175,258"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties.html#a7b37fbf03ceccda8c7fd3a117593b22d" title="Sets the Spring context exit behavior to &quot;onRefresh&quot; for testing purposes." alt="" coords="299,403,524,461"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="147,253,206,321,245,357,287,388,295,393,292,398,284,393,241,361,202,325,143,257"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex.html#a981702b076ee54a416d676b6f7a182fc" title="Validates a given text against a specified regular expression." alt="" coords="585,43,783,85"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="538,41,570,46,569,51,537,47"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="519,84,569,77,570,82,520,89"/>
+</map>

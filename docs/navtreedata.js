@@ -24,9 +24,9 @@
 */
 var NAVTREE =
 [
-  [ "SudokuFX2024", "index.html", [
-    [ "Documentation of SudoFX2024", "index.html", null ],
-    [ "SudokuFX2024", "md__r_e_a_d_m_e.html", [
+  [ "SudokuFX", "index.html", [
+    [ "Documentation of SudokuFX", "index.html", null ],
+    [ "SudokuFX", "md__r_e_a_d_m_e.html", [
       [ "", "md__r_e_a_d_m_e.html#autotoc_md3", [
         [ "Contents", "md__r_e_a_d_m_e.html#autotoc_md4", null ],
         [ "Description", "md__r_e_a_d_m_e.html#autotoc_md5", null ],
@@ -71,11 +71,11 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_application_keystore_8java.html",
-"classfr_1_1softsf_1_1sudofx2024_1_1model_1_1_software.html#a412fb7100d5da827df3bbb8e11756211",
-"classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1database_1_1keystore_1_1_application_keystore.html",
-"classfr_1_1softsf_1_1sudofx2024_1_1view_1_1_crash_screen_view.html#af64d650cfac2b1591f4d94595b269d2b",
-"enumfr_1_1softsf_1_1sudofx2024_1_1utils_1_1_my_enums_1_1_paths.html#abbd66cfaf4f7bb5ee32d70b92692673d",
-"namespacefr_1_1softsf_1_1sudofx2024_1_1integration_1_1database_1_1keystore.html"
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_software.html#a1e19f5db5a5bddc941625bb081e64c30",
+"classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore.html",
+"classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#aeafb2651c347d16a52b08b48563f8476",
+"enumfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_enums_1_1_paths.html#ad5d7f49d7ee9d196930c01d6970d5c0c",
+"namespacefr_1_1softsf_1_1sudokufx_1_1integration_1_1database_1_1keystore.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

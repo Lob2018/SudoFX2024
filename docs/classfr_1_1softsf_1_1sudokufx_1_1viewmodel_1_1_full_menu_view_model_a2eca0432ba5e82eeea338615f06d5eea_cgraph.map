@@ -1,0 +1,27 @@
+<map id="fr.softsf.sudokufx.viewmodel.FullMenuViewModel.test" name="fr.softsf.sudokufx.viewmodel.FullMenuViewModel.test">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,143,199,185"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_full_menu_view_model.html#adce6b8020bad713a5457f19529475669" title=" " alt="" coords="248,76,478,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="188,139,262,120,263,126,189,145"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_software_service.html#a19dc59ca2cea75458d2d0a92ada59b34" title=" " alt="" coords="268,209,459,252"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="189,183,263,202,262,208,188,189"/>
+<area shape="rect" id="Node000010" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_full_menu_view_model.html#abeb58caaac8ee5464bb0f851c94992f4" title=" " alt="" coords="247,143,480,185"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="199,161,231,161,231,167,199,167"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties.html#afd79a2aeab3fe69dbb2ace62b5eddf83" title="Retrieves the current application version from system properties." alt="" coords="539,27,755,85"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="479,78,523,71,524,77,479,83"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_software_service.html#a74d93b9d4144d91d01a4b02369265f0f" title=" " alt="" coords="541,109,753,152"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="479,108,526,114,525,119,479,114"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex.html#a981702b076ee54a416d676b6f7a182fc" title="Validates a given text against a specified regular expression." alt="" coords="859,5,1058,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="755,43,844,35,844,40,756,48"/>
+<area shape="rect" id="Node000006" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_software_mapper.html#a85adc191251bde9870609d4b2cb23ee6" title="Maps a SoftwareDto object to a Software object." alt="" coords="814,72,1103,115"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="754,115,799,110,799,115,754,121"/>
+<area shape="rect" id="Node000007" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_software_mapper.html#addc8516cb5cc6171c663e132d5fdddd6" title="Maps a Software object to a SoftwareDto object." alt="" coords="840,139,1077,181"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="754,138,825,145,825,150,754,143"/>
+<area shape="rect" id="Node000009" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_software_repository.html#ae83142c4226c94b3b24f050848ae74c4" title=" " alt="" coords="528,243,766,285"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="460,239,513,246,512,251,459,245"/>
+<area shape="poly" id="edge10_Node000010_Node000003" title=" " alt="" coords="451,140,479,128,503,112,527,95,538,90,540,94,529,100,506,116,481,133,453,145"/>
+<area shape="poly" id="edge13_Node000010_Node000005" title=" " alt="" coords="480,148,525,142,526,148,481,153"/>
+<area shape="rect" id="Node000011" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_full_menu_view_model.html#a99e8ff186f421e303199bb273f082c40" title=" " alt="" coords="540,176,754,219"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="481,175,525,180,524,186,480,180"/>
+<area shape="rect" id="Node000012" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_full_menu_view_model.html#a574eda9c01df428c38524cc5acf49fbf" title=" " alt="" coords="837,205,1080,248"/>
+<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="755,205,822,211,822,216,754,210"/>
+</map>

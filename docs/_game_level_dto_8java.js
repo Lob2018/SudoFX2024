@@ -1,4 +1,4 @@
 var _game_level_dto_8java =
 [
-    [ "GameLevelDto", "_game_level_dto_8java.html#a948fa1ca82ccfdfe2fd86eddf95c2f32", null ]
+    [ "GameLevelDto", "_game_level_dto_8java.html#a7ea3450705900e16f8ac65f20aff66dd", null ]
 ];

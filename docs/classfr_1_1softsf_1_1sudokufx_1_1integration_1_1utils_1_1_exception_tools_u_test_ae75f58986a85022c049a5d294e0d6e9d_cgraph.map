@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.integration.utils.ExceptionToolsUTest.getSQLInvalidAuthorizationSpecException_null" name="fr.softsf.sudokufx.integration.utils.ExceptionToolsUTest.getSQLInvalidAuthorizationSpecException_null">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,313,64"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_exception_tools.html#a01f8c39804c60b96986387008e3f9cdc" title="Recursively searches for a SQLInvalidAuthorizationSpecException in the exception chain." alt="" coords="361,5,633,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="313,32,345,32,345,37,313,37"/>
+</map>

@@ -1,4 +1,4 @@
 var _game_dto_8java =
 [
-    [ "GameDto", "_game_dto_8java.html#a1fe9f90fac392154c4091dde6205b969", null ]
+    [ "GameDto", "_game_dto_8java.html#af115ca634d2f50876b34c8c03ba20226", null ]
 ];

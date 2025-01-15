@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['name_0',['name',['../classfr_1_1softsf_1_1sudofx2024_1_1model_1_1_player.html#a3f827d45f014f16988f319fb248fbcec',1,'fr::softsf::sudofx2024::model::Player']]],
-  ['nestingofnodes_1',['nestingOfNodes',['../classfr_1_1softsf_1_1sudofx2024_1_1view_1_1_splash_screen_view.html#ab0e71c2a6536f8a3ff505c12db40df8f',1,'fr::softsf::sudofx2024::view::SplashScreenView']]],
-  ['nodesconfiguration_2',['nodesConfiguration',['../classfr_1_1softsf_1_1sudofx2024_1_1view_1_1_splash_screen_view.html#a5cd0c6fffa8b0f9d4ae7dec8b071d60b',1,'fr::softsf::sudofx2024::view::SplashScreenView']]]
+  ['name_0',['name',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#ab127050c37577250b5b640a1bdf8b9d5',1,'fr::softsf::sudokufx::model::Player']]],
+  ['nestingofnodes_1',['nestingOfNodes',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a0af4ab414c9c917edc9975bfd5c63fbd',1,'fr::softsf::sudokufx::view::SplashScreenView']]],
+  ['nodesconfiguration_2',['nodesConfiguration',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#acddefac20ee4e90165233cb342d56fe0',1,'fr::softsf::sudokufx::view::SplashScreenView']]]
 ];

@@ -1,0 +1,14 @@
+<map id="fr.softsf.sudokufx.viewmodel.FullMenuViewModel" name="fr.softsf.sudokufx.viewmodel.FullMenuViewModel">
+<area shape="rect" id="Node000001" title="FullMenuViewModel with business logic (not final)" alt="" coords="182,599,402,801"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_software_service.html" title=" " alt="" coords="102,343,310,535"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="235,534,248,574,250,582,245,583,242,576,230,535"/>
+<area shape="rect" id="Node000003" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_software_repository.html" title=" " alt="" coords="5,159,182,260"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="120,259,154,326,149,329,116,261"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="12,5,175,91"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="96,105,96,159,91,159,91,105"/>
+<area shape="rect" id="Node000005" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_software_mapper.html" title="This interface defines methods for mapping objects of type Software to objects of type SoftwareDto an..." alt="" coords="207,140,431,279"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="292,280,273,320,269,329,264,327,269,317,288,277"/>
+<area shape="poly" id="edge5_Node000005_Node000005" title=" " alt="" coords="432,191,450,198,458,209,450,221,445,218,453,209,447,202,430,196"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="334,404,427,473"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="378,474,368,522,354,575,351,584,346,582,348,574,363,521,373,473"/>
+</map>

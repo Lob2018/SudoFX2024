@@ -42,7 +42,7 @@ vulnerabilities to us. All reports are thoroughly investigated by the project
 Vulnerabilities are reported privately via GitHub's
 [Security Advisories](https://docs.github.com/en/code-security/security-advisories)
 feature. Please use the following link to submit your vulnerability:
-[Report a vulnerability](https://github.com/Lob2018/SudoFX2024/security/advisories/new)
+[Report a vulnerability](https://github.com/Lob2018/SudokuFX/security/advisories/new)
 
 Please see
 [Privately reporting a security vulnerability](https://docs.github.com/en/code-security/security-advisories/guidance-on-reporting-and-writing/privately-reporting-a-security-vulnerability#privately-reporting-a-security-vulnerability)
@@ -50,9 +50,9 @@ for more information on how to submit a vulnerability using GitHub's interface.
 
 ### When Should I Report a Vulnerability?
 
-- You think you discovered a potential security vulnerability in SudoFX2024
-- You are unsure how a vulnerability affects SudoFX2024
-- You think you discovered a vulnerability in another project that SudoFX2024 depends on
+- You think you discovered a potential security vulnerability in SudokuFX
+- You are unsure how a vulnerability affects SudokuFX
+- You think you discovered a vulnerability in another project that SudokuFX depends on
    - For projects with their own vulnerability reporting and disclosure process, please report it directly there
 
 ### When Should I NOT Report a Vulnerability?
@@ -68,7 +68,7 @@ within 14 days. This will set off the
 [Security Release Process](#security-release--disclosure-process).
 
 Any vulnerability information shared with the Security Team stays within
-SudoFX2024 project and will not be disseminated to other projects
+SudokuFX project and will not be disseminated to other projects
 unless it is necessary to get the issue fixed.
 
 As the security issue moves from triage, to identified fix, to release planning
@@ -93,7 +93,7 @@ that are private from the general public if deemed necessary.
 ### Public Disclosure
 
 Vulnerabilities are disclosed publicly as GitHub [Security
-Advisories](https://github.com/Lob2018/SudoFX2024/security/advisories).
+Advisories](https://github.com/Lob2018/SudokuFX/security/advisories).
 
 A public disclosure date is negotiated by the [Security Team](#security-team)
 and the bug submitter. We prefer to fully disclose the bug as soon as possible

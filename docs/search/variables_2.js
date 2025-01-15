@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['backgroundid_0',['backgroundid',['../classfr_1_1softsf_1_1sudofx2024_1_1model_1_1_background.html#ae0bda8fe06f22eed31aadb2453df0017',1,'fr.softsf.sudofx2024.model.Background.backgroundid'],['../classfr_1_1softsf_1_1sudofx2024_1_1model_1_1_player.html#a853407db1c6ff9ec87a8f6e934cf0114',1,'fr.softsf.sudofx2024.model.Player.backgroundid']]],
-  ['bundle_1',['bundle',['../classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1_i18n.html#a442eaea47bddec32a16ce8b8257f427d',1,'fr::softsf::sudofx2024::utils::I18n']]],
-  ['buttonclose_2',['buttonClose',['../classfr_1_1softsf_1_1sudofx2024_1_1view_1_1_crash_screen_view.html#a8a0159ef20a23ad634a107c5bb494b19',1,'fr::softsf::sudofx2024::view::CrashScreenView']]],
-  ['buttonhello_3',['buttonHello',['../classfr_1_1softsf_1_1sudofx2024_1_1view_1_1_full_menu_view.html#a21f81da4175889e4b7c988737d39b762',1,'fr::softsf::sudofx2024::view::FullMenuView']]],
-  ['buttonreset_4',['buttonReset',['../classfr_1_1softsf_1_1sudofx2024_1_1view_1_1_crash_screen_view.html#a999f6cffe7ae7aaae003925c4f97342c',1,'fr::softsf::sudofx2024::view::CrashScreenView']]]
+  ['backgroundid_0',['backgroundid',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background.html#a1a00e13cbfcaea261c99df365ab101b3',1,'fr.softsf.sudokufx.model.Background.backgroundid'],['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a1437c47564fd6d95dff411365b7210de',1,'fr.softsf.sudokufx.model.Player.backgroundid']]],
+  ['bundle_1',['bundle',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_i18n.html#a2e96200101ff93267b8ef54dd238b1ff',1,'fr::softsf::sudokufx::utils::I18n']]],
+  ['buttonclose_2',['buttonClose',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a7e5f099b70c5a8a4ee33fdab4dd144bd',1,'fr::softsf::sudokufx::view::CrashScreenView']]],
+  ['buttonhello_3',['buttonHello',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_full_menu_view.html#afa361fa9ce2fd4413bbc5fec706235a9',1,'fr::softsf::sudokufx::view::FullMenuView']]],
+  ['buttonreset_4',['buttonReset',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a9a69dcdad012b735ce72ec5fdb956d01',1,'fr::softsf::sudokufx::view::CrashScreenView']]]
 ];

@@ -1,18 +1,18 @@
-# SudokuFX2024
+# SudokuFX
 
-[![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/Lob2018/SudoFX2024?tab=License-1-ov-file#readme)<br>
-[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/Lob2018/SudoFX2024/badge)](https://scorecard.dev/viewer/?uri=github.com/Lob2018/SudoFX2024)
-[![Known Vulnerabilities](https://snyk.io/test/github/Lob2018/SudoFX2024/badge.svg)](https://snyk.io/test/github/Lob2018/SudoFX2024)
-[![CodeQL Analysis](https://github.com/lob2018/SudoFX2024/actions/workflows/codeql.yml/badge.svg)](https://github.com/lob2018/SudoFX2024/actions/workflows/codeql.yml)<br>
-[![Dependabot Updates](https://github.com/Lob2018/SudoFX2024/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/Lob2018/SudoFX2024/actions/workflows/dependabot/dependabot-updates)<br>
+[![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme)<br>
+[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/Lob2018/SudokuFX/badge)](https://scorecard.dev/viewer/?uri=github.com/Lob2018/SudokuFX)
+[![Known Vulnerabilities](https://snyk.io/test/github/Lob2018/SudokuFX/badge.svg)](https://snyk.io/test/github/Lob2018/SudokuFX)
+[![CodeQL Analysis](https://github.com/lob2018/SudokuFX/actions/workflows/codeql.yml/badge.svg)](https://github.com/lob2018/SudokuFX/actions/workflows/codeql.yml)<br>
+[![Dependabot Updates](https://github.com/Lob2018/SudokuFX/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/Lob2018/SudokuFX/actions/workflows/dependabot/dependabot-updates)<br>
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Lob2018_SudoFX2024&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=Lob2018_SudoFX2024)
-[![Code coverage](https://github.com/Lob2018/SudoFX2024/actions/workflows/coverage_report.yml/badge.svg)](https://github.com/Lob2018/SudoFX2024/actions/workflows/coverage_report.yml)
-[![Qodana](https://github.com/Lob2018/SudoFX2024/actions/workflows/qodana_code_quality.yml/badge.svg)](https://github.com/Lob2018/SudoFX2024/actions/workflows/qodana_code_quality.yml)<br>
-[![Open Issues](https://img.shields.io/github/issues/lob2018/SudoFX2024)](https://github.com/Lob2018/SudoFX2024/issues)
-[![Open Pull Requests](https://img.shields.io/github/issues-pr/lob2018/SudoFX2024)](https://github.com/Lob2018/SudoFX2024/pulls)
-[![GitHub release](https://img.shields.io/github/v/release/lob2018/SudoFX2024)](https://github.com/Lob2018/SudoFX2024/releases)
+[![Code coverage](https://github.com/Lob2018/SudokuFX/actions/workflows/coverage_report.yml/badge.svg)](https://github.com/Lob2018/SudokuFX/actions/workflows/coverage_report.yml)
+[![Qodana](https://github.com/Lob2018/SudokuFX/actions/workflows/qodana_code_quality.yml/badge.svg)](https://github.com/Lob2018/SudokuFX/actions/workflows/qodana_code_quality.yml)<br>
+[![Open Issues](https://img.shields.io/github/issues/lob2018/SudokuFX)](https://github.com/Lob2018/SudokuFX/issues)
+[![Open Pull Requests](https://img.shields.io/github/issues-pr/lob2018/SudokuFX)](https://github.com/Lob2018/SudokuFX/pulls)
+[![GitHub release](https://img.shields.io/github/v/release/lob2018/SudokuFX)](https://github.com/Lob2018/SudokuFX/releases)
 
-# [![SudokuFX2024 in action](https://raw.githubusercontent.com/Lob2018/SudoFX2024/master/.myresources/design_and_modeling/images/SudokuFX2024_in_action.jpg)](https://github.com/Lob2018/SudoFX2024/releases/latest)
+# [![SudokuFX in action](https://raw.githubusercontent.com/Lob2018/SudokuFX/master/.myresources/design_and_modeling/images/SudokuFX_in_action.jpg)](https://github.com/Lob2018/SudokuFX/releases/latest)
 
 ## Contents
 
@@ -24,19 +24,19 @@
   - [Required Application Properties to Run](#required-application-properties-to-run)
   - [Windows how to run in IntelliJ IDEA](#windows-how-to-run-in-intellij-idea)
 - [Installation](#installation)
-- [Security](https://github.com/Lob2018/SudoFX2024?tab=security-ov-file#readme)
+- [Security](https://github.com/Lob2018/SudokuFX?tab=security-ov-file#readme)
 - [Use](#use)
 - [Examples](#examples)
 - [Update](#update)
 - [Uninstallation](#uninstallation)
-- [Documentation](https://lob2018.github.io/SudoFX2024/)
+- [Documentation](https://lob2018.github.io/SudokuFX/)
 - [Contributors](#contributors)
 - [Feedback](#feedback)
-- [Licence](https://github.com/Lob2018/SudoFX2024?tab=License-1-ov-file#readme)
+- [Licence](https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme)
 
 ## Description
 
-SudokuFX2024 is a Sudoku game, allowing you to create several player profiles and save and restore their games. The
+SudokuFX is a Sudoku game, allowing you to create several player profiles and save and restore their games. The
 application allows you to solve the current Sudoku grid, but also other entries manually.
 
 ## Build with
@@ -84,7 +84,7 @@ application allows you to solve the current Sudoku grid, but also other entries 
 
 ### Mockup
 
-- [The app mockup (Figma)](https://www.figma.com/file/GiSwlg2mZofXalf1Quaa5w/SudokuFX2024?type=design&node-id=0%3A1&mode=design&t=D4N04MRdsbArO6fu-1)
+- [The app mockup (Figma)](https://www.figma.com/design/GiSwlg2mZofXalf1Quaa5w/SudokuFX?node-id=0-1&t=smJqt7CQuD0zZuUP-1)
 
 > [!IMPORTANT]
 >
@@ -132,19 +132,19 @@ application allows you to solve the current Sudoku grid, but also other entries 
 
 ## Installation
 
-[![Windows](https://img.shields.io/badge/Windows-Compatible-brightgreen)](https://github.com/Lob2018/SudoFX2024/releases/latest)
-[![Linux](https://img.shields.io/badge/Linux-Compatible-brightgreen)](https://github.com/Lob2018/SudoFX2024/releases/latest)
-[![MacOS_Arm64,_x86__64](https://img.shields.io/badge/MacOS_Arm64,_x86__64-Compatible-brightgreen)](https://github.com/Lob2018/SudoFX2024/releases/latest)
+[![Windows](https://img.shields.io/badge/Windows-Compatible-brightgreen)](https://github.com/Lob2018/SudokuFX/releases/latest)
+[![Linux](https://img.shields.io/badge/Linux-Compatible-brightgreen)](https://github.com/Lob2018/SudokuFX/releases/latest)
+[![MacOS_Arm64,_x86__64](https://img.shields.io/badge/MacOS_Arm64,_x86__64-Compatible-brightgreen)](https://github.com/Lob2018/SudokuFX/releases/latest)
 
 
 - Windows
   - Application without Java Runtime Environment included ([the latest JRE must be installed on your machine](https://adoptium.net))
 
-    [Download, unzip, and keep all the files together (SudokuFX-v.v.v.bat to launch), from the latest Windows version of the file SudokuFX-v.v.v_windows.zip, available in Assets.](https://github.com/Lob2018/SudoFX2024/releases/latest)
+    [Download, unzip, and keep all the files together (SudokuFX-v.v.v.bat to launch), from the latest Windows version of the file SudokuFX-v.v.v_windows.zip, available in Assets.](https://github.com/Lob2018/SudokuFX/releases/latest)
 
   - Application with Java Runtime Environment included (latest distribution with x64 architecture)
 
-    [Download and install the latest Windows version of the file SudokuFX_JVM-v.v.v.msi, available in Assets.](https://github.com/Lob2018/SudoFX2024/releases/latest)
+    [Download and install the latest Windows version of the file SudokuFX_JVM-v.v.v.msi, available in Assets.](https://github.com/Lob2018/SudokuFX/releases/latest)
 
     The MSI file does not have a code signing certificate (paid service), Microsoft Defender SmartScreen informs you of this
 during installation; to continue the installation click on **additional information**, then **Run anyway**.
@@ -154,11 +154,11 @@ during installation; to continue the installation click on **additional informat
 - Linux
   - Application without Java Runtime Environment included ([the latest JRE must be installed on your machine](https://adoptium.net))
 
-    [Download, untar, and keep all the files together (SudokuFX-v.v.v.sh to launch), from the latest Linux version of the file SudokuFX-v.v.v_linux.tar.gz, available in Assets.](https://github.com/Lob2018/SudoFX2024/releases/latest)
+    [Download, untar, and keep all the files together (SudokuFX-v.v.v.sh to launch), from the latest Linux version of the file SudokuFX-v.v.v_linux.tar.gz, available in Assets.](https://github.com/Lob2018/SudokuFX/releases/latest)
 
   - Application with Java Runtime Environment included (Debian-based distribution with AMD64 architecture)
 
-    [Download and install the latest Linux version of the file sudokufx-jvm_v.v.v_amd64.deb, available in Assets.](https://github.com/Lob2018/SudoFX2024/releases/latest)
+    [Download and install the latest Linux version of the file sudokufx-jvm_v.v.v_amd64.deb, available in Assets.](https://github.com/Lob2018/SudokuFX/releases/latest)
 
 >     sudo apt install ./sudokufx-jvm_v.v.v_amd64.deb
 
@@ -166,11 +166,11 @@ during installation; to continue the installation click on **additional informat
     - Arm64 package by default and x86_64 is specified if needed
     - Application without Java Runtime Environment included ([the latest JRE must be installed on your machine](https://adoptium.net))
 
-      [Download, unzip, and keep all the files together (SudokuFX-v.v.v.sh to launch), from the latest MacOS version of the file SudokuFX-v.v.v_macos.zip, available in Assets.](https://github.com/Lob2018/SudoFX2024/releases/latest)
+      [Download, unzip, and keep all the files together (SudokuFX-v.v.v.sh to launch), from the latest MacOS version of the file SudokuFX-v.v.v_macos.zip, available in Assets.](https://github.com/Lob2018/SudokuFX/releases/latest)
 
     - Application with Java Runtime Environment included (latest distribution with ARM64 architecture)
 
-      [Download and install the latest MacOS version of the file SudokuFX-JVM-1.0.0.dmg, available in Assets.](https://github.com/Lob2018/SudoFX2024/releases/latest)
+      [Download and install the latest MacOS version of the file SudokuFX-JVM-1.0.0.dmg, available in Assets.](https://github.com/Lob2018/SudokuFX/releases/latest)
 
 ## Use
 
@@ -244,11 +244,11 @@ during installation; to continue the installation click on **additional informat
 
 ## Feedback
 
-- [File an issue](https://github.com/Lob2018/SudoFX2024/issues)
+- [File an issue](https://github.com/Lob2018/SudokuFX/issues)
     - If you want you can attach the application logs you find :
         - Windows
-          - Inside C:/Users/\<USERNAME\>**[^1]**/AppData/Local/Soft64.fr/SudokuFX/logs-sudofx
+          - Inside C:/Users/\<USERNAME\>**[^1]**/AppData/Local/Soft64.fr/SudokuFX/logs-sudokufx
         - Linux
-          - Inside /home/\<USERNAME\>**[^1]**/.local/share/Soft64.fr/SudokuFX/logs-sudofx
+          - Inside /home/\<USERNAME\>**[^1]**/.local/share/Soft64.fr/SudokuFX/logs-sudokufx
         - MacOS
-          - Inside /Users/\<USERNAME\>**[^1]**/Library/Application Support/Soft64.fr/SudokuFX/logs-sudofx
+          - Inside /Users/\<USERNAME\>**[^1]**/Library/Application Support/Soft64.fr/SudokuFX/logs-sudokufx

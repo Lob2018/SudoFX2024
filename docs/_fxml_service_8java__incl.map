@@ -1,5 +1,5 @@
-<map id="src/main/java/fr/softsf/sudofx2024/service/FxmlService.java" name="src/main/java/fr/softsf/sudofx2024/service/FxmlService.java">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,249,48"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="27,96,227,123"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,49,130,80,124,80,124,49"/>
+<map id="src/main/java/fr/softsf/sudokufx/service/FxmlService.java" name="src/main/java/fr/softsf/sudokufx/service/FxmlService.java">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,235,48"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="27,96,213,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,49,123,80,117,80,117,49"/>
 </map>

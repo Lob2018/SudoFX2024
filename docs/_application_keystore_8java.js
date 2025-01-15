@@ -1,5 +1,5 @@
 var _application_keystore_8java =
 [
-    [ "fr.softsf.sudofx2024.utils.database.keystore.ApplicationKeystore", "classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1database_1_1keystore_1_1_application_keystore.html", "classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1database_1_1keystore_1_1_application_keystore" ],
-    [ "fr.softsf.sudofx2024.utils.database.keystore.ApplicationKeystore.IEncryptionService", "interfacefr_1_1softsf_1_1sudofx2024_1_1utils_1_1database_1_1keystore_1_1_application_keystore_1_1_i_encryption_service.html", "interfacefr_1_1softsf_1_1sudofx2024_1_1utils_1_1database_1_1keystore_1_1_application_keystore_1_1_i_encryption_service" ]
+    [ "fr.softsf.sudokufx.utils.database.keystore.ApplicationKeystore", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore" ],
+    [ "fr.softsf.sudokufx.utils.database.keystore.ApplicationKeystore.IEncryptionService", "interfacefr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore_1_1_i_encryption_service.html", "interfacefr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore_1_1_i_encryption_service" ]
 ];

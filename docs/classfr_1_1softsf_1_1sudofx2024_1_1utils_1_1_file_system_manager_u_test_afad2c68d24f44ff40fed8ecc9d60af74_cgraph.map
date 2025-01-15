@@ -1,5 +1,0 @@
-<map id="fr.softsf.sudofx2024.utils.FileSystemManagerUTest.testDeleteFolder_success" name="fr.softsf.sudofx2024.utils.FileSystemManagerUTest.testDeleteFolder_success">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,242,64"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1_file_system_manager.html#a4fc378c427a23d59869d0803287c4aa3" title="Recursively deletes a folder and its contents if the folder path ends with the specified string." alt="" coords="290,13,571,56"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="242,32,274,32,274,37,242,37"/>
-</map>

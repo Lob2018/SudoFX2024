@@ -8,6 +8,11 @@
         <option value="DIRECTORY:docs/**" />
       </list>
     </option>
+    <option name="moduleMapping">
+      <map>
+        <entry key="SudokuFX" value="SudokuFX" />
+      </map>
+    </option>
     <option name="projectKey" value="Lob2018_SudoFX2024" />
     <option name="serverId" value="SudoFX2024" />
   </component>

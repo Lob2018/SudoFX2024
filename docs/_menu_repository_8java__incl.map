@@ -1,5 +1,5 @@
-<map id="src/main/java/fr/softsf/sudofx2024/repository/MenuRepository.java" name="src/main/java/fr/softsf/sudofx2024/repository/MenuRepository.java">
-<area shape="rect" id="Node000001" title=" " alt="" coords="35,5,188,64"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,112,218,139"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,64,114,96,109,96,109,64"/>
+<map id="src/main/java/fr/softsf/sudokufx/repository/MenuRepository.java" name="src/main/java/fr/softsf/sudokufx/repository/MenuRepository.java">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,271,48"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="39,96,237,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,49,141,80,135,80,135,49"/>
 </map>

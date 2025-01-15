@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['handlespringcontexttaskfailed_0',['handleSpringContextTaskFailed',['../classfr_1_1softsf_1_1sudofx2024_1_1_sudo_main.html#ad2ecb087e7e156319580422f9dc82e18',1,'fr::softsf::sudofx2024::SudoMain']]],
-  ['handlespringcontexttasksuccess_1',['handleSpringContextTaskSuccess',['../classfr_1_1softsf_1_1sudofx2024_1_1_sudo_main.html#a905ade57364f0abb2d022a610310d25e',1,'fr::softsf::sudofx2024::SudoMain']]],
-  ['hidecrashscreen_2',['hidecrashscreen',['../classfr_1_1softsf_1_1sudofx2024_1_1view_1_1_crash_screen_view.html#a1d2f18fa6453bcef10c84b4784d7f2b0',1,'fr::softsf::sudofx2024::view::CrashScreenView']]],
-  ['hidesplashscreen_3',['hideSplashScreen',['../interfacefr_1_1softsf_1_1sudofx2024_1_1_sudo_main_1_1_i_splash_screen_view.html#a1e57a354fb63a97a695ebf73fc9ace2a',1,'fr.softsf.sudofx2024.SudoMain.ISplashScreenView.hideSplashScreen()'],['../classfr_1_1softsf_1_1sudofx2024_1_1view_1_1_splash_screen_view.html#a67046d53b3c7ae18d4c676fecb01451d',1,'fr.softsf.sudofx2024.view.SplashScreenView.hideSplashScreen()']]],
-  ['hikaridatasource_4',['hikariDataSource',['../classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1database_1_1configuration_1_1_data_source_config.html#ab91c3298a5d9376d4de6c6d833c5496b',1,'fr::softsf::sudofx2024::utils::database::configuration::DataSourceConfig']]]
+  ['handlespringcontexttaskfailed_0',['handleSpringContextTaskFailed',['../classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#a5f0246399e65a32405abe1ed415219ee',1,'fr::softsf::sudokufx::SudoMain']]],
+  ['handlespringcontexttasksuccess_1',['handleSpringContextTaskSuccess',['../classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#afa5bb361c3c4da3cef227f656f09c3e3',1,'fr::softsf::sudokufx::SudoMain']]],
+  ['hidecrashscreen_2',['hidecrashscreen',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#ae8a4111090a512677b14743dd3aa21d3',1,'fr::softsf::sudokufx::view::CrashScreenView']]],
+  ['hidesplashscreen_3',['hideSplashScreen',['../interfacefr_1_1softsf_1_1sudokufx_1_1_sudo_main_1_1_i_splash_screen_view.html#a1fe5b147b4ca3ae68d87e6df07035a9b',1,'fr.softsf.sudokufx.SudoMain.ISplashScreenView.hideSplashScreen()'],['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a076cb7a2a145466aad00f8c175a3c043',1,'fr.softsf.sudokufx.view.SplashScreenView.hideSplashScreen()']]],
+  ['hikaridatasource_4',['hikariDataSource',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1configuration_1_1_data_source_config.html#af209137f3f6ca75437eb476f51f80cb7',1,'fr::softsf::sudokufx::utils::database::configuration::DataSourceConfig']]]
 ];

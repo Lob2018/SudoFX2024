@@ -1,0 +1,7 @@
+<map id="fr.softsf.sudokufx.utils.os.OsFolderFactoryManagerITest.testOsFolderFactoryWithLinuxFolderFactory" name="fr.softsf.sudokufx.utils.os.OsFolderFactoryManagerITest.testOsFolderFactoryWithLinuxFolderFactory">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,47,262,105"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_os_folder_factory_manager.html#abe170d1d4c6183a0a6e9d7dd7904fd19" title="Creates and returns an OS&#45;specific folder factory." alt="" coords="310,5,532,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="262,55,294,50,295,55,263,60"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_os_folder_factory_manager.html#a18d1e19ca0445cde8ad5484007de0613" title="Sets Linux OS and set current paths for testing purposes." alt="" coords="310,88,532,147"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="263,92,295,97,294,102,262,97"/>
+</map>

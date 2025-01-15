@@ -48,7 +48,7 @@ cp "$jarName" "input/$jarName"
 
 echo "# OUTPUT   : CREATING THE DEB FROM TARGET/INPUT..."
 cd ..
-jpackage --input ./target/input --dest "$6" --name "$appNameWithTheJVM" --type deb --main-jar "$jarName" --main-class org.springframework.boot.loader.launch.JarLauncher --linux-shortcut --linux-menu-group "$1" --java-options "-Xmx2048m -Dapp.name=$1 -Dapp.version=$2" --vendor "$3" --copyright "Copyright © $year $3" --icon src/main/resources/fr/softsf/sudofx2024/images/Sudoku.png --app-version "$2" --description "$1 $year" --license-file LICENSE.txt --verbose
+jpackage --input ./target/input --dest "$6" --name "$appNameWithTheJVM" --type deb --main-jar "$jarName" --main-class org.springframework.boot.loader.launch.JarLauncher --linux-shortcut --linux-menu-group "$1" --java-options "-Xmx2048m -Dapp.name=$1 -Dapp.version=$2" --vendor "$3" --copyright "Copyright © $year $3" --icon src/main/resources/fr/softsf/sudokufx/images/Sudoku.png --app-version "$2" --description "$1 $year" --license-file LICENSE.txt --verbose
 
 echo "# TARGET   : THE SHELL SCRIPT TO LAUNCH THE UBERJAR"
 cd ./target

@@ -1,5 +1,0 @@
-var interfacefr_1_1softsf_1_1sudofx2024_1_1utils_1_1database_1_1keystore_1_1_application_keystore_1_1_i_encryption_service =
-[
-    [ "decrypt", "interfacefr_1_1softsf_1_1sudofx2024_1_1utils_1_1database_1_1keystore_1_1_application_keystore_1_1_i_encryption_service.html#ac3c866fe2af78726210f159d3bcf8faf", null ],
-    [ "encrypt", "interfacefr_1_1softsf_1_1sudofx2024_1_1utils_1_1database_1_1keystore_1_1_application_keystore_1_1_i_encryption_service.html#a3463474a525a55bcf09e6b69f25abdc7", null ]
-];

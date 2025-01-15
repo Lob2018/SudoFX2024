@@ -1,7 +1,0 @@
-<map id="fr.softsf.sudofx2024.view.components.ToasterVBox.toastActions" name="fr.softsf.sudofx2024.view.components.ToasterVBox.toastActions">
-<area shape="rect" id="Node000001" title="Handles actions when a toast is clicked." alt="" coords="5,39,252,81"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudofx2024_1_1view_1_1components_1_1_toaster_v_box.html#a6985a030f754110940a16d6bea52e47a" title="Copies the text content of a toast to the system clipboard." alt="" coords="300,5,546,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="252,43,284,40,285,45,253,49"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudofx2024_1_1view_1_1components_1_1_toaster_v_box.html#a4a81dcd065102d9921090abdaa45b7f3" title="Removes a specific toast from the ToasterVBox." alt="" coords="300,72,546,115"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="253,71,285,75,284,80,252,77"/>
-</map>

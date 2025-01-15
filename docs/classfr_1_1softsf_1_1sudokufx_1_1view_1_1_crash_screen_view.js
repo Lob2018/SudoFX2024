@@ -1,0 +1,28 @@
+var classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view =
+[
+    [ "closeButtonClick", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a06bf010806175e6f960b1ee805a2eb3d", null ],
+    [ "createSVG", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#aef8eba37009f641a92196a638a62d82c", null ],
+    [ "fadeIn", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a203d7b4943637a03090230742bb99208", null ],
+    [ "hidecrashscreen", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#ae8a4111090a512677b14743dd3aa21d3", null ],
+    [ "initialize", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a3112d5c4618e967b16dce35a5a584eca", null ],
+    [ "openingMainStage", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a468ed530f1a564f17f1e0a354697e46e", null ],
+    [ "resetButtonClick", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#aeaffcff3e73ba2d59ecaf2df0dc1573f", null ],
+    [ "setCrashscreenvboxTophboxLogosudosvg", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a5a135e72f1765ad2dc90d69994f7b657", null ],
+    [ "showcrashscreen", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a98f5c93368a1478d0aa4087944fab7a1", null ],
+    [ "buttonClose", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a7e5f099b70c5a8a4ee33fdab4dd144bd", null ],
+    [ "buttonReset", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a9a69dcdad012b735ce72ec5fdb956d01", null ],
+    [ "crashScreenFontSize", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a48ab7b260aa31acaa35f49a17a0fe667", null ],
+    [ "crashscreenStage", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a9905a8c9318a1656b586d396ea5a2bf4", null ],
+    [ "crashscreenvbox", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#ab3c4bcd7d68fc60939af0661d9e37e10", null ],
+    [ "crashscreenvboxBottomhboxVersionlabel", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a6adfb5fb2e02a8b14771a861c29a50c5", null ],
+    [ "crashscreenvboxBottomhboxYearlabel", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a9b2f55069a565bac5073dd4de4beb3c1", null ],
+    [ "crashscreenvboxCenterhboxHbox", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a55073b0acd6f2e5fa4c2525cd5fc5930", null ],
+    [ "crashscreenvboxCenterhboxLabel", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#ac69e9a1af533c41482026127a903db16", null ],
+    [ "crashscreenvboxCenterhboxLabel2", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#ab032d43c230b364907df5773c4c707a6", null ],
+    [ "crashscreenvboxTophboxNamelabel", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#ab753c564732eae1c06da73062e89b3e7", null ],
+    [ "crashscreenvboxTophboxRegionsudosvg", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a3977f5d0b2fced21d632dcfde8f79c8e", null ],
+    [ "dropShadow", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#aeafb2651c347d16a52b08b48563f8476", null ],
+    [ "FADE_IN_IN_SECONDS_AFTER_SPLASHSCREEN", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a9abd8cec04433b385cf595d25df8e01c", null ],
+    [ "iOsFolderFactory", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#ae513d83365b3ffd1addddb102e514a30", null ],
+    [ "primaryStage", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#ac8f1e2c035b0d7b5947c0a1e32e7a41f", null ]
+];

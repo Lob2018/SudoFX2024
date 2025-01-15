@@ -1,7 +1,0 @@
-var namespacefr_1_1softsf_1_1sudofx2024_1_1utils_1_1database_1_1keystore =
-[
-    [ "ApplicationKeystore", "classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1database_1_1keystore_1_1_application_keystore.html", "classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1database_1_1keystore_1_1_application_keystore" ],
-    [ "ApplicationKeystoreITest", "classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1database_1_1keystore_1_1_application_keystore_i_test.html", "classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1database_1_1keystore_1_1_application_keystore_i_test" ],
-    [ "GenerateSecret", "classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1database_1_1keystore_1_1_generate_secret.html", "classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1database_1_1keystore_1_1_generate_secret" ],
-    [ "SecretKeyEncryptionServiceAESGCM", "classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1database_1_1keystore_1_1_secret_key_encryption_service_a_e_s_g_c_m.html", "classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1database_1_1keystore_1_1_secret_key_encryption_service_a_e_s_g_c_m" ]
-];

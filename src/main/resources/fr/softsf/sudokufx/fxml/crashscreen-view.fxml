@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Hyperlink?>
+<VBox fx:id="crashscreenvbox" alignment="CENTER" xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.softsf.sudokufx.view.CrashScreenView">
+    <HBox fx:id="crashscreenvbox_tophbox" alignment="CENTER_LEFT" HBox.hgrow="ALWAYS">
+        <Region fx:id="crashscreenvboxTophboxRegionsudosvg">
+        </Region>
+        <Pane HBox.hgrow="ALWAYS"/>
+        <Label fx:id="crashscreenvboxTophboxNamelabel" style="-fx-font-size: 1em;"/>
+    </HBox>
+    <VBox alignment="CENTER" VBox.vgrow="ALWAYS">
+        <Pane VBox.vgrow="ALWAYS"/>
+        <VBox alignment="CENTER_LEFT">
+            <Label fx:id="crashscreenvboxCenterhboxLabel" style="-fx-font-size: 1em;" VBox.vgrow="ALWAYS"/>
+            <Label fx:id="crashscreenvboxCenterhboxLabel2" style="-fx-font-size: 0.7em;" VBox.vgrow="ALWAYS"/>
+        </VBox>
+        <HBox fx:id="crashscreenvboxCenterhboxHbox" alignment="CENTER" VBox.vgrow="ALWAYS">
+            <Button fx:id="buttonReset" onAction="#resetButtonClick"/>
+            <Button fx:id="buttonClose" onAction="#closeButtonClick"/>
+        </HBox>
+        <Pane VBox.vgrow="ALWAYS"/>
+    </VBox>
+    <HBox fx:id="crashscreenvbox_bottomhbox" alignment="CENTER_RIGHT" HBox.hgrow="ALWAYS">
+        <Label fx:id="crashscreenvboxBottomhboxYearlabel" style="-fx-font-size: 1em;" HBox.hgrow="ALWAYS"/>
+        <Pane HBox.hgrow="ALWAYS"/>
+        <Label fx:id="crashscreenvboxBottomhboxVersionlabel" style="-fx-font-size: 1em;"/>
+    </HBox>
+</VBox>

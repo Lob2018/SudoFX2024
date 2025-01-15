@@ -1,4 +1,0 @@
-var _dynamic_data_source_configuration_8java =
-[
-    [ "fr.softsf.sudofx2024.utils.database.configuration.DynamicDataSourceConfiguration", "classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1database_1_1configuration_1_1_dynamic_data_source_configuration.html", "classfr_1_1softsf_1_1sudofx2024_1_1utils_1_1database_1_1configuration_1_1_dynamic_data_source_configuration" ]
-];
