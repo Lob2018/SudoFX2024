@@ -111,8 +111,8 @@
         echo         del %1-%2.jar
         echo         echo Training the SudokuFX application...
         echo         cd %%FOLDER%%
-        echo         start /min cmd /c "java -Xmx2048m -XX:ArchiveClassesAtExit=%%FOLDER%%.jsa -Dspring.context.exit=onRefresh -Dapp.name=%1 -Dapp.version=%2 -jar  %1-%2.jar > nul & exit"
-        echo         start /min cmd /c "java -Xmx2048m -XX:SharedArchiveFile=%%FOLDER%%.jsa -Dapp.name=%1 -Dapp.version=%2 -jar  %1-%2.jar > nul & exit"
+        echo         cmd /c "java -Xmx2048m -XX:ArchiveClassesAtExit=%%FOLDER%%.jsa -Dspring.context.exit=onRefresh -Dapp.name=%1 -Dapp.version=%2 -jar %1-%2.jar > nul"
+        echo         cmd /c "java -Xmx2048m -XX:SharedArchiveFile=%%FOLDER%%.jsa -Dapp.name=%1 -Dapp.version=%2 -jar %1-%2.jar > nul"
         echo     ^)
         echo     if exist %%FOLDER%% (
         echo         echo Running the SudokuFX application...
