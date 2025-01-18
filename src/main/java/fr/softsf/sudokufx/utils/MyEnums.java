@@ -80,7 +80,7 @@ public final class MyEnums {
                 """),
         ASCII_LOGO("""
                 ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ Application entry ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
-                
+                                
                          ▒▒▒▒▒                                                                                     \s
                         ▒▒▒▒▒▒▒                                                                                    \s
                         ▒▒▒▒▒▒▒▒                                                                                   \s
@@ -96,7 +96,8 @@ public final class MyEnums {
                       ▒▒▒▒▒▒▒▒▒▒ ▒▒▒▒▒▒▒▒▒                                                                         \s
                       ▒▒▒▒▒▒▒▒▒    ▒▒▒▒▒▒                                                                          \s
                        ▒▒▒▒▒
-                """);
+                """),
+        OPTIMIZING("▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ Optimizing startup ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓");
         private final String logBackMessage;
 
         LogBackTxt(final String logBackMessage_) {

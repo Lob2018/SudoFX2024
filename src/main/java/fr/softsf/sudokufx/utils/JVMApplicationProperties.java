@@ -13,7 +13,7 @@ public final class JVMApplicationProperties {
     private static final String SPRING_CONTEXT_EXIT_ON_REFRESH = "spring.context.exit";
     private static String appName = "";
     private static String appVersion = "";
-    private static String springContextExit = "";
+    private static String springContextExit = System.getProperty(SPRING_CONTEXT_EXIT_ON_REFRESH);
 
     /**
      * Private constructor to prevent instantiation of this utility class.
@@ -24,17 +24,17 @@ public final class JVMApplicationProperties {
 
     /**
      * Checks if the Spring context should exit on refresh.
-     * If the 'springContextExit' variable is empty, it retrieves the value
-     * from the system property specified by SPRING_CONTEXT_EXIT_ON_REFRESH.
-     * The method returns true if the value is "onRefresh"; otherwise, it returns false.
+     * The method returns true if the 'springContextExit' variable is "onRefresh";
+     * otherwise, it returns false. This includes cases where 'springContextExit'
+     * is null or any other value.
      *
      * @return true if the context should exit on refresh; false otherwise.
      */
     public static boolean isSpringContextExitOnRefresh() {
-        if (springContextExit.isEmpty()) {
-            springContextExit = System.getProperty(SPRING_CONTEXT_EXIT_ON_REFRESH);
-        }
-        return "onRefresh".equals(springContextExit);
+        return switch (springContextExit) {
+            case "onRefresh" -> true;
+            case null, default -> false;
+        };
     }
 
     /**
@@ -73,6 +73,15 @@ public final class JVMApplicationProperties {
      */
     static void setOnRefreshSpringContextExitForTests() {
         springContextExit = "onRefresh";
+    }
+
+    /**
+     * Sets the Spring context exit behavior to "never" for testing purposes.
+     * This method modifies the static variable 'springContextExit' to simulate
+     * the condition where the Spring context is configured to exit on refresh.
+     */
+    static void setNeverSpringContextExitForTests() {
+        springContextExit = "never";
     }
 
 

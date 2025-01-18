@@ -14,7 +14,9 @@ import java.io.IOException;
 import java.io.InputStream;
 
 import static fr.softsf.sudokufx.utils.MyEnums.LogBackTxt.ASCII_LOGO;
-import static fr.softsf.sudokufx.utils.MyEnums.Paths.*;
+import static fr.softsf.sudokufx.utils.MyEnums.LogBackTxt.OPTIMIZING;
+import static fr.softsf.sudokufx.utils.MyEnums.Paths.CONFIG_LOGBACK_INVALID_PATH_FOR_TESTS;
+import static fr.softsf.sudokufx.utils.MyEnums.Paths.CONFIG_LOGBACK_PATH;
 
 /**
  * Configuration class for Logback logging framework. This class sets up and
@@ -24,9 +26,9 @@ import static fr.softsf.sudokufx.utils.MyEnums.Paths.*;
 @Configuration
 public class MyLogback {
 
+    private static final String LOGS_NAME = "SudokuFX.log";
     @Getter
     private final String logsFolderPath;
-    private static final String LOGS_NAME = "SudokuFX.log";
     private String logBackPath = CONFIG_LOGBACK_PATH.getPath();
 
     /**
@@ -42,13 +44,6 @@ public class MyLogback {
     }
 
     /**
-     * Prints the application's ASCII logo to the log as an entry message.
-     */
-    public void printLogEntryMessage() {
-        log.info(ASCII_LOGO.getLogBackMessage());
-    }
-
-    /**
      * Prints the logger status to the log in case of errors or warnings.
      *
      * @param context The current logger context
@@ -56,6 +51,17 @@ public class MyLogback {
     private static void printLogStatus(final LoggerContext context) {
         StatusPrinter2 statusPrinter2 = new StatusPrinter2();
         statusPrinter2.printInCaseOfErrorsOrWarnings(context);
+    }
+
+    /**
+     * Prints the application's ASCII logo to the log as an entry message.
+     * If the Spring context is set to exit on refresh,
+     * it also logs an optimizing startup message.
+     */
+    public void printLogEntryMessage() {
+        log.info(ASCII_LOGO.getLogBackMessage());
+        if (JVMApplicationProperties.isSpringContextExitOnRefresh())
+            log.info(OPTIMIZING.getLogBackMessage());
     }
 
     /**

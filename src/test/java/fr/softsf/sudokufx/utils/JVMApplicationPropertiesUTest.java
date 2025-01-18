@@ -2,7 +2,6 @@ package fr.softsf.sudokufx.utils;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.*;
 
 class JVMApplicationPropertiesUTest {
@@ -49,5 +48,7 @@ class JVMApplicationPropertiesUTest {
         assertEquals("MyApp", JVMApplicationProperties.getAppName());
         assertEquals("v1.0.0", JVMApplicationProperties.getAppVersion());
         assertTrue(JVMApplicationProperties.isSpringContextExitOnRefresh());
+        JVMApplicationProperties.setNeverSpringContextExitForTests();
+        assertFalse(JVMApplicationProperties.isSpringContextExitOnRefresh());
     }
 }

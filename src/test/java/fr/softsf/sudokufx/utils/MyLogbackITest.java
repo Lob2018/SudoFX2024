@@ -1,21 +1,28 @@
 package fr.softsf.sudokufx.utils;
 
+import ch.qos.logback.classic.spi.ILoggingEvent;
+import ch.qos.logback.core.read.ListAppender;
 import fr.softsf.sudokufx.utils.os.OsFolderFactoryManager;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.ArgumentCaptor;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.nio.file.Files;
 import java.nio.file.Path;
 
+import static fr.softsf.sudokufx.utils.MyEnums.LogBackTxt.OPTIMIZING;
 import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
 
 @SpringBootTest
 @ExtendWith(MockitoExtension.class)
@@ -26,10 +33,24 @@ class MyLogbackITest {
     @Autowired
     MyLogback setupMyLogback;
 
+    private ListAppender<ILoggingEvent> logWatcher;
+
     @BeforeAll
     public static void setUp() {
         OsFolderFactoryManager osFolderFactoryManager = new OsFolderFactoryManager();
         currentIOsFolderFactory = osFolderFactoryManager.osFolderFactory();
+    }
+
+    @BeforeEach
+    void setup() {
+        logWatcher = new ListAppender<>();
+        logWatcher.start();
+        ((ch.qos.logback.classic.Logger) LoggerFactory.getLogger(MyLogback.class)).addAppender(logWatcher);
+    }
+
+    @AfterEach
+    void tearDown() {
+        ((ch.qos.logback.classic.Logger) LoggerFactory.getLogger(MyLogback.class)).detachAndStopAllAppenders();
     }
 
     @Test
@@ -58,4 +79,16 @@ class MyLogbackITest {
             setupMyLogback.configureLogback();
         });
     }
+
+    @Test
+    void testLogEntryMessageWithSpringContextIsOnRefresh() {
+        JVMApplicationProperties.setOnRefreshSpringContextExitForTests();
+        setupMyLogback.printLogEntryMessage();
+        assertTrue(JVMApplicationProperties.isSpringContextExitOnRefresh());
+        assert (logWatcher.list.get(logWatcher.list.size() - 1).getFormattedMessage()).contains(OPTIMIZING.getLogBackMessage());
+    }
+
+
 }
+
+
