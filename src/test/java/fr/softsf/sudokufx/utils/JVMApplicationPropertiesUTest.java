@@ -33,7 +33,7 @@ class JVMApplicationPropertiesUTest {
     void testGetAppProperties_Success() {
         System.setProperty(APP_NAME_PROPERTY, "_");
         System.setProperty(APP_VERSION_PROPERTY, "_");
-        System.setProperty(SPRING_CONTEXT_EXIT_ON_REFRESH, "_");
+        JVMApplicationProperties.setEmptySpringContextExitForTests();
         assertEquals("", JVMApplicationProperties.getAppName());
         assertEquals("", JVMApplicationProperties.getAppVersion());
         assertFalse(JVMApplicationProperties.isSpringContextExitOnRefresh());

@@ -13,7 +13,7 @@ public final class JVMApplicationProperties {
     private static final String SPRING_CONTEXT_EXIT_ON_REFRESH = "spring.context.exit";
     private static String appName = "";
     private static String appVersion = "";
-    private static String springContextExit = System.getProperty(SPRING_CONTEXT_EXIT_ON_REFRESH);
+    private static String springContextExit = "";
 
     /**
      * Private constructor to prevent instantiation of this utility class.
@@ -24,14 +24,17 @@ public final class JVMApplicationProperties {
 
     /**
      * Checks if the Spring context should exit on refresh.
-     * The method returns true if the 'springContextExit' variable is "onRefresh";
-     * otherwise, it returns false. This includes cases where 'springContextExit'
-     * is null or any other value.
      *
-     * @return true if the context should exit on refresh; false otherwise.
+     * @return true if springContextExit is "onRefresh", false otherwise.
+     *         If springContextExit is empty, the value is retrieved from
+     *         the system property and recursively re-evaluated.
      */
     public static boolean isSpringContextExitOnRefresh() {
         return switch (springContextExit) {
+            case "" -> {
+                springContextExit = System.getProperty(SPRING_CONTEXT_EXIT_ON_REFRESH);
+                yield isSpringContextExitOnRefresh();
+            }
             case "onRefresh" -> true;
             case null, default -> false;
         };
@@ -64,6 +67,15 @@ public final class JVMApplicationProperties {
             appVersion = MyRegex.isValidatedByRegex(System.getProperty(APP_VERSION_PROPERTY), MyRegex.getVERSION()) ? "v" + System.getProperty(APP_VERSION_PROPERTY) : "";
         }
         return appVersion;
+    }
+
+    /**
+     * Sets the Spring context exit behavior to "" for testing purposes.
+     * This method modifies the static variable 'springContextExit' to simulate
+     * the condition where the Spring context is configured to exit on refresh.
+     */
+    static void setEmptySpringContextExitForTests() {
+        springContextExit = "";
     }
 
     /**
