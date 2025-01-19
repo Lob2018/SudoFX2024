@@ -10,7 +10,7 @@ public final class JVMApplicationProperties {
 
     private static final String APP_NAME_PROPERTY = "app.name";
     private static final String APP_VERSION_PROPERTY = "app.version";
-    private static String SPRING_CONTEXT_EXIT_ON_REFRESH = "spring.context.exit";
+    private static String springContextExitOnRefresh = "spring.context.exit";
     private static String appName = "";
     private static String appVersion = "";
     private static String springContextExit;
@@ -32,7 +32,7 @@ public final class JVMApplicationProperties {
     public static boolean isSpringContextExitOnRefresh() {
         return switch (springContextExit) {
             case null -> {
-                springContextExit = System.getProperty(SPRING_CONTEXT_EXIT_ON_REFRESH);
+                springContextExit = System.getProperty(springContextExitOnRefresh);
                 if (springContextExit == null) yield false;
                 yield isSpringContextExitOnRefresh();
             }
@@ -47,7 +47,7 @@ public final class JVMApplicationProperties {
      * with a custom key (app.name) to ensure a non-null value during tests.
      */
     static void setSpringContextExitInRefresh() {
-        SPRING_CONTEXT_EXIT_ON_REFRESH = APP_NAME_PROPERTY;
+        springContextExitOnRefresh = APP_NAME_PROPERTY;
     }
 
     /**
