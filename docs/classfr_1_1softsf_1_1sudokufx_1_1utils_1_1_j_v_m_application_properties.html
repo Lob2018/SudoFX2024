@@ -114,7 +114,7 @@ $(function(){initNavTree('classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_appli
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties__coll__graph.svg" width="222" height="459"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties__coll__graph.svg" width="222" height="555"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
@@ -126,7 +126,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:afd79a2aeab3fe69dbb2ace62b5eddf83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the current application version from system properties.  <br /></td></tr>
 <tr class="separator:afd79a2aeab3fe69dbb2ace62b5eddf83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d07880db5617906582d43a95925ba8d" id="r_a7d07880db5617906582d43a95925ba8d"><td class="memItemLeft" align="right" valign="top">static boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7d07880db5617906582d43a95925ba8d">isSpringContextExitOnRefresh</a> ()</td></tr>
-<tr class="memdesc:a7d07880db5617906582d43a95925ba8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the Spring context should exit on refresh.  <br /></td></tr>
+<tr class="memdesc:a7d07880db5617906582d43a95925ba8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if the Spring context should exit on refresh.  <br /></td></tr>
 <tr class="separator:a7d07880db5617906582d43a95925ba8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pac-static-methods" name="pac-static-methods"></a>
@@ -137,9 +137,18 @@ Static Package Functions</h2></td></tr>
 <tr class="memitem:af21e767828933fa183e5f98e01bd5ea7" id="r_af21e767828933fa183e5f98e01bd5ea7"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af21e767828933fa183e5f98e01bd5ea7">setEmptyAppVersionPropertyForTests</a> ()</td></tr>
 <tr class="memdesc:af21e767828933fa183e5f98e01bd5ea7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the application version to an empty string.  <br /></td></tr>
 <tr class="separator:af21e767828933fa183e5f98e01bd5ea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba4d7515b055f0770b7815b0b0501225" id="r_aba4d7515b055f0770b7815b0b0501225"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aba4d7515b055f0770b7815b0b0501225">setInitSpringContextExitForTests</a> ()</td></tr>
+<tr class="memdesc:aba4d7515b055f0770b7815b0b0501225"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the Spring context exit behavior to "_" for testing purposes.  <br /></td></tr>
+<tr class="separator:aba4d7515b055f0770b7815b0b0501225"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4918698faa348d511a0d85cab965f559" id="r_a4918698faa348d511a0d85cab965f559"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4918698faa348d511a0d85cab965f559">setNeverSpringContextExitForTests</a> ()</td></tr>
+<tr class="memdesc:a4918698faa348d511a0d85cab965f559"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the Spring context exit behavior to "never" for testing purposes.  <br /></td></tr>
+<tr class="separator:a4918698faa348d511a0d85cab965f559"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b37fbf03ceccda8c7fd3a117593b22d" id="r_a7b37fbf03ceccda8c7fd3a117593b22d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b37fbf03ceccda8c7fd3a117593b22d">setOnRefreshSpringContextExitForTests</a> ()</td></tr>
 <tr class="memdesc:a7b37fbf03ceccda8c7fd3a117593b22d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the Spring context exit behavior to "onRefresh" for testing purposes.  <br /></td></tr>
 <tr class="separator:a7b37fbf03ceccda8c7fd3a117593b22d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66049f29fb5c0782881ea5ffec7ddcf7" id="r_a66049f29fb5c0782881ea5ffec7ddcf7"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a66049f29fb5c0782881ea5ffec7ddcf7">setSpringContextExitInRefresh</a> ()</td></tr>
+<tr class="memdesc:a66049f29fb5c0782881ea5ffec7ddcf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the system property key to determine if the Spring context should exit on refresh.  <br /></td></tr>
+<tr class="separator:a66049f29fb5c0782881ea5ffec7ddcf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -157,10 +166,10 @@ Static Private Attributes</h2></td></tr>
 <tr class="separator:a330da05797510add9e858a7904c3fc48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82b1d6b8023051dc460d1aa23da73ff5" id="r_a82b1d6b8023051dc460d1aa23da73ff5"><td class="memItemLeft" align="right" valign="top">static String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82b1d6b8023051dc460d1aa23da73ff5">appVersion</a> = &quot;&quot;</td></tr>
 <tr class="separator:a82b1d6b8023051dc460d1aa23da73ff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7cc8459b1f6c34bbd8d56f4c43c19ddc" id="r_a7cc8459b1f6c34bbd8d56f4c43c19ddc"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7cc8459b1f6c34bbd8d56f4c43c19ddc">SPRING_CONTEXT_EXIT_ON_REFRESH</a> = &quot;spring.context.exit&quot;</td></tr>
-<tr class="separator:a7cc8459b1f6c34bbd8d56f4c43c19ddc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3734d3c5cfe613197b781b7ef3aa7b89" id="r_a3734d3c5cfe613197b781b7ef3aa7b89"><td class="memItemLeft" align="right" valign="top">static String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3734d3c5cfe613197b781b7ef3aa7b89">springContextExit</a> = &quot;&quot;</td></tr>
+<tr class="memitem:a3734d3c5cfe613197b781b7ef3aa7b89" id="r_a3734d3c5cfe613197b781b7ef3aa7b89"><td class="memItemLeft" align="right" valign="top">static String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3734d3c5cfe613197b781b7ef3aa7b89">springContextExit</a></td></tr>
 <tr class="separator:a3734d3c5cfe613197b781b7ef3aa7b89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbcee29256983486547f4fd6ea23f21a" id="r_adbcee29256983486547f4fd6ea23f21a"><td class="memItemLeft" align="right" valign="top">static String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adbcee29256983486547f4fd6ea23f21a">springContextExitOnRefresh</a> = &quot;spring.context.exit&quot;</td></tr>
+<tr class="separator:adbcee29256983486547f4fd6ea23f21a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Utility class for managing JVM application properties. </p>
@@ -289,9 +298,15 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Checks if the Spring context should exit on refresh. </p>
-<p>If the 'springContextExit' variable is empty, it retrieves the value from the system property specified by SPRING_CONTEXT_EXIT_ON_REFRESH. The method returns true if the value is "onRefresh"; otherwise, it returns false.</p>
-<dl class="section return"><dt>Returns</dt><dd>true if the context should exit on refresh; false otherwise. </dd></dl>
+<p>Determines if the Spring context should exit on refresh. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if springContextExit is "onRefresh"; false otherwise. If springContextExit is null, it retrieves the value from the system property and re-evaluates the condition. </dd></dl>
+<div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties_a7d07880db5617906582d43a95925ba8d_cgraph.svg" width="234" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 
 </div>
 </div>
@@ -351,6 +366,62 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="aba4d7515b055f0770b7815b0b0501225" name="aba4d7515b055f0770b7815b0b0501225"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba4d7515b055f0770b7815b0b0501225">&#9670;&#160;</a></span>setInitSpringContextExitForTests()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void fr.softsf.sudokufx.utils.JVMApplicationProperties.setInitSpringContextExitForTests </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initialize the Spring context exit behavior to "_" for testing purposes. </p>
+<p>This method modifies the static variable 'springContextExit' to simulate the condition where the Spring context is configured to exit on refresh. </p>
+
+</div>
+</div>
+<a id="a4918698faa348d511a0d85cab965f559" name="a4918698faa348d511a0d85cab965f559"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4918698faa348d511a0d85cab965f559">&#9670;&#160;</a></span>setNeverSpringContextExitForTests()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void fr.softsf.sudokufx.utils.JVMApplicationProperties.setNeverSpringContextExitForTests </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the Spring context exit behavior to "never" for testing purposes. </p>
+<p>This method modifies the static variable 'springContextExit' to simulate the condition where the Spring context is configured to exit on refresh. </p>
+
+</div>
+</div>
 <a id="a7b37fbf03ceccda8c7fd3a117593b22d" name="a7b37fbf03ceccda8c7fd3a117593b22d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7b37fbf03ceccda8c7fd3a117593b22d">&#9670;&#160;</a></span>setOnRefreshSpringContextExitForTests()</h2>
 
@@ -376,6 +447,34 @@ Static Private Attributes</h2></td></tr>
 
 <p>Sets the Spring context exit behavior to "onRefresh" for testing purposes. </p>
 <p>This method modifies the static variable 'springContextExit' to simulate the condition where the Spring context is configured to exit on refresh. </p>
+
+</div>
+</div>
+<a id="a66049f29fb5c0782881ea5ffec7ddcf7" name="a66049f29fb5c0782881ea5ffec7ddcf7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66049f29fb5c0782881ea5ffec7ddcf7">&#9670;&#160;</a></span>setSpringContextExitInRefresh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void fr.softsf.sudokufx.utils.JVMApplicationProperties.setSpringContextExitInRefresh </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the system property key to determine if the Spring context should exit on refresh. </p>
+<p>This method is for testing purposes, replacing the default key ("spring.context.exit") with a custom key (app.name) to ensure a non-null value during tests. </p>
 
 </div>
 </div>
@@ -468,8 +567,8 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a7cc8459b1f6c34bbd8d56f4c43c19ddc" name="a7cc8459b1f6c34bbd8d56f4c43c19ddc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7cc8459b1f6c34bbd8d56f4c43c19ddc">&#9670;&#160;</a></span>SPRING_CONTEXT_EXIT_ON_REFRESH</h2>
+<a id="a3734d3c5cfe613197b781b7ef3aa7b89" name="a3734d3c5cfe613197b781b7ef3aa7b89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3734d3c5cfe613197b781b7ef3aa7b89">&#9670;&#160;</a></span>springContextExit</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -478,7 +577,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final String fr.softsf.sudokufx.utils.JVMApplicationProperties.SPRING_CONTEXT_EXIT_ON_REFRESH = &quot;spring.context.exit&quot;</td>
+          <td class="memname">String fr.softsf.sudokufx.utils.JVMApplicationProperties.springContextExit</td>
         </tr>
       </table>
   </td>
@@ -490,8 +589,8 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a3734d3c5cfe613197b781b7ef3aa7b89" name="a3734d3c5cfe613197b781b7ef3aa7b89"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3734d3c5cfe613197b781b7ef3aa7b89">&#9670;&#160;</a></span>springContextExit</h2>
+<a id="adbcee29256983486547f4fd6ea23f21a" name="adbcee29256983486547f4fd6ea23f21a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbcee29256983486547f4fd6ea23f21a">&#9670;&#160;</a></span>springContextExitOnRefresh</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -500,7 +599,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">String fr.softsf.sudokufx.utils.JVMApplicationProperties.springContextExit = &quot;&quot;</td>
+          <td class="memname">String fr.softsf.sudokufx.utils.JVMApplicationProperties.springContextExitOnRefresh = &quot;spring.context.exit&quot;</td>
         </tr>
       </table>
   </td>
@@ -521,7 +620,7 @@ Static Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1utils.html">utils</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties.html">JVMApplicationProperties</a></li>
-    <li class="footer">Generated on Wed Jan 15 2025 16:25:45 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Sun Jan 19 2025 21:06:04 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

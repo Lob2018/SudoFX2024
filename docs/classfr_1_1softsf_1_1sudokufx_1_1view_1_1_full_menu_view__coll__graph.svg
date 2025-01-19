@@ -59,36 +59,36 @@ var sectionId = 'dynsection-1';
 <g id="Node000001" class="node">
 <title>Node1</title>
 <g id="a_Node000001"><a xlink:title="View class for the full menu screen of the Sudoku application.">
-<polygon fill="#999999" stroke="none" points="530.38,-244 378.12,-244 378.12,0 530.38,0 530.38,-244"/>
+<polygon fill="#999999" stroke="none" points="528.5,-244 380,-244 380,0 528.5,0 528.5,-244"/>
 <text text-anchor="start" x="403.25" y="-230.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.</text>
 <text text-anchor="start" x="423.5" y="-218.5" font-family="Helvetica,sans-Serif" font-size="10.00">FullMenuView</text>
-<text text-anchor="start" x="383.62" y="-202.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="392.12" y="-202.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final double</text>
-<text text-anchor="start" x="392.12" y="-190.5" font-family="Helvetica,sans-Serif" font-size="10.00"> FADE_IN_IN_SECONDS</text>
-<text text-anchor="start" x="392.12" y="-178.5" font-family="Helvetica,sans-Serif" font-size="10.00">_AFTER_SPLASHSCREEN</text>
-<text text-anchor="start" x="382.12" y="-162.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="392.12" y="-162.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingMainStage</text>
-<text text-anchor="start" x="392.12" y="-150.5" font-family="Helvetica,sans-Serif" font-size="10.00">(final SudoMain.ISplashScreen</text>
-<text text-anchor="start" x="392.12" y="-138.5" font-family="Helvetica,sans-Serif" font-size="10.00">View iSplashScreenView)</text>
-<text text-anchor="start" x="383.62" y="-122.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="392.12" y="-122.5" font-family="Helvetica,sans-Serif" font-size="10.00">void initialize()</text>
-<text text-anchor="start" x="383.62" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="392.12" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">void onHelloButtonClick</text>
-<text text-anchor="start" x="392.12" y="-94.5" font-family="Helvetica,sans-Serif" font-size="10.00">(ActionEvent event)</text>
-<text text-anchor="start" x="383.62" y="-78.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="392.12" y="-78.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingConfigureStage()</text>
-<text text-anchor="start" x="383.62" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="392.12" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingFadeIn</text>
-<text text-anchor="start" x="392.12" y="-50.5" font-family="Helvetica,sans-Serif" font-size="10.00">(final Node node)</text>
-<text text-anchor="start" x="383.62" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="392.12" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingMaximizePrimary</text>
-<text text-anchor="start" x="392.12" y="-22.5" font-family="Helvetica,sans-Serif" font-size="10.00">Stage()</text>
-<text text-anchor="start" x="383.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="392.12" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingShowStage()</text>
-<polygon fill="#666666" stroke="#666666" points="378.12,-214 378.12,-214 530.38,-214 530.38,-214 378.12,-214"/>
-<polygon fill="#666666" stroke="#666666" points="378.12,-174 378.12,-174 390.12,-174 390.12,-174 378.12,-174"/>
-<polygon fill="#666666" stroke="#666666" points="390.12,-174 390.12,-174 530.38,-174 530.38,-174 390.12,-174"/>
-<polygon fill="none" stroke="#666666" points="378.12,0 378.12,-244 530.38,-244 530.38,0 378.12,0"/>
+<text text-anchor="start" x="385.5" y="-202.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="394" y="-202.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final double</text>
+<text text-anchor="start" x="394" y="-190.5" font-family="Helvetica,sans-Serif" font-size="10.00"> FADE_IN_IN_SECONDS</text>
+<text text-anchor="start" x="394" y="-178.5" font-family="Helvetica,sans-Serif" font-size="10.00">_AFTER_SPLASHSCREEN</text>
+<text text-anchor="start" x="384" y="-162.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="394" y="-162.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingMainStage</text>
+<text text-anchor="start" x="394" y="-150.5" font-family="Helvetica,sans-Serif" font-size="10.00">(final ISplashScreenView</text>
+<text text-anchor="start" x="394" y="-138.5" font-family="Helvetica,sans-Serif" font-size="10.00"> iSplashScreenView)</text>
+<text text-anchor="start" x="385.5" y="-122.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="394" y="-122.5" font-family="Helvetica,sans-Serif" font-size="10.00">void initialize()</text>
+<text text-anchor="start" x="385.5" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="394" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">void onHelloButtonClick</text>
+<text text-anchor="start" x="394" y="-94.5" font-family="Helvetica,sans-Serif" font-size="10.00">(ActionEvent event)</text>
+<text text-anchor="start" x="385.5" y="-78.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="394" y="-78.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingConfigureStage()</text>
+<text text-anchor="start" x="385.5" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="394" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingFadeIn</text>
+<text text-anchor="start" x="394" y="-50.5" font-family="Helvetica,sans-Serif" font-size="10.00">(final Node node)</text>
+<text text-anchor="start" x="385.5" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="394" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingMaximizePrimary</text>
+<text text-anchor="start" x="394" y="-22.5" font-family="Helvetica,sans-Serif" font-size="10.00">Stage()</text>
+<text text-anchor="start" x="385.5" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="394" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingShowStage()</text>
+<polygon fill="#666666" stroke="#666666" points="380,-214 380,-214 528.5,-214 528.5,-214 380,-214"/>
+<polygon fill="#666666" stroke="#666666" points="380,-174 380,-174 392,-174 392,-174 380,-174"/>
+<polygon fill="#666666" stroke="#666666" points="392,-174 392,-174 528.5,-174 528.5,-174 392,-174"/>
+<polygon fill="none" stroke="#666666" points="380,0 380,-244 528.5,-244 528.5,0 380,0"/>
 </a>
 </g>
 </g>
@@ -114,7 +114,7 @@ var sectionId = 'dynsection-1';
 <g id="edge1_Node000001_Node000002" class="edge">
 <title>Node2&#45;&gt;Node1</title>
 <g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M102.2,-467.71C117.74,-421.43 144.57,-354.16 182.25,-304 233.1,-236.32 317.11,-186.03 378.33,-155.86"/>
+<path fill="none" stroke="#63b8ff" d="M102.2,-467.71C117.74,-421.43 144.57,-354.16 182.25,-304 233.61,-235.64 318.8,-185.02 380.17,-154.96"/>
 <polygon fill="none" stroke="#63b8ff" points="98.95,-466.39 99.15,-476.98 105.6,-468.57 98.95,-466.39"/>
 </a>
 </g>
@@ -137,8 +137,8 @@ var sectionId = 'dynsection-1';
 <g id="edge2_Node000001_Node000003" class="edge">
 <title>Node3&#45;&gt;Node1</title>
 <g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M202.8,-496.01C201.26,-454.67 201.79,-370.05 226.25,-304 250.17,-239.4 313.26,-192.28 367.02,-162.34"/>
-<polygon fill="none" stroke="#63b8ff" points="366.99,-162.35 370.36,-155.98 377.54,-156.64 374.17,-163.01 366.99,-162.35"/>
+<path fill="none" stroke="#63b8ff" d="M202.8,-496.01C201.26,-454.67 201.79,-370.05 226.25,-304 250.42,-238.74 314.56,-191.31 368.67,-161.42"/>
+<polygon fill="none" stroke="#63b8ff" points="368.69,-161.41 372.08,-155.05 379.26,-155.73 375.86,-162.1 368.69,-161.41"/>
 </a>
 </g>
 <text text-anchor="middle" x="261.71" y="-276.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;text1</text>
@@ -162,8 +162,8 @@ var sectionId = 'dynsection-1';
 <g id="edge3_Node000001_Node000004" class="edge">
 <title>Node4&#45;&gt;Node1</title>
 <g id="a_edge3_Node000001_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M250.07,-496.16C247.47,-454.3 246.76,-368.03 277.25,-304 298.32,-259.75 334.62,-219.71 368.89,-188.6"/>
-<polygon fill="none" stroke="#63b8ff" points="368.84,-188.64 370.67,-181.66 377.81,-180.67 375.98,-187.64 368.84,-188.64"/>
+<path fill="none" stroke="#63b8ff" d="M250.07,-496.16C247.47,-454.3 246.76,-368.03 277.25,-304 298.67,-259.02 335.82,-218.39 370.57,-187.08"/>
+<polygon fill="none" stroke="#63b8ff" points="370.62,-187.03 372.47,-180.06 379.62,-179.09 377.77,-186.06 370.62,-187.03"/>
 </a>
 </g>
 <text text-anchor="middle" x="333.59" y="-270.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;primaryStage</text>
@@ -531,8 +531,8 @@ var sectionId = 'dynsection-1';
 <g id="edge16_Node000001_Node000015" class="edge">
 <title>Node15&#45;&gt;Node1</title>
 <g id="a_edge16_Node000001_Node000015"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M627.46,-318.83C624.45,-313.79 621.38,-308.83 618.25,-304 595.8,-269.31 566.67,-234.8 539.21,-205.36"/>
-<polygon fill="none" stroke="#63b8ff" points="539.22,-205.37 532.19,-203.75 530.98,-196.64 538.01,-198.26 539.22,-205.37"/>
+<path fill="none" stroke="#63b8ff" d="M627.46,-318.83C624.45,-313.79 621.38,-308.83 618.25,-304 595.18,-268.35 565.06,-232.9 536.94,-202.94"/>
+<polygon fill="none" stroke="#63b8ff" points="537.17,-203.18 530.14,-201.58 528.91,-194.48 535.94,-196.07 537.17,-203.18"/>
 </a>
 </g>
 <text text-anchor="middle" x="621.29" y="-270.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;toaster</text>
@@ -578,8 +578,8 @@ var sectionId = 'dynsection-1';
 <g id="edge18_Node000001_Node000017" class="edge">
 <title>Node17&#45;&gt;Node1</title>
 <g id="a_edge18_Node000001_Node000017"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M837.4,-496.29C843.26,-453.11 849.1,-362.89 808.25,-304 746.04,-214.31 625.61,-166.36 542.63,-142.81"/>
-<polygon fill="none" stroke="#63b8ff" points="542.59,-142.8 535.75,-145.06 531.03,-139.61 537.87,-137.35 542.59,-142.8"/>
+<path fill="none" stroke="#63b8ff" d="M837.4,-496.29C843.26,-453.11 849.1,-362.89 808.25,-304 745.57,-213.64 623.8,-165.64 540.76,-142.28"/>
+<polygon fill="none" stroke="#63b8ff" points="540.74,-142.28 533.9,-144.55 529.16,-139.11 536.01,-136.84 540.74,-142.28"/>
 </a>
 </g>
 <text text-anchor="middle" x="820.44" y="-270.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;welcomeText</text>
@@ -602,8 +602,8 @@ var sectionId = 'dynsection-1';
 <g id="edge19_Node000001_Node000018" class="edge">
 <title>Node18&#45;&gt;Node1</title>
 <g id="a_edge19_Node000001_Node000018"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M905.43,-496.2C910.46,-445.73 914.38,-330.07 856.25,-262 777.81,-170.16 635.51,-138.93 542.97,-128.36"/>
-<polygon fill="none" stroke="#63b8ff" points="543.08,-128.37 536.69,-131.71 531.15,-127.09 537.54,-123.75 543.08,-128.37"/>
+<path fill="none" stroke="#63b8ff" d="M905.43,-496.2C910.46,-445.73 914.38,-330.07 856.25,-262 777.32,-169.58 633.72,-138.54 541.23,-128.16"/>
+<polygon fill="none" stroke="#63b8ff" points="541.08,-128.14 534.7,-131.5 529.15,-126.89 535.53,-123.54 541.08,-128.14"/>
 </a>
 </g>
 <text text-anchor="middle" x="900.26" y="-270.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;buttonHello</text>

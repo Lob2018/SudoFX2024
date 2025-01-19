@@ -1,0 +1,4 @@
+<map id="fr.softsf.sudokufx.utils.JVMApplicationProperties.isSpringContextExitOnRefresh" name="fr.softsf.sudokufx.utils.JVMApplicationProperties.isSpringContextExitOnRefresh">
+<area shape="rect" id="Node000001" title="Determines if the Spring context should exit on refresh." alt="" coords="5,29,228,88"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="73,29,74,19,82,10,96,5,117,3,140,5,154,12,152,17,138,10,116,8,97,10,85,15,78,21,78,29"/>
+</map>

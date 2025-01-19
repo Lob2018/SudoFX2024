@@ -15,5 +15,5 @@ var searchData=
   ['iplayermapper_12',['IPlayerMapper',['../interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_player_mapper.html',1,'fr::softsf::sudokufx::interfaces::mapper']]],
   ['iprimarystageview_13',['IPrimaryStageView',['../interfacefr_1_1softsf_1_1sudokufx_1_1_sudo_main_1_1_i_primary_stage_view.html',1,'fr::softsf::sudokufx::SudoMain']]],
   ['isoftwaremapper_14',['ISoftwareMapper',['../interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_software_mapper.html',1,'fr::softsf::sudokufx::interfaces::mapper']]],
-  ['isplashscreenview_15',['ISplashScreenView',['../interfacefr_1_1softsf_1_1sudokufx_1_1_sudo_main_1_1_i_splash_screen_view.html',1,'fr::softsf::sudokufx::SudoMain']]]
+  ['isplashscreenview_15',['ISplashScreenView',['../interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_splash_screen_view.html',1,'fr::softsf::sudokufx::interfaces']]]
 ];

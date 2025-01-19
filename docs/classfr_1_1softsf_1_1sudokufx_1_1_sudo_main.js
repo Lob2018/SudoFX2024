@@ -1,7 +1,6 @@
 var classfr_1_1softsf_1_1sudokufx_1_1_sudo_main =
 [
     [ "IPrimaryStageView", "interfacefr_1_1softsf_1_1sudokufx_1_1_sudo_main_1_1_i_primary_stage_view.html", "interfacefr_1_1softsf_1_1sudokufx_1_1_sudo_main_1_1_i_primary_stage_view" ],
-    [ "ISplashScreenView", "interfacefr_1_1softsf_1_1sudokufx_1_1_sudo_main_1_1_i_splash_screen_view.html", "interfacefr_1_1softsf_1_1sudokufx_1_1_sudo_main_1_1_i_splash_screen_view" ],
     [ "createSpringContextTask", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#ad38d74b9ba975c931a8f6aa3e3e45c73", null ],
     [ "getPauseTransition", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#a5f9601381fd0f35bc4a5c90205958aec", null ],
     [ "handleSpringContextTaskFailed", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#a5f0246399e65a32405abe1ed415219ee", null ],

@@ -5,7 +5,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view =
     [ "fadeIn", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a203d7b4943637a03090230742bb99208", null ],
     [ "hidecrashscreen", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#ae8a4111090a512677b14743dd3aa21d3", null ],
     [ "initialize", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a3112d5c4618e967b16dce35a5a584eca", null ],
-    [ "openingMainStage", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a468ed530f1a564f17f1e0a354697e46e", null ],
+    [ "openingMainStage", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#acf48fcf9ca3ca27d580108d2d3e3635c", null ],
     [ "resetButtonClick", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#aeaffcff3e73ba2d59ecaf2df0dc1573f", null ],
     [ "setCrashscreenvboxTophboxLogosudosvg", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a5a135e72f1765ad2dc90d69994f7b657", null ],
     [ "showcrashscreen", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a98f5c93368a1478d0aa4087944fab7a1", null ],

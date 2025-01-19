@@ -51,9 +51,10 @@ var searchData=
   ['isoftwaremapper_48',['ISoftwareMapper',['../interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_software_mapper.html',1,'fr::softsf::sudokufx::interfaces::mapper']]],
   ['isoftwaremapper_49',['iSoftwareMapper',['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1_software_service.html#aad1f5e52f68922776373621122359b59',1,'fr::softsf::sudokufx::service::SoftwareService']]],
   ['isoftwaremapper_2ejava_50',['ISoftwareMapper.java',['../_i_software_mapper_8java.html',1,'']]],
-  ['isplashscreenview_51',['ISplashScreenView',['../interfacefr_1_1softsf_1_1sudokufx_1_1_sudo_main_1_1_i_splash_screen_view.html',1,'fr::softsf::sudokufx::SudoMain']]],
+  ['isplashscreenview_51',['ISplashScreenView',['../interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_splash_screen_view.html',1,'fr::softsf::sudokufx::interfaces']]],
   ['isplashscreenview_52',['isplashScreenView',['../classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#a23e016b1db2d39f8b2ab09c12afcd958',1,'fr::softsf::sudokufx::SudoMain']]],
-  ['isselected_53',['isselected',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a51a571d2bcebaf3f9b79c95d2af9ddd3',1,'fr.softsf.sudokufx.model.Game.isselected'],['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a49ded8a7d3a97ef2970c6745e36813e0',1,'fr.softsf.sudokufx.model.Player.isselected']]],
-  ['isspringcontextexitonrefresh_54',['isSpringContextExitOnRefresh',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties.html#a7d07880db5617906582d43a95925ba8d',1,'fr::softsf::sudokufx::utils::JVMApplicationProperties']]],
-  ['isvalidatedbyregex_55',['isValidatedByRegex',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex.html#a981702b076ee54a416d676b6f7a182fc',1,'fr::softsf::sudokufx::utils::MyRegex']]]
+  ['isplashscreenview_2ejava_53',['ISplashScreenView.java',['../_i_splash_screen_view_8java.html',1,'']]],
+  ['isselected_54',['isselected',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a51a571d2bcebaf3f9b79c95d2af9ddd3',1,'fr.softsf.sudokufx.model.Game.isselected'],['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a49ded8a7d3a97ef2970c6745e36813e0',1,'fr.softsf.sudokufx.model.Player.isselected']]],
+  ['isspringcontextexitonrefresh_55',['isSpringContextExitOnRefresh',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties.html#a7d07880db5617906582d43a95925ba8d',1,'fr::softsf::sudokufx::utils::JVMApplicationProperties']]],
+  ['isvalidatedbyregex_56',['isValidatedByRegex',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex.html#a981702b076ee54a416d676b6f7a182fc',1,'fr::softsf::sudokufx::utils::MyRegex']]]
 ];

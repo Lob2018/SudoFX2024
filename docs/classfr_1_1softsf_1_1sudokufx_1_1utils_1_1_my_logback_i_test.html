@@ -101,6 +101,7 @@ $(function(){initNavTree('classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback_
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pac-methods">Package Functions</a> &#124;
 <a href="#pac-attribs">Package Attributes</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback_i_test-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">fr.softsf.sudokufx.utils.MyLogbackITest Class Reference</div></div>
@@ -121,10 +122,16 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pac-methods" name="pac-methods"></a>
 Package Functions</h2></td></tr>
+<tr class="memitem:a0cfa03d542ed95ec16c06776b96d1bac" id="r_a0cfa03d542ed95ec16c06776b96d1bac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0cfa03d542ed95ec16c06776b96d1bac">setup</a> ()</td></tr>
+<tr class="separator:a0cfa03d542ed95ec16c06776b96d1bac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb9408b42079eeb365b3d0c99fedd413" id="r_adb9408b42079eeb365b3d0c99fedd413"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb9408b42079eeb365b3d0c99fedd413">tearDown</a> ()</td></tr>
+<tr class="separator:adb9408b42079eeb365b3d0c99fedd413"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d8c4bcaea2d1a61d0f9bf5f448662fb" id="r_a2d8c4bcaea2d1a61d0f9bf5f448662fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2d8c4bcaea2d1a61d0f9bf5f448662fb">testConfigureLogbackWithInvalidPath</a> ()</td></tr>
 <tr class="separator:a2d8c4bcaea2d1a61d0f9bf5f448662fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a793efd1bccdf30660948e400f0503f7f" id="r_a793efd1bccdf30660948e400f0503f7f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a793efd1bccdf30660948e400f0503f7f">testLog_as_fatal</a> (@Mock Logger logger)</td></tr>
 <tr class="separator:a793efd1bccdf30660948e400f0503f7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf3f5975d22a05e460d8cff10bb63b60" id="r_aaf3f5975d22a05e460d8cff10bb63b60"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf3f5975d22a05e460d8cff10bb63b60">testLogEntryMessageWithSpringContextIsOnRefresh</a> ()</td></tr>
+<tr class="separator:aaf3f5975d22a05e460d8cff10bb63b60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42ae4abc909e534cdcd1199e3801968f" id="r_a42ae4abc909e534cdcd1199e3801968f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42ae4abc909e534cdcd1199e3801968f">testLogs_real_folder_exists</a> ()</td></tr>
 <tr class="separator:a42ae4abc909e534cdcd1199e3801968f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3df2ed6d5c8d1756e8d182f522b557ce" id="r_a3df2ed6d5c8d1756e8d182f522b557ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3df2ed6d5c8d1756e8d182f522b557ce">testLogs_real_folder_path_is_correct</a> ()</td></tr>
@@ -134,6 +141,11 @@ Package Functions</h2></td></tr>
 Package Attributes</h2></td></tr>
 <tr class="memitem:a3a793196e8880f7e8f395121a633627a" id="r_a3a793196e8880f7e8f395121a633627a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback.html">MyLogback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a793196e8880f7e8f395121a633627a">setupMyLogback</a></td></tr>
 <tr class="separator:a3a793196e8880f7e8f395121a633627a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a6a8104457448954d057ebc512e0d0846" id="r_a6a8104457448954d057ebc512e0d0846"><td class="memItemLeft" align="right" valign="top">ListAppender&lt; ILoggingEvent &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6a8104457448954d057ebc512e0d0846">logWatcher</a></td></tr>
+<tr class="separator:a6a8104457448954d057ebc512e0d0846"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
@@ -170,6 +182,56 @@ Static Private Attributes</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback_i_test_af48243d2c7bb53fbaa1ee4d8189ecf1a_cgraph.svg" width="438" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
+
+</div>
+</div>
+<a id="a0cfa03d542ed95ec16c06776b96d1bac" name="a0cfa03d542ed95ec16c06776b96d1bac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cfa03d542ed95ec16c06776b96d1bac">&#9670;&#160;</a></span>setup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.utils.MyLogbackITest.setup </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adb9408b42079eeb365b3d0c99fedd413" name="adb9408b42079eeb365b3d0c99fedd413"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb9408b42079eeb365b3d0c99fedd413">&#9670;&#160;</a></span>tearDown()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.utils.MyLogbackITest.tearDown </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -227,6 +289,38 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaf3f5975d22a05e460d8cff10bb63b60" name="aaf3f5975d22a05e460d8cff10bb63b60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf3f5975d22a05e460d8cff10bb63b60">&#9670;&#160;</a></span>testLogEntryMessageWithSpringContextIsOnRefresh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.utils.MyLogbackITest.testLogEntryMessageWithSpringContextIsOnRefresh </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback_i_test_aaf3f5975d22a05e460d8cff10bb63b60_cgraph.svg" width="100%" height="448"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
 
 </div>
 </div>
@@ -303,6 +397,28 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a6a8104457448954d057ebc512e0d0846" name="a6a8104457448954d057ebc512e0d0846"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a8104457448954d057ebc512e0d0846">&#9670;&#160;</a></span>logWatcher</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ListAppender&lt;ILoggingEvent&gt; fr.softsf.sudokufx.utils.MyLogbackITest.logWatcher</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a3a793196e8880f7e8f395121a633627a" name="a3a793196e8880f7e8f395121a633627a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3a793196e8880f7e8f395121a633627a">&#9670;&#160;</a></span>setupMyLogback</h2>
 
@@ -334,7 +450,7 @@ Static Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1utils.html">utils</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback_i_test.html">MyLogbackITest</a></li>
-    <li class="footer">Generated on Wed Jan 15 2025 16:25:45 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Sun Jan 19 2025 21:06:04 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

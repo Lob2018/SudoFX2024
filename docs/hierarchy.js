@@ -44,7 +44,7 @@ var hierarchy =
       [ "fr.softsf.sudokufx.view.FullMenuView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_full_menu_view.html", null ]
     ] ],
     [ "fr.softsf.sudokufx.interfaces.mapper.ISoftwareMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_software_mapper.html", null ],
-    [ "fr.softsf.sudokufx.SudoMain.ISplashScreenView", "interfacefr_1_1softsf_1_1sudokufx_1_1_sudo_main_1_1_i_splash_screen_view.html", [
+    [ "fr.softsf.sudokufx.interfaces.ISplashScreenView", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_splash_screen_view.html", [
       [ "fr.softsf.sudokufx.view.SplashScreenView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html", null ]
     ] ],
     [ "fr.softsf.sudokufx.utils.JVMApplicationProperties", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties.html", null ],

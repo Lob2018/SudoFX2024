@@ -33,9 +33,9 @@
 <g id="Node000002" class="node">
 <title>Node2</title>
 <g id="a_Node000002"><a xlink:title=" ">
-<polygon fill="#e0e0e0" stroke="#999999" points="152.88,-32 22.88,-32 22.88,0 152.88,0 152.88,-32"/>
-<text text-anchor="start" x="30.88" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.utils.os.</text>
-<text text-anchor="middle" x="87.88" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">OsFolderFactoryManager</text>
+<polygon fill="#e0e0e0" stroke="#999999" points="155.12,-32 20.62,-32 20.62,0 155.12,0 155.12,-32"/>
+<text text-anchor="start" x="28.62" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">ch.qos.logback.classic.spi.</text>
+<text text-anchor="middle" x="87.88" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">ILoggingEvent</text>
 </a>
 </g>
 </g>

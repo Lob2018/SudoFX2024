@@ -108,9 +108,9 @@
 </g>
 </g>
 <!-- Node1&#45;&gt;Node9 -->
-<g id="edge9_Node000001_Node000009" class="edge">
+<g id="edge10_Node000001_Node000009" class="edge">
 <title>Node1&#45;&gt;Node9</title>
-<g id="a_edge9_Node000001_Node000009"><a xlink:title=" ">
+<g id="a_edge10_Node000001_Node000009"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M152.72,-191.55C174.82,-185.42 200.46,-178.31 224.82,-171.56"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="225.75,-174.93 234.45,-168.89 223.88,-168.19 225.75,-174.93"/>
 </a>
@@ -128,9 +128,9 @@
 </g>
 </g>
 <!-- Node1&#45;&gt;Node11 -->
-<g id="edge11_Node000001_Node000011" class="edge">
+<g id="edge12_Node000001_Node000011" class="edge">
 <title>Node1&#45;&gt;Node11</title>
-<g id="a_edge11_Node000001_Node000011"><a xlink:title=" ">
+<g id="a_edge12_Node000001_Node000011"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M111.55,-191.79C135.21,-171.41 178.54,-136.5 220.75,-115 223.48,-113.61 226.28,-112.27 229.14,-110.97"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="230.46,-114.21 238.28,-107.06 227.71,-107.77 230.46,-114.21"/>
 </a>
@@ -148,9 +148,9 @@
 </g>
 </g>
 <!-- Node1&#45;&gt;Node12 -->
-<g id="edge13_Node000001_Node000012" class="edge">
+<g id="edge14_Node000001_Node000012" class="edge">
 <title>Node1&#45;&gt;Node12</title>
-<g id="a_edge13_Node000001_Node000012"><a xlink:title=" ">
+<g id="a_edge14_Node000001_Node000012"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M102.34,-191.82C120.54,-160.42 164.88,-91 220.75,-53 222.35,-51.91 223.98,-50.86 225.66,-49.85"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="227.15,-53.02 234.23,-45.14 223.78,-46.89 227.15,-53.02"/>
 </a>
@@ -160,9 +160,9 @@
 <g id="Node000004" class="node">
 <title>Node4</title>
 <g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex.html#a981702b076ee54a416d676b6f7a182fc" target="_top" xlink:title="Validates a given text against a specified regular expression.">
-<polygon fill="white" stroke="#666666" points="609,-311 460.25,-311 460.25,-279 609,-279 609,-311"/>
-<text text-anchor="start" x="468.25" y="-297.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.utils.</text>
-<text text-anchor="middle" x="534.62" y="-285.5" font-family="Helvetica,sans-Serif" font-size="10.00">MyRegex.isValidatedByRegex</text>
+<polygon fill="white" stroke="#666666" points="609,-314 460.25,-314 460.25,-282 609,-282 609,-314"/>
+<text text-anchor="start" x="468.25" y="-300.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.utils.</text>
+<text text-anchor="middle" x="534.62" y="-288.5" font-family="Helvetica,sans-Serif" font-size="10.00">MyRegex.isValidatedByRegex</text>
 </a>
 </g>
 </g>
@@ -170,8 +170,8 @@
 <g id="edge3_Node000003_Node000004" class="edge">
 <title>Node3&#45;&gt;Node4</title>
 <g id="a_edge3_Node000003_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M412.51,-312.49C424.5,-310.76 436.72,-309 448.56,-307.29"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="448.88,-310.78 458.27,-305.88 447.88,-303.85 448.88,-310.78"/>
+<path fill="none" stroke="#63b8ff" d="M412.51,-313.8C424.5,-312.24 436.72,-310.64 448.56,-309.1"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="448.81,-312.59 458.27,-307.83 447.9,-305.65 448.81,-312.59"/>
 </a>
 </g>
 </g>
@@ -179,8 +179,8 @@
 <g id="edge5_Node000005_Node000004" class="edge">
 <title>Node5&#45;&gt;Node4</title>
 <g id="a_edge5_Node000005_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M399.53,-279.38C415.67,-281.26 432.67,-283.24 448.95,-285.14"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="448.24,-288.58 458.58,-286.26 449.05,-281.62 448.24,-288.58"/>
+<path fill="none" stroke="#63b8ff" d="M399.53,-280.51C415.67,-282.61 432.67,-284.83 448.95,-286.95"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="448.21,-290.39 458.58,-288.21 449.11,-283.45 448.21,-290.39"/>
 </a>
 </g>
 </g>
@@ -188,9 +188,9 @@
 <g id="Node000007" class="node">
 <title>Node7</title>
 <g id="a_Node000007"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_i18n.html#a7095fa285a498c3f20bf33488a69d22c" target="_top" xlink:title="Retrieves the localized string value for a given key.">
-<polygon fill="white" stroke="#666666" points="592.88,-255 476.38,-255 476.38,-223 592.88,-223 592.88,-255"/>
-<text text-anchor="start" x="484.38" y="-241.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.utils.</text>
-<text text-anchor="middle" x="534.62" y="-229.5" font-family="Helvetica,sans-Serif" font-size="10.00">I18n.getValue</text>
+<polygon fill="white" stroke="#666666" points="592.88,-261 476.38,-261 476.38,-229 592.88,-229 592.88,-261"/>
+<text text-anchor="start" x="484.38" y="-247.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.utils.</text>
+<text text-anchor="middle" x="534.62" y="-235.5" font-family="Helvetica,sans-Serif" font-size="10.00">I18n.getValue</text>
 </a>
 </g>
 </g>
@@ -198,19 +198,19 @@
 <g id="edge7_Node000006_Node000007" class="edge">
 <title>Node6&#45;&gt;Node7</title>
 <g id="a_edge7_Node000006_Node000007"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M397.7,-219.37C419.71,-222.55 443.44,-225.97 464.83,-229.06"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="464.21,-232.51 474.61,-230.48 465.21,-225.58 464.21,-232.51"/>
+<path fill="none" stroke="#63b8ff" d="M397.7,-221.57C419.71,-225.36 443.44,-229.45 464.83,-233.14"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="464.17,-236.58 474.62,-234.83 465.36,-229.68 464.17,-236.58"/>
 </a>
 </g>
 </g>
 <!-- Node8 -->
 <g id="Node000008" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties.html#a7d07880db5617906582d43a95925ba8d" target="_top" xlink:title="Checks if the Spring context should exit on refresh.">
-<polygon fill="white" stroke="#666666" points="618,-205 451.25,-205 451.25,-161 618,-161 618,-205"/>
-<text text-anchor="start" x="459.25" y="-191.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.utils.</text>
-<text text-anchor="start" x="459.25" y="-179.5" font-family="Helvetica,sans-Serif" font-size="10.00">JVMApplicationProperties.isSpring</text>
-<text text-anchor="middle" x="534.62" y="-167.5" font-family="Helvetica,sans-Serif" font-size="10.00">ContextExitOnRefresh</text>
+<g id="a_Node000008"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties.html#a7d07880db5617906582d43a95925ba8d" target="_top" xlink:title="Determines if the Spring context should exit on refresh.">
+<polygon fill="white" stroke="#666666" points="618,-193 451.25,-193 451.25,-149 618,-149 618,-193"/>
+<text text-anchor="start" x="459.25" y="-179.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.utils.</text>
+<text text-anchor="start" x="459.25" y="-167.5" font-family="Helvetica,sans-Serif" font-size="10.00">JVMApplicationProperties.isSpring</text>
+<text text-anchor="middle" x="534.62" y="-155.5" font-family="Helvetica,sans-Serif" font-size="10.00">ContextExitOnRefresh</text>
 </a>
 </g>
 </g>
@@ -218,8 +218,17 @@
 <g id="edge8_Node000006_Node000008" class="edge">
 <title>Node6&#45;&gt;Node8</title>
 <g id="a_edge8_Node000006_Node000008"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M397.7,-198.83C411.39,-197.24 425.75,-195.57 439.79,-193.93"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="439.94,-197.44 449.47,-192.8 439.13,-190.48 439.94,-197.44"/>
+<path fill="none" stroke="#63b8ff" d="M397.7,-194.43C411.39,-192.07 425.75,-189.6 439.79,-187.18"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="440.22,-190.65 449.48,-185.51 439.03,-183.76 440.22,-190.65"/>
+</a>
+</g>
+</g>
+<!-- Node8&#45;&gt;Node8 -->
+<g id="edge9_Node000008_Node000008" class="edge">
+<title>Node8&#45;&gt;Node8</title>
+<g id="a_edge9_Node000008_Node000008"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M494.49,-193.21C491.21,-202.8 504.59,-211 534.62,-211 552.46,-211 564.42,-208.11 570.51,-203.75"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="573.7,-205.2 574.19,-194.62 567.21,-202.58 573.7,-205.2"/>
 </a>
 </g>
 </g>
@@ -234,27 +243,27 @@
 </g>
 </g>
 <!-- Node9&#45;&gt;Node10 -->
-<g id="edge10_Node000009_Node000010" class="edge">
+<g id="edge11_Node000009_Node000010" class="edge">
 <title>Node9&#45;&gt;Node10</title>
-<g id="a_edge10_Node000009_Node000010"><a xlink:title=" ">
+<g id="a_edge11_Node000009_Node000010"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M396.79,-123.53C419.37,-117.01 443.83,-109.94 465.75,-103.61"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="466.53,-107.02 475.17,-100.89 464.59,-100.3 466.53,-107.02"/>
 </a>
 </g>
 </g>
 <!-- Node11&#45;&gt;Node10 -->
-<g id="edge12_Node000011_Node000010" class="edge">
+<g id="edge13_Node000011_Node000010" class="edge">
 <title>Node11&#45;&gt;Node10</title>
-<g id="a_edge12_Node000011_Node000010"><a xlink:title=" ">
+<g id="a_edge13_Node000011_Node000010"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M415.64,-84C426.7,-84 437.92,-84 448.82,-84"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="448.52,-87.5 458.52,-84 448.52,-80.5 448.52,-87.5"/>
 </a>
 </g>
 </g>
 <!-- Node12&#45;&gt;Node10 -->
-<g id="edge14_Node000012_Node000010" class="edge">
+<g id="edge15_Node000012_Node000010" class="edge">
 <title>Node12&#45;&gt;Node10</title>
-<g id="a_edge14_Node000012_Node000010"><a xlink:title=" ">
+<g id="a_edge15_Node000012_Node000010"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M396.79,-44.47C419.37,-50.99 443.83,-58.06 465.75,-64.39"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="464.59,-67.7 475.17,-67.11 466.53,-60.98 464.59,-67.7"/>
 </a>

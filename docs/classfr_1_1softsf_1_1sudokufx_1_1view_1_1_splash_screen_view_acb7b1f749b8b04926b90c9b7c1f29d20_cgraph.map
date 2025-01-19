@@ -7,7 +7,7 @@
 <area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#acddefac20ee4e90165233cb342d56fe0" title="Configures the properties and styles of the UI nodes." alt="" coords="298,229,544,272"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="250,229,282,232,282,238,250,234"/>
 <area shape="rect" id="Node000016" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a202e9727891bebc7d520ec588134a0a7" title="Displays the splash screen." alt="" coords="298,296,544,339"/>
-<area shape="poly" id="edge18_Node000001_Node000016" title=" " alt="" coords="181,237,299,281,321,289,319,294,297,287,179,242"/>
+<area shape="poly" id="edge19_Node000001_Node000016" title=" " alt="" coords="181,237,299,281,321,289,319,294,297,287,179,242"/>
 <area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a05ceacbaf9b2149100b85aa1915a98a2" title="Animates the SVG flower." alt="" coords="600,5,843,48"/>
 <area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="527,227,542,215,557,197,564,178,565,138,567,98,575,78,590,58,593,56,596,60,594,62,579,81,572,99,571,139,569,179,561,199,546,219,531,231"/>
 <area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties.html#a3c1aafe7e06f8e614ae7a2c249f364a6" title="Retrieves the current application name from system properties." alt="" coords="596,72,847,115"/>
@@ -17,20 +17,21 @@
 <area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#ad126ac2f2a90b2422490ca0d896fa398" title="Retrieves a message indicating the current loading or optimizing state." alt="" coords="616,221,827,280"/>
 <area shape="poly" id="edge9_Node000004_Node000009" title=" " alt="" coords="544,248,600,248,600,253,544,253"/>
 <area shape="rect" id="Node000012" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#aafe300850c83d75b03d338a68d19c892" title="Sets up the SVG for the Soft64 text logo in the center of the splash screen." alt="" coords="592,304,851,363"/>
-<area shape="poly" id="edge12_Node000004_Node000012" title=" " alt="" coords="504,270,545,281,600,297,598,302,543,287,502,275"/>
+<area shape="poly" id="edge13_Node000004_Node000012" title=" " alt="" coords="504,270,545,281,600,297,598,302,543,287,502,275"/>
 <area shape="rect" id="Node000014" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a762ac1d676ca1be22b521cd731b8d9ba" title="Sets up the SVG for the flower logo in the center of the splash screen." alt="" coords="592,387,851,445"/>
-<area shape="poly" id="edge14_Node000004_Node000014" title=" " alt="" coords="528,270,546,282,564,305,571,328,577,351,594,373,598,376,594,380,590,377,572,353,566,330,559,307,542,286,525,275"/>
+<area shape="poly" id="edge15_Node000004_Node000014" title=" " alt="" coords="528,270,546,282,564,305,571,328,577,351,594,373,598,376,594,380,590,377,572,353,566,330,559,307,542,286,525,275"/>
 <area shape="rect" id="Node000015" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a53ead1ea80a08e06c15ae42ae101fcdf" title="Sets up the SVG for the Sudoku logo in the top section of the splash screen." alt="" coords="592,469,851,528"/>
-<area shape="poly" id="edge16_Node000004_Node000015" title=" " alt="" coords="531,270,546,282,562,304,570,326,571,370,572,413,579,434,594,456,596,457,592,461,590,459,574,437,566,414,566,370,565,327,558,307,542,286,528,275"/>
-<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex.html#a981702b076ee54a416d676b6f7a182fc" title="Validates a given text against a specified regular expression." alt="" coords="911,113,1110,156"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="848,109,896,116,895,121,847,114"/>
-<area shape="poly" id="edge8_Node000008_Node000007" title=" " alt="" coords="830,153,896,145,897,150,831,158"/>
-<area shape="rect" id="Node000010" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_i18n.html#a7095fa285a498c3f20bf33488a69d22c" title="Retrieves the localized string value for a given key." alt="" coords="933,188,1088,231"/>
-<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="828,233,917,220,918,225,828,238"/>
-<area shape="rect" id="Node000011" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties.html#a7d07880db5617906582d43a95925ba8d" title="Checks if the Spring context should exit on refresh." alt="" coords="899,255,1122,313"/>
-<area shape="poly" id="edge11_Node000009_Node000011" title=" " alt="" coords="828,260,884,267,884,272,828,266"/>
+<area shape="poly" id="edge17_Node000004_Node000015" title=" " alt="" coords="531,270,546,282,562,304,570,326,571,370,572,413,579,434,594,456,596,457,592,461,590,459,574,437,566,414,566,370,565,327,558,307,542,286,528,275"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex.html#a981702b076ee54a416d676b6f7a182fc" title="Validates a given text against a specified regular expression." alt="" coords="911,109,1110,152"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="848,107,896,113,895,119,847,112"/>
+<area shape="poly" id="edge8_Node000008_Node000007" title=" " alt="" coords="830,151,896,143,897,148,831,157"/>
+<area shape="rect" id="Node000010" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_i18n.html#a7095fa285a498c3f20bf33488a69d22c" title="Retrieves the localized string value for a given key." alt="" coords="933,180,1088,223"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="827,230,917,215,918,220,828,235"/>
+<area shape="rect" id="Node000011" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties.html#a7d07880db5617906582d43a95925ba8d" title="Determines if the Spring context should exit on refresh." alt="" coords="899,271,1122,329"/>
+<area shape="poly" id="edge11_Node000009_Node000011" title=" " alt="" coords="828,266,885,276,884,281,827,271"/>
+<area shape="poly" id="edge12_Node000011_Node000011" title=" " alt="" coords="954,270,956,260,966,251,984,246,1011,244,1041,247,1059,254,1057,259,1040,252,1010,249,985,251,968,256,960,263,960,271"/>
 <area shape="rect" id="Node000013" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a5d7017836e704c8e6db24f7d677041ba" title="Creates an SVG shape and applies it to a Region." alt="" coords="911,395,1110,437"/>
-<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="827,361,919,387,918,392,826,366"/>
-<area shape="poly" id="edge15_Node000014_Node000013" title=" " alt="" coords="852,413,896,413,896,419,852,419"/>
-<area shape="poly" id="edge17_Node000015_Node000013" title=" " alt="" coords="826,466,918,440,919,445,827,471"/>
+<area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="827,361,919,387,918,392,826,366"/>
+<area shape="poly" id="edge16_Node000014_Node000013" title=" " alt="" coords="852,413,896,413,896,419,852,419"/>
+<area shape="poly" id="edge18_Node000015_Node000013" title=" " alt="" coords="826,466,918,440,919,445,827,471"/>
 </map>
