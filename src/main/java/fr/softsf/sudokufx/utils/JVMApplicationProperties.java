@@ -10,10 +10,10 @@ public final class JVMApplicationProperties {
 
     private static final String APP_NAME_PROPERTY = "app.name";
     private static final String APP_VERSION_PROPERTY = "app.version";
-    private static final String SPRING_CONTEXT_EXIT_ON_REFRESH = "spring.context.exit";
+    private static String SPRING_CONTEXT_EXIT_ON_REFRESH = "spring.context.exit";
     private static String appName = "";
     private static String appVersion = "";
-    private static String springContextExit = "";
+    private static String springContextExit;
 
     /**
      * Private constructor to prevent instantiation of this utility class.
@@ -23,21 +23,31 @@ public final class JVMApplicationProperties {
     }
 
     /**
-     * Checks if the Spring context should exit on refresh.
+     * Determines if the Spring context should exit on refresh.
      *
-     * @return true if springContextExit is "onRefresh", false otherwise.
-     *         If springContextExit is empty, the value is retrieved from
-     *         the system property and recursively re-evaluated.
+     * @return true if springContextExit is "onRefresh"; false otherwise.
+     * If springContextExit is null, it retrieves the value from the system property
+     * and re-evaluates the condition.
      */
     public static boolean isSpringContextExitOnRefresh() {
         return switch (springContextExit) {
-            case "" -> {
+            case null -> {
                 springContextExit = System.getProperty(SPRING_CONTEXT_EXIT_ON_REFRESH);
+                if (springContextExit == null) yield false;
                 yield isSpringContextExitOnRefresh();
             }
             case "onRefresh" -> true;
-            case null, default -> false;
+            default -> false;
         };
+    }
+
+    /**
+     * Sets the system property key to determine if the Spring context should exit on refresh.
+     * This method is for testing purposes, replacing the default key ("spring.context.exit")
+     * with a custom key (app.name) to ensure a non-null value during tests.
+     */
+    static void setSpringContextExitInRefresh() {
+        SPRING_CONTEXT_EXIT_ON_REFRESH = APP_NAME_PROPERTY;
     }
 
     /**
@@ -70,12 +80,12 @@ public final class JVMApplicationProperties {
     }
 
     /**
-     * Sets the Spring context exit behavior to "" for testing purposes.
+     * Initialize the Spring context exit behavior to "_" for testing purposes.
      * This method modifies the static variable 'springContextExit' to simulate
      * the condition where the Spring context is configured to exit on refresh.
      */
-    static void setEmptySpringContextExitForTests() {
-        springContextExit = "";
+    static void setInitSpringContextExitForTests() {
+        springContextExit = null;
     }
 
     /**
