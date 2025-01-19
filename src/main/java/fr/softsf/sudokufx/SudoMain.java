@@ -1,6 +1,7 @@
 package fr.softsf.sudokufx;
 
 import com.gluonhq.ignite.spring.SpringContext;
+import fr.softsf.sudokufx.interfaces.ISplashScreenView;
 import fr.softsf.sudokufx.utils.DynamicFontSize;
 import fr.softsf.sudokufx.utils.MyEnums;
 import fr.softsf.sudokufx.view.SplashScreenView;
@@ -199,16 +200,6 @@ public class SudoMain extends Application {
     public interface IPrimaryStageView {
 
         void openingMainStage(ISplashScreenView iSplashScreenView);
-    }
-
-    /**
-     * Interface for the splash screen view.
-     */
-    public interface ISplashScreenView {
-
-        void hideSplashScreen();
-
-        void showSplashScreen();
     }
 }
 

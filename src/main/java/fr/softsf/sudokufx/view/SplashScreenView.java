@@ -1,5 +1,6 @@
 package fr.softsf.sudokufx.view;
 
+import fr.softsf.sudokufx.interfaces.ISplashScreenView;
 import fr.softsf.sudokufx.utils.JVMApplicationProperties;
 import fr.softsf.sudokufx.SudoMain;
 import fr.softsf.sudokufx.utils.I18n;
@@ -34,7 +35,7 @@ import static javafx.scene.layout.Priority.ALWAYS;
  * View class for the splash screen of the Sudoku application. This class is
  * responsible for creating and managing the splash screen UI.
  */
-public class SplashScreenView implements SudoMain.ISplashScreenView {
+public class SplashScreenView implements ISplashScreenView {
 
     public static final String FX_FONT_SIZE_0_8_EM = "-fx-font-size: 0.8em;";
     private final VBox splashscreenvbox = new VBox();

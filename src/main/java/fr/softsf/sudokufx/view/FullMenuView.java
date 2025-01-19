@@ -1,6 +1,7 @@
 package fr.softsf.sudokufx.view;
 
 import fr.softsf.sudokufx.SudoMain;
+import fr.softsf.sudokufx.interfaces.ISplashScreenView;
 import fr.softsf.sudokufx.service.FxmlService;
 import fr.softsf.sudokufx.utils.MyEnums;
 import fr.softsf.sudokufx.view.components.ToasterVBox;
@@ -130,7 +131,7 @@ public class FullMenuView implements SudoMain.IPrimaryStageView {
      * @param iSplashScreenView The splash screen view interface
      */
     @Override
-    public void openingMainStage(final SudoMain.ISplashScreenView iSplashScreenView) {
+    public void openingMainStage(final ISplashScreenView iSplashScreenView) {
         openingConfigureStage();
         openingMaximizePrimaryStage();
         openingFadeIn(SudoMain.getScene().getRoot());

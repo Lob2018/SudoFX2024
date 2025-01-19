@@ -1,5 +1,6 @@
 package fr.softsf.sudokufx.view;
 
+import fr.softsf.sudokufx.interfaces.ISplashScreenView;
 import fr.softsf.sudokufx.utils.FileSystemManager;
 import fr.softsf.sudokufx.utils.JVMApplicationProperties;
 import fr.softsf.sudokufx.SudoMain;
@@ -116,7 +117,7 @@ public class CrashScreenView implements SudoMain.IPrimaryStageView {
      * @param iSplashScreenView The splash screen view interface
      */
     @Override
-    public void openingMainStage(SudoMain.ISplashScreenView iSplashScreenView) {
+    public void openingMainStage(ISplashScreenView iSplashScreenView) {
         fadeIn(SudoMain.getScene().getRoot());
         showcrashscreen();
         iSplashScreenView.hideSplashScreen();
