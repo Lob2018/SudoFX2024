@@ -1,6 +1,7 @@
 package fr.softsf.sudokufx.utils;
 
 import ch.qos.logback.classic.Logger;
+import ch.qos.logback.classic.spi.ILoggingEvent;
 import ch.qos.logback.core.read.ListAppender;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -11,19 +12,19 @@ import org.mockito.Mockito;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
-import java.nio.file.*;
+import java.nio.file.Files;
+import java.nio.file.InvalidPathException;
+import java.nio.file.Path;
 
 import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.Mockito.*;
-
-import ch.qos.logback.classic.spi.ILoggingEvent;
+import static org.mockito.Mockito.mock;
 
 class FileSystemManagerUTest {
-    private Path path1;
     private final String suffix = "suffix";
-
     private final FileSystemManager fileSystemManager = new FileSystemManager();
-
+    @TempDir
+    Path tempDir;
+    private Path path1;
     private ListAppender<ILoggingEvent> logWatcher;
 
     @BeforeEach
@@ -37,9 +38,6 @@ class FileSystemManagerUTest {
     void tearDown() {
         ((Logger) LoggerFactory.getLogger(FileSystemManager.class)).detachAndStopAllAppenders();
     }
-
-    @TempDir
-    Path tempDir;
 
     @BeforeEach
     public void setUp() {
@@ -65,11 +63,13 @@ class FileSystemManagerUTest {
 
     @Test
     void testFilesWalkHandleNullPointerException_fail() {
+        boolean result;
         try (MockedStatic<Files> mocked = Mockito.mockStatic(Files.class)) {
             mocked.when(() -> Files.walk(path1.getParent())).thenThrow(new NullPointerException("Test NullPointerException"));
             fileSystemManager.deleteFolderRecursively(path1.getParent(), suffix);
-            assert (logWatcher.list.get(logWatcher.list.size() - 1).getFormattedMessage()).contains("Test NullPointerException");
+            result = logWatcher.list.get(logWatcher.list.size() - 1).getFormattedMessage().contains("Test NullPointerException");
         }
+        assertTrue(result);
     }
 
     @Test
