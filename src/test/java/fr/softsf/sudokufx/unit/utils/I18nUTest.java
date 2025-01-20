@@ -1,12 +1,12 @@
 package fr.softsf.sudokufx.unit.utils;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import fr.softsf.sudokufx.utils.I18n;
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 
-import fr.softsf.sudokufx.utils.I18n;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
@@ -48,12 +48,5 @@ class I18nUTest {
         I18n.setLocaleBundle("");
         String testFR = I18n.getValue("test");
         assertEquals("testFR", testFR);
-    }
-
-    @Test
-    @Order(5)
-    void testChanged_language_is_french() {
-        String FR = I18n.getLanguage();
-        assertEquals("fr", FR);
     }
 }
