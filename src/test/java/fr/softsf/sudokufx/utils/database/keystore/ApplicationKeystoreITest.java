@@ -4,15 +4,11 @@ import ch.qos.logback.classic.Logger;
 import ch.qos.logback.classic.spi.ILoggingEvent;
 import ch.qos.logback.core.read.ListAppender;
 import fr.softsf.sudokufx.interfaces.IOsFolderFactory;
-import fr.softsf.sudokufx.utils.FileSystemManager;
 import org.junit.jupiter.api.*;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import java.nio.file.Paths;
-
-import static fr.softsf.sudokufx.utils.MyEnums.Paths.WINDOWS_SUPPOSED_DATA_FOLDER_FOR_SUDO_FX;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.*;
 
@@ -25,11 +21,6 @@ class ApplicationKeystoreITest {
     @Autowired
     ApplicationKeystore keystore;
     private ListAppender<ILoggingEvent> logWatcher;
-
-    @BeforeAll
-    static void setupAll() {
-        new FileSystemManager().deleteFolderRecursively(Paths.get(WINDOWS_SUPPOSED_DATA_FOLDER_FOR_SUDO_FX.getPath()), WINDOWS_SUPPOSED_DATA_FOLDER_FOR_SUDO_FX.getPath());
-    }
 
     @BeforeEach
     void setup() {
