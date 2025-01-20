@@ -15,8 +15,8 @@ class I18nUTest {
     @Test
     @Order(0)
     void testDefault_language_is_french() {
-        String FR = I18n.getLanguage();
-        assertEquals("fr", FR);
+        String fr = I18n.getLanguage();
+        assertEquals("fr", fr);
     }
 
     @Test
@@ -38,8 +38,8 @@ class I18nUTest {
     @Test
     @Order(3)
     void testChanged_language_is_english() {
-        String EN = I18n.getLanguage();
-        assertEquals("en", EN);
+        String en = I18n.getLanguage();
+        assertEquals("en", en);
     }
 
     @Test
