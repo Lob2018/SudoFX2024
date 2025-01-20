@@ -1,4 +1,4 @@
-package fr.softsf.sudokufx.integration.utils;
+package fr.softsf.sudokufx.unit.utils;
 
 import fr.softsf.sudokufx.utils.ExceptionTools;
 import org.junit.jupiter.api.Test;
