@@ -2,7 +2,6 @@ package fr.softsf.sudokufx.view;
 
 import fr.softsf.sudokufx.interfaces.ISplashScreenView;
 import fr.softsf.sudokufx.utils.JVMApplicationProperties;
-import fr.softsf.sudokufx.SudoMain;
 import fr.softsf.sudokufx.utils.I18n;
 import javafx.animation.Animation;
 import javafx.animation.Interpolator;
@@ -88,7 +87,7 @@ public class SplashScreenView implements ISplashScreenView {
         scene = new Scene(splashscreenvbox, DISPOSABLE_SIZE.getSize() * .612, DISPOSABLE_SIZE.getSize() * .3, Color.TRANSPARENT);
         scene.getStylesheets().add((Objects.requireNonNull(getClass().getResource(RESOURCES_CSS_PATH.getPath()))).toExternalForm());
         final Color splashDefaultFontColor = Color.web("#ffffff");
-        splashScreenStage.getIcons().add(new Image((Objects.requireNonNull(SudoMain.class.getResource(LOGO_SUDO_PNG_PATH.getPath()))).toExternalForm()));
+        splashScreenStage.getIcons().add(new Image((Objects.requireNonNull(getClass().getResource(LOGO_SUDO_PNG_PATH.getPath()))).toExternalForm()));
         splashScreenStage.initStyle(StageStyle.UNDECORATED);
         splashScreenStage.centerOnScreen();
         splashscreenvbox.setPrefWidth(DISPOSABLE_SIZE.getSize() * .612);
