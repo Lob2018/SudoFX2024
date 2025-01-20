@@ -79,7 +79,7 @@ public final class FullMenuView implements SudoMain.IPrimaryStageView {
         toaster.addToast("(130 CHAR) ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR", MyEnums.ToastLevels.ERROR);
         fullMenuViewModel.test();
 
-        fxmlService.setRootByFXMLName("crashscreen-view");
+//        fxmlService.setRootByFXMLName("crashscreen-view");
     }
 
     /**
