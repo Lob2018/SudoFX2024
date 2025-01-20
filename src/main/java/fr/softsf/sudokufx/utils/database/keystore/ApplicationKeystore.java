@@ -2,6 +2,7 @@ package fr.softsf.sudokufx.utils.database.keystore;
 
 import fr.softsf.sudokufx.annotations.ExcludedFromCoverageReportGenerated;
 import fr.softsf.sudokufx.interfaces.IKeystore;
+import fr.softsf.sudokufx.interfaces.IOsFolderFactory;
 import fr.softsf.sudokufx.utils.os.OsFolderFactoryManager;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
@@ -31,7 +32,7 @@ public class ApplicationKeystore implements IKeystore {
     private static final String SYMMETRIC_KEY_ALIAS = "db-encryption-secret";
     private static final String USERNAME_ALIAS = "db-user-alias";
     private static final String PASS_ALIAS = "db-pass-alias";
-    private OsFolderFactoryManager.IOsFolderFactory osFolderFactory;
+    private IOsFolderFactory osFolderFactory;
     private String keystoreFilePath;
     private KeyStore ks;
     private IEncryptionService iEncryptionService;
@@ -41,7 +42,7 @@ public class ApplicationKeystore implements IKeystore {
     @Getter
     private String password;
 
-    public ApplicationKeystore(OsFolderFactoryManager.IOsFolderFactory osFolderFactory) {
+    public ApplicationKeystore(IOsFolderFactory osFolderFactory) {
         this.osFolderFactory = osFolderFactory;
     }
 
@@ -242,7 +243,7 @@ public class ApplicationKeystore implements IKeystore {
      *
      * @param osFolderFactoryP The OS folder factory
      */
-    void setOsFolderFactoryForTests(OsFolderFactoryManager.IOsFolderFactory osFolderFactoryP) {
+    void setOsFolderFactoryForTests(IOsFolderFactory osFolderFactoryP) {
         osFolderFactory = osFolderFactoryP;
     }
 

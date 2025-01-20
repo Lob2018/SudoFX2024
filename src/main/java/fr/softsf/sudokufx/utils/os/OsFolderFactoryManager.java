@@ -1,5 +1,6 @@
 package fr.softsf.sudokufx.utils.os;
 
+import fr.softsf.sudokufx.interfaces.IOsFolderFactory;
 import fr.softsf.sudokufx.utils.MyEnums;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -101,23 +102,4 @@ public class OsFolderFactoryManager {
         os = "mac";
     }
 
-    /**
-     * Interface defining methods for accessing OS-specific folder paths.
-     */
-    public interface IOsFolderFactory {
-
-        /**
-         * Retrieves the path to the OS-specific data folder.
-         *
-         * @return A String representing the path to the data folder
-         */
-        String getOsDataFolderPath();
-
-        /**
-         * Retrieves the path to the OS-specific logs folder.
-         *
-         * @return A String representing the path to the logs folder
-         */
-        String getOsLogsFolderPath();
-    }
 }

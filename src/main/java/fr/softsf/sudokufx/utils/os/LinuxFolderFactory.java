@@ -1,5 +1,6 @@
 package fr.softsf.sudokufx.utils.os;
 
+import fr.softsf.sudokufx.interfaces.IOsFolderFactory;
 import lombok.extern.slf4j.Slf4j;
 
 /**
@@ -7,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
  * Implements the OsDynamicFolders.IOsFoldersFactory interface.
  */
 @Slf4j
-public class LinuxFolderFactory implements OsFolderFactoryManager.IOsFolderFactory {
+public class LinuxFolderFactory implements IOsFolderFactory {
     private final String logsFolderForSudoFx;
     private final String dataFolderForSudoFx;
 

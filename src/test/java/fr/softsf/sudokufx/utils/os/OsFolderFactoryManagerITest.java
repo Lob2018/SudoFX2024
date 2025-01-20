@@ -1,5 +1,6 @@
 package fr.softsf.sudokufx.utils.os;
 
+import fr.softsf.sudokufx.interfaces.IOsFolderFactory;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -9,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest
 class OsFolderFactoryManagerITest {
 
-    private static OsFolderFactoryManager.IOsFolderFactory currentIOsFolderFactory;
+    private static IOsFolderFactory currentIOsFolderFactory;
 
     @BeforeAll
     public static void setUp() {
@@ -60,7 +61,7 @@ class OsFolderFactoryManagerITest {
     void testOsFolderFactoryWithWindowsFolderFactory() {
         OsFolderFactoryManager osFolderFactoryManager = new OsFolderFactoryManager();
         osFolderFactoryManager.setWindowsOsForTests(currentIOsFolderFactory.getOsDataFolderPath(), currentIOsFolderFactory.getOsLogsFolderPath());
-        OsFolderFactoryManager.IOsFolderFactory factory = osFolderFactoryManager.osFolderFactory();
+        IOsFolderFactory factory = osFolderFactoryManager.osFolderFactory();
         assertEquals(factory.getOsDataFolderPath(), currentIOsFolderFactory.getOsDataFolderPath());
         assertEquals(factory.getOsLogsFolderPath(), currentIOsFolderFactory.getOsLogsFolderPath());
     }
@@ -69,7 +70,7 @@ class OsFolderFactoryManagerITest {
     void testOsFolderFactoryWithLinuxFolderFactory() {
         OsFolderFactoryManager osFolderFactoryManager = new OsFolderFactoryManager();
         osFolderFactoryManager.setLinuxOsForTests(currentIOsFolderFactory.getOsDataFolderPath(), currentIOsFolderFactory.getOsLogsFolderPath());
-        OsFolderFactoryManager.IOsFolderFactory factory = osFolderFactoryManager.osFolderFactory();
+        IOsFolderFactory factory = osFolderFactoryManager.osFolderFactory();
         assertEquals(factory.getOsDataFolderPath(), currentIOsFolderFactory.getOsDataFolderPath());
         assertEquals(factory.getOsLogsFolderPath(), currentIOsFolderFactory.getOsLogsFolderPath());
     }
@@ -78,7 +79,7 @@ class OsFolderFactoryManagerITest {
     void testOsFolderFactoryWithMacOSFolderFactory() {
         OsFolderFactoryManager osFolderFactoryManager = new OsFolderFactoryManager();
         osFolderFactoryManager.setMacOSForTests(currentIOsFolderFactory.getOsDataFolderPath(), currentIOsFolderFactory.getOsLogsFolderPath());
-        OsFolderFactoryManager.IOsFolderFactory factory = osFolderFactoryManager.osFolderFactory();
+        IOsFolderFactory factory = osFolderFactoryManager.osFolderFactory();
         assertEquals(factory.getOsDataFolderPath(), currentIOsFolderFactory.getOsDataFolderPath());
         assertEquals(factory.getOsLogsFolderPath(), currentIOsFolderFactory.getOsLogsFolderPath());
     }

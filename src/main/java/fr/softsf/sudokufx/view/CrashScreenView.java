@@ -1,5 +1,6 @@
 package fr.softsf.sudokufx.view;
 
+import fr.softsf.sudokufx.interfaces.IOsFolderFactory;
 import fr.softsf.sudokufx.interfaces.ISplashScreenView;
 import fr.softsf.sudokufx.utils.FileSystemManager;
 import fr.softsf.sudokufx.utils.JVMApplicationProperties;
@@ -41,7 +42,7 @@ import static fr.softsf.sudokufx.utils.MyEnums.ScreenSize.DISPOSABLE_SIZE;
 @Slf4j
 public class CrashScreenView implements SudoMain.IPrimaryStageView {
 
-    private static final OsFolderFactoryManager.IOsFolderFactory iOsFolderFactory = new OsFolderFactoryManager().osFolderFactory();
+    private static final IOsFolderFactory iOsFolderFactory = new OsFolderFactoryManager().osFolderFactory();
     private static final double FADE_IN_IN_SECONDS_AFTER_SPLASHSCREEN = 0.5;
     private final Stage crashscreenStage = new Stage();
     private final DropShadow dropShadow = new DropShadow();

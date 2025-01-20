@@ -3,6 +3,7 @@ package fr.softsf.sudokufx.utils.database.keystore;
 import ch.qos.logback.classic.Logger;
 import ch.qos.logback.classic.spi.ILoggingEvent;
 import ch.qos.logback.core.read.ListAppender;
+import fr.softsf.sudokufx.interfaces.IOsFolderFactory;
 import fr.softsf.sudokufx.utils.FileSystemManager;
 import fr.softsf.sudokufx.utils.os.OsFolderFactoryManager;
 import org.junit.jupiter.api.*;
@@ -19,7 +20,7 @@ import static org.mockito.Mockito.*;
 @SpringBootTest
 class ApplicationKeystoreITest {
 
-    private static OsFolderFactoryManager.IOsFolderFactory iOsFolderFactoryMocked;
+    private static IOsFolderFactory iOsFolderFactoryMocked;
     private static String passInit;
     private static String userInit;
     @Autowired
@@ -33,7 +34,7 @@ class ApplicationKeystoreITest {
 
     @BeforeEach
     void setup() {
-        iOsFolderFactoryMocked = mock(OsFolderFactoryManager.IOsFolderFactory.class);
+        iOsFolderFactoryMocked = mock(IOsFolderFactory.class);
         logWatcher = new ListAppender<>();
         logWatcher.start();
         ((Logger) LoggerFactory.getLogger(ApplicationKeystore.class)).addAppender(logWatcher);
@@ -67,7 +68,7 @@ class ApplicationKeystoreITest {
 
     @Test
     void constructorException_fail() {
-        iOsFolderFactoryMocked = mock(OsFolderFactoryManager.IOsFolderFactory.class);
+        iOsFolderFactoryMocked = mock(IOsFolderFactory.class);
         when(iOsFolderFactoryMocked.getOsDataFolderPath()).thenThrow(new RuntimeException(new Exception("██ Exception")));
         keystore.setOsFolderFactoryForTests(iOsFolderFactoryMocked);
         keystore.setupApplicationKeystore();

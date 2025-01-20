@@ -2,6 +2,7 @@ package fr.softsf.sudokufx.utils;
 
 import ch.qos.logback.classic.spi.ILoggingEvent;
 import ch.qos.logback.core.read.ListAppender;
+import fr.softsf.sudokufx.interfaces.IOsFolderFactory;
 import fr.softsf.sudokufx.utils.os.OsFolderFactoryManager;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
@@ -28,7 +29,7 @@ import static org.mockito.Mockito.verify;
 @ExtendWith(MockitoExtension.class)
 class MyLogbackITest {
 
-    private static OsFolderFactoryManager.IOsFolderFactory currentIOsFolderFactory;
+    private static IOsFolderFactory currentIOsFolderFactory;
 
     @Autowired
     MyLogback setupMyLogback;
