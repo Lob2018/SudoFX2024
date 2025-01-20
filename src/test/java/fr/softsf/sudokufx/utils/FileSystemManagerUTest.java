@@ -50,13 +50,13 @@ class FileSystemManagerUTest {
     }
 
     @Test
-    void testDeleteFolder_success() throws Exception {
+    void testDeleteFolder_success() {
         boolean result = fileSystemManager.deleteFolderRecursively(path1.getParent(), suffix);
         assertTrue(result);
     }
 
     @Test
-    void testDeleteFolderIncorrectDirectoryPath_fail() throws Exception {
+    void testDeleteFolderIncorrectDirectoryPath_fail() {
         boolean result = fileSystemManager.deleteFolderRecursively(path1.getParent(), suffix + "/toto.txt");
         assertFalse(result);
     }
