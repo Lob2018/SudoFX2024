@@ -27,7 +27,7 @@ class DynamicFontSizeChangeE2ETest {
     private Stage stage;
 
     @Start
-    private void start(Stage primarystage) throws IOException {
+    private void start(Stage primarystage) {
         stage = primarystage;
         Scene scene = new Scene(new VBox(), 500, 500);
         stage.setScene(scene);
