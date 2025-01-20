@@ -1,6 +1,5 @@
 package fr.softsf.sudokufx.e2e.utils;
 
-import java.io.IOException;
 import java.util.concurrent.TimeoutException;
 
 import static fr.softsf.sudokufx.utils.MyEnums.ScreenSize.DISPOSABLE_SIZE;
