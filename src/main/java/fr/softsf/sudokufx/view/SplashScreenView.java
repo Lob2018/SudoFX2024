@@ -86,7 +86,7 @@ public class SplashScreenView implements ISplashScreenView {
      */
     private void nodesConfiguration() {
         scene = new Scene(splashscreenvbox, DISPOSABLE_SIZE.getSize() * .612, DISPOSABLE_SIZE.getSize() * .3, Color.TRANSPARENT);
-        scene.getStylesheets().add((Objects.requireNonNull(SudoMain.class.getResource(RESOURCES_CSS_PATH.getPath()))).toExternalForm());
+        scene.getStylesheets().add((Objects.requireNonNull(getClass().getResource(RESOURCES_CSS_PATH.getPath()))).toExternalForm());
         final Color splashDefaultFontColor = Color.web("#ffffff");
         splashScreenStage.getIcons().add(new Image((Objects.requireNonNull(SudoMain.class.getResource(LOGO_SUDO_PNG_PATH.getPath()))).toExternalForm()));
         splashScreenStage.initStyle(StageStyle.UNDECORATED);
