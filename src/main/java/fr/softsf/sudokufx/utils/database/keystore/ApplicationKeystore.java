@@ -1,6 +1,7 @@
 package fr.softsf.sudokufx.utils.database.keystore;
 
 import fr.softsf.sudokufx.annotations.ExcludedFromCoverageReportGenerated;
+import fr.softsf.sudokufx.interfaces.IEncryptionService;
 import fr.softsf.sudokufx.interfaces.IKeystore;
 import fr.softsf.sudokufx.interfaces.IOsFolderFactory;
 import fr.softsf.sudokufx.utils.os.OsFolderFactoryManager;
@@ -245,24 +246,6 @@ public class ApplicationKeystore implements IKeystore {
      */
     void setOsFolderFactoryForTests(IOsFolderFactory osFolderFactoryP) {
         osFolderFactory = osFolderFactoryP;
-    }
-
-    public interface IEncryptionService {
-        /**
-         * Encrypt original
-         *
-         * @param original The original
-         * @return The encrypted original
-         */
-        String encrypt(String original);
-
-        /**
-         * Decrypt original
-         *
-         * @param cypher The cypher
-         * @return The decrypted cypher
-         */
-        String decrypt(String cypher);
     }
 }
 

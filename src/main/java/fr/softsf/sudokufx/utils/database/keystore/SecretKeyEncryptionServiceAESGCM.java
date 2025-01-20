@@ -11,6 +11,7 @@ import javax.crypto.SecretKey;
 import javax.crypto.spec.GCMParameterSpec;
 
 import fr.softsf.sudokufx.annotations.ExcludedFromCoverageReportGenerated;
+import fr.softsf.sudokufx.interfaces.IEncryptionService;
 import jakarta.validation.constraints.NotBlank;
 import lombok.extern.slf4j.Slf4j;
 
@@ -19,7 +20,7 @@ import lombok.extern.slf4j.Slf4j;
  * using AES-GCM (Galois/Counter Mode) encryption.
  */
 @Slf4j
-public final class SecretKeyEncryptionServiceAESGCM implements ApplicationKeystore.IEncryptionService {
+public final class SecretKeyEncryptionServiceAESGCM implements IEncryptionService {
     private final SecretKey secretKey;
     private Cipher cipher;
     private static final SecureRandom random = new SecureRandom();
