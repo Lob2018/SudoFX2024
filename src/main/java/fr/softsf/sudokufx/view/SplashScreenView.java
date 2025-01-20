@@ -34,7 +34,7 @@ import static javafx.scene.layout.Priority.ALWAYS;
  * View class for the splash screen of the Sudoku application. This class is
  * responsible for creating and managing the splash screen UI.
  */
-public class SplashScreenView implements ISplashScreenView {
+public final class SplashScreenView implements ISplashScreenView {
 
     public static final String FX_FONT_SIZE_0_8_EM = "-fx-font-size: 0.8em;";
     private final VBox splashscreenvbox = new VBox();

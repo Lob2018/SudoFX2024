@@ -40,7 +40,7 @@ import static fr.softsf.sudokufx.utils.MyEnums.ScreenSize.DISPOSABLE_SIZE;
  * responsible for displaying and managing the crash screen UI.
  */
 @Slf4j
-public class CrashScreenView implements SudoMain.IPrimaryStageView {
+public final class CrashScreenView implements SudoMain.IPrimaryStageView {
 
     private static final IOsFolderFactory iOsFolderFactory = new OsFolderFactoryManager().osFolderFactory();
     private static final double FADE_IN_IN_SECONDS_AFTER_SPLASHSCREEN = 0.5;

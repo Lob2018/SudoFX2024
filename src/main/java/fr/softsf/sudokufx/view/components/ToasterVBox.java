@@ -21,7 +21,7 @@ import org.springframework.stereotype.Component;
  * extends JavaFX's VBox and provides methods to add and manage toast messages.
  */
 @Component
-public class ToasterVBox extends VBox {
+public final class ToasterVBox extends VBox {
 
     /**
      * Constructor for ToasterVBox. Initializes the VBox and sets its alignment
