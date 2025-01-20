@@ -8,8 +8,8 @@ import lombok.extern.slf4j.Slf4j;
  */
 @Slf4j
 public class MacosFolderFactory implements OsFolderFactoryManager.IOsFolderFactory {
-    private final String LOGS_FOLDER_FOR_SUDO_FX;
-    private final String DATA_FOLDER_FOR_SUDO_FX;
+    private final String logsFolderForSudoFx;
+    private final String dataFolderForSudoFx;
 
     /**
      * Constructor that initializes the data and logs folder paths.
@@ -21,8 +21,8 @@ public class MacosFolderFactory implements OsFolderFactoryManager.IOsFolderFacto
         final String[] folders = OsFolderInitializer.initializeFolders(
                 dataFolderPath, logsFolderPath
         );
-        DATA_FOLDER_FOR_SUDO_FX = folders[0];
-        LOGS_FOLDER_FOR_SUDO_FX = folders[1];
+        dataFolderForSudoFx = folders[0];
+        logsFolderForSudoFx = folders[1];
     }
 
     /**
@@ -32,7 +32,7 @@ public class MacosFolderFactory implements OsFolderFactoryManager.IOsFolderFacto
      */
     @Override
     public String getOsDataFolderPath() {
-        return DATA_FOLDER_FOR_SUDO_FX;
+        return dataFolderForSudoFx;
     }
 
     /**
@@ -42,7 +42,7 @@ public class MacosFolderFactory implements OsFolderFactoryManager.IOsFolderFacto
      */
     @Override
     public String getOsLogsFolderPath() {
-        return LOGS_FOLDER_FOR_SUDO_FX;
+        return logsFolderForSudoFx;
     }
 
 }
