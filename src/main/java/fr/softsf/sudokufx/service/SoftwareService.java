@@ -17,7 +17,7 @@ public class SoftwareService {
 
     private final SoftwareRepository softwareRepository;
 
-    private final ISoftwareMapper iSoftwareMapper = ISoftwareMapper.INSTANCE;
+    private static final ISoftwareMapper iSoftwareMapper = ISoftwareMapper.INSTANCE;
 
     public SoftwareService(SoftwareRepository softwareRepository) {
         this.softwareRepository = softwareRepository;
