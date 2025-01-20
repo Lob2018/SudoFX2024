@@ -28,7 +28,6 @@ class SecretKeyEncryptionServiceAESGCMITest {
 
     private static SecretKeyEncryptionServiceAESGCM secretKeyEncryptionServiceAESGCM;
     private static SecretKeyEncryptionServiceAESGCM secretKeyEncryptionServiceAESGCMNullSecretKey;
-    private static SecretKeyEncryptionServiceAESGCM secretKeyEncryptionServiceAESGCMIncorrectSecretKey;
 
     private ListAppender<ILoggingEvent> logWatcher;
 
