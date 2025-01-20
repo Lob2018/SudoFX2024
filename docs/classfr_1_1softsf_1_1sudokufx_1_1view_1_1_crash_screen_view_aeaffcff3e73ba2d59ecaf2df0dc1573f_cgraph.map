@@ -1,5 +1,7 @@
 <map id="fr.softsf.sudokufx.view.CrashScreenView.resetButtonClick" name="fr.softsf.sudokufx.view.CrashScreenView.resetButtonClick">
-<area shape="rect" id="Node000001" title="Handles the reset button click event." alt="" coords="5,5,232,48"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#ae8a4111090a512677b14743dd3aa21d3" title="Hides and closes the crash screen stage." alt="" coords="280,5,504,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="232,24,264,24,264,29,232,29"/>
+<area shape="rect" id="Node000001" title="Handles the reset button click event." alt="" coords="5,39,232,81"/>
+<area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_os_folder_factory.html#ad2fbd0fa5081f7b023b0bbf262847cfb" title="Retrieves the path to the OS&#45;specific data folder." alt="" coords="280,5,531,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="232,44,264,40,265,46,232,49"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#ae8a4111090a512677b14743dd3aa21d3" title="Hides and closes the crash screen stage." alt="" coords="293,72,518,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="232,71,278,76,277,81,232,76"/>
 </map>

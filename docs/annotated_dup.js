@@ -19,8 +19,8 @@ var annotated_dup =
               ] ],
               [ "GenerateSecretITest", "classfr_1_1softsf_1_1sudokufx_1_1integration_1_1database_1_1_generate_secret_i_test.html", "classfr_1_1softsf_1_1sudokufx_1_1integration_1_1database_1_1_generate_secret_i_test" ]
             ] ],
-            [ "utils", "namespacefr_1_1softsf_1_1sudokufx_1_1integration_1_1utils.html", [
-              [ "ExceptionToolsUTest", "classfr_1_1softsf_1_1sudokufx_1_1integration_1_1utils_1_1_exception_tools_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1integration_1_1utils_1_1_exception_tools_u_test" ]
+            [ "service", "namespacefr_1_1softsf_1_1sudokufx_1_1integration_1_1service.html", [
+              [ "SoftwareServiceITest", "classfr_1_1softsf_1_1sudokufx_1_1integration_1_1service_1_1_software_service_i_test.html", "classfr_1_1softsf_1_1sudokufx_1_1integration_1_1service_1_1_software_service_i_test" ]
             ] ]
           ] ],
           [ "interfaces", "namespacefr_1_1softsf_1_1sudokufx_1_1interfaces.html", [
@@ -34,8 +34,10 @@ var annotated_dup =
               [ "IPlayerMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_player_mapper.html", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_player_mapper" ],
               [ "ISoftwareMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_software_mapper.html", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_software_mapper" ]
             ] ],
+            [ "IEncryptionService", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_encryption_service.html", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_encryption_service" ],
             [ "IFileSystem", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_file_system.html", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_file_system" ],
             [ "IKeystore", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_keystore.html", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_keystore" ],
+            [ "IOsFolderFactory", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_os_folder_factory.html", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_os_folder_factory" ],
             [ "ISplashScreenView", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_splash_screen_view.html", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_splash_screen_view" ]
           ] ],
           [ "model", "namespacefr_1_1softsf_1_1sudokufx_1_1model.html", [
@@ -67,6 +69,7 @@ var annotated_dup =
               [ "os", "namespacefr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1os.html", [
                 [ "OsInfoUTest", "classfr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1os_1_1_os_info_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1os_1_1_os_info_u_test" ]
               ] ],
+              [ "ExceptionToolsUTest", "classfr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1_exception_tools_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1_exception_tools_u_test" ],
               [ "I18nUTest", "classfr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1_i18n_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1_i18n_u_test" ],
               [ "MyEnumsUTest", "classfr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1_my_enums_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1_my_enums_u_test" ]
             ] ]

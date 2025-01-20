@@ -16,7 +16,7 @@ var searchData=
   ['fr_3a_3asoftsf_3a_3asudokufx_3a_3ae2e_3a_3autils_13',['utils',['../namespacefr_1_1softsf_1_1sudokufx_1_1e2e_1_1utils.html',1,'fr::softsf::sudokufx::e2e']]],
   ['fr_3a_3asoftsf_3a_3asudokufx_3a_3aintegration_3a_3adatabase_14',['database',['../namespacefr_1_1softsf_1_1sudokufx_1_1integration_1_1database.html',1,'fr::softsf::sudokufx::integration']]],
   ['fr_3a_3asoftsf_3a_3asudokufx_3a_3aintegration_3a_3adatabase_3a_3akeystore_15',['keystore',['../namespacefr_1_1softsf_1_1sudokufx_1_1integration_1_1database_1_1keystore.html',1,'fr::softsf::sudokufx::integration::database']]],
-  ['fr_3a_3asoftsf_3a_3asudokufx_3a_3aintegration_3a_3autils_16',['utils',['../namespacefr_1_1softsf_1_1sudokufx_1_1integration_1_1utils.html',1,'fr::softsf::sudokufx::integration']]],
+  ['fr_3a_3asoftsf_3a_3asudokufx_3a_3aintegration_3a_3aservice_16',['service',['../namespacefr_1_1softsf_1_1sudokufx_1_1integration_1_1service.html',1,'fr::softsf::sudokufx::integration']]],
   ['fr_3a_3asoftsf_3a_3asudokufx_3a_3ainterfaces_17',['interfaces',['../namespacefr_1_1softsf_1_1sudokufx_1_1interfaces.html',1,'fr::softsf::sudokufx']]],
   ['fr_3a_3asoftsf_3a_3asudokufx_3a_3ainterfaces_3a_3amapper_18',['mapper',['../namespacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper.html',1,'fr::softsf::sudokufx::interfaces']]],
   ['fr_3a_3asoftsf_3a_3asudokufx_3a_3amodel_19',['model',['../namespacefr_1_1softsf_1_1sudokufx_1_1model.html',1,'fr::softsf::sudokufx']]],

@@ -8,6 +8,5 @@ var classfr_1_1softsf_1_1sudokufx_1_1integration_1_1database_1_1keystore_1_1_sec
     [ "tearDown", "classfr_1_1softsf_1_1sudokufx_1_1integration_1_1database_1_1keystore_1_1_secret_key_encryption_service_a_e_s_g_c_m_i_test.html#aa6833748683880dc985a91f87475996b", null ],
     [ "logWatcher", "classfr_1_1softsf_1_1sudokufx_1_1integration_1_1database_1_1keystore_1_1_secret_key_encryption_service_a_e_s_g_c_m_i_test.html#ab95275a90089598fc4409543ab21a9b0", null ],
     [ "secretKeyEncryptionServiceAESGCM", "classfr_1_1softsf_1_1sudokufx_1_1integration_1_1database_1_1keystore_1_1_secret_key_encryption_service_a_e_s_g_c_m_i_test.html#a590ead3c92690735d7916de189722922", null ],
-    [ "secretKeyEncryptionServiceAESGCMIncorrectSecretKey", "classfr_1_1softsf_1_1sudokufx_1_1integration_1_1database_1_1keystore_1_1_secret_key_encryption_service_a_e_s_g_c_m_i_test.html#af56eae7f309a524190bc5ec34e36d9c9", null ],
     [ "secretKeyEncryptionServiceAESGCMNullSecretKey", "classfr_1_1softsf_1_1sudokufx_1_1integration_1_1database_1_1keystore_1_1_secret_key_encryption_service_a_e_s_g_c_m_i_test.html#a285d858932186be7b73eefa880045653", null ]
 ];

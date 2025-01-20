@@ -1,6 +1,5 @@
 var classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_os_folder_factory_manager =
 [
-    [ "IOsFolderFactory", "interfacefr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_os_folder_factory_manager_1_1_i_os_folder_factory.html", "interfacefr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_os_folder_factory_manager_1_1_i_os_folder_factory" ],
     [ "osFolderFactory", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_os_folder_factory_manager.html#abe170d1d4c6183a0a6e9d7dd7904fd19", null ],
     [ "setEmptyOsForTests", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_os_folder_factory_manager.html#af6a6120355ced36920fcff52a34164e5", null ],
     [ "setLinuxOsForTests", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_os_folder_factory_manager.html#a18d1e19ca0445cde8ad5484007de0613", null ],

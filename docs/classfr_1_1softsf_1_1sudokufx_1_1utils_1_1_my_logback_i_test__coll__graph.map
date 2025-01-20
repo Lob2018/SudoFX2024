@@ -1,11 +1,11 @@
 <map id="fr.softsf.sudokufx.utils.MyLogbackITest" name="fr.softsf.sudokufx.utils.MyLogbackITest">
-<area shape="rect" id="Node000001" title=" " alt="" coords="295,800,511,1115"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_os_folder_factory_manager.html" title="Configuration class for managing OS&#45;specific dynamically." alt="" coords="5,139,267,736"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="230,735,251,775,287,828,282,831,246,777,226,737"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback.html" title="Configuration class for Logback logging framework." alt="" coords="292,307,514,568"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="406,568,406,783,400,783,400,568"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="538,403,732,472"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="629,473,589,608,558,693,521,777,517,786,512,784,517,775,553,691,583,606,624,471"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="592,5,678,75"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="638,90,638,403,632,403,632,90"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="229,464,445,779"/>
+<area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_os_folder_factory.html" title="Interface defining methods for accessing OS&#45;specific folder paths." alt="" coords="5,216,201,323"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="126,321,152,379,185,439,220,488,216,491,180,441,147,381,121,324"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback.html" title="Configuration class for Logback logging framework." alt="" coords="225,139,448,400"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="339,400,339,447,334,447,334,400"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="472,235,666,304"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="549,305,452,452,447,449,545,302"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="525,5,612,75"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="571,89,571,235,566,235,566,89"/>
 </map>

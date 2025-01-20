@@ -1,5 +1,5 @@
 <map id="src/test/java/fr/softsf/sudokufx/unit/utils/I18nUTest.java" name="src/test/java/fr/softsf/sudokufx/unit/utils/I18nUTest.java">
-<area shape="rect" id="Node000001" title=" " alt="" coords="10,5,234,48"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,96,239,139"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,48,125,81,119,81,119,48"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,229,48"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="27,96,207,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,49,120,80,114,80,114,49"/>
 </map>
