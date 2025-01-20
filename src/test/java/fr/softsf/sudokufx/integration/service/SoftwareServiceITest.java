@@ -27,7 +27,7 @@ class SoftwareServiceITest {
     private SoftwareRepository softwareRepository;
 
     @BeforeEach
-    public void setUp() {
+    void setUp() {
         Software software = Software.builder()
                 .softwareid(1L)
                 .currentversion(currentVersion)
@@ -41,7 +41,7 @@ class SoftwareServiceITest {
     }
 
     @Test
-    public void testGetSoftware_success() {
+    void testGetSoftware_success() {
         Optional<SoftwareDto> softwareDto = softwareService.getSoftware();
         assertTrue(softwareDto.isPresent());
         assertThat(softwareDto.get().currentversion())
@@ -49,7 +49,7 @@ class SoftwareServiceITest {
     }
 
     @Test
-    public void testUpdateSoftware_success() {
+    void testUpdateSoftware_success() {
         Optional<SoftwareDto> softwareDto = softwareService.getSoftware();
         assertTrue(softwareDto.isPresent());
         Optional<SoftwareDto> softwareDtoUpdated = softwareService.updateSoftware(softwareDto.get());
