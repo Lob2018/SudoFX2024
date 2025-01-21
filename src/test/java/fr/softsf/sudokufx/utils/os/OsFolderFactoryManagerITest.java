@@ -1,7 +1,6 @@
 package fr.softsf.sudokufx.utils.os;
 
 import fr.softsf.sudokufx.interfaces.IOsFolderFactory;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -12,8 +11,7 @@ class OsFolderFactoryManagerITest {
 
     private static IOsFolderFactory currentIOsFolderFactory;
 
-    @BeforeAll
-    public static void setUp() {
+    public OsFolderFactoryManagerITest() {
         OsFolderFactoryManager osFolderFactoryManager = new OsFolderFactoryManager();
         currentIOsFolderFactory = osFolderFactoryManager.osFolderFactory();
     }

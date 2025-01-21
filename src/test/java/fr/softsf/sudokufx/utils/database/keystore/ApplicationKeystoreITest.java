@@ -15,16 +15,18 @@ import static org.mockito.Mockito.*;
 @SpringBootTest
 class ApplicationKeystoreITest {
 
-    private static IOsFolderFactory iOsFolderFactoryMocked;
     private static String passInit;
     private static String userInit;
-    @Autowired
-    ApplicationKeystore keystore;
     private ListAppender<ILoggingEvent> logWatcher;
+    private final ApplicationKeystore keystore;
+
+    @Autowired
+    public ApplicationKeystoreITest(ApplicationKeystore keystore) {
+        this.keystore = keystore;
+    }
 
     @BeforeEach
     void setup() {
-        iOsFolderFactoryMocked = mock(IOsFolderFactory.class);
         logWatcher = new ListAppender<>();
         logWatcher.start();
         ((Logger) LoggerFactory.getLogger(ApplicationKeystore.class)).addAppender(logWatcher);
@@ -32,7 +34,6 @@ class ApplicationKeystoreITest {
 
     @AfterEach
     void tearDown() {
-        iOsFolderFactoryMocked = null;
         ((Logger) LoggerFactory.getLogger(ApplicationKeystore.class)).detachAndStopAllAppenders();
     }
 
@@ -58,7 +59,7 @@ class ApplicationKeystoreITest {
 
     @Test
     void constructorException_fail() {
-        iOsFolderFactoryMocked = mock(IOsFolderFactory.class);
+        IOsFolderFactory iOsFolderFactoryMocked = mock(IOsFolderFactory.class);
         when(iOsFolderFactoryMocked.getOsDataFolderPath()).thenThrow(new RuntimeException(new Exception("██ Exception")));
         keystore.setOsFolderFactoryForTests(iOsFolderFactoryMocked);
         keystore.setupApplicationKeystore();

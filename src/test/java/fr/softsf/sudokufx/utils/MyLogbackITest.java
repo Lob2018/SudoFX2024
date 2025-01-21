@@ -29,15 +29,13 @@ import static org.mockito.Mockito.verify;
 @ExtendWith(MockitoExtension.class)
 class MyLogbackITest {
 
-    private static IOsFolderFactory currentIOsFolderFactory;
+    private final IOsFolderFactory currentIOsFolderFactory;
+    private ListAppender<ILoggingEvent> logWatcher;
+    private final MyLogback setupMyLogback;
 
     @Autowired
-    MyLogback setupMyLogback;
-
-    private ListAppender<ILoggingEvent> logWatcher;
-
-    @BeforeAll
-    public static void setUp() {
+    public MyLogbackITest(MyLogback setupMyLogback) {
+        this.setupMyLogback = setupMyLogback;
         OsFolderFactoryManager osFolderFactoryManager = new OsFolderFactoryManager();
         currentIOsFolderFactory = osFolderFactoryManager.osFolderFactory();
     }
@@ -76,9 +74,7 @@ class MyLogbackITest {
     @Test
     void testConfigureLogbackWithInvalidPath() {
         setupMyLogback.setLogBackPathForTests();
-        assertThrows(RuntimeException.class, () -> {
-            setupMyLogback.configureLogback();
-        });
+        assertThrows(RuntimeException.class, setupMyLogback::configureLogback);
     }
 
     @Test
@@ -86,7 +82,7 @@ class MyLogbackITest {
         JVMApplicationProperties.setOnRefreshSpringContextExitForTests();
         setupMyLogback.printLogEntryMessage();
         assertTrue(JVMApplicationProperties.isSpringContextExitOnRefresh());
-        assert (logWatcher.list.get(logWatcher.list.size() - 1).getFormattedMessage()).contains(OPTIMIZING.getLogBackMessage());
+        assert (logWatcher.list.getLast().getFormattedMessage()).contains(OPTIMIZING.getLogBackMessage());
     }
 
 
