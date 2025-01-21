@@ -1,8 +1,5 @@
 package fr.softsf.sudokufx.viewmodel;
 
-import java.time.LocalDateTime;
-import java.util.Optional;
-
 import fr.softsf.sudokufx.dto.SoftwareDto;
 import fr.softsf.sudokufx.service.SoftwareService;
 import fr.softsf.sudokufx.utils.JVMApplicationProperties;
@@ -11,21 +8,27 @@ import javafx.beans.property.StringProperty;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.time.LocalDateTime;
+import java.util.Optional;
+
 /**
  * FullMenuViewModel with business logic (not final)
  */
 @Component
 public class FullMenuViewModel {
-    @Autowired
-    SoftwareService softwareService;
+    private final SoftwareService softwareService;
+    private StringProperty welcome;
 
-    StringProperty _welcome;
+    @Autowired
+    public FullMenuViewModel(SoftwareService softwareService) {
+        this.softwareService = softwareService;
+    }
 
     public StringProperty welcomeProperty() {
-        if (_welcome == null) {
-            _welcome = new SimpleStringProperty(this, "");
+        if (welcome == null) {
+            welcome = new SimpleStringProperty(this, "");
         }
-        return _welcome;
+        return welcome;
     }
 
     private void setWelcome(String output) {

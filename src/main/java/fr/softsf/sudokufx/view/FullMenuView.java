@@ -1,5 +1,9 @@
 package fr.softsf.sudokufx.view;
 
+import java.util.Objects;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
 import fr.softsf.sudokufx.SudoMain;
 import fr.softsf.sudokufx.interfaces.ISplashScreenView;
 import fr.softsf.sudokufx.service.FxmlService;
@@ -22,9 +26,6 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javafx.util.Duration;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
-
-import java.util.Objects;
 
 /**
  * View class for the full menu screen of the Sudoku application. This class is
