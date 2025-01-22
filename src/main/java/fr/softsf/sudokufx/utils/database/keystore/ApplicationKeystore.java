@@ -4,7 +4,6 @@ import fr.softsf.sudokufx.annotations.ExcludedFromCoverageReportGenerated;
 import fr.softsf.sudokufx.interfaces.IEncryptionService;
 import fr.softsf.sudokufx.interfaces.IKeystore;
 import fr.softsf.sudokufx.interfaces.IOsFolderFactory;
-import fr.softsf.sudokufx.utils.os.OsFolderFactoryManager;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
