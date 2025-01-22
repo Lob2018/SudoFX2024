@@ -30,12 +30,7 @@ public final class I18n {
      * or any other value for French)
      */
     public static void setLocaleBundle(final String i18n) {
-        bundle = switch (i18n) {
-            case "EN" ->
-                ENGLISH_BUNDLE;
-            default ->
-                FRENCH_BUNDLE;
-        };
+        bundle = "EN".equals(i18n) ? ENGLISH_BUNDLE : FRENCH_BUNDLE;
     }
 
     /**
