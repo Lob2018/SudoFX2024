@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.integration.service.SoftwareServiceITest" name="fr.softsf.sudokufx.integration.service.SoftwareServiceITest">
+<map id="fr.softsf.sudokufx.integration.viewmodel.SoftwareServiceITest" name="fr.softsf.sudokufx.integration.viewmodel.SoftwareServiceITest">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,599,232,759"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_software_service.html" title=" " alt="" coords="243,343,451,535"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="258,536,208,588,204,585,254,533"/>
