@@ -1,4 +1,4 @@
-package fr.softsf.sudokufx.integration.database;
+package fr.softsf.sudokufx.unit.utils.database;
 
 import fr.softsf.sudokufx.utils.MyRegex;
 import fr.softsf.sudokufx.utils.database.keystore.GenerateSecret;
@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class GenerateSecretITest {
+class GenerateSecretUTest {
 
     @Test
     void whenPasswordGeneratedUsingPassay_thenSuccessful() {

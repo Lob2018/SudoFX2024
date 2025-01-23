@@ -4,25 +4,25 @@ import ch.qos.logback.classic.Logger;
 import ch.qos.logback.classic.spi.ILoggingEvent;
 import ch.qos.logback.core.read.ListAppender;
 import fr.softsf.sudokufx.interfaces.IOsFolderFactory;
-import org.junit.jupiter.api.*;
+import fr.softsf.sudokufx.utils.os.OsFolderFactoryManager;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Order;
+import org.junit.jupiter.api.Test;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.*;
 
-@SpringBootTest
-class ApplicationKeystoreITest {
+class ApplicationKeystoreUTest {
 
     private static String passInit;
     private static String userInit;
-    private ListAppender<ILoggingEvent> logWatcher;
     private final ApplicationKeystore keystore;
+    private ListAppender<ILoggingEvent> logWatcher;
 
-    @Autowired
-    public ApplicationKeystoreITest(ApplicationKeystore keystore) {
-        this.keystore = keystore;
+    public ApplicationKeystoreUTest() {
+        keystore = new ApplicationKeystore(new OsFolderFactoryManager().osFolderFactory());
     }
 
     @BeforeEach

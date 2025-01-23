@@ -11,9 +11,9 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 /**
- * FxmlService is a Spring service that manages the loading of FXML files
+ * FxmlService is a Spring viewmodel that manages the loading of FXML files
  * and updating the root of the JavaFX scene.
- * This service allows for dynamic changes to the user interface by
+ * This viewmodel allows for dynamic changes to the user interface by
  * loading different FXML files based on the application's needs.
  */
 @Service

@@ -120,7 +120,7 @@ public class ApplicationKeystore implements IKeystore {
     }
 
     /**
-     * Get the symmetric key and set encryption service
+     * Get the symmetric key and set encryption viewmodel
      */
     @ExcludedFromCoverageReportGenerated
     private void symmetricKeyIsInKeystore() {
@@ -135,7 +135,7 @@ public class ApplicationKeystore implements IKeystore {
     }
 
     /**
-     * Set the symmetric key and set encryption service
+     * Set the symmetric key and set encryption viewmodel
      */
     @ExcludedFromCoverageReportGenerated
     private void symmetricKeyNotInKeystore() {

@@ -1,4 +1,4 @@
-package fr.softsf.sudokufx.integration.service;
+package fr.softsf.sudokufx.unit.service;
 
 import fr.softsf.sudokufx.dto.SoftwareDto;
 import fr.softsf.sudokufx.interfaces.mapper.ISoftwareMapper;
@@ -7,10 +7,11 @@ import fr.softsf.sudokufx.repository.SoftwareRepository;
 import fr.softsf.sudokufx.service.SoftwareService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
 import org.mockito.Mockito;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.bean.override.mockito.MockitoBean;
+import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.time.LocalDateTime;
 import java.util.Optional;
@@ -19,22 +20,18 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-@SpringBootTest
-class SoftwareServiceITest {
+@ExtendWith(MockitoExtension.class)
+class SoftwareServiceUTest {
 
     private static final ISoftwareMapper iSoftwareMapper = ISoftwareMapper.INSTANCE;
     private final String currentVersion = "1.0.0";
     private final String lastVersion = "1.0.1";
-    private final SoftwareService softwareService;
-    @MockitoBean
+    @InjectMocks
+    private SoftwareService softwareService;
+    @Mock
     private SoftwareRepository softwareRepository;
 
     private Software software;
-
-    @Autowired
-    SoftwareServiceITest(SoftwareService softwareService) {
-        this.softwareService = softwareService;
-    }
 
     @BeforeEach
     void setUp() {

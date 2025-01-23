@@ -13,8 +13,6 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
 
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -24,19 +22,17 @@ import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 
-@SpringBootTest
 @ExtendWith(MockitoExtension.class)
-class MyLogbackITest {
+class MyLogbackUTest {
 
     private final IOsFolderFactory currentIOsFolderFactory;
     private ListAppender<ILoggingEvent> logWatcher;
-    private final MyLogback setupMyLogback;
+    private final MyLogback myLogback;
 
-    @Autowired
-    public MyLogbackITest(MyLogback setupMyLogback) {
-        this.setupMyLogback = setupMyLogback;
-        OsFolderFactoryManager osFolderFactoryManager = new OsFolderFactoryManager();
+    public MyLogbackUTest() {
+        OsFolderFactoryManager osFolderFactoryManager=  new OsFolderFactoryManager();
         currentIOsFolderFactory = osFolderFactoryManager.osFolderFactory();
+        this.myLogback = new MyLogback(osFolderFactoryManager) ;
     }
 
     @BeforeEach
@@ -53,12 +49,12 @@ class MyLogbackITest {
 
     @Test
     void testLogs_real_folder_path_is_correct() {
-        assertEquals(setupMyLogback.getLogsFolderPath(), currentIOsFolderFactory.getOsLogsFolderPath());
+        assertEquals(myLogback.getLogsFolderPath(), currentIOsFolderFactory.getOsLogsFolderPath());
     }
 
     @Test
     void testLogs_real_folder_exists() {
-        Path dossier = Path.of(setupMyLogback.getLogsFolderPath());
+        Path dossier = Path.of(myLogback.getLogsFolderPath());
         assertTrue(Files.exists(dossier));
     }
 
@@ -72,14 +68,14 @@ class MyLogbackITest {
 
     @Test
     void testConfigureLogbackWithInvalidPath() {
-        setupMyLogback.setLogBackPathForTests();
-        assertThrows(RuntimeException.class, setupMyLogback::configureLogback);
+        myLogback.setLogBackPathForTests();
+        assertThrows(RuntimeException.class, myLogback::configureLogback);
     }
 
     @Test
     void testLogEntryMessageWithSpringContextIsOnRefresh() {
         JVMApplicationProperties.setOnRefreshSpringContextExitForTests();
-        setupMyLogback.printLogEntryMessage();
+        myLogback.printLogEntryMessage();
         assertTrue(JVMApplicationProperties.isSpringContextExitOnRefresh());
         assert (logWatcher.list.getLast().getFormattedMessage()).contains(OPTIMIZING.getLogBackMessage());
     }

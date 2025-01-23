@@ -1,4 +1,4 @@
-package fr.softsf.sudokufx.integration.database.keystore;
+package fr.softsf.sudokufx.unit.utils.database.keystore;
 
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
@@ -24,7 +24,7 @@ import ch.qos.logback.classic.spi.ILoggingEvent;
 import ch.qos.logback.core.read.ListAppender;
 import fr.softsf.sudokufx.utils.database.keystore.SecretKeyEncryptionServiceAESGCM;
 
-class SecretKeyEncryptionServiceAESGCMITest {
+class SecretKeyEncryptionServiceAESGCMUTest {
 
     private static SecretKeyEncryptionServiceAESGCM secretKeyEncryptionServiceAESGCM;
     private static SecretKeyEncryptionServiceAESGCM secretKeyEncryptionServiceAESGCMNullSecretKey;
