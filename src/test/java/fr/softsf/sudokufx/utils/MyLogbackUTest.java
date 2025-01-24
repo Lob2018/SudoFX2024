@@ -17,6 +17,7 @@ import org.slf4j.LoggerFactory;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
+import static fr.softsf.sudokufx.utils.MyEnums.LogBackTxt.ASCII_LOGO;
 import static fr.softsf.sudokufx.utils.MyEnums.LogBackTxt.OPTIMIZING;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.times;
@@ -26,13 +27,13 @@ import static org.mockito.Mockito.verify;
 class MyLogbackUTest {
 
     private final IOsFolderFactory currentIOsFolderFactory;
-    private ListAppender<ILoggingEvent> logWatcher;
     private final MyLogback myLogback;
+    private ListAppender<ILoggingEvent> logWatcher;
 
     public MyLogbackUTest() {
-        OsFolderFactoryManager osFolderFactoryManager=  new OsFolderFactoryManager();
+        OsFolderFactoryManager osFolderFactoryManager = new OsFolderFactoryManager();
         currentIOsFolderFactory = osFolderFactoryManager.osFolderFactory();
-        this.myLogback = new MyLogback(osFolderFactoryManager) ;
+        this.myLogback = new MyLogback(osFolderFactoryManager);
     }
 
     @BeforeEach
@@ -78,6 +79,14 @@ class MyLogbackUTest {
         myLogback.printLogEntryMessage();
         assertTrue(JVMApplicationProperties.isSpringContextExitOnRefresh());
         assert (logWatcher.list.getLast().getFormattedMessage()).contains(OPTIMIZING.getLogBackMessage());
+    }
+
+    @Test
+    void testLogEntryMessageWithInitSpringContextExitForTests() {
+        JVMApplicationProperties.setInitSpringContextExitForTests();;
+        myLogback.printLogEntryMessage();
+        assertFalse(JVMApplicationProperties.isSpringContextExitOnRefresh());
+        assert (logWatcher.list.getLast().getFormattedMessage()).contains(ASCII_LOGO.getLogBackMessage());
     }
 
 
