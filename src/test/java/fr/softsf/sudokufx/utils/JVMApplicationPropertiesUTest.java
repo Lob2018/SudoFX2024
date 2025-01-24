@@ -1,15 +1,30 @@
 package fr.softsf.sudokufx.utils;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import uk.org.webcompere.systemstubs.jupiter.SystemStub;
+import uk.org.webcompere.systemstubs.jupiter.SystemStubsExtension;
+import uk.org.webcompere.systemstubs.properties.SystemProperties;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@ExtendWith(SystemStubsExtension.class)
 class JVMApplicationPropertiesUTest {
+
+    @SystemStub
+    private SystemProperties systemProperties;
 
     private static final String VERSION_REGEX = "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)$";
     private static final String ALPHANUMERIC_REGEX = "^[a-zA-Z0-9\\s]+$";
     private static final String APP_NAME_PROPERTY = "app.name";
     private static final String APP_VERSION_PROPERTY = "app.version";
+
+    @BeforeEach
+    void eachSetup() {
+        systemProperties.set("app.name", "");
+        systemProperties.set("app.version", "");
+    }
 
     @Test
     void testIsValidatedByRegex_Success() {
