@@ -11,12 +11,12 @@ import org.springframework.context.annotation.*;
 import static fr.softsf.sudokufx.utils.MyEnums.Paths.DATABASE_NAME;
 
 /**
- * Overloaded configuration class for setting up dynamic data sources and related beans.
+ * Overloaded configuration class for tests setting up dynamic data sources and related beans.
  */
 @Configuration
-@Profile("overload")
+@Profile("test")
 @PropertySource("classpath:application-test.properties")
-public class DataSourceConfigOverload {
+public class DataSourceConfigForTests {
 
     /**
      * Initializes Logback logging framework.
