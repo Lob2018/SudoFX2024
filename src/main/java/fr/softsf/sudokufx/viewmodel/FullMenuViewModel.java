@@ -2,7 +2,6 @@ package fr.softsf.sudokufx.viewmodel;
 
 import fr.softsf.sudokufx.dto.SoftwareDto;
 import fr.softsf.sudokufx.service.SoftwareService;
-import fr.softsf.sudokufx.utils.JVMApplicationProperties;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -50,7 +49,7 @@ public class FullMenuViewModel {
         SoftwareDto softwareDto = new SoftwareDto(
                 softwareToUpdate.softwareid(),
                 softwareToUpdate.lastversion(),
-                JVMApplicationProperties.getAppVersion(),
+                "1.0.1",
                 softwareToUpdate.createdat(),
                 LocalDateTime.now()
         );
@@ -68,8 +67,8 @@ public class FullMenuViewModel {
     private void createSoftware() {
         SoftwareDto softwareDto = new SoftwareDto(
                 null,
-                JVMApplicationProperties.getAppVersion(),
-                JVMApplicationProperties.getAppVersion(),
+                "1.0.0",
+                "1.0.0",
                 LocalDateTime.now(),
                 LocalDateTime.now()
         );

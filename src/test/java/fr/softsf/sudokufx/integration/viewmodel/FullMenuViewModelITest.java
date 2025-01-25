@@ -57,8 +57,8 @@ class FullMenuViewModelITest {
         fullMenuViewModel.test();
         Optional<SoftwareDto> software = softwareService.getSoftware();
         assertTrue(software.isPresent(), "The software should be found.");
-        assertEquals("v1.0.0", software.get().currentversion(), "The current version should be 'v1.0.0'");
-        assertEquals("v1.0.0", software.get().lastversion(), "The latest version should be 'v1.0.0'");
-        assertTrue(fullMenuViewModel.welcomeProperty().get().contains("Version : v1.0.0"), "The message should contain the version.");
+        assertEquals("1.0.1", software.get().currentversion(), "The current version should be '1.0.1'");
+        assertEquals("1.0.1", software.get().lastversion(), "The latest version should be '1.0.1'");
+        assertTrue(fullMenuViewModel.welcomeProperty().get().contains("Version : 1.0.1"), "The message should contain the version.");
     }
 }
