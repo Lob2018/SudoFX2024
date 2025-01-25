@@ -13,14 +13,8 @@ var annotated_dup =
             ] ]
           ] ],
           [ "integration", null, [
-            [ "database", "namespacefr_1_1softsf_1_1sudokufx_1_1integration_1_1database.html", [
-              [ "keystore", "namespacefr_1_1softsf_1_1sudokufx_1_1integration_1_1database_1_1keystore.html", [
-                [ "SecretKeyEncryptionServiceAESGCMITest", "classfr_1_1softsf_1_1sudokufx_1_1integration_1_1database_1_1keystore_1_1_secret_key_encryption_service_a_e_s_g_c_m_i_test.html", "classfr_1_1softsf_1_1sudokufx_1_1integration_1_1database_1_1keystore_1_1_secret_key_encryption_service_a_e_s_g_c_m_i_test" ]
-              ] ],
-              [ "GenerateSecretITest", "classfr_1_1softsf_1_1sudokufx_1_1integration_1_1database_1_1_generate_secret_i_test.html", "classfr_1_1softsf_1_1sudokufx_1_1integration_1_1database_1_1_generate_secret_i_test" ]
-            ] ],
-            [ "service", "namespacefr_1_1softsf_1_1sudokufx_1_1integration_1_1service.html", [
-              [ "SoftwareServiceITest", "classfr_1_1softsf_1_1sudokufx_1_1integration_1_1service_1_1_software_service_i_test.html", "classfr_1_1softsf_1_1sudokufx_1_1integration_1_1service_1_1_software_service_i_test" ]
+            [ "viewmodel", "namespacefr_1_1softsf_1_1sudokufx_1_1integration_1_1viewmodel.html", [
+              [ "FullMenuViewModelITest", "classfr_1_1softsf_1_1sudokufx_1_1integration_1_1viewmodel_1_1_full_menu_view_model_i_test.html", "classfr_1_1softsf_1_1sudokufx_1_1integration_1_1viewmodel_1_1_full_menu_view_model_i_test" ]
             ] ]
           ] ],
           [ "interfaces", "namespacefr_1_1softsf_1_1sudokufx_1_1interfaces.html", [
@@ -65,7 +59,16 @@ var annotated_dup =
             [ "SoftwareService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_software_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_software_service" ]
           ] ],
           [ "unit", null, [
+            [ "service", "namespacefr_1_1softsf_1_1sudokufx_1_1unit_1_1service.html", [
+              [ "SoftwareServiceUTest", "classfr_1_1softsf_1_1sudokufx_1_1unit_1_1service_1_1_software_service_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1unit_1_1service_1_1_software_service_u_test" ]
+            ] ],
             [ "utils", "namespacefr_1_1softsf_1_1sudokufx_1_1unit_1_1utils.html", [
+              [ "database", "namespacefr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1database.html", [
+                [ "keystore", "namespacefr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1database_1_1keystore.html", [
+                  [ "SecretKeyEncryptionServiceAESGCMUTest", "classfr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1database_1_1keystore_1_1_secret_key_encryption_service_a_e_s_g_c_m_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1database_1_1keystore_1_1_secret_key_encryption_service_a_e_s_g_c_m_u_test" ]
+                ] ],
+                [ "GenerateSecretUTest", "classfr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1database_1_1_generate_secret_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1database_1_1_generate_secret_u_test" ]
+              ] ],
               [ "os", "namespacefr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1os.html", [
                 [ "OsInfoUTest", "classfr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1os_1_1_os_info_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1os_1_1_os_info_u_test" ]
               ] ],
@@ -81,7 +84,7 @@ var annotated_dup =
               ] ],
               [ "keystore", "namespacefr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore.html", [
                 [ "ApplicationKeystore", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore" ],
-                [ "ApplicationKeystoreITest", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore_i_test.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore_i_test" ],
+                [ "ApplicationKeystoreUTest", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore_u_test" ],
                 [ "GenerateSecret", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_generate_secret.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_generate_secret" ],
                 [ "SecretKeyEncryptionServiceAESGCM", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_secret_key_encryption_service_a_e_s_g_c_m.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_secret_key_encryption_service_a_e_s_g_c_m" ]
               ] ]
@@ -90,7 +93,7 @@ var annotated_dup =
               [ "LinuxFolderFactory", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_linux_folder_factory.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_linux_folder_factory" ],
               [ "MacosFolderFactory", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_macos_folder_factory.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_macos_folder_factory" ],
               [ "OsFolderFactoryManager", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_os_folder_factory_manager.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_os_folder_factory_manager" ],
-              [ "OsFolderFactoryManagerITest", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_os_folder_factory_manager_i_test.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_os_folder_factory_manager_i_test" ],
+              [ "OsFolderFactoryManagerUTest", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_os_folder_factory_manager_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_os_folder_factory_manager_u_test" ],
               [ "OsFolderInitializer", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_os_folder_initializer.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_os_folder_initializer" ],
               [ "OsFolderInitializerUTest", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_os_folder_initializer_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_os_folder_initializer_u_test" ],
               [ "WindowsFolderFactory", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_windows_folder_factory.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_windows_folder_factory" ]
@@ -107,7 +110,7 @@ var annotated_dup =
             [ "JVMApplicationPropertiesUTest", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties_u_test" ],
             [ "MyEnums", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_enums.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_enums" ],
             [ "MyLogback", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback" ],
-            [ "MyLogbackITest", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback_i_test.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback_i_test" ],
+            [ "MyLogbackUTest", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback_u_test" ],
             [ "MyRegex", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex" ]
           ] ],
           [ "view", "namespacefr_1_1softsf_1_1sudokufx_1_1view.html", [

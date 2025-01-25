@@ -15,6 +15,6 @@ var namespacefr_1_1softsf_1_1sudokufx_1_1utils =
     [ "JVMApplicationPropertiesUTest", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties_u_test" ],
     [ "MyEnums", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_enums.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_enums" ],
     [ "MyLogback", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback" ],
-    [ "MyLogbackITest", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback_i_test.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback_i_test" ],
+    [ "MyLogbackUTest", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback_u_test" ],
     [ "MyRegex", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex" ]
 ];

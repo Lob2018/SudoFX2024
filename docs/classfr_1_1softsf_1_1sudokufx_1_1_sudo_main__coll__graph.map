@@ -4,7 +4,7 @@
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="62,452,79,489,101,524,166,596,237,659,234,663,162,600,97,527,74,491,57,455"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="156,5,204,75"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="171,75,149,150,129,254,124,311,124,370,130,428,145,484,160,520,180,555,226,619,222,622,175,558,156,523,140,486,125,429,118,370,119,311,124,253,144,149,166,74"/>
-<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_fxml_service.html" title="FxmlService is a Spring service that manages the loading of FXML files and updating the root of the J..." alt="" coords="155,325,341,485"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_fxml_service.html" title="FxmlService is a Spring viewmodel that manages the loading of FXML files and updating the root of the..." alt="" coords="155,325,341,485"/>
 <area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="181,75,183,160,187,210,196,261,209,308,204,310,190,262,182,211,178,160,176,75"/>
 <area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_dynamic_font_size.html" title="Manages dynamic font sizing based on the dimensions of a JavaFX Scene." alt="" coords="248,139,406,261"/>
 <area shape="poly" id="edge10_Node000009_Node000003" title=" " alt="" coords="206,65,261,124,257,128,202,68"/>

@@ -7,7 +7,7 @@ var searchData=
   ['gamelevelrepository_2ejava_4',['GameLevelRepository.java',['../_game_level_repository_8java.html',1,'']]],
   ['gamerepository_2ejava_5',['GameRepository.java',['../_game_repository_8java.html',1,'']]],
   ['generatesecret_2ejava_6',['GenerateSecret.java',['../_generate_secret_8java.html',1,'']]],
-  ['generatesecretitest_2ejava_7',['GenerateSecretITest.java',['../_generate_secret_i_test_8java.html',1,'']]],
+  ['generatesecretutest_2ejava_7',['GenerateSecretUTest.java',['../_generate_secret_u_test_8java.html',1,'']]],
   ['grid_2ejava_8',['Grid.java',['../_grid_8java.html',1,'']]],
   ['griddto_2ejava_9',['GridDto.java',['../_grid_dto_8java.html',1,'']]],
   ['gridrepository_2ejava_10',['GridRepository.java',['../_grid_repository_8java.html',1,'']]]

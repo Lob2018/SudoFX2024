@@ -21,5 +21,6 @@ var searchData=
   ['menudto_18',['MenuDto',['../namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#aac5a3bff51a3776e2404665f8fb83aae',1,'fr::softsf::sudokufx::dto']]],
   ['myenums_19',['MyEnums',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_enums.html#a7aad1a4100f98de7d20a23f23fc73c16',1,'fr::softsf::sudokufx::utils::MyEnums']]],
   ['mylogback_20',['MyLogback',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback.html#aecc45a54d3f6643e18af0eb887db60f0',1,'fr::softsf::sudokufx::utils::MyLogback']]],
-  ['myregex_21',['MyRegex',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex.html#a1dd654fc7fd9fdd80d37e117410141e4',1,'fr::softsf::sudokufx::utils::MyRegex']]]
+  ['mylogbackutest_21',['MyLogbackUTest',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback_u_test.html#a215ecd3905056063557f6fca9d05d1d3',1,'fr::softsf::sudokufx::utils::MyLogbackUTest']]],
+  ['myregex_22',['MyRegex',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex.html#a1dd654fc7fd9fdd80d37e117410141e4',1,'fr::softsf::sudokufx::utils::MyRegex']]]
 ];

@@ -71,11 +71,11 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_application_keystore_8java.html",
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#ac7690134cf62468d85216a67d1686dc7",
-"classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback_i_test.html#aaf3f5975d22a05e460d8cff10bb63b60",
-"classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a9905a8c9318a1656b586d396ea5a2bf4",
-"enumfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_enums_1_1_paths.html#a629319a7df8ff02960bd403b314e9c13",
-"md__r_e_a_d_m_e.html#autotoc_md12"
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_software.html#ae02efc633e8bb011cfa1b9058b148b28",
+"classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties_u_test.html#a9387452a8494080aba710e5f6dbbf116",
+"classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_os_folder_initializer_u_test.html#aaa306e7f350a44d8fa90fcabc703005b",
+"enumfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_enums_1_1_log_back_txt.html",
+"interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_player_language_mapper.html#a480ce19dda934b1b46886056805fcef3"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

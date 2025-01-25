@@ -15,14 +15,14 @@ var namespacefr_1_1softsf_1_1sudokufx =
       [ "utils", "namespacefr_1_1softsf_1_1sudokufx_1_1e2e_1_1utils.html", "namespacefr_1_1softsf_1_1sudokufx_1_1e2e_1_1utils" ]
     ] ],
     [ "integration", null, [
-      [ "database", "namespacefr_1_1softsf_1_1sudokufx_1_1integration_1_1database.html", "namespacefr_1_1softsf_1_1sudokufx_1_1integration_1_1database" ],
-      [ "service", "namespacefr_1_1softsf_1_1sudokufx_1_1integration_1_1service.html", "namespacefr_1_1softsf_1_1sudokufx_1_1integration_1_1service" ]
+      [ "viewmodel", "namespacefr_1_1softsf_1_1sudokufx_1_1integration_1_1viewmodel.html", "namespacefr_1_1softsf_1_1sudokufx_1_1integration_1_1viewmodel" ]
     ] ],
     [ "interfaces", "namespacefr_1_1softsf_1_1sudokufx_1_1interfaces.html", "namespacefr_1_1softsf_1_1sudokufx_1_1interfaces" ],
     [ "model", "namespacefr_1_1softsf_1_1sudokufx_1_1model.html", "namespacefr_1_1softsf_1_1sudokufx_1_1model" ],
     [ "repository", "namespacefr_1_1softsf_1_1sudokufx_1_1repository.html", "namespacefr_1_1softsf_1_1sudokufx_1_1repository" ],
     [ "service", "namespacefr_1_1softsf_1_1sudokufx_1_1service.html", "namespacefr_1_1softsf_1_1sudokufx_1_1service" ],
     [ "unit", null, [
+      [ "service", "namespacefr_1_1softsf_1_1sudokufx_1_1unit_1_1service.html", "namespacefr_1_1softsf_1_1sudokufx_1_1unit_1_1service" ],
       [ "utils", "namespacefr_1_1softsf_1_1sudokufx_1_1unit_1_1utils.html", "namespacefr_1_1softsf_1_1sudokufx_1_1unit_1_1utils" ]
     ] ],
     [ "utils", "namespacefr_1_1softsf_1_1sudokufx_1_1utils.html", "namespacefr_1_1softsf_1_1sudokufx_1_1utils" ],

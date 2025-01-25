@@ -1,0 +1,8 @@
+<map id="fr.softsf.sudokufx.utils.JVMApplicationPropertiesUTest.testWithNeverSpringContext_Success" name="fr.softsf.sudokufx.utils.JVMApplicationPropertiesUTest.testWithNeverSpringContext_Success">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,71,238,129"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties.html#a7d07880db5617906582d43a95925ba8d" title="Determines if the Spring context should exit on refresh." alt="" coords="289,29,511,88"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="238,80,273,75,273,80,239,85"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties.html#a4918698faa348d511a0d85cab965f559" title="Sets the Spring context exit behavior to &quot;never&quot; for testing purposes." alt="" coords="286,112,514,171"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="239,115,271,119,270,125,238,120"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="346,29,347,19,357,10,374,5,400,3,429,5,447,13,445,17,428,11,400,8,375,10,359,15,351,21,351,29"/>
+</map>

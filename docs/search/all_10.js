@@ -1,7 +1,7 @@
 var searchData=
 [
   ['pass_5falias_0',['PASS_ALIAS',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore.html#a9ee3f03f839256f33ec5bd81a5b0d62f',1,'fr::softsf::sudokufx::utils::database::keystore::ApplicationKeystore']]],
-  ['passinit_1',['passInit',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore_i_test.html#a9267c0d65ea59ca598051d1e6753400a',1,'fr::softsf::sudokufx::utils::database::keystore::ApplicationKeystoreITest']]],
+  ['passinit_1',['passInit',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore_u_test.html#aedfea4f10b2fe96abea74fa414b9a975',1,'fr::softsf::sudokufx::utils::database::keystore::ApplicationKeystoreUTest']]],
   ['password_2',['password',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore.html#a640f48b48b8a40375b4b939fedccb505',1,'fr::softsf::sudokufx::utils::database::keystore::ApplicationKeystore']]],
   ['path_3',['path',['../enumfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_enums_1_1_paths.html#ad3eb1505e456c401d788f168ac1b6ad9',1,'fr::softsf::sudokufx::utils::MyEnums::Paths']]],
   ['path1_4',['path1',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_file_system_manager_u_test.html#ac1e87aca6c314dcae8ab55b33475dbba',1,'fr::softsf::sudokufx::utils::FileSystemManagerUTest']]],
@@ -24,5 +24,6 @@ var searchData=
   ['printlogentrymessage_21',['printLogEntryMessage',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback.html#a9d9a6da723690c5a62719faf90766adb',1,'fr::softsf::sudokufx::utils::MyLogback']]],
   ['printlogstatus_22',['printLogStatus',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback.html#a28243428de9550b4b0a3055854ab6f06',1,'fr::softsf::sudokufx::utils::MyLogback']]],
   ['project_23',['Project',['../md__r_e_a_d_m_e.html#autotoc_md7',1,'']]],
-  ['pwdarray_24',['pwdArray',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore.html#a924b65c4a1e60c40ff43c38952444ce4',1,'fr::softsf::sudokufx::utils::database::keystore::ApplicationKeystore']]]
+  ['provideinvalidoperatingsystems_24',['provideInvalidOperatingSystems',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_os_folder_factory_manager_u_test.html#a869fb088d224f49f2c636e1df20e1a2d',1,'fr::softsf::sudokufx::utils::os::OsFolderFactoryManagerUTest']]],
+  ['pwdarray_25',['pwdArray',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore.html#a924b65c4a1e60c40ff43c38952444ce4',1,'fr::softsf::sudokufx::utils::database::keystore::ApplicationKeystore']]]
 ];

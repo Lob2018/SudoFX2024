@@ -43,10 +43,11 @@ var searchData=
   ['myenumsutest_40',['MyEnumsUTest',['../classfr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1_my_enums_u_test.html',1,'fr::softsf::sudokufx::unit::utils']]],
   ['myenumsutest_2ejava_41',['MyEnumsUTest.java',['../_my_enums_u_test_8java.html',1,'']]],
   ['mylogback_42',['MyLogback',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback.html',1,'fr.softsf.sudokufx.utils.MyLogback'],['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback.html#aecc45a54d3f6643e18af0eb887db60f0',1,'fr.softsf.sudokufx.utils.MyLogback.MyLogback()']]],
-  ['mylogback_2ejava_43',['MyLogback.java',['../_my_logback_8java.html',1,'']]],
-  ['mylogbackitest_44',['MyLogbackITest',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback_i_test.html',1,'fr::softsf::sudokufx::utils']]],
-  ['mylogbackitest_2ejava_45',['MyLogbackITest.java',['../_my_logback_i_test_8java.html',1,'']]],
-  ['myregex_46',['MyRegex',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex.html',1,'fr.softsf.sudokufx.utils.MyRegex'],['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex.html#a1dd654fc7fd9fdd80d37e117410141e4',1,'fr.softsf.sudokufx.utils.MyRegex.MyRegex()']]],
-  ['myregex_2ejava_47',['MyRegex.java',['../_my_regex_8java.html',1,'']]],
-  ['myresources_20design_5fand_5fmodeling_20images_20sudokufx_5fin_5faction_20jpg_20alt_20sudokufx_20in_20action_20a_48',['&lt;a href=&quot;https://github.com/Lob2018/SudokuFX/releases/latest&quot; target=&quot;_blank&quot; &gt;&lt;img src=&quot;https://raw.githubusercontent.com/Lob2018/SudokuFX/master/.myresources/design_and_modeling/images/SudokuFX_in_action.jpg&quot; alt=&quot;SudokuFX in action&quot;/&gt;&lt;/a&gt;',['../md__r_e_a_d_m_e.html#autotoc_md3',1,'']]]
+  ['mylogback_43',['myLogback',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback_u_test.html#a3df46ee7e817e9a4632d3d18e8c63d8f',1,'fr::softsf::sudokufx::utils::MyLogbackUTest']]],
+  ['mylogback_2ejava_44',['MyLogback.java',['../_my_logback_8java.html',1,'']]],
+  ['mylogbackutest_45',['MyLogbackUTest',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback_u_test.html',1,'fr.softsf.sudokufx.utils.MyLogbackUTest'],['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback_u_test.html#a215ecd3905056063557f6fca9d05d1d3',1,'fr.softsf.sudokufx.utils.MyLogbackUTest.MyLogbackUTest()']]],
+  ['mylogbackutest_2ejava_46',['MyLogbackUTest.java',['../_my_logback_u_test_8java.html',1,'']]],
+  ['myregex_47',['MyRegex',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex.html',1,'fr.softsf.sudokufx.utils.MyRegex'],['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex.html#a1dd654fc7fd9fdd80d37e117410141e4',1,'fr.softsf.sudokufx.utils.MyRegex.MyRegex()']]],
+  ['myregex_2ejava_48',['MyRegex.java',['../_my_regex_8java.html',1,'']]],
+  ['myresources_20design_5fand_5fmodeling_20images_20sudokufx_5fin_5faction_20jpg_20alt_20sudokufx_20in_20action_20a_49',['&lt;a href=&quot;https://github.com/Lob2018/SudokuFX/releases/latest&quot; target=&quot;_blank&quot; &gt;&lt;img src=&quot;https://raw.githubusercontent.com/Lob2018/SudokuFX/master/.myresources/design_and_modeling/images/SudokuFX_in_action.jpg&quot; alt=&quot;SudokuFX in action&quot;/&gt;&lt;/a&gt;',['../md__r_e_a_d_m_e.html#autotoc_md3',1,'']]]
 ];

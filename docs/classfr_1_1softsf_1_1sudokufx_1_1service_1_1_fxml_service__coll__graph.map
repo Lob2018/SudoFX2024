@@ -1,5 +1,5 @@
 <map id="fr.softsf.sudokufx.service.FxmlService" name="fr.softsf.sudokufx.service.FxmlService">
-<area shape="rect" id="Node000001" title="FxmlService is a Spring service that manages the loading of FXML files and updating the root of the J..." alt="" coords="62,325,248,485"/>
+<area shape="rect" id="Node000001" title="FxmlService is a Spring viewmodel that manages the loading of FXML files and updating the root of the..." alt="" coords="62,325,248,485"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,5,53,75"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="23,75,15,114,10,161,11,212,23,260,36,286,53,311,49,314,32,289,18,262,6,212,4,161,9,113,17,74"/>
 <area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_dynamic_font_size.html" title="Manages dynamic font sizing based on the dimensions of a JavaFX Scene." alt="" coords="76,139,234,261"/>

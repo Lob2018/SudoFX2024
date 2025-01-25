@@ -9,6 +9,6 @@ var searchData=
   ['myenumse2etest_2ejava_6',['MyEnumsE2ETest.java',['../_my_enums_e2_e_test_8java.html',1,'']]],
   ['myenumsutest_2ejava_7',['MyEnumsUTest.java',['../_my_enums_u_test_8java.html',1,'']]],
   ['mylogback_2ejava_8',['MyLogback.java',['../_my_logback_8java.html',1,'']]],
-  ['mylogbackitest_2ejava_9',['MyLogbackITest.java',['../_my_logback_i_test_8java.html',1,'']]],
+  ['mylogbackutest_2ejava_9',['MyLogbackUTest.java',['../_my_logback_u_test_8java.html',1,'']]],
   ['myregex_2ejava_10',['MyRegex.java',['../_my_regex_8java.html',1,'']]]
 ];
