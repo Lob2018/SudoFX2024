@@ -48,8 +48,8 @@ public class FullMenuViewModel {
     private void updateSoftware(SoftwareDto softwareToUpdate) {
         SoftwareDto softwareDto = new SoftwareDto(
                 softwareToUpdate.softwareid(),
-                softwareToUpdate.lastversion(),
-                "1.0.1",
+                "1.0.0",
+                "1.0.0",
                 softwareToUpdate.createdat(),
                 LocalDateTime.now()
         );
