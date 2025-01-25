@@ -68,14 +68,12 @@ class JVMApplicationPropertiesUTest {
 
     @Test
     void testWithNeverSpringContext_Success() {
-        System.out.println("# testWithNeverSpringContext_Success");
         JVMApplicationProperties.setNeverSpringContextExitForTests();
         assertFalse(JVMApplicationProperties.isSpringContextExitOnRefresh());
     }
 
     @Test
     void testWithExistingSpringContext_Success() {
-        System.out.println("# testWithExistingSpringContext_Success");
         JVMApplicationProperties.setSpringContextExitInRefresh();
         JVMApplicationProperties.setInitSpringContextExitForTests();
         assertFalse(JVMApplicationProperties.isSpringContextExitOnRefresh());
