@@ -2,7 +2,6 @@ package fr.softsf.sudokufx.utils.database.configuration;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
-import fr.softsf.sudokufx.annotations.ExcludedFromCoverageReportGenerated;
 import fr.softsf.sudokufx.utils.MyLogback;
 import fr.softsf.sudokufx.utils.database.keystore.ApplicationKeystore;
 import fr.softsf.sudokufx.utils.os.OsFolderFactoryManager;
@@ -12,13 +11,12 @@ import org.springframework.context.annotation.*;
 import static fr.softsf.sudokufx.utils.MyEnums.Paths.DATABASE_NAME;
 
 /**
- * Configuration class for setting up dynamic data sources and related beans.
+ * Overloaded configuration class for setting up dynamic data sources and related beans.
  */
 @Configuration
-@Profile("default")
-@PropertySource("classpath:fr/softsf/sudokufx/application.properties")
-@ExcludedFromCoverageReportGenerated
-public class DataSourceConfig {
+@Profile("overload")
+@PropertySource("classpath:application-test.properties")
+public class DataSourceConfigOverload {
 
     /**
      * Initializes Logback logging framework.
@@ -47,7 +45,7 @@ public class DataSourceConfig {
         final HikariConfig config = new HikariConfig();
         config.setPoolName("SudoFXHikariConnection");
         config.setDriverClassName("org.hsqldb.jdbc.JDBCDriver");
-        config.setJdbcUrl("jdbc:hsqldb:file:" + osFolderFactory.osFolderFactory().getOsDataFolderPath() + "/" + DATABASE_NAME.getPath() + ";shutdown=true");
+        config.setJdbcUrl("jdbc:hsqldb:mem:" + osFolderFactory.osFolderFactory().getOsDataFolderPath() + "/" + DATABASE_NAME.getPath()+"Test" + ";shutdown=true");
         config.setUsername(keystore.getUsername());
         config.setPassword(keystore.getPassword());
         config.setMaximumPoolSize(2);

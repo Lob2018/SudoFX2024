@@ -2,16 +2,16 @@ package fr.softsf.sudokufx.integration.viewmodel;
 
 import fr.softsf.sudokufx.dto.SoftwareDto;
 import fr.softsf.sudokufx.service.SoftwareService;
+import fr.softsf.sudokufx.utils.database.configuration.DataSourceConfigOverload;
 import fr.softsf.sudokufx.viewmodel.FullMenuViewModel;
 import lombok.extern.slf4j.Slf4j;
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.context.annotation.Import;
 import org.springframework.test.context.ActiveProfiles;
-import org.springframework.test.context.TestPropertySource;
 import uk.org.webcompere.systemstubs.jupiter.SystemStub;
 import uk.org.webcompere.systemstubs.jupiter.SystemStubsExtension;
 import uk.org.webcompere.systemstubs.properties.SystemProperties;
@@ -23,8 +23,8 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @Slf4j
 @SpringBootTest
-@TestPropertySource("classpath:fr/softsf/sudokufx/application-test.properties")
-@ActiveProfiles("test")
+@ActiveProfiles("overload")
+@Import(DataSourceConfigOverload.class)
 @ExtendWith(SystemStubsExtension.class)
 class FullMenuViewModelITest {
 
@@ -42,14 +42,8 @@ class FullMenuViewModelITest {
 
     @BeforeEach
     void eachSetup() {
-        log.info("↓↓↓↓↓↓↓↓↓↓ START INTEGRATION TEST : FullMenuViewModelITest ↓↓↓↓↓↓↓↓↓↓");
         systemProperties.set(APP_NAME_PROPERTY, "SudokuFX");
         systemProperties.set(APP_VERSION_PROPERTY, "1.0.0");
-    }
-
-    @AfterEach
-    void eachEnded() {
-        log.info("↑↑↑↑↑↑↑↑↑↑  END  INTEGRATION TEST : FullMenuViewModelITest ↑↑↑↑↑↑↑↑↑↑");
     }
 
     @Test
