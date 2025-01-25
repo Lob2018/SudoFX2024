@@ -12,18 +12,18 @@ import static org.junit.jupiter.api.Assertions.*;
 @ExtendWith(SystemStubsExtension.class)
 class JVMApplicationPropertiesUTest {
 
-    @SystemStub
-    private SystemProperties systemProperties;
-
     private static final String VERSION_REGEX = "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)$";
     private static final String ALPHANUMERIC_REGEX = "^[a-zA-Z0-9\\s]+$";
     private static final String APP_NAME_PROPERTY = "app.name";
     private static final String APP_VERSION_PROPERTY = "app.version";
 
+    @SystemStub
+    private SystemProperties systemProperties;
+
     @BeforeEach
     void eachSetup() {
-        systemProperties.set("app.name", "");
-        systemProperties.set("app.version", "");
+        systemProperties.set(APP_NAME_PROPERTY, "SudokuFX");
+        systemProperties.set(APP_VERSION_PROPERTY, "1.0.0");
     }
 
     @Test
@@ -44,30 +44,38 @@ class JVMApplicationPropertiesUTest {
     }
 
     @Test
-    void testGetAppProperties_Success() {
-        System.setProperty(APP_NAME_PROPERTY, "_");
-        System.setProperty(APP_VERSION_PROPERTY, "_");
-        // Spring Context is initialized and retrieved as null
+    void testAppNameAppVersionWithNullSpringContext_Success() {
         JVMApplicationProperties.setInitSpringContextExitForTests();
-        assertEquals("", JVMApplicationProperties.getAppName());
-        assertEquals("", JVMApplicationProperties.getAppVersion());
+        assertEquals("SudokuFX", JVMApplicationProperties.getAppName());
+        assertEquals("v1.0.0", JVMApplicationProperties.getAppVersion());
+        // appName.isEmpty()'s branch
         assertFalse(JVMApplicationProperties.isSpringContextExitOnRefresh());
+        assertEquals("SudokuFX", JVMApplicationProperties.getAppName());
+        assertEquals("v1.0.0", JVMApplicationProperties.getAppVersion());
+    }
+
+    @Test
+    void testEmptyAppNameEmptyAppVersionWithOnRefreshSpringContext_Success() {
+        systemProperties.set(APP_NAME_PROPERTY, "");
+        systemProperties.set(APP_VERSION_PROPERTY, "");
         JVMApplicationProperties.setEmptyAppVersionPropertyForTests();
         JVMApplicationProperties.setEmptyAppNamePropertyForTests();
-        // SpringContext is onRefresh
         JVMApplicationProperties.setOnRefreshSpringContextExitForTests();
-        System.setProperty(APP_NAME_PROPERTY, "MyApp");
-        System.setProperty(APP_VERSION_PROPERTY, "1.0.0");
-        assertEquals("MyApp", JVMApplicationProperties.getAppName());
-        assertEquals("v1.0.0", JVMApplicationProperties.getAppVersion());
+        assertEquals("", JVMApplicationProperties.getAppName());
+        assertEquals("", JVMApplicationProperties.getAppVersion());
         assertTrue(JVMApplicationProperties.isSpringContextExitOnRefresh());
-        assertEquals("MyApp", JVMApplicationProperties.getAppName());
-        assertEquals("v1.0.0", JVMApplicationProperties.getAppVersion());
-        assertTrue(JVMApplicationProperties.isSpringContextExitOnRefresh());
-        // SpringContext is never
+    }
+
+    @Test
+    void testWithNeverSpringContext_Success() {
+        System.out.println("# testWithNeverSpringContext_Success");
         JVMApplicationProperties.setNeverSpringContextExitForTests();
         assertFalse(JVMApplicationProperties.isSpringContextExitOnRefresh());
-        // Spring Context is initialized and retrieved as the APP_NAME_PROPERTY (non-null)
+    }
+
+    @Test
+    void testWithExistingSpringContext_Success() {
+        System.out.println("# testWithExistingSpringContext_Success");
         JVMApplicationProperties.setSpringContextExitInRefresh();
         JVMApplicationProperties.setInitSpringContextExitForTests();
         assertFalse(JVMApplicationProperties.isSpringContextExitOnRefresh());

@@ -1,12 +1,12 @@
 package fr.softsf.sudokufx.integration.viewmodel;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 import fr.softsf.sudokufx.dto.SoftwareDto;
 import fr.softsf.sudokufx.service.SoftwareService;
 import fr.softsf.sudokufx.viewmodel.FullMenuViewModel;
 import lombok.extern.slf4j.Slf4j;
-import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -18,13 +18,18 @@ import uk.org.webcompere.systemstubs.properties.SystemProperties;
 
 import java.util.Optional;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 @Slf4j
 @SpringBootTest
 @TestPropertySource("classpath:fr/softsf/sudokufx/application-test.properties")
 @ActiveProfiles("test")
-@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 @ExtendWith(SystemStubsExtension.class)
 class FullMenuViewModelITest {
+
+    private static final String APP_NAME_PROPERTY = "app.name";
+    private static final String APP_VERSION_PROPERTY = "app.version";
 
     @SystemStub
     private SystemProperties systemProperties;
@@ -38,8 +43,8 @@ class FullMenuViewModelITest {
     @BeforeEach
     void eachSetup() {
         log.info("↓↓↓↓↓↓↓↓↓↓ START INTEGRATION TEST : FullMenuViewModelITest ↓↓↓↓↓↓↓↓↓↓");
-        systemProperties.set("app.name", "SudokuFX");
-        systemProperties.set("app.version", "1.0.0");
+        systemProperties.set(APP_NAME_PROPERTY, "SudokuFX");
+        systemProperties.set(APP_VERSION_PROPERTY, "1.0.0");
     }
 
     @AfterEach
@@ -48,7 +53,6 @@ class FullMenuViewModelITest {
     }
 
     @Test
-    @Order(0)
     void testSoftwareFound() {
         fullMenuViewModel.test();
         Optional<SoftwareDto> software = softwareService.getSoftware();
