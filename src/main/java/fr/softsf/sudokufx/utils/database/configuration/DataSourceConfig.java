@@ -9,6 +9,7 @@ import fr.softsf.sudokufx.utils.os.OsFolderFactoryManager;
 import org.flywaydb.core.Flyway;
 import org.springframework.context.annotation.*;
 
+import static fr.softsf.sudokufx.utils.MyEnums.Paths.DATABASE_MIGRATION_PATH;
 import static fr.softsf.sudokufx.utils.MyEnums.Paths.DATABASE_NAME;
 
 /**
@@ -77,7 +78,7 @@ public class DataSourceConfig {
     Flyway flyway(final HikariDataSource hikariDataSource) {
         return Flyway.configure()
                 .dataSource(hikariDataSource)
-                .locations("classpath:fr/softsf/sudokufx/flyway/scripts/hsqldb/migration")
+                .locations("classpath:" + DATABASE_MIGRATION_PATH.getPath())
                 .load();
     }
 }
