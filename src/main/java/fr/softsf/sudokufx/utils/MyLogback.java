@@ -15,8 +15,7 @@ import java.io.InputStream;
 
 import static fr.softsf.sudokufx.utils.MyEnums.LogBackTxt.ASCII_LOGO;
 import static fr.softsf.sudokufx.utils.MyEnums.LogBackTxt.OPTIMIZING;
-import static fr.softsf.sudokufx.utils.MyEnums.Paths.CONFIG_LOGBACK_INVALID_PATH_FOR_TESTS;
-import static fr.softsf.sudokufx.utils.MyEnums.Paths.CONFIG_LOGBACK_PATH;
+import static fr.softsf.sudokufx.utils.MyEnums.Paths.*;
 
 /**
  * Configuration class for Logback logging framework. This class sets up and
@@ -26,7 +25,6 @@ import static fr.softsf.sudokufx.utils.MyEnums.Paths.CONFIG_LOGBACK_PATH;
 @Configuration
 public class MyLogback {
 
-    private static final String LOGS_NAME = "SudokuFX.log";
     @Getter
     private final String logsFolderPath;
     private String logBackPath = CONFIG_LOGBACK_PATH.getPath();
@@ -38,7 +36,7 @@ public class MyLogback {
      */
     public MyLogback(OsFolderFactoryManager osFolderFactory) {
         logsFolderPath = osFolderFactory.osFolderFactory().getOsLogsFolderPath();
-        System.setProperty("logs", logsFolderPath + "/" + LOGS_NAME);
+        System.setProperty("logs", logsFolderPath + "/" + LOGS_FILE_NAME.getPath());
         LoggerContext context = configureLogback();
         printLogStatus(context);
     }
@@ -48,7 +46,7 @@ public class MyLogback {
      *
      * @param context The current logger context
      */
-    private static void printLogStatus(final LoggerContext context) {
+    private void printLogStatus(final LoggerContext context) {
         StatusPrinter2 statusPrinter2 = new StatusPrinter2();
         statusPrinter2.printInCaseOfErrorsOrWarnings(context);
     }
