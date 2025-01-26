@@ -20,7 +20,8 @@ import java.security.cert.CertificateException;
 import java.util.UUID;
 
 /**
- * Manages the application's keystore for secure storage of keys and database credentials.
+ * Manages the application's keystore for the secure storage of a symmetric key and database credentials,
+ * handling their creation, loading, and encryption.
  */
 @Slf4j
 @Component
@@ -32,6 +33,8 @@ public class ApplicationKeystore implements IKeystore {
     private static final String SYMMETRIC_KEY_ALIAS = "db-encryption-secret";
     private static final String USERNAME_ALIAS = "db-user-alias";
     private static final String PASS_ALIAS = "db-pass-alias";
+    private static final String KEYSTORE_FILE_PATH = "/SudokuFXKeyStore.p12";
+
     private IOsFolderFactory osFolderFactory;
     private String keystoreFilePath;
     private KeyStore ks;
@@ -62,11 +65,15 @@ public class ApplicationKeystore implements IKeystore {
         }
     }
 
+    /**
+     * Configures the keystore by managing the entire process of creating, loading,
+     * and encrypting the necessary keys and credentials.
+     */
     public void setupApplicationKeystore() {
         log.info("\n▓▓ ApplicationKeystore starts");
         try {
             ks = KeyStore.getInstance(KEYSTORE_TYPE);
-            keystoreFilePath = osFolderFactory.getOsDataFolderPath() + "/SudokuFXKeyStore.p12";
+            keystoreFilePath = osFolderFactory.getOsDataFolderPath() + KEYSTORE_FILE_PATH;
             createOrUpdateKeystore();
             loadKeyStore();
             symmetricKey();
@@ -120,7 +127,7 @@ public class ApplicationKeystore implements IKeystore {
     }
 
     /**
-     * Get the symmetric key and set encryption viewmodel
+     * Get the symmetric key and set encryption service
      */
     @ExcludedFromCoverageReportGenerated
     private void symmetricKeyIsInKeystore() {
@@ -135,7 +142,7 @@ public class ApplicationKeystore implements IKeystore {
     }
 
     /**
-     * Set the symmetric key and set encryption viewmodel
+     * Set the symmetric key and set encryption service
      */
     @ExcludedFromCoverageReportGenerated
     private void symmetricKeyNotInKeystore() {
