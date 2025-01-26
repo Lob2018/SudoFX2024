@@ -3,6 +3,7 @@ package fr.softsf.sudokufx.utils;
 import fr.softsf.sudokufx.annotations.ExcludedFromCoverageReportGenerated;
 import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
+import lombok.extern.slf4j.Slf4j;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -11,6 +12,7 @@ import java.util.regex.Pattern;
  * Utility class for regular expression patterns and validation. This class
  * provides predefined regex patterns and a method for regex validation.
  */
+@Slf4j
 public final class MyRegex {
 
     /**
@@ -44,17 +46,20 @@ public final class MyRegex {
     }
 
     /**
-     * Validates a given text against a specified regular expression.
+     * Validates the given text against the specified regular expression.
      *
-     * @param text The text to validate (must not be null)
-     * @param regex The regular expression to use for validation (must not be
-     * null)
-     * @return true if the text matches the regex pattern, false otherwise
-     * @throws NullPointerException if either text or regex is null
+     * @param text  The text to validate (must not be null).
+     * @param regex The regular expression for validation (must not be null).
+     * @return true if the text matches the regex pattern; false otherwise.
      */
     public static boolean isValidatedByRegex(@NotNull final String text, @NotNull final String regex) {
-        Pattern pattern = Pattern.compile(regex);
-        Matcher matcher = pattern.matcher(text);
-        return matcher.matches();
+        try {
+            Pattern pattern = Pattern.compile(regex);
+            Matcher matcher = pattern.matcher(text);
+            return matcher.matches();
+        } catch (Exception ex) {
+            log.error("██ Exception caught inside isValidatedByRegex, text is {}, regex is {} : {}", text, regex, ex.getMessage(), ex);
+            return false;
+        }
     }
 }
