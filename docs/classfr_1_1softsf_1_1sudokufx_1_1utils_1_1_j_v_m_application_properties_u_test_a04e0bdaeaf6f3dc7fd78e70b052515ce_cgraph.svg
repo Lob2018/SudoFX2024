@@ -189,7 +189,7 @@ var sectionId = 'dynsection-2';
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex.html#a981702b076ee54a416d676b6f7a182fc" target="_top" xlink:title="Validates a given text against a specified regular expression.">
+<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex.html#a981702b076ee54a416d676b6f7a182fc" target="_top" xlink:title="Validates the given text against the specified regular expression.">
 <polygon fill="white" stroke="#666666" points="642.75,-332 494,-332 494,-300 642.75,-300 642.75,-332"/>
 <text text-anchor="start" x="502" y="-318.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.utils.</text>
 <text text-anchor="middle" x="568.38" y="-306.5" font-family="Helvetica,sans-Serif" font-size="10.00">MyRegex.isValidatedByRegex</text>

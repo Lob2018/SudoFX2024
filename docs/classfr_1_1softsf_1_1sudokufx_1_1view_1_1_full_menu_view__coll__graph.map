@@ -19,7 +19,7 @@
 <area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="467,105,467,159,462,159,462,105"/>
 <area shape="rect" id="Node000010" title=" " alt="" coords="450,404,543,473"/>
 <area shape="poly" id="edge10_Node000005_Node000010" title=" " alt="" coords="499,473,503,753,497,753,494,473"/>
-<area shape="rect" id="Node000011" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_fxml_service.html" title="FxmlService is a Spring viewmodel that manages the loading of FXML files and updating the root of the..." alt="" coords="639,809,825,969"/>
+<area shape="rect" id="Node000011" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_fxml_service.html" title="FxmlService is a Spring service that manages the loading of FXML files and updating the root of the J..." alt="" coords="639,809,825,969"/>
 <area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="721,970,698,1095,668,1237,667,1244,661,1243,663,1235,693,1094,716,969"/>
 <area shape="rect" id="Node000012" title=" " alt="" coords="600,175,648,244"/>
 <area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="620,244,607,343,599,439,600,481,607,534,700,792,695,794,601,535,594,481,593,439,601,342,615,243"/>

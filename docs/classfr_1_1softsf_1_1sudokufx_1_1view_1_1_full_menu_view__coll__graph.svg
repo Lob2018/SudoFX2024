@@ -359,7 +359,7 @@ var sectionId = 'dynsection-1';
 <!-- Node11 -->
 <g id="Node000011" class="node">
 <title>Node11</title>
-<g id="a_Node000011"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1_fxml_service.html" target="_top" xlink:title="FxmlService is a Spring viewmodel that manages the loading of FXML files and updating the root of the...">
+<g id="a_Node000011"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1_fxml_service.html" target="_top" xlink:title="FxmlService is a Spring service that manages the loading of FXML files and updating the root of the J...">
 <polygon fill="white" stroke="none" points="615,-582 475.5,-582 475.5,-462 615,-462 615,-582"/>
 <text text-anchor="start" x="488.25" y="-568.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.service.</text>
 <text text-anchor="start" x="517.88" y="-556.5" font-family="Helvetica,sans-Serif" font-size="10.00">FxmlService</text>

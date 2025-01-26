@@ -22,7 +22,7 @@ var searchData=
   ['playerrepository_2ejava_19',['PlayerRepository.java',['../_player_repository_8java.html',1,'']]],
   ['primarystage_20',['primaryStage',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#ac8f1e2c035b0d7b5947c0a1e32e7a41f',1,'fr.softsf.sudokufx.view.CrashScreenView.primaryStage'],['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_full_menu_view.html#ab83abbb2a428135c6727ebf7293f9ccc',1,'fr.softsf.sudokufx.view.FullMenuView.primaryStage']]],
   ['printlogentrymessage_21',['printLogEntryMessage',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback.html#a9d9a6da723690c5a62719faf90766adb',1,'fr::softsf::sudokufx::utils::MyLogback']]],
-  ['printlogstatus_22',['printLogStatus',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback.html#a28243428de9550b4b0a3055854ab6f06',1,'fr::softsf::sudokufx::utils::MyLogback']]],
+  ['printlogstatus_22',['printLogStatus',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback.html#afd826059869953511a47fb85ed16b8b4',1,'fr::softsf::sudokufx::utils::MyLogback']]],
   ['project_23',['Project',['../md__r_e_a_d_m_e.html#autotoc_md7',1,'']]],
   ['provideinvalidoperatingsystems_24',['provideInvalidOperatingSystems',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_os_folder_factory_manager_u_test.html#a869fb088d224f49f2c636e1df20e1a2d',1,'fr::softsf::sudokufx::utils::os::OsFolderFactoryManagerUTest']]],
   ['pwdarray_25',['pwdArray',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore.html#a924b65c4a1e60c40ff43c38952444ce4',1,'fr::softsf::sudokufx::utils::database::keystore::ApplicationKeystore']]]

@@ -8,5 +8,6 @@ var searchData=
   ['myenumsutest_5',['MyEnumsUTest',['../classfr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1_my_enums_u_test.html',1,'fr::softsf::sudokufx::unit::utils']]],
   ['mylogback_6',['MyLogback',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback.html',1,'fr::softsf::sudokufx::utils']]],
   ['mylogbackutest_7',['MyLogbackUTest',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback_u_test.html',1,'fr::softsf::sudokufx::utils']]],
-  ['myregex_8',['MyRegex',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex.html',1,'fr::softsf::sudokufx::utils']]]
+  ['myregex_8',['MyRegex',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex.html',1,'fr::softsf::sudokufx::utils']]],
+  ['myregexutest_9',['MyRegexUTest',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex_u_test.html',1,'fr::softsf::sudokufx::utils']]]
 ];

@@ -22,7 +22,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="FxmlService is a Spring viewmodel that manages the loading of FXML files and updating the root of the...">
+<g id="a_Node000001"><a xlink:title="FxmlService is a Spring service that manages the loading of FXML files and updating the root of the J...">
 <polygon fill="#999999" stroke="none" points="181.62,-120 42.12,-120 42.12,0 181.62,0 181.62,-120"/>
 <text text-anchor="start" x="54.88" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.service.</text>
 <text text-anchor="start" x="84.5" y="-94.5" font-family="Helvetica,sans-Serif" font-size="10.00">FxmlService</text>

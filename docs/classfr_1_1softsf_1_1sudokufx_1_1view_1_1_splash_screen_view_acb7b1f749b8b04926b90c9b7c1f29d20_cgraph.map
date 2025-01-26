@@ -22,7 +22,7 @@
 <area shape="poly" id="edge15_Node000004_Node000014" title=" " alt="" coords="528,270,546,282,564,305,571,328,577,351,594,373,598,376,594,380,590,377,572,353,566,330,559,307,542,286,525,275"/>
 <area shape="rect" id="Node000015" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a53ead1ea80a08e06c15ae42ae101fcdf" title="Sets up the SVG for the Sudoku logo in the top section of the splash screen." alt="" coords="592,469,851,528"/>
 <area shape="poly" id="edge17_Node000004_Node000015" title=" " alt="" coords="531,270,546,282,562,304,570,326,571,370,572,413,579,434,594,456,596,457,592,461,590,459,574,437,566,414,566,370,565,327,558,307,542,286,528,275"/>
-<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex.html#a981702b076ee54a416d676b6f7a182fc" title="Validates a given text against a specified regular expression." alt="" coords="911,109,1110,152"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex.html#a981702b076ee54a416d676b6f7a182fc" title="Validates the given text against the specified regular expression." alt="" coords="911,109,1110,152"/>
 <area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="848,107,896,113,895,119,847,112"/>
 <area shape="poly" id="edge8_Node000008_Node000007" title=" " alt="" coords="830,151,896,143,897,148,831,157"/>
 <area shape="rect" id="Node000010" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_i18n.html#a7095fa285a498c3f20bf33488a69d22c" title="Retrieves the localized string value for a given key." alt="" coords="933,180,1088,223"/>

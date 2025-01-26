@@ -1,6 +1,5 @@
 var classfr_1_1softsf_1_1sudokufx_1_1integration_1_1viewmodel_1_1_full_menu_view_model_i_test =
 [
-    [ "eachEnded", "classfr_1_1softsf_1_1sudokufx_1_1integration_1_1viewmodel_1_1_full_menu_view_model_i_test.html#a6aa2bd3c6f38d4a01daf3565af9711cf", null ],
     [ "eachSetup", "classfr_1_1softsf_1_1sudokufx_1_1integration_1_1viewmodel_1_1_full_menu_view_model_i_test.html#ac86267729aea7da7d2dd9bbaa56a6bc9", null ],
     [ "testSoftwareFound", "classfr_1_1softsf_1_1sudokufx_1_1integration_1_1viewmodel_1_1_full_menu_view_model_i_test.html#a9b757d4a2907786585ca72e7ea5e7b4e", null ],
     [ "APP_NAME_PROPERTY", "classfr_1_1softsf_1_1sudokufx_1_1integration_1_1viewmodel_1_1_full_menu_view_model_i_test.html#a20ab3a6d6efa128b2855a2416a906f4d", null ],

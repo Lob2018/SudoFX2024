@@ -79,7 +79,7 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback.html#a28243428de9550b4b0a3055854ab6f06" target="_top" xlink:title="Prints the logger status to the log in case of errors or warnings.">
+<g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback.html#afd826059869953511a47fb85ed16b8b4" target="_top" xlink:title="Prints the logger status to the log in case of errors or warnings.">
 <polygon fill="white" stroke="#666666" points="315.88,-32 183.62,-32 183.62,0 315.88,0 315.88,-32"/>
 <text text-anchor="start" x="191.62" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.utils.</text>
 <text text-anchor="middle" x="249.75" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">MyLogback.printLogStatus</text>

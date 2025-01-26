@@ -57,5 +57,7 @@ var searchData=
   ['isplashscreenview_2ejava_54',['ISplashScreenView.java',['../_i_splash_screen_view_8java.html',1,'']]],
   ['isselected_55',['isselected',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a51a571d2bcebaf3f9b79c95d2af9ddd3',1,'fr.softsf.sudokufx.model.Game.isselected'],['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a49ded8a7d3a97ef2970c6745e36813e0',1,'fr.softsf.sudokufx.model.Player.isselected']]],
   ['isspringcontextexitonrefresh_56',['isSpringContextExitOnRefresh',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties.html#a7d07880db5617906582d43a95925ba8d',1,'fr::softsf::sudokufx::utils::JVMApplicationProperties']]],
-  ['isvalidatedbyregex_57',['isValidatedByRegex',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex.html#a981702b076ee54a416d676b6f7a182fc',1,'fr::softsf::sudokufx::utils::MyRegex']]]
+  ['isvalidatedbyregex_57',['isValidatedByRegex',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex.html#a981702b076ee54a416d676b6f7a182fc',1,'fr::softsf::sudokufx::utils::MyRegex']]],
+  ['isvalidatedbyregexwithnullregex_5fexception_58',['isValidatedByRegexWithNullRegex_Exception',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex_u_test.html#a0c4240fb263d782f02b70d1c31c64dc7',1,'fr::softsf::sudokufx::utils::MyRegexUTest']]],
+  ['isvalidatedbyregexwithnulltext_5fexception_59',['isValidatedByRegexWithNullText_Exception',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex_u_test.html#a097c4cbc2ce04bc3ad9e4e24097e7c0e',1,'fr::softsf::sudokufx::utils::MyRegexUTest']]]
 ];

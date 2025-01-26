@@ -159,7 +159,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex.html#a981702b076ee54a416d676b6f7a182fc" target="_top" xlink:title="Validates a given text against a specified regular expression.">
+<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex.html#a981702b076ee54a416d676b6f7a182fc" target="_top" xlink:title="Validates the given text against the specified regular expression.">
 <polygon fill="white" stroke="#666666" points="609,-314 460.25,-314 460.25,-282 609,-282 609,-314"/>
 <text text-anchor="start" x="468.25" y="-300.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.utils.</text>
 <text text-anchor="middle" x="534.62" y="-288.5" font-family="Helvetica,sans-Serif" font-size="10.00">MyRegex.isValidatedByRegex</text>

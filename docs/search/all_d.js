@@ -49,5 +49,7 @@ var searchData=
   ['mylogbackutest_2ejava_46',['MyLogbackUTest.java',['../_my_logback_u_test_8java.html',1,'']]],
   ['myregex_47',['MyRegex',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex.html',1,'fr.softsf.sudokufx.utils.MyRegex'],['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex.html#a1dd654fc7fd9fdd80d37e117410141e4',1,'fr.softsf.sudokufx.utils.MyRegex.MyRegex()']]],
   ['myregex_2ejava_48',['MyRegex.java',['../_my_regex_8java.html',1,'']]],
-  ['myresources_20design_5fand_5fmodeling_20images_20sudokufx_5fin_5faction_20jpg_20alt_20sudokufx_20in_20action_20a_49',['&lt;a href=&quot;https://github.com/Lob2018/SudokuFX/releases/latest&quot; target=&quot;_blank&quot; &gt;&lt;img src=&quot;https://raw.githubusercontent.com/Lob2018/SudokuFX/master/.myresources/design_and_modeling/images/SudokuFX_in_action.jpg&quot; alt=&quot;SudokuFX in action&quot;/&gt;&lt;/a&gt;',['../md__r_e_a_d_m_e.html#autotoc_md3',1,'']]]
+  ['myregexutest_49',['MyRegexUTest',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex_u_test.html',1,'fr::softsf::sudokufx::utils']]],
+  ['myregexutest_2ejava_50',['MyRegexUTest.java',['../_my_regex_u_test_8java.html',1,'']]],
+  ['myresources_20design_5fand_5fmodeling_20images_20sudokufx_5fin_5faction_20jpg_20alt_20sudokufx_20in_20action_20a_51',['&lt;a href=&quot;https://github.com/Lob2018/SudokuFX/releases/latest&quot; target=&quot;_blank&quot; &gt;&lt;img src=&quot;https://raw.githubusercontent.com/Lob2018/SudokuFX/master/.myresources/design_and_modeling/images/SudokuFX_in_action.jpg&quot; alt=&quot;SudokuFX in action&quot;/&gt;&lt;/a&gt;',['../md__r_e_a_d_m_e.html#autotoc_md3',1,'']]]
 ];

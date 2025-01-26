@@ -12,7 +12,7 @@
 <area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="252,285,366,330,383,336,382,341,364,334,250,290"/>
 <area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties.html#a7b37fbf03ceccda8c7fd3a117593b22d" title="Sets the Spring context exit behavior to &quot;onRefresh&quot; for testing purposes." alt="" coords="378,427,602,485"/>
 <area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="202,285,275,350,319,383,366,412,376,418,374,422,363,417,316,387,271,354,198,289"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex.html#a981702b076ee54a416d676b6f7a182fc" title="Validates a given text against a specified regular expression." alt="" coords="664,43,862,85"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex.html#a981702b076ee54a416d676b6f7a182fc" title="Validates the given text against the specified regular expression." alt="" coords="664,43,862,85"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="617,41,649,46,648,51,616,47"/>
 <area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="598,84,648,77,649,82,599,89"/>
 <area shape="poly" id="edge6_Node000005_Node000005" title=" " alt="" coords="437,178,438,168,448,159,465,154,490,152,519,155,537,162,535,167,518,160,490,157,466,159,451,164,443,171,442,179"/>

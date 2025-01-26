@@ -80,7 +80,8 @@ var annotated_dup =
           [ "utils", "namespacefr_1_1softsf_1_1sudokufx_1_1utils.html", [
             [ "database", null, [
               [ "configuration", "namespacefr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1configuration.html", [
-                [ "DataSourceConfig", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1configuration_1_1_data_source_config.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1configuration_1_1_data_source_config" ]
+                [ "DataSourceConfig", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1configuration_1_1_data_source_config.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1configuration_1_1_data_source_config" ],
+                [ "DataSourceConfigForTests", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1configuration_1_1_data_source_config_for_tests.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1configuration_1_1_data_source_config_for_tests" ]
               ] ],
               [ "keystore", "namespacefr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore.html", [
                 [ "ApplicationKeystore", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore" ],
@@ -111,7 +112,8 @@ var annotated_dup =
             [ "MyEnums", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_enums.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_enums" ],
             [ "MyLogback", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback" ],
             [ "MyLogbackUTest", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback_u_test" ],
-            [ "MyRegex", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex" ]
+            [ "MyRegex", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex" ],
+            [ "MyRegexUTest", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex_u_test" ]
           ] ],
           [ "view", "namespacefr_1_1softsf_1_1sudokufx_1_1view.html", [
             [ "components", "namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1components.html", [
