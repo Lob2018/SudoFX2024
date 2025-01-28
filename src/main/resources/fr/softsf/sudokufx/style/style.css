@@ -41,8 +41,10 @@
 }
 
 .button:focused,.toast:focused {
-    -fx-border-color: blue;
-    -fx-border-width: .1em;
+    -fx-border-color: #0C8CE9;
+    -fx-border-width: .2em;
+    -fx-border-radius: .1em;
+    -fx-border-insets: -.1em;
  }
 
 .button {
@@ -58,12 +60,12 @@
     -fx-pref-height: 0;
     -fx-max-height: 0;
     -fx-min-height: 0;
-    -fx-spacing: 0.5em;
+    -fx-spacing: .5em;
     -fx-padding: 1em;
 }
 .toast  {
-    -fx-padding: 0.3em;
-    -fx-background-radius:0.2em;
+    -fx-padding: .3em;
+    -fx-background-radius:.2em;
     -fx-pref-width: infinity;
 }
 .toast-info  {
