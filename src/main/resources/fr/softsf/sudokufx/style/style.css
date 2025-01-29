@@ -43,8 +43,8 @@
 .button:focused,.toast:focused {
     -fx-border-color: #0C8CE9;
     -fx-border-width: .2em;
-    -fx-border-radius: .1em;
-    -fx-border-insets: -.1em;
+    -fx-border-radius: .25em;
+    -fx-border-insets: -.2em;
  }
 
 .button {
