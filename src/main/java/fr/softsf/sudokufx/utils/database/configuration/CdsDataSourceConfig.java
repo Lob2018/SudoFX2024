@@ -2,6 +2,7 @@ package fr.softsf.sudokufx.utils.database.configuration;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
+import fr.softsf.sudokufx.annotations.ExcludedFromCoverageReportGenerated;
 import fr.softsf.sudokufx.utils.MyLogback;
 import fr.softsf.sudokufx.utils.database.keystore.ApplicationKeystore;
 import fr.softsf.sudokufx.utils.os.OsFolderFactoryManager;
@@ -12,12 +13,14 @@ import static fr.softsf.sudokufx.utils.MyEnums.Paths.DATABASE_MIGRATION_PATH;
 import static fr.softsf.sudokufx.utils.MyEnums.Paths.DATABASE_NAME;
 
 /**
- * Overloaded configuration class for tests setting up dynamic data sources and related beans.
+ * Configuration class for setting up data sources and related beans for the CDS profile.
+ * CDS optimizes the startup and memory management of the application without the JRE.
  */
 @Configuration
-@Profile("test")
-@PropertySource("classpath:application-test.properties")
-public class DataSourceConfigForTests {
+@Profile("cds")
+@PropertySource("classpath:fr/softsf/sudokufx/application-cds.properties")
+@ExcludedFromCoverageReportGenerated
+public class CdsDataSourceConfig {
 
     /**
      * Initializes Logback logging framework.
@@ -45,9 +48,9 @@ public class DataSourceConfigForTests {
     HikariDataSource hikariDataSource(final OsFolderFactoryManager osFolderFactory, final ApplicationKeystore keystore) {
         keystore.setupApplicationKeystore();
         final HikariConfig config = new HikariConfig();
-        config.setPoolName("SudoFXTestHikariConnection");
+        config.setPoolName("SudoFXCDSHikariConnection");
         config.setDriverClassName("org.hsqldb.jdbc.JDBCDriver");
-        config.setJdbcUrl("jdbc:hsqldb:mem:" + osFolderFactory.osFolderFactory().getOsDataFolderPath() + "/" + DATABASE_NAME.getPath() + "Test" + ";shutdown=true");
+        config.setJdbcUrl("jdbc:hsqldb:mem:" + osFolderFactory.osFolderFactory().getOsDataFolderPath() + "/" + DATABASE_NAME.getPath() + "CDS" + ";shutdown=true");
         config.setUsername(keystore.getUsername());
         config.setPassword(keystore.getPassword());
         config.setMaximumPoolSize(2);
@@ -81,3 +84,4 @@ public class DataSourceConfigForTests {
                 .load();
     }
 }
+

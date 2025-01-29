@@ -102,7 +102,7 @@ if [[ ! -d "$1" ]]; then
     rm "$1-$2.jar"
     echo "Training the SudokuFX application..."
     cd "$1"
-    java -Xmx2048m -XX:ArchiveClassesAtExit="$1.jsa" -Dspring.context.exit=onRefresh -Dapp.name="$1" -Dapp.version="$2" -jar "$1-$2.jar" > /dev/null && \
+    java -Xmx2048m -XX:ArchiveClassesAtExit="$1.jsa" -Dspring.profiles.active=cds -Dspring.context.exit=onRefresh -Dapp.name="$1" -Dapp.version="$2" -jar "$1-$2.jar" > /dev/null && \
     java -Xmx2048m -XX:SharedArchiveFile="$1.jsa" -Dapp.name="$1" -Dapp.version="$2" -jar "$1-$2.jar" > /dev/null &
 fi
 
