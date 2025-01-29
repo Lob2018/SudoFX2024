@@ -26,6 +26,7 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '21'
+          check-latest: true
           cache: 'maven'
       - name: Verify Java Installation
         run: java -version
