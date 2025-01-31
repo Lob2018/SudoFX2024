@@ -15,15 +15,6 @@ import java.util.stream.Stream;
 @Slf4j
 public final class FileSystemManager implements IFileSystem {
 
-    /**
-     * Recursively deletes a folder and its contents if the folder path ends
-     * with the specified string.
-     *
-     * @param folderPath The path of the folder to be deleted.
-     * @param mustEndWithThat The string that the folder path must end with for
-     * deletion to proceed.
-     * @return true if the folder was successfully deleted, false otherwise.
-     */
     @Override
     public boolean deleteFolderRecursively(final Path folderPath, final String mustEndWithThat) {
         if (folderPath.endsWith(mustEndWithThat)) {

@@ -1,8 +1,8 @@
 package fr.softsf.sudokufx.view;
 
 import fr.softsf.sudokufx.interfaces.ISplashScreenView;
-import fr.softsf.sudokufx.utils.JVMApplicationProperties;
 import fr.softsf.sudokufx.utils.I18n;
+import fr.softsf.sudokufx.utils.JVMApplicationProperties;
 import javafx.animation.Animation;
 import javafx.animation.Interpolator;
 import javafx.animation.RotateTransition;
@@ -160,27 +160,6 @@ public final class SplashScreenView implements ISplashScreenView {
     }
 
     /**
-     * Hides and closes the splash screen.
-     */
-    @Override
-    public void hideSplashScreen() {
-        splashScreenStage.hide();
-        splashScreenStage.close();
-        scene.setCursor(Cursor.DEFAULT);
-    }
-
-    /**
-     * Displays the splash screen.
-     */
-    @Override
-    public void showSplashScreen() {
-        scene.setCursor(Cursor.WAIT);
-        splashScreenStage.setScene(scene);
-        splashScreenStage.show();
-        scene.getRoot().setStyle("-fx-font-size: " + splashScreenFontSize + "px;");
-    }
-
-    /**
      * Sets up the SVG for the flower logo in the center of the splash screen.
      */
     private void setSplashscreenvboxCenterhboxStackpaneLogoflowersvg() {
@@ -238,5 +217,20 @@ public final class SplashScreenView implements ISplashScreenView {
         region.setMaxSize(width, height);
         region.setTranslateX(offsetX);
         region.setTranslateY(offsetY);
+    }
+
+    @Override
+    public void hideSplashScreen() {
+        splashScreenStage.hide();
+        splashScreenStage.close();
+        scene.setCursor(Cursor.DEFAULT);
+    }
+
+    @Override
+    public void showSplashScreen() {
+        scene.setCursor(Cursor.WAIT);
+        splashScreenStage.setScene(scene);
+        splashScreenStage.show();
+        scene.getRoot().setStyle("-fx-font-size: " + splashScreenFontSize + "px;");
     }
 }

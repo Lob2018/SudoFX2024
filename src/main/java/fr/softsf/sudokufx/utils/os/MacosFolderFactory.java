@@ -26,21 +26,11 @@ public class MacosFolderFactory implements IOsFolderFactory {
         logsFolderForSudoFx = folders[1];
     }
 
-    /**
-     * Returns the path to the data folder for the SudoFX application.
-     *
-     * @return A String representing the path to the data folder.
-     */
     @Override
     public String getOsDataFolderPath() {
         return dataFolderForSudoFx;
     }
 
-    /**
-     * Returns the path to the logs folder for the SudoFX application.
-     *
-     * @return A String representing the path to the logs folder.
-     */
     @Override
     public String getOsLogsFolderPath() {
         return logsFolderForSudoFx;

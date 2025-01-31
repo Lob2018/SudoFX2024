@@ -4,7 +4,6 @@ import fr.softsf.sudokufx.annotations.ExcludedFromCoverageReportGenerated;
 import fr.softsf.sudokufx.interfaces.IEncryptionService;
 import fr.softsf.sudokufx.interfaces.IKeystore;
 import fr.softsf.sudokufx.interfaces.IOsFolderFactory;
-import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
@@ -40,9 +39,7 @@ public class ApplicationKeystore implements IKeystore {
     private KeyStore ks;
     private IEncryptionService iEncryptionService;
 
-    @Getter
     private String username;
-    @Getter
     private String password;
 
     public ApplicationKeystore(IOsFolderFactory osFolderFactory) {
@@ -252,6 +249,16 @@ public class ApplicationKeystore implements IKeystore {
      */
     void setOsFolderFactoryForTests(IOsFolderFactory osFolderFactoryP) {
         osFolderFactory = osFolderFactoryP;
+    }
+
+    @Override
+    public String getUsername() {
+        return username;
+    }
+
+    @Override
+    public String getPassword() {
+        return password;
     }
 }
 

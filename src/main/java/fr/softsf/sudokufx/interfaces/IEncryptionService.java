@@ -1,19 +1,23 @@
 package fr.softsf.sudokufx.interfaces;
 
+/**
+ * Interface defining methods for encrypt and decrypt
+ * using AES-GCM (Galois/Counter Mode) encryption.
+ */
 public interface IEncryptionService {
     /**
-     * Encrypt original
+     * Encrypts the given string using AES-GCM encryption.
      *
-     * @param original The original
-     * @return The encrypted original
+     * @param original The string to be encrypted
+     * @return A Base64 encoded string containing the encrypted data and Initialization Vector, separated by '#'
      */
     String encrypt(String original);
 
     /**
-     * Decrypt original
+     * Decrypts the given cipher text using AES-GCM decryption.
      *
-     * @param cypher The cypher
-     * @return The decrypted cypher
+     * @param cypher The Base64 encoded string containing the encrypted data and Initialization Vector, separated by '#'
+     * @return The decrypted string, or an empty string if decryption fails
      */
     String decrypt(String cypher);
 }

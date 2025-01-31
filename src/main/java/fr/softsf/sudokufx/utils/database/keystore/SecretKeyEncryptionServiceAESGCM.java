@@ -1,19 +1,18 @@
 package fr.softsf.sudokufx.utils.database.keystore;
 
-import java.nio.charset.StandardCharsets;
-import java.security.NoSuchAlgorithmException;
-import java.security.SecureRandom;
-import java.util.Base64;
+import fr.softsf.sudokufx.annotations.ExcludedFromCoverageReportGenerated;
+import fr.softsf.sudokufx.interfaces.IEncryptionService;
+import jakarta.validation.constraints.NotBlank;
+import lombok.extern.slf4j.Slf4j;
 
 import javax.crypto.Cipher;
 import javax.crypto.NoSuchPaddingException;
 import javax.crypto.SecretKey;
 import javax.crypto.spec.GCMParameterSpec;
-
-import fr.softsf.sudokufx.annotations.ExcludedFromCoverageReportGenerated;
-import fr.softsf.sudokufx.interfaces.IEncryptionService;
-import jakarta.validation.constraints.NotBlank;
-import lombok.extern.slf4j.Slf4j;
+import java.nio.charset.StandardCharsets;
+import java.security.NoSuchAlgorithmException;
+import java.security.SecureRandom;
+import java.util.Base64;
 
 /**
  * Implementation of the ApplicationKeystore.IEncryptionService interface
@@ -21,9 +20,9 @@ import lombok.extern.slf4j.Slf4j;
  */
 @Slf4j
 public final class SecretKeyEncryptionServiceAESGCM implements IEncryptionService {
+    private static final SecureRandom random = new SecureRandom();
     private final SecretKey secretKey;
     private Cipher cipher;
-    private static final SecureRandom random = new SecureRandom();
 
     /**
      * Constructor for the SecretKeyEncryptionServiceAESGCM.
@@ -41,12 +40,6 @@ public final class SecretKeyEncryptionServiceAESGCM implements IEncryptionServic
         }
     }
 
-    /**
-     * Encrypts the given string using AES-GCM encryption.
-     *
-     * @param original The string to be encrypted
-     * @return A Base64 encoded string containing the encrypted data and IV, separated by '#'
-     */
     @Override
     public String encrypt(@NotBlank final String original) {
         byte[] iv = new byte[16];
@@ -64,12 +57,6 @@ public final class SecretKeyEncryptionServiceAESGCM implements IEncryptionServic
         }
     }
 
-    /**
-     * Decrypts the given cipher text using AES-GCM decryption.
-     *
-     * @param cypher The Base64 encoded string containing the encrypted data and IV, separated by '#'
-     * @return The decrypted string, or an empty string if decryption fails
-     */
     @Override
     public String decrypt(@NotBlank final String cypher) {
         try {
