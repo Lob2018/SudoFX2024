@@ -4,6 +4,7 @@ import fr.softsf.sudokufx.SudoMain;
 import fr.softsf.sudokufx.interfaces.ISplashScreenView;
 import fr.softsf.sudokufx.service.FxmlService;
 import fr.softsf.sudokufx.utils.MyEnums;
+import fr.softsf.sudokufx.utils.SecureRandomGenerator;
 import fr.softsf.sudokufx.view.components.ToasterVBox;
 import fr.softsf.sudokufx.viewmodel.FullMenuViewModel;
 import javafx.animation.FadeTransition;
@@ -25,7 +26,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.Objects;
-import java.util.Random;
 
 /**
  * View class for the full menu screen of the Sudoku application. This class is
@@ -39,6 +39,8 @@ public final class FullMenuView implements SudoMain.IPrimaryStageView {
     private final Stage primaryStage = new Stage();
     @Autowired
     FullMenuViewModel fullMenuViewModel;
+    @Autowired
+    SecureRandomGenerator secureRandomGenerator;
     @Autowired
     private FxmlService fxmlService;
     @FXML
@@ -63,7 +65,7 @@ public final class FullMenuView implements SudoMain.IPrimaryStageView {
         hbox.setAlignment(Pos.BOTTOM_CENTER);
         buttonHello.setGraphic(hbox);
         buttonHello.setStyle("-fx-background-color: #00FF00;");
-        //
+
         welcomeText.textProperty().bindBidirectional(fullMenuViewModel.welcomeProperty());
     }
 
@@ -76,7 +78,7 @@ public final class FullMenuView implements SudoMain.IPrimaryStageView {
     @FXML
     private void onHelloButtonClick(ActionEvent event) {
 
-        switch (new Random().nextInt(3)) {
+        switch (secureRandomGenerator.nextInt(3)) {
             case 0:
                 toaster.addToastWithDuration("INFO 🔹 Work in progress... 🔹", MyEnums.ToastLevels.INFO, 6000);
                 break;

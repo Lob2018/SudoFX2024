@@ -1,11 +1,12 @@
 package fr.softsf.sudokufx.utils.sudoku;
 
 import fr.softsf.sudokufx.interfaces.IGridMaster;
+import fr.softsf.sudokufx.utils.SecureRandomGenerator;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.Arrays;
 import java.util.HashSet;
-import java.util.Random;
 import java.util.Set;
 
 /**
@@ -27,91 +28,14 @@ public class GridMaster implements IGridMaster {
     private static final int moyenMinDifficulte = 13797;
     private static final int moyenMaxDifficulte = 27594;
 
+    private final SecureRandomGenerator secureRandomGenerator;
+
     /**
      * Générateur de grilles de Sudoku.
      */
-    public GridMaster() {
-    }
-
-    /**
-     * Génère une grille de Sudoku à résoudre en cachant des cases selon le niveau de difficulté.
-     *
-     * @param niveau          Le niveau de difficulté (1 : facile, 2 : moyen, 3 : difficile).
-     * @param grilleResolue   La grille résolue à partir de laquelle les cases seront cachées.
-     * @param grilleAResoudre La grille à résoudre, avec ses cases cachées (valeur à zéro).
-     * @return La difficulté dans la grille à résoudre (somme des possibilités restantes).
-     * Retourne le niveau facile pour toutes autres valeurs que 2 ou 3.
-     */
-    private static int genererLaGrilleAResoudre(final int niveau, final int[] grilleResolue, final int[] grilleAResoudre) {
-        int sommeDesPossibilites;
-        return switch (niveau) {
-            case 2 -> {
-                int nombreDeCasesACacher = nombreAleatoire(moyenMinCachees, moyenMaxCachees);
-                do {
-                    // copier la grilleResolue
-                    System.arraycopy(grilleResolue, 0, grilleAResoudre, 0, NOMBRE_CASES);
-                    // cacher les cases
-                    cacherLesCases(nombreDeCasesACacher, grilleAResoudre);
-                    // récupérer les possibilités
-                    int[] possibilites = getPossibilites(grilleAResoudre);
-                    sommeDesPossibilites = SommeDesPossibilitesDeLaGrille(possibilites);
-                } while (sommeDesPossibilites < moyenMinDifficulte || sommeDesPossibilites > moyenMaxDifficulte);
-                yield sommeDesPossibilites;
-            }
-            case 3 -> {
-                int nombreDeCasesACacher = nombreAleatoire(moyenMaxCachees, difficileMaxCachees);
-                do {
-                    // Copier la grilleResolue
-                    System.arraycopy(grilleResolue, 0, grilleAResoudre, 0, NOMBRE_CASES);
-                    // Cacher les cases
-                    cacherLesCases(nombreDeCasesACacher, grilleAResoudre);
-                    // Récupérer la somme des possibilités
-                    sommeDesPossibilites = SommeDesPossibilitesDeLaGrille(getPossibilites(grilleAResoudre));
-                } while (sommeDesPossibilites < moyenMaxDifficulte);
-                yield sommeDesPossibilites;
-            }
-            default -> {
-                int nombreDeCasesACacher = nombreAleatoire(facileMinCachees, moyenMinCachees);
-                do {
-                    // Copier la grilleResolue
-                    System.arraycopy(grilleResolue, 0, grilleAResoudre, 0, NOMBRE_CASES);
-                    // Cacher les cases
-                    cacherLesCases(nombreDeCasesACacher, grilleAResoudre);
-                    // Récupérer la somme des possibilités
-                    sommeDesPossibilites = SommeDesPossibilitesDeLaGrille(getPossibilites(grilleAResoudre));
-                } while (sommeDesPossibilites > moyenMinDifficulte);
-                yield sommeDesPossibilites;
-            }
-        };
-    }
-
-    /**
-     * Cache un nombre spécifié de cases dans la grille à résoudre en les remplaçant par zéro.
-     *
-     * @param nombreDeCasesACacher Le nombre de cases à cacher dans la grille (au maximum 81 cases).
-     * @param grilleAResoudre      Le tableau représentant la grille à résoudre, où les cases seront cachées.
-     */
-    private static void cacherLesCases(int nombreDeCasesACacher, final int[] grilleAResoudre) {
-        Set<Integer> set = new HashSet<>();
-        Random random = new Random();
-        nombreDeCasesACacher = Math.min(nombreDeCasesACacher, NOMBRE_CASES);
-        while (set.size() < nombreDeCasesACacher) {
-            int valeur = random.nextInt(NOMBRE_CASES);
-            if (set.add(valeur)) {
-                grilleAResoudre[valeur] = 0;
-            }
-        }
-    }
-
-    /**
-     * Génère un nombre entier aléatoire dans un intervalle spécifié.
-     *
-     * @param minInclus La valeur minimale incluse du nombre aléatoire à générer.
-     * @param maxExclus La valeur maximale exclue du nombre aléatoire à générer.
-     * @return Un entier aléatoire compris entre minInclus (inclus) et maxExclus (exclus).
-     */
-    private static int nombreAleatoire(final int minInclus, final int maxExclus) {
-        return new Random().nextInt(minInclus, maxExclus);
+    @Autowired
+    public GridMaster(SecureRandomGenerator secureRandomGenerator) {
+        this.secureRandomGenerator = secureRandomGenerator;
     }
 
     /**
@@ -190,36 +114,6 @@ public class GridMaster implements IGridMaster {
     }
 
     /**
-     * Remplit récursivement la grille Sudoku (backtracking).
-     *
-     * @param grille       Grille Sudoku à remplir.
-     * @param possibilites Tableau des possibilités pour chaque case.
-     * @return true si la grille est remplie avec succès, false sinon.
-     */
-    private static boolean remplirLaGrille(final int[] grille, final int[] possibilites) {
-        int index = laCaseVideAvecLeMoinsDePossibilites(grille, possibilites);
-        if (index < 0) return true;
-        int possibilitesDeLaCase = possibilites[index];
-        while (possibilitesDeLaCase != 0) {
-            // Choisit une valeur aléatoire parmi les possibilités restantes
-            int valeur = choisirValeurAleatoire(possibilitesDeLaCase);
-            // Retire cette valeur des possibilités de la case
-            possibilitesDeLaCase &= ~(1 << (valeur - 1));
-            // Place la valeur dans la grille
-            grille[index] = valeur;
-            // Crée une copie des possibilités pour la récursion
-            int[] nouvellesPossibilites = Arrays.copyOf(possibilites, NOMBRE_CASES);
-            // Élimine la valeur choisie des possibilités des cases affectées
-            eliminerPossibilite(nouvellesPossibilites, index / DIMENSION, index % DIMENSION, valeur);
-            // Appel récursif pour remplir le reste de la grille
-            if (remplirLaGrille(grille, nouvellesPossibilites)) return true;
-        }
-        // Si aucune valeur ne fonctionne, réinitialise la case et retourne false
-        grille[index] = 0;
-        return false;
-    }
-
-    /**
      * Vérifie la cohérence entre la grille et les possibilités.
      * <p>
      * Cette méthode s'assure que chaque valeur non nulle dans la grille
@@ -265,15 +159,135 @@ public class GridMaster implements IGridMaster {
     }
 
     /**
+     * Compte le nombre de bits à 1 dans un entier.
+     *
+     * @param x Entier à analyser.
+     * @return Le nombre de bits à 1.
+     */
+    private static int compterBits(final int x) {
+        return Integer.bitCount(x);
+    }
+
+    /**
+     * Génère une grille de Sudoku à résoudre en cachant des cases selon le niveau de difficulté.
+     *
+     * @param niveau          Le niveau de difficulté (1 : facile, 2 : moyen, 3 : difficile).
+     * @param grilleResolue   La grille résolue à partir de laquelle les cases seront cachées.
+     * @param grilleAResoudre La grille à résoudre, avec ses cases cachées (valeur à zéro).
+     * @return La difficulté dans la grille à résoudre (somme des possibilités restantes).
+     * Retourne le niveau facile pour toutes autres valeurs que 2 ou 3.
+     */
+    private int genererLaGrilleAResoudre(final int niveau, final int[] grilleResolue, final int[] grilleAResoudre) {
+        int sommeDesPossibilites;
+        return switch (niveau) {
+            case 2 -> {
+                int nombreDeCasesACacher = nombreAleatoire(moyenMinCachees, moyenMaxCachees);
+                do {
+                    // copier la grilleResolue
+                    System.arraycopy(grilleResolue, 0, grilleAResoudre, 0, NOMBRE_CASES);
+                    // cacher les cases
+                    cacherLesCases(nombreDeCasesACacher, grilleAResoudre);
+                    // récupérer les possibilités
+                    int[] possibilites = getPossibilites(grilleAResoudre);
+                    sommeDesPossibilites = SommeDesPossibilitesDeLaGrille(possibilites);
+                } while (sommeDesPossibilites < moyenMinDifficulte || sommeDesPossibilites > moyenMaxDifficulte);
+                yield sommeDesPossibilites;
+            }
+            case 3 -> {
+                int nombreDeCasesACacher = nombreAleatoire(moyenMaxCachees, difficileMaxCachees);
+                do {
+                    // Copier la grilleResolue
+                    System.arraycopy(grilleResolue, 0, grilleAResoudre, 0, NOMBRE_CASES);
+                    // Cacher les cases
+                    cacherLesCases(nombreDeCasesACacher, grilleAResoudre);
+                    // Récupérer la somme des possibilités
+                    sommeDesPossibilites = SommeDesPossibilitesDeLaGrille(getPossibilites(grilleAResoudre));
+                } while (sommeDesPossibilites < moyenMaxDifficulte);
+                yield sommeDesPossibilites;
+            }
+            default -> {
+                int nombreDeCasesACacher = nombreAleatoire(facileMinCachees, moyenMinCachees);
+                do {
+                    // Copier la grilleResolue
+                    System.arraycopy(grilleResolue, 0, grilleAResoudre, 0, NOMBRE_CASES);
+                    // Cacher les cases
+                    cacherLesCases(nombreDeCasesACacher, grilleAResoudre);
+                    // Récupérer la somme des possibilités
+                    sommeDesPossibilites = SommeDesPossibilitesDeLaGrille(getPossibilites(grilleAResoudre));
+                } while (sommeDesPossibilites > moyenMinDifficulte);
+                yield sommeDesPossibilites;
+            }
+        };
+    }
+
+    /**
+     * Cache un nombre spécifié de cases dans la grille à résoudre en les remplaçant par zéro.
+     *
+     * @param nombreDeCasesACacher Le nombre de cases à cacher dans la grille (au maximum 81 cases).
+     * @param grilleAResoudre      Le tableau représentant la grille à résoudre, où les cases seront cachées.
+     */
+    private void cacherLesCases(int nombreDeCasesACacher, final int[] grilleAResoudre) {
+        Set<Integer> set = new HashSet<>();
+        nombreDeCasesACacher = Math.min(nombreDeCasesACacher, NOMBRE_CASES);
+        while (set.size() < nombreDeCasesACacher) {
+            int valeur = secureRandomGenerator.nextInt(NOMBRE_CASES);
+            if (set.add(valeur)) {
+                grilleAResoudre[valeur] = 0;
+            }
+        }
+    }
+
+    /**
+     * Génère un nombre entier aléatoire dans un intervalle spécifié.
+     *
+     * @param minInclus La valeur minimale incluse du nombre aléatoire à générer.
+     * @param maxExclus La valeur maximale exclue du nombre aléatoire à générer.
+     * @return Un entier aléatoire compris entre minInclus (inclus) et maxExclus (exclus).
+     */
+    private int nombreAleatoire(final int minInclus, final int maxExclus) {
+        return secureRandomGenerator.nextInt(minInclus, maxExclus);
+    }
+
+    /**
+     * Remplit récursivement la grille Sudoku (backtracking).
+     *
+     * @param grille       Grille Sudoku à remplir.
+     * @param possibilites Tableau des possibilités pour chaque case.
+     * @return true si la grille est remplie avec succès, false sinon.
+     */
+    private boolean remplirLaGrille(final int[] grille, final int[] possibilites) {
+        int index = laCaseVideAvecLeMoinsDePossibilites(grille, possibilites);
+        if (index < 0) return true;
+        int possibilitesDeLaCase = possibilites[index];
+        while (possibilitesDeLaCase != 0) {
+            // Choisit une valeur aléatoire parmi les possibilités restantes
+            int valeur = choisirValeurAleatoire(possibilitesDeLaCase);
+            // Retire cette valeur des possibilités de la case
+            possibilitesDeLaCase &= ~(1 << (valeur - 1));
+            // Place la valeur dans la grille
+            grille[index] = valeur;
+            // Crée une copie des possibilités pour la récursion
+            int[] nouvellesPossibilites = Arrays.copyOf(possibilites, NOMBRE_CASES);
+            // Élimine la valeur choisie des possibilités des cases affectées
+            eliminerPossibilite(nouvellesPossibilites, index / DIMENSION, index % DIMENSION, valeur);
+            // Appel récursif pour remplir le reste de la grille
+            if (remplirLaGrille(grille, nouvellesPossibilites)) return true;
+        }
+        // Si aucune valeur ne fonctionne, réinitialise la case et retourne false
+        grille[index] = 0;
+        return false;
+    }
+
+    /**
      * Choisit une valeur aléatoire parmi les possibilités données.
      *
      * @param possibilitesDeLaCase Entier représentant les valeurs possibles.
      * @return Une valeur choisie aléatoirement.
      */
-    private static int choisirValeurAleatoire(final int possibilitesDeLaCase) {
+    private int choisirValeurAleatoire(final int possibilitesDeLaCase) {
         int nombrePossibilites = compterBits(possibilitesDeLaCase);
         // Génère un index aléatoire parmi les possibilités
-        int choix = new Random().nextInt(nombrePossibilites);
+        int choix = secureRandomGenerator.nextInt(nombrePossibilites);
         // Parcourt les bits de possibilitesDeLaCase
         for (int i = 0; i < DIMENSION; i++) {
             // Vérifie si le bit i est à 1 (donc si i+1 est une possibilité)
@@ -283,16 +297,6 @@ public class GridMaster implements IGridMaster {
             }
         }
         return 0;
-    }
-
-    /**
-     * Compte le nombre de bits à 1 dans un entier.
-     *
-     * @param x Entier à analyser.
-     * @return Le nombre de bits à 1.
-     */
-    private static int compterBits(final int x) {
-        return Integer.bitCount(x);
     }
 
     @Override

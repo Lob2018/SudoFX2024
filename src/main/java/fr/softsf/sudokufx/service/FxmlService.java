@@ -20,9 +20,9 @@ import org.springframework.stereotype.Service;
 @Slf4j
 public class FxmlService {
 
-    private final Scene scene; // The JavaFX scene to be updated
+    private final Scene scene;
 
-    private final FXMLLoader fxmlLoader; // The FXML loader used to load FXML files
+    private final FXMLLoader fxmlLoader;
 
     @Setter
     private DynamicFontSize dynamicFontSize;
@@ -36,7 +36,7 @@ public class FxmlService {
      */
     public FxmlService(FXMLLoader fxmlLoader) {
         this.fxmlLoader = fxmlLoader;
-        this.scene = SudoMain.getScene(); // Retrieves the scene from the main class
+        this.scene = SudoMain.getScene();
     }
 
     /**
@@ -47,7 +47,7 @@ public class FxmlService {
      * @throws RuntimeException         Exits the application if an error occurs while loading the FXML file
      */
     public void setRootByFXMLName(final String fxml) {
-        String path = MyEnums.Paths.RESOURCES_FXML_PATH.getPath() + fxml + ".fxml"; // Full path to the FXML file
+        String path = MyEnums.Paths.RESOURCES_FXML_PATH.getPath() + fxml + ".fxml";
         try {
             fxmlLoader.setRoot(null);
             fxmlLoader.setController(null);

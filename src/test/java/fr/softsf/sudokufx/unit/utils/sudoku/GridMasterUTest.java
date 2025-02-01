@@ -1,13 +1,14 @@
 package fr.softsf.sudokufx.unit.utils.sudoku;
 
 import fr.softsf.sudokufx.interfaces.IGridMaster;
+import fr.softsf.sudokufx.utils.SecureRandomGenerator;
 import fr.softsf.sudokufx.utils.sudoku.GridMaster;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 public class GridMasterUTest {
-    private final IGridMaster iGridMaster = new GridMaster();
+    private final IGridMaster iGridMaster = new GridMaster(new SecureRandomGenerator());
 
     @Test
     void createUnknownGrids_success() {
