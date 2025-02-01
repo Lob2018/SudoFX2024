@@ -4,7 +4,6 @@ import fr.softsf.sudokufx.dto.SoftwareDto;
 import fr.softsf.sudokufx.service.SoftwareService;
 import fr.softsf.sudokufx.utils.database.configuration.DataSourceConfigForTests;
 import fr.softsf.sudokufx.viewmodel.FullMenuViewModel;
-import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -21,7 +20,6 @@ import java.util.Optional;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-@Slf4j
 @SpringBootTest
 @ActiveProfiles("test")
 @Import(DataSourceConfigForTests.class)
