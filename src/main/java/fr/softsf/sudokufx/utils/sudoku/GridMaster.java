@@ -40,23 +40,11 @@ public class GridMaster implements IGridMaster {
      * @param grilleResolue   La grille résolue à partir de laquelle les cases seront cachées.
      * @param grilleAResoudre La grille à résoudre, avec ses cases cachées (valeur à zéro).
      * @return La difficulté dans la grille à résoudre (somme des possibilités restantes).
-     * Retourne -1 si le niveau est invalide.
+     * Retourne le niveau facile pour toutes autres valeurs que 2 ou 3.
      */
     private static int genererLaGrilleAResoudre(final int niveau, final int[] grilleResolue, final int[] grilleAResoudre) {
         int sommeDesPossibilites;
         return switch (niveau) {
-            case 1 -> {
-                int nombreDeCasesACacher = nombreAleatoire(facileMinCachees, moyenMinCachees);
-                do {
-                    // Copier la grilleResolue
-                    System.arraycopy(grilleResolue, 0, grilleAResoudre, 0, NOMBRE_CASES);
-                    // Cacher les cases
-                    cacherLesCases(nombreDeCasesACacher, grilleAResoudre);
-                    // Récupérer la somme des possibilités
-                    sommeDesPossibilites = SommeDesPossibilitesDeLaGrille(getPossibilites(grilleAResoudre));
-                } while (sommeDesPossibilites > moyenMinDifficulte);
-                yield sommeDesPossibilites;
-            }
             case 2 -> {
                 int nombreDeCasesACacher = nombreAleatoire(moyenMinCachees, moyenMaxCachees);
                 do {
@@ -82,7 +70,18 @@ public class GridMaster implements IGridMaster {
                 } while (sommeDesPossibilites < moyenMaxDifficulte);
                 yield sommeDesPossibilites;
             }
-            default -> -1;
+            default -> {
+                int nombreDeCasesACacher = nombreAleatoire(facileMinCachees, moyenMinCachees);
+                do {
+                    // Copier la grilleResolue
+                    System.arraycopy(grilleResolue, 0, grilleAResoudre, 0, NOMBRE_CASES);
+                    // Cacher les cases
+                    cacherLesCases(nombreDeCasesACacher, grilleAResoudre);
+                    // Récupérer la somme des possibilités
+                    sommeDesPossibilites = SommeDesPossibilitesDeLaGrille(getPossibilites(grilleAResoudre));
+                } while (sommeDesPossibilites > moyenMinDifficulte);
+                yield sommeDesPossibilites;
+            }
         };
     }
 
@@ -318,18 +317,6 @@ public class GridMaster implements IGridMaster {
         // Limiter le pourcentage entre 0 et 100
         pourcentageDeDifficulte = pourcentageDeDifficulte < 0 ? 0 : Math.min(pourcentageDeDifficulte, 100);
         return new int[][]{grilleResolue, grilleAResoudre, new int[]{pourcentageDeDifficulte}};
-    }
-
-    @Override
-    public final void afficherLaGrilleDansLaConsole(final int[] grille) {
-        for (int y = 0; y < DIMENSION; y++) {
-            for (int x = 0; x < DIMENSION; x++) {
-                int valeur = grille[y * DIMENSION + x];
-                System.out.print(valeur == 0 ? "_" : CHIFFRES.charAt(valeur));
-                if (x * y < 64) System.out.print(", ");
-            }
-            System.out.println();
-        }
     }
 
 }

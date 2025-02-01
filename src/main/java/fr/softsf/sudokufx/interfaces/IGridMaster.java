@@ -33,11 +33,4 @@ public interface IGridMaster {
      * @return 0 si la grille est générée avec succès et cohérente, sinon -1.
      **/
     int resoudreLaGrille(final int[] grille);
-
-    /**
-     * Affiche la grille Sudoku sous forme de texte dans la console.
-     *
-     * @param grille Grille Sudoku à afficher.
-     */
-    void afficherLaGrilleDansLaConsole(final int[] grille);
 }
