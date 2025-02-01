@@ -47,7 +47,7 @@ public class DataSourceConfigForTests {
         final HikariConfig config = new HikariConfig();
         config.setPoolName("SudoFXTestHikariConnection");
         config.setDriverClassName("org.hsqldb.jdbc.JDBCDriver");
-        config.setJdbcUrl("jdbc:hsqldb:mem:" + osFolderFactory.osFolderFactory().getOsDataFolderPath() + "/" + DATABASE_NAME.getPath() + "Test" + ";shutdown=true");
+        config.setJdbcUrl("jdbc:hsqldb:mem:"+DATABASE_NAME.getPath() + "Test" + ";shutdown=true");
         config.setUsername(keystore.getUsername());
         config.setPassword(keystore.getPassword());
         config.setMaximumPoolSize(2);

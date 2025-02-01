@@ -50,7 +50,7 @@ public class CdsDataSourceConfig {
         final HikariConfig config = new HikariConfig();
         config.setPoolName("SudoFXCDSHikariConnection");
         config.setDriverClassName("org.hsqldb.jdbc.JDBCDriver");
-        config.setJdbcUrl("jdbc:hsqldb:mem:" + osFolderFactory.osFolderFactory().getOsDataFolderPath() + "/" + DATABASE_NAME.getPath() + "CDS" + ";shutdown=true");
+        config.setJdbcUrl("jdbc:hsqldb:mem:" + DATABASE_NAME.getPath() + "CDS" + ";shutdown=true");
         config.setUsername(keystore.getUsername());
         config.setPassword(keystore.getPassword());
         config.setMaximumPoolSize(2);
