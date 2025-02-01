@@ -32,7 +32,8 @@ levelname VARCHAR(64) NOT NULL
 CREATE TABLE grid (
 gridid BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
 defaultgridvalue VARCHAR(162) NOT NULL,
-gridvalue VARCHAR(162) NOT NULL
+gridvalue VARCHAR(162) NOT NULL,
+difficulty TINYINT
 );
 -- Création de la table "player"
 CREATE TABLE player (

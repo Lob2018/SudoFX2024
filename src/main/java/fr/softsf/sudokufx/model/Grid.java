@@ -1,6 +1,8 @@
 package fr.softsf.sudokufx.model;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.*;
@@ -26,5 +28,11 @@ public class Grid {
     @Setter
     @Size(max = 162)
     private String gridvalue;
+
+    @NotNull
+    @Setter
+    @Min(0)
+    @Max(100)
+    private Byte difficulty;
 
 }
