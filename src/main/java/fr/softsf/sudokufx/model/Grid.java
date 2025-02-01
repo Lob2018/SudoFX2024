@@ -21,12 +21,12 @@ public class Grid {
 
     @NotNull
     @Setter
-    @Size(max = 162)
+    @Size(max = 81)
     private String defaultgridvalue;
 
     @NotNull
     @Setter
-    @Size(max = 162)
+    @Size(max = 810)
     private String gridvalue;
 
     @NotNull

@@ -8,10 +8,10 @@ import jakarta.validation.constraints.Size;
 public record GridDto(
         Long gridid,
         @NotNull
-        @Size(max = 162)
+        @Size(max = 81)
         String defaultgridvalue,
         @NotNull
-        @Size(max = 162)
+        @Size(max = 810)
         String gridvalue,
         @NotNull
         @Min(0)
