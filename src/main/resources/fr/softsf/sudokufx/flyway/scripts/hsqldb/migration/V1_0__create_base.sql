@@ -20,7 +20,7 @@ iso VARCHAR(2) NOT NULL
 CREATE TABLE background (
 backgroundid BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
 hexcolor VARCHAR(7) NOT NULL,
-imagepath VARCHAR(260),
+imagepath VARCHAR(1024),
 isimage BOOLEAN DEFAULT FALSE NOT NULL,
 );
 -- Création de la table "gamelevel"
@@ -31,8 +31,8 @@ levelname VARCHAR(64) NOT NULL
 -- Création de la table "grid"
 CREATE TABLE grid (
 gridid BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-defaultgridvalue VARCHAR(162) NOT NULL,
-gridvalue VARCHAR(162) NOT NULL,
+defaultgridvalue VARCHAR(81) NOT NULL,
+gridvalue VARCHAR(810) NOT NULL,
 difficulty TINYINT
 );
 -- Création de la table "player"

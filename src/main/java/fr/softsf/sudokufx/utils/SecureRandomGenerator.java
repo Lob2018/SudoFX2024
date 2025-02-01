@@ -28,7 +28,7 @@ public class SecureRandomGenerator {
      * @param bound The upper limit (exclusive) for generating the random number.
      * @return A random integer between 0 and bound.
      */
-    public int nextInt(int bound) {
+    public final int nextInt(int bound) {
         return secureRandom.nextInt(bound);
     }
 
@@ -39,7 +39,7 @@ public class SecureRandomGenerator {
      * @param bound  The upper limit (exclusive) for generating the random number.
      * @return A random integer between origin and bound.
      */
-    public int nextInt(int origin, int bound) {
+    public final int nextInt(int origin, int bound) {
         return secureRandom.nextInt(bound - origin) + origin;
     }
 }
