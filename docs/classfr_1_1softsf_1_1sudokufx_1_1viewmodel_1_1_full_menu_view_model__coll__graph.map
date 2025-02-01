@@ -1,7 +1,7 @@
 <map id="fr.softsf.sudokufx.viewmodel.FullMenuViewModel" name="fr.softsf.sudokufx.viewmodel.FullMenuViewModel">
-<area shape="rect" id="Node000001" title="FullMenuViewModel with business logic (not final)" alt="" coords="257,599,483,839"/>
+<area shape="rect" id="Node000001" title="FullMenuViewModel with business logic (not final)" alt="" coords="386,599,612,855"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_software_service.html" title=" " alt="" coords="178,343,386,535"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="300,534,310,574,313,582,308,583,305,575,295,535"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="356,533,394,584,390,587,352,536"/>
 <area shape="rect" id="Node000003" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_software_mapper.html" title="This interface defines methods for mapping objects of type Software to objects of type SoftwareDto an..." alt="" coords="5,140,230,279"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="169,276,205,327,201,331,164,280"/>
 <area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="231,191,249,198,257,209,248,221,244,218,251,209,246,202,229,196"/>
@@ -9,6 +9,8 @@
 <area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="413,261,363,331,358,328,409,258"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="366,5,528,91"/>
 <area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="450,105,450,159,444,159,444,105"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="410,404,503,473"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="449,474,414,584,409,582,444,472"/>
+<area shape="rect" id="Node000006" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_grid_master.html" title=" " alt="" coords="410,369,588,508"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="502,508,502,582,496,582,496,508"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="612,404,706,473"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="643,475,580,586,576,583,638,472"/>
 </map>

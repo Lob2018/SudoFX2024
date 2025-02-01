@@ -87,10 +87,10 @@ var sectionId = 'dynsection-1';
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_keystore.html#a5ec3c1f09b73ee031b270efd4ded0ce0" target="_top" xlink:title="Get database password.">
-<polygon fill="white" stroke="#666666" points="432.88,-157 291.62,-157 291.62,-125 432.88,-125 432.88,-157"/>
-<text text-anchor="start" x="299.62" y="-143.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.interfaces.</text>
-<text text-anchor="middle" x="362.25" y="-131.5" font-family="Helvetica,sans-Serif" font-size="10.00">IKeystore.getPassword</text>
+<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore.html#a4035c6a874207a20aa0740af0594742a" target="_top" xlink:title="Get database password.">
+<polygon fill="white" stroke="#666666" points="462.12,-157 262.38,-157 262.38,-125 462.12,-125 462.12,-157"/>
+<text text-anchor="start" x="270.38" y="-143.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.utils.database.keystore.</text>
+<text text-anchor="middle" x="362.25" y="-131.5" font-family="Helvetica,sans-Serif" font-size="10.00">ApplicationKeystore.getPassword</text>
 </a>
 </g>
 </g>
@@ -98,18 +98,18 @@ var sectionId = 'dynsection-1';
 <g id="edge2_Node000001_Node000003" class="edge">
 <title>Node1&#45;&gt;Node3</title>
 <g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M217.94,-141C238.74,-141 260.2,-141 279.97,-141"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="279.89,-144.5 289.89,-141 279.89,-137.5 279.89,-144.5"/>
+<path fill="none" stroke="#63b8ff" d="M217.94,-141C228.8,-141 239.85,-141 250.74,-141"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="250.5,-144.5 260.5,-141 250.5,-137.5 250.5,-144.5"/>
 </a>
 </g>
 </g>
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_keystore.html#a8b68edc0def5161907fbd2f55b0940f3" target="_top" xlink:title="Get database username.">
-<polygon fill="white" stroke="#666666" points="432.88,-107 291.62,-107 291.62,-75 432.88,-75 432.88,-107"/>
-<text text-anchor="start" x="299.62" y="-93.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.interfaces.</text>
-<text text-anchor="middle" x="362.25" y="-81.5" font-family="Helvetica,sans-Serif" font-size="10.00">IKeystore.getUsername</text>
+<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore.html#a3cebafd3f87c717fc974513f34c9de39" target="_top" xlink:title="Get database username.">
+<polygon fill="white" stroke="#666666" points="462.12,-107 262.38,-107 262.38,-75 462.12,-75 462.12,-107"/>
+<text text-anchor="start" x="270.38" y="-93.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.utils.database.keystore.</text>
+<text text-anchor="middle" x="362.25" y="-81.5" font-family="Helvetica,sans-Serif" font-size="10.00">ApplicationKeystore.getUsername</text>
 </a>
 </g>
 </g>
@@ -117,8 +117,8 @@ var sectionId = 'dynsection-1';
 <g id="edge3_Node000001_Node000004" class="edge">
 <title>Node1&#45;&gt;Node4</title>
 <g id="a_edge3_Node000001_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M192.53,-124.56C220.7,-118.96 252.16,-112.7 280.2,-107.12"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="280.56,-110.62 289.69,-105.23 279.2,-103.75 280.56,-110.62"/>
+<path fill="none" stroke="#63b8ff" d="M192.53,-124.56C216.48,-119.8 242.8,-114.56 267.39,-109.67"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="267.93,-113.13 277.06,-107.75 266.57,-106.26 267.93,-113.13"/>
 </a>
 </g>
 </g>
@@ -287,7 +287,7 @@ var sectionId = 'dynsection-1';
 <!-- Node10 -->
 <g id="Node000010" class="node">
 <title>Node10</title>
-<g id="a_Node000010"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_encryption_service.html#a605da446a6ec28faa7c6e1d26a4cb2ca" target="_top" xlink:title="Decrypt original.">
+<g id="a_Node000010"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_encryption_service.html#a605da446a6ec28faa7c6e1d26a4cb2ca" target="_top" xlink:title="Decrypts the given cipher text using AES&#45;GCM decryption.">
 <polygon fill="white" stroke="#666666" points="1195.25,-232 1054,-232 1054,-200 1195.25,-200 1195.25,-232"/>
 <text text-anchor="start" x="1062" y="-218.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.interfaces.</text>
 <text text-anchor="middle" x="1124.62" y="-206.5" font-family="Helvetica,sans-Serif" font-size="10.00">IEncryptionService.decrypt</text>
@@ -325,7 +325,7 @@ var sectionId = 'dynsection-1';
 <!-- Node14 -->
 <g id="Node000014" class="node">
 <title>Node14</title>
-<g id="a_Node000014"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_encryption_service.html#a7cd39caadae83b3502b56b96d349cfc5" target="_top" xlink:title="Encrypt original.">
+<g id="a_Node000014"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_encryption_service.html#a7cd39caadae83b3502b56b96d349cfc5" target="_top" xlink:title="Encrypts the given string using AES&#45;GCM encryption.">
 <polygon fill="white" stroke="#666666" points="1195.25,-182 1054,-182 1054,-150 1195.25,-150 1195.25,-182"/>
 <text text-anchor="start" x="1062" y="-168.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.interfaces.</text>
 <text text-anchor="middle" x="1124.62" y="-156.5" font-family="Helvetica,sans-Serif" font-size="10.00">IEncryptionService.encrypt</text>

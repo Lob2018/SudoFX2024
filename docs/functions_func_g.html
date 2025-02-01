@@ -102,6 +102,7 @@ $(function(){initNavTree('functions_func_g.html',''); initResizable(true); });
 <h3><a id="index_g" name="index_g"></a>- g -</h3><ul>
 <li>generatePassaySecret()&#160;:&#160;<a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_generate_secret.html#ac1a554d432a1d4a3f2c32d9ca6594868">fr.softsf.sudokufx.utils.database.keystore.GenerateSecret</a></li>
 <li>GenerateSecret()&#160;:&#160;<a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_generate_secret.html#a577c690e3e673b8d1ca0ed28e82bd046">fr.softsf.sudokufx.utils.database.keystore.GenerateSecret</a></li>
+<li>genererLaGrilleAResoudre()&#160;:&#160;<a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#ae857c040b7e4c03981660d8cd0383f1f">fr.softsf.sudokufx.utils.sudoku.GridMaster</a></li>
 <li>getAppName()&#160;:&#160;<a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties.html#a3c1aafe7e06f8e614ae7a2c249f364a6">fr.softsf.sudokufx.utils.JVMApplicationProperties</a></li>
 <li>getAppVersion()&#160;:&#160;<a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties.html#afd79a2aeab3fe69dbb2ace62b5eddf83">fr.softsf.sudokufx.utils.JVMApplicationProperties</a></li>
 <li>getController()&#160;:&#160;<a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1_fxml_service.html#a341c0d4daa25339aec7c3371c47a176f">fr.softsf.sudokufx.service.FxmlService</a></li>
@@ -113,24 +114,26 @@ $(function(){initNavTree('functions_func_g.html',''); initResizable(true); });
 <li>getOs()&#160;:&#160;<a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_enums_1_1_os_name.html#adf5957512ca8135c64b8223034621e11">fr.softsf.sudokufx.utils.MyEnums.OsName</a></li>
 <li>getOsDataFolderPath()&#160;:&#160;<a class="el" href="interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_os_folder_factory.html#ad2fbd0fa5081f7b023b0bbf262847cfb">fr.softsf.sudokufx.interfaces.IOsFolderFactory</a>, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_linux_folder_factory.html#ae9328d202dd3b041f817c7a049324586">fr.softsf.sudokufx.utils.os.LinuxFolderFactory</a>, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_macos_folder_factory.html#a9077eec63616c12efdb66eb22688b99b">fr.softsf.sudokufx.utils.os.MacosFolderFactory</a>, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_windows_folder_factory.html#a89b5d63a38bf4d0793d2c50f6bfc8a90">fr.softsf.sudokufx.utils.os.WindowsFolderFactory</a></li>
 <li>getOsLogsFolderPath()&#160;:&#160;<a class="el" href="interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_os_folder_factory.html#a1977295e62b8132b09defe7cb7858534">fr.softsf.sudokufx.interfaces.IOsFolderFactory</a>, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_linux_folder_factory.html#ad9fe55bdf047110a1152b1cd7feff17c">fr.softsf.sudokufx.utils.os.LinuxFolderFactory</a>, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_macos_folder_factory.html#a8012fbddcce2430e62d86c339a7caec4">fr.softsf.sudokufx.utils.os.MacosFolderFactory</a>, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_windows_folder_factory.html#a5c4b15f9e76332d7554311fb537e22ed">fr.softsf.sudokufx.utils.os.WindowsFolderFactory</a></li>
-<li>getPassword()&#160;:&#160;<a class="el" href="interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_keystore.html#a5ec3c1f09b73ee031b270efd4ded0ce0">fr.softsf.sudokufx.interfaces.IKeystore</a></li>
+<li>getPassword()&#160;:&#160;<a class="el" href="interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_keystore.html#a5ec3c1f09b73ee031b270efd4ded0ce0">fr.softsf.sudokufx.interfaces.IKeystore</a>, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore.html#a4035c6a874207a20aa0740af0594742a">fr.softsf.sudokufx.utils.database.keystore.ApplicationKeystore</a></li>
 <li>getPath()&#160;:&#160;<a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_enums_1_1_paths.html#a9ab6254d2a491439d2b74d1dd4e7f934">fr.softsf.sudokufx.utils.MyEnums.Paths</a></li>
 <li>getPauseTransition()&#160;:&#160;<a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#a5f9601381fd0f35bc4a5c90205958aec">fr.softsf.sudokufx.SudoMain</a></li>
+<li>getPossibilites()&#160;:&#160;<a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a46d1bfadcbb911b5a718508185da341f">fr.softsf.sudokufx.utils.sudoku.GridMaster</a></li>
 <li>getSize()&#160;:&#160;<a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_enums_1_1_screen_size.html#a488a945d78be491aafc2f1e5ec832b3c">fr.softsf.sudokufx.utils.MyEnums.ScreenSize</a></li>
 <li>getSoftware()&#160;:&#160;<a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1_software_service.html#a19dc59ca2cea75458d2d0a92ada59b34">fr.softsf.sudokufx.service.SoftwareService</a></li>
 <li>getSQLInvalidAuthorizationSpecException()&#160;:&#160;<a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_exception_tools.html#a01f8c39804c60b96986387008e3f9cdc">fr.softsf.sudokufx.utils.ExceptionTools</a></li>
 <li>getSQLInvalidAuthorizationSpecException_null()&#160;:&#160;<a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1_exception_tools_u_test.html#a1ecf4fdb25cf3b4fb3365a81c936842c">fr.softsf.sudokufx.unit.utils.ExceptionToolsUTest</a></li>
 <li>getSQLInvalidAuthorizationSpecException_success()&#160;:&#160;<a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1_exception_tools_u_test.html#aa5d47f95d683dd9b80bbe94964cbe6d0">fr.softsf.sudokufx.unit.utils.ExceptionToolsUTest</a></li>
 <li>getToastInfo()&#160;:&#160;<a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_toaster_v_box.html#a4b5a9581798c4700253d244f3e09cb57">fr.softsf.sudokufx.view.components.ToasterVBox</a></li>
-<li>getUsername()&#160;:&#160;<a class="el" href="interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_keystore.html#a8b68edc0def5161907fbd2f55b0940f3">fr.softsf.sudokufx.interfaces.IKeystore</a></li>
+<li>getUsername()&#160;:&#160;<a class="el" href="interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_keystore.html#a8b68edc0def5161907fbd2f55b0940f3">fr.softsf.sudokufx.interfaces.IKeystore</a>, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore.html#a3cebafd3f87c717fc974513f34c9de39">fr.softsf.sudokufx.utils.database.keystore.ApplicationKeystore</a></li>
 <li>getValue()&#160;:&#160;<a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_i18n.html#a7095fa285a498c3f20bf33488a69d22c">fr.softsf.sudokufx.utils.I18n</a></li>
+<li>GridMaster()&#160;:&#160;<a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a3a8f2b69240160d896b860a61eb7a059">fr.softsf.sudokufx.utils.sudoku.GridMaster</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Jan 26 2025 15:53:55 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Sat Feb 1 2025 16:07:21 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

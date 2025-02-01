@@ -2,10 +2,10 @@
 <area shape="rect" id="Node000001" title="Creates and configures the main DataSource for the application." alt="" coords="5,172,296,215"/>
 <area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_os_folder_factory.html#ad2fbd0fa5081f7b023b0bbf262847cfb" title="Retrieves the path to the OS&#45;specific data folder." alt="" coords="698,5,949,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="184,169,255,128,298,108,343,91,429,68,518,50,682,31,683,36,519,56,430,73,344,96,300,113,258,133,187,174"/>
-<area shape="rect" id="Node000003" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_keystore.html#a5ec3c1f09b73ee031b270efd4ded0ce0" title="Get database password." alt="" coords="394,172,582,215"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="296,191,379,191,379,196,296,196"/>
-<area shape="rect" id="Node000004" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_keystore.html#a8b68edc0def5161907fbd2f55b0940f3" title="Get database username." alt="" coords="394,239,582,281"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="263,213,379,236,378,241,262,218"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore.html#a4035c6a874207a20aa0740af0594742a" title="Get database password." alt="" coords="355,172,622,215"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="296,191,340,191,340,196,296,196"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore.html#a3cebafd3f87c717fc974513f34c9de39" title="Get database username." alt="" coords="355,239,622,281"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="263,213,362,232,361,238,262,218"/>
 <area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_os_folder_factory_manager.html#abe170d1d4c6183a0a6e9d7dd7904fd19" title="Creates and returns an OS&#45;specific folder factory." alt="" coords="377,305,600,364"/>
 <area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="190,213,260,252,345,291,363,298,362,303,343,296,258,256,187,217"/>
 <area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore.html#a983c1ac68091c9b5533cda1496c1ccc5" title="Configures the keystore by managing the entire process of creating, loading, and encrypting the neces..." alt="" coords="344,105,633,148"/>
@@ -23,11 +23,11 @@
 <area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="922,202,966,191,1091,151,1092,156,967,196,924,207"/>
 <area shape="rect" id="Node000011" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore.html#aac0c74b44fb1dd6e9bef9b713a8ba609" title="Set credential by alias." alt="" coords="1036,205,1302,248"/>
 <area shape="poly" id="edge10_Node000008_Node000011" title=" " alt="" coords="957,224,1020,224,1020,229,957,229"/>
-<area shape="rect" id="Node000010" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_encryption_service.html#a605da446a6ec28faa7c6e1d26a4cb2ca" title="Decrypt original." alt="" coords="1411,72,1599,115"/>
+<area shape="rect" id="Node000010" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_encryption_service.html#a605da446a6ec28faa7c6e1d26a4cb2ca" title="Decrypts the given cipher text using AES&#45;GCM decryption." alt="" coords="1411,72,1599,115"/>
 <area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="1302,111,1395,102,1395,107,1303,116"/>
 <area shape="rect" id="Node000012" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore.html#a33216f8f54d7cd930bad1447d08019ba" title="Add alias:secret in the Keystore." alt="" coords="1372,272,1638,315"/>
 <area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="1280,246,1380,266,1379,271,1279,251"/>
-<area shape="rect" id="Node000014" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_encryption_service.html#a7cd39caadae83b3502b56b96d349cfc5" title="Encrypt original." alt="" coords="1411,139,1599,181"/>
+<area shape="rect" id="Node000014" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_encryption_service.html#a7cd39caadae83b3502b56b96d349cfc5" title="Encrypts the given string using AES&#45;GCM encryption." alt="" coords="1411,139,1599,181"/>
 <area shape="poly" id="edge13_Node000011_Node000014" title=" " alt="" coords="1279,202,1395,179,1396,184,1280,207"/>
 <area shape="rect" id="Node000015" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_generate_secret.html#ac1a554d432a1d4a3f2c32d9ca6594868" title="Generate Passay secret." alt="" coords="1372,205,1638,248"/>
 <area shape="poly" id="edge14_Node000011_Node000015" title=" " alt="" coords="1302,224,1356,224,1356,229,1302,229"/>

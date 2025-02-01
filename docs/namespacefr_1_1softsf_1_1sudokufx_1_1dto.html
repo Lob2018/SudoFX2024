@@ -107,12 +107,12 @@ $(function(){initNavTree('namespacefr_1_1softsf_1_1sudokufx_1_1dto.html',''); in
 Functions</h2></td></tr>
 <tr class="memitem:ab71438b60cd714ddb76aa22248390565" id="r_ab71438b60cd714ddb76aa22248390565"><td class="memItemLeft" align="right" valign="top">record&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab71438b60cd714ddb76aa22248390565">BackgroundDto</a> (Long backgroundid, @NotNull @Size(max=7) String hexcolor, @Size(max=260) String imagepath, @NotNull boolean isimage)</td></tr>
 <tr class="separator:ab71438b60cd714ddb76aa22248390565"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af115ca634d2f50876b34c8c03ba20226" id="r_af115ca634d2f50876b34c8c03ba20226"><td class="memItemLeft" align="right" valign="top">record&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af115ca634d2f50876b34c8c03ba20226">GameDto</a> (Long gameid, @NotNull <a class="el" href="#adbe1a4a3bb62358fe0bfdbc8ae48a780">GridDto</a> grididDto, @NotNull <a class="el" href="#a1ec66747e8dc472d375db5495929d95e">PlayerDto</a> playeridDto, @NotNull <a class="el" href="#a7ea3450705900e16f8ac65f20aff66dd">GameLevelDto</a> levelidDto, @NotNull boolean isselected, @NotNull LocalDateTime createdat, @NotNull LocalDateTime updatedat)</td></tr>
+<tr class="memitem:af115ca634d2f50876b34c8c03ba20226" id="r_af115ca634d2f50876b34c8c03ba20226"><td class="memItemLeft" align="right" valign="top">record&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af115ca634d2f50876b34c8c03ba20226">GameDto</a> (Long gameid, @NotNull <a class="el" href="#a0033056210eadaae86cf66070d71ce71">GridDto</a> grididDto, @NotNull <a class="el" href="#a1ec66747e8dc472d375db5495929d95e">PlayerDto</a> playeridDto, @NotNull <a class="el" href="#a7ea3450705900e16f8ac65f20aff66dd">GameLevelDto</a> levelidDto, @NotNull boolean isselected, @NotNull LocalDateTime createdat, @NotNull LocalDateTime updatedat)</td></tr>
 <tr class="separator:af115ca634d2f50876b34c8c03ba20226"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ea3450705900e16f8ac65f20aff66dd" id="r_a7ea3450705900e16f8ac65f20aff66dd"><td class="memItemLeft" align="right" valign="top">record&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ea3450705900e16f8ac65f20aff66dd">GameLevelDto</a> (Long levelid, @NotNull @Size(max=64) String levelname)</td></tr>
 <tr class="separator:a7ea3450705900e16f8ac65f20aff66dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbe1a4a3bb62358fe0bfdbc8ae48a780" id="r_adbe1a4a3bb62358fe0bfdbc8ae48a780"><td class="memItemLeft" align="right" valign="top">record&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adbe1a4a3bb62358fe0bfdbc8ae48a780">GridDto</a> (Long gridid, @NotNull @Size(max=162) String defaultgridvalue, @NotNull @Size(max=162) String gridvalue)</td></tr>
-<tr class="separator:adbe1a4a3bb62358fe0bfdbc8ae48a780"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0033056210eadaae86cf66070d71ce71" id="r_a0033056210eadaae86cf66070d71ce71"><td class="memItemLeft" align="right" valign="top">record&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0033056210eadaae86cf66070d71ce71">GridDto</a> (Long gridid, @NotNull @Size(max=162) String defaultgridvalue, @NotNull @Size(max=162) String gridvalue, @NotNull @Min(0) @Max(100) Byte difficulty)</td></tr>
+<tr class="separator:a0033056210eadaae86cf66070d71ce71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac5a3bff51a3776e2404665f8fb83aae" id="r_aac5a3bff51a3776e2404665f8fb83aae"><td class="memItemLeft" align="right" valign="top">record&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac5a3bff51a3776e2404665f8fb83aae">MenuDto</a> (Long menuid, @NotNull int mode)</td></tr>
 <tr class="separator:aac5a3bff51a3776e2404665f8fb83aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ec66747e8dc472d375db5495929d95e" id="r_a1ec66747e8dc472d375db5495929d95e"><td class="memItemLeft" align="right" valign="top">record&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ec66747e8dc472d375db5495929d95e">PlayerDto</a> (Long playerid, @NotNull <a class="el" href="#a57e3465d00d6e83a9d0fd8c03223868d">PlayerLanguageDto</a> playerlanguageidDto, @NotNull <a class="el" href="#ab71438b60cd714ddb76aa22248390565">BackgroundDto</a> backgroundidDto, @NotNull <a class="el" href="#aac5a3bff51a3776e2404665f8fb83aae">MenuDto</a> menuidDto, @NotNull Set&lt; <a class="el" href="#af115ca634d2f50876b34c8c03ba20226">GameDto</a> &gt; gamesDto, @NotNull @Size(max=256) String name, @NotNull boolean isselected, @NotNull LocalDateTime createdat, @NotNull LocalDateTime updatedat)</td></tr>
@@ -168,7 +168,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">@NotNull <a class="el" href="#adbe1a4a3bb62358fe0bfdbc8ae48a780">GridDto</a></td>          <td class="paramname"><span class="paramname"><em>grididDto</em></span>, </td>
+          <td class="paramtype">@NotNull <a class="el" href="#a0033056210eadaae86cf66070d71ce71">GridDto</a></td>          <td class="paramname"><span class="paramname"><em>grididDto</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -221,8 +221,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="adbe1a4a3bb62358fe0bfdbc8ae48a780" name="adbe1a4a3bb62358fe0bfdbc8ae48a780"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adbe1a4a3bb62358fe0bfdbc8ae48a780">&#9670;&#160;</a></span>GridDto()</h2>
+<a id="a0033056210eadaae86cf66070d71ce71" name="a0033056210eadaae86cf66070d71ce71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0033056210eadaae86cf66070d71ce71">&#9670;&#160;</a></span>GridDto()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -240,7 +240,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">@NotNull @Size(max=162) String</td>          <td class="paramname"><span class="paramname"><em>gridvalue</em></span>&#160;)</td>
+          <td class="paramtype">@NotNull @Size(max=162) String</td>          <td class="paramname"><span class="paramname"><em>gridvalue</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">@NotNull @Min(0) @Max(100) Byte</td>          <td class="paramname"><span class="paramname"><em>difficulty</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -387,7 +392,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1dto.html">dto</a></li>
-    <li class="footer">Generated on Sun Jan 26 2025 15:53:54 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Sat Feb 1 2025 16:07:20 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

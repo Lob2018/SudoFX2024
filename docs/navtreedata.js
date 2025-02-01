@@ -71,11 +71,11 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_application_keystore_8java.html",
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_software.html#ae02efc633e8bb011cfa1b9058b148b28",
-"classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties_u_test.html#a9387452a8494080aba710e5f6dbbf116",
-"classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_os_folder_factory_manager_u_test.html#ac20632ad6e3a9d06beca7ec1c658e5a9",
-"dir_91390426c0f30a4fef59e9ae252d2f44.html",
-"interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_game_mapper.html#a6e409a483563746a5605966986f65639"
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_software.html#a6748da9adbb19da31147350ec8003c7d",
+"classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties_u_test.html#a04e0bdaeaf6f3dc7fd78e70b052515ce",
+"classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_macos_folder_factory.html#aa35e8620e8367cdc31ee906b86fa7df9",
+"classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a50c0a6b2933473abc96751f6f405c392",
+"functions_func_p.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -103,6 +103,9 @@ $(function(){initNavTree('interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_
   <div class="headertitle"><div class="title">fr.softsf.sudokufx.interfaces.IEncryptionService Interface Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Interface defining methods for encrypt and decrypt using AES-GCM (Galois/Counter Mode) encryption.  
+ <a href="#details">More...</a></p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for fr.softsf.sudokufx.interfaces.IEncryptionService:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -121,13 +124,15 @@ $(function(){initNavTree('interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a605da446a6ec28faa7c6e1d26a4cb2ca" id="r_a605da446a6ec28faa7c6e1d26a4cb2ca"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a605da446a6ec28faa7c6e1d26a4cb2ca">decrypt</a> (String cypher)</td></tr>
-<tr class="memdesc:a605da446a6ec28faa7c6e1d26a4cb2ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decrypt original.  <br /></td></tr>
+<tr class="memdesc:a605da446a6ec28faa7c6e1d26a4cb2ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decrypts the given cipher text using AES-GCM decryption.  <br /></td></tr>
 <tr class="separator:a605da446a6ec28faa7c6e1d26a4cb2ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7cd39caadae83b3502b56b96d349cfc5" id="r_a7cd39caadae83b3502b56b96d349cfc5"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7cd39caadae83b3502b56b96d349cfc5">encrypt</a> (String original)</td></tr>
-<tr class="memdesc:a7cd39caadae83b3502b56b96d349cfc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encrypt original.  <br /></td></tr>
+<tr class="memdesc:a7cd39caadae83b3502b56b96d349cfc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encrypts the given string using AES-GCM encryption.  <br /></td></tr>
 <tr class="separator:a7cd39caadae83b3502b56b96d349cfc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Interface defining methods for encrypt and decrypt using AES-GCM (Galois/Counter Mode) encryption. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a605da446a6ec28faa7c6e1d26a4cb2ca" name="a605da446a6ec28faa7c6e1d26a4cb2ca"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a605da446a6ec28faa7c6e1d26a4cb2ca">&#9670;&#160;</a></span>decrypt()</h2>
 
@@ -143,14 +148,14 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Decrypt original. </p>
+<p>Decrypts the given cipher text using AES-GCM decryption. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">cypher</td><td>The cypher </td></tr>
+    <tr><td class="paramname">cypher</td><td>The Base64 encoded string containing the encrypted data and Initialization Vector, separated by '#' </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The decrypted cypher </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The decrypted string, or an empty string if decryption fails </dd></dl>
 
 </div>
 </div>
@@ -169,14 +174,14 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Encrypt original. </p>
+<p>Encrypts the given string using AES-GCM encryption. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">original</td><td>The original </td></tr>
+    <tr><td class="paramname">original</td><td>The string to be encrypted </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The encrypted original </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A Base64 encoded string containing the encrypted data and Initialization Vector, separated by '#' </dd></dl>
 
 </div>
 </div>
@@ -189,7 +194,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1interfaces.html">interfaces</a></li><li class="navelem"><a class="el" href="interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_encryption_service.html">IEncryptionService</a></li>
-    <li class="footer">Generated on Sun Jan 26 2025 15:53:54 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Sat Feb 1 2025 16:07:20 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

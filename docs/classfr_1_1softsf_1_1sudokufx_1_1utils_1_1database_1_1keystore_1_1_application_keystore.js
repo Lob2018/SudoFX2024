@@ -5,6 +5,8 @@ var classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_applicati
     [ "createOrUpdateKeystore", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore.html#a3c033211ab4f60945ef6ff9d202fbabd", null ],
     [ "credentials", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore.html#a2a2525acabf35eaaf9dca60b9eb11589", null ],
     [ "getCredentials", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore.html#af5312fa49787830d1c7e73806a03b5bb", null ],
+    [ "getPassword", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore.html#a4035c6a874207a20aa0740af0594742a", null ],
+    [ "getUsername", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore.html#a3cebafd3f87c717fc974513f34c9de39", null ],
     [ "loadKeyStore", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore.html#afa8d0bbf87d5470ae8e2307a5f6e53b0", null ],
     [ "setCredentials", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore.html#aac0c74b44fb1dd6e9bef9b713a8ba609", null ],
     [ "setOsFolderFactoryForTests", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore.html#ad8bb2d94347f80b87d07798c660009f5", null ],

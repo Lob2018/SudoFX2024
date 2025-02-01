@@ -8,12 +8,13 @@ var searchData=
   ['igamelevelmapper_5',['IGameLevelMapper',['../interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_game_level_mapper.html',1,'fr::softsf::sudokufx::interfaces::mapper']]],
   ['igamemapper_6',['IGameMapper',['../interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_game_mapper.html',1,'fr::softsf::sudokufx::interfaces::mapper']]],
   ['igridmapper_7',['IGridMapper',['../interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_grid_mapper.html',1,'fr::softsf::sudokufx::interfaces::mapper']]],
-  ['ikeystore_8',['IKeystore',['../interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_keystore.html',1,'fr::softsf::sudokufx::interfaces']]],
-  ['imenumapper_9',['IMenuMapper',['../interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_menu_mapper.html',1,'fr::softsf::sudokufx::interfaces::mapper']]],
-  ['iosfolderfactory_10',['IOsFolderFactory',['../interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_os_folder_factory.html',1,'fr::softsf::sudokufx::interfaces']]],
-  ['iplayerlanguagemapper_11',['IPlayerLanguageMapper',['../interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_player_language_mapper.html',1,'fr::softsf::sudokufx::interfaces::mapper']]],
-  ['iplayermapper_12',['IPlayerMapper',['../interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_player_mapper.html',1,'fr::softsf::sudokufx::interfaces::mapper']]],
-  ['iprimarystageview_13',['IPrimaryStageView',['../interfacefr_1_1softsf_1_1sudokufx_1_1_sudo_main_1_1_i_primary_stage_view.html',1,'fr::softsf::sudokufx::SudoMain']]],
-  ['isoftwaremapper_14',['ISoftwareMapper',['../interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_software_mapper.html',1,'fr::softsf::sudokufx::interfaces::mapper']]],
-  ['isplashscreenview_15',['ISplashScreenView',['../interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_splash_screen_view.html',1,'fr::softsf::sudokufx::interfaces']]]
+  ['igridmaster_8',['IGridMaster',['../interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_grid_master.html',1,'fr::softsf::sudokufx::interfaces']]],
+  ['ikeystore_9',['IKeystore',['../interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_keystore.html',1,'fr::softsf::sudokufx::interfaces']]],
+  ['imenumapper_10',['IMenuMapper',['../interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_menu_mapper.html',1,'fr::softsf::sudokufx::interfaces::mapper']]],
+  ['iosfolderfactory_11',['IOsFolderFactory',['../interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_os_folder_factory.html',1,'fr::softsf::sudokufx::interfaces']]],
+  ['iplayerlanguagemapper_12',['IPlayerLanguageMapper',['../interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_player_language_mapper.html',1,'fr::softsf::sudokufx::interfaces::mapper']]],
+  ['iplayermapper_13',['IPlayerMapper',['../interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_player_mapper.html',1,'fr::softsf::sudokufx::interfaces::mapper']]],
+  ['iprimarystageview_14',['IPrimaryStageView',['../interfacefr_1_1softsf_1_1sudokufx_1_1_sudo_main_1_1_i_primary_stage_view.html',1,'fr::softsf::sudokufx::SudoMain']]],
+  ['isoftwaremapper_15',['ISoftwareMapper',['../interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_software_mapper.html',1,'fr::softsf::sudokufx::interfaces::mapper']]],
+  ['isplashscreenview_16',['ISplashScreenView',['../interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_splash_screen_view.html',1,'fr::softsf::sudokufx::interfaces']]]
 ];

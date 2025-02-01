@@ -15,12 +15,13 @@ var searchData=
   ['fr_3a_3asoftsf_3a_3asudokufx_3a_3aunit_3a_3autils_3a_3adatabase_12',['database',['../namespacefr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1database.html',1,'fr::softsf::sudokufx::unit::utils']]],
   ['fr_3a_3asoftsf_3a_3asudokufx_3a_3aunit_3a_3autils_3a_3adatabase_3a_3akeystore_13',['keystore',['../namespacefr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1database_1_1keystore.html',1,'fr::softsf::sudokufx::unit::utils::database']]],
   ['fr_3a_3asoftsf_3a_3asudokufx_3a_3aunit_3a_3autils_3a_3aos_14',['os',['../namespacefr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1os.html',1,'fr::softsf::sudokufx::unit::utils']]],
-  ['fr_3a_3asoftsf_3a_3asudokufx_3a_3autils_15',['utils',['../namespacefr_1_1softsf_1_1sudokufx_1_1utils.html',1,'fr::softsf::sudokufx']]],
-  ['fr_3a_3asoftsf_3a_3asudokufx_3a_3autils_3a_3adatabase_3a_3aconfiguration_16',['configuration',['../namespacefr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1configuration.html',1,'fr::softsf::sudokufx::utils::database']]],
-  ['fr_3a_3asoftsf_3a_3asudokufx_3a_3autils_3a_3adatabase_3a_3akeystore_17',['keystore',['../namespacefr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore.html',1,'fr::softsf::sudokufx::utils::database']]],
-  ['fr_3a_3asoftsf_3a_3asudokufx_3a_3autils_3a_3aos_18',['os',['../namespacefr_1_1softsf_1_1sudokufx_1_1utils_1_1os.html',1,'fr::softsf::sudokufx::utils']]],
-  ['fr_3a_3asoftsf_3a_3asudokufx_3a_3autils_3a_3asudoku_19',['sudoku',['../namespacefr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku.html',1,'fr::softsf::sudokufx::utils']]],
-  ['fr_3a_3asoftsf_3a_3asudokufx_3a_3aview_20',['view',['../namespacefr_1_1softsf_1_1sudokufx_1_1view.html',1,'fr::softsf::sudokufx']]],
-  ['fr_3a_3asoftsf_3a_3asudokufx_3a_3aview_3a_3acomponents_21',['components',['../namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1components.html',1,'fr::softsf::sudokufx::view']]],
-  ['fr_3a_3asoftsf_3a_3asudokufx_3a_3aviewmodel_22',['viewmodel',['../namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel.html',1,'fr::softsf::sudokufx']]]
+  ['fr_3a_3asoftsf_3a_3asudokufx_3a_3aunit_3a_3autils_3a_3asudoku_15',['sudoku',['../namespacefr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1sudoku.html',1,'fr::softsf::sudokufx::unit::utils']]],
+  ['fr_3a_3asoftsf_3a_3asudokufx_3a_3autils_16',['utils',['../namespacefr_1_1softsf_1_1sudokufx_1_1utils.html',1,'fr::softsf::sudokufx']]],
+  ['fr_3a_3asoftsf_3a_3asudokufx_3a_3autils_3a_3adatabase_3a_3aconfiguration_17',['configuration',['../namespacefr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1configuration.html',1,'fr::softsf::sudokufx::utils::database']]],
+  ['fr_3a_3asoftsf_3a_3asudokufx_3a_3autils_3a_3adatabase_3a_3akeystore_18',['keystore',['../namespacefr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore.html',1,'fr::softsf::sudokufx::utils::database']]],
+  ['fr_3a_3asoftsf_3a_3asudokufx_3a_3autils_3a_3aos_19',['os',['../namespacefr_1_1softsf_1_1sudokufx_1_1utils_1_1os.html',1,'fr::softsf::sudokufx::utils']]],
+  ['fr_3a_3asoftsf_3a_3asudokufx_3a_3autils_3a_3asudoku_20',['sudoku',['../namespacefr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku.html',1,'fr::softsf::sudokufx::utils']]],
+  ['fr_3a_3asoftsf_3a_3asudokufx_3a_3aview_21',['view',['../namespacefr_1_1softsf_1_1sudokufx_1_1view.html',1,'fr::softsf::sudokufx']]],
+  ['fr_3a_3asoftsf_3a_3asudokufx_3a_3aview_3a_3acomponents_22',['components',['../namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1components.html',1,'fr::softsf::sudokufx::view']]],
+  ['fr_3a_3asoftsf_3a_3asudokufx_3a_3aviewmodel_23',['viewmodel',['../namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel.html',1,'fr::softsf::sudokufx']]]
 ];

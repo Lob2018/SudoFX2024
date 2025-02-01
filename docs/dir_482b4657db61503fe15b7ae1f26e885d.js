@@ -10,5 +10,6 @@ var dir_482b4657db61503fe15b7ae1f26e885d =
     [ "JVMApplicationProperties.java", "_j_v_m_application_properties_8java.html", "_j_v_m_application_properties_8java" ],
     [ "MyEnums.java", "_my_enums_8java.html", "_my_enums_8java" ],
     [ "MyLogback.java", "_my_logback_8java.html", "_my_logback_8java" ],
-    [ "MyRegex.java", "_my_regex_8java.html", "_my_regex_8java" ]
+    [ "MyRegex.java", "_my_regex_8java.html", "_my_regex_8java" ],
+    [ "SecureRandomGenerator.java", "_secure_random_generator_8java.html", "_secure_random_generator_8java" ]
 ];

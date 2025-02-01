@@ -30,19 +30,21 @@
 <g id="Node000002" class="node">
 <title>Node2</title>
 <g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="none" points="361.75,-220 227,-220 227,-136 361.75,-136 361.75,-220"/>
-<text text-anchor="start" x="231" y="-206.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.Grid</text>
-<text text-anchor="start" x="236.75" y="-190.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="249.5" y="-190.5" font-family="Helvetica,sans-Serif" font-size="10.00">String defaultgridvalue</text>
-<text text-anchor="start" x="236.75" y="-174.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="249.5" y="-174.5" font-family="Helvetica,sans-Serif" font-size="10.00">Long gridid</text>
-<text text-anchor="start" x="236.75" y="-158.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="249.5" y="-158.5" font-family="Helvetica,sans-Serif" font-size="10.00">String gridvalue</text>
-<text text-anchor="start" x="292.88" y="-142.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polygon fill="#666666" stroke="#666666" points="227,-202 227,-202 361.75,-202 361.75,-202 227,-202"/>
-<polygon fill="#666666" stroke="#666666" points="227,-154 227,-154 247.5,-154 247.5,-154 227,-154"/>
-<polygon fill="#666666" stroke="#666666" points="247.5,-154 247.5,-154 361.75,-154 361.75,-154 247.5,-154"/>
-<polygon fill="none" stroke="#666666" points="227,-136 227,-220 361.75,-220 361.75,-136 227,-136"/>
+<polygon fill="white" stroke="none" points="361.75,-228 227,-228 227,-128 361.75,-128 361.75,-228"/>
+<text text-anchor="start" x="231" y="-214.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.Grid</text>
+<text text-anchor="start" x="236.75" y="-198.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="249.5" y="-198.5" font-family="Helvetica,sans-Serif" font-size="10.00">String defaultgridvalue</text>
+<text text-anchor="start" x="236.75" y="-182.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="249.5" y="-182.5" font-family="Helvetica,sans-Serif" font-size="10.00">Byte difficulty</text>
+<text text-anchor="start" x="236.75" y="-166.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="249.5" y="-166.5" font-family="Helvetica,sans-Serif" font-size="10.00">Long gridid</text>
+<text text-anchor="start" x="236.75" y="-150.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="249.5" y="-150.5" font-family="Helvetica,sans-Serif" font-size="10.00">String gridvalue</text>
+<text text-anchor="start" x="292.88" y="-134.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polygon fill="#666666" stroke="#666666" points="227,-210 227,-210 361.75,-210 361.75,-210 227,-210"/>
+<polygon fill="#666666" stroke="#666666" points="227,-146 227,-146 247.5,-146 247.5,-146 227,-146"/>
+<polygon fill="#666666" stroke="#666666" points="247.5,-146 247.5,-146 361.75,-146 361.75,-146 247.5,-146"/>
+<polygon fill="none" stroke="#666666" points="227,-128 227,-228 361.75,-228 361.75,-128 227,-128"/>
 </a>
 </g>
 </g>
@@ -50,7 +52,7 @@
 <g id="edge1_Node000001_Node000002" class="edge">
 <title>Node2&#45;&gt;Node1</title>
 <g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M342.47,-136.25C351.79,-129.12 361.68,-122.05 371.38,-116 398.3,-99.18 429.24,-83.42 457.24,-70.35"/>
+<path fill="none" stroke="#63b8ff" d="M353.53,-128.03C359.44,-123.79 365.44,-119.71 371.38,-116 398.3,-99.18 429.24,-83.42 457.24,-70.35"/>
 <polygon fill="none" stroke="#63b8ff" points="457.31,-70.31 461.09,-64.17 468.21,-65.29 464.44,-71.43 457.31,-70.31"/>
 </a>
 </g>

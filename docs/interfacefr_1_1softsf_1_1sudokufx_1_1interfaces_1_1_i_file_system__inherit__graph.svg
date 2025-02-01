@@ -22,7 +22,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Interface defining a method to recursively deletes a folder and its contents.">
 <polygon fill="#999999" stroke="none" points="204.75,-228 0,-228 0,-152 204.75,-152 204.75,-228"/>
 <text text-anchor="start" x="39.75" y="-214.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.interfaces.</text>
 <text text-anchor="start" x="76.12" y="-202.5" font-family="Helvetica,sans-Serif" font-size="10.00">IFileSystem</text>

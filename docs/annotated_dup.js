@@ -30,6 +30,7 @@ var annotated_dup =
             ] ],
             [ "IEncryptionService", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_encryption_service.html", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_encryption_service" ],
             [ "IFileSystem", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_file_system.html", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_file_system" ],
+            [ "IGridMaster", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_grid_master.html", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_grid_master" ],
             [ "IKeystore", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_keystore.html", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_keystore" ],
             [ "IOsFolderFactory", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_os_folder_factory.html", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_os_folder_factory" ],
             [ "ISplashScreenView", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_splash_screen_view.html", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_splash_screen_view" ]
@@ -72,6 +73,9 @@ var annotated_dup =
               [ "os", "namespacefr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1os.html", [
                 [ "OsInfoUTest", "classfr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1os_1_1_os_info_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1os_1_1_os_info_u_test" ]
               ] ],
+              [ "sudoku", "namespacefr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1sudoku.html", [
+                [ "GridMasterUTest", "classfr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1sudoku_1_1_grid_master_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1sudoku_1_1_grid_master_u_test" ]
+              ] ],
               [ "ExceptionToolsUTest", "classfr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1_exception_tools_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1_exception_tools_u_test" ],
               [ "I18nUTest", "classfr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1_i18n_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1_i18n_u_test" ],
               [ "MyEnumsUTest", "classfr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1_my_enums_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1_my_enums_u_test" ]
@@ -80,6 +84,7 @@ var annotated_dup =
           [ "utils", "namespacefr_1_1softsf_1_1sudokufx_1_1utils.html", [
             [ "database", null, [
               [ "configuration", "namespacefr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1configuration.html", [
+                [ "CdsDataSourceConfig", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1configuration_1_1_cds_data_source_config.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1configuration_1_1_cds_data_source_config" ],
                 [ "DataSourceConfig", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1configuration_1_1_data_source_config.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1configuration_1_1_data_source_config" ],
                 [ "DataSourceConfigForTests", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1configuration_1_1_data_source_config_for_tests.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1configuration_1_1_data_source_config_for_tests" ]
               ] ],
@@ -100,7 +105,7 @@ var annotated_dup =
               [ "WindowsFolderFactory", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_windows_folder_factory.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_windows_folder_factory" ]
             ] ],
             [ "sudoku", "namespacefr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku.html", [
-              [ "Sudoku", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_sudoku.html", null ]
+              [ "GridMaster", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master" ]
             ] ],
             [ "DynamicFontSize", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_dynamic_font_size.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_dynamic_font_size" ],
             [ "ExceptionTools", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_exception_tools.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_exception_tools" ],
@@ -113,7 +118,8 @@ var annotated_dup =
             [ "MyLogback", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback" ],
             [ "MyLogbackUTest", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback_u_test" ],
             [ "MyRegex", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex" ],
-            [ "MyRegexUTest", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex_u_test" ]
+            [ "MyRegexUTest", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex_u_test" ],
+            [ "SecureRandomGenerator", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_secure_random_generator.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_secure_random_generator" ]
           ] ],
           [ "view", "namespacefr_1_1softsf_1_1sudokufx_1_1view.html", [
             [ "components", "namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1components.html", [

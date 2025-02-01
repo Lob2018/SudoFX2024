@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.interfaces.IGridMaster" name="fr.softsf.sudokufx.interfaces.IGridMaster">
+<area shape="rect" id="Node000001" title=" " alt="" coords="34,5,211,144"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html" title="Provides essential functionalities for generating and solving Sudoku puzzles." alt="" coords="5,192,239,1365"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,159,125,192,120,192,120,159"/>
+</map>

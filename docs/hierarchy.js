@@ -2,6 +2,7 @@ var hierarchy =
 [
     [ "fr.softsf.sudokufx.utils.database.keystore.ApplicationKeystoreUTest", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore_u_test.html", null ],
     [ "fr.softsf.sudokufx.model.Background", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background.html", null ],
+    [ "fr.softsf.sudokufx.utils.database.configuration.CdsDataSourceConfig", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1configuration_1_1_cds_data_source_config.html", null ],
     [ "fr.softsf.sudokufx.utils.database.configuration.DataSourceConfig", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1configuration_1_1_data_source_config.html", null ],
     [ "fr.softsf.sudokufx.utils.database.configuration.DataSourceConfigForTests", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1configuration_1_1_data_source_config_for_tests.html", null ],
     [ "fr.softsf.sudokufx.utils.DynamicFontSize", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_dynamic_font_size.html", null ],
@@ -18,6 +19,7 @@ var hierarchy =
     [ "fr.softsf.sudokufx.utils.database.keystore.GenerateSecret", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_generate_secret.html", null ],
     [ "fr.softsf.sudokufx.unit.utils.database.GenerateSecretUTest", "classfr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1database_1_1_generate_secret_u_test.html", null ],
     [ "fr.softsf.sudokufx.model.Grid", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html", null ],
+    [ "fr.softsf.sudokufx.unit.utils.sudoku.GridMasterUTest", "classfr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1sudoku_1_1_grid_master_u_test.html", null ],
     [ "fr.softsf.sudokufx.utils.I18n", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_i18n.html", null ],
     [ "fr.softsf.sudokufx.unit.utils.I18nUTest", "classfr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1_i18n_u_test.html", null ],
     [ "fr.softsf.sudokufx.interfaces.mapper.IBackgroundMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_background_mapper.html", null ],
@@ -30,6 +32,9 @@ var hierarchy =
     [ "fr.softsf.sudokufx.interfaces.mapper.IGameLevelMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_game_level_mapper.html", null ],
     [ "fr.softsf.sudokufx.interfaces.mapper.IGameMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_game_mapper.html", null ],
     [ "fr.softsf.sudokufx.interfaces.mapper.IGridMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_grid_mapper.html", null ],
+    [ "fr.softsf.sudokufx.interfaces.IGridMaster", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_grid_master.html", [
+      [ "fr.softsf.sudokufx.utils.sudoku.GridMaster", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html", null ]
+    ] ],
     [ "fr.softsf.sudokufx.interfaces.IKeystore", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_keystore.html", [
       [ "fr.softsf.sudokufx.utils.database.keystore.ApplicationKeystore", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore.html", null ]
     ] ],
@@ -72,10 +77,10 @@ var hierarchy =
     [ "fr.softsf.sudokufx.model.PlayerLanguage", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html", null ],
     [ "fr.softsf.sudokufx.utils.MyEnums.ScreenSize", "enumfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_enums_1_1_screen_size.html", null ],
     [ "fr.softsf.sudokufx.unit.utils.database.keystore.SecretKeyEncryptionServiceAESGCMUTest", "classfr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1database_1_1keystore_1_1_secret_key_encryption_service_a_e_s_g_c_m_u_test.html", null ],
+    [ "fr.softsf.sudokufx.utils.SecureRandomGenerator", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_secure_random_generator.html", null ],
     [ "fr.softsf.sudokufx.model.Software", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_software.html", null ],
     [ "fr.softsf.sudokufx.service.SoftwareService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_software_service.html", null ],
     [ "fr.softsf.sudokufx.unit.service.SoftwareServiceUTest", "classfr_1_1softsf_1_1sudokufx_1_1unit_1_1service_1_1_software_service_u_test.html", null ],
-    [ "fr.softsf.sudokufx.utils.sudoku.Sudoku", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_sudoku.html", null ],
     [ "fr.softsf.sudokufx.utils.MyEnums.ToastLevels", "enumfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_enums_1_1_toast_levels.html", null ],
     [ "Application", null, [
       [ "fr.softsf.sudokufx.SudoMain", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html", null ]

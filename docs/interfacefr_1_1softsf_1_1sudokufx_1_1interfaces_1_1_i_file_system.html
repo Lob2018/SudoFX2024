@@ -103,6 +103,9 @@ $(function(){initNavTree('interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_
   <div class="headertitle"><div class="title">fr.softsf.sudokufx.interfaces.IFileSystem Interface Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Interface defining a method to recursively deletes a folder and its contents.  
+ <a href="#details">More...</a></p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for fr.softsf.sudokufx.interfaces.IFileSystem:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -121,10 +124,13 @@ $(function(){initNavTree('interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a6deb518c2efb12bebd3840bad228e004" id="r_a6deb518c2efb12bebd3840bad228e004"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6deb518c2efb12bebd3840bad228e004">deleteFolderRecursively</a> (Path folderPath, String mustEndWithThat)</td></tr>
-<tr class="memdesc:a6deb518c2efb12bebd3840bad228e004"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete the folder recursively.  <br /></td></tr>
+<tr class="memdesc:a6deb518c2efb12bebd3840bad228e004"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recursively deletes a folder and its contents if the folder path ends with the specified string.  <br /></td></tr>
 <tr class="separator:a6deb518c2efb12bebd3840bad228e004"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Interface defining a method to recursively deletes a folder and its contents. </p>
+<p>The folder path must end with the specified String. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a6deb518c2efb12bebd3840bad228e004" name="a6deb518c2efb12bebd3840bad228e004"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6deb518c2efb12bebd3840bad228e004">&#9670;&#160;</a></span>deleteFolderRecursively()</h2>
 
@@ -144,15 +150,15 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Delete the folder recursively. </p>
+<p>Recursively deletes a folder and its contents if the folder path ends with the specified string. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">folderPath</td><td>The folder path </td></tr>
-    <tr><td class="paramname">mustEndWithThat</td><td>The folder path should end with that </td></tr>
+    <tr><td class="paramname">folderPath</td><td>The path of the folder to be deleted. </td></tr>
+    <tr><td class="paramname">mustEndWithThat</td><td>The string that the folder path must end with for deletion to proceed. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The result of deletion </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the folder was successfully deleted, false otherwise. </dd></dl>
 
 <p>Implemented in <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_file_system_manager.html#a89a1c35ed3d11a33b44e91549bc8db7a">fr.softsf.sudokufx.utils.FileSystemManager</a>.</p>
 
@@ -167,7 +173,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1interfaces.html">interfaces</a></li><li class="navelem"><a class="el" href="interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_file_system.html">IFileSystem</a></li>
-    <li class="footer">Generated on Sun Jan 26 2025 15:53:54 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Sat Feb 1 2025 16:07:20 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

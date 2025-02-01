@@ -1,39 +1,45 @@
 <map id="fr.softsf.sudokufx.view.FullMenuView" name="fr.softsf.sudokufx.view.FullMenuView">
-<area shape="rect" id="Node000001" title="View class for the full menu screen of the Sudoku application." alt="" coords="517,1260,715,1585"/>
-<area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudokufx_1_1_sudo_main_1_1_i_primary_stage_view.html" title="Interface for the primary stage view." alt="" coords="5,831,235,948"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,961,186,1068,216,1125,250,1178,278,1212,310,1243,379,1298,452,1343,519,1378,516,1382,449,1347,376,1302,306,1247,275,1215,246,1182,211,1128,181,1070,139,963"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="260,855,296,924"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="278,924,278,974,281,1039,290,1110,310,1179,324,1211,343,1240,392,1292,447,1335,504,1369,501,1374,444,1340,388,1296,339,1243,320,1213,304,1181,285,1111,275,1040,272,975,273,924"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="319,855,364,924"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="342,924,340,975,344,1041,355,1111,365,1146,379,1179,404,1223,436,1264,471,1302,507,1336,503,1340,467,1306,432,1268,400,1226,374,1181,360,1148,350,1113,338,1041,335,975,336,924"/>
-<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_full_menu_view_model.html" title="FullMenuViewModel with business logic (not final)" alt="" coords="389,769,615,1009"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="510,1009,521,1120,543,1235,545,1243,540,1245,538,1237,516,1120,504,1009"/>
-<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_software_service.html" title=" " alt="" coords="218,343,426,535"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="362,533,450,753,445,755,357,535"/>
-<area shape="rect" id="Node000007" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_software_mapper.html" title="This interface defines methods for mapping objects of type Software to objects of type SoftwareDto an..." alt="" coords="23,140,247,279"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="193,276,235,328,231,331,188,280"/>
-<area shape="poly" id="edge7_Node000007_Node000007" title=" " alt="" coords="248,191,266,198,274,209,266,221,261,218,269,209,263,202,246,196"/>
-<area shape="rect" id="Node000008" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_software_repository.html" title=" " alt="" coords="376,159,553,260"/>
-<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="436,261,392,330,388,327,431,258"/>
-<area shape="rect" id="Node000009" title=" " alt="" coords="383,5,546,91"/>
-<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="467,105,467,159,462,159,462,105"/>
-<area shape="rect" id="Node000010" title=" " alt="" coords="450,404,543,473"/>
-<area shape="poly" id="edge10_Node000005_Node000010" title=" " alt="" coords="499,473,503,753,497,753,494,473"/>
-<area shape="rect" id="Node000011" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_fxml_service.html" title="FxmlService is a Spring service that manages the loading of FXML files and updating the root of the J..." alt="" coords="639,809,825,969"/>
-<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="721,970,698,1095,668,1237,667,1244,661,1243,663,1235,693,1094,716,969"/>
-<area shape="rect" id="Node000012" title=" " alt="" coords="600,175,648,244"/>
-<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="620,244,607,343,599,439,600,481,607,534,700,792,695,794,601,535,594,481,593,439,601,342,615,243"/>
-<area shape="rect" id="Node000014" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_dynamic_font_size.html" title="Manages dynamic font sizing based on the dimensions of a JavaFX Scene." alt="" coords="659,377,817,500"/>
-<area shape="poly" id="edge15_Node000014_Node000012" title=" " alt="" coords="643,242,702,361,698,363,638,245"/>
-<area shape="rect" id="Node000013" title=" " alt="" coords="841,404,925,473"/>
-<area shape="poly" id="edge13_Node000011_Node000013" title=" " alt="" coords="880,473,870,522,853,576,840,600,799,699,765,794,760,793,794,697,835,598,849,574,865,521,875,472"/>
-<area shape="poly" id="edge14_Node000011_Node000014" title=" " alt="" coords="740,500,736,792,731,792,734,500"/>
-<area shape="rect" id="Node000015" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_toaster_v_box.html" title="A custom VBox component for displaying toast notifications." alt="" coords="850,599,1079,1180"/>
-<area shape="poly" id="edge16_Node000001_Node000015" title=" " alt="" coords="852,1162,840,1182,787,1253,729,1318,725,1314,783,1249,835,1178,848,1159"/>
-<area shape="rect" id="Node000016" title=" " alt="" coords="951,404,994,473"/>
-<area shape="poly" id="edge17_Node000015_Node000016" title=" " alt="" coords="974,489,972,599,967,599,969,489"/>
-<area shape="rect" id="Node000017" title=" " alt="" coords="1104,855,1145,924"/>
-<area shape="poly" id="edge18_Node000001_Node000017" title=" " alt="" coords="1133,923,1137,977,1136,1044,1124,1116,1111,1150,1093,1182,1058,1225,1017,1263,971,1296,923,1324,824,1369,733,1398,731,1393,822,1364,920,1319,968,1291,1013,1258,1054,1221,1089,1178,1106,1148,1119,1114,1131,1044,1132,977,1127,924"/>
-<area shape="rect" id="Node000018" title=" " alt="" coords="1192,855,1241,924"/>
-<area shape="poly" id="edge19_Node000001_Node000018" title=" " alt="" coords="1223,924,1227,988,1222,1071,1214,1116,1201,1159,1183,1201,1157,1238,1113,1281,1063,1317,1008,1346,951,1369,893,1387,836,1401,732,1417,732,1412,835,1396,892,1382,949,1364,1006,1341,1060,1312,1110,1277,1153,1234,1178,1198,1196,1157,1209,1114,1217,1071,1221,988,1218,924"/>
+<area shape="rect" id="Node000001" title="View class for the full menu screen of the Sudoku application." alt="" coords="779,1260,977,1585"/>
+<area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudokufx_1_1_sudo_main_1_1_i_primary_stage_view.html" title="Interface for the primary stage view." alt="" coords="155,831,385,948"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="293,961,335,1068,364,1125,400,1178,439,1222,484,1260,533,1293,584,1322,687,1367,780,1396,778,1401,685,1372,582,1327,530,1298,480,1264,435,1225,396,1182,360,1128,330,1071,288,963"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="409,855,445,924"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="427,924,426,975,428,1040,438,1110,459,1179,482,1222,513,1260,549,1293,590,1321,633,1345,678,1365,763,1394,761,1399,676,1370,631,1350,587,1325,546,1297,509,1263,478,1225,454,1181,433,1112,423,1040,420,975,422,924"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="469,855,513,924"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="489,924,486,976,488,1042,501,1113,512,1147,528,1179,550,1211,577,1241,637,1294,702,1338,765,1372,763,1377,699,1342,633,1298,573,1245,546,1214,523,1181,507,1149,495,1114,483,1043,481,976,484,924"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_full_menu_view_model.html" title="FullMenuViewModel with business logic (not final)" alt="" coords="538,761,764,1017"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="678,1016,707,1125,727,1181,750,1235,772,1277,767,1279,745,1237,722,1183,702,1126,673,1018"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_software_service.html" title=" " alt="" coords="260,343,468,535"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="452,533,495,573,512,584,528,597,552,631,574,668,609,744,604,747,569,671,548,634,524,600,509,588,491,577,449,536"/>
+<area shape="rect" id="Node000007" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_software_mapper.html" title="This interface defines methods for mapping objects of type Software to objects of type SoftwareDto an..." alt="" coords="5,140,230,279"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="193,276,250,329,247,333,190,280"/>
+<area shape="poly" id="edge7_Node000007_Node000007" title=" " alt="" coords="231,191,249,198,257,209,248,221,244,218,251,209,246,202,229,196"/>
+<area shape="rect" id="Node000008" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_software_repository.html" title=" " alt="" coords="359,159,535,260"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="432,261,407,328,402,326,427,259"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="366,5,528,91"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="450,105,450,159,444,159,444,105"/>
+<area shape="rect" id="Node000010" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_grid_master.html" title=" " alt="" coords="493,369,670,508"/>
+<area shape="poly" id="edge10_Node000005_Node000010" title=" " alt="" coords="595,507,631,745,626,745,589,508"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="695,404,788,473"/>
+<area shape="poly" id="edge11_Node000005_Node000011" title=" " alt="" coords="738,474,683,745,677,744,732,473"/>
+<area shape="rect" id="Node000012" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_secure_random_generator.html" title="The SecureRandomGenerator class provides methods to generate random numbers securely using Java&#39;s Sec..." alt="" coords="788,817,967,961"/>
+<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="880,961,880,1243,875,1243,875,961"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="813,404,913,473"/>
+<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="866,473,867,575,876,801,871,801,862,575,860,473"/>
+<area shape="rect" id="Node000014" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_fxml_service.html" title="FxmlService is a Spring service that manages the loading of FXML files and updating the root of the J..." alt="" coords="991,809,1177,969"/>
+<area shape="poly" id="edge14_Node000001_Node000014" title=" " alt="" coords="1090,969,1088,1030,1081,1098,1066,1169,1043,1237,1019,1280,990,1319,985,1316,1015,1277,1038,1235,1061,1168,1075,1097,1082,1029,1085,969"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="1003,175,1051,244"/>
+<area shape="poly" id="edge15_Node000014_Node000015" title=" " alt="" coords="1018,245,1005,291,995,343,986,439,995,534,1006,602,1021,670,1055,792,1050,794,1016,672,1001,603,989,535,981,439,989,342,1000,290,1013,243"/>
+<area shape="rect" id="Node000017" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_dynamic_font_size.html" title="Manages dynamic font sizing based on the dimensions of a JavaFX Scene." alt="" coords="1047,377,1205,500"/>
+<area shape="poly" id="edge18_Node000017_Node000015" title=" " alt="" coords="1044,243,1095,361,1090,363,1039,245"/>
+<area shape="rect" id="Node000016" title=" " alt="" coords="1229,404,1313,473"/>
+<area shape="poly" id="edge16_Node000014_Node000016" title=" " alt="" coords="1270,474,1257,524,1246,552,1230,576,1220,585,1210,589,1201,593,1192,600,1161,646,1137,695,1118,746,1105,794,1100,792,1113,744,1132,693,1157,643,1188,597,1198,588,1208,584,1217,581,1226,573,1241,549,1252,523,1265,472"/>
+<area shape="poly" id="edge17_Node000014_Node000017" title=" " alt="" coords="1123,500,1096,793,1090,792,1117,500"/>
+<area shape="rect" id="Node000018" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_toaster_v_box.html" title="A custom VBox component for displaying toast notifications." alt="" coords="1202,599,1431,1180"/>
+<area shape="poly" id="edge19_Node000001_Node000018" title=" " alt="" coords="1204,1163,1192,1182,1149,1235,1098,1283,1045,1325,993,1361,990,1356,1042,1321,1095,1279,1145,1232,1188,1178,1200,1160"/>
+<area shape="rect" id="Node000019" title=" " alt="" coords="1339,404,1382,473"/>
+<area shape="poly" id="edge20_Node000018_Node000019" title=" " alt="" coords="1358,488,1347,599,1342,599,1353,488"/>
+<area shape="rect" id="Node000020" title=" " alt="" coords="1456,855,1497,924"/>
+<area shape="poly" id="edge21_Node000001_Node000020" title=" " alt="" coords="1485,923,1491,977,1490,1045,1486,1081,1477,1116,1464,1150,1445,1182,1400,1232,1347,1275,1289,1311,1228,1341,1166,1365,1105,1384,994,1409,993,1404,1103,1379,1164,1360,1226,1336,1287,1306,1344,1271,1396,1228,1441,1178,1459,1148,1472,1115,1480,1080,1485,1045,1485,977,1480,924"/>
+<area shape="rect" id="Node000021" title=" " alt="" coords="1544,855,1593,924"/>
+<area shape="poly" id="edge22_Node000001_Node000021" title=" " alt="" coords="1576,924,1581,989,1578,1072,1571,1117,1559,1160,1540,1201,1514,1238,1479,1266,1426,1293,1362,1318,1289,1340,1134,1378,994,1405,993,1400,1133,1373,1288,1335,1360,1313,1424,1288,1476,1262,1510,1234,1536,1198,1554,1158,1566,1115,1573,1072,1576,989,1571,924"/>
 </map>

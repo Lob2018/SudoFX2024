@@ -17,5 +17,6 @@ var namespacefr_1_1softsf_1_1sudokufx_1_1utils =
     [ "MyLogback", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback" ],
     [ "MyLogbackUTest", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback_u_test" ],
     [ "MyRegex", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex" ],
-    [ "MyRegexUTest", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex_u_test" ]
+    [ "MyRegexUTest", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex_u_test" ],
+    [ "SecureRandomGenerator", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_secure_random_generator.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_secure_random_generator" ]
 ];

@@ -1,0 +1,18 @@
+<map id="fr.softsf.sudokufx.utils.sudoku.GridMaster.genererLaGrilleAResoudre" name="fr.softsf.sudokufx.utils.sudoku.GridMaster.genererLaGrilleAResoudre">
+<area shape="rect" id="Node000001" title="Génère une grille de Sudoku à résoudre en cachant des cases selon le niveau de difficulté." alt="" coords="5,105,247,148"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a89fed8ecc70b911e60ca540cca93ef78" title="Cache un nombre spécifié de cases dans la grille à résoudre en les remplaçant par zéro." alt="" coords="337,5,538,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="176,102,294,57,321,49,323,55,296,63,178,107"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a46d1bfadcbb911b5a718508185da341f" title="Calcule les possibilités pour chaque case de la grille de Sudoku." alt="" coords="337,139,538,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="248,137,322,145,321,150,247,142"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a5bb14564ed4b6a7cded51e1bedc72faf" title="Génère un nombre entier aléatoire dans un intervalle spécifié." alt="" coords="337,72,538,115"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="247,111,321,103,322,108,248,116"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#ac5c49fbdcc99b9d7d573d831a75c8e1d" title="Calcule la somme des possibilités de toutes les cases de la grille de Sudoku." alt="" coords="295,205,581,248"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="178,146,296,191,321,198,319,203,294,196,176,151"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_secure_random_generator.html#a591098207aad87f310d73116eb47acd2" title="Generates a random integer between 0 (inclusive) and the specified bound (exclusive)." alt="" coords="629,39,841,81"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="539,35,614,44,613,49,539,41"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#ad1a85240278a682b9cf73c8d8ec6398d" title="Initialise le tableau des possibilités pour chaque case." alt="" coords="632,139,839,181"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="539,157,616,157,616,163,539,163"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#aab28df678a8069dd22b13a687bb2ba5b" title="Élimine la valeur des possibilités des cases alentours." alt="" coords="889,139,1091,181"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="839,157,874,157,874,163,839,163"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="539,79,613,71,614,76,539,85"/>
+</map>

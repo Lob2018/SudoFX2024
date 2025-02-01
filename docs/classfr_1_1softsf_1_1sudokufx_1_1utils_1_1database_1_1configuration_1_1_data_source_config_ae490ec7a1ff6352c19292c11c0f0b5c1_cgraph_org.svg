@@ -59,10 +59,10 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_keystore.html#a5ec3c1f09b73ee031b270efd4ded0ce0" target="_top" xlink:title="Get database password.">
-<polygon fill="white" stroke="#666666" points="686.62,-157 545.38,-157 545.38,-125 686.62,-125 686.62,-157"/>
-<text text-anchor="start" x="553.38" y="-143.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.interfaces.</text>
-<text text-anchor="middle" x="616" y="-131.5" font-family="Helvetica,sans-Serif" font-size="10.00">IKeystore.getPassword</text>
+<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore.html#a4035c6a874207a20aa0740af0594742a" target="_top" xlink:title="Get database password.">
+<polygon fill="white" stroke="#666666" points="715.88,-157 516.12,-157 516.12,-125 715.88,-125 715.88,-157"/>
+<text text-anchor="start" x="524.12" y="-143.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.utils.database.keystore.</text>
+<text text-anchor="middle" x="616" y="-131.5" font-family="Helvetica,sans-Serif" font-size="10.00">ApplicationKeystore.getPassword</text>
 </a>
 </g>
 </g>
@@ -70,18 +70,18 @@
 <g id="edge3_Node000002_Node000004" class="edge">
 <title>Node2&#45;&gt;Node4</title>
 <g id="a_edge3_Node000002_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M471.69,-141C492.49,-141 513.95,-141 533.72,-141"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="533.64,-144.5 543.64,-141 533.64,-137.5 533.64,-144.5"/>
+<path fill="none" stroke="#63b8ff" d="M471.69,-141C482.55,-141 493.6,-141 504.49,-141"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="504.25,-144.5 514.25,-141 504.25,-137.5 504.25,-144.5"/>
 </a>
 </g>
 </g>
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_keystore.html#a8b68edc0def5161907fbd2f55b0940f3" target="_top" xlink:title="Get database username.">
-<polygon fill="white" stroke="#666666" points="686.62,-107 545.38,-107 545.38,-75 686.62,-75 686.62,-107"/>
-<text text-anchor="start" x="553.38" y="-93.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.interfaces.</text>
-<text text-anchor="middle" x="616" y="-81.5" font-family="Helvetica,sans-Serif" font-size="10.00">IKeystore.getUsername</text>
+<g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore.html#a3cebafd3f87c717fc974513f34c9de39" target="_top" xlink:title="Get database username.">
+<polygon fill="white" stroke="#666666" points="715.88,-107 516.12,-107 516.12,-75 715.88,-75 715.88,-107"/>
+<text text-anchor="start" x="524.12" y="-93.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.utils.database.keystore.</text>
+<text text-anchor="middle" x="616" y="-81.5" font-family="Helvetica,sans-Serif" font-size="10.00">ApplicationKeystore.getUsername</text>
 </a>
 </g>
 </g>
@@ -89,8 +89,8 @@
 <g id="edge4_Node000002_Node000005" class="edge">
 <title>Node2&#45;&gt;Node5</title>
 <g id="a_edge4_Node000002_Node000005"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M446.28,-124.56C474.45,-118.96 505.91,-112.7 533.95,-107.12"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="534.31,-110.62 543.44,-105.23 532.95,-103.75 534.31,-110.62"/>
+<path fill="none" stroke="#63b8ff" d="M446.28,-124.56C470.23,-119.8 496.55,-114.56 521.14,-109.67"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="521.68,-113.13 530.81,-107.75 520.32,-106.26 521.68,-113.13"/>
 </a>
 </g>
 </g>
@@ -259,7 +259,7 @@
 <!-- Node11 -->
 <g id="Node000011" class="node">
 <title>Node11</title>
-<g id="a_Node000011"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_encryption_service.html#a605da446a6ec28faa7c6e1d26a4cb2ca" target="_top" xlink:title="Decrypt original.">
+<g id="a_Node000011"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_encryption_service.html#a605da446a6ec28faa7c6e1d26a4cb2ca" target="_top" xlink:title="Decrypts the given cipher text using AES&#45;GCM decryption.">
 <polygon fill="white" stroke="#666666" points="1449,-232 1307.75,-232 1307.75,-200 1449,-200 1449,-232"/>
 <text text-anchor="start" x="1315.75" y="-218.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.interfaces.</text>
 <text text-anchor="middle" x="1378.38" y="-206.5" font-family="Helvetica,sans-Serif" font-size="10.00">IEncryptionService.decrypt</text>
@@ -297,7 +297,7 @@
 <!-- Node15 -->
 <g id="Node000015" class="node">
 <title>Node15</title>
-<g id="a_Node000015"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_encryption_service.html#a7cd39caadae83b3502b56b96d349cfc5" target="_top" xlink:title="Encrypt original.">
+<g id="a_Node000015"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_encryption_service.html#a7cd39caadae83b3502b56b96d349cfc5" target="_top" xlink:title="Encrypts the given string using AES&#45;GCM encryption.">
 <polygon fill="white" stroke="#666666" points="1449,-182 1307.75,-182 1307.75,-150 1449,-150 1449,-182"/>
 <text text-anchor="start" x="1315.75" y="-168.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.interfaces.</text>
 <text text-anchor="middle" x="1378.38" y="-156.5" font-family="Helvetica,sans-Serif" font-size="10.00">IEncryptionService.encrypt</text>

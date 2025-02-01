@@ -8,15 +8,17 @@
 <area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="189,113,263,132,262,137,188,118"/>
 <area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_software_service.html#a74d93b9d4144d91d01a4b02369265f0f" title=" " alt="" coords="541,72,753,115"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="479,91,525,91,525,96,479,96"/>
-<area shape="rect" id="Node000004" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_software_mapper.html#a85adc191251bde9870609d4b2cb23ee6" title="Maps a SoftwareDto object to a Software object." alt="" coords="814,72,1103,115"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="754,91,799,91,799,96,754,96"/>
-<area shape="rect" id="Node000005" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_software_mapper.html#addc8516cb5cc6171c663e132d5fdddd6" title="Maps a Software object to a SoftwareDto object." alt="" coords="840,5,1077,48"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="749,69,840,49,841,54,751,74"/>
+<area shape="rect" id="Node000004" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_software_mapper.html#a85adc191251bde9870609d4b2cb23ee6" title="Maps a SoftwareDto object to a Software object." alt="" coords="814,105,1103,148"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="754,102,799,107,799,112,754,107"/>
+<area shape="rect" id="Node000005" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_software_mapper.html#addc8516cb5cc6171c663e132d5fdddd6" title="Maps a Software object to a SoftwareDto object." alt="" coords="840,39,1077,81"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="754,79,825,72,825,77,754,85"/>
 <area shape="rect" id="Node000007" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_software_repository.html#ae83142c4226c94b3b24f050848ae74c4" title=" " alt="" coords="528,5,766,48"/>
 <area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="459,24,513,24,513,29,459,29"/>
-<area shape="poly" id="edge10_Node000008_Node000003" title=" " alt="" coords="457,135,538,116,539,121,458,141"/>
-<area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_full_menu_view_model.html#a99e8ff186f421e303199bb273f082c40" title=" " alt="" coords="540,139,754,181"/>
-<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="481,157,525,157,525,163,481,163"/>
-<area shape="rect" id="Node000010" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_full_menu_view_model.html#a574eda9c01df428c38524cc5acf49fbf" title=" " alt="" coords="837,139,1080,181"/>
-<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="755,157,821,157,821,163,755,163"/>
+<area shape="poly" id="edge11_Node000008_Node000003" title=" " alt="" coords="457,135,538,116,539,121,458,141"/>
+<area shape="rect" id="Node000009" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_grid_master.html#a7ae916d7f64607637b7bf5bf33fd0eb3" title="Crée les grilles de Sudoku (résolue et à résoudre) en fonction du niveau de difficulté." alt="" coords="553,139,741,181"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="481,157,537,157,537,163,481,163"/>
+<area shape="rect" id="Node000010" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_full_menu_view_model.html#a99e8ff186f421e303199bb273f082c40" title=" " alt="" coords="540,205,754,248"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="458,179,539,199,538,204,457,185"/>
+<area shape="rect" id="Node000011" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_full_menu_view_model.html#a574eda9c01df428c38524cc5acf49fbf" title=" " alt="" coords="837,205,1080,248"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="755,224,821,224,821,229,755,229"/>
 </map>
