@@ -1,6 +1,7 @@
 package fr.softsf.sudokufx.viewmodel;
 
 import fr.softsf.sudokufx.dto.SoftwareDto;
+import fr.softsf.sudokufx.interfaces.IGridMaster;
 import fr.softsf.sudokufx.service.SoftwareService;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
@@ -8,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDateTime;
+import java.util.Arrays;
 import java.util.Optional;
 
 /**
@@ -16,11 +18,14 @@ import java.util.Optional;
 @Component
 public class FullMenuViewModel {
     private final SoftwareService softwareService;
+    private final IGridMaster iGridMaster;
+
     private StringProperty welcome;
 
     @Autowired
-    public FullMenuViewModel(SoftwareService softwareService) {
+    public FullMenuViewModel(SoftwareService softwareService, IGridMaster iGridMaster) {
         this.softwareService = softwareService;
+        this.iGridMaster = iGridMaster;
     }
 
     public StringProperty welcomeProperty() {
@@ -56,9 +61,29 @@ public class FullMenuViewModel {
 
         Optional<SoftwareDto> updatedSoftwareOptional = softwareService.updateSoftware(softwareDto);
         if (updatedSoftwareOptional.isPresent()) {
+            int niveau=3;
+            int[][] grilles = iGridMaster.creerLesGrilles(3);
+            String grilleResolue = Arrays.toString(grilles[0]);
+            String grilleAResoudre = Arrays.toString(grilles[1]);
+            StringBuilder formattedGrilleResolue = new StringBuilder();
+            StringBuilder formattedGrilleAResoudre = new StringBuilder();
+            for (int i = 0; i < grilleResolue.length(); i++) {
+                formattedGrilleResolue.append(grilleResolue.charAt(i));
+                formattedGrilleAResoudre.append(grilleAResoudre.charAt(i));
+                // Ajouter un saut de ligne tous les 9 caractères
+                if ((i + 1) % 27 == 0 && i + 1 < grilleResolue.length()) {
+                    formattedGrilleResolue.append("\n");
+                    formattedGrilleAResoudre.append("\n");
+                }
+            }
+
+
             System.out.println("###### UPDATED ####### " + updatedSoftwareOptional.get());
             setWelcome("Version : " + updatedSoftwareOptional.get().currentversion() +
-                    "\nMise à jour : " + updatedSoftwareOptional.get().updatedat());
+                    "\nMise à jour : " + updatedSoftwareOptional.get().updatedat() +
+                    "\n" + formattedGrilleResolue +
+                    "\n" + formattedGrilleAResoudre +
+                    "\n\n Niveau "+niveau+"/3 avec " + grilles[2][0] + "% de difficuté");
         } else {
             System.out.println("Erreur lors de la mise à jour du logiciel.");
         }
