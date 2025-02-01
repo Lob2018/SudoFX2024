@@ -1,9 +1,5 @@
 package fr.softsf.sudokufx.view;
 
-import java.util.Objects;
-
-import org.springframework.beans.factory.annotation.Autowired;
-
 import fr.softsf.sudokufx.SudoMain;
 import fr.softsf.sudokufx.interfaces.ISplashScreenView;
 import fr.softsf.sudokufx.service.FxmlService;
@@ -26,6 +22,10 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javafx.util.Duration;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import java.util.Objects;
+import java.util.Random;
 
 /**
  * View class for the full menu screen of the Sudoku application. This class is
@@ -75,9 +75,18 @@ public final class FullMenuView implements SudoMain.IPrimaryStageView {
      */
     @FXML
     private void onHelloButtonClick(ActionEvent event) {
-        toaster.addToastWithDuration("INFO 🔹 Work in progress... 🔹", MyEnums.ToastLevels.INFO, 6000);
-        toaster.addToast("WARN", MyEnums.ToastLevels.WARN);
-        toaster.addToast("(130 CHAR) ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR", MyEnums.ToastLevels.ERROR);
+
+        switch (new Random().nextInt(3)) {
+            case 0:
+                toaster.addToastWithDuration("INFO 🔹 Work in progress... 🔹", MyEnums.ToastLevels.INFO, 6000);
+                break;
+            case 1:
+                toaster.addToast("WARN", MyEnums.ToastLevels.WARN);
+                break;
+            default:
+                toaster.addToast("(130 CHAR) ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR", MyEnums.ToastLevels.ERROR);
+                break;
+        }
         fullMenuViewModel.test();
 
 //        fxmlService.setRootByFXMLName("crashscreen-view");
