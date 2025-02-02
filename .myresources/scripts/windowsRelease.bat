@@ -35,9 +35,11 @@
 	echo # Main's path         :"%4"
 	echo # JRE version         :"%5"
 	echo # Deployment folder   :"%6"
+	echo # Build timestamp     :"%7"
     echo.
 	set "jarName=%1-%2.jar"
-	set "year=%date:~6,4%"
+	set "timestamp=%7"
+	set "year=%timestamp:~0,4%"
 	set "appNameWithTheJVM=%1_JVM"
 	echo.
 	echo # OUTPUT   : CLEAN
