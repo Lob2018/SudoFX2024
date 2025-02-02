@@ -85,7 +85,7 @@ application allows you to solve the current Sudoku grid, but also other entries 
 
 ### Mockup
 
-- [The app mockup (Figma)](https://www.figma.com/design/GiSwlg2mZofXalf1Quaa5w/SudokuFX?node-id=0-1&t=smJqt7CQuD0zZuUP-1)
+- [The application mockup (Figma)](https://www.figma.com/design/GiSwlg2mZofXalf1Quaa5w/SudokuFX?node-id=0-1&t=smJqt7CQuD0zZuUP-1)
 
 > [!IMPORTANT]
 >
@@ -211,18 +211,16 @@ during installation; to continue the installation click on **additional informat
     - Drag the application to the Trash
 
 > [!IMPORTANT]
->- Windows
->   - To completely delete your app data and logs, you need to manually delete this folder:
->     
->     **C:/Users/\<USERNAME\>**[^1]**/AppData/Local/Soft64.fr/SudokuFX/**.
->- Linux
->   - To completely delete your app data and logs, you need to manually delete this folder:
->     
->     **/home/\<USERNAME\>**[^1]**/.local/share/Soft64.fr/SudokuFX**.
->- MacOS
->   - To completely delete your app data and logs, you need to manually delete this folder:
->     
->     **/Users/\<USERNAME\>**[^1]**/Library/Application Support/Soft64.fr/SudokuFX**.
+> **To completely delete your application data and logs, you need to manually delete this folder:**
+>- Windows :
+   >
+   >     C:/Users/\<USERNAME\>**[^1]**/AppData/Local/Soft64.fr/SudokuFX
+>- Linux :
+   >
+   >     /home/\<USERNAME\>**[^1]**/.local/share/Soft64.fr/SudokuFX
+>- MacOS :
+   >
+   >     /Users/\<USERNAME\>**[^1]**/Library/Application Support/Soft64.fr/SudokuFX
 
 [^1]: Replace \<USERNAME\> with your currently logged-in username.
 
