@@ -135,7 +135,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_secure_random_generator.html#a591098207aad87f310d73116eb47acd2" target="_top" xlink:title="Generates a random integer between 0 (inclusive) and the specified bound (exclusive).">
+<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_secure_random_generator.html#ab000b11e58735924b9fca8db827374ad" target="_top" xlink:title="Generates a random integer between 0 (inclusive) and the specified bound (exclusive).">
 <polygon fill="white" stroke="#666666" points="1039.25,-253 880,-253 880,-221 1039.25,-221 1039.25,-253"/>
 <text text-anchor="start" x="888" y="-239.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.utils.</text>
 <text text-anchor="middle" x="959.62" y="-227.5" font-family="Helvetica,sans-Serif" font-size="10.00">SecureRandomGenerator.nextInt</text>

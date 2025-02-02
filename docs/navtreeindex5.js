@@ -189,7 +189,7 @@ var NAVTREEINDEX5 =
 "namespacefr_1_1softsf_1_1sudokufx.html":[2,0,0,0,0],
 "namespacefr_1_1softsf_1_1sudokufx_1_1annotations.html":[2,0,0,0,0,0],
 "namespacefr_1_1softsf_1_1sudokufx_1_1dto.html":[2,0,0,0,0,1],
-"namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a0033056210eadaae86cf66070d71ce71":[2,0,0,0,0,1,3],
+"namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a129bc05a615fd7ba80f98e674f8b7715":[2,0,0,0,0,1,3],
 "namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a1ec66747e8dc472d375db5495929d95e":[2,0,0,0,0,1,5],
 "namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a57e3465d00d6e83a9d0fd8c03223868d":[2,0,0,0,0,1,6],
 "namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a5cb837a4b352084f4dab3a4bc405d19c":[2,0,0,0,0,1,7],

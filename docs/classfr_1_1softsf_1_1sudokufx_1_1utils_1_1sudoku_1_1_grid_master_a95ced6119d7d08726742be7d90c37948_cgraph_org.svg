@@ -40,7 +40,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_secure_random_generator.html#a591098207aad87f310d73116eb47acd2" target="_top" xlink:title="Generates a random integer between 0 (inclusive) and the specified bound (exclusive).">
+<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_secure_random_generator.html#ab000b11e58735924b9fca8db827374ad" target="_top" xlink:title="Generates a random integer between 0 (inclusive) and the specified bound (exclusive).">
 <polygon fill="white" stroke="#666666" points="356,-32 196.75,-32 196.75,0 356,0 356,-32"/>
 <text text-anchor="start" x="204.75" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.utils.</text>
 <text text-anchor="middle" x="276.38" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">SecureRandomGenerator.nextInt</text>

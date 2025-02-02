@@ -4,7 +4,7 @@
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="162,169,271,124,291,117,293,122,273,129,164,174"/>
 <area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_toaster_v_box.html#ab87668da59b32d671cd3cca8975382f0" title="Adds a toast notification with a specified duration." alt="" coords="272,139,504,181"/>
 <area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="224,177,256,173,257,179,224,183"/>
-<area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_secure_random_generator.html#a591098207aad87f310d73116eb47acd2" title="Generates a random integer between 0 (inclusive) and the specified bound (exclusive)." alt="" coords="282,205,494,248"/>
+<area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_secure_random_generator.html#ab000b11e58735924b9fca8db827374ad" title="Generates a random integer between 0 (inclusive) and the specified bound (exclusive)." alt="" coords="282,205,494,248"/>
 <area shape="poly" id="edge11_Node000001_Node000009" title=" " alt="" coords="224,204,266,209,266,214,224,209"/>
 <area shape="rect" id="Node000010" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_full_menu_view_model.html#a2eca0432ba5e82eeea338615f06d5eea" title=" " alt="" coords="291,272,484,315"/>
 <area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="164,213,273,258,293,264,291,269,271,262,162,218"/>

@@ -47,7 +47,7 @@ var searchData=
   ['githubusercontent_20com_20lob2018_20sudokufx_20master_20myresources_20design_5fand_5fmodeling_20images_20sudokufx_5fin_5faction_20jpg_20alt_20sudokufx_20in_20action_20a_44',['&lt;a href=&quot;https://github.com/Lob2018/SudokuFX/releases/latest&quot; target=&quot;_blank&quot; &gt;&lt;img src=&quot;https://raw.githubusercontent.com/Lob2018/SudokuFX/master/.myresources/design_and_modeling/images/SudokuFX_in_action.jpg&quot; alt=&quot;SudokuFX in action&quot;/&gt;&lt;/a&gt;',['../md__r_e_a_d_m_e.html#autotoc_md3',1,'']]],
   ['grid_45',['Grid',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html',1,'fr::softsf::sudokufx::model']]],
   ['grid_2ejava_46',['Grid.java',['../_grid_8java.html',1,'']]],
-  ['griddto_47',['GridDto',['../namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a0033056210eadaae86cf66070d71ce71',1,'fr::softsf::sudokufx::dto']]],
+  ['griddto_47',['GridDto',['../namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a129bc05a615fd7ba80f98e674f8b7715',1,'fr::softsf::sudokufx::dto']]],
   ['griddto_2ejava_48',['GridDto.java',['../_grid_dto_8java.html',1,'']]],
   ['gridid_49',['gridid',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a97e30ebf45c0f708967d8d7a54cda08c',1,'fr.softsf.sudokufx.model.Game.gridid'],['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#a9d4bc2b1dbdbd486f5d4b7b593bf1281',1,'fr.softsf.sudokufx.model.Grid.gridid']]],
   ['gridmaster_50',['GridMaster',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html',1,'fr.softsf.sudokufx.utils.sudoku.GridMaster'],['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a3a8f2b69240160d896b860a61eb7a059',1,'fr.softsf.sudokufx.utils.sudoku.GridMaster.GridMaster()']]],

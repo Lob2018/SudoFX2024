@@ -28,6 +28,6 @@ var searchData=
   ['gettoastinfo_25',['getToastInfo',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_toaster_v_box.html#a4b5a9581798c4700253d244f3e09cb57',1,'fr::softsf::sudokufx::view::components::ToasterVBox']]],
   ['getusername_26',['getUsername',['../interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_keystore.html#a8b68edc0def5161907fbd2f55b0940f3',1,'fr.softsf.sudokufx.interfaces.IKeystore.getUsername()'],['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore.html#a3cebafd3f87c717fc974513f34c9de39',1,'fr.softsf.sudokufx.utils.database.keystore.ApplicationKeystore.getUsername()']]],
   ['getvalue_27',['getValue',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_i18n.html#a7095fa285a498c3f20bf33488a69d22c',1,'fr::softsf::sudokufx::utils::I18n']]],
-  ['griddto_28',['GridDto',['../namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a0033056210eadaae86cf66070d71ce71',1,'fr::softsf::sudokufx::dto']]],
+  ['griddto_28',['GridDto',['../namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a129bc05a615fd7ba80f98e674f8b7715',1,'fr::softsf::sudokufx::dto']]],
   ['gridmaster_29',['GridMaster',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a3a8f2b69240160d896b860a61eb7a059',1,'fr::softsf::sudokufx::utils::sudoku::GridMaster']]]
 ];

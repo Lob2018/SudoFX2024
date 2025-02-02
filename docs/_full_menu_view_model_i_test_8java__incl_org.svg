@@ -23,8 +23,8 @@
 <g id="Node000002" class="node">
 <title>Node2</title>
 <g id="a_Node000002"><a xlink:title=" ">
-<polygon fill="#e0e0e0" stroke="#999999" points="182.88,-20 16.12,-20 16.12,0 182.88,0 182.88,-20"/>
-<text text-anchor="middle" x="99.5" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.dto.SoftwareDto</text>
+<polygon fill="#e0e0e0" stroke="#999999" points="169,-20 30,-20 30,0 169,0 169,-20"/>
+<text text-anchor="middle" x="99.5" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.SudoMain</text>
 </a>
 </g>
 </g>

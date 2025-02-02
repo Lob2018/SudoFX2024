@@ -344,20 +344,21 @@
 <g id="Node000012" class="node">
 <title>Node12</title>
 <g id="a_Node000012"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_secure_random_generator.html" target="_top" xlink:title="The SecureRandomGenerator class provides methods to generate random numbers securely using Java&#39;s Sec...">
-<polygon fill="white" stroke="none" points="721.38,-576 587.12,-576 587.12,-468 721.38,-468 721.38,-576"/>
-<text text-anchor="start" x="599.12" y="-562.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.utils.</text>
-<text text-anchor="start" x="599.12" y="-550.5" font-family="Helvetica,sans-Serif" font-size="10.00">SecureRandomGenerator</text>
-<text text-anchor="start" x="652.75" y="-534.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="591.12" y="-518.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="601.12" y="-518.5" font-family="Helvetica,sans-Serif" font-size="10.00">SecureRandomGenerator()</text>
-<text text-anchor="start" x="591.12" y="-502.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="601.12" y="-502.5" font-family="Helvetica,sans-Serif" font-size="10.00">int nextInt(int bound)</text>
-<text text-anchor="start" x="591.12" y="-486.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="601.12" y="-486.5" font-family="Helvetica,sans-Serif" font-size="10.00">int nextInt(int origin,</text>
-<text text-anchor="start" x="601.12" y="-474.5" font-family="Helvetica,sans-Serif" font-size="10.00"> int bound)</text>
-<polygon fill="#666666" stroke="#666666" points="587.12,-546 587.12,-546 721.38,-546 721.38,-546 587.12,-546"/>
-<polygon fill="#666666" stroke="#666666" points="587.12,-530 587.12,-530 721.38,-530 721.38,-530 587.12,-530"/>
-<polygon fill="none" stroke="#666666" points="587.12,-468 587.12,-576 721.38,-576 721.38,-468 587.12,-468"/>
+<polygon fill="white" stroke="none" points="721.38,-582 587.12,-582 587.12,-462 721.38,-462 721.38,-582"/>
+<text text-anchor="start" x="599.12" y="-568.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.utils.</text>
+<text text-anchor="start" x="599.12" y="-556.5" font-family="Helvetica,sans-Serif" font-size="10.00">SecureRandomGenerator</text>
+<text text-anchor="start" x="652.75" y="-540.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="591.12" y="-524.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="601.12" y="-524.5" font-family="Helvetica,sans-Serif" font-size="10.00">SecureRandomGenerator()</text>
+<text text-anchor="start" x="591.12" y="-508.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="601.12" y="-508.5" font-family="Helvetica,sans-Serif" font-size="10.00">final int nextInt(int</text>
+<text text-anchor="start" x="601.12" y="-496.5" font-family="Helvetica,sans-Serif" font-size="10.00"> bound)</text>
+<text text-anchor="start" x="591.12" y="-480.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="601.12" y="-480.5" font-family="Helvetica,sans-Serif" font-size="10.00">final int nextInt(int</text>
+<text text-anchor="start" x="601.12" y="-468.5" font-family="Helvetica,sans-Serif" font-size="10.00"> origin, int bound)</text>
+<polygon fill="#666666" stroke="#666666" points="587.12,-552 587.12,-552 721.38,-552 721.38,-552 587.12,-552"/>
+<polygon fill="#666666" stroke="#666666" points="587.12,-536 587.12,-536 721.38,-536 721.38,-536 587.12,-536"/>
+<polygon fill="none" stroke="#666666" points="587.12,-462 587.12,-582 721.38,-582 721.38,-462 587.12,-462"/>
 </a>
 </g>
 </g>
@@ -365,8 +366,8 @@
 <g id="edge12_Node000001_Node000012" class="edge">
 <title>Node12&#45;&gt;Node1</title>
 <g id="a_edge12_Node000001_Node000012"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M654.25,-468.15C654.25,-414.39 654.25,-328.92 654.25,-256.48"/>
-<polygon fill="none" stroke="#63b8ff" points="654.25,-256.49 650.25,-250.49 654.25,-244.49 658.25,-250.49 654.25,-256.49"/>
+<path fill="none" stroke="#63b8ff" d="M654.25,-462.27C654.25,-408.33 654.25,-326.41 654.25,-256.58"/>
+<polygon fill="none" stroke="#63b8ff" points="654.25,-256.59 650.25,-250.59 654.25,-244.59 658.25,-250.59 654.25,-256.59"/>
 </a>
 </g>
 <text text-anchor="middle" x="713.12" y="-270.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> ~secureRandomGenerator</text>
@@ -389,8 +390,8 @@
 <g id="edge13_Node000012_Node000013" class="edge">
 <title>Node13&#45;&gt;Node12</title>
 <g id="a_edge13_Node000012_Node000013"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M643.27,-834.09C643.34,-813.65 643.57,-783.94 644.25,-758 645.75,-700.72 648.61,-635.64 650.89,-588.51"/>
-<polygon fill="none" stroke="#63b8ff" points="650.88,-588.6 647.18,-582.41 651.47,-576.62 655.17,-582.8 650.88,-588.6"/>
+<path fill="none" stroke="#63b8ff" d="M643.27,-834.09C643.34,-813.65 643.57,-783.94 644.25,-758 645.69,-703.27 648.36,-641.4 650.58,-594.89"/>
+<polygon fill="none" stroke="#63b8ff" points="650.59,-594.78 646.88,-588.59 651.17,-582.79 654.87,-588.98 650.59,-594.78"/>
 </a>
 </g>
 <text text-anchor="middle" x="680.25" y="-760.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;secureRandom</text>

@@ -5,7 +5,7 @@ var namespacefr_1_1softsf_1_1sudokufx =
       [ "BackgroundDto", "namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#ab71438b60cd714ddb76aa22248390565", null ],
       [ "GameDto", "namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#af115ca634d2f50876b34c8c03ba20226", null ],
       [ "GameLevelDto", "namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a7ea3450705900e16f8ac65f20aff66dd", null ],
-      [ "GridDto", "namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a0033056210eadaae86cf66070d71ce71", null ],
+      [ "GridDto", "namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a129bc05a615fd7ba80f98e674f8b7715", null ],
       [ "MenuDto", "namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#aac5a3bff51a3776e2404665f8fb83aae", null ],
       [ "PlayerDto", "namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a1ec66747e8dc472d375db5495929d95e", null ],
       [ "PlayerLanguageDto", "namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a57e3465d00d6e83a9d0fd8c03223868d", null ],
