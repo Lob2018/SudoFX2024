@@ -24,9 +24,9 @@ public class GridMaster implements IGridMaster {
     private static final int moyenMinCachees = 45;
     private static final int moyenMaxCachees = 49;
     private static final int difficileMaxCachees = 59;
-    // Difficulté (0 à 41391) de la grille en fonction du niveau
-    private static final int moyenMinDifficulte = 13797;
-    private static final int moyenMaxDifficulte = 27594;
+    // Difficulté (théorique 0 à 41391, pratique 4800 à 40000) de la grille en fonction du niveau
+    private static final int moyenMinDifficulte = 16533;
+    private static final int moyenMaxDifficulte = 28266;
 
     private final SecureRandomGenerator secureRandomGenerator;
 
@@ -317,7 +317,7 @@ public class GridMaster implements IGridMaster {
         // En fonction du niveau, cacher un certain nombre de cases et tenir compte de la difficulté
         int sommeDesPossibilites = genererLaGrilleAResoudre(niveau, grilleResolue, grilleAResoudre);
         // le pourcentage de difficulté estimé
-        int pourcentageDeDifficulte = ((sommeDesPossibilites - 4900) * 100) / (39500 - 4900);
+        int pourcentageDeDifficulte = ((sommeDesPossibilites - 4800) * 100) / (40000 - 4800);
         // Limiter le pourcentage entre 0 et 100
         pourcentageDeDifficulte = pourcentageDeDifficulte < 0 ? 0 : Math.min(pourcentageDeDifficulte, 100);
         return new int[][]{grilleResolue, grilleAResoudre, new int[]{pourcentageDeDifficulte}};
