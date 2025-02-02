@@ -1,5 +1,6 @@
 package fr.softsf.sudokufx.integration.viewmodel;
 
+import fr.softsf.sudokufx.SudoMain;
 import fr.softsf.sudokufx.dto.SoftwareDto;
 import fr.softsf.sudokufx.service.SoftwareService;
 import fr.softsf.sudokufx.utils.database.configuration.DataSourceConfigForTests;
@@ -20,7 +21,7 @@ import java.util.Optional;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-@SpringBootTest
+@SpringBootTest(classes = {SudoMain.class})
 @ActiveProfiles("test")
 @Import(DataSourceConfigForTests.class)
 @ExtendWith(SystemStubsExtension.class)
