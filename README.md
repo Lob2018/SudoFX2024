@@ -114,22 +114,9 @@ application allows you to solve the current Sudoku grid, but also other entries 
   - Clone the repository
   - Select the project's JDK
     - File > Project Structure > SDK > Add SDK from disk (select the JDK)
-  - Run the app at top right corner (SudoMain.java is the main class)
-    - Run / Debug Configurations > Edit Configurations...
-      - Run (in order to run the application)
-        - Add New Configuration > Maven > Run: clean javafx:run > Apply
-        <p>
-          <img alt="Run with Maven for JavaFX" src="./.myresources/design_and_modeling/images/Run_with_Maven_for_JavaFX.jpg">
-        </p>
-                
-        - Run **SudokuFX [clean,javafx:run]**
-      - Run with details (optional)
-        - Add New Configuration > Maven > Run: clean -X javafx:run -Dprism.verbose=true -f pom.xml > Apply
-        - Run **SudokuFX [run details]** 
-      - Run that generate documentation with Doxygen 
-        - Install Doxygen and GraphViz (Doxygen must be added to the system PATH).
-        - Add New Configuration > Maven > Run: clean -X javafx:run prepare-package -P generate-docs -f pom.xml > Apply
-        - Run **SudokuFX [prepare-package]**
+  - Run Maven configurations (in the top right corner)
+    - SudoMain.java is the main class
+    - Maven run configurations are saved as project files in .idea/runConfigurations
 
 ## Installation
 
