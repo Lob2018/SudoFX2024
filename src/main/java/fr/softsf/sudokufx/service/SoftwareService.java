@@ -5,6 +5,7 @@ import fr.softsf.sudokufx.interfaces.mapper.ISoftwareMapper;
 import fr.softsf.sudokufx.model.Software;
 import fr.softsf.sudokufx.repository.SoftwareRepository;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -17,6 +18,7 @@ public class SoftwareService {
     private static final ISoftwareMapper iSoftwareMapper = ISoftwareMapper.INSTANCE;
     private final SoftwareRepository softwareRepository;
 
+    @Autowired
     public SoftwareService(SoftwareRepository softwareRepository) {
         this.softwareRepository = softwareRepository;
     }
