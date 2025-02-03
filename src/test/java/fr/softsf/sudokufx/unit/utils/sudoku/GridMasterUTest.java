@@ -9,7 +9,7 @@ import org.junit.jupiter.params.provider.ValueSource;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class GridMasterUTest {
+class GridMasterUTest {
     private final IGridMaster iGridMaster = new GridMaster(new SecureRandomGenerator());
 
     @Test
