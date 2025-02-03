@@ -157,10 +157,12 @@ public final class ToasterVBox extends VBox {
      */
     private void temporizeToast(final Button toast, final double duration) {
         Timeline timeline = new Timeline(new KeyFrame(Duration.millis(duration), event -> {
-            Node focusedNode = this.getScene().getFocusOwner();
             getChildren().remove(toast);
-            if (focusedNode != null) {
-                focusedNode.requestFocus();
+            if(this.getScene() != null){
+                Node focusedNode = this.getScene().getFocusOwner();
+                if (focusedNode != null) {
+                    focusedNode.requestFocus();
+                }
             }
         }));
         timeline.play();
