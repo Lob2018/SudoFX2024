@@ -27,8 +27,8 @@ class OsFolderFactoryManagerUTest {
 
     @Test
     void testOsFoldersWithInvalidOs() {
+        osFolderFactoryManager.setWrongOsForTests();
         assertThrows(IllegalArgumentException.class, () -> {
-            osFolderFactoryManager.setWrongOsForTests();
             osFolderFactoryManager.osFolderFactory();
         }, "Unsupported OS: ");
     }
