@@ -18,15 +18,14 @@ public class GridMaster implements IGridMaster {
     private static final int ORDRE = 3;
     private static final int DIMENSION = ORDRE * ORDRE;
     private static final int NOMBRE_CASES = DIMENSION * DIMENSION;
-    private static final String CHIFFRES = "0123456789";
     // Nombre de cases à cacher en fonction du niveau
-    private static final int facileMinCachees = 35;
-    private static final int moyenMinCachees = 45;
-    private static final int moyenMaxCachees = 49;
-    private static final int difficileMaxCachees = 59;
+    private static final int FACILE_MIN_CACHEES = 35;
+    private static final int MOYEN_MIN_CACHEES = 45;
+    private static final int MOYEN_MAX_CACHEES = 49;
+    private static final int DIFFICILE_MAX_CACHEES = 59;
     // Difficulté (théorique 0 à 41391, pratique 4800 à 40000) de la grille en fonction du niveau
-    private static final int moyenMinDifficulte = 16533;
-    private static final int moyenMaxDifficulte = 28266;
+    private static final int MOYEN_MIN_DIFFICULTE = 16533;
+    private static final int MOYEN_MAX_DIFFICULTE = 28266;
 
     private final SecureRandomGenerator secureRandomGenerator;
 
@@ -181,7 +180,7 @@ public class GridMaster implements IGridMaster {
         int sommeDesPossibilites;
         return switch (niveau) {
             case 2 -> {
-                int nombreDeCasesACacher = nombreAleatoire(moyenMinCachees, moyenMaxCachees);
+                int nombreDeCasesACacher = nombreAleatoire(MOYEN_MIN_CACHEES, MOYEN_MAX_CACHEES);
                 do {
                     // copier la grilleResolue
                     System.arraycopy(grilleResolue, 0, grilleAResoudre, 0, NOMBRE_CASES);
@@ -190,11 +189,11 @@ public class GridMaster implements IGridMaster {
                     // récupérer les possibilités
                     int[] possibilites = getPossibilites(grilleAResoudre);
                     sommeDesPossibilites = sommeDesPossibilitesDeLaGrille(possibilites);
-                } while (sommeDesPossibilites < moyenMinDifficulte || sommeDesPossibilites > moyenMaxDifficulte);
+                } while (sommeDesPossibilites < MOYEN_MIN_DIFFICULTE || sommeDesPossibilites > MOYEN_MAX_DIFFICULTE);
                 yield sommeDesPossibilites;
             }
             case 3 -> {
-                int nombreDeCasesACacher = nombreAleatoire(moyenMaxCachees, difficileMaxCachees);
+                int nombreDeCasesACacher = nombreAleatoire(MOYEN_MAX_CACHEES, DIFFICILE_MAX_CACHEES);
                 do {
                     // Copier la grilleResolue
                     System.arraycopy(grilleResolue, 0, grilleAResoudre, 0, NOMBRE_CASES);
@@ -202,11 +201,11 @@ public class GridMaster implements IGridMaster {
                     cacherLesCases(nombreDeCasesACacher, grilleAResoudre);
                     // Récupérer la somme des possibilités
                     sommeDesPossibilites = sommeDesPossibilitesDeLaGrille(getPossibilites(grilleAResoudre));
-                } while (sommeDesPossibilites < moyenMaxDifficulte);
+                } while (sommeDesPossibilites < MOYEN_MAX_DIFFICULTE);
                 yield sommeDesPossibilites;
             }
             default -> {
-                int nombreDeCasesACacher = nombreAleatoire(facileMinCachees, moyenMinCachees);
+                int nombreDeCasesACacher = nombreAleatoire(FACILE_MIN_CACHEES, MOYEN_MIN_CACHEES);
                 do {
                     // Copier la grilleResolue
                     System.arraycopy(grilleResolue, 0, grilleAResoudre, 0, NOMBRE_CASES);
@@ -214,7 +213,7 @@ public class GridMaster implements IGridMaster {
                     cacherLesCases(nombreDeCasesACacher, grilleAResoudre);
                     // Récupérer la somme des possibilités
                     sommeDesPossibilites = sommeDesPossibilitesDeLaGrille(getPossibilites(grilleAResoudre));
-                } while (sommeDesPossibilites > moyenMinDifficulte);
+                } while (sommeDesPossibilites > MOYEN_MIN_DIFFICULTE);
                 yield sommeDesPossibilites;
             }
         };
