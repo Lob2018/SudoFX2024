@@ -4,6 +4,8 @@ import fr.softsf.sudokufx.interfaces.IGridMaster;
 import fr.softsf.sudokufx.utils.SecureRandomGenerator;
 import fr.softsf.sudokufx.utils.sudoku.GridMaster;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -35,63 +37,16 @@ public class GridMasterUTest {
         assertTrue(grids[2][0] >= 0 && grids[2][0] <= 100, "The unknown difficulty is set as easy and must be between 0 and 100");
     }
 
-    @Test
-    void createEasyGrids_success() {
-        int[][] grids = iGridMaster.creerLesGrilles(1);
-        assertNotNull(grids);
-        assertNotNull(grids[0]);
-        assertNotNull(grids[1]);
-        assertNotNull(grids[2]);
-        // The resolved grid
-        assertEquals(81, grids[0].length);
-        int countForResolvedGrid = 0;
-        for (int value : grids[0]) {
-            if (value == 0) countForResolvedGrid++;
-        }
-        assertEquals(0, countForResolvedGrid);
-        // The grid to be resolved
-        assertEquals(81, grids[1].length);
-        int countForToBeResolvedGrid = 0;
-        for (int value : grids[1]) {
-            if (value == 0) countForToBeResolvedGrid++;
-        }
-        assertNotEquals(0, countForToBeResolvedGrid);
-        // The difficulty
-        assertTrue(grids[2][0] >= 0 && grids[2][0] <= 100, "The easy difficulty must be between 0 and 100");
-    }
+    @ParameterizedTest
+    @ValueSource(ints = {1, 2, 3})
+    void createGrids_success(int difficulty) {
+        int[][] grids = iGridMaster.creerLesGrilles(difficulty);
 
-    @Test
-    void createMediumGrids_success() {
-        int[][] grids = iGridMaster.creerLesGrilles(2);
         assertNotNull(grids);
         assertNotNull(grids[0]);
         assertNotNull(grids[1]);
         assertNotNull(grids[2]);
-        // The resolved grid
-        assertEquals(81, grids[0].length);
-        int countForResolvedGrid = 0;
-        for (int value : grids[0]) {
-            if (value == 0) countForResolvedGrid++;
-        }
-        assertEquals(0, countForResolvedGrid);
-        // The grid to be resolved
-        assertEquals(81, grids[1].length);
-        int countForToBeResolvedGrid = 0;
-        for (int value : grids[1]) {
-            if (value == 0) countForToBeResolvedGrid++;
-        }
-        assertNotEquals(0, countForToBeResolvedGrid);
-        // The difficulty
-        assertTrue(grids[2][0] >= 0 && grids[2][0] <= 100, "The medium difficulty must be between 0 and 100");
-    }
 
-    @Test
-    void createHardGrids_success() {
-        int[][] grids = iGridMaster.creerLesGrilles(3);
-        assertNotNull(grids);
-        assertNotNull(grids[0]);
-        assertNotNull(grids[1]);
-        assertNotNull(grids[2]);
         // The resolved grid
         assertEquals(81, grids[0].length);
         int countForResolvedGrid = 0;
@@ -99,6 +54,7 @@ public class GridMasterUTest {
             if (value == 0) countForResolvedGrid++;
         }
         assertEquals(0, countForResolvedGrid);
+
         // The grid to be resolved
         assertEquals(81, grids[1].length);
         int countForToBeResolvedGrid = 0;
@@ -106,8 +62,10 @@ public class GridMasterUTest {
             if (value == 0) countForToBeResolvedGrid++;
         }
         assertNotEquals(0, countForToBeResolvedGrid);
+
         // The difficulty
-        assertTrue(grids[2][0] >= 0 && grids[2][0] <= 100, "The hard difficulty must be between 0 and 100");
+        assertTrue(grids[2][0] >= 0 && grids[2][0] <= 100,
+                "The difficulty must be between 0 and 100 for level : " + difficulty);
     }
 
     @Test
