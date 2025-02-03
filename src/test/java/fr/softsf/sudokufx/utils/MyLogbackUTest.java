@@ -83,7 +83,7 @@ class MyLogbackUTest {
 
     @Test
     void testLogEntryMessageWithInitSpringContextExitForTests() {
-        JVMApplicationProperties.setInitSpringContextExitForTests();;
+        JVMApplicationProperties.setInitSpringContextExitForTests();
         myLogback.printLogEntryMessage();
         assertFalse(JVMApplicationProperties.isSpringContextExitOnRefresh());
         assert (logWatcher.list.getLast().getFormattedMessage()).contains(ASCII_LOGO.getLogBackMessage());
