@@ -38,9 +38,9 @@ public final class FullMenuView implements SudoMain.IPrimaryStageView {
     private final Text text1 = new Text("Helloj! ");
     private final Stage primaryStage = new Stage();
     @Autowired
-    FullMenuViewModel fullMenuViewModel;
+    private FullMenuViewModel fullMenuViewModel;
     @Autowired
-    SecureRandomGenerator secureRandomGenerator;
+    private SecureRandomGenerator secureRandomGenerator;
     @Autowired
     private FxmlService fxmlService;
     @FXML
