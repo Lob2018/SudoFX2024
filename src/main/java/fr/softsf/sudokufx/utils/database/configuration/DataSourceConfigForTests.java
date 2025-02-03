@@ -2,6 +2,7 @@ package fr.softsf.sudokufx.utils.database.configuration;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
+import fr.softsf.sudokufx.annotations.ExcludedFromCoverageReportGenerated;
 import fr.softsf.sudokufx.utils.MyLogback;
 import fr.softsf.sudokufx.utils.database.keystore.ApplicationKeystore;
 import org.flywaydb.core.Flyway;
@@ -16,6 +17,7 @@ import static fr.softsf.sudokufx.utils.MyEnums.Paths.DATABASE_NAME;
 @Configuration
 @Profile("test")
 @PropertySource("classpath:application-test.properties")
+@ExcludedFromCoverageReportGenerated
 public class DataSourceConfigForTests {
 
     /**
