@@ -13,6 +13,11 @@ var annotated_dup =
             ] ]
           ] ],
           [ "integration", null, [
+            [ "utils", null, [
+              [ "database", "namespacefr_1_1softsf_1_1sudokufx_1_1integration_1_1utils_1_1database.html", [
+                [ "GenerateSecretUTest", "classfr_1_1softsf_1_1sudokufx_1_1integration_1_1utils_1_1database_1_1_generate_secret_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1integration_1_1utils_1_1database_1_1_generate_secret_u_test" ]
+              ] ]
+            ] ],
             [ "viewmodel", "namespacefr_1_1softsf_1_1sudokufx_1_1integration_1_1viewmodel.html", [
               [ "FullMenuViewModelITest", "classfr_1_1softsf_1_1sudokufx_1_1integration_1_1viewmodel_1_1_full_menu_view_model_i_test.html", "classfr_1_1softsf_1_1sudokufx_1_1integration_1_1viewmodel_1_1_full_menu_view_model_i_test" ]
             ] ]
@@ -64,11 +69,10 @@ var annotated_dup =
               [ "SoftwareServiceUTest", "classfr_1_1softsf_1_1sudokufx_1_1unit_1_1service_1_1_software_service_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1unit_1_1service_1_1_software_service_u_test" ]
             ] ],
             [ "utils", "namespacefr_1_1softsf_1_1sudokufx_1_1unit_1_1utils.html", [
-              [ "database", "namespacefr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1database.html", [
+              [ "database", null, [
                 [ "keystore", "namespacefr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1database_1_1keystore.html", [
                   [ "SecretKeyEncryptionServiceAESGCMUTest", "classfr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1database_1_1keystore_1_1_secret_key_encryption_service_a_e_s_g_c_m_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1database_1_1keystore_1_1_secret_key_encryption_service_a_e_s_g_c_m_u_test" ]
-                ] ],
-                [ "GenerateSecretUTest", "classfr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1database_1_1_generate_secret_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1database_1_1_generate_secret_u_test" ]
+                ] ]
               ] ],
               [ "os", "namespacefr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1os.html", [
                 [ "OsInfoUTest", "classfr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1os_1_1_os_info_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1os_1_1_os_info_u_test" ]
@@ -90,7 +94,7 @@ var annotated_dup =
               ] ],
               [ "keystore", "namespacefr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore.html", [
                 [ "ApplicationKeystore", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore" ],
-                [ "ApplicationKeystoreUTest", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore_u_test" ],
+                [ "ApplicationKeystoreITest", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore_i_test.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore_i_test" ],
                 [ "GenerateSecret", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_generate_secret.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_generate_secret" ],
                 [ "SecretKeyEncryptionServiceAESGCM", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_secret_key_encryption_service_a_e_s_g_c_m.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_secret_key_encryption_service_a_e_s_g_c_m" ]
               ] ]

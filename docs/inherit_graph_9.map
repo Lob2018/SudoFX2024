@@ -1,9 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_os_folder_factory.html" title="Interface defining methods for accessing OS&#45;specific folder paths." alt="" coords="5,72,194,115"/>
-<area shape="rect" id="Node000001" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_linux_folder_factory.html" title="Factory class for creating and managing LINUX OS&#45;specific folders for the SudoFX application." alt="" coords="242,5,415,48"/>
-<area shape="poly" id="edge6_Node000000_Node000001" title=" " alt="" coords="188,65,252,46,253,51,190,70"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_macos_folder_factory.html" title="Factory class for creating and managing MACOS OS&#45;specific folders for the SudoFX application." alt="" coords="242,72,415,115"/>
-<area shape="poly" id="edge7_Node000000_Node000002" title=" " alt="" coords="209,91,241,91,241,96,209,96"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_windows_folder_factory.html" title="Factory class for creating and managing WINDOWS OS&#45;specific folders for the SudoFX application." alt="" coords="242,139,415,181"/>
-<area shape="poly" id="edge8_Node000000_Node000003" title=" " alt="" coords="190,117,253,135,252,141,188,122"/>
+<area shape="rect" id="Node000000" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_keystore.html" title="Interface defining methods to get the database username and his password." alt="" coords="5,5,194,48"/>
+<area shape="rect" id="Node000001" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore.html" title="Manages the application&#39;s keystore for the secure storage of a symmetric key and database credentials..." alt="" coords="242,5,508,48"/>
+<area shape="poly" id="edge5_Node000000_Node000001" title=" " alt="" coords="209,24,241,24,241,29,209,29"/>
 </map>

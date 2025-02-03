@@ -15,6 +15,9 @@ var namespacefr_1_1softsf_1_1sudokufx =
       [ "utils", "namespacefr_1_1softsf_1_1sudokufx_1_1e2e_1_1utils.html", "namespacefr_1_1softsf_1_1sudokufx_1_1e2e_1_1utils" ]
     ] ],
     [ "integration", null, [
+      [ "utils", null, [
+        [ "database", "namespacefr_1_1softsf_1_1sudokufx_1_1integration_1_1utils_1_1database.html", "namespacefr_1_1softsf_1_1sudokufx_1_1integration_1_1utils_1_1database" ]
+      ] ],
       [ "viewmodel", "namespacefr_1_1softsf_1_1sudokufx_1_1integration_1_1viewmodel.html", "namespacefr_1_1softsf_1_1sudokufx_1_1integration_1_1viewmodel" ]
     ] ],
     [ "interfaces", "namespacefr_1_1softsf_1_1sudokufx_1_1interfaces.html", "namespacefr_1_1softsf_1_1sudokufx_1_1interfaces" ],

@@ -1,6 +1,6 @@
 var hierarchy =
 [
-    [ "fr.softsf.sudokufx.utils.database.keystore.ApplicationKeystoreUTest", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore_u_test.html", null ],
+    [ "fr.softsf.sudokufx.utils.database.keystore.ApplicationKeystoreITest", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore_i_test.html", null ],
     [ "fr.softsf.sudokufx.model.Background", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background.html", null ],
     [ "fr.softsf.sudokufx.utils.database.configuration.CdsDataSourceConfig", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1configuration_1_1_cds_data_source_config.html", null ],
     [ "fr.softsf.sudokufx.utils.database.configuration.DataSourceConfig", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1configuration_1_1_data_source_config.html", null ],
@@ -17,7 +17,7 @@ var hierarchy =
     [ "fr.softsf.sudokufx.model.Game", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html", null ],
     [ "fr.softsf.sudokufx.model.GameLevel", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html", null ],
     [ "fr.softsf.sudokufx.utils.database.keystore.GenerateSecret", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_generate_secret.html", null ],
-    [ "fr.softsf.sudokufx.unit.utils.database.GenerateSecretUTest", "classfr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1database_1_1_generate_secret_u_test.html", null ],
+    [ "fr.softsf.sudokufx.integration.utils.database.GenerateSecretUTest", "classfr_1_1softsf_1_1sudokufx_1_1integration_1_1utils_1_1database_1_1_generate_secret_u_test.html", null ],
     [ "fr.softsf.sudokufx.model.Grid", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html", null ],
     [ "fr.softsf.sudokufx.unit.utils.sudoku.GridMasterUTest", "classfr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1sudoku_1_1_grid_master_u_test.html", null ],
     [ "fr.softsf.sudokufx.utils.I18n", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_i18n.html", null ],

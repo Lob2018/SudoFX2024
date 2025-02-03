@@ -197,11 +197,11 @@ Static Private Attributes</h2></td></tr>
 <tr class="separator:a1c7e7be06a3d3a9324b182eea5a3d376"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1c4d87966b868384bf8fbde2d9909a8" id="r_ab1c4d87966b868384bf8fbde2d9909a8"><td class="memItemLeft" align="right" valign="top">static final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab1c4d87966b868384bf8fbde2d9909a8">moyenMaxCachees</a> = 49</td></tr>
 <tr class="separator:ab1c4d87966b868384bf8fbde2d9909a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d2d0979d7f89eb7c445a75973b71f40" id="r_a4d2d0979d7f89eb7c445a75973b71f40"><td class="memItemLeft" align="right" valign="top">static final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d2d0979d7f89eb7c445a75973b71f40">moyenMaxDifficulte</a> = 27594</td></tr>
+<tr class="memitem:a4d2d0979d7f89eb7c445a75973b71f40" id="r_a4d2d0979d7f89eb7c445a75973b71f40"><td class="memItemLeft" align="right" valign="top">static final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d2d0979d7f89eb7c445a75973b71f40">moyenMaxDifficulte</a> = 28266</td></tr>
 <tr class="separator:a4d2d0979d7f89eb7c445a75973b71f40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5adffd163dd3825b9e70a30a709b4a5" id="r_aa5adffd163dd3825b9e70a30a709b4a5"><td class="memItemLeft" align="right" valign="top">static final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa5adffd163dd3825b9e70a30a709b4a5">moyenMinCachees</a> = 45</td></tr>
 <tr class="separator:aa5adffd163dd3825b9e70a30a709b4a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2ecd6857f896d02dff6fb713b022351" id="r_af2ecd6857f896d02dff6fb713b022351"><td class="memItemLeft" align="right" valign="top">static final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af2ecd6857f896d02dff6fb713b022351">moyenMinDifficulte</a> = 13797</td></tr>
+<tr class="memitem:af2ecd6857f896d02dff6fb713b022351" id="r_af2ecd6857f896d02dff6fb713b022351"><td class="memItemLeft" align="right" valign="top">static final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af2ecd6857f896d02dff6fb713b022351">moyenMinDifficulte</a> = 16533</td></tr>
 <tr class="separator:af2ecd6857f896d02dff6fb713b022351"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6972816ecde004f75fb83988452943bb" id="r_a6972816ecde004f75fb83988452943bb"><td class="memItemLeft" align="right" valign="top">static final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6972816ecde004f75fb83988452943bb">NOMBRE_CASES</a> = <a class="el" href="#a1284fab4c8c6372cb09bee56bda96590">DIMENSION</a> * <a class="el" href="#a1284fab4c8c6372cb09bee56bda96590">DIMENSION</a></td></tr>
 <tr class="separator:a6972816ecde004f75fb83988452943bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -367,14 +367,14 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Crée les grilles de Sudoku (résolue et à résoudre) en fonction du niveau de difficulté. </p>
-<p>Facile : 35-45 cases cachées, et difficulté de 0 à 13797 Moyen : 45-39 cases cachées, et difficulté de 13797 à 27594 Difficile : 49 à 59 cases cachées, et difficulté de 27594 à 41391</p>
+<p>Facile : 35-45 cases cachées, et difficulté théorique de 0 à 13797, et pratique de 4800 à 16533 Moyen : 45-39 cases cachées, et difficulté théorique de 13797 à 27594, et pratique de 16533 à 28266 Difficile : 49 à 59 cases cachées, et difficulté théorique de 27594 à 41391, et pratique de 28266 à 40000</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">niveau</td><td>Le niveau de difficulté (1 : facile, 2 : moyen, 3 : difficile). </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Un tableau à trois dimensions contenant : La grille résolue. La grille à résoudre avec les cases cachées. Le pourcentage de difficulté de la grille à résoudre (la plage retenue va de 4900 0% à 39500 100%). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Un tableau à trois dimensions contenant : La grille résolue. La grille à résoudre avec les cases cachées. Le pourcentage de difficulté de la grille à résoudre (la plage retenue va de 4800 0% à 40000 100%). </dd></dl>
 
 <p>Implements <a class="el" href="interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_grid_master.html#a7ae916d7f64607637b7bf5bf33fd0eb3">fr.softsf.sudokufx.interfaces.IGridMaster</a>.</p>
 <div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -948,7 +948,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final int fr.softsf.sudokufx.utils.sudoku.GridMaster.moyenMaxDifficulte = 27594</td>
+          <td class="memname">final int fr.softsf.sudokufx.utils.sudoku.GridMaster.moyenMaxDifficulte = 28266</td>
         </tr>
       </table>
   </td>
@@ -992,7 +992,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final int fr.softsf.sudokufx.utils.sudoku.GridMaster.moyenMinDifficulte = 13797</td>
+          <td class="memname">final int fr.softsf.sudokufx.utils.sudoku.GridMaster.moyenMinDifficulte = 16533</td>
         </tr>
       </table>
   </td>
@@ -1079,7 +1079,7 @@ Static Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1utils.html">utils</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku.html">sudoku</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html">GridMaster</a></li>
-    <li class="footer">Generated on Sun Feb 2 2025 10:40:46 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Mon Feb 3 2025 14:00:53 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

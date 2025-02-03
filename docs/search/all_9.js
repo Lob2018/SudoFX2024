@@ -43,7 +43,7 @@ var searchData=
   ['intellij_20idea_40',['Windows how to run in IntelliJ IDEA',['../md__r_e_a_d_m_e.html#autotoc_md10',1,'']]],
   ['introduction_41',['Introduction',['../index.html#autotoc_md0',1,'']]],
   ['iosfolderfactory_42',['IOsFolderFactory',['../interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_os_folder_factory.html',1,'fr::softsf::sudokufx::interfaces']]],
-  ['iosfolderfactory_43',['iOsFolderFactory',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#ac1317aedacec7eafad5c78f4ee781e79',1,'fr::softsf::sudokufx::view::CrashScreenView']]],
+  ['iosfolderfactory_43',['iOsFolderFactory',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore.html#ade5a7d16ea23f1196a211727d9813c3c',1,'fr.softsf.sudokufx.utils.database.keystore.ApplicationKeystore.iOsFolderFactory'],['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#ac1317aedacec7eafad5c78f4ee781e79',1,'fr.softsf.sudokufx.view.CrashScreenView.iOsFolderFactory']]],
   ['iosfolderfactory_2ejava_44',['IOsFolderFactory.java',['../_i_os_folder_factory_8java.html',1,'']]],
   ['iplayerlanguagemapper_45',['IPlayerLanguageMapper',['../interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_player_language_mapper.html',1,'fr::softsf::sudokufx::interfaces::mapper']]],
   ['iplayerlanguagemapper_2ejava_46',['IPlayerLanguageMapper.java',['../_i_player_language_mapper_8java.html',1,'']]],

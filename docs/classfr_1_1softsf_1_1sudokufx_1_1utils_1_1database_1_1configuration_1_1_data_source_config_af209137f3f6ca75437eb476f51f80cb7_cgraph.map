@@ -29,7 +29,7 @@
 <area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="1280,246,1380,266,1379,271,1279,251"/>
 <area shape="rect" id="Node000014" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_encryption_service.html#a7cd39caadae83b3502b56b96d349cfc5" title="Encrypts the given string using AES&#45;GCM encryption." alt="" coords="1411,139,1599,181"/>
 <area shape="poly" id="edge13_Node000011_Node000014" title=" " alt="" coords="1279,202,1395,179,1396,184,1280,207"/>
-<area shape="rect" id="Node000015" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_generate_secret.html#ac1a554d432a1d4a3f2c32d9ca6594868" title="Generate Passay secret." alt="" coords="1372,205,1638,248"/>
+<area shape="rect" id="Node000015" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_generate_secret.html#a4ee1cc58dacde12145b23253b133ce22" title="Generate Passay secret." alt="" coords="1372,205,1638,248"/>
 <area shape="poly" id="edge14_Node000011_Node000015" title=" " alt="" coords="1302,224,1356,224,1356,229,1302,229"/>
 <area shape="rect" id="Node000013" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore.html#af82e040ae05888410827f695338a3a07" title="Write data to the keystore file." alt="" coords="1686,272,1952,315"/>
 <area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="1638,291,1670,291,1670,296,1638,296"/>

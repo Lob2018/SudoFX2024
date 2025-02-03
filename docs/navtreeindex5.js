@@ -1,5 +1,11 @@
 var NAVTREEINDEX5 =
 {
+"functions_func_i.html":[3,3,1,7],
+"functions_func_j.html":[3,3,1,8],
+"functions_func_l.html":[3,3,1,9],
+"functions_func_m.html":[3,3,1,10],
+"functions_func_n.html":[3,3,1,11],
+"functions_func_o.html":[3,3,1,12],
 "functions_func_p.html":[3,3,1,13],
 "functions_func_r.html":[3,3,1,14],
 "functions_func_s.html":[3,3,1,15],
@@ -198,7 +204,8 @@ var NAVTREEINDEX5 =
 "namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#ab71438b60cd714ddb76aa22248390565":[2,0,0,0,0,1,0],
 "namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#af115ca634d2f50876b34c8c03ba20226":[2,0,0,0,0,1,1],
 "namespacefr_1_1softsf_1_1sudokufx_1_1e2e_1_1utils.html":[2,0,0,0,0,2,0],
-"namespacefr_1_1softsf_1_1sudokufx_1_1integration_1_1viewmodel.html":[2,0,0,0,0,3,0],
+"namespacefr_1_1softsf_1_1sudokufx_1_1integration_1_1utils_1_1database.html":[2,0,0,0,0,3,0,0],
+"namespacefr_1_1softsf_1_1sudokufx_1_1integration_1_1viewmodel.html":[2,0,0,0,0,3,1],
 "namespacefr_1_1softsf_1_1sudokufx_1_1interfaces.html":[2,0,0,0,0,4],
 "namespacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper.html":[2,0,0,0,0,4,0],
 "namespacefr_1_1softsf_1_1sudokufx_1_1model.html":[2,0,0,0,0,5],
@@ -206,7 +213,6 @@ var NAVTREEINDEX5 =
 "namespacefr_1_1softsf_1_1sudokufx_1_1service.html":[2,0,0,0,0,7],
 "namespacefr_1_1softsf_1_1sudokufx_1_1unit_1_1service.html":[2,0,0,0,0,8,0],
 "namespacefr_1_1softsf_1_1sudokufx_1_1unit_1_1utils.html":[2,0,0,0,0,8,1],
-"namespacefr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1database.html":[2,0,0,0,0,8,1,0],
 "namespacefr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1database_1_1keystore.html":[2,0,0,0,0,8,1,0,0],
 "namespacefr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1os.html":[2,0,0,0,0,8,1,1],
 "namespacefr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1sudoku.html":[2,0,0,0,0,8,1,2],
@@ -226,6 +232,8 @@ var NAVTREEINDEX5 =
 "":[2,0,0,0],
 "":[2,0,0,0,0,2],
 "":[2,0,0,0,0,3],
+"":[2,0,0,0,0,3,0],
 "":[2,0,0,0,0,8],
+"":[2,0,0,0,0,8,1,0],
 "":[2,0,0,0,0,9,0]
 };

@@ -203,7 +203,7 @@ Roadmap</h3>
 <h3><a class="anchor" id="autotoc_md9"></a>
 Mockup</h3>
 <ul>
-<li><a href="https://www.figma.com/design/GiSwlg2mZofXalf1Quaa5w/SudokuFX?node-id=0-1&amp;t=smJqt7CQuD0zZuUP-1" target="_blank">The app mockup (Figma)</a></li>
+<li><a href="https://www.figma.com/design/GiSwlg2mZofXalf1Quaa5w/SudokuFX?node-id=0-1&amp;t=smJqt7CQuD0zZuUP-1" target="_blank">The application mockup (Figma)</a></li>
 </ul>
 <dl class="section important"><dt>Important</dt><dd><br  />
  &gt;### Required Application Properties to Run <br  />
@@ -242,31 +242,13 @@ Windows how to run in IntelliJ IDEA</h3>
 <li>File &gt; Project Structure &gt; SDK &gt; Add SDK from disk (select the JDK)</li>
 </ul>
 </li>
-<li>Run the app at top right corner (<a class="el" href="_sudo_main_8java.html">SudoMain.java</a> is the main class)<ul>
-<li>Run / Debug Configurations &gt; Edit Configurations...<ul>
-<li><p class="startli">Run (in order to run the application)</p><ul>
-<li>Add New Configuration &gt; Maven &gt; Run: clean javafx:run &gt; Apply </li>
-</ul>
-<p class="startli"><img src="./.myresources/design_and_modeling/images/Run_with_Maven_for_JavaFX.jpg" alt="Run with Maven for JavaFX" class="inline"/> </p>
-</li>
+<li>Run Maven configurations (in the top right corner)<ul>
+<li><a class="el" href="_sudo_main_8java.html">SudoMain.java</a> is the main class</li>
+<li>Maven run configurations are saved as project files in .idea/runConfigurations</li>
 </ul>
 </li>
 </ul>
 </li>
-</ul>
-</li>
-</ul>
-<ul>
-<li>Run <b>SudokuFX [clean,javafx:run]</b></li>
-</ul>
-<p>Run with details (optional)</p><ul>
-<li>Add New Configuration &gt; Maven &gt; Run: clean -X javafx:run -Dprism.verbose=true -f pom.xml &gt; Apply</li>
-<li>Run <b>SudokuFX [run details]</b></li>
-</ul>
-<p>Run that generate documentation with Doxygen</p><ul>
-<li>Install Doxygen and GraphViz (Doxygen must be added to the system PATH).</li>
-<li>Add New Configuration &gt; Maven &gt; Run: clean -X javafx:run prepare-package -P generate-docs -f pom.xml &gt; Apply</li>
-<li>Run <b>SudokuFX [prepare-package]</b></li>
 </ul>
 <h2><a class="anchor" id="autotoc_md11"></a>
 Installation</h2>
@@ -395,18 +377,13 @@ Uninstallation</h2>
 </ul>
 </li>
 </ul>
-<dl class="section important"><dt>Important</dt><dd>&gt;- Windows<ul>
-<li>To completely delete your app data and logs, you need to manually delete this folder: <br  />
+<dl class="section important"><dt>Important</dt><dd><b>To completely delete your application data and logs, you need to manually delete this folder:</b> &gt;- Windows : <br  />
 <br  />
- <b>C:/Users/&lt;USERNAME&gt;</b>[^1]**/AppData/Local/Soft64.fr/SudokuFX/**. &gt;- Linux</li>
-<li>To completely delete your app data and logs, you need to manually delete this folder: <br  />
+ C:/Users/&lt;USERNAME&gt;<b>[^1]</b>/AppData/Local/Soft64.fr/SudokuFX &gt;- Linux : <br  />
 <br  />
- **/home/&lt;USERNAME&gt;<b>[^1]</b>/.local/share/Soft64.fr/SudokuFX**. &gt;- MacOS</li>
-<li>To completely delete your app data and logs, you need to manually delete this folder: <br  />
+ /home/&lt;USERNAME&gt;<b>[^1]</b>/.local/share/Soft64.fr/SudokuFX &gt;- MacOS : <br  />
 <br  />
- **/Users/&lt;USERNAME&gt;<b>[^1]</b>/Library/Application Support/Soft64.fr/SudokuFX**.</li>
-</ul>
-</dd></dl>
+ /Users/&lt;USERNAME&gt;<b>[^1]</b>/Library/Application Support/Soft64.fr/SudokuFX</dd></dl>
 <p>[^1]: Replace &lt;USERNAME&gt; with your currently logged-in username.</p>
 <h2><a class="anchor" id="autotoc_md16"></a>
 Contributors</h2>
@@ -439,7 +416,7 @@ Feedback</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Feb 2 2025 10:40:45 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Mon Feb 3 2025 14:00:53 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

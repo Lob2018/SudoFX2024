@@ -1,6 +1,6 @@
 var classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore =
 [
-    [ "ApplicationKeystore", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore.html#a685d51987ee7a3ad32d229423e717c48", null ],
+    [ "ApplicationKeystore", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore.html#ad7e4cea5c0f8da920805cf9f6aacaaca", null ],
     [ "addToKeystore", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore.html#a33216f8f54d7cd930bad1447d08019ba", null ],
     [ "createOrUpdateKeystore", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore.html#a3c033211ab4f60945ef6ff9d202fbabd", null ],
     [ "credentials", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore.html#a2a2525acabf35eaaf9dca60b9eb11589", null ],
@@ -15,13 +15,14 @@ var classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_applicati
     [ "symmetricKeyIsInKeystore", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore.html#a93c64173e1fcbc1b3cea7c653cec93fc", null ],
     [ "symmetricKeyNotInKeystore", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore.html#a26a6110e68a3530dff60cf57f1616a25", null ],
     [ "writeTheKeystore", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore.html#af82e040ae05888410827f695338a3a07", null ],
+    [ "generateSecret", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore.html#accd663a6aabd6d5b48097d1a10bfbf9a", null ],
     [ "iEncryptionService", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore.html#a3548cdcba17f011e7acaf81da7831668", null ],
+    [ "iOsFolderFactory", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore.html#ade5a7d16ea23f1196a211727d9813c3c", null ],
     [ "KEYSTORE_FILE_PATH", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore.html#ace8b3e14f4dc44203ce5d7bf3a3a00db", null ],
     [ "KEYSTORE_PASSWORD_FROM_UUID", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore.html#ab2c9ef1030084fae21621657aa20755a", null ],
     [ "KEYSTORE_TYPE", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore.html#aa487f3ef26868bb7c14a0fcdb9efba26", null ],
     [ "keystoreFilePath", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore.html#a96b6e57d46ba626d3b25f8f791844086", null ],
     [ "ks", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore.html#a5b753ade400aaa2d09e44ee6d012267c", null ],
-    [ "osFolderFactory", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore.html#a0c1232545a3489575aa7474763d046e2", null ],
     [ "PASS_ALIAS", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore.html#a9ee3f03f839256f33ec5bd81a5b0d62f", null ],
     [ "password", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore.html#a640f48b48b8a40375b4b939fedccb505", null ],
     [ "pwdArray", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore.html#a924b65c4a1e60c40ff43c38952444ce4", null ],

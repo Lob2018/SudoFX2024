@@ -1,5 +1,9 @@
 var NAVTREEINDEX3 =
 {
+"classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_macos_folder_factory.html#a86366335699ce6536a7bd2f6c620327f":[3,0,0,0,0,8,1,1,4],
+"classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_macos_folder_factory.html#a9077eec63616c12efdb66eb22688b99b":[2,0,0,0,0,9,1,1,1],
+"classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_macos_folder_factory.html#a9077eec63616c12efdb66eb22688b99b":[3,0,0,0,0,8,1,1,1],
+"classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_macos_folder_factory.html#aa35e8620e8367cdc31ee906b86fa7df9":[2,0,0,0,0,9,1,1,3],
 "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_macos_folder_factory.html#aa35e8620e8367cdc31ee906b86fa7df9":[3,0,0,0,0,8,1,1,3],
 "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_macos_folder_factory.html#aba469aa0a79e67588bf7a19f7cf49161":[2,0,0,0,0,9,1,1,0],
 "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_macos_folder_factory.html#aba469aa0a79e67588bf7a19f7cf49161":[3,0,0,0,0,8,1,1,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX3 =
 "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a2c24f64b9b16418191a871f8d595ff57":[3,0,0,0,0,9,3,16],
 "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a2e941524cc0cd67fb8bf26280e3fc6d7":[2,0,0,0,0,10,3,23],
 "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a2e941524cc0cd67fb8bf26280e3fc6d7":[3,0,0,0,0,9,3,23],
-"classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a3dc8bd26bc5766072652bdd259da1991":[2,0,0,0,0,10,3,20],
-"classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a3dc8bd26bc5766072652bdd259da1991":[3,0,0,0,0,9,3,20],
-"classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a43f3d4cfc978262cad38aa5041f3d1a3":[2,0,0,0,0,10,3,27],
-"classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a43f3d4cfc978262cad38aa5041f3d1a3":[3,0,0,0,0,9,3,27],
-"classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a50c0a6b2933473abc96751f6f405c392":[2,0,0,0,0,10,3,21]
+"classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a3dc8bd26bc5766072652bdd259da1991":[2,0,0,0,0,10,3,20]
 };
