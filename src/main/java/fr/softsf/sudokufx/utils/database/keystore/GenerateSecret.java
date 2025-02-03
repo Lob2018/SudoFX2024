@@ -3,6 +3,7 @@ package fr.softsf.sudokufx.utils.database.keystore;
 import fr.softsf.sudokufx.annotations.ExcludedFromCoverageReportGenerated;
 import org.passay.CharacterData;
 import org.passay.*;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,11 +13,8 @@ import static org.passay.IllegalCharacterRule.ERROR_CODE;
 /**
  * Utility class for generating secure passwords using the Passay library.
  */
-public final class GenerateSecret {
-
-    @ExcludedFromCoverageReportGenerated
-    private GenerateSecret() {
-    }
+@Component
+public class GenerateSecret {
 
     /**
      * Define the secret special characters
@@ -41,7 +39,7 @@ public final class GenerateSecret {
      *
      * @return The Passay secret
      */
-    public static String generatePassaySecret() {
+    public String generatePassaySecret() {
         PasswordGenerator gen = new PasswordGenerator();
         CharacterData lowerCaseChars = EnglishCharacterData.LowerCase;
         CharacterRule lowerCaseRule = new CharacterRule(lowerCaseChars);

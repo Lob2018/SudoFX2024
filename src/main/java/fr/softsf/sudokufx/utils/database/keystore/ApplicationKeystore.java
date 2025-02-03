@@ -5,6 +5,7 @@ import fr.softsf.sudokufx.interfaces.IEncryptionService;
 import fr.softsf.sudokufx.interfaces.IKeystore;
 import fr.softsf.sudokufx.interfaces.IOsFolderFactory;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import javax.crypto.KeyGenerator;
@@ -33,8 +34,8 @@ public class ApplicationKeystore implements IKeystore {
     private static final String USERNAME_ALIAS = "db-user-alias";
     private static final String PASS_ALIAS = "db-pass-alias";
     private static final String KEYSTORE_FILE_PATH = "/SudokuFXKeyStore.p12";
-
-    private IOsFolderFactory osFolderFactory;
+    private final GenerateSecret generateSecret;
+    private IOsFolderFactory iOsFolderFactory;
     private String keystoreFilePath;
     private KeyStore ks;
     private IEncryptionService iEncryptionService;
@@ -42,8 +43,10 @@ public class ApplicationKeystore implements IKeystore {
     private String username;
     private String password;
 
-    public ApplicationKeystore(IOsFolderFactory osFolderFactory) {
-        this.osFolderFactory = osFolderFactory;
+    @Autowired
+    public ApplicationKeystore(IOsFolderFactory iOsFolderFactory, GenerateSecret generateSecret) {
+        this.iOsFolderFactory = iOsFolderFactory;
+        this.generateSecret = generateSecret;
     }
 
     /**
@@ -70,7 +73,7 @@ public class ApplicationKeystore implements IKeystore {
         log.info("\n▓▓ ApplicationKeystore starts");
         try {
             ks = KeyStore.getInstance(KEYSTORE_TYPE);
-            keystoreFilePath = osFolderFactory.getOsDataFolderPath() + KEYSTORE_FILE_PATH;
+            keystoreFilePath = iOsFolderFactory.getOsDataFolderPath() + KEYSTORE_FILE_PATH;
             createOrUpdateKeystore();
             loadKeyStore();
             symmetricKey();
@@ -182,11 +185,11 @@ public class ApplicationKeystore implements IKeystore {
         try {
             String secret = switch (alias) {
                 case USERNAME_ALIAS -> {
-                    username = GenerateSecret.generatePassaySecret();
+                    username = generateSecret.generatePassaySecret();
                     yield iEncryptionService.encrypt(username);
                 }
                 case PASS_ALIAS -> {
-                    password = GenerateSecret.generatePassaySecret();
+                    password = generateSecret.generatePassaySecret();
                     yield iEncryptionService.encrypt(password);
                 }
                 default -> "";
@@ -248,7 +251,7 @@ public class ApplicationKeystore implements IKeystore {
      * @param osFolderFactoryP The OS folder factory
      */
     void setOsFolderFactoryForTests(IOsFolderFactory osFolderFactoryP) {
-        osFolderFactory = osFolderFactoryP;
+        iOsFolderFactory = osFolderFactoryP;
     }
 
     @Override

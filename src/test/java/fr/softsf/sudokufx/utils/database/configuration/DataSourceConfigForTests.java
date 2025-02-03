@@ -4,7 +4,6 @@ import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 import fr.softsf.sudokufx.utils.MyLogback;
 import fr.softsf.sudokufx.utils.database.keystore.ApplicationKeystore;
-import fr.softsf.sudokufx.utils.os.OsFolderFactoryManager;
 import org.flywaydb.core.Flyway;
 import org.springframework.context.annotation.*;
 
@@ -36,18 +35,17 @@ public class DataSourceConfigForTests {
      * depends on logbackInitialization to ensure Logback is properly set up.
      * This method sets up a connection pool for an in-memory HSQLDB database.
      *
-     * @param osFolderFactory Factory for creating OS-specific folders
-     * @param keystore        Application keystore for secure storage
+     * @param keystore Application keystore for secure storage
      * @return Configured DataSource
      */
     @Bean
     @DependsOn({"logbackInitialization"})
-    HikariDataSource hikariDataSource(final OsFolderFactoryManager osFolderFactory, final ApplicationKeystore keystore) {
+    HikariDataSource hikariDataSource(final ApplicationKeystore keystore) {
         keystore.setupApplicationKeystore();
         final HikariConfig config = new HikariConfig();
         config.setPoolName("SudoFXTestHikariConnection");
         config.setDriverClassName("org.hsqldb.jdbc.JDBCDriver");
-        config.setJdbcUrl("jdbc:hsqldb:mem:"+DATABASE_NAME.getPath() + "Test" + ";shutdown=true");
+        config.setJdbcUrl("jdbc:hsqldb:mem:" + DATABASE_NAME.getPath() + "Test" + ";shutdown=true");
         config.setUsername(keystore.getUsername());
         config.setPassword(keystore.getPassword());
         config.setMaximumPoolSize(2);

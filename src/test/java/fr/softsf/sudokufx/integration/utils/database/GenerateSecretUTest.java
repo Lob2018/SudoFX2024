@@ -1,16 +1,26 @@
-package fr.softsf.sudokufx.unit.utils.database;
+package fr.softsf.sudokufx.integration.utils.database;
 
+import fr.softsf.sudokufx.SudoMain;
 import fr.softsf.sudokufx.utils.MyRegex;
 import fr.softsf.sudokufx.utils.database.keystore.GenerateSecret;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@SpringBootTest(classes = {SudoMain.class})
 class GenerateSecretUTest {
+    private final GenerateSecret generateSecret;
+
+    @Autowired
+    public GenerateSecretUTest(GenerateSecret generateSecret) {
+        this.generateSecret=generateSecret;
+    }
 
     @Test
     void whenPasswordGeneratedUsingPassay_thenSuccessful() {
-        String password = GenerateSecret.generatePassaySecret();
+        String password = generateSecret.generatePassaySecret();
         String regex = MyRegex.getSECRET();
         assertTrue(password.matches(regex));
         assertFalse("".matches(regex));
