@@ -43,7 +43,7 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: mvn -B package -P linux -f pom.xml org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=Lob2018_SudoFX2024 -Dsonar.qualitygate.wait=true -Dsonar.coverage.jacoco.xmlReportPaths=target/site/jacoco/jacoco.xml
       - name: Upload output folder (Linux)
-        uses: actions/upload-artifact@b4b15b8c7c6ac21ea08fcf65892d2ee8f75cf882 # v4.4.3
+        uses: actions/upload-artifact@65c4c4a1ddee5b72f698fdd19549f0f0fb45cf08 # v4.6.0
         with:
           name: output-folder-linux
           path: output
@@ -100,7 +100,7 @@ jobs:
         run: mvn package -f pom.xml
 
       - name: Upload output folder
-        uses: actions/upload-artifact@b4b15b8c7c6ac21ea08fcf65892d2ee8f75cf882 # v4.4.3
+        uses: actions/upload-artifact@65c4c4a1ddee5b72f698fdd19549f0f0fb45cf08 # v4.6.0
         with:
           name: output-folder-windows
           path: output
@@ -134,7 +134,7 @@ jobs:
       - name: Compile, Test, and Package with Maven (macOS)
         run: mvn package -P mac -f pom.xml
       - name: Upload output folder (macOS)
-        uses: actions/upload-artifact@b4b15b8c7c6ac21ea08fcf65892d2ee8f75cf882 # v4.4.3
+        uses: actions/upload-artifact@65c4c4a1ddee5b72f698fdd19549f0f0fb45cf08 # v4.6.0
         with:
           name: output-folder-macos
           path: output
@@ -168,7 +168,7 @@ jobs:
       - name: Compile, Test, and Package with Maven (macOS)
         run: mvn package -P mac-x86_64 -f pom.xml
       - name: Upload output folder (macOS-x86_64)
-        uses: actions/upload-artifact@b4b15b8c7c6ac21ea08fcf65892d2ee8f75cf882 # v4.4.3
+        uses: actions/upload-artifact@65c4c4a1ddee5b72f698fdd19549f0f0fb45cf08 # v4.6.0
         with:
           name: output-folder-macos-x86_64
           path: output
