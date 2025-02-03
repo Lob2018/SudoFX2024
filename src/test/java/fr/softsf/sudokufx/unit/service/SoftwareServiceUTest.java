@@ -63,7 +63,7 @@ class SoftwareServiceUTest {
     }
 
     @Test
-    public void testGetSoftware_ExceptionThrown() {
+    void testGetSoftware_ExceptionThrown() {
         Mockito.when(softwareRepository.findFirstSoftware())
                 .thenThrow(new RuntimeException("Database error"));
         Optional<SoftwareDto> softwareDto = softwareService.getSoftware();
@@ -85,7 +85,7 @@ class SoftwareServiceUTest {
     }
 
     @Test
-    public void testUpdateSoftware_ExceptionThrown() {
+    void testUpdateSoftware_ExceptionThrown() {
         Mockito.when(softwareRepository.save(Mockito.any(Software.class)))
                 .thenThrow(new RuntimeException("Database error"));
         software.setCurrentversion(lastVersion);
