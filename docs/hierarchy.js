@@ -2,9 +2,11 @@ var hierarchy =
 [
     [ "fr.softsf.sudokufx.utils.database.keystore.ApplicationKeystoreITest", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore_i_test.html", null ],
     [ "fr.softsf.sudokufx.model.Background", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background.html", null ],
-    [ "fr.softsf.sudokufx.utils.database.configuration.CdsDataSourceConfig", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1configuration_1_1_cds_data_source_config.html", null ],
-    [ "fr.softsf.sudokufx.utils.database.configuration.DataSourceConfig", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1configuration_1_1_data_source_config.html", null ],
-    [ "fr.softsf.sudokufx.utils.database.configuration.DataSourceConfigForTests", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1configuration_1_1_data_source_config_for_tests.html", null ],
+    [ "fr.softsf.sudokufx.utils.database.configuration.DataSource", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1configuration_1_1_data_source.html", [
+      [ "fr.softsf.sudokufx.utils.database.configuration.DataSourceCds", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1configuration_1_1_data_source_cds.html", null ],
+      [ "fr.softsf.sudokufx.utils.database.configuration.DataSourceDefault", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1configuration_1_1_data_source_default.html", null ],
+      [ "fr.softsf.sudokufx.utils.database.configuration.DataSourceTest", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1configuration_1_1_data_source_test.html", null ]
+    ] ],
     [ "fr.softsf.sudokufx.utils.DynamicFontSize", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_dynamic_font_size.html", null ],
     [ "fr.softsf.sudokufx.e2e.utils.DynamicFontSizeChangeE2ETest", "classfr_1_1softsf_1_1sudokufx_1_1e2e_1_1utils_1_1_dynamic_font_size_change_e2_e_test.html", null ],
     [ "fr.softsf.sudokufx.utils.ExceptionTools", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_exception_tools.html", null ],

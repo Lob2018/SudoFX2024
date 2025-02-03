@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['facilemincachees_0',['facileMinCachees',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a1c7e7be06a3d3a9324b182eea5a3d376',1,'fr::softsf::sudokufx::utils::sudoku::GridMaster']]],
+  ['facile_5fmin_5fcachees_0',['FACILE_MIN_CACHEES',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a287e5365164fdf3c0152fd46fbac7016',1,'fr::softsf::sudokufx::utils::sudoku::GridMaster']]],
   ['fade_5fin_5fin_5fseconds_5fafter_5fsplashscreen_1',['FADE_IN_IN_SECONDS_AFTER_SPLASHSCREEN',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a9abd8cec04433b385cf595d25df8e01c',1,'fr.softsf.sudokufx.view.CrashScreenView.FADE_IN_IN_SECONDS_AFTER_SPLASHSCREEN'],['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_full_menu_view.html#a2118951bcfadbf223114009a71d40982',1,'fr.softsf.sudokufx.view.FullMenuView.FADE_IN_IN_SECONDS_AFTER_SPLASHSCREEN']]],
   ['filesystemmanager_2',['fileSystemManager',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_file_system_manager_u_test.html#a1a6b3e4e00ee339f3c6d397ed674c731',1,'fr::softsf::sudokufx::utils::FileSystemManagerUTest']]],
   ['french_5fbundle_3',['FRENCH_BUNDLE',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_i18n.html#a5e0d8539f7792dce55d1b1ca766c2acd',1,'fr::softsf::sudokufx::utils::I18n']]],

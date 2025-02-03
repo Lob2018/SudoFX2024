@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.utils.database.configuration.DataSourceConfigForTests.hikariDataSource" name="fr.softsf.sudokufx.utils.database.configuration.DataSourceConfigForTests.hikariDataSource">
+<map id="fr.softsf.sudokufx.utils.database.configuration.DataSourceTest.hikariDataSource" name="fr.softsf.sudokufx.utils.database.configuration.DataSourceTest.hikariDataSource">
 <area shape="rect" id="Node000001" title="Creates and configures the main DataSource for the application." alt="" coords="5,72,296,115"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore.html#a4035c6a874207a20aa0740af0594742a" title="Get database password." alt="" coords="355,5,622,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="262,69,361,49,362,54,263,74"/>

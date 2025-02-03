@@ -6,10 +6,11 @@ var NAVTREEINDEX0 =
 "_background_dto_8java.html":[4,0,1,0,0,0,0,0,1,0],
 "_background_dto_8java.html#ab71438b60cd714ddb76aa22248390565":[4,0,1,0,0,0,0,0,1,0,0],
 "_background_repository_8java.html":[4,0,1,0,0,0,0,0,4,0],
-"_cds_data_source_config_8java.html":[4,0,1,0,0,0,0,0,6,0,0,0],
 "_crash_screen_view_8java.html":[4,0,1,0,0,0,0,0,7,1],
-"_data_source_config_8java.html":[4,0,1,0,0,0,0,0,6,0,0,1],
-"_data_source_config_for_tests_8java.html":[4,0,1,0,0,0,0,0,6,0,0,2],
+"_data_source_8java.html":[4,0,1,0,0,0,0,0,6,0,0,0],
+"_data_source_cds_8java.html":[4,0,1,0,0,0,0,0,6,0,0,1],
+"_data_source_default_8java.html":[4,0,1,0,0,0,0,0,6,0,0,2],
+"_data_source_test_8java.html":[4,0,1,0,0,0,0,0,6,0,0,3],
 "_dynamic_font_size_8java.html":[4,0,1,0,0,0,0,0,6,3],
 "_dynamic_font_size_change_e2_e_test_8java.html":[4,0,1,1,0,0,0,0,0,0,0],
 "_exception_tools_8java.html":[4,0,1,0,0,0,0,0,6,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#ac7690134cf62468d85216a67d1686dc7":[2,0,0,0,0,5,5,0],
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#ac7690134cf62468d85216a67d1686dc7":[3,0,0,0,0,4,5,0],
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html":[2,0,0,0,0,5,6],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html":[3,0,0,0,0,4,6],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html#a2c905cca687b2fa3275383e854cc8fca":[2,0,0,0,0,5,6,0]
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html":[3,0,0,0,0,4,6]
 };

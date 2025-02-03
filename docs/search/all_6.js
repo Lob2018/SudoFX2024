@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['facilemincachees_0',['facileMinCachees',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a1c7e7be06a3d3a9324b182eea5a3d376',1,'fr::softsf::sudokufx::utils::sudoku::GridMaster']]],
+  ['facile_5fmin_5fcachees_0',['FACILE_MIN_CACHEES',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a287e5365164fdf3c0152fd46fbac7016',1,'fr::softsf::sudokufx::utils::sudoku::GridMaster']]],
   ['fade_5fin_5fin_5fseconds_5fafter_5fsplashscreen_1',['FADE_IN_IN_SECONDS_AFTER_SPLASHSCREEN',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a9abd8cec04433b385cf595d25df8e01c',1,'fr.softsf.sudokufx.view.CrashScreenView.FADE_IN_IN_SECONDS_AFTER_SPLASHSCREEN'],['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_full_menu_view.html#a2118951bcfadbf223114009a71d40982',1,'fr.softsf.sudokufx.view.FullMenuView.FADE_IN_IN_SECONDS_AFTER_SPLASHSCREEN']]],
   ['fadein_2',['fadeIn',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a203d7b4943637a03090230742bb99208',1,'fr::softsf::sudokufx::view::CrashScreenView']]],
   ['feedback_3',['Feedback',['../md__r_e_a_d_m_e.html#autotoc_md17',1,'']]],
@@ -10,7 +10,7 @@ var searchData=
   ['filesystemmanagerutest_7',['FileSystemManagerUTest',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_file_system_manager_u_test.html',1,'fr::softsf::sudokufx::utils']]],
   ['filesystemmanagerutest_2ejava_8',['FileSystemManagerUTest.java',['../_file_system_manager_u_test_8java.html',1,'']]],
   ['findfirstsoftware_9',['findFirstSoftware',['../interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_software_repository.html#ae83142c4226c94b3b24f050848ae74c4',1,'fr::softsf::sudokufx::repository::SoftwareRepository']]],
-  ['flyway_10',['flyway',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1configuration_1_1_cds_data_source_config.html#a17f734fc72f47f10599ea072ea6ec777',1,'fr.softsf.sudokufx.utils.database.configuration.CdsDataSourceConfig.flyway()'],['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1configuration_1_1_data_source_config.html#ae490ec7a1ff6352c19292c11c0f0b5c1',1,'fr.softsf.sudokufx.utils.database.configuration.DataSourceConfig.flyway()'],['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1configuration_1_1_data_source_config_for_tests.html#a19e42e380f1b787a30dc2e0db5ba7925',1,'fr.softsf.sudokufx.utils.database.configuration.DataSourceConfigForTests.flyway()']]],
+  ['flyway_10',['flyway',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1configuration_1_1_data_source.html#a28ee69ce9e11cf06a41c6792f5215b0a',1,'fr::softsf::sudokufx::utils::database::configuration::DataSource']]],
   ['fr_3a_3asoftsf_3a_3asudokufx_11',['sudokufx',['../namespacefr_1_1softsf_1_1sudokufx.html',1,'fr::softsf']]],
   ['fr_3a_3asoftsf_3a_3asudokufx_3a_3aannotations_12',['annotations',['../namespacefr_1_1softsf_1_1sudokufx_1_1annotations.html',1,'fr::softsf::sudokufx']]],
   ['fr_3a_3asoftsf_3a_3asudokufx_3a_3adto_13',['dto',['../namespacefr_1_1softsf_1_1sudokufx_1_1dto.html',1,'fr::softsf::sudokufx']]],

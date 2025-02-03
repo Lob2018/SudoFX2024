@@ -1,3 +1,3 @@
-<map id="fr.softsf.sudokufx.utils.database.configuration.CdsDataSourceConfig" name="fr.softsf.sudokufx.utils.database.configuration.CdsDataSourceConfig">
+<map id="fr.softsf.sudokufx.utils.database.configuration.DataSourceCds" name="fr.softsf.sudokufx.utils.database.configuration.DataSourceCds">
 <area shape="rect" id="Node000001" title="Configuration class for setting up data sources and related beans for the CDS profile." alt="" coords="5,5,285,213"/>
 </map>

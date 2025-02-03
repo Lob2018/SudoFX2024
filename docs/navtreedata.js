@@ -74,8 +74,8 @@ var NAVTREEINDEX =
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html#a2c905cca687b2fa3275383e854cc8fca",
 "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties_u_test.html#a04e0bdaeaf6f3dc7fd78e70b052515ce",
 "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_macos_folder_factory.html#aa35e8620e8367cdc31ee906b86fa7df9",
-"classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a50c0a6b2933473abc96751f6f405c392",
-"functions_func_o.html"
+"classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a53ead1ea80a08e06c15ae42ae101fcdf",
+"functions_func_p.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
