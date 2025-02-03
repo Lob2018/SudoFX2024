@@ -44,7 +44,7 @@ public class GridMaster implements IGridMaster {
      * @param possibilites Tableau des possibilités par case (511 = toutes possibilités).
      * @return La somme des possibilités.
      */
-    private static int SommeDesPossibilitesDeLaGrille(final int[] possibilites) {
+    private static int sommeDesPossibilitesDeLaGrille(final int[] possibilites) {
         int somme = 0;
         for (int possibilite : possibilites) {
             somme += possibilite;
@@ -189,7 +189,7 @@ public class GridMaster implements IGridMaster {
                     cacherLesCases(nombreDeCasesACacher, grilleAResoudre);
                     // récupérer les possibilités
                     int[] possibilites = getPossibilites(grilleAResoudre);
-                    sommeDesPossibilites = SommeDesPossibilitesDeLaGrille(possibilites);
+                    sommeDesPossibilites = sommeDesPossibilitesDeLaGrille(possibilites);
                 } while (sommeDesPossibilites < moyenMinDifficulte || sommeDesPossibilites > moyenMaxDifficulte);
                 yield sommeDesPossibilites;
             }
@@ -201,7 +201,7 @@ public class GridMaster implements IGridMaster {
                     // Cacher les cases
                     cacherLesCases(nombreDeCasesACacher, grilleAResoudre);
                     // Récupérer la somme des possibilités
-                    sommeDesPossibilites = SommeDesPossibilitesDeLaGrille(getPossibilites(grilleAResoudre));
+                    sommeDesPossibilites = sommeDesPossibilitesDeLaGrille(getPossibilites(grilleAResoudre));
                 } while (sommeDesPossibilites < moyenMaxDifficulte);
                 yield sommeDesPossibilites;
             }
@@ -213,7 +213,7 @@ public class GridMaster implements IGridMaster {
                     // Cacher les cases
                     cacherLesCases(nombreDeCasesACacher, grilleAResoudre);
                     // Récupérer la somme des possibilités
-                    sommeDesPossibilites = SommeDesPossibilitesDeLaGrille(getPossibilites(grilleAResoudre));
+                    sommeDesPossibilites = sommeDesPossibilitesDeLaGrille(getPossibilites(grilleAResoudre));
                 } while (sommeDesPossibilites > moyenMinDifficulte);
                 yield sommeDesPossibilites;
             }
