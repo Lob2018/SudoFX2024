@@ -13,7 +13,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master =
     [ "nombreAleatoire", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a5bb14564ed4b6a7cded51e1bedc72faf", null ],
     [ "remplirLaGrille", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#ad07acfe4c763044df860c349c6c565ef", null ],
     [ "resoudreLaGrille", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a8eba2a9a790e47d419e87446a003818f", null ],
-    [ "SommeDesPossibilitesDeLaGrille", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#ac5c49fbdcc99b9d7d573d831a75c8e1d", null ],
+    [ "sommeDesPossibilitesDeLaGrille", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a700c8e5d20670ded6ac4b56312846839", null ],
     [ "verifierLaCoherenceEntreLaGrilleEtLesPossibilites", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a5ead122504d9cd11a071e47ccd4610b3", null ],
     [ "CHIFFRES", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#aae6881b7df59c493315801c311e1bb70", null ],
     [ "difficileMaxCachees", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a00e96466b5092c52b830193f5b8d9e30", null ],

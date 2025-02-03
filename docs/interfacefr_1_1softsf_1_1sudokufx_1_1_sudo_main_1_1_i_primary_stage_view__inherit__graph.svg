@@ -171,18 +171,18 @@ var sectionId = 'dynsection-0';
 <polygon fill="white" stroke="none" points="360,-530 211.5,-530 211.5,-118 360,-118 360,-530"/>
 <text text-anchor="start" x="234.75" y="-516.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.</text>
 <text text-anchor="start" x="255" y="-504.5" font-family="Helvetica,sans-Serif" font-size="10.00">FullMenuView</text>
-<text text-anchor="start" x="215.5" y="-488.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="225.5" y="-488.5" font-family="Helvetica,sans-Serif" font-size="10.00">FullMenuViewModel fullMenu</text>
-<text text-anchor="start" x="225.5" y="-476.5" font-family="Helvetica,sans-Serif" font-size="10.00">ViewModel</text>
-<text text-anchor="start" x="215.5" y="-460.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="225.5" y="-460.5" font-family="Helvetica,sans-Serif" font-size="10.00">SecureRandomGenerator</text>
-<text text-anchor="start" x="225.5" y="-448.5" font-family="Helvetica,sans-Serif" font-size="10.00"> secureRandomGenerator</text>
-<text text-anchor="start" x="217" y="-432.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="225.5" y="-432.5" font-family="Helvetica,sans-Serif" font-size="10.00">Button buttonHello</text>
-<text text-anchor="start" x="217" y="-416.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="225.5" y="-416.5" font-family="Helvetica,sans-Serif" font-size="10.00">FxmlService fxmlService</text>
-<text text-anchor="start" x="217" y="-400.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="225.5" y="-400.5" font-family="Helvetica,sans-Serif" font-size="10.00">final Stage primaryStage</text>
+<text text-anchor="start" x="217" y="-488.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="225.5" y="-488.5" font-family="Helvetica,sans-Serif" font-size="10.00">Button buttonHello</text>
+<text text-anchor="start" x="217" y="-472.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="225.5" y="-472.5" font-family="Helvetica,sans-Serif" font-size="10.00">FullMenuViewModel fullMenu</text>
+<text text-anchor="start" x="225.5" y="-460.5" font-family="Helvetica,sans-Serif" font-size="10.00">ViewModel</text>
+<text text-anchor="start" x="217" y="-444.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="225.5" y="-444.5" font-family="Helvetica,sans-Serif" font-size="10.00">FxmlService fxmlService</text>
+<text text-anchor="start" x="217" y="-428.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="225.5" y="-428.5" font-family="Helvetica,sans-Serif" font-size="10.00">final Stage primaryStage</text>
+<text text-anchor="start" x="217" y="-412.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="225.5" y="-412.5" font-family="Helvetica,sans-Serif" font-size="10.00">SecureRandomGenerator</text>
+<text text-anchor="start" x="225.5" y="-400.5" font-family="Helvetica,sans-Serif" font-size="10.00"> secureRandomGenerator</text>
 <text text-anchor="start" x="217" y="-384.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="225.5" y="-384.5" font-family="Helvetica,sans-Serif" font-size="10.00">final Text text1</text>
 <text text-anchor="start" x="217" y="-368.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>

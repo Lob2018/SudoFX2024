@@ -1,9 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties.html#afd79a2aeab3fe69dbb2ace62b5eddf83":[3,0,0,0,0,8,8,2],
-"classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties_u_test.html":[2,0,0,0,0,9,9],
-"classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties_u_test.html":[3,0,0,0,0,8,9],
-"classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties_u_test.html#a04e0bdaeaf6f3dc7fd78e70b052515ce":[2,0,0,0,0,9,9,2],
 "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties_u_test.html#a04e0bdaeaf6f3dc7fd78e70b052515ce":[3,0,0,0,0,8,9,2],
 "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties_u_test.html#a08ef9c0eade6d8951ae22facb3012c62":[2,0,0,0,0,9,9,10],
 "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties_u_test.html#a08ef9c0eade6d8951ae22facb3012c62":[3,0,0,0,0,8,9,10],
@@ -249,5 +245,9 @@ var NAVTREEINDEX2 =
 "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_macos_folder_factory.html":[3,0,0,0,0,8,1,1],
 "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_macos_folder_factory.html#a8012fbddcce2430e62d86c339a7caec4":[2,0,0,0,0,9,1,1,2],
 "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_macos_folder_factory.html#a8012fbddcce2430e62d86c339a7caec4":[3,0,0,0,0,8,1,1,2],
-"classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_macos_folder_factory.html#a86366335699ce6536a7bd2f6c620327f":[2,0,0,0,0,9,1,1,4]
+"classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_macos_folder_factory.html#a86366335699ce6536a7bd2f6c620327f":[2,0,0,0,0,9,1,1,4],
+"classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_macos_folder_factory.html#a86366335699ce6536a7bd2f6c620327f":[3,0,0,0,0,8,1,1,4],
+"classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_macos_folder_factory.html#a9077eec63616c12efdb66eb22688b99b":[2,0,0,0,0,9,1,1,1],
+"classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_macos_folder_factory.html#a9077eec63616c12efdb66eb22688b99b":[3,0,0,0,0,8,1,1,1],
+"classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_macos_folder_factory.html#aa35e8620e8367cdc31ee906b86fa7df9":[2,0,0,0,0,9,1,1,3]
 };

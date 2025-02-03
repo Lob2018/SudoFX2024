@@ -59,7 +59,7 @@ var searchData=
   ['softwareservice_2ejava_56',['SoftwareService.java',['../_software_service_8java.html',1,'']]],
   ['softwareserviceutest_57',['SoftwareServiceUTest',['../classfr_1_1softsf_1_1sudokufx_1_1unit_1_1service_1_1_software_service_u_test.html',1,'fr::softsf::sudokufx::unit::service']]],
   ['softwareserviceutest_2ejava_58',['SoftwareServiceUTest.java',['../_software_service_u_test_8java.html',1,'']]],
-  ['sommedespossibilitesdelagrille_59',['SommeDesPossibilitesDeLaGrille',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#ac5c49fbdcc99b9d7d573d831a75c8e1d',1,'fr::softsf::sudokufx::utils::sudoku::GridMaster']]],
+  ['sommedespossibilitesdelagrille_59',['sommeDesPossibilitesDeLaGrille',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a700c8e5d20670ded6ac4b56312846839',1,'fr::softsf::sudokufx::utils::sudoku::GridMaster']]],
   ['splashscreenfontsize_60',['splashScreenFontSize',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a147f53a9cd82c5c0819a15bf02e62fb5',1,'fr::softsf::sudokufx::view::SplashScreenView']]],
   ['splashscreenstage_61',['splashScreenStage',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a2c24f64b9b16418191a871f8d595ff57',1,'fr::softsf::sudokufx::view::SplashScreenView']]],
   ['splashscreenvbox_62',['splashscreenvbox',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#acb1a92b81801a3b82b0f62ea7388e8fe',1,'fr::softsf::sudokufx::view::SplashScreenView']]],

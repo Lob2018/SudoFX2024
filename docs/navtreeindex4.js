@@ -1,9 +1,5 @@
 var NAVTREEINDEX4 =
 {
-"classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a3dc8bd26bc5766072652bdd259da1991":[3,0,0,0,0,9,3,20],
-"classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a43f3d4cfc978262cad38aa5041f3d1a3":[2,0,0,0,0,10,3,27],
-"classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a43f3d4cfc978262cad38aa5041f3d1a3":[3,0,0,0,0,9,3,27],
-"classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a50c0a6b2933473abc96751f6f405c392":[2,0,0,0,0,10,3,21],
 "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a50c0a6b2933473abc96751f6f405c392":[3,0,0,0,0,9,3,21],
 "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a53ead1ea80a08e06c15ae42ae101fcdf":[2,0,0,0,0,10,3,10],
 "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a53ead1ea80a08e06c15ae42ae101fcdf":[3,0,0,0,0,9,3,10],
@@ -110,11 +106,10 @@ var NAVTREEINDEX4 =
 "dir_a58ea7daa5916c50b61e6c70de507c22.html":[4,0,1,0,0,0,0,0,7,0],
 "dir_a649969fb0ce802377fa0d754848ffcd.html":[4,0,1,1,0,0,0,0],
 "dir_ac8b1982cccc32b712516009ddc34fdf.html":[4,0,1,1,0,0,0,0,1,0,0],
-"dir_b06a868328f797e92eb114e1d6d3eeff.html":[4,0,1,1,0,0,0,0,3,0,0],
 "dir_b505b9574563ce0f663725cb1494ca32.html":[4,0,1,0,0,0,0,0,0],
 "dir_b56e19f1982a33341ef13b7017338f1f.html":[4,0,1,0,0,0,0,0,8],
 "dir_c548aeb0628c85003c638479069b793e.html":[4,0,1,1,0,0,0,0,2,1,0,0],
-"dir_c6d6bcaca080b79d132f7679e47a8ec9.html":[4,0,1,1,0,0,0,0,3,0,1],
+"dir_c6d6bcaca080b79d132f7679e47a8ec9.html":[4,0,1,1,0,0,0,0,3,0,0],
 "dir_ca30253373ed6a3d87f8101cb608ed45.html":[4,0,1,0,0,0,0,0,6,0],
 "dir_db20bc6699c5a755ea91c7c72ba6a34f.html":[4,0,1,1,0,0,0,0,2,1,2],
 "dir_df66706d7efa0a9fd8002f7f6346de3d.html":[4,0,1,0,0,0,0],
@@ -249,5 +244,10 @@ var NAVTREEINDEX4 =
 "functions_func_e.html":[3,3,1,3],
 "functions_func_f.html":[3,3,1,4],
 "functions_func_g.html":[3,3,1,5],
-"functions_func_h.html":[3,3,1,6]
+"functions_func_h.html":[3,3,1,6],
+"functions_func_i.html":[3,3,1,7],
+"functions_func_j.html":[3,3,1,8],
+"functions_func_l.html":[3,3,1,9],
+"functions_func_m.html":[3,3,1,10],
+"functions_func_n.html":[3,3,1,11]
 };

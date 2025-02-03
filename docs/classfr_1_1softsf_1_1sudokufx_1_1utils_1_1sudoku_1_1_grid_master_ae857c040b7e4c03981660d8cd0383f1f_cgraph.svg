@@ -47,7 +47,7 @@
   </g>
 </defs>
 <script type="application/ecmascript">
-var viewWidth = 822;
+var viewWidth = 821;
 var viewHeight = 190;
 var sectionId = 'dynsection-5';
 </script>
@@ -69,9 +69,9 @@ var sectionId = 'dynsection-5';
 <g id="Node000002" class="node">
 <title>Node2</title>
 <g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a89fed8ecc70b911e60ca540cca93ef78" target="_top" xlink:title="Cache un nombre spécifié de cases dans la grille à résoudre en les remplaçant par zéro.">
-<polygon fill="white" stroke="#666666" points="399.88,-182 248.88,-182 248.88,-150 399.88,-150 399.88,-182"/>
-<text text-anchor="start" x="256.88" y="-168.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.utils.sudoku.</text>
-<text text-anchor="middle" x="324.38" y="-156.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridMaster.cacherLesCases</text>
+<polygon fill="white" stroke="#666666" points="399.12,-182 248.12,-182 248.12,-150 399.12,-150 399.12,-182"/>
+<text text-anchor="start" x="256.12" y="-168.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.utils.sudoku.</text>
+<text text-anchor="middle" x="323.62" y="-156.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridMaster.cacherLesCases</text>
 </a>
 </g>
 </g>
@@ -79,8 +79,8 @@ var sectionId = 'dynsection-5';
 <g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
 <g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M128.59,-107.46C153.3,-118.01 186.69,-131.46 217,-141 223.65,-143.09 230.58,-145.1 237.58,-147"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="236.57,-150.36 247.14,-149.52 238.36,-143.59 236.57,-150.36"/>
+<path fill="none" stroke="#63b8ff" d="M128.6,-107.45C153.31,-117.99 186.69,-131.43 217,-141 223.49,-143.05 230.24,-145.01 237.07,-146.88"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="235.78,-150.16 246.35,-149.35 237.58,-143.4 235.78,-150.16"/>
 </a>
 </g>
 </g>
@@ -88,9 +88,9 @@ var sectionId = 'dynsection-5';
 <g id="Node000004" class="node">
 <title>Node4</title>
 <g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a46d1bfadcbb911b5a718508185da341f" target="_top" xlink:title="Calcule les possibilités pour chaque case de la grille de Sudoku.">
-<polygon fill="white" stroke="#666666" points="399.88,-82 248.88,-82 248.88,-50 399.88,-50 399.88,-82"/>
-<text text-anchor="start" x="256.88" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.utils.sudoku.</text>
-<text text-anchor="middle" x="324.38" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridMaster.getPossibilites</text>
+<polygon fill="white" stroke="#666666" points="399.12,-82 248.12,-82 248.12,-50 399.12,-50 399.12,-82"/>
+<text text-anchor="start" x="256.12" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.utils.sudoku.</text>
+<text text-anchor="middle" x="323.62" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridMaster.getPossibilites</text>
 </a>
 </g>
 </g>
@@ -98,8 +98,8 @@ var sectionId = 'dynsection-5';
 <g id="edge3_Node000001_Node000004" class="edge">
 <title>Node1&#45;&gt;Node4</title>
 <g id="a_edge3_Node000001_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M181.48,-81.3C199.74,-79.33 218.9,-77.26 237.03,-75.31"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="237.39,-78.79 246.96,-74.24 236.64,-71.83 237.39,-78.79"/>
+<path fill="none" stroke="#63b8ff" d="M181.19,-81.3C199.39,-79.33 218.49,-77.26 236.56,-75.31"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="236.89,-78.79 246.45,-74.24 236.13,-71.84 236.89,-78.79"/>
 </a>
 </g>
 </g>
@@ -107,9 +107,9 @@ var sectionId = 'dynsection-5';
 <g id="Node000007" class="node">
 <title>Node7</title>
 <g id="a_Node000007"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a5bb14564ed4b6a7cded51e1bedc72faf" target="_top" xlink:title="Génère un nombre entier aléatoire dans un intervalle spécifié.">
-<polygon fill="white" stroke="#666666" points="399.88,-132 248.88,-132 248.88,-100 399.88,-100 399.88,-132"/>
-<text text-anchor="start" x="256.88" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.utils.sudoku.</text>
-<text text-anchor="middle" x="324.38" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridMaster.nombreAleatoire</text>
+<polygon fill="white" stroke="#666666" points="399.12,-132 248.12,-132 248.12,-100 399.12,-100 399.12,-132"/>
+<text text-anchor="start" x="256.12" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.utils.sudoku.</text>
+<text text-anchor="middle" x="323.62" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridMaster.nombreAleatoire</text>
 </a>
 </g>
 </g>
@@ -117,18 +117,18 @@ var sectionId = 'dynsection-5';
 <g id="edge6_Node000001_Node000007" class="edge">
 <title>Node1&#45;&gt;Node7</title>
 <g id="a_edge6_Node000001_Node000007"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M181.48,-100.7C199.74,-102.67 218.9,-104.74 237.03,-106.69"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="236.64,-110.17 246.96,-107.76 237.39,-103.21 236.64,-110.17"/>
+<path fill="none" stroke="#63b8ff" d="M181.19,-100.7C199.39,-102.67 218.49,-104.74 236.56,-106.69"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="236.13,-110.16 246.45,-107.76 236.89,-103.21 236.13,-110.16"/>
 </a>
 </g>
 </g>
 <!-- Node8 -->
 <g id="Node000008" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#ac5c49fbdcc99b9d7d573d831a75c8e1d" target="_top" xlink:title="Calcule la somme des possibilités de toutes les cases de la grille de Sudoku.">
-<polygon fill="white" stroke="#666666" points="431.75,-32 217,-32 217,0 431.75,0 431.75,-32"/>
+<g id="a_Node000008"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a700c8e5d20670ded6ac4b56312846839" target="_top" xlink:title="Calcule la somme des possibilités de toutes les cases de la grille de Sudoku.">
+<polygon fill="white" stroke="#666666" points="430.25,-32 217,-32 217,0 430.25,0 430.25,-32"/>
 <text text-anchor="start" x="225" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.utils.sudoku.</text>
-<text text-anchor="middle" x="324.38" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridMaster.SommeDesPossibilitesDeLaGrille</text>
+<text text-anchor="middle" x="323.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridMaster.sommeDesPossibilitesDeLaGrille</text>
 </a>
 </g>
 </g>
@@ -136,8 +136,8 @@ var sectionId = 'dynsection-5';
 <g id="edge8_Node000001_Node000008" class="edge">
 <title>Node1&#45;&gt;Node8</title>
 <g id="a_edge8_Node000001_Node000008"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M128.59,-74.54C153.3,-63.99 186.69,-50.54 217,-41 223.2,-39.05 229.65,-37.17 236.17,-35.38"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="236.94,-38.8 245.71,-32.85 235.14,-32.03 236.94,-38.8"/>
+<path fill="none" stroke="#63b8ff" d="M128.6,-74.55C153.31,-64.01 186.69,-50.57 217,-41 223.16,-39.06 229.56,-37.18 236.03,-35.4"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="236.74,-38.84 245.5,-32.87 234.93,-32.07 236.74,-38.84"/>
 </a>
 </g>
 </g>
@@ -145,9 +145,9 @@ var sectionId = 'dynsection-5';
 <g id="Node000003" class="node">
 <title>Node3</title>
 <g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_secure_random_generator.html#ab000b11e58735924b9fca8db827374ad" target="_top" xlink:title="Generates a random integer between 0 (inclusive) and the specified bound (exclusive).">
-<polygon fill="white" stroke="#666666" points="627,-157 467.75,-157 467.75,-125 627,-125 627,-157"/>
-<text text-anchor="start" x="475.75" y="-143.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.utils.</text>
-<text text-anchor="middle" x="547.38" y="-131.5" font-family="Helvetica,sans-Serif" font-size="10.00">SecureRandomGenerator.nextInt</text>
+<polygon fill="white" stroke="#666666" points="625.5,-157 466.25,-157 466.25,-125 625.5,-125 625.5,-157"/>
+<text text-anchor="start" x="474.25" y="-143.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.utils.</text>
+<text text-anchor="middle" x="545.88" y="-131.5" font-family="Helvetica,sans-Serif" font-size="10.00">SecureRandomGenerator.nextInt</text>
 </a>
 </g>
 </g>
@@ -155,8 +155,8 @@ var sectionId = 'dynsection-5';
 <g id="edge2_Node000002_Node000003" class="edge">
 <title>Node2&#45;&gt;Node3</title>
 <g id="a_edge2_Node000002_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M400.2,-157.54C418.14,-155.51 437.48,-153.32 456.04,-151.22"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="456.43,-154.7 465.97,-150.1 455.64,-147.74 456.43,-154.7"/>
+<path fill="none" stroke="#63b8ff" d="M399.5,-157.5C417.26,-155.49 436.39,-153.31 454.76,-151.23"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="455.03,-154.72 464.57,-150.12 454.24,-147.77 455.03,-154.72"/>
 </a>
 </g>
 </g>
@@ -164,9 +164,9 @@ var sectionId = 'dynsection-5';
 <g id="Node000005" class="node">
 <title>Node5</title>
 <g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#ad1a85240278a682b9cf73c8d8ec6398d" target="_top" xlink:title="Initialise le tableau des possibilités pour chaque case.">
-<polygon fill="white" stroke="#666666" points="625.12,-82 469.62,-82 469.62,-50 625.12,-50 625.12,-82"/>
-<text text-anchor="start" x="477.62" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.utils.sudoku.</text>
-<text text-anchor="middle" x="547.38" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridMaster.initialiserPossibilites</text>
+<polygon fill="white" stroke="#666666" points="623.62,-82 468.12,-82 468.12,-50 623.62,-50 623.62,-82"/>
+<text text-anchor="start" x="476.12" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.utils.sudoku.</text>
+<text text-anchor="middle" x="545.88" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridMaster.initialiserPossibilites</text>
 </a>
 </g>
 </g>
@@ -174,8 +174,8 @@ var sectionId = 'dynsection-5';
 <g id="edge4_Node000004_Node000005" class="edge">
 <title>Node4&#45;&gt;Node5</title>
 <g id="a_edge4_Node000004_Node000005"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M400.2,-66C418.74,-66 438.79,-66 457.92,-66"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="457.86,-69.5 467.86,-66 457.86,-62.5 457.86,-69.5"/>
+<path fill="none" stroke="#63b8ff" d="M399.5,-66C417.86,-66 437.69,-66 456.62,-66"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="456.44,-69.5 466.44,-66 456.44,-62.5 456.44,-69.5"/>
 </a>
 </g>
 </g>
@@ -183,9 +183,9 @@ var sectionId = 'dynsection-5';
 <g id="Node000006" class="node">
 <title>Node6</title>
 <g id="a_Node000006"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#aab28df678a8069dd22b13a687bb2ba5b" target="_top" xlink:title="Élimine la valeur des possibilités des cases alentours.">
-<polygon fill="white" stroke="#666666" points="814,-82 663,-82 663,-50 814,-50 814,-82"/>
-<text text-anchor="start" x="671" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.utils.sudoku.</text>
-<text text-anchor="middle" x="738.5" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridMaster.eliminerPossibilite</text>
+<polygon fill="white" stroke="#666666" points="812.5,-82 661.5,-82 661.5,-50 812.5,-50 812.5,-82"/>
+<text text-anchor="start" x="669.5" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.utils.sudoku.</text>
+<text text-anchor="middle" x="737" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridMaster.eliminerPossibilite</text>
 </a>
 </g>
 </g>
@@ -193,8 +193,8 @@ var sectionId = 'dynsection-5';
 <g id="edge5_Node000005_Node000006" class="edge">
 <title>Node5&#45;&gt;Node6</title>
 <g id="a_edge5_Node000005_Node000006"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M625.57,-66C634.09,-66 642.81,-66 651.43,-66"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="651.18,-69.5 661.18,-66 651.18,-62.5 651.18,-69.5"/>
+<path fill="none" stroke="#63b8ff" d="M624.07,-66C632.59,-66 641.31,-66 649.93,-66"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="649.68,-69.5 659.68,-66 649.68,-62.5 649.68,-69.5"/>
 </a>
 </g>
 </g>
@@ -202,8 +202,8 @@ var sectionId = 'dynsection-5';
 <g id="edge7_Node000007_Node000003" class="edge">
 <title>Node7&#45;&gt;Node3</title>
 <g id="a_edge7_Node000007_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M400.2,-124.46C418.14,-126.49 437.48,-128.68 456.04,-130.78"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="455.64,-134.26 465.97,-131.9 456.43,-127.3 455.64,-134.26"/>
+<path fill="none" stroke="#63b8ff" d="M399.5,-124.5C417.26,-126.51 436.39,-128.69 454.76,-130.77"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="454.24,-134.23 464.57,-131.88 455.03,-127.28 454.24,-134.23"/>
 </a>
 </g>
 </g>
