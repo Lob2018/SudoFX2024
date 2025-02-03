@@ -5,21 +5,25 @@ import com.zaxxer.hikari.HikariDataSource;
 import fr.softsf.sudokufx.annotations.ExcludedFromCoverageReportGenerated;
 import fr.softsf.sudokufx.utils.MyLogback;
 import fr.softsf.sudokufx.utils.database.keystore.ApplicationKeystore;
+import lombok.Setter;
 import org.flywaydb.core.Flyway;
-import org.springframework.context.annotation.*;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.DependsOn;
 
 import static fr.softsf.sudokufx.utils.MyEnums.Paths.DATABASE_MIGRATION_PATH;
-import static fr.softsf.sudokufx.utils.MyEnums.Paths.DATABASE_NAME;
 
 /**
- * Configuration class for setting up data sources and related beans for the CDS profile.
- * CDS optimizes the startup and memory management of the application without the JRE.
+ * Abstract configuration class for setting up the application's data source.
+ * This class provides common configurations for different data source implementations.
  */
+@Setter
 @Configuration
-@Profile("cds")
-@PropertySource("classpath:fr/softsf/sudokufx/application-cds.properties")
 @ExcludedFromCoverageReportGenerated
-public class CdsDataSourceConfig {
+public abstract class DataSource {
+
+    private String jdbcUrl;
+    private String poolName;
 
     /**
      * Initializes Logback logging framework.
@@ -36,7 +40,7 @@ public class CdsDataSourceConfig {
     /**
      * Creates and configures the main DataSource for the application. This bean
      * depends on logbackInitialization to ensure Logback is properly set up.
-     * This method sets up a connection pool for an in-memory HSQLDB database.
+     * This method sets up a connection pool for HSQLDB database.
      *
      * @param keystore Application keystore for secure storage
      * @return Configured DataSource
@@ -46,9 +50,9 @@ public class CdsDataSourceConfig {
     HikariDataSource hikariDataSource(final ApplicationKeystore keystore) {
         keystore.setupApplicationKeystore();
         final HikariConfig config = new HikariConfig();
-        config.setPoolName("SudoFXCDSHikariConnection");
+        config.setPoolName(poolName);
         config.setDriverClassName("org.hsqldb.jdbc.JDBCDriver");
-        config.setJdbcUrl("jdbc:hsqldb:mem:" + DATABASE_NAME.getPath() + "CDS" + ";shutdown=true");
+        config.setJdbcUrl(jdbcUrl);
         config.setUsername(keystore.getUsername());
         config.setPassword(keystore.getPassword());
         config.setMaximumPoolSize(2);
@@ -82,4 +86,3 @@ public class CdsDataSourceConfig {
                 .load();
     }
 }
-

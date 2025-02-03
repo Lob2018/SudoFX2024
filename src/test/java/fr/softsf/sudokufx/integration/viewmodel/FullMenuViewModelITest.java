@@ -3,7 +3,7 @@ package fr.softsf.sudokufx.integration.viewmodel;
 import fr.softsf.sudokufx.SudoMain;
 import fr.softsf.sudokufx.dto.SoftwareDto;
 import fr.softsf.sudokufx.service.SoftwareService;
-import fr.softsf.sudokufx.utils.database.configuration.DataSourceConfigForTests;
+import fr.softsf.sudokufx.utils.database.configuration.DataSourceTest;
 import fr.softsf.sudokufx.viewmodel.FullMenuViewModel;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -23,7 +23,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @SpringBootTest(classes = {SudoMain.class})
 @ActiveProfiles("test")
-@Import(DataSourceConfigForTests.class)
+@Import(DataSourceTest.class)
 @ExtendWith(SystemStubsExtension.class)
 class FullMenuViewModelITest {
 
