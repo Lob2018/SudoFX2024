@@ -20,7 +20,7 @@ public class DataSourceCds extends DataSource {
     @Override
     @DependsOn({"logbackInitialization"})
     HikariDataSource hikariDataSource(final ApplicationKeystore keystore) {
-        this.setJdbcUrl("jdbc:hsqldb:mem:" + DATABASE_NAME.getPath() + "CDS" + ";shutdown=true");
+        this.setJdbcUrl("jdbc:hsqldb:mem:" + DATABASE_NAME.getPath() + "CDS;DB_CLOSE_DELAY=-1;shutdown=true");
         this.setPoolName("SudokuFXCDSHikariConnection");
         return super.hikariDataSource(keystore);
     }

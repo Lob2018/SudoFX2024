@@ -19,7 +19,7 @@ public class DataSourceTest extends DataSource {
     @Override
     @DependsOn({"logbackInitialization"})
     HikariDataSource hikariDataSource(final ApplicationKeystore keystore) {
-        this.setJdbcUrl("jdbc:hsqldb:mem:" + DATABASE_NAME.getPath() + "Test" + ";shutdown=true");
+        this.setJdbcUrl("jdbc:hsqldb:mem:" + DATABASE_NAME.getPath() + "Test;DB_CLOSE_DELAY=-1;shutdown=true");
         this.setPoolName("SudokuFXTestHikariConnection");
         return super.hikariDataSource(keystore);
     }
