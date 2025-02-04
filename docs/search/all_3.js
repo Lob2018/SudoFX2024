@@ -17,7 +17,7 @@ var searchData=
   ['defaultgridvalue_14',['defaultgridvalue',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#a30ac89762a105bf0118e47c43a23437f',1,'fr::softsf::sudokufx::model::Grid']]],
   ['deletefile_15',['deleteFile',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_file_system_manager.html#a752d7f11a25dc9362fff915fb51fe816',1,'fr::softsf::sudokufx::utils::FileSystemManager']]],
   ['deletefolderrecursively_16',['deleteFolderRecursively',['../interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_file_system.html#a6deb518c2efb12bebd3840bad228e004',1,'fr.softsf.sudokufx.interfaces.IFileSystem.deleteFolderRecursively()'],['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_file_system_manager.html#a89a1c35ed3d11a33b44e91549bc8db7a',1,'fr.softsf.sudokufx.utils.FileSystemManager.deleteFolderRecursively()']]],
-  ['diagram_20for_20invalid_20authorization_17',['diagram for invalid authorization',['../index.html#Activity',1,'']]],
+  ['diagram_20for_20invalid_20authorization_17',['Activity diagram for invalid authorization',['../index.html#activity-diagram-for-invalid-authorization',1,'']]],
   ['diagrams_18',['Case Diagrams',['../index.html#Use',1,'']]],
   ['difficile_5fmax_5fcachees_19',['DIFFICILE_MAX_CACHEES',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#ac498e74f962fd88ec4c8781e50d074d3',1,'fr::softsf::sudokufx::utils::sudoku::GridMaster']]],
   ['difficulty_20',['difficulty',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#a9e8c97ddccacccd10ea4e834c6ff06a8',1,'fr::softsf::sudokufx::model::Grid']]],

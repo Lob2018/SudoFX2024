@@ -4,7 +4,7 @@ var index =
     [ "Links", "index.html#Useful", null ],
     [ "UML", "index.html#UML", [
       [ "Case Diagrams", "index.html#Use", null ],
-      [ "diagram for invalid authorization", "index.html#Activity", null ]
+      [ "Activity diagram for invalid authorization", "index.html#activity-diagram-for-invalid-authorization", null ]
     ] ],
     [ "Merise", "index.html#Merise", [
       [ "MCD", "index.html#MCD", null ],
