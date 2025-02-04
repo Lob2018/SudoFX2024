@@ -22,7 +22,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Interface defining methods for encrypt and decrypt using AES&#45;GCM (Galois/Counter Mode) encryption.">
+<g id="a_Node000001"><a xlink:title="Interface defining methods to encrypt and decrypt using AES&#45;GCM (Galois/Counter Mode) encryption.">
 <polygon fill="#999999" stroke="none" points="162.5,-316 29.25,-316 29.25,-212 162.5,-212 162.5,-316"/>
 <text text-anchor="start" x="33.25" y="-302.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.interfaces.</text>
 <text text-anchor="start" x="54.62" y="-290.5" font-family="Helvetica,sans-Serif" font-size="10.00">IEncryptionService</text>

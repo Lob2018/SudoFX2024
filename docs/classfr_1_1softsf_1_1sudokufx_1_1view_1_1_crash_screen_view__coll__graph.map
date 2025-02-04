@@ -2,7 +2,7 @@
 <area shape="rect" id="Node000001" title="View class for the crash screen without business logic." alt="" coords="639,283,869,736"/>
 <area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudokufx_1_1_sudo_main_1_1_i_primary_stage_view.html" title="Interface for the primary stage view." alt="" coords="5,5,235,123"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="197,130,272,193,354,257,501,356,640,440,638,445,498,360,351,261,268,197,194,135"/>
-<area shape="rect" id="Node000003" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_os_folder_factory.html" title="Interface defining methods for accessing OS&#45;specific folder paths." alt="" coords="260,11,456,117"/>
+<area shape="rect" id="Node000003" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_os_folder_factory.html" title="Interface defining methods to access OS&#45;specific folder paths." alt="" coords="260,11,456,117"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="359,117,366,187,377,224,393,257,416,288,441,318,500,370,563,414,625,449,622,454,560,418,497,374,438,321,412,292,389,260,372,225,361,188,353,118"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="479,29,524,99"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="504,98,510,174,519,216,534,258,553,294,576,328,629,392,625,396,572,332,549,296,529,260,514,218,505,174,498,99"/>

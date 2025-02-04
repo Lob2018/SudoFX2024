@@ -9,7 +9,7 @@
 <area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="413,261,363,331,358,328,409,258"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="366,5,528,91"/>
 <area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="450,105,450,159,444,159,444,105"/>
-<area shape="rect" id="Node000006" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_grid_master.html" title=" " alt="" coords="410,369,588,508"/>
+<area shape="rect" id="Node000006" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_grid_master.html" title="Interface defining methods to generate and solve Sudoku puzzles." alt="" coords="410,369,588,508"/>
 <area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="502,508,502,582,496,582,496,508"/>
 <area shape="rect" id="Node000007" title=" " alt="" coords="612,404,706,473"/>
 <area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="643,475,580,586,576,583,638,472"/>

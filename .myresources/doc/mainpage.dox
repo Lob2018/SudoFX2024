@@ -2,14 +2,29 @@
  * @mainpage Documentation of SudokuFX
  *
  *
- * ## Introduction
+ * \section Introduction
  *
- * SudokuFX is a Sudoku game that allows you to create multiple player profiles and save and restore their games.
+ * SudokuFX is a Sudoku game that allows you to create multiple player profiles and save and restore their games.<br>
  * The application allows you to solve the current Sudoku grid, as well as other entries manually.
  *
- * ## Useful Links
+ * [![SudokuFX in action](https://raw.githubusercontent.com/Lob2018/SudokuFX/master/.myresources/design_and_modeling/images/SudokuFX_in_action.jpg)](https://github.com/Lob2018/SudokuFX/releases/latest)
+ *
+ * \section Useful Links
  * - [GitHub](https://github.com/Lob2018/SudokuFX)
  * - [Project Roadmap](https://github.com/users/Lob2018/projects/4)
  * - [Application Mockup (Figma)](https://www.figma.com/design/GiSwlg2mZofXalf1Quaa5w/SudokuFX?node-id=0-1&t=smJqt7CQuD0zZuUP-1)
  * - [Doxygen Documentation](https://lob2018.github.io/SudokuFX/)
+ *
+ * \section UML
+ * \subsection Use Case Diagrams
+ * \image html https://raw.githubusercontent.com/Lob2018/SudokuFX/master/.myresources/design_and_modeling/uml/uc/uc.png
+ * \subsection Activity diagram for invalid authorization
+ * \image html https://raw.githubusercontent.com/Lob2018/SudokuFX/master/.myresources/design_and_modeling/uml/activity/keystore.invalid.authorization.png
+ *
+ * \section Merise
+ * \subsection MCD
+ * \image html https://raw.githubusercontent.com/Lob2018/SudokuFX/master/.myresources/design_and_modeling/merise/MCD.png
+ * \subsection MPD
+ * \image html https://raw.githubusercontent.com/Lob2018/SudokuFX/master/.myresources/design_and_modeling/merise/MPD.png
+ *
  */

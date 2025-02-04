@@ -17,7 +17,7 @@
 <area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="432,261,407,328,402,326,427,259"/>
 <area shape="rect" id="Node000009" title=" " alt="" coords="366,5,528,91"/>
 <area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="450,105,450,159,444,159,444,105"/>
-<area shape="rect" id="Node000010" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_grid_master.html" title=" " alt="" coords="493,369,670,508"/>
+<area shape="rect" id="Node000010" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_grid_master.html" title="Interface defining methods to generate and solve Sudoku puzzles." alt="" coords="493,369,670,508"/>
 <area shape="poly" id="edge10_Node000005_Node000010" title=" " alt="" coords="595,507,631,745,626,745,589,508"/>
 <area shape="rect" id="Node000011" title=" " alt="" coords="695,404,788,473"/>
 <area shape="poly" id="edge11_Node000005_Node000011" title=" " alt="" coords="738,474,683,745,677,744,732,473"/>

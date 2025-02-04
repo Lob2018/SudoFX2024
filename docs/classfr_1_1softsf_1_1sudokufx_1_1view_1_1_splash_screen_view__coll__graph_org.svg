@@ -64,7 +64,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_splash_screen_view.html" target="_top" xlink:title="Interface for the splash screen view.">
+<g id="a_Node000002"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_splash_screen_view.html" target="_top" xlink:title="Interface defining methods to hide or show the splash screen.">
 <polygon fill="white" stroke="none" points="133.25,-576 0,-576 0,-496 133.25,-496 133.25,-576"/>
 <text text-anchor="start" x="4" y="-562.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.interfaces.</text>
 <text text-anchor="start" x="23.88" y="-550.5" font-family="Helvetica,sans-Serif" font-size="10.00">ISplashScreenView</text>

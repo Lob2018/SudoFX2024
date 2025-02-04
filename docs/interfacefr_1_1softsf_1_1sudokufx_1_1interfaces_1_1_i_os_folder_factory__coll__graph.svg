@@ -22,7 +22,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Interface defining methods for accessing OS&#45;specific folder paths.">
+<g id="a_Node000001"><a xlink:title="Interface defining methods to access OS&#45;specific folder paths.">
 <polygon fill="#999999" stroke="none" points="147,-80 0,-80 0,0 147,0 147,-80"/>
 <text text-anchor="start" x="10.88" y="-66.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.interfaces.</text>
 <text text-anchor="start" x="35.62" y="-54.5" font-family="Helvetica,sans-Serif" font-size="10.00">IOsFolderFactory</text>

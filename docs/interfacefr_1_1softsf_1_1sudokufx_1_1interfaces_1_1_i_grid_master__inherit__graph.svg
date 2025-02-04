@@ -58,7 +58,7 @@ var sectionId = 'dynsection-0';
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Interface defining methods to generate and solve Sudoku puzzles.">
 <polygon fill="#999999" stroke="none" points="154.38,-992 21.12,-992 21.12,-888 154.38,-888 154.38,-992"/>
 <text text-anchor="start" x="25.12" y="-978.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.interfaces.</text>
 <text text-anchor="start" x="62.25" y="-966.5" font-family="Helvetica,sans-Serif" font-size="10.00">IGridMaster</text>

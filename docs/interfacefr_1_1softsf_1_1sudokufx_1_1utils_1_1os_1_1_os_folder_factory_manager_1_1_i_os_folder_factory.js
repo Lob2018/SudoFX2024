@@ -1,5 +1,0 @@
-var interfacefr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_os_folder_factory_manager_1_1_i_os_folder_factory =
-[
-    [ "getOsDataFolderPath", "interfacefr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_os_folder_factory_manager_1_1_i_os_folder_factory.html#a1d97b6311f75c1cbd0d7c42c327b8335", null ],
-    [ "getOsLogsFolderPath", "interfacefr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_os_folder_factory_manager_1_1_i_os_folder_factory.html#a653a4eaaff7c2ab12db1e5f7f28ae184", null ]
-];

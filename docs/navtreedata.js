@@ -25,26 +25,7 @@
 var NAVTREE =
 [
   [ "SudokuFX", "index.html", [
-    [ "Documentation of SudokuFX", "index.html", null ],
-    [ "SudokuFX", "md__r_e_a_d_m_e.html", [
-      [ "", "md__r_e_a_d_m_e.html#autotoc_md3", [
-        [ "Contents", "md__r_e_a_d_m_e.html#autotoc_md4", null ],
-        [ "Description", "md__r_e_a_d_m_e.html#autotoc_md5", null ],
-        [ "Build with", "md__r_e_a_d_m_e.html#autotoc_md6", null ],
-        [ "Project", "md__r_e_a_d_m_e.html#autotoc_md7", [
-          [ "Roadmap", "md__r_e_a_d_m_e.html#autotoc_md8", null ],
-          [ "Mockup", "md__r_e_a_d_m_e.html#autotoc_md9", null ],
-          [ "Windows how to run in IntelliJ IDEA", "md__r_e_a_d_m_e.html#autotoc_md10", null ]
-        ] ],
-        [ "Installation", "md__r_e_a_d_m_e.html#autotoc_md11", null ],
-        [ "Use", "md__r_e_a_d_m_e.html#autotoc_md12", null ],
-        [ "Examples", "md__r_e_a_d_m_e.html#autotoc_md13", null ],
-        [ "Update", "md__r_e_a_d_m_e.html#autotoc_md14", null ],
-        [ "Uninstallation", "md__r_e_a_d_m_e.html#autotoc_md15", null ],
-        [ "Contributors", "md__r_e_a_d_m_e.html#autotoc_md16", null ],
-        [ "Feedback", "md__r_e_a_d_m_e.html#autotoc_md17", null ]
-      ] ]
-    ] ],
+    [ "Documentation of SudokuFX", "index.html", "index" ],
     [ "Packages", "namespaces.html", [
       [ "Package List", "namespaces.html", "namespaces_dup" ],
       [ "Package Members", "namespacemembers.html", [

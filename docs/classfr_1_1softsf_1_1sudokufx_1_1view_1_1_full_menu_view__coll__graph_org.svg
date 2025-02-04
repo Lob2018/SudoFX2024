@@ -289,7 +289,7 @@
 <!-- Node10 -->
 <g id="Node000010" class="node">
 <title>Node10</title>
-<g id="a_Node000010"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_grid_master.html" target="_top" xlink:title=" ">
+<g id="a_Node000010"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_grid_master.html" target="_top" xlink:title="Interface defining methods to generate and solve Sudoku puzzles.">
 <polygon fill="white" stroke="none" points="498.88,-912 365.62,-912 365.62,-808 498.88,-808 498.88,-912"/>
 <text text-anchor="start" x="369.62" y="-898.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.interfaces.</text>
 <text text-anchor="start" x="406.75" y="-886.5" font-family="Helvetica,sans-Serif" font-size="10.00">IGridMaster</text>

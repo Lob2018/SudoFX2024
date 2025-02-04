@@ -1,7 +1,7 @@
 package fr.softsf.sudokufx.interfaces;
 
 /**
- * Interface for the splash screen view.
+ * Interface defining methods to hide or show the splash screen.
  */
 public interface ISplashScreenView {
 

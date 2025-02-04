@@ -1,9 +1,27 @@
 var searchData=
 [
-  ['name_0',['name',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#ab127050c37577250b5b640a1bdf8b9d5',1,'fr::softsf::sudokufx::model::Player']]],
-  ['nestingofnodes_1',['nestingOfNodes',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a0af4ab414c9c917edc9975bfd5c63fbd',1,'fr::softsf::sudokufx::view::SplashScreenView']]],
-  ['nextint_2',['nextInt',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_secure_random_generator.html#ab000b11e58735924b9fca8db827374ad',1,'fr.softsf.sudokufx.utils.SecureRandomGenerator.nextInt(int bound)'],['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_secure_random_generator.html#a0c4bfff3955ce29f562a476f4eec54aa',1,'fr.softsf.sudokufx.utils.SecureRandomGenerator.nextInt(int origin, int bound)']]],
-  ['nodesconfiguration_3',['nodesConfiguration',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#acddefac20ee4e90165233cb342d56fe0',1,'fr::softsf::sudokufx::view::SplashScreenView']]],
-  ['nombre_5fcases_4',['NOMBRE_CASES',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a6972816ecde004f75fb83988452943bb',1,'fr::softsf::sudokufx::utils::sudoku::GridMaster']]],
-  ['nombrealeatoire_5',['nombreAleatoire',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a5bb14564ed4b6a7cded51e1bedc72faf',1,'fr::softsf::sudokufx::utils::sudoku::GridMaster']]]
+  ['of_20sudokufx_0',['Documentation of SudokuFX',['../index.html',1,'']]],
+  ['onhellobuttonclick_1',['onHelloButtonClick',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_full_menu_view.html#aa0fda3c8f5ece709f5ad6ded51bb3619',1,'fr::softsf::sudokufx::view::FullMenuView']]],
+  ['openingconfigurestage_2',['openingConfigureStage',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_full_menu_view.html#aa5bdf2b4390e2a246d33ac373165182a',1,'fr::softsf::sudokufx::view::FullMenuView']]],
+  ['openingfadein_3',['openingFadeIn',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_full_menu_view.html#ad022e625d8ea0e8d1d26bae3833fc1e1',1,'fr::softsf::sudokufx::view::FullMenuView']]],
+  ['openingmainstage_4',['openingMainStage',['../interfacefr_1_1softsf_1_1sudokufx_1_1_sudo_main_1_1_i_primary_stage_view.html#a58ceeab55c5f349cf79c8541ecad1000',1,'fr.softsf.sudokufx.SudoMain.IPrimaryStageView.openingMainStage()'],['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#acf48fcf9ca3ca27d580108d2d3e3635c',1,'fr.softsf.sudokufx.view.CrashScreenView.openingMainStage()'],['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_full_menu_view.html#a8786fa02ee9aec7ac7c324c83549b788',1,'fr.softsf.sudokufx.view.FullMenuView.openingMainStage(final ISplashScreenView iSplashScreenView)']]],
+  ['openingmaximizeprimarystage_5',['openingMaximizePrimaryStage',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_full_menu_view.html#af5bcaa40ae660c9b1f6d89b119517533',1,'fr::softsf::sudokufx::view::FullMenuView']]],
+  ['openingshowstage_6',['openingShowStage',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_full_menu_view.html#a4abc7606e83fbb183ba28aa9d90c0cd4',1,'fr::softsf::sudokufx::view::FullMenuView']]],
+  ['optimizing_7',['OPTIMIZING',['../enumfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_enums_1_1_log_back_txt.html#aca09ec2846b576cef3ef8723a14769a7',1,'fr::softsf::sudokufx::utils::MyEnums::LogBackTxt']]],
+  ['ordre_8',['ORDRE',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a22b34c19f87bdd82645147af3b5ddb74',1,'fr::softsf::sudokufx::utils::sudoku::GridMaster']]],
+  ['os_9',['os',['../enumfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_enums_1_1_os_name.html#a707bb6b96386d00f88fa6e810cfa8743',1,'fr.softsf.sudokufx.utils.MyEnums.OsName.os'],['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_os_folder_factory_manager.html#a68032d380c43ae6da92a8487feb02740',1,'fr.softsf.sudokufx.utils.os.OsFolderFactoryManager.os']]],
+  ['os_5fname_10',['OS_NAME',['../enumfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_enums_1_1_os_name.html#aac61e9aa37290cb87566c37ab504c01e',1,'fr::softsf::sudokufx::utils::MyEnums::OsName']]],
+  ['osfolderfactory_11',['osFolderFactory',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_os_folder_factory_manager.html#abe170d1d4c6183a0a6e9d7dd7904fd19',1,'fr::softsf::sudokufx::utils::os::OsFolderFactoryManager']]],
+  ['osfolderfactorymanager_12',['OsFolderFactoryManager',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_os_folder_factory_manager.html',1,'fr::softsf::sudokufx::utils::os']]],
+  ['osfolderfactorymanager_13',['osFolderFactoryManager',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_os_folder_factory_manager_u_test.html#ac8c2b7b0a3669d175da50172d4be81f3',1,'fr::softsf::sudokufx::utils::os::OsFolderFactoryManagerUTest']]],
+  ['osfolderfactorymanager_2ejava_14',['OsFolderFactoryManager.java',['../_os_folder_factory_manager_8java.html',1,'']]],
+  ['osfolderfactorymanagerutest_15',['OsFolderFactoryManagerUTest',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_os_folder_factory_manager_u_test.html',1,'fr::softsf::sudokufx::utils::os']]],
+  ['osfolderfactorymanagerutest_2ejava_16',['OsFolderFactoryManagerUTest.java',['../_os_folder_factory_manager_u_test_8java.html',1,'']]],
+  ['osfolderinitializer_17',['OsFolderInitializer',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_os_folder_initializer.html',1,'fr.softsf.sudokufx.utils.os.OsFolderInitializer'],['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_os_folder_initializer.html#a80d7890771142dd59e0fb9da61eb6e71',1,'fr.softsf.sudokufx.utils.os.OsFolderInitializer.OsFolderInitializer()']]],
+  ['osfolderinitializer_2ejava_18',['OsFolderInitializer.java',['../_os_folder_initializer_8java.html',1,'']]],
+  ['osfolderinitializerutest_19',['OsFolderInitializerUTest',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_os_folder_initializer_u_test.html',1,'fr::softsf::sudokufx::utils::os']]],
+  ['osfolderinitializerutest_2ejava_20',['OsFolderInitializerUTest.java',['../_os_folder_initializer_u_test_8java.html',1,'']]],
+  ['osinfoutest_21',['OsInfoUTest',['../classfr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1os_1_1_os_info_u_test.html',1,'fr::softsf::sudokufx::unit::utils::os']]],
+  ['osinfoutest_2ejava_22',['OsInfoUTest.java',['../_os_info_u_test_8java.html',1,'']]],
+  ['osname_23',['OsName',['../enumfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_enums_1_1_os_name.html',1,'fr.softsf.sudokufx.utils.MyEnums.OsName'],['../enumfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_enums_1_1_os_name.html#a777659cc3a4c9edcf4baa04ae54f79db',1,'fr.softsf.sudokufx.utils.MyEnums.OsName.OsName()']]]
 ];

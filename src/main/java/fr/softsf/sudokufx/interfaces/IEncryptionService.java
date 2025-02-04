@@ -1,7 +1,7 @@
 package fr.softsf.sudokufx.interfaces;
 
 /**
- * Interface defining methods for encrypt and decrypt
+ * Interface defining methods to encrypt and decrypt
  * using AES-GCM (Galois/Counter Mode) encryption.
  */
 public interface IEncryptionService {

@@ -2,7 +2,7 @@ package fr.softsf.sudokufx.interfaces;
 
 
 /**
- * Interface defining methods for accessing OS-specific folder paths.
+ * Interface defining methods to access OS-specific folder paths.
  */
 public interface IOsFolderFactory {
     /**
