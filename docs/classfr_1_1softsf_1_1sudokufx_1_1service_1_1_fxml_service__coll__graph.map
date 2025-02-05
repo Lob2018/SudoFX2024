@@ -1,10 +1,13 @@
 <map id="fr.softsf.sudokufx.service.FxmlService" name="fr.softsf.sudokufx.service.FxmlService">
-<area shape="rect" id="Node000001" title="FxmlService is a Spring service that manages the loading of FXML files and updating the root of the J..." alt="" coords="62,325,248,485"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,53,75"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="23,75,15,114,10,161,11,212,23,260,36,286,53,311,49,314,32,289,18,262,6,212,4,161,9,113,17,74"/>
-<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_dynamic_font_size.html" title="Manages dynamic font sizing based on the dimensions of a JavaFX Scene." alt="" coords="76,139,234,261"/>
-<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="55,69,99,124,94,128,51,73"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="258,165,342,235"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="297,235,287,269,271,303,260,318,256,315,267,300,282,267,292,234"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="157,261,157,308,152,308,152,261"/>
+<area shape="rect" id="Node000001" title="FxmlService is a Spring service that manages the loading of FXML files and updating the root of the J..." alt="" coords="150,363,336,523"/>
+<area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_scene_provider.html" title="Interface ISceneProvider." alt="" coords="5,5,183,91"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,106,71,149,66,198,69,249,83,298,96,321,113,343,152,381,149,385,109,347,92,324,78,300,64,250,61,198,66,148,74,104"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_dynamic_font_size.html" title="Manages dynamic font sizing based on the dimensions of a JavaFX Scene." alt="" coords="92,155,261,299"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="122,103,146,154,141,156,118,105"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="246,13,294,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="281,82,291,132,299,196,301,268,293,339,291,347,286,346,288,338,296,268,294,197,286,133,276,83"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="255,84,224,141,220,139,250,81"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="376,192,460,261"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="393,263,321,351,316,348,389,260"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="177,298,184,338,187,346,181,348,179,339,172,299"/>
 </map>

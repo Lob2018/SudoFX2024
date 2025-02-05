@@ -8,7 +8,6 @@ var annotated_dup =
           ] ],
           [ "e2e", null, [
             [ "utils", "namespacefr_1_1softsf_1_1sudokufx_1_1e2e_1_1utils.html", [
-              [ "DynamicFontSizeChangeE2ETest", "classfr_1_1softsf_1_1sudokufx_1_1e2e_1_1utils_1_1_dynamic_font_size_change_e2_e_test.html", "classfr_1_1softsf_1_1sudokufx_1_1e2e_1_1utils_1_1_dynamic_font_size_change_e2_e_test" ],
               [ "MyEnumsE2ETest", "classfr_1_1softsf_1_1sudokufx_1_1e2e_1_1utils_1_1_my_enums_e2_e_test.html", "classfr_1_1softsf_1_1sudokufx_1_1e2e_1_1utils_1_1_my_enums_e2_e_test" ]
             ] ]
           ] ],
@@ -38,6 +37,7 @@ var annotated_dup =
             [ "IGridMaster", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_grid_master.html", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_grid_master" ],
             [ "IKeystore", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_keystore.html", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_keystore" ],
             [ "IOsFolderFactory", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_os_folder_factory.html", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_os_folder_factory" ],
+            [ "ISceneProvider", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_scene_provider.html", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_scene_provider" ],
             [ "ISplashScreenView", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_splash_screen_view.html", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_splash_screen_view" ]
           ] ],
           [ "model", "namespacefr_1_1softsf_1_1sudokufx_1_1model.html", [
@@ -113,6 +113,7 @@ var annotated_dup =
               [ "GridMaster", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master" ]
             ] ],
             [ "DynamicFontSize", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_dynamic_font_size.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_dynamic_font_size" ],
+            [ "DynamicFontSizeChangeE2ETest", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_dynamic_font_size_change_e2_e_test.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_dynamic_font_size_change_e2_e_test" ],
             [ "ExceptionTools", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_exception_tools.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_exception_tools" ],
             [ "FileSystemManager", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_file_system_manager.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_file_system_manager" ],
             [ "FileSystemManagerUTest", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_file_system_manager_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_file_system_manager_u_test" ],

@@ -6,5 +6,6 @@ var namespacefr_1_1softsf_1_1sudokufx_1_1interfaces =
     [ "IGridMaster", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_grid_master.html", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_grid_master" ],
     [ "IKeystore", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_keystore.html", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_keystore" ],
     [ "IOsFolderFactory", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_os_folder_factory.html", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_os_folder_factory" ],
+    [ "ISceneProvider", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_scene_provider.html", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_scene_provider" ],
     [ "ISplashScreenView", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_splash_screen_view.html", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_splash_screen_view" ]
 ];

@@ -15,6 +15,7 @@ var searchData=
   ['iplayerlanguagemapper_12',['IPlayerLanguageMapper',['../interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_player_language_mapper.html',1,'fr::softsf::sudokufx::interfaces::mapper']]],
   ['iplayermapper_13',['IPlayerMapper',['../interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_player_mapper.html',1,'fr::softsf::sudokufx::interfaces::mapper']]],
   ['iprimarystageview_14',['IPrimaryStageView',['../interfacefr_1_1softsf_1_1sudokufx_1_1_sudo_main_1_1_i_primary_stage_view.html',1,'fr::softsf::sudokufx::SudoMain']]],
-  ['isoftwaremapper_15',['ISoftwareMapper',['../interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_software_mapper.html',1,'fr::softsf::sudokufx::interfaces::mapper']]],
-  ['isplashscreenview_16',['ISplashScreenView',['../interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_splash_screen_view.html',1,'fr::softsf::sudokufx::interfaces']]]
+  ['isceneprovider_15',['ISceneProvider',['../interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_scene_provider.html',1,'fr::softsf::sudokufx::interfaces']]],
+  ['isoftwaremapper_16',['ISoftwareMapper',['../interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_software_mapper.html',1,'fr::softsf::sudokufx::interfaces::mapper']]],
+  ['isplashscreenview_17',['ISplashScreenView',['../interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_splash_screen_view.html',1,'fr::softsf::sudokufx::interfaces']]]
 ];

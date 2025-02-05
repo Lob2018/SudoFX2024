@@ -7,15 +7,13 @@ var hierarchy =
       [ "fr.softsf.sudokufx.utils.database.configuration.DataSourceDefault", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1configuration_1_1_data_source_default.html", null ],
       [ "fr.softsf.sudokufx.utils.database.configuration.DataSourceTest", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1configuration_1_1_data_source_test.html", null ]
     ] ],
-    [ "fr.softsf.sudokufx.utils.DynamicFontSize", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_dynamic_font_size.html", null ],
-    [ "fr.softsf.sudokufx.e2e.utils.DynamicFontSizeChangeE2ETest", "classfr_1_1softsf_1_1sudokufx_1_1e2e_1_1utils_1_1_dynamic_font_size_change_e2_e_test.html", null ],
+    [ "fr.softsf.sudokufx.utils.DynamicFontSizeChangeE2ETest", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_dynamic_font_size_change_e2_e_test.html", null ],
     [ "fr.softsf.sudokufx.utils.ExceptionTools", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_exception_tools.html", null ],
     [ "fr.softsf.sudokufx.unit.utils.ExceptionToolsUTest", "classfr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1_exception_tools_u_test.html", null ],
     [ "fr.softsf.sudokufx.annotations.ExcludedFromCoverageReportGenerated", "interfacefr_1_1softsf_1_1sudokufx_1_1annotations_1_1_excluded_from_coverage_report_generated.html", null ],
     [ "fr.softsf.sudokufx.utils.FileSystemManagerUTest", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_file_system_manager_u_test.html", null ],
     [ "fr.softsf.sudokufx.viewmodel.FullMenuViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_full_menu_view_model.html", null ],
     [ "fr.softsf.sudokufx.integration.viewmodel.FullMenuViewModelITest", "classfr_1_1softsf_1_1sudokufx_1_1integration_1_1viewmodel_1_1_full_menu_view_model_i_test.html", null ],
-    [ "fr.softsf.sudokufx.service.FxmlService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_fxml_service.html", null ],
     [ "fr.softsf.sudokufx.model.Game", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html", null ],
     [ "fr.softsf.sudokufx.model.GameLevel", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html", null ],
     [ "fr.softsf.sudokufx.utils.database.keystore.GenerateSecret", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_generate_secret.html", null ],
@@ -49,6 +47,12 @@ var hierarchy =
     [ "fr.softsf.sudokufx.interfaces.mapper.IPlayerLanguageMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_player_language_mapper.html", null ],
     [ "fr.softsf.sudokufx.interfaces.mapper.IPlayerMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_player_mapper.html", null ],
     [ "fr.softsf.sudokufx.SudoMain.IPrimaryStageView", "interfacefr_1_1softsf_1_1sudokufx_1_1_sudo_main_1_1_i_primary_stage_view.html", [
+      [ "fr.softsf.sudokufx.view.CrashScreenView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html", null ],
+      [ "fr.softsf.sudokufx.view.FullMenuView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_full_menu_view.html", null ]
+    ] ],
+    [ "fr.softsf.sudokufx.interfaces.ISceneProvider", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_scene_provider.html", [
+      [ "fr.softsf.sudokufx.service.FxmlService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_fxml_service.html", null ],
+      [ "fr.softsf.sudokufx.utils.DynamicFontSize", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_dynamic_font_size.html", null ],
       [ "fr.softsf.sudokufx.view.CrashScreenView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html", null ],
       [ "fr.softsf.sudokufx.view.FullMenuView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_full_menu_view.html", null ]
     ] ],

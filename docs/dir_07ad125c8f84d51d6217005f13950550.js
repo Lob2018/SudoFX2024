@@ -6,5 +6,6 @@ var dir_07ad125c8f84d51d6217005f13950550 =
     [ "IGridMaster.java", "_i_grid_master_8java.html", "_i_grid_master_8java" ],
     [ "IKeystore.java", "_i_keystore_8java.html", "_i_keystore_8java" ],
     [ "IOsFolderFactory.java", "_i_os_folder_factory_8java.html", "_i_os_folder_factory_8java" ],
+    [ "ISceneProvider.java", "_i_scene_provider_8java.html", "_i_scene_provider_8java" ],
     [ "ISplashScreenView.java", "_i_splash_screen_view_8java.html", "_i_splash_screen_view_8java" ]
 ];

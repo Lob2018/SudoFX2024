@@ -47,7 +47,7 @@
   </g>
 </defs>
 <script type="application/ecmascript">
-var viewWidth = 1210;
+var viewWidth = 1296;
 var viewHeight = 1193;
 var sectionId = 'dynsection-1';
 </script>
@@ -59,36 +59,36 @@ var sectionId = 'dynsection-1';
 <g id="Node000001" class="node">
 <title>Node1</title>
 <g id="a_Node000001"><a xlink:title="View class for the full menu screen of the Sudoku application.">
-<polygon fill="#999999" stroke="none" points="728.5,-244 580,-244 580,0 728.5,0 728.5,-244"/>
-<text text-anchor="start" x="603.25" y="-230.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.</text>
-<text text-anchor="start" x="623.5" y="-218.5" font-family="Helvetica,sans-Serif" font-size="10.00">FullMenuView</text>
-<text text-anchor="start" x="585.5" y="-202.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="594" y="-202.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final double</text>
-<text text-anchor="start" x="594" y="-190.5" font-family="Helvetica,sans-Serif" font-size="10.00"> FADE_IN_IN_SECONDS</text>
-<text text-anchor="start" x="594" y="-178.5" font-family="Helvetica,sans-Serif" font-size="10.00">_AFTER_SPLASHSCREEN</text>
-<text text-anchor="start" x="584" y="-162.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="594" y="-162.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingMainStage</text>
-<text text-anchor="start" x="594" y="-150.5" font-family="Helvetica,sans-Serif" font-size="10.00">(final ISplashScreenView</text>
-<text text-anchor="start" x="594" y="-138.5" font-family="Helvetica,sans-Serif" font-size="10.00"> iSplashScreenView)</text>
-<text text-anchor="start" x="585.5" y="-122.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="594" y="-122.5" font-family="Helvetica,sans-Serif" font-size="10.00">void initialize()</text>
-<text text-anchor="start" x="585.5" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="594" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">void onHelloButtonClick</text>
-<text text-anchor="start" x="594" y="-94.5" font-family="Helvetica,sans-Serif" font-size="10.00">(ActionEvent event)</text>
-<text text-anchor="start" x="585.5" y="-78.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="594" y="-78.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingConfigureStage()</text>
-<text text-anchor="start" x="585.5" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="594" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingFadeIn</text>
-<text text-anchor="start" x="594" y="-50.5" font-family="Helvetica,sans-Serif" font-size="10.00">(final Node node)</text>
-<text text-anchor="start" x="585.5" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="594" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingMaximizePrimary</text>
-<text text-anchor="start" x="594" y="-22.5" font-family="Helvetica,sans-Serif" font-size="10.00">Stage()</text>
-<text text-anchor="start" x="585.5" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="594" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingShowStage()</text>
-<polygon fill="#666666" stroke="#666666" points="580,-214 580,-214 728.5,-214 728.5,-214 580,-214"/>
-<polygon fill="#666666" stroke="#666666" points="580,-174 580,-174 592,-174 592,-174 580,-174"/>
-<polygon fill="#666666" stroke="#666666" points="592,-174 592,-174 728.5,-174 728.5,-174 592,-174"/>
-<polygon fill="none" stroke="#666666" points="580,0 580,-244 728.5,-244 728.5,0 580,0"/>
+<polygon fill="#999999" stroke="none" points="737.5,-244 589,-244 589,0 737.5,0 737.5,-244"/>
+<text text-anchor="start" x="612.25" y="-230.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.</text>
+<text text-anchor="start" x="632.5" y="-218.5" font-family="Helvetica,sans-Serif" font-size="10.00">FullMenuView</text>
+<text text-anchor="start" x="594.5" y="-202.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="603" y="-202.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final double</text>
+<text text-anchor="start" x="603" y="-190.5" font-family="Helvetica,sans-Serif" font-size="10.00"> FADE_IN_IN_SECONDS</text>
+<text text-anchor="start" x="603" y="-178.5" font-family="Helvetica,sans-Serif" font-size="10.00">_AFTER_SPLASHSCREEN</text>
+<text text-anchor="start" x="593" y="-162.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="603" y="-162.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingMainStage</text>
+<text text-anchor="start" x="603" y="-150.5" font-family="Helvetica,sans-Serif" font-size="10.00">(final ISplashScreenView</text>
+<text text-anchor="start" x="603" y="-138.5" font-family="Helvetica,sans-Serif" font-size="10.00"> iSplashScreenView)</text>
+<text text-anchor="start" x="594.5" y="-122.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="603" y="-122.5" font-family="Helvetica,sans-Serif" font-size="10.00">void initialize()</text>
+<text text-anchor="start" x="594.5" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="603" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">void onHelloButtonClick</text>
+<text text-anchor="start" x="603" y="-94.5" font-family="Helvetica,sans-Serif" font-size="10.00">(ActionEvent event)</text>
+<text text-anchor="start" x="594.5" y="-78.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="603" y="-78.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingConfigureStage()</text>
+<text text-anchor="start" x="594.5" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="603" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingFadeIn</text>
+<text text-anchor="start" x="603" y="-50.5" font-family="Helvetica,sans-Serif" font-size="10.00">(final Node node)</text>
+<text text-anchor="start" x="594.5" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="603" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingMaximizePrimary</text>
+<text text-anchor="start" x="603" y="-22.5" font-family="Helvetica,sans-Serif" font-size="10.00">Stage()</text>
+<text text-anchor="start" x="594.5" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="603" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingShowStage()</text>
+<polygon fill="#666666" stroke="#666666" points="589,-214 589,-214 737.5,-214 737.5,-214 589,-214"/>
+<polygon fill="#666666" stroke="#666666" points="589,-174 589,-174 601,-174 601,-174 589,-174"/>
+<polygon fill="#666666" stroke="#666666" points="601,-174 601,-174 737.5,-174 737.5,-174 601,-174"/>
+<polygon fill="none" stroke="#666666" points="589,0 589,-244 737.5,-244 737.5,0 589,0"/>
 </a>
 </g>
 </g>
@@ -96,17 +96,17 @@ var sectionId = 'dynsection-1';
 <g id="Node000002" class="node">
 <title>Node2</title>
 <g id="a_Node000002"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1_sudo_main_1_1_i_primary_stage_view.html" target="_top" xlink:title="Interface for the primary stage view.">
-<polygon fill="white" stroke="none" points="284.5,-566 112,-566 112,-478 284.5,-478 284.5,-566"/>
-<text text-anchor="start" x="135.25" y="-552.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.SudoMain.</text>
-<text text-anchor="start" x="156.25" y="-540.5" font-family="Helvetica,sans-Serif" font-size="10.00">IPrimaryStageView</text>
-<text text-anchor="start" x="196.75" y="-524.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="116" y="-508.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="126" y="-508.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingMainStage</text>
-<text text-anchor="start" x="126" y="-496.5" font-family="Helvetica,sans-Serif" font-size="10.00">(ISplashScreenView iSplashScreen</text>
-<text text-anchor="start" x="126" y="-484.5" font-family="Helvetica,sans-Serif" font-size="10.00">View)</text>
-<polygon fill="#666666" stroke="#666666" points="112,-536 112,-536 284.5,-536 284.5,-536 112,-536"/>
-<polygon fill="#666666" stroke="#666666" points="112,-520 112,-520 284.5,-520 284.5,-520 112,-520"/>
-<polygon fill="none" stroke="#666666" points="112,-478 112,-566 284.5,-566 284.5,-478 112,-478"/>
+<polygon fill="white" stroke="none" points="172.5,-566 0,-566 0,-478 172.5,-478 172.5,-566"/>
+<text text-anchor="start" x="23.25" y="-552.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.SudoMain.</text>
+<text text-anchor="start" x="44.25" y="-540.5" font-family="Helvetica,sans-Serif" font-size="10.00">IPrimaryStageView</text>
+<text text-anchor="start" x="84.75" y="-524.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="4" y="-508.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="14" y="-508.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingMainStage</text>
+<text text-anchor="start" x="14" y="-496.5" font-family="Helvetica,sans-Serif" font-size="10.00">(ISplashScreenView iSplashScreen</text>
+<text text-anchor="start" x="14" y="-484.5" font-family="Helvetica,sans-Serif" font-size="10.00">View)</text>
+<polygon fill="#666666" stroke="#666666" points="0,-536 0,-536 172.5,-536 172.5,-536 0,-536"/>
+<polygon fill="#666666" stroke="#666666" points="0,-520 0,-520 172.5,-520 172.5,-520 0,-520"/>
+<polygon fill="none" stroke="#666666" points="0,-478 0,-566 172.5,-566 172.5,-478 0,-478"/>
 </a>
 </g>
 </g>
@@ -114,22 +114,24 @@ var sectionId = 'dynsection-1';
 <g id="edge1_Node000001_Node000002" class="edge">
 <title>Node2&#45;&gt;Node1</title>
 <g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M213.85,-467.44C229.17,-420.99 255.85,-353.62 294.25,-304 365.85,-211.47 497.56,-162.59 580.27,-139.82"/>
-<polygon fill="none" stroke="#63b8ff" points="210.58,-466.16 210.84,-476.75 217.25,-468.31 210.58,-466.16"/>
+<path fill="none" stroke="#63b8ff" d="M92.88,-466.98C102.93,-408.37 127.51,-315.95 186.25,-262 299.49,-157.99 486.29,-131.43 589.31,-124.9"/>
+<polygon fill="none" stroke="#63b8ff" points="89.45,-466.31 91.31,-476.74 96.36,-467.42 89.45,-466.31"/>
 </a>
 </g>
 </g>
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:title=" ">
-<polygon fill="white" stroke="none" points="329.62,-548 302.88,-548 302.88,-496 329.62,-496 329.62,-548"/>
-<text text-anchor="start" x="306.88" y="-534.5" font-family="Helvetica,sans-Serif" font-size="10.00">Text</text>
-<text text-anchor="start" x="314.75" y="-518.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="314.75" y="-502.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polygon fill="#666666" stroke="#666666" points="302.88,-530 302.88,-530 329.62,-530 329.62,-530 302.88,-530"/>
-<polygon fill="#666666" stroke="#666666" points="302.88,-514 302.88,-514 329.62,-514 329.62,-514 302.88,-514"/>
-<polygon fill="none" stroke="#666666" points="302.88,-496 302.88,-548 329.62,-548 329.62,-496 302.88,-496"/>
+<g id="a_Node000003"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_scene_provider.html" target="_top" xlink:title="Interface ISceneProvider.">
+<polygon fill="white" stroke="none" points="304.88,-1064 171.62,-1064 171.62,-1000 304.88,-1000 304.88,-1064"/>
+<text text-anchor="start" x="175.62" y="-1050.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.interfaces.</text>
+<text text-anchor="start" x="204.88" y="-1038.5" font-family="Helvetica,sans-Serif" font-size="10.00">ISceneProvider</text>
+<text text-anchor="start" x="236.75" y="-1022.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="176.88" y="-1006.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="188.12" y="-1006.5" font-family="Helvetica,sans-Serif" font-size="10.00">default Scene getScene()</text>
+<polygon fill="#666666" stroke="#666666" points="171.62,-1034 171.62,-1034 304.88,-1034 304.88,-1034 171.62,-1034"/>
+<polygon fill="#666666" stroke="#666666" points="171.62,-1018 171.62,-1018 304.88,-1018 304.88,-1018 171.62,-1018"/>
+<polygon fill="none" stroke="#666666" points="171.62,-1000 171.62,-1064 304.88,-1064 304.88,-1000 171.62,-1000"/>
 </a>
 </g>
 </g>
@@ -137,24 +139,85 @@ var sectionId = 'dynsection-1';
 <g id="edge2_Node000001_Node000003" class="edge">
 <title>Node3&#45;&gt;Node1</title>
 <g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M314.26,-496.13C311.9,-454.6 311.23,-369.25 338.25,-304 376.48,-211.68 487.94,-164.36 567.65,-141.67"/>
-<polygon fill="none" stroke="#63b8ff" points="567.71,-141.65 572.44,-136.21 579.28,-138.48 574.56,-143.92 567.71,-141.65"/>
+<path fill="none" stroke="#63b8ff" d="M232.03,-988.98C216.61,-868.69 188.74,-518.01 349.25,-304 409.56,-223.59 516.87,-173.05 589.04,-146.42"/>
+<polygon fill="none" stroke="#63b8ff" points="228.53,-989.26 233.32,-998.71 235.47,-988.34 228.53,-989.26"/>
 </a>
 </g>
-<text text-anchor="middle" x="376.02" y="-276.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;text1</text>
-<text text-anchor="middle" x="376.02" y="-264.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;text2</text>
+</g>
+<!-- Node15 -->
+<g id="Node000015" class="node">
+<title>Node15</title>
+<g id="a_Node000015"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1_fxml_service.html" target="_top" xlink:title="FxmlService is a Spring service that manages the loading of FXML files and updating the root of the J...">
+<polygon fill="white" stroke="none" points="498,-582 358.5,-582 358.5,-462 498,-462 498,-582"/>
+<text text-anchor="start" x="371.25" y="-568.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.service.</text>
+<text text-anchor="start" x="400.88" y="-556.5" font-family="Helvetica,sans-Serif" font-size="10.00">FxmlService</text>
+<text text-anchor="start" x="426.75" y="-540.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="362.5" y="-524.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="372.5" y="-524.5" font-family="Helvetica,sans-Serif" font-size="10.00">FxmlService(FXMLLoader</text>
+<text text-anchor="start" x="372.5" y="-512.5" font-family="Helvetica,sans-Serif" font-size="10.00"> fxmlLoader)</text>
+<text text-anchor="start" x="362.5" y="-496.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="372.5" y="-496.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setRootByFXMLName</text>
+<text text-anchor="start" x="372.5" y="-484.5" font-family="Helvetica,sans-Serif" font-size="10.00">(final String fxml)</text>
+<text text-anchor="start" x="362.5" y="-468.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="372.5" y="-468.5" font-family="Helvetica,sans-Serif" font-size="10.00">public&lt; T &gt; T getController()</text>
+<polygon fill="#666666" stroke="#666666" points="358.5,-552 358.5,-552 498,-552 498,-552 358.5,-552"/>
+<polygon fill="#666666" stroke="#666666" points="358.5,-536 358.5,-536 498,-536 498,-536 358.5,-536"/>
+<polygon fill="none" stroke="#666666" points="358.5,-462 358.5,-582 498,-582 498,-462 358.5,-462"/>
+</a>
+</g>
+</g>
+<!-- Node3&#45;&gt;Node15 -->
+<g id="edge16_Node000015_Node000003" class="edge">
+<title>Node3&#45;&gt;Node15</title>
+<g id="a_edge16_Node000015_Node000003"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M235.4,-988.91C233.43,-939.45 234.45,-855.55 257.25,-788 283.47,-710.31 337.53,-632.84 377.88,-581.91"/>
+<polygon fill="none" stroke="#63b8ff" points="231.89,-988.78 235.85,-998.61 238.88,-988.45 231.89,-988.78"/>
+</a>
+</g>
+</g>
+<!-- Node18 -->
+<g id="Node000018" class="node">
+<title>Node18</title>
+<g id="a_Node000018"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_dynamic_font_size.html" target="_top" xlink:title="Manages dynamic font sizing based on the dimensions of a JavaFX Scene.">
+<polygon fill="white" stroke="none" points="392.62,-914 265.88,-914 265.88,-806 392.62,-806 392.62,-914"/>
+<text text-anchor="start" x="279" y="-900.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.utils.</text>
+<text text-anchor="start" x="290.25" y="-888.5" font-family="Helvetica,sans-Serif" font-size="10.00">DynamicFontSize</text>
+<text text-anchor="start" x="271.38" y="-872.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="279.88" y="-872.5" font-family="Helvetica,sans-Serif" font-size="10.00">double currentFontSize</text>
+<text text-anchor="start" x="269.88" y="-856.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="279.88" y="-856.5" font-family="Helvetica,sans-Serif" font-size="10.00">DynamicFontSize()</text>
+<text text-anchor="start" x="269.88" y="-840.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="279.88" y="-840.5" font-family="Helvetica,sans-Serif" font-size="10.00">void updateFontSize()</text>
+<text text-anchor="start" x="269.88" y="-824.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="279.88" y="-824.5" font-family="Helvetica,sans-Serif" font-size="10.00">DynamicFontSize(Scene</text>
+<text text-anchor="start" x="279.88" y="-812.5" font-family="Helvetica,sans-Serif" font-size="10.00"> scene)</text>
+<polygon fill="#666666" stroke="#666666" points="265.88,-884 265.88,-884 392.62,-884 392.62,-884 265.88,-884"/>
+<polygon fill="#666666" stroke="#666666" points="265.88,-868 265.88,-868 277.88,-868 277.88,-868 265.88,-868"/>
+<polygon fill="#666666" stroke="#666666" points="277.88,-868 277.88,-868 392.62,-868 392.62,-868 277.88,-868"/>
+<polygon fill="none" stroke="#666666" points="265.88,-806 265.88,-914 392.62,-914 392.62,-806 265.88,-806"/>
+</a>
+</g>
+</g>
+<!-- Node3&#45;&gt;Node18 -->
+<g id="edge20_Node000018_Node000003" class="edge">
+<title>Node3&#45;&gt;Node18</title>
+<g id="a_edge20_Node000018_Node000003"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M260.11,-990.16C272.36,-967.28 287.76,-938.51 300.92,-913.92"/>
+<polygon fill="none" stroke="#63b8ff" points="257.08,-988.41 255.44,-998.88 263.25,-991.72 257.08,-988.41"/>
+</a>
+</g>
 </g>
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
 <g id="a_Node000004"><a xlink:title=" ">
-<polygon fill="white" stroke="none" points="381,-548 347.5,-548 347.5,-496 381,-496 381,-548"/>
-<text text-anchor="start" x="351.5" y="-534.5" font-family="Helvetica,sans-Serif" font-size="10.00">Stage</text>
-<text text-anchor="start" x="362.75" y="-518.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="362.75" y="-502.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polygon fill="#666666" stroke="#666666" points="347.5,-530 347.5,-530 381,-530 381,-530 347.5,-530"/>
-<polygon fill="#666666" stroke="#666666" points="347.5,-514 347.5,-514 381,-514 381,-514 347.5,-514"/>
-<polygon fill="none" stroke="#666666" points="347.5,-496 347.5,-548 381,-548 381,-496 347.5,-496"/>
+<polygon fill="white" stroke="none" points="573.62,-548 546.88,-548 546.88,-496 573.62,-496 573.62,-548"/>
+<text text-anchor="start" x="550.88" y="-534.5" font-family="Helvetica,sans-Serif" font-size="10.00">Text</text>
+<text text-anchor="start" x="558.75" y="-518.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="558.75" y="-502.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polygon fill="#666666" stroke="#666666" points="546.88,-530 546.88,-530 573.62,-530 573.62,-530 546.88,-530"/>
+<polygon fill="#666666" stroke="#666666" points="546.88,-514 546.88,-514 573.62,-514 573.62,-514 546.88,-514"/>
+<polygon fill="none" stroke="#666666" points="546.88,-496 546.88,-548 573.62,-548 573.62,-496 546.88,-496"/>
 </a>
 </g>
 </g>
@@ -162,39 +225,24 @@ var sectionId = 'dynsection-1';
 <g id="edge3_Node000001_Node000004" class="edge">
 <title>Node4&#45;&gt;Node1</title>
 <g id="a_edge3_Node000001_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M360.96,-496.12C356.6,-453.44 353.3,-365.02 390.25,-304 431.29,-236.23 508.49,-187.81 568.85,-158.21"/>
-<polygon fill="none" stroke="#63b8ff" points="568.67,-158.29 572.35,-152.09 579.49,-153.1 575.81,-159.31 568.67,-158.29"/>
+<path fill="none" stroke="#63b8ff" d="M559.99,-496.28C560.22,-449.25 564.32,-344.25 593.5,-262 594.23,-259.94 594.98,-257.88 595.76,-255.81"/>
+<polygon fill="none" stroke="#63b8ff" points="595.71,-255.92 594.17,-248.88 600.08,-244.74 601.62,-251.79 595.71,-255.92"/>
 </a>
 </g>
-<text text-anchor="middle" x="453.16" y="-270.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;primaryStage</text>
+<text text-anchor="middle" x="607.38" y="-276.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;text1</text>
+<text text-anchor="middle" x="607.38" y="-264.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;text2</text>
 </g>
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_full_menu_view_model.html" target="_top" xlink:title="FullMenuViewModel with business logic (not final)">
-<polygon fill="white" stroke="none" points="569,-618 399.5,-618 399.5,-426 569,-426 569,-618"/>
-<text text-anchor="start" x="419.75" y="-604.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
-<text text-anchor="start" x="440.38" y="-592.5" font-family="Helvetica,sans-Serif" font-size="10.00">FullMenuViewModel</text>
-<text text-anchor="start" x="482.75" y="-576.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="403.5" y="-560.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="413.5" y="-560.5" font-family="Helvetica,sans-Serif" font-size="10.00">FullMenuViewModel</text>
-<text text-anchor="start" x="413.5" y="-548.5" font-family="Helvetica,sans-Serif" font-size="10.00">(SoftwareService softwareService,</text>
-<text text-anchor="start" x="413.5" y="-536.5" font-family="Helvetica,sans-Serif" font-size="10.00"> IGridMaster iGridMaster)</text>
-<text text-anchor="start" x="403.5" y="-520.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="413.5" y="-520.5" font-family="Helvetica,sans-Serif" font-size="10.00">void test()</text>
-<text text-anchor="start" x="403.5" y="-504.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="413.5" y="-504.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringProperty welcomeProperty()</text>
-<text text-anchor="start" x="405" y="-488.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="413.5" y="-488.5" font-family="Helvetica,sans-Serif" font-size="10.00">void createSoftware()</text>
-<text text-anchor="start" x="405" y="-472.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="413.5" y="-472.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setWelcome(String</text>
-<text text-anchor="start" x="413.5" y="-460.5" font-family="Helvetica,sans-Serif" font-size="10.00"> output)</text>
-<text text-anchor="start" x="405" y="-444.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="413.5" y="-444.5" font-family="Helvetica,sans-Serif" font-size="10.00">void updateSoftware</text>
-<text text-anchor="start" x="413.5" y="-432.5" font-family="Helvetica,sans-Serif" font-size="10.00">(SoftwareDto softwareToUpdate)</text>
-<polygon fill="#666666" stroke="#666666" points="399.5,-588 399.5,-588 569,-588 569,-588 399.5,-588"/>
-<polygon fill="#666666" stroke="#666666" points="399.5,-572 399.5,-572 569,-572 569,-572 399.5,-572"/>
-<polygon fill="none" stroke="#666666" points="399.5,-426 399.5,-618 569,-618 569,-426 399.5,-426"/>
+<g id="a_Node000005"><a xlink:title=" ">
+<polygon fill="white" stroke="none" points="627,-548 593.5,-548 593.5,-496 627,-496 627,-548"/>
+<text text-anchor="start" x="597.5" y="-534.5" font-family="Helvetica,sans-Serif" font-size="10.00">Stage</text>
+<text text-anchor="start" x="608.75" y="-518.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="608.75" y="-502.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polygon fill="#666666" stroke="#666666" points="593.5,-530 593.5,-530 627,-530 627,-530 593.5,-530"/>
+<polygon fill="#666666" stroke="#666666" points="593.5,-514 593.5,-514 627,-514 627,-514 593.5,-514"/>
+<polygon fill="none" stroke="#666666" points="593.5,-496 593.5,-548 627,-548 627,-496 593.5,-496"/>
 </a>
 </g>
 </g>
@@ -202,63 +250,73 @@ var sectionId = 'dynsection-1';
 <g id="edge4_Node000001_Node000005" class="edge">
 <title>Node5&#45;&gt;Node1</title>
 <g id="a_edge4_Node000001_Node000005"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M504.19,-426.1C516.61,-375.92 534.94,-314.1 559.5,-262 563.7,-253.08 568.44,-244.1 573.51,-235.23"/>
-<polygon fill="none" stroke="#63b8ff" points="573.54,-235.18 573.14,-227.98 579.63,-224.84 580.03,-232.04 573.54,-235.18"/>
+<path fill="none" stroke="#63b8ff" d="M610.56,-496.2C611.46,-449.89 614.95,-347.25 628.5,-262 628.8,-260.12 629.11,-258.23 629.44,-256.32"/>
+<polygon fill="none" stroke="#63b8ff" points="629.43,-256.35 626.57,-249.73 631.58,-244.55 634.44,-251.17 629.43,-256.35"/>
 </a>
 </g>
-<text text-anchor="middle" x="604.88" y="-270.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;fullMenuViewModel</text>
+<text text-anchor="middle" x="660.38" y="-270.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;primaryStage</text>
 </g>
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1_software_service.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="none" points="347.25,-932 191.25,-932 191.25,-788 347.25,-788 347.25,-932"/>
-<text text-anchor="start" x="212.25" y="-918.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.service.</text>
-<text text-anchor="start" x="233.25" y="-906.5" font-family="Helvetica,sans-Serif" font-size="10.00">SoftwareService</text>
-<text text-anchor="start" x="267.75" y="-890.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="195.25" y="-874.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="205.25" y="-874.5" font-family="Helvetica,sans-Serif" font-size="10.00">SoftwareService(Software</text>
-<text text-anchor="start" x="205.25" y="-862.5" font-family="Helvetica,sans-Serif" font-size="10.00">Repository softwareRepository)</text>
-<text text-anchor="start" x="195.25" y="-846.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="205.25" y="-846.5" font-family="Helvetica,sans-Serif" font-size="10.00">Optional&lt; SoftwareDto</text>
-<text text-anchor="start" x="205.25" y="-834.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; getSoftware()</text>
-<text text-anchor="start" x="195.25" y="-818.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="205.25" y="-818.5" font-family="Helvetica,sans-Serif" font-size="10.00">Optional&lt; SoftwareDto</text>
-<text text-anchor="start" x="205.25" y="-806.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; updateSoftware(SoftwareDto</text>
-<text text-anchor="start" x="205.25" y="-794.5" font-family="Helvetica,sans-Serif" font-size="10.00"> softwareDto)</text>
-<polygon fill="#666666" stroke="#666666" points="191.25,-902 191.25,-902 347.25,-902 347.25,-902 191.25,-902"/>
-<polygon fill="#666666" stroke="#666666" points="191.25,-886 191.25,-886 347.25,-886 347.25,-886 191.25,-886"/>
-<polygon fill="none" stroke="#666666" points="191.25,-788 191.25,-932 347.25,-932 347.25,-788 191.25,-788"/>
+<g id="a_Node000006"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_full_menu_view_model.html" target="_top" xlink:title="FullMenuViewModel with business logic (not final)">
+<polygon fill="white" stroke="none" points="815,-618 645.5,-618 645.5,-426 815,-426 815,-618"/>
+<text text-anchor="start" x="665.75" y="-604.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
+<text text-anchor="start" x="686.38" y="-592.5" font-family="Helvetica,sans-Serif" font-size="10.00">FullMenuViewModel</text>
+<text text-anchor="start" x="728.75" y="-576.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="649.5" y="-560.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="659.5" y="-560.5" font-family="Helvetica,sans-Serif" font-size="10.00">FullMenuViewModel</text>
+<text text-anchor="start" x="659.5" y="-548.5" font-family="Helvetica,sans-Serif" font-size="10.00">(SoftwareService softwareService,</text>
+<text text-anchor="start" x="659.5" y="-536.5" font-family="Helvetica,sans-Serif" font-size="10.00"> IGridMaster iGridMaster)</text>
+<text text-anchor="start" x="649.5" y="-520.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="659.5" y="-520.5" font-family="Helvetica,sans-Serif" font-size="10.00">void test()</text>
+<text text-anchor="start" x="649.5" y="-504.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="659.5" y="-504.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringProperty welcomeProperty()</text>
+<text text-anchor="start" x="651" y="-488.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="659.5" y="-488.5" font-family="Helvetica,sans-Serif" font-size="10.00">void createSoftware()</text>
+<text text-anchor="start" x="651" y="-472.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="659.5" y="-472.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setWelcome(String</text>
+<text text-anchor="start" x="659.5" y="-460.5" font-family="Helvetica,sans-Serif" font-size="10.00"> output)</text>
+<text text-anchor="start" x="651" y="-444.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="659.5" y="-444.5" font-family="Helvetica,sans-Serif" font-size="10.00">void updateSoftware</text>
+<text text-anchor="start" x="659.5" y="-432.5" font-family="Helvetica,sans-Serif" font-size="10.00">(SoftwareDto softwareToUpdate)</text>
+<polygon fill="#666666" stroke="#666666" points="645.5,-588 645.5,-588 815,-588 815,-588 645.5,-588"/>
+<polygon fill="#666666" stroke="#666666" points="645.5,-572 645.5,-572 815,-572 815,-572 645.5,-572"/>
+<polygon fill="none" stroke="#666666" points="645.5,-426 645.5,-618 815,-618 815,-426 645.5,-426"/>
 </a>
 </g>
 </g>
-<!-- Node6&#45;&gt;Node5 -->
-<g id="edge5_Node000005_Node000006" class="edge">
-<title>Node6&#45;&gt;Node5</title>
-<g id="a_edge5_Node000005_Node000006"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M333.91,-788.13C344.27,-777.72 355.09,-767.36 365.75,-758 375.9,-749.08 381.83,-750.57 390.25,-740 416.06,-707.63 436.12,-667.09 450.95,-629.84"/>
-<polygon fill="none" stroke="#63b8ff" points="450.93,-629.91 449.36,-622.87 455.26,-618.72 456.82,-625.76 450.93,-629.91"/>
+<!-- Node6&#45;&gt;Node1 -->
+<g id="edge5_Node000001_Node000006" class="edge">
+<title>Node6&#45;&gt;Node1</title>
+<g id="a_edge5_Node000001_Node000006"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M717.71,-426.06C710.88,-376.97 701.86,-316.14 692.25,-262 691.92,-260.14 691.58,-258.27 691.24,-256.39"/>
+<polygon fill="none" stroke="#63b8ff" points="691.27,-256.52 686.24,-251.35 689.08,-244.72 694.11,-249.89 691.27,-256.52"/>
 </a>
 </g>
-<text text-anchor="middle" x="404" y="-760.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;softwareService</text>
+<text text-anchor="middle" x="741.25" y="-270.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;fullMenuViewModel</text>
 </g>
 <!-- Node7 -->
 <g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_software_mapper.html" target="_top" xlink:title="This interface defines methods for mapping objects of type Software to objects of type SoftwareDto an...">
-<polygon fill="white" stroke="none" points="168.5,-1084 0,-1084 0,-980 168.5,-980 168.5,-1084"/>
-<text text-anchor="start" x="4" y="-1070.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.interfaces.mapper.</text>
-<text text-anchor="start" x="47.12" y="-1058.5" font-family="Helvetica,sans-Serif" font-size="10.00">ISoftwareMapper</text>
-<text text-anchor="start" x="82.75" y="-1042.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="10.12" y="-1026.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="26.25" y="-1026.5" font-family="Helvetica,sans-Serif" font-size="10.00">Software mapSoftwareDtoTo</text>
-<text text-anchor="start" x="26.25" y="-1014.5" font-family="Helvetica,sans-Serif" font-size="10.00">Software(SoftwareDto dto)</text>
-<text text-anchor="start" x="10.12" y="-998.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="26.25" y="-998.5" font-family="Helvetica,sans-Serif" font-size="10.00">SoftwareDto mapSoftwareTo</text>
-<text text-anchor="start" x="26.25" y="-986.5" font-family="Helvetica,sans-Serif" font-size="10.00">Dto(Software software)</text>
-<polygon fill="#666666" stroke="#666666" points="0,-1054 0,-1054 168.5,-1054 168.5,-1054 0,-1054"/>
-<polygon fill="#666666" stroke="#666666" points="0,-1038 0,-1038 168.5,-1038 168.5,-1038 0,-1038"/>
-<polygon fill="none" stroke="#666666" points="0,-980 0,-1084 168.5,-1084 168.5,-980 0,-980"/>
+<g id="a_Node000007"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1_software_service.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="none" points="716.25,-932 560.25,-932 560.25,-788 716.25,-788 716.25,-932"/>
+<text text-anchor="start" x="581.25" y="-918.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.service.</text>
+<text text-anchor="start" x="602.25" y="-906.5" font-family="Helvetica,sans-Serif" font-size="10.00">SoftwareService</text>
+<text text-anchor="start" x="636.75" y="-890.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="564.25" y="-874.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="574.25" y="-874.5" font-family="Helvetica,sans-Serif" font-size="10.00">SoftwareService(Software</text>
+<text text-anchor="start" x="574.25" y="-862.5" font-family="Helvetica,sans-Serif" font-size="10.00">Repository softwareRepository)</text>
+<text text-anchor="start" x="564.25" y="-846.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="574.25" y="-846.5" font-family="Helvetica,sans-Serif" font-size="10.00">Optional&lt; SoftwareDto</text>
+<text text-anchor="start" x="574.25" y="-834.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; getSoftware()</text>
+<text text-anchor="start" x="564.25" y="-818.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="574.25" y="-818.5" font-family="Helvetica,sans-Serif" font-size="10.00">Optional&lt; SoftwareDto</text>
+<text text-anchor="start" x="574.25" y="-806.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; updateSoftware(SoftwareDto</text>
+<text text-anchor="start" x="574.25" y="-794.5" font-family="Helvetica,sans-Serif" font-size="10.00"> softwareDto)</text>
+<polygon fill="#666666" stroke="#666666" points="560.25,-902 560.25,-902 716.25,-902 716.25,-902 560.25,-902"/>
+<polygon fill="#666666" stroke="#666666" points="560.25,-886 560.25,-886 716.25,-886 716.25,-886 560.25,-886"/>
+<polygon fill="none" stroke="#666666" points="560.25,-788 560.25,-932 716.25,-932 716.25,-788 560.25,-788"/>
 </a>
 </g>
 </g>
@@ -266,437 +324,424 @@ var sectionId = 'dynsection-1';
 <g id="edge6_Node000006_Node000007" class="edge">
 <title>Node7&#45;&gt;Node6</title>
 <g id="a_edge6_Node000006_Node000007"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M139.51,-980.22C153.04,-967.78 167.86,-954.17 182.48,-940.73"/>
-<polygon fill="none" stroke="#63b8ff" points="182.55,-940.67 184.26,-933.67 191.39,-932.55 189.67,-939.56 182.55,-940.67"/>
+<path fill="none" stroke="#63b8ff" d="M657.65,-788.15C670.16,-742.44 686.69,-682.11 700.8,-630.54"/>
+<polygon fill="none" stroke="#63b8ff" points="700.84,-630.42 698.56,-623.58 704.01,-618.85 706.28,-625.69 700.84,-630.42"/>
 </a>
 </g>
-<text text-anchor="middle" x="210.95" y="-952.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;iSoftwareMapper</text>
-</g>
-<!-- Node7&#45;&gt;Node7 -->
-<g id="edge7_Node000007_Node000007" class="edge">
-<title>Node7&#45;&gt;Node7</title>
-<g id="a_edge7_Node000007_Node000007"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M168.49,-1043.58C179.33,-1041.58 186.5,-1037.71 186.5,-1032 186.5,-1028.87 184.36,-1026.3 180.64,-1024.29"/>
-<polygon fill="none" stroke="#63b8ff" points="180.78,-1024.33 173.85,-1026.32 169.35,-1020.69 176.28,-1018.7 180.78,-1024.33"/>
-</a>
-</g>
-<text text-anchor="middle" x="216.5" y="-1028.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> +INSTANCE</text>
+<text text-anchor="middle" x="703.68" y="-760.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;softwareService</text>
 </g>
 <!-- Node8 -->
 <g id="Node000008" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_software_repository.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="none" points="397.5,-1070 265,-1070 265,-994 397.5,-994 397.5,-1070"/>
-<text text-anchor="start" x="269" y="-1056.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.repository.</text>
-<text text-anchor="start" x="288.12" y="-1044.5" font-family="Helvetica,sans-Serif" font-size="10.00">SoftwareRepository</text>
-<text text-anchor="start" x="329.75" y="-1028.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="274.56" y="-1012.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="290.12" y="-1012.5" font-family="Helvetica,sans-Serif" font-size="10.00">Optional&lt; Software</text>
-<text text-anchor="start" x="290.12" y="-1000.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; findFirstSoftware()</text>
-<polygon fill="#666666" stroke="#666666" points="265,-1040 265,-1040 397.5,-1040 397.5,-1040 265,-1040"/>
-<polygon fill="#666666" stroke="#666666" points="265,-1024 265,-1024 397.5,-1024 397.5,-1024 265,-1024"/>
-<polygon fill="none" stroke="#666666" points="265,-994 265,-1070 397.5,-1070 397.5,-994 265,-994"/>
+<g id="a_Node000008"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_software_mapper.html" target="_top" xlink:title="This interface defines methods for mapping objects of type Software to objects of type SoftwareDto an...">
+<polygon fill="white" stroke="none" points="600.5,-1084 432,-1084 432,-980 600.5,-980 600.5,-1084"/>
+<text text-anchor="start" x="436" y="-1070.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.interfaces.mapper.</text>
+<text text-anchor="start" x="479.12" y="-1058.5" font-family="Helvetica,sans-Serif" font-size="10.00">ISoftwareMapper</text>
+<text text-anchor="start" x="514.75" y="-1042.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="442.12" y="-1026.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="458.25" y="-1026.5" font-family="Helvetica,sans-Serif" font-size="10.00">Software mapSoftwareDtoTo</text>
+<text text-anchor="start" x="458.25" y="-1014.5" font-family="Helvetica,sans-Serif" font-size="10.00">Software(SoftwareDto dto)</text>
+<text text-anchor="start" x="442.12" y="-998.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="458.25" y="-998.5" font-family="Helvetica,sans-Serif" font-size="10.00">SoftwareDto mapSoftwareTo</text>
+<text text-anchor="start" x="458.25" y="-986.5" font-family="Helvetica,sans-Serif" font-size="10.00">Dto(Software software)</text>
+<polygon fill="#666666" stroke="#666666" points="432,-1054 432,-1054 600.5,-1054 600.5,-1054 432,-1054"/>
+<polygon fill="#666666" stroke="#666666" points="432,-1038 432,-1038 600.5,-1038 600.5,-1038 432,-1038"/>
+<polygon fill="none" stroke="#666666" points="432,-980 432,-1084 600.5,-1084 600.5,-980 432,-980"/>
 </a>
 </g>
 </g>
-<!-- Node8&#45;&gt;Node6 -->
-<g id="edge8_Node000006_Node000008" class="edge">
-<title>Node8&#45;&gt;Node6</title>
-<g id="a_edge8_Node000006_Node000008"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M317.8,-994.11C312.39,-979.28 305.91,-961.52 299.48,-943.89"/>
-<polygon fill="none" stroke="#63b8ff" points="299.47,-943.86 293.66,-939.59 295.36,-932.59 301.17,-936.85 299.47,-943.86"/>
+<!-- Node8&#45;&gt;Node7 -->
+<g id="edge7_Node000007_Node000008" class="edge">
+<title>Node8&#45;&gt;Node7</title>
+<g id="a_edge7_Node000007_Node000008"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M552.52,-980.45C561.17,-968.41 570.61,-955.25 579.97,-942.21"/>
+<polygon fill="none" stroke="#63b8ff" points="579.92,-942.28 580.17,-935.07 586.92,-932.53 586.67,-939.74 579.92,-942.28"/>
 </a>
 </g>
-<text text-anchor="middle" x="351.18" y="-952.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;softwareRepository</text>
+<text text-anchor="middle" x="613.34" y="-952.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;iSoftwareMapper</text>
+</g>
+<!-- Node8&#45;&gt;Node8 -->
+<g id="edge8_Node000008_Node000008" class="edge">
+<title>Node8&#45;&gt;Node8</title>
+<g id="a_edge8_Node000008_Node000008"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M600.49,-1043.58C611.33,-1041.58 618.5,-1037.71 618.5,-1032 618.5,-1028.87 616.36,-1026.3 612.64,-1024.29"/>
+<polygon fill="none" stroke="#63b8ff" points="612.78,-1024.33 605.85,-1026.32 601.35,-1020.69 608.28,-1018.7 612.78,-1024.33"/>
+</a>
+</g>
+<text text-anchor="middle" x="648.5" y="-1028.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> +INSTANCE</text>
 </g>
 <!-- Node9 -->
 <g id="Node000009" class="node">
 <title>Node9</title>
-<g id="a_Node000009"><a xlink:title=" ">
-<polygon fill="white" stroke="none" points="392.25,-1185 270.25,-1185 270.25,-1121 392.25,-1121 392.25,-1185"/>
-<text text-anchor="start" x="274.25" y="-1171.5" font-family="Helvetica,sans-Serif" font-size="10.00">JpaRepository&lt; Software,</text>
-<text text-anchor="start" x="314.75" y="-1159.5" font-family="Helvetica,sans-Serif" font-size="10.00"> Long &gt;</text>
-<text text-anchor="start" x="329.75" y="-1143.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="329.75" y="-1127.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polygon fill="#666666" stroke="#666666" points="270.25,-1155 270.25,-1155 392.25,-1155 392.25,-1155 270.25,-1155"/>
-<polygon fill="#666666" stroke="#666666" points="270.25,-1139 270.25,-1139 392.25,-1139 392.25,-1139 270.25,-1139"/>
-<polygon fill="none" stroke="#666666" points="270.25,-1121 270.25,-1185 392.25,-1185 392.25,-1121 270.25,-1121"/>
+<g id="a_Node000009"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_software_repository.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="none" points="829.5,-1070 697,-1070 697,-994 829.5,-994 829.5,-1070"/>
+<text text-anchor="start" x="701" y="-1056.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.repository.</text>
+<text text-anchor="start" x="720.12" y="-1044.5" font-family="Helvetica,sans-Serif" font-size="10.00">SoftwareRepository</text>
+<text text-anchor="start" x="761.75" y="-1028.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="706.56" y="-1012.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="722.12" y="-1012.5" font-family="Helvetica,sans-Serif" font-size="10.00">Optional&lt; Software</text>
+<text text-anchor="start" x="722.12" y="-1000.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; findFirstSoftware()</text>
+<polygon fill="#666666" stroke="#666666" points="697,-1040 697,-1040 829.5,-1040 829.5,-1040 697,-1040"/>
+<polygon fill="#666666" stroke="#666666" points="697,-1024 697,-1024 829.5,-1024 829.5,-1024 697,-1024"/>
+<polygon fill="none" stroke="#666666" points="697,-994 697,-1070 829.5,-1070 829.5,-994 697,-994"/>
 </a>
 </g>
 </g>
-<!-- Node9&#45;&gt;Node8 -->
-<g id="edge9_Node000008_Node000009" class="edge">
-<title>Node9&#45;&gt;Node8</title>
-<g id="a_edge9_Node000008_Node000009"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M331.25,-1109.91C331.25,-1096.79 331.25,-1082.44 331.25,-1069.72"/>
-<polygon fill="none" stroke="#63b8ff" points="327.75,-1109.53 331.25,-1119.53 334.75,-1109.53 327.75,-1109.53"/>
+<!-- Node9&#45;&gt;Node7 -->
+<g id="edge9_Node000007_Node000009" class="edge">
+<title>Node9&#45;&gt;Node7</title>
+<g id="a_edge9_Node000007_Node000009"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M736.13,-994.11C724.85,-978.78 711.28,-960.32 697.89,-942.11"/>
+<polygon fill="none" stroke="#63b8ff" points="697.91,-942.13 691.13,-939.67 690.8,-932.47 697.58,-934.93 697.91,-942.13"/>
 </a>
 </g>
+<text text-anchor="middle" x="757.32" y="-952.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;softwareRepository</text>
 </g>
 <!-- Node10 -->
 <g id="Node000010" class="node">
 <title>Node10</title>
-<g id="a_Node000010"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_grid_master.html" target="_top" xlink:title="Interface defining methods to generate and solve Sudoku puzzles.">
-<polygon fill="white" stroke="none" points="498.88,-912 365.62,-912 365.62,-808 498.88,-808 498.88,-912"/>
-<text text-anchor="start" x="369.62" y="-898.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.interfaces.</text>
-<text text-anchor="start" x="406.75" y="-886.5" font-family="Helvetica,sans-Serif" font-size="10.00">IGridMaster</text>
-<text text-anchor="start" x="430.75" y="-870.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="375.75" y="-854.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="391.88" y="-854.5" font-family="Helvetica,sans-Serif" font-size="10.00">int[][] creerLesGrilles</text>
-<text text-anchor="start" x="391.88" y="-842.5" font-family="Helvetica,sans-Serif" font-size="10.00">(final int niveau)</text>
-<text text-anchor="start" x="375.75" y="-826.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="391.88" y="-826.5" font-family="Helvetica,sans-Serif" font-size="10.00">int resoudreLaGrille</text>
-<text text-anchor="start" x="391.88" y="-814.5" font-family="Helvetica,sans-Serif" font-size="10.00">(final int[] grille)</text>
-<polygon fill="#666666" stroke="#666666" points="365.62,-882 365.62,-882 498.88,-882 498.88,-882 365.62,-882"/>
-<polygon fill="#666666" stroke="#666666" points="365.62,-866 365.62,-866 498.88,-866 498.88,-866 365.62,-866"/>
-<polygon fill="none" stroke="#666666" points="365.62,-808 365.62,-912 498.88,-912 498.88,-808 365.62,-808"/>
+<g id="a_Node000010"><a xlink:title=" ">
+<polygon fill="white" stroke="none" points="824.25,-1185 702.25,-1185 702.25,-1121 824.25,-1121 824.25,-1185"/>
+<text text-anchor="start" x="706.25" y="-1171.5" font-family="Helvetica,sans-Serif" font-size="10.00">JpaRepository&lt; Software,</text>
+<text text-anchor="start" x="746.75" y="-1159.5" font-family="Helvetica,sans-Serif" font-size="10.00"> Long &gt;</text>
+<text text-anchor="start" x="761.75" y="-1143.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="761.75" y="-1127.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polygon fill="#666666" stroke="#666666" points="702.25,-1155 702.25,-1155 824.25,-1155 824.25,-1155 702.25,-1155"/>
+<polygon fill="#666666" stroke="#666666" points="702.25,-1139 702.25,-1139 824.25,-1139 824.25,-1139 702.25,-1139"/>
+<polygon fill="none" stroke="#666666" points="702.25,-1121 702.25,-1185 824.25,-1185 824.25,-1121 702.25,-1121"/>
 </a>
 </g>
 </g>
-<!-- Node10&#45;&gt;Node5 -->
-<g id="edge10_Node000005_Node000010" class="edge">
-<title>Node10&#45;&gt;Node5</title>
-<g id="a_edge10_Node000005_Node000010"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M440.09,-808.33C447.36,-761.35 458.42,-689.92 467.65,-630.28"/>
-<polygon fill="none" stroke="#63b8ff" points="467.61,-630.49 464.58,-623.95 469.45,-618.63 472.48,-625.18 467.61,-630.49"/>
+<!-- Node10&#45;&gt;Node9 -->
+<g id="edge10_Node000009_Node000010" class="edge">
+<title>Node10&#45;&gt;Node9</title>
+<g id="a_edge10_Node000009_Node000010"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M763.25,-1109.91C763.25,-1096.79 763.25,-1082.44 763.25,-1069.72"/>
+<polygon fill="none" stroke="#63b8ff" points="759.75,-1109.53 763.25,-1119.53 766.75,-1109.53 759.75,-1109.53"/>
 </a>
 </g>
-<text text-anchor="middle" x="475.74" y="-760.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;iGridMaster</text>
 </g>
 <!-- Node11 -->
 <g id="Node000011" class="node">
 <title>Node11</title>
-<g id="a_Node000011"><a xlink:title=" ">
-<polygon fill="white" stroke="none" points="587.38,-886 517.12,-886 517.12,-834 587.38,-834 587.38,-886"/>
-<text text-anchor="start" x="521.12" y="-872.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringProperty</text>
-<text text-anchor="start" x="550.75" y="-856.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="550.75" y="-840.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polygon fill="#666666" stroke="#666666" points="517.12,-868 517.12,-868 587.38,-868 587.38,-868 517.12,-868"/>
-<polygon fill="#666666" stroke="#666666" points="517.12,-852 517.12,-852 587.38,-852 587.38,-852 517.12,-852"/>
-<polygon fill="none" stroke="#666666" points="517.12,-834 517.12,-886 587.38,-886 587.38,-834 517.12,-834"/>
+<g id="a_Node000011"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_grid_master.html" target="_top" xlink:title="Interface defining methods to generate and solve Sudoku puzzles.">
+<polygon fill="white" stroke="none" points="867.88,-912 734.62,-912 734.62,-808 867.88,-808 867.88,-912"/>
+<text text-anchor="start" x="738.62" y="-898.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.interfaces.</text>
+<text text-anchor="start" x="775.75" y="-886.5" font-family="Helvetica,sans-Serif" font-size="10.00">IGridMaster</text>
+<text text-anchor="start" x="799.75" y="-870.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="744.75" y="-854.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="760.88" y="-854.5" font-family="Helvetica,sans-Serif" font-size="10.00">int[][] creerLesGrilles</text>
+<text text-anchor="start" x="760.88" y="-842.5" font-family="Helvetica,sans-Serif" font-size="10.00">(final int niveau)</text>
+<text text-anchor="start" x="744.75" y="-826.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="760.88" y="-826.5" font-family="Helvetica,sans-Serif" font-size="10.00">int resoudreLaGrille</text>
+<text text-anchor="start" x="760.88" y="-814.5" font-family="Helvetica,sans-Serif" font-size="10.00">(final int[] grille)</text>
+<polygon fill="#666666" stroke="#666666" points="734.62,-882 734.62,-882 867.88,-882 867.88,-882 734.62,-882"/>
+<polygon fill="#666666" stroke="#666666" points="734.62,-866 734.62,-866 867.88,-866 867.88,-866 734.62,-866"/>
+<polygon fill="none" stroke="#666666" points="734.62,-808 734.62,-912 867.88,-912 867.88,-808 734.62,-808"/>
 </a>
 </g>
 </g>
-<!-- Node11&#45;&gt;Node5 -->
-<g id="edge11_Node000005_Node000011" class="edge">
-<title>Node11&#45;&gt;Node5</title>
-<g id="a_edge11_Node000005_Node000011"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M547.19,-834.02C538.59,-791.48 520.6,-702.6 506.05,-630.7"/>
-<polygon fill="none" stroke="#63b8ff" points="506.02,-630.59 500.91,-625.51 503.64,-618.83 508.76,-623.92 506.02,-630.59"/>
+<!-- Node11&#45;&gt;Node6 -->
+<g id="edge11_Node000006_Node000011" class="edge">
+<title>Node11&#45;&gt;Node6</title>
+<g id="a_edge11_Node000006_Node000011"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M790.54,-808.33C780.62,-761.35 765.52,-689.92 752.92,-630.28"/>
+<polygon fill="none" stroke="#63b8ff" points="752.94,-630.37 747.78,-625.32 750.46,-618.63 755.61,-623.67 752.94,-630.37"/>
 </a>
 </g>
-<text text-anchor="middle" x="556.51" y="-760.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;welcome</text>
+<text text-anchor="middle" x="810.33" y="-760.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;iGridMaster</text>
 </g>
 <!-- Node12 -->
 <g id="Node000012" class="node">
 <title>Node12</title>
-<g id="a_Node000012"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_secure_random_generator.html" target="_top" xlink:title="The SecureRandomGenerator class provides methods to generate random numbers securely using Java&#39;s Sec...">
-<polygon fill="white" stroke="none" points="721.38,-582 587.12,-582 587.12,-462 721.38,-462 721.38,-582"/>
-<text text-anchor="start" x="599.12" y="-568.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.utils.</text>
-<text text-anchor="start" x="599.12" y="-556.5" font-family="Helvetica,sans-Serif" font-size="10.00">SecureRandomGenerator</text>
-<text text-anchor="start" x="652.75" y="-540.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="591.12" y="-524.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="601.12" y="-524.5" font-family="Helvetica,sans-Serif" font-size="10.00">SecureRandomGenerator()</text>
-<text text-anchor="start" x="591.12" y="-508.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="601.12" y="-508.5" font-family="Helvetica,sans-Serif" font-size="10.00">final int nextInt(int</text>
-<text text-anchor="start" x="601.12" y="-496.5" font-family="Helvetica,sans-Serif" font-size="10.00"> bound)</text>
-<text text-anchor="start" x="591.12" y="-480.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="601.12" y="-480.5" font-family="Helvetica,sans-Serif" font-size="10.00">final int nextInt(int</text>
-<text text-anchor="start" x="601.12" y="-468.5" font-family="Helvetica,sans-Serif" font-size="10.00"> origin, int bound)</text>
-<polygon fill="#666666" stroke="#666666" points="587.12,-552 587.12,-552 721.38,-552 721.38,-552 587.12,-552"/>
-<polygon fill="#666666" stroke="#666666" points="587.12,-536 587.12,-536 721.38,-536 721.38,-536 587.12,-536"/>
-<polygon fill="none" stroke="#666666" points="587.12,-462 587.12,-582 721.38,-582 721.38,-462 587.12,-462"/>
+<g id="a_Node000012"><a xlink:title=" ">
+<polygon fill="white" stroke="none" points="956.38,-886 886.12,-886 886.12,-834 956.38,-834 956.38,-886"/>
+<text text-anchor="start" x="890.12" y="-872.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringProperty</text>
+<text text-anchor="start" x="919.75" y="-856.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="919.75" y="-840.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polygon fill="#666666" stroke="#666666" points="886.12,-868 886.12,-868 956.38,-868 956.38,-868 886.12,-868"/>
+<polygon fill="#666666" stroke="#666666" points="886.12,-852 886.12,-852 956.38,-852 956.38,-852 886.12,-852"/>
+<polygon fill="none" stroke="#666666" points="886.12,-834 886.12,-886 956.38,-886 956.38,-834 886.12,-834"/>
 </a>
 </g>
 </g>
-<!-- Node12&#45;&gt;Node1 -->
-<g id="edge12_Node000001_Node000012" class="edge">
-<title>Node12&#45;&gt;Node1</title>
-<g id="a_edge12_Node000001_Node000012"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M654.25,-462.27C654.25,-408.33 654.25,-326.41 654.25,-256.58"/>
-<polygon fill="none" stroke="#63b8ff" points="654.25,-256.59 650.25,-250.59 654.25,-244.59 658.25,-250.59 654.25,-256.59"/>
+<!-- Node12&#45;&gt;Node6 -->
+<g id="edge12_Node000006_Node000012" class="edge">
+<title>Node12&#45;&gt;Node6</title>
+<g id="a_edge12_Node000006_Node000012"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M908.16,-834.19C900.13,-820.01 889.13,-802.26 877.25,-788 867.08,-775.79 833.51,-752.92 824.25,-740 800.4,-706.73 780.87,-666.45 765.91,-629.68"/>
+<polygon fill="none" stroke="#63b8ff" points="765.99,-629.86 760.05,-625.77 761.55,-618.71 767.49,-622.81 765.99,-629.86"/>
 </a>
 </g>
-<text text-anchor="middle" x="711.62" y="-270.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;secureRandomGenerator</text>
+<text text-anchor="middle" x="879.36" y="-760.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;welcome</text>
 </g>
 <!-- Node13 -->
 <g id="Node000013" class="node">
 <title>Node13</title>
-<g id="a_Node000013"><a xlink:title=" ">
-<polygon fill="white" stroke="none" points="681,-886 605.5,-886 605.5,-834 681,-834 681,-886"/>
-<text text-anchor="start" x="609.5" y="-872.5" font-family="Helvetica,sans-Serif" font-size="10.00">SecureRandom</text>
-<text text-anchor="start" x="641.75" y="-856.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="641.75" y="-840.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polygon fill="#666666" stroke="#666666" points="605.5,-868 605.5,-868 681,-868 681,-868 605.5,-868"/>
-<polygon fill="#666666" stroke="#666666" points="605.5,-852 605.5,-852 681,-852 681,-852 605.5,-852"/>
-<polygon fill="none" stroke="#666666" points="605.5,-834 605.5,-886 681,-886 681,-834 605.5,-834"/>
+<g id="a_Node000013"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_secure_random_generator.html" target="_top" xlink:title="The SecureRandomGenerator class provides methods to generate random numbers securely using Java&#39;s Sec...">
+<polygon fill="white" stroke="none" points="967.38,-582 833.12,-582 833.12,-462 967.38,-462 967.38,-582"/>
+<text text-anchor="start" x="845.12" y="-568.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.utils.</text>
+<text text-anchor="start" x="845.12" y="-556.5" font-family="Helvetica,sans-Serif" font-size="10.00">SecureRandomGenerator</text>
+<text text-anchor="start" x="898.75" y="-540.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="837.12" y="-524.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="847.12" y="-524.5" font-family="Helvetica,sans-Serif" font-size="10.00">SecureRandomGenerator()</text>
+<text text-anchor="start" x="837.12" y="-508.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="847.12" y="-508.5" font-family="Helvetica,sans-Serif" font-size="10.00">final int nextInt(int</text>
+<text text-anchor="start" x="847.12" y="-496.5" font-family="Helvetica,sans-Serif" font-size="10.00"> bound)</text>
+<text text-anchor="start" x="837.12" y="-480.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="847.12" y="-480.5" font-family="Helvetica,sans-Serif" font-size="10.00">final int nextInt(int</text>
+<text text-anchor="start" x="847.12" y="-468.5" font-family="Helvetica,sans-Serif" font-size="10.00"> origin, int bound)</text>
+<polygon fill="#666666" stroke="#666666" points="833.12,-552 833.12,-552 967.38,-552 967.38,-552 833.12,-552"/>
+<polygon fill="#666666" stroke="#666666" points="833.12,-536 833.12,-536 967.38,-536 967.38,-536 833.12,-536"/>
+<polygon fill="none" stroke="#666666" points="833.12,-462 833.12,-582 967.38,-582 967.38,-462 833.12,-462"/>
 </a>
 </g>
 </g>
-<!-- Node13&#45;&gt;Node12 -->
-<g id="edge13_Node000012_Node000013" class="edge">
-<title>Node13&#45;&gt;Node12</title>
-<g id="a_edge13_Node000012_Node000013"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M643.27,-834.09C643.34,-813.65 643.57,-783.94 644.25,-758 645.69,-703.27 648.36,-641.4 650.58,-594.89"/>
-<polygon fill="none" stroke="#63b8ff" points="650.59,-594.78 646.88,-588.59 651.17,-582.79 654.87,-588.98 650.59,-594.78"/>
+<!-- Node13&#45;&gt;Node1 -->
+<g id="edge13_Node000001_Node000013" class="edge">
+<title>Node13&#45;&gt;Node1</title>
+<g id="a_edge13_Node000001_Node000013"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M885.54,-462.03C872.94,-417.02 852.34,-354.38 824.25,-304 803.55,-266.88 774.11,-230.87 746.05,-200.87"/>
+<polygon fill="none" stroke="#63b8ff" points="746.28,-201.11 739.25,-199.52 738.02,-192.41 745.05,-194.01 746.28,-201.11"/>
 </a>
 </g>
-<text text-anchor="middle" x="680.25" y="-760.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;secureRandom</text>
+<text text-anchor="middle" x="868.05" y="-270.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;secureRandomGenerator</text>
 </g>
 <!-- Node14 -->
 <g id="Node000014" class="node">
 <title>Node14</title>
-<g id="a_Node000014"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1_fxml_service.html" target="_top" xlink:title="FxmlService is a Spring service that manages the loading of FXML files and updating the root of the J...">
-<polygon fill="white" stroke="none" points="879,-582 739.5,-582 739.5,-462 879,-462 879,-582"/>
-<text text-anchor="start" x="752.25" y="-568.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.service.</text>
-<text text-anchor="start" x="781.88" y="-556.5" font-family="Helvetica,sans-Serif" font-size="10.00">FxmlService</text>
-<text text-anchor="start" x="807.75" y="-540.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="743.5" y="-524.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="753.5" y="-524.5" font-family="Helvetica,sans-Serif" font-size="10.00">FxmlService(FXMLLoader</text>
-<text text-anchor="start" x="753.5" y="-512.5" font-family="Helvetica,sans-Serif" font-size="10.00"> fxmlLoader)</text>
-<text text-anchor="start" x="743.5" y="-496.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="753.5" y="-496.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setRootByFXMLName</text>
-<text text-anchor="start" x="753.5" y="-484.5" font-family="Helvetica,sans-Serif" font-size="10.00">(final String fxml)</text>
-<text text-anchor="start" x="743.5" y="-468.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="753.5" y="-468.5" font-family="Helvetica,sans-Serif" font-size="10.00">public&lt; T &gt; T getController()</text>
-<polygon fill="#666666" stroke="#666666" points="739.5,-552 739.5,-552 879,-552 879,-552 739.5,-552"/>
-<polygon fill="#666666" stroke="#666666" points="739.5,-536 739.5,-536 879,-536 879,-536 739.5,-536"/>
-<polygon fill="none" stroke="#666666" points="739.5,-462 739.5,-582 879,-582 879,-462 739.5,-462"/>
+<g id="a_Node000014"><a xlink:title=" ">
+<polygon fill="white" stroke="none" points="1050,-886 974.5,-886 974.5,-834 1050,-834 1050,-886"/>
+<text text-anchor="start" x="978.5" y="-872.5" font-family="Helvetica,sans-Serif" font-size="10.00">SecureRandom</text>
+<text text-anchor="start" x="1010.75" y="-856.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="1010.75" y="-840.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polygon fill="#666666" stroke="#666666" points="974.5,-868 974.5,-868 1050,-868 1050,-868 974.5,-868"/>
+<polygon fill="#666666" stroke="#666666" points="974.5,-852 974.5,-852 1050,-852 1050,-852 974.5,-852"/>
+<polygon fill="none" stroke="#666666" points="974.5,-834 974.5,-886 1050,-886 1050,-834 974.5,-834"/>
 </a>
 </g>
 </g>
-<!-- Node14&#45;&gt;Node1 -->
-<g id="edge14_Node000001_Node000014" class="edge">
-<title>Node14&#45;&gt;Node1</title>
-<g id="a_edge14_Node000001_Node000014"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M810.36,-462.09C809.27,-407.84 802.19,-326.27 773.25,-262 764.01,-241.47 750.76,-221.65 736.43,-203.73"/>
-<polygon fill="none" stroke="#63b8ff" points="736.6,-203.92 729.69,-201.84 728.96,-194.67 735.86,-196.75 736.6,-203.92"/>
+<!-- Node14&#45;&gt;Node13 -->
+<g id="edge14_Node000013_Node000014" class="edge">
+<title>Node14&#45;&gt;Node13</title>
+<g id="a_edge14_Node000013_Node000014"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M1003.92,-834.02C987.21,-783.88 949.04,-669.38 923.98,-594.18"/>
+<polygon fill="none" stroke="#63b8ff" points="924,-594.24 918.3,-589.81 920.2,-582.85 925.89,-587.28 924,-594.24"/>
 </a>
 </g>
-<text text-anchor="middle" x="810.09" y="-270.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;fxmlService</text>
+<text text-anchor="middle" x="1018.21" y="-760.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;secureRandom</text>
 </g>
-<!-- Node15 -->
-<g id="Node000015" class="node">
-<title>Node15</title>
-<g id="a_Node000015"><a xlink:title=" ">
-<polygon fill="white" stroke="none" points="784.12,-1058 748.38,-1058 748.38,-1006 784.12,-1006 784.12,-1058"/>
-<text text-anchor="start" x="752.38" y="-1044.5" font-family="Helvetica,sans-Serif" font-size="10.00">Scene</text>
-<text text-anchor="start" x="764.75" y="-1028.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="764.75" y="-1012.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polygon fill="#666666" stroke="#666666" points="748.38,-1040 748.38,-1040 784.12,-1040 784.12,-1040 748.38,-1040"/>
-<polygon fill="#666666" stroke="#666666" points="748.38,-1024 748.38,-1024 784.12,-1024 784.12,-1024 748.38,-1024"/>
-<polygon fill="none" stroke="#666666" points="748.38,-1006 748.38,-1058 784.12,-1058 784.12,-1006 748.38,-1006"/>
+<!-- Node15&#45;&gt;Node1 -->
+<g id="edge15_Node000001_Node000015" class="edge">
+<title>Node15&#45;&gt;Node1</title>
+<g id="a_edge15_Node000001_Node000015"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M442.66,-462.19C457.8,-407.46 485.06,-325.08 525.5,-262 540.68,-238.31 560.46,-215.4 580.27,-195.25"/>
+<polygon fill="none" stroke="#63b8ff" points="580.22,-195.3 581.64,-188.23 588.72,-186.83 587.29,-193.9 580.22,-195.3"/>
 </a>
 </g>
-</g>
-<!-- Node15&#45;&gt;Node14 -->
-<g id="edge15_Node000014_Node000015" class="edge">
-<title>Node15&#45;&gt;Node14</title>
-<g id="a_edge15_Node000014_Node000015"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M757.73,-1006.13C751.42,-986.32 743.35,-957.74 740,-932 731.73,-868.54 731.84,-851.48 740,-788 748.6,-721.09 768.94,-646.95 785.36,-594.14"/>
-<polygon fill="none" stroke="#63b8ff" points="785.35,-594.18 783.34,-587.25 788.96,-582.73 790.97,-589.65 785.35,-594.18"/>
-</a>
-</g>
-<text text-anchor="middle" x="756.12" y="-856.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;scene</text>
-</g>
-<!-- Node17 -->
-<g id="Node000017" class="node">
-<title>Node17</title>
-<g id="a_Node000017"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_dynamic_font_size.html" target="_top" xlink:title="Manages dynamic font sizing based on the dimensions of a JavaFX Scene.">
-<polygon fill="white" stroke="none" points="899.5,-906 781,-906 781,-814 899.5,-814 899.5,-906"/>
-<text text-anchor="start" x="790" y="-892.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.utils.</text>
-<text text-anchor="start" x="801.25" y="-880.5" font-family="Helvetica,sans-Serif" font-size="10.00">DynamicFontSize</text>
-<text text-anchor="start" x="786.5" y="-864.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="795" y="-864.5" font-family="Helvetica,sans-Serif" font-size="10.00">double currentFontSize</text>
-<text text-anchor="start" x="785" y="-848.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="795" y="-848.5" font-family="Helvetica,sans-Serif" font-size="10.00">DynamicFontSize(final</text>
-<text text-anchor="start" x="795" y="-836.5" font-family="Helvetica,sans-Serif" font-size="10.00"> Scene theScene)</text>
-<text text-anchor="start" x="785" y="-820.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="795" y="-820.5" font-family="Helvetica,sans-Serif" font-size="10.00">void updateFontSize()</text>
-<polygon fill="#666666" stroke="#666666" points="781,-876 781,-876 899.5,-876 899.5,-876 781,-876"/>
-<polygon fill="#666666" stroke="#666666" points="781,-860 781,-860 793,-860 793,-860 781,-860"/>
-<polygon fill="#666666" stroke="#666666" points="793,-860 793,-860 899.5,-860 899.5,-860 793,-860"/>
-<polygon fill="none" stroke="#666666" points="781,-814 781,-906 899.5,-906 899.5,-814 781,-814"/>
-</a>
-</g>
-</g>
-<!-- Node15&#45;&gt;Node17 -->
-<g id="edge18_Node000017_Node000015" class="edge">
-<title>Node15&#45;&gt;Node17</title>
-<g id="a_edge18_Node000017_Node000015"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M777.01,-1006.28C787.1,-983.11 802.54,-947.63 815.64,-917.53"/>
-<polygon fill="none" stroke="#63b8ff" points="815.57,-917.7 814.29,-910.6 820.36,-906.7 821.63,-913.8 815.57,-917.7"/>
-</a>
-</g>
-<text text-anchor="middle" x="817.16" y="-952.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;scene</text>
+<text text-anchor="middle" x="554.38" y="-270.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;fxmlService</text>
 </g>
 <!-- Node16 -->
 <g id="Node000016" class="node">
 <title>Node16</title>
 <g id="a_Node000016"><a xlink:title=" ">
-<polygon fill="white" stroke="none" points="981,-886 917.5,-886 917.5,-834 981,-834 981,-886"/>
-<text text-anchor="start" x="921.5" y="-872.5" font-family="Helvetica,sans-Serif" font-size="10.00">FXMLLoader</text>
-<text text-anchor="start" x="947.75" y="-856.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="947.75" y="-840.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polygon fill="#666666" stroke="#666666" points="917.5,-868 917.5,-868 981,-868 981,-868 917.5,-868"/>
-<polygon fill="#666666" stroke="#666666" points="917.5,-852 917.5,-852 981,-852 981,-852 917.5,-852"/>
-<polygon fill="none" stroke="#666666" points="917.5,-834 917.5,-886 981,-886 981,-834 917.5,-834"/>
+<polygon fill="white" stroke="none" points="396.12,-1058 360.38,-1058 360.38,-1006 396.12,-1006 396.12,-1058"/>
+<text text-anchor="start" x="364.38" y="-1044.5" font-family="Helvetica,sans-Serif" font-size="10.00">Scene</text>
+<text text-anchor="start" x="376.75" y="-1028.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="376.75" y="-1012.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polygon fill="#666666" stroke="#666666" points="360.38,-1040 360.38,-1040 396.12,-1040 396.12,-1040 360.38,-1040"/>
+<polygon fill="#666666" stroke="#666666" points="360.38,-1024 360.38,-1024 396.12,-1024 396.12,-1024 360.38,-1024"/>
+<polygon fill="none" stroke="#666666" points="360.38,-1006 360.38,-1058 396.12,-1058 396.12,-1006 360.38,-1006"/>
 </a>
 </g>
 </g>
-<!-- Node16&#45;&gt;Node14 -->
-<g id="edge16_Node000014_Node000016" class="edge">
-<title>Node16&#45;&gt;Node14</title>
-<g id="a_edge16_Node000014_Node000016"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M946.34,-834.32C942.69,-812.37 934.64,-780.36 917.25,-758 907.94,-746.03 897.81,-751.77 888.25,-740 854.05,-697.9 833.94,-639.7 822.57,-594.17"/>
-<polygon fill="none" stroke="#63b8ff" points="822.59,-594.24 817.3,-589.33 819.8,-582.56 825.08,-587.47 822.59,-594.24"/>
+<!-- Node16&#45;&gt;Node15 -->
+<g id="edge17_Node000015_Node000016" class="edge">
+<title>Node16&#45;&gt;Node15</title>
+<g id="a_edge17_Node000015_Node000016"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M385.04,-1006.38C390.27,-986.47 397.27,-957.63 401.25,-932 419.46,-814.81 425.4,-676.87 427.33,-594.86"/>
+<polygon fill="none" stroke="#63b8ff" points="427.33,-594.84 423.47,-588.76 427.6,-582.84 431.46,-588.93 427.33,-594.84"/>
 </a>
 </g>
-<text text-anchor="middle" x="952.17" y="-760.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;fxmlLoader</text>
+<text text-anchor="middle" x="433.65" y="-856.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;scene</text>
 </g>
-<!-- Node17&#45;&gt;Node14 -->
-<g id="edge17_Node000014_Node000017" class="edge">
-<title>Node17&#45;&gt;Node14</title>
-<g id="a_edge17_Node000014_Node000017"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M836.1,-814.03C830.92,-757.87 821.99,-661.11 815.86,-594.68"/>
-<polygon fill="none" stroke="#63b8ff" points="815.86,-594.67 811.33,-589.06 814.76,-582.72 819.29,-588.32 815.86,-594.67"/>
+<!-- Node16&#45;&gt;Node18 -->
+<g id="edge21_Node000018_Node000016" class="edge">
+<title>Node16&#45;&gt;Node18</title>
+<g id="a_edge21_Node000018_Node000016"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M371.12,-1006.28C365.07,-985.26 356.09,-954.12 348,-926.05"/>
+<polygon fill="none" stroke="#63b8ff" points="348.05,-926.23 342.55,-921.57 344.73,-914.7 350.23,-919.35 348.05,-926.23"/>
 </a>
 </g>
-<text text-anchor="middle" x="872.81" y="-760.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;dynamicFontSize</text>
+<text text-anchor="middle" x="374.26" y="-952.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;scene</text>
 </g>
-<!-- Node18 -->
-<g id="Node000018" class="node">
-<title>Node18</title>
-<g id="a_Node000018"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_toaster_v_box.html" target="_top" xlink:title="A custom VBox component for displaying toast notifications.">
-<polygon fill="white" stroke="none" points="1069.12,-740 897.38,-740 897.38,-304 1069.12,-304 1069.12,-740"/>
-<text text-anchor="start" x="904.12" y="-726.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.components.</text>
-<text text-anchor="start" x="955.12" y="-714.5" font-family="Helvetica,sans-Serif" font-size="10.00">ToasterVBox</text>
-<text text-anchor="start" x="981.75" y="-698.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="901.38" y="-682.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="911.38" y="-682.5" font-family="Helvetica,sans-Serif" font-size="10.00">ToasterVBox()</text>
-<text text-anchor="start" x="901.38" y="-666.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="911.38" y="-666.5" font-family="Helvetica,sans-Serif" font-size="10.00">void addToast(final</text>
-<text text-anchor="start" x="911.38" y="-654.5" font-family="Helvetica,sans-Serif" font-size="10.00"> String text, final</text>
-<text text-anchor="start" x="911.38" y="-642.5" font-family="Helvetica,sans-Serif" font-size="10.00"> MyEnums.ToastLevels</text>
-<text text-anchor="start" x="911.38" y="-630.5" font-family="Helvetica,sans-Serif" font-size="10.00"> toastLevel)</text>
-<text text-anchor="start" x="901.38" y="-614.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="911.38" y="-614.5" font-family="Helvetica,sans-Serif" font-size="10.00">void addToastWithDuration</text>
-<text text-anchor="start" x="911.38" y="-602.5" font-family="Helvetica,sans-Serif" font-size="10.00">(final String text, final</text>
-<text text-anchor="start" x="911.38" y="-590.5" font-family="Helvetica,sans-Serif" font-size="10.00"> MyEnums.ToastLevels toastLevel,</text>
-<text text-anchor="start" x="911.38" y="-578.5" font-family="Helvetica,sans-Serif" font-size="10.00"> final double duration)</text>
-<text text-anchor="start" x="902.88" y="-562.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="911.38" y="-562.5" font-family="Helvetica,sans-Serif" font-size="10.00">void copyToClipboard</text>
-<text text-anchor="start" x="911.38" y="-550.5" font-family="Helvetica,sans-Serif" font-size="10.00">(final Button button)</text>
-<text text-anchor="start" x="902.88" y="-534.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="911.38" y="-534.5" font-family="Helvetica,sans-Serif" font-size="10.00">String getToastInfo</text>
-<text text-anchor="start" x="911.38" y="-522.5" font-family="Helvetica,sans-Serif" font-size="10.00">(MyEnums.ToastLevels</text>
-<text text-anchor="start" x="911.38" y="-510.5" font-family="Helvetica,sans-Serif" font-size="10.00"> toastLevel)</text>
-<text text-anchor="start" x="902.88" y="-494.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="911.38" y="-494.5" font-family="Helvetica,sans-Serif" font-size="10.00">void removeToast(final</text>
-<text text-anchor="start" x="911.38" y="-482.5" font-family="Helvetica,sans-Serif" font-size="10.00"> Button button)</text>
-<text text-anchor="start" x="902.88" y="-466.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="911.38" y="-466.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setAccessibility</text>
-<text text-anchor="start" x="911.38" y="-454.5" font-family="Helvetica,sans-Serif" font-size="10.00">(final Button toast,</text>
-<text text-anchor="start" x="911.38" y="-442.5" font-family="Helvetica,sans-Serif" font-size="10.00"> final MyEnums.ToastLevels</text>
-<text text-anchor="start" x="911.38" y="-430.5" font-family="Helvetica,sans-Serif" font-size="10.00"> toastLevel, final String text)</text>
-<text text-anchor="start" x="902.88" y="-414.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="911.38" y="-414.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setToastStyle</text>
-<text text-anchor="start" x="911.38" y="-402.5" font-family="Helvetica,sans-Serif" font-size="10.00">(final Button toast,</text>
-<text text-anchor="start" x="911.38" y="-390.5" font-family="Helvetica,sans-Serif" font-size="10.00"> final MyEnums.ToastLevels</text>
-<text text-anchor="start" x="911.38" y="-378.5" font-family="Helvetica,sans-Serif" font-size="10.00"> toastLevel)</text>
-<text text-anchor="start" x="902.88" y="-362.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="911.38" y="-362.5" font-family="Helvetica,sans-Serif" font-size="10.00">void temporizeToast</text>
-<text text-anchor="start" x="911.38" y="-350.5" font-family="Helvetica,sans-Serif" font-size="10.00">(final Button toast,</text>
-<text text-anchor="start" x="911.38" y="-338.5" font-family="Helvetica,sans-Serif" font-size="10.00"> final double duration)</text>
-<text text-anchor="start" x="902.88" y="-322.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="911.38" y="-322.5" font-family="Helvetica,sans-Serif" font-size="10.00">void toastActions(final</text>
-<text text-anchor="start" x="911.38" y="-310.5" font-family="Helvetica,sans-Serif" font-size="10.00"> ActionEvent event)</text>
-<polygon fill="#666666" stroke="#666666" points="897.38,-710 897.38,-710 1069.12,-710 1069.12,-710 897.38,-710"/>
-<polygon fill="#666666" stroke="#666666" points="897.38,-694 897.38,-694 1069.12,-694 1069.12,-694 897.38,-694"/>
-<polygon fill="none" stroke="#666666" points="897.38,-304 897.38,-740 1069.12,-740 1069.12,-304 897.38,-304"/>
+<!-- Node17 -->
+<g id="Node000017" class="node">
+<title>Node17</title>
+<g id="a_Node000017"><a xlink:title=" ">
+<polygon fill="white" stroke="none" points="542,-886 478.5,-886 478.5,-834 542,-834 542,-886"/>
+<text text-anchor="start" x="482.5" y="-872.5" font-family="Helvetica,sans-Serif" font-size="10.00">FXMLLoader</text>
+<text text-anchor="start" x="508.75" y="-856.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="508.75" y="-840.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polygon fill="#666666" stroke="#666666" points="478.5,-868 478.5,-868 542,-868 542,-868 478.5,-868"/>
+<polygon fill="#666666" stroke="#666666" points="478.5,-852 478.5,-852 542,-852 542,-852 478.5,-852"/>
+<polygon fill="none" stroke="#666666" points="478.5,-834 478.5,-886 542,-886 542,-834 478.5,-834"/>
 </a>
 </g>
 </g>
-<!-- Node18&#45;&gt;Node1 -->
-<g id="edge19_Node000001_Node000018" class="edge">
-<title>Node18&#45;&gt;Node1</title>
-<g id="a_edge19_Node000001_Node000018"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M897.48,-317.68C894.48,-313.01 891.4,-308.45 888.25,-304 849.32,-249.04 788.88,-202.9 739.18,-170.95"/>
-<polygon fill="none" stroke="#63b8ff" points="739.33,-171.05 732.12,-171.22 729.18,-164.64 736.39,-164.46 739.33,-171.05"/>
+<!-- Node17&#45;&gt;Node15 -->
+<g id="edge18_Node000015_Node000017" class="edge">
+<title>Node17&#45;&gt;Node15</title>
+<g id="a_edge18_Node000015_Node000017"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M504.15,-834.02C491.94,-783.99 464.09,-669.85 445.73,-594.64"/>
+<polygon fill="none" stroke="#63b8ff" points="445.71,-594.53 440.4,-589.65 442.86,-582.87 448.17,-587.75 445.71,-594.53"/>
 </a>
 </g>
-<text text-anchor="middle" x="891.74" y="-270.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;toaster</text>
+<text text-anchor="middle" x="515.26" y="-760.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;fxmlLoader</text>
+</g>
+<!-- Node18&#45;&gt;Node15 -->
+<g id="edge19_Node000015_Node000018" class="edge">
+<title>Node18&#45;&gt;Node15</title>
+<g id="a_edge19_Node000015_Node000018"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M327.43,-806.15C327.84,-790.51 329.22,-773.44 332.5,-758 344.72,-700.52 370.2,-639.14 391.81,-593.53"/>
+<polygon fill="none" stroke="#63b8ff" points="391.77,-593.62 390.76,-586.48 396.96,-582.8 397.97,-589.94 391.77,-593.62"/>
+</a>
+</g>
+<text text-anchor="middle" x="373.38" y="-760.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;dynamicFontSize</text>
 </g>
 <!-- Node19 -->
 <g id="Node000019" class="node">
 <title>Node19</title>
-<g id="a_Node000019"><a xlink:title=" ">
-<polygon fill="white" stroke="none" points="1032.25,-886 1000.25,-886 1000.25,-834 1032.25,-834 1032.25,-886"/>
-<text text-anchor="start" x="1004.25" y="-872.5" font-family="Helvetica,sans-Serif" font-size="10.00">VBox</text>
-<text text-anchor="start" x="1014.75" y="-856.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="1014.75" y="-840.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polygon fill="#666666" stroke="#666666" points="1000.25,-868 1000.25,-868 1032.25,-868 1032.25,-868 1000.25,-868"/>
-<polygon fill="#666666" stroke="#666666" points="1000.25,-852 1000.25,-852 1032.25,-852 1032.25,-852 1000.25,-852"/>
-<polygon fill="none" stroke="#666666" points="1000.25,-834 1000.25,-886 1032.25,-886 1032.25,-834 1000.25,-834"/>
+<g id="a_Node000019"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_toaster_v_box.html" target="_top" xlink:title="A custom VBox component for displaying toast notifications.">
+<polygon fill="white" stroke="none" points="1157.12,-740 985.38,-740 985.38,-304 1157.12,-304 1157.12,-740"/>
+<text text-anchor="start" x="992.12" y="-726.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.components.</text>
+<text text-anchor="start" x="1043.12" y="-714.5" font-family="Helvetica,sans-Serif" font-size="10.00">ToasterVBox</text>
+<text text-anchor="start" x="1069.75" y="-698.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="989.38" y="-682.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="999.38" y="-682.5" font-family="Helvetica,sans-Serif" font-size="10.00">ToasterVBox()</text>
+<text text-anchor="start" x="989.38" y="-666.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="999.38" y="-666.5" font-family="Helvetica,sans-Serif" font-size="10.00">void addToast(final</text>
+<text text-anchor="start" x="999.38" y="-654.5" font-family="Helvetica,sans-Serif" font-size="10.00"> String text, final</text>
+<text text-anchor="start" x="999.38" y="-642.5" font-family="Helvetica,sans-Serif" font-size="10.00"> MyEnums.ToastLevels</text>
+<text text-anchor="start" x="999.38" y="-630.5" font-family="Helvetica,sans-Serif" font-size="10.00"> toastLevel)</text>
+<text text-anchor="start" x="989.38" y="-614.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="999.38" y="-614.5" font-family="Helvetica,sans-Serif" font-size="10.00">void addToastWithDuration</text>
+<text text-anchor="start" x="999.38" y="-602.5" font-family="Helvetica,sans-Serif" font-size="10.00">(final String text, final</text>
+<text text-anchor="start" x="999.38" y="-590.5" font-family="Helvetica,sans-Serif" font-size="10.00"> MyEnums.ToastLevels toastLevel,</text>
+<text text-anchor="start" x="999.38" y="-578.5" font-family="Helvetica,sans-Serif" font-size="10.00"> final double duration)</text>
+<text text-anchor="start" x="990.88" y="-562.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="999.38" y="-562.5" font-family="Helvetica,sans-Serif" font-size="10.00">void copyToClipboard</text>
+<text text-anchor="start" x="999.38" y="-550.5" font-family="Helvetica,sans-Serif" font-size="10.00">(final Button button)</text>
+<text text-anchor="start" x="990.88" y="-534.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="999.38" y="-534.5" font-family="Helvetica,sans-Serif" font-size="10.00">String getToastInfo</text>
+<text text-anchor="start" x="999.38" y="-522.5" font-family="Helvetica,sans-Serif" font-size="10.00">(MyEnums.ToastLevels</text>
+<text text-anchor="start" x="999.38" y="-510.5" font-family="Helvetica,sans-Serif" font-size="10.00"> toastLevel)</text>
+<text text-anchor="start" x="990.88" y="-494.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="999.38" y="-494.5" font-family="Helvetica,sans-Serif" font-size="10.00">void removeToast(final</text>
+<text text-anchor="start" x="999.38" y="-482.5" font-family="Helvetica,sans-Serif" font-size="10.00"> Button button)</text>
+<text text-anchor="start" x="990.88" y="-466.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="999.38" y="-466.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setAccessibility</text>
+<text text-anchor="start" x="999.38" y="-454.5" font-family="Helvetica,sans-Serif" font-size="10.00">(final Button toast,</text>
+<text text-anchor="start" x="999.38" y="-442.5" font-family="Helvetica,sans-Serif" font-size="10.00"> final MyEnums.ToastLevels</text>
+<text text-anchor="start" x="999.38" y="-430.5" font-family="Helvetica,sans-Serif" font-size="10.00"> toastLevel, final String text)</text>
+<text text-anchor="start" x="990.88" y="-414.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="999.38" y="-414.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setToastStyle</text>
+<text text-anchor="start" x="999.38" y="-402.5" font-family="Helvetica,sans-Serif" font-size="10.00">(final Button toast,</text>
+<text text-anchor="start" x="999.38" y="-390.5" font-family="Helvetica,sans-Serif" font-size="10.00"> final MyEnums.ToastLevels</text>
+<text text-anchor="start" x="999.38" y="-378.5" font-family="Helvetica,sans-Serif" font-size="10.00"> toastLevel)</text>
+<text text-anchor="start" x="990.88" y="-362.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="999.38" y="-362.5" font-family="Helvetica,sans-Serif" font-size="10.00">void temporizeToast</text>
+<text text-anchor="start" x="999.38" y="-350.5" font-family="Helvetica,sans-Serif" font-size="10.00">(final Button toast,</text>
+<text text-anchor="start" x="999.38" y="-338.5" font-family="Helvetica,sans-Serif" font-size="10.00"> final double duration)</text>
+<text text-anchor="start" x="990.88" y="-322.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="999.38" y="-322.5" font-family="Helvetica,sans-Serif" font-size="10.00">void toastActions(final</text>
+<text text-anchor="start" x="999.38" y="-310.5" font-family="Helvetica,sans-Serif" font-size="10.00"> ActionEvent event)</text>
+<polygon fill="#666666" stroke="#666666" points="985.38,-710 985.38,-710 1157.12,-710 1157.12,-710 985.38,-710"/>
+<polygon fill="#666666" stroke="#666666" points="985.38,-694 985.38,-694 1157.12,-694 1157.12,-694 985.38,-694"/>
+<polygon fill="none" stroke="#666666" points="985.38,-304 985.38,-740 1157.12,-740 1157.12,-304 985.38,-304"/>
 </a>
 </g>
 </g>
-<!-- Node19&#45;&gt;Node18 -->
-<g id="edge20_Node000018_Node000019" class="edge">
-<title>Node19&#45;&gt;Node18</title>
-<g id="a_edge20_Node000018_Node000019"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M1012.7,-822.85C1010.58,-801.22 1007.68,-771.76 1004.53,-739.72"/>
-<polygon fill="none" stroke="#63b8ff" points="1009.19,-822.9 1013.65,-832.51 1016.15,-822.22 1009.19,-822.9"/>
+<!-- Node19&#45;&gt;Node1 -->
+<g id="edge22_Node000001_Node000019" class="edge">
+<title>Node19&#45;&gt;Node1</title>
+<g id="a_edge22_Node000001_Node000019"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M985.44,-317.32C982.45,-312.78 979.39,-308.33 976.25,-304 920.54,-227.12 821.4,-177.9 749.6,-150.5"/>
+<polygon fill="none" stroke="#63b8ff" points="749.51,-150.47 742.49,-152.12 738.27,-146.27 745.29,-144.62 749.51,-150.47"/>
 </a>
 </g>
+<text text-anchor="middle" x="976.01" y="-270.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;toaster</text>
 </g>
 <!-- Node20 -->
 <g id="Node000020" class="node">
 <title>Node20</title>
 <g id="a_Node000020"><a xlink:title=" ">
-<polygon fill="white" stroke="none" points="1118.88,-548 1087.62,-548 1087.62,-496 1118.88,-496 1118.88,-548"/>
-<text text-anchor="start" x="1091.62" y="-534.5" font-family="Helvetica,sans-Serif" font-size="10.00">Label</text>
-<text text-anchor="start" x="1101.75" y="-518.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="1101.75" y="-502.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polygon fill="#666666" stroke="#666666" points="1087.62,-530 1087.62,-530 1118.88,-530 1118.88,-530 1087.62,-530"/>
-<polygon fill="#666666" stroke="#666666" points="1087.62,-514 1087.62,-514 1118.88,-514 1118.88,-514 1087.62,-514"/>
-<polygon fill="none" stroke="#666666" points="1087.62,-496 1087.62,-548 1118.88,-548 1118.88,-496 1087.62,-496"/>
+<polygon fill="white" stroke="none" points="1107.25,-886 1075.25,-886 1075.25,-834 1107.25,-834 1107.25,-886"/>
+<text text-anchor="start" x="1079.25" y="-872.5" font-family="Helvetica,sans-Serif" font-size="10.00">VBox</text>
+<text text-anchor="start" x="1089.75" y="-856.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="1089.75" y="-840.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polygon fill="#666666" stroke="#666666" points="1075.25,-868 1075.25,-868 1107.25,-868 1107.25,-868 1075.25,-868"/>
+<polygon fill="#666666" stroke="#666666" points="1075.25,-852 1075.25,-852 1107.25,-852 1107.25,-852 1075.25,-852"/>
+<polygon fill="none" stroke="#666666" points="1075.25,-834 1075.25,-886 1107.25,-886 1107.25,-834 1075.25,-834"/>
 </a>
 </g>
 </g>
-<!-- Node20&#45;&gt;Node1 -->
-<g id="edge21_Node000001_Node000020" class="edge">
-<title>Node20&#45;&gt;Node1</title>
-<g id="a_edge21_Node000001_Node000020"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M1107.77,-496.34C1114.28,-452.83 1121.23,-361.6 1078.25,-304 997.66,-195.99 839.67,-151.76 740.95,-134.14"/>
-<polygon fill="none" stroke="#63b8ff" points="741.04,-134.15 734.45,-137.08 729.21,-132.12 735.8,-129.2 741.04,-134.15"/>
+<!-- Node20&#45;&gt;Node19 -->
+<g id="edge23_Node000019_Node000020" class="edge">
+<title>Node20&#45;&gt;Node19</title>
+<g id="a_edge23_Node000019_Node000020"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M1089.08,-822.54C1087.79,-800.95 1086.05,-771.62 1084.15,-739.72"/>
+<polygon fill="none" stroke="#63b8ff" points="1085.59,-822.73 1089.67,-832.51 1092.57,-822.32 1085.59,-822.73"/>
 </a>
 </g>
-<text text-anchor="middle" x="1094.59" y="-270.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;welcomeText</text>
 </g>
 <!-- Node21 -->
 <g id="Node000021" class="node">
 <title>Node21</title>
 <g id="a_Node000021"><a xlink:title=" ">
-<polygon fill="white" stroke="none" points="1190.5,-548 1154,-548 1154,-496 1190.5,-496 1190.5,-548"/>
-<text text-anchor="start" x="1158" y="-534.5" font-family="Helvetica,sans-Serif" font-size="10.00">Button</text>
-<text text-anchor="start" x="1170.75" y="-518.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="1170.75" y="-502.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polygon fill="#666666" stroke="#666666" points="1154,-530 1154,-530 1190.5,-530 1190.5,-530 1154,-530"/>
-<polygon fill="#666666" stroke="#666666" points="1154,-514 1154,-514 1190.5,-514 1190.5,-514 1154,-514"/>
-<polygon fill="none" stroke="#666666" points="1154,-496 1154,-548 1190.5,-548 1190.5,-496 1154,-496"/>
+<polygon fill="white" stroke="none" points="1206.88,-548 1175.62,-548 1175.62,-496 1206.88,-496 1206.88,-548"/>
+<text text-anchor="start" x="1179.62" y="-534.5" font-family="Helvetica,sans-Serif" font-size="10.00">Label</text>
+<text text-anchor="start" x="1189.75" y="-518.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="1189.75" y="-502.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polygon fill="#666666" stroke="#666666" points="1175.62,-530 1175.62,-530 1206.88,-530 1206.88,-530 1175.62,-530"/>
+<polygon fill="#666666" stroke="#666666" points="1175.62,-514 1175.62,-514 1206.88,-514 1206.88,-514 1175.62,-514"/>
+<polygon fill="none" stroke="#666666" points="1175.62,-496 1175.62,-548 1206.88,-548 1206.88,-496 1175.62,-496"/>
 </a>
 </g>
 </g>
 <!-- Node21&#45;&gt;Node1 -->
-<g id="edge22_Node000001_Node000021" class="edge">
+<g id="edge24_Node000001_Node000021" class="edge">
 <title>Node21&#45;&gt;Node1</title>
-<g id="a_edge22_Node000001_Node000021"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M1176.15,-496.01C1182.58,-445.18 1189.37,-328.9 1130.25,-262 1078.84,-203.82 863.58,-158.62 740.88,-136.99"/>
-<polygon fill="none" stroke="#63b8ff" points="740.92,-137 734.33,-139.91 729.1,-134.94 735.7,-132.03 740.92,-137"/>
+<g id="a_edge24_Node000001_Node000021"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M1196.1,-496.08C1203.13,-452.17 1210.88,-360.33 1166.25,-304 1064.83,-176 865.18,-138.45 750.26,-127.48"/>
+<polygon fill="none" stroke="#63b8ff" points="750.21,-127.47 743.88,-130.92 738.26,-126.4 744.59,-122.96 750.21,-127.47"/>
 </a>
 </g>
-<text text-anchor="middle" x="1174.45" y="-270.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;buttonHello</text>
+<text text-anchor="middle" x="1179.46" y="-270.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;welcomeText</text>
+</g>
+<!-- Node22 -->
+<g id="Node000022" class="node">
+<title>Node22</title>
+<g id="a_Node000022"><a xlink:title=" ">
+<polygon fill="white" stroke="none" points="1278.5,-548 1242,-548 1242,-496 1278.5,-496 1278.5,-548"/>
+<text text-anchor="start" x="1246" y="-534.5" font-family="Helvetica,sans-Serif" font-size="10.00">Button</text>
+<text text-anchor="start" x="1258.75" y="-518.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="1258.75" y="-502.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polygon fill="#666666" stroke="#666666" points="1242,-530 1242,-530 1278.5,-530 1278.5,-530 1242,-530"/>
+<polygon fill="#666666" stroke="#666666" points="1242,-514 1242,-514 1278.5,-514 1278.5,-514 1242,-514"/>
+<polygon fill="none" stroke="#666666" points="1242,-496 1242,-548 1278.5,-548 1278.5,-496 1242,-496"/>
+</a>
+</g>
+</g>
+<!-- Node22&#45;&gt;Node1 -->
+<g id="edge25_Node000001_Node000022" class="edge">
+<title>Node22&#45;&gt;Node1</title>
+<g id="a_edge25_Node000001_Node000022"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M1263.97,-496.18C1270.12,-445.15 1276.25,-327.74 1215.25,-262 1152.67,-194.56 889.13,-151.69 750.05,-133.33"/>
+<polygon fill="none" stroke="#63b8ff" points="750.19,-133.35 743.73,-136.54 738.29,-131.8 744.76,-128.6 750.19,-133.35"/>
+</a>
+</g>
+<text text-anchor="middle" x="1259.96" y="-270.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;buttonHello</text>
 </g>
 </g>
 </svg>

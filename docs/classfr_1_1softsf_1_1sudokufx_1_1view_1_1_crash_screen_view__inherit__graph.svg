@@ -47,7 +47,7 @@
   </g>
 </defs>
 <script type="application/ecmascript">
-var viewWidth = 202;
+var viewWidth = 332;
 var viewHeight = 780;
 var sectionId = 'dynsection-0';
 </script>
@@ -59,81 +59,81 @@ var sectionId = 'dynsection-0';
 <g id="Node000001" class="node">
 <title>Node1</title>
 <g id="a_Node000001"><a xlink:title="View class for the crash screen without business logic.">
-<polygon fill="#999999" stroke="none" points="193.5,-648 0,-648 0,0 193.5,0 193.5,-648"/>
-<text text-anchor="start" x="45.75" y="-634.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.</text>
-<text text-anchor="start" x="57.38" y="-622.5" font-family="Helvetica,sans-Serif" font-size="10.00">CrashScreenView</text>
-<text text-anchor="start" x="5.5" y="-606.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-606.5" font-family="Helvetica,sans-Serif" font-size="10.00">Button buttonClose</text>
-<text text-anchor="start" x="5.5" y="-590.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-590.5" font-family="Helvetica,sans-Serif" font-size="10.00">Button buttonReset</text>
-<text text-anchor="start" x="5.5" y="-574.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-574.5" font-family="Helvetica,sans-Serif" font-size="10.00">double crashScreenFontSize</text>
-<text text-anchor="start" x="5.5" y="-558.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-558.5" font-family="Helvetica,sans-Serif" font-size="10.00">final Stage crashscreenStage</text>
-<text text-anchor="start" x="5.5" y="-542.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-542.5" font-family="Helvetica,sans-Serif" font-size="10.00">VBox crashscreenvbox</text>
-<text text-anchor="start" x="5.5" y="-526.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-526.5" font-family="Helvetica,sans-Serif" font-size="10.00">Label crashscreenvboxBottomhbox</text>
-<text text-anchor="start" x="14" y="-514.5" font-family="Helvetica,sans-Serif" font-size="10.00">Versionlabel</text>
-<text text-anchor="start" x="5.5" y="-498.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-498.5" font-family="Helvetica,sans-Serif" font-size="10.00">Label crashscreenvboxBottomhbox</text>
-<text text-anchor="start" x="14" y="-486.5" font-family="Helvetica,sans-Serif" font-size="10.00">Yearlabel</text>
-<text text-anchor="start" x="5.5" y="-470.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-470.5" font-family="Helvetica,sans-Serif" font-size="10.00">HBox crashscreenvboxCenterhboxHbox</text>
-<text text-anchor="start" x="5.5" y="-454.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-454.5" font-family="Helvetica,sans-Serif" font-size="10.00">Label crashscreenvboxCenterhbox</text>
-<text text-anchor="start" x="14" y="-442.5" font-family="Helvetica,sans-Serif" font-size="10.00">Label</text>
-<text text-anchor="start" x="5.5" y="-426.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-426.5" font-family="Helvetica,sans-Serif" font-size="10.00">Label crashscreenvboxCenterhbox</text>
-<text text-anchor="start" x="14" y="-414.5" font-family="Helvetica,sans-Serif" font-size="10.00">Label2</text>
-<text text-anchor="start" x="5.5" y="-398.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-398.5" font-family="Helvetica,sans-Serif" font-size="10.00">Label crashscreenvboxTophbox</text>
-<text text-anchor="start" x="14" y="-386.5" font-family="Helvetica,sans-Serif" font-size="10.00">Namelabel</text>
-<text text-anchor="start" x="5.5" y="-370.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-370.5" font-family="Helvetica,sans-Serif" font-size="10.00">Region crashscreenvboxTophbox</text>
-<text text-anchor="start" x="14" y="-358.5" font-family="Helvetica,sans-Serif" font-size="10.00">Regionsudosvg</text>
-<text text-anchor="start" x="5.5" y="-342.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-342.5" font-family="Helvetica,sans-Serif" font-size="10.00">final DropShadow dropShadow</text>
-<text text-anchor="start" x="5.5" y="-326.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-326.5" font-family="Helvetica,sans-Serif" font-size="10.00">final Stage primaryStage</text>
-<text text-anchor="start" x="5.5" y="-310.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-310.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final double</text>
-<text text-anchor="start" x="14" y="-298.5" font-family="Helvetica,sans-Serif" font-size="10.00"> FADE_IN_IN_SECONDS</text>
-<text text-anchor="start" x="14" y="-286.5" font-family="Helvetica,sans-Serif" font-size="10.00">_AFTER_SPLASHSCREEN</text>
-<text text-anchor="start" x="5.5" y="-270.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-270.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final IOsFolderFactory</text>
-<text text-anchor="start" x="14" y="-258.5" font-family="Helvetica,sans-Serif" font-size="10.00"> iOsFolderFactory</text>
-<text text-anchor="start" x="4" y="-242.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="14" y="-242.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingMainStage</text>
-<text text-anchor="start" x="14" y="-230.5" font-family="Helvetica,sans-Serif" font-size="10.00">(ISplashScreenView iSplashScreen</text>
-<text text-anchor="start" x="14" y="-218.5" font-family="Helvetica,sans-Serif" font-size="10.00">View)</text>
-<text text-anchor="start" x="5.5" y="-202.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-202.5" font-family="Helvetica,sans-Serif" font-size="10.00">void closeButtonClick()</text>
-<text text-anchor="start" x="5.5" y="-186.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-186.5" font-family="Helvetica,sans-Serif" font-size="10.00">void createSVG(final</text>
-<text text-anchor="start" x="14" y="-174.5" font-family="Helvetica,sans-Serif" font-size="10.00"> Region region, final</text>
-<text text-anchor="start" x="14" y="-162.5" font-family="Helvetica,sans-Serif" font-size="10.00"> String path, final double</text>
-<text text-anchor="start" x="14" y="-150.5" font-family="Helvetica,sans-Serif" font-size="10.00"> width, final double height,</text>
-<text text-anchor="start" x="14" y="-138.5" font-family="Helvetica,sans-Serif" font-size="10.00"> final double offsetX, final</text>
-<text text-anchor="start" x="14" y="-126.5" font-family="Helvetica,sans-Serif" font-size="10.00"> double offsetY)</text>
-<text text-anchor="start" x="5.5" y="-110.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-110.5" font-family="Helvetica,sans-Serif" font-size="10.00">void fadeIn(final Node</text>
-<text text-anchor="start" x="14" y="-98.5" font-family="Helvetica,sans-Serif" font-size="10.00"> node)</text>
-<text text-anchor="start" x="5.5" y="-82.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-82.5" font-family="Helvetica,sans-Serif" font-size="10.00">void hidecrashscreen()</text>
-<text text-anchor="start" x="5.5" y="-66.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-66.5" font-family="Helvetica,sans-Serif" font-size="10.00">void initialize()</text>
-<text text-anchor="start" x="5.5" y="-50.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-50.5" font-family="Helvetica,sans-Serif" font-size="10.00">void resetButtonClick()</text>
-<text text-anchor="start" x="5.5" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setCrashscreenvboxTophbox</text>
-<text text-anchor="start" x="14" y="-22.5" font-family="Helvetica,sans-Serif" font-size="10.00">Logosudosvg()</text>
-<text text-anchor="start" x="5.5" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">void showcrashscreen()</text>
-<polygon fill="#666666" stroke="#666666" points="0,-618 0,-618 193.5,-618 193.5,-618 0,-618"/>
-<polygon fill="#666666" stroke="#666666" points="0,-254 0,-254 12,-254 12,-254 0,-254"/>
-<polygon fill="#666666" stroke="#666666" points="12,-254 12,-254 193.5,-254 193.5,-254 12,-254"/>
-<polygon fill="none" stroke="#666666" points="0,0 0,-648 193.5,-648 193.5,0 0,0"/>
+<polygon fill="#999999" stroke="none" points="268,-648 74.5,-648 74.5,0 268,0 268,-648"/>
+<text text-anchor="start" x="120.25" y="-634.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.</text>
+<text text-anchor="start" x="131.88" y="-622.5" font-family="Helvetica,sans-Serif" font-size="10.00">CrashScreenView</text>
+<text text-anchor="start" x="80" y="-606.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="88.5" y="-606.5" font-family="Helvetica,sans-Serif" font-size="10.00">Button buttonClose</text>
+<text text-anchor="start" x="80" y="-590.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="88.5" y="-590.5" font-family="Helvetica,sans-Serif" font-size="10.00">Button buttonReset</text>
+<text text-anchor="start" x="80" y="-574.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="88.5" y="-574.5" font-family="Helvetica,sans-Serif" font-size="10.00">double crashScreenFontSize</text>
+<text text-anchor="start" x="80" y="-558.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="88.5" y="-558.5" font-family="Helvetica,sans-Serif" font-size="10.00">final Stage crashscreenStage</text>
+<text text-anchor="start" x="80" y="-542.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="88.5" y="-542.5" font-family="Helvetica,sans-Serif" font-size="10.00">VBox crashscreenvbox</text>
+<text text-anchor="start" x="80" y="-526.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="88.5" y="-526.5" font-family="Helvetica,sans-Serif" font-size="10.00">Label crashscreenvboxBottomhbox</text>
+<text text-anchor="start" x="88.5" y="-514.5" font-family="Helvetica,sans-Serif" font-size="10.00">Versionlabel</text>
+<text text-anchor="start" x="80" y="-498.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="88.5" y="-498.5" font-family="Helvetica,sans-Serif" font-size="10.00">Label crashscreenvboxBottomhbox</text>
+<text text-anchor="start" x="88.5" y="-486.5" font-family="Helvetica,sans-Serif" font-size="10.00">Yearlabel</text>
+<text text-anchor="start" x="80" y="-470.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="88.5" y="-470.5" font-family="Helvetica,sans-Serif" font-size="10.00">HBox crashscreenvboxCenterhboxHbox</text>
+<text text-anchor="start" x="80" y="-454.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="88.5" y="-454.5" font-family="Helvetica,sans-Serif" font-size="10.00">Label crashscreenvboxCenterhbox</text>
+<text text-anchor="start" x="88.5" y="-442.5" font-family="Helvetica,sans-Serif" font-size="10.00">Label</text>
+<text text-anchor="start" x="80" y="-426.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="88.5" y="-426.5" font-family="Helvetica,sans-Serif" font-size="10.00">Label crashscreenvboxCenterhbox</text>
+<text text-anchor="start" x="88.5" y="-414.5" font-family="Helvetica,sans-Serif" font-size="10.00">Label2</text>
+<text text-anchor="start" x="80" y="-398.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="88.5" y="-398.5" font-family="Helvetica,sans-Serif" font-size="10.00">Label crashscreenvboxTophbox</text>
+<text text-anchor="start" x="88.5" y="-386.5" font-family="Helvetica,sans-Serif" font-size="10.00">Namelabel</text>
+<text text-anchor="start" x="80" y="-370.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="88.5" y="-370.5" font-family="Helvetica,sans-Serif" font-size="10.00">Region crashscreenvboxTophbox</text>
+<text text-anchor="start" x="88.5" y="-358.5" font-family="Helvetica,sans-Serif" font-size="10.00">Regionsudosvg</text>
+<text text-anchor="start" x="80" y="-342.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="88.5" y="-342.5" font-family="Helvetica,sans-Serif" font-size="10.00">final DropShadow dropShadow</text>
+<text text-anchor="start" x="80" y="-326.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="88.5" y="-326.5" font-family="Helvetica,sans-Serif" font-size="10.00">final Stage primaryStage</text>
+<text text-anchor="start" x="80" y="-310.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="88.5" y="-310.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final double</text>
+<text text-anchor="start" x="88.5" y="-298.5" font-family="Helvetica,sans-Serif" font-size="10.00"> FADE_IN_IN_SECONDS</text>
+<text text-anchor="start" x="88.5" y="-286.5" font-family="Helvetica,sans-Serif" font-size="10.00">_AFTER_SPLASHSCREEN</text>
+<text text-anchor="start" x="80" y="-270.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="88.5" y="-270.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final IOsFolderFactory</text>
+<text text-anchor="start" x="88.5" y="-258.5" font-family="Helvetica,sans-Serif" font-size="10.00"> iOsFolderFactory</text>
+<text text-anchor="start" x="78.5" y="-242.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="88.5" y="-242.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingMainStage</text>
+<text text-anchor="start" x="88.5" y="-230.5" font-family="Helvetica,sans-Serif" font-size="10.00">(ISplashScreenView iSplashScreen</text>
+<text text-anchor="start" x="88.5" y="-218.5" font-family="Helvetica,sans-Serif" font-size="10.00">View)</text>
+<text text-anchor="start" x="80" y="-202.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="88.5" y="-202.5" font-family="Helvetica,sans-Serif" font-size="10.00">void closeButtonClick()</text>
+<text text-anchor="start" x="80" y="-186.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="88.5" y="-186.5" font-family="Helvetica,sans-Serif" font-size="10.00">void createSVG(final</text>
+<text text-anchor="start" x="88.5" y="-174.5" font-family="Helvetica,sans-Serif" font-size="10.00"> Region region, final</text>
+<text text-anchor="start" x="88.5" y="-162.5" font-family="Helvetica,sans-Serif" font-size="10.00"> String path, final double</text>
+<text text-anchor="start" x="88.5" y="-150.5" font-family="Helvetica,sans-Serif" font-size="10.00"> width, final double height,</text>
+<text text-anchor="start" x="88.5" y="-138.5" font-family="Helvetica,sans-Serif" font-size="10.00"> final double offsetX, final</text>
+<text text-anchor="start" x="88.5" y="-126.5" font-family="Helvetica,sans-Serif" font-size="10.00"> double offsetY)</text>
+<text text-anchor="start" x="80" y="-110.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="88.5" y="-110.5" font-family="Helvetica,sans-Serif" font-size="10.00">void fadeIn(final Node</text>
+<text text-anchor="start" x="88.5" y="-98.5" font-family="Helvetica,sans-Serif" font-size="10.00"> node)</text>
+<text text-anchor="start" x="80" y="-82.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="88.5" y="-82.5" font-family="Helvetica,sans-Serif" font-size="10.00">void hidecrashscreen()</text>
+<text text-anchor="start" x="80" y="-66.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="88.5" y="-66.5" font-family="Helvetica,sans-Serif" font-size="10.00">void initialize()</text>
+<text text-anchor="start" x="80" y="-50.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="88.5" y="-50.5" font-family="Helvetica,sans-Serif" font-size="10.00">void resetButtonClick()</text>
+<text text-anchor="start" x="80" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="88.5" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setCrashscreenvboxTophbox</text>
+<text text-anchor="start" x="88.5" y="-22.5" font-family="Helvetica,sans-Serif" font-size="10.00">Logosudosvg()</text>
+<text text-anchor="start" x="80" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="88.5" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">void showcrashscreen()</text>
+<polygon fill="#666666" stroke="#666666" points="74.5,-618 74.5,-618 268,-618 268,-618 74.5,-618"/>
+<polygon fill="#666666" stroke="#666666" points="74.5,-254 74.5,-254 86.5,-254 86.5,-254 74.5,-254"/>
+<polygon fill="#666666" stroke="#666666" points="86.5,-254 86.5,-254 268,-254 268,-254 86.5,-254"/>
+<polygon fill="none" stroke="#666666" points="74.5,0 74.5,-648 268,-648 268,0 74.5,0"/>
 </a>
 </g>
 </g>
@@ -141,17 +141,17 @@ var sectionId = 'dynsection-0';
 <g id="Node000002" class="node">
 <title>Node2</title>
 <g id="a_Node000002"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1_sudo_main_1_1_i_primary_stage_view.html" target="_top" xlink:title="Interface for the primary stage view.">
-<polygon fill="white" stroke="none" points="183,-772 10.5,-772 10.5,-684 183,-684 183,-772"/>
-<text text-anchor="start" x="33.75" y="-758.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.SudoMain.</text>
-<text text-anchor="start" x="54.75" y="-746.5" font-family="Helvetica,sans-Serif" font-size="10.00">IPrimaryStageView</text>
-<text text-anchor="start" x="95.25" y="-730.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="14.5" y="-714.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="24.5" y="-714.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingMainStage</text>
-<text text-anchor="start" x="24.5" y="-702.5" font-family="Helvetica,sans-Serif" font-size="10.00">(ISplashScreenView iSplashScreen</text>
-<text text-anchor="start" x="24.5" y="-690.5" font-family="Helvetica,sans-Serif" font-size="10.00">View)</text>
-<polygon fill="#666666" stroke="#666666" points="10.5,-742 10.5,-742 183,-742 183,-742 10.5,-742"/>
-<polygon fill="#666666" stroke="#666666" points="10.5,-726 10.5,-726 183,-726 183,-726 10.5,-726"/>
-<polygon fill="none" stroke="#666666" points="10.5,-684 10.5,-772 183,-772 183,-684 10.5,-684"/>
+<polygon fill="white" stroke="none" points="172.5,-772 0,-772 0,-684 172.5,-684 172.5,-772"/>
+<text text-anchor="start" x="23.25" y="-758.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.SudoMain.</text>
+<text text-anchor="start" x="44.25" y="-746.5" font-family="Helvetica,sans-Serif" font-size="10.00">IPrimaryStageView</text>
+<text text-anchor="start" x="84.75" y="-730.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="4" y="-714.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="14" y="-714.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingMainStage</text>
+<text text-anchor="start" x="14" y="-702.5" font-family="Helvetica,sans-Serif" font-size="10.00">(ISplashScreenView iSplashScreen</text>
+<text text-anchor="start" x="14" y="-690.5" font-family="Helvetica,sans-Serif" font-size="10.00">View)</text>
+<polygon fill="#666666" stroke="#666666" points="0,-742 0,-742 172.5,-742 172.5,-742 0,-742"/>
+<polygon fill="#666666" stroke="#666666" points="0,-726 0,-726 172.5,-726 172.5,-726 0,-726"/>
+<polygon fill="none" stroke="#666666" points="0,-684 0,-772 172.5,-772 172.5,-684 0,-684"/>
 </a>
 </g>
 </g>
@@ -159,8 +159,33 @@ var sectionId = 'dynsection-0';
 <g id="edge1_Node000001_Node000002" class="edge">
 <title>Node2&#45;&gt;Node1</title>
 <g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M96.75,-673.03C96.75,-665.22 96.75,-656.76 96.75,-647.78"/>
-<polygon fill="none" stroke="#63b8ff" points="93.25,-672.85 96.75,-682.85 100.25,-672.85 93.25,-672.85"/>
+<path fill="none" stroke="#63b8ff" d="M97.6,-673.31C99.27,-665.42 101.08,-656.87 103,-647.78"/>
+<polygon fill="none" stroke="#63b8ff" points="94.22,-672.37 95.58,-682.88 101.07,-673.82 94.22,-672.37"/>
+</a>
+</g>
+</g>
+<!-- Node3 -->
+<g id="Node000003" class="node">
+<title>Node3</title>
+<g id="a_Node000003"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_scene_provider.html" target="_top" xlink:title="Interface ISceneProvider.">
+<polygon fill="white" stroke="none" points="323.88,-760 190.62,-760 190.62,-696 323.88,-696 323.88,-760"/>
+<text text-anchor="start" x="194.62" y="-746.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.interfaces.</text>
+<text text-anchor="start" x="223.88" y="-734.5" font-family="Helvetica,sans-Serif" font-size="10.00">ISceneProvider</text>
+<text text-anchor="start" x="255.75" y="-718.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="195.88" y="-702.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="207.12" y="-702.5" font-family="Helvetica,sans-Serif" font-size="10.00">default Scene getScene()</text>
+<polygon fill="#666666" stroke="#666666" points="190.62,-730 190.62,-730 323.88,-730 323.88,-730 190.62,-730"/>
+<polygon fill="#666666" stroke="#666666" points="190.62,-714 190.62,-714 323.88,-714 323.88,-714 190.62,-714"/>
+<polygon fill="none" stroke="#666666" points="190.62,-696 190.62,-760 323.88,-760 323.88,-696 190.62,-696"/>
+</a>
+</g>
+</g>
+<!-- Node3&#45;&gt;Node1 -->
+<g id="edge2_Node000001_Node000003" class="edge">
+<title>Node3&#45;&gt;Node1</title>
+<g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M248.26,-685C245.93,-674.11 243.24,-661.49 240.27,-647.64"/>
+<polygon fill="none" stroke="#63b8ff" points="244.81,-685.6 250.33,-694.64 251.66,-684.13 244.81,-685.6"/>
 </a>
 </g>
 </g>
