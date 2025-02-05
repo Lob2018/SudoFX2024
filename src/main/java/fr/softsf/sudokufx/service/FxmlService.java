@@ -6,7 +6,6 @@ import fr.softsf.sudokufx.utils.MyEnums;
 import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
@@ -24,7 +23,6 @@ public class FxmlService implements ISceneProvider {
 
     private final FXMLLoader fxmlLoader;
 
-    @Setter
     private DynamicFontSize dynamicFontSize;
 
     /**
@@ -36,6 +34,13 @@ public class FxmlService implements ISceneProvider {
      */
     public FxmlService(FXMLLoader fxmlLoader) {
         this.fxmlLoader = fxmlLoader;
+    }
+
+    /**
+     * Initializes dynamic font sizing for the scene.
+     */
+    public void setDynamicFontSize() {
+        this.dynamicFontSize = new DynamicFontSize();
     }
 
     /**
