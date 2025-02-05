@@ -2,7 +2,6 @@ package fr.softsf.sudokufx;
 
 import com.gluonhq.ignite.spring.SpringContext;
 import fr.softsf.sudokufx.interfaces.ISplashScreenView;
-import fr.softsf.sudokufx.utils.DynamicFontSize;
 import fr.softsf.sudokufx.utils.MyEnums;
 import fr.softsf.sudokufx.view.SplashScreenView;
 import fr.softsf.sudokufx.service.FxmlService;
