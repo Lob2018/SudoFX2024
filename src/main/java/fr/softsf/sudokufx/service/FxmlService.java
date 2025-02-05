@@ -1,6 +1,6 @@
 package fr.softsf.sudokufx.service;
 
-import fr.softsf.sudokufx.SudoMain;
+import fr.softsf.sudokufx.interfaces.ISceneProvider;
 import fr.softsf.sudokufx.utils.DynamicFontSize;
 import fr.softsf.sudokufx.utils.MyEnums;
 import javafx.application.Platform;
@@ -18,9 +18,9 @@ import org.springframework.stereotype.Service;
  */
 @Service
 @Slf4j
-public class FxmlService {
+public class FxmlService implements ISceneProvider {
 
-    private final Scene scene;
+    private final Scene scene = getScene();
 
     private final FXMLLoader fxmlLoader;
 
@@ -36,7 +36,6 @@ public class FxmlService {
      */
     public FxmlService(FXMLLoader fxmlLoader) {
         this.fxmlLoader = fxmlLoader;
-        this.scene = SudoMain.getScene();
     }
 
     /**

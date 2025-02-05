@@ -1,4 +1,4 @@
-package fr.softsf.sudokufx.e2e.utils;
+package fr.softsf.sudokufx.utils;
 
 import java.util.concurrent.TimeoutException;
 
@@ -13,7 +13,6 @@ import org.testfx.api.FxToolkit;
 import org.testfx.framework.junit5.ApplicationExtension;
 import org.testfx.framework.junit5.Start;
 
-import fr.softsf.sudokufx.utils.DynamicFontSize;
 import javafx.scene.Scene;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;

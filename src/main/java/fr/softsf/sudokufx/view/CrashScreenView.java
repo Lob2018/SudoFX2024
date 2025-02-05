@@ -1,6 +1,7 @@
 package fr.softsf.sudokufx.view;
 
 import fr.softsf.sudokufx.interfaces.IOsFolderFactory;
+import fr.softsf.sudokufx.interfaces.ISceneProvider;
 import fr.softsf.sudokufx.interfaces.ISplashScreenView;
 import fr.softsf.sudokufx.utils.FileSystemManager;
 import fr.softsf.sudokufx.utils.JVMApplicationProperties;
@@ -40,7 +41,7 @@ import static fr.softsf.sudokufx.utils.MyEnums.ScreenSize.DISPOSABLE_SIZE;
  * responsible for displaying and managing the crash screen UI.
  */
 @Slf4j
-public final class CrashScreenView implements SudoMain.IPrimaryStageView {
+public final class CrashScreenView implements SudoMain.IPrimaryStageView, ISceneProvider {
 
     private static final IOsFolderFactory iOsFolderFactory = new OsFolderFactoryManager().osFolderFactory();
     private static final double FADE_IN_IN_SECONDS_AFTER_SPLASHSCREEN = 0.5;
@@ -119,7 +120,7 @@ public final class CrashScreenView implements SudoMain.IPrimaryStageView {
      */
     @Override
     public void openingMainStage(ISplashScreenView iSplashScreenView) {
-        fadeIn(SudoMain.getScene().getRoot());
+        fadeIn(getScene().getRoot());
         showcrashscreen();
         iSplashScreenView.hideSplashScreen();
     }
@@ -171,7 +172,7 @@ public final class CrashScreenView implements SudoMain.IPrimaryStageView {
      * Shows the crash screen stage.
      */
     private void showcrashscreen() {
-        final Scene s = SudoMain.getScene();
+        final Scene s = getScene();
         crashscreenStage.setScene(s);
         crashscreenStage.setWidth(DISPOSABLE_SIZE.getSize() * .7);
         crashscreenStage.setHeight(DISPOSABLE_SIZE.getSize() * .7);

@@ -1,6 +1,7 @@
 package fr.softsf.sudokufx.view;
 
 import fr.softsf.sudokufx.SudoMain;
+import fr.softsf.sudokufx.interfaces.ISceneProvider;
 import fr.softsf.sudokufx.interfaces.ISplashScreenView;
 import fr.softsf.sudokufx.service.FxmlService;
 import fr.softsf.sudokufx.utils.MyEnums;
@@ -32,7 +33,7 @@ import java.util.Objects;
  * responsible for displaying and managing the full menu UI.
  */
 @Slf4j
-public final class FullMenuView implements SudoMain.IPrimaryStageView {
+public final class FullMenuView implements SudoMain.IPrimaryStageView, ISceneProvider {
 
     private static final double FADE_IN_IN_SECONDS_AFTER_SPLASHSCREEN = 0.3;
     private final Text text1 = new Text("Helloj! ");
@@ -100,7 +101,7 @@ public final class FullMenuView implements SudoMain.IPrimaryStageView {
     private void openingConfigureStage() {
         primaryStage.getIcons().add(new Image((Objects.requireNonNull(SudoMain.class.getResource(MyEnums.Paths.LOGO_SUDO_PNG_PATH.getPath()))).toExternalForm()));
         primaryStage.initStyle(StageStyle.DECORATED);
-        primaryStage.setScene(SudoMain.getScene());
+        primaryStage.setScene(getScene());
         primaryStage.centerOnScreen();
     }
 
@@ -146,7 +147,7 @@ public final class FullMenuView implements SudoMain.IPrimaryStageView {
     public void openingMainStage(final ISplashScreenView iSplashScreenView) {
         openingConfigureStage();
         openingMaximizePrimaryStage();
-        openingFadeIn(SudoMain.getScene().getRoot());
+        openingFadeIn(getScene().getRoot());
         openingShowStage();
         iSplashScreenView.hideSplashScreen();
         primaryStage.setAlwaysOnTop(false);

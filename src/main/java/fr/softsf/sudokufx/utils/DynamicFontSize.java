@@ -1,5 +1,6 @@
 package fr.softsf.sudokufx.utils;
 
+import fr.softsf.sudokufx.interfaces.ISceneProvider;
 import javafx.scene.Scene;
 import lombok.Getter;
 
@@ -8,9 +9,10 @@ import lombok.Getter;
  * class automatically adjusts the font size of the Scene's root node when the
  * Scene's dimensions change.
  */
-public final class DynamicFontSize {
+public final class DynamicFontSize implements ISceneProvider {
 
-    private final Scene scene;
+    // The JavaFX Scene to which dynamic font sizing will be applied
+    private Scene scene = getScene();
 
     /**
      * The current font size calculated based on the Scene's dimensions.
@@ -20,12 +22,17 @@ public final class DynamicFontSize {
 
     /**
      * Constructs a DynamicFontSize instance and initializes Scene listeners.
-     *
-     * @param theScene The JavaFX Scene to which dynamic font sizing will be
-     * applied.
      */
-    public DynamicFontSize(final Scene theScene) {
-        scene = theScene;
+    public DynamicFontSize() {
+        scene.widthProperty().addListener((obs, oldW, newW) -> updateFontSize());
+        scene.heightProperty().addListener((obs, oldH, newH) -> updateFontSize());
+    }
+
+    /**
+     * Constructs a DynamicFontSize instance and initializes Scene listeners for testing purposes only.
+     */
+    DynamicFontSize(Scene scene) {
+        this.scene = scene;
         scene.widthProperty().addListener((obs, oldW, newW) -> updateFontSize());
         scene.heightProperty().addListener((obs, oldH, newH) -> updateFontSize());
     }
@@ -39,4 +46,5 @@ public final class DynamicFontSize {
         currentFontSize = Math.min(scene.getWidth(), scene.getHeight()) * 0.0219;
         scene.getRoot().setStyle("-fx-font-size: " + currentFontSize + "px;");
     }
+
 }

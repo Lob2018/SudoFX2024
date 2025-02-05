@@ -174,7 +174,7 @@ public class SudoMain extends Application {
         if (fxmlService == null) {
             fxmlService = new FxmlService(new FXMLLoader());
         }
-        fxmlService.setDynamicFontSize(new DynamicFontSize(scene));
+        fxmlService.setDynamicFontSize(new DynamicFontSize());
     }
 
     /**
