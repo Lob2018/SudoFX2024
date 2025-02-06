@@ -28,27 +28,29 @@
 <g id="Node000002" class="node">
 <title>Node2</title>
 <g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1_fxml_service.html" target="_top" xlink:title="FxmlService is a Spring service that manages the loading of FXML files and updating the root of the J...">
-<polygon fill="white" stroke="none" points="174.75,-400 0,-400 0,-248 174.75,-248 174.75,-400"/>
-<text text-anchor="start" x="30.38" y="-386.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.service.</text>
-<text text-anchor="start" x="60" y="-374.5" font-family="Helvetica,sans-Serif" font-size="10.00">FxmlService</text>
-<text text-anchor="start" x="5.5" y="-358.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-358.5" font-family="Helvetica,sans-Serif" font-size="10.00">DynamicFontSize dynamicFontSize</text>
-<text text-anchor="start" x="5.5" y="-342.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-342.5" font-family="Helvetica,sans-Serif" font-size="10.00">final FXMLLoader fxmlLoader</text>
-<text text-anchor="start" x="5.5" y="-326.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-326.5" font-family="Helvetica,sans-Serif" font-size="10.00">final Scene scene</text>
-<text text-anchor="start" x="4" y="-310.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="14" y="-310.5" font-family="Helvetica,sans-Serif" font-size="10.00">FxmlService(FXMLLoader</text>
-<text text-anchor="start" x="14" y="-298.5" font-family="Helvetica,sans-Serif" font-size="10.00"> fxmlLoader)</text>
-<text text-anchor="start" x="4" y="-282.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="14" y="-282.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setRootByFXMLName</text>
-<text text-anchor="start" x="14" y="-270.5" font-family="Helvetica,sans-Serif" font-size="10.00">(final String fxml)</text>
-<text text-anchor="start" x="4" y="-254.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="14" y="-254.5" font-family="Helvetica,sans-Serif" font-size="10.00">public&lt; T &gt; T getController()</text>
-<polygon fill="#666666" stroke="#666666" points="0,-370 0,-370 174.75,-370 174.75,-370 0,-370"/>
-<polygon fill="#666666" stroke="#666666" points="0,-322 0,-322 12,-322 12,-322 0,-322"/>
-<polygon fill="#666666" stroke="#666666" points="12,-322 12,-322 174.75,-322 174.75,-322 12,-322"/>
-<polygon fill="none" stroke="#666666" points="0,-248 0,-400 174.75,-400 174.75,-248 0,-248"/>
+<polygon fill="white" stroke="none" points="174.75,-408 0,-408 0,-240 174.75,-240 174.75,-408"/>
+<text text-anchor="start" x="30.38" y="-394.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.service.</text>
+<text text-anchor="start" x="60" y="-382.5" font-family="Helvetica,sans-Serif" font-size="10.00">FxmlService</text>
+<text text-anchor="start" x="5.5" y="-366.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="14" y="-366.5" font-family="Helvetica,sans-Serif" font-size="10.00">DynamicFontSize dynamicFontSize</text>
+<text text-anchor="start" x="5.5" y="-350.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="14" y="-350.5" font-family="Helvetica,sans-Serif" font-size="10.00">final FXMLLoader fxmlLoader</text>
+<text text-anchor="start" x="5.5" y="-334.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="14" y="-334.5" font-family="Helvetica,sans-Serif" font-size="10.00">final Scene scene</text>
+<text text-anchor="start" x="4" y="-318.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="14" y="-318.5" font-family="Helvetica,sans-Serif" font-size="10.00">FxmlService(FXMLLoader</text>
+<text text-anchor="start" x="14" y="-306.5" font-family="Helvetica,sans-Serif" font-size="10.00"> fxmlLoader)</text>
+<text text-anchor="start" x="4" y="-290.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="14" y="-290.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setDynamicFontSize()</text>
+<text text-anchor="start" x="4" y="-274.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="14" y="-274.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setRootByFXMLName</text>
+<text text-anchor="start" x="14" y="-262.5" font-family="Helvetica,sans-Serif" font-size="10.00">(final String fxml)</text>
+<text text-anchor="start" x="4" y="-246.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="14" y="-246.5" font-family="Helvetica,sans-Serif" font-size="10.00">public&lt; T &gt; T getController()</text>
+<polygon fill="#666666" stroke="#666666" points="0,-378 0,-378 174.75,-378 174.75,-378 0,-378"/>
+<polygon fill="#666666" stroke="#666666" points="0,-330 0,-330 12,-330 12,-330 0,-330"/>
+<polygon fill="#666666" stroke="#666666" points="12,-330 12,-330 174.75,-330 174.75,-330 12,-330"/>
+<polygon fill="none" stroke="#666666" points="0,-240 0,-408 174.75,-408 174.75,-240 0,-240"/>
 </a>
 </g>
 </g>
@@ -56,7 +58,7 @@
 <g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
 <g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M267.93,-697.99C238.22,-687.92 206.23,-672.22 184.38,-648 122.21,-579.1 99.84,-471.7 91.81,-399.89"/>
+<path fill="none" stroke="#63b8ff" d="M267.93,-697.99C238.22,-687.92 206.23,-672.22 184.38,-648 124.46,-581.6 101.51,-479.44 92.75,-407.84"/>
 <polygon fill="none" stroke="#63b8ff" points="266.72,-701.27 277.31,-700.98 268.85,-694.61 266.72,-701.27"/>
 </a>
 </g>

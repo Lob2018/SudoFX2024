@@ -12,5 +12,6 @@ var searchData=
   ['moyen_5fmax_5fdifficulte_9',['MOYEN_MAX_DIFFICULTE',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#ae4398fa3b7a1c0a9a5a37a87355dd326',1,'fr::softsf::sudokufx::utils::sudoku::GridMaster']]],
   ['moyen_5fmin_5fcachees_10',['MOYEN_MIN_CACHEES',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a5a1fa080d46674f7802a342b95806f9f',1,'fr::softsf::sudokufx::utils::sudoku::GridMaster']]],
   ['moyen_5fmin_5fdifficulte_11',['MOYEN_MIN_DIFFICULTE',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a673c369b3e46f9a4a4eadfe26f34cfcf',1,'fr::softsf::sudokufx::utils::sudoku::GridMaster']]],
-  ['mylogback_12',['myLogback',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback_u_test.html#a3df46ee7e817e9a4632d3d18e8c63d8f',1,'fr::softsf::sudokufx::utils::MyLogbackUTest']]]
+  ['moyen_5fmoy_5fcachees_12',['MOYEN_MOY_CACHEES',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a7cae40d700e2fd6e73a057f551ea1e88',1,'fr::softsf::sudokufx::utils::sudoku::GridMaster']]],
+  ['mylogback_13',['myLogback',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback_u_test.html#a3df46ee7e817e9a4632d3d18e8c63d8f',1,'fr::softsf::sudokufx::utils::MyLogbackUTest']]]
 ];

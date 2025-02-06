@@ -1,7 +1,7 @@
 <map id="fr.softsf.sudokufx.interfaces.ISceneProvider" name="fr.softsf.sudokufx.interfaces.ISceneProvider">
 <area shape="rect" id="Node000001" title="Interface ISceneProvider." alt="" coords="377,5,555,91"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_fxml_service.html" title="FxmlService is a Spring service that manages the loading of FXML files and updating the root of the J..." alt="" coords="5,469,238,672"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="364,74,304,101,277,119,253,140,225,177,201,217,181,259,165,303,143,391,130,470,125,469,137,390,160,302,176,257,196,214,220,174,249,137,274,114,302,96,361,70"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_fxml_service.html" title="FxmlService is a Spring service that manages the loading of FXML files and updating the root of the J..." alt="" coords="5,459,238,683"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="364,74,304,101,277,119,253,140,226,175,202,214,183,255,167,297,144,382,132,459,126,458,139,380,162,295,178,253,198,211,221,172,249,137,274,114,302,96,361,70"/>
 <area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_dynamic_font_size.html" title="Manages dynamic font sizing based on the dimensions of a JavaFX Scene." alt="" coords="263,488,432,653"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="454,106,446,139,367,489,362,488,441,138,449,105"/>
 <area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html" title="View class for the crash screen without business logic." alt="" coords="456,139,714,1003"/>

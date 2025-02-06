@@ -148,21 +148,23 @@ var sectionId = 'dynsection-1';
 <g id="Node000015" class="node">
 <title>Node15</title>
 <g id="a_Node000015"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1_fxml_service.html" target="_top" xlink:title="FxmlService is a Spring service that manages the loading of FXML files and updating the root of the J...">
-<polygon fill="white" stroke="none" points="498,-582 358.5,-582 358.5,-462 498,-462 498,-582"/>
-<text text-anchor="start" x="371.25" y="-568.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.service.</text>
-<text text-anchor="start" x="400.88" y="-556.5" font-family="Helvetica,sans-Serif" font-size="10.00">FxmlService</text>
-<text text-anchor="start" x="426.75" y="-540.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="362.5" y="-524.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="372.5" y="-524.5" font-family="Helvetica,sans-Serif" font-size="10.00">FxmlService(FXMLLoader</text>
-<text text-anchor="start" x="372.5" y="-512.5" font-family="Helvetica,sans-Serif" font-size="10.00"> fxmlLoader)</text>
-<text text-anchor="start" x="362.5" y="-496.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="372.5" y="-496.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setRootByFXMLName</text>
-<text text-anchor="start" x="372.5" y="-484.5" font-family="Helvetica,sans-Serif" font-size="10.00">(final String fxml)</text>
-<text text-anchor="start" x="362.5" y="-468.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="372.5" y="-468.5" font-family="Helvetica,sans-Serif" font-size="10.00">public&lt; T &gt; T getController()</text>
-<polygon fill="#666666" stroke="#666666" points="358.5,-552 358.5,-552 498,-552 498,-552 358.5,-552"/>
-<polygon fill="#666666" stroke="#666666" points="358.5,-536 358.5,-536 498,-536 498,-536 358.5,-536"/>
-<polygon fill="none" stroke="#666666" points="358.5,-462 358.5,-582 498,-582 498,-462 358.5,-462"/>
+<polygon fill="white" stroke="none" points="498,-590 358.5,-590 358.5,-454 498,-454 498,-590"/>
+<text text-anchor="start" x="371.25" y="-576.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.service.</text>
+<text text-anchor="start" x="400.88" y="-564.5" font-family="Helvetica,sans-Serif" font-size="10.00">FxmlService</text>
+<text text-anchor="start" x="426.75" y="-548.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="362.5" y="-532.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="372.5" y="-532.5" font-family="Helvetica,sans-Serif" font-size="10.00">FxmlService(FXMLLoader</text>
+<text text-anchor="start" x="372.5" y="-520.5" font-family="Helvetica,sans-Serif" font-size="10.00"> fxmlLoader)</text>
+<text text-anchor="start" x="362.5" y="-504.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="372.5" y="-504.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setDynamicFontSize()</text>
+<text text-anchor="start" x="362.5" y="-488.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="372.5" y="-488.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setRootByFXMLName</text>
+<text text-anchor="start" x="372.5" y="-476.5" font-family="Helvetica,sans-Serif" font-size="10.00">(final String fxml)</text>
+<text text-anchor="start" x="362.5" y="-460.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="372.5" y="-460.5" font-family="Helvetica,sans-Serif" font-size="10.00">public&lt; T &gt; T getController()</text>
+<polygon fill="#666666" stroke="#666666" points="358.5,-560 358.5,-560 498,-560 498,-560 358.5,-560"/>
+<polygon fill="#666666" stroke="#666666" points="358.5,-544 358.5,-544 498,-544 498,-544 358.5,-544"/>
+<polygon fill="none" stroke="#666666" points="358.5,-454 358.5,-590 498,-590 498,-454 358.5,-454"/>
 </a>
 </g>
 </g>
@@ -170,7 +172,7 @@ var sectionId = 'dynsection-1';
 <g id="edge16_Node000015_Node000003" class="edge">
 <title>Node3&#45;&gt;Node15</title>
 <g id="a_edge16_Node000015_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M235.4,-988.91C233.43,-939.45 234.45,-855.55 257.25,-788 283.47,-710.31 337.53,-632.84 377.88,-581.91"/>
+<path fill="none" stroke="#63b8ff" d="M235.4,-988.91C233.43,-939.45 234.45,-855.55 257.25,-788 282.16,-714.2 332.19,-640.6 371.72,-589.76"/>
 <polygon fill="none" stroke="#63b8ff" points="231.89,-988.78 235.85,-998.61 238.88,-988.45 231.89,-988.78"/>
 </a>
 </g>
@@ -535,7 +537,7 @@ var sectionId = 'dynsection-1';
 <g id="edge15_Node000001_Node000015" class="edge">
 <title>Node15&#45;&gt;Node1</title>
 <g id="a_edge15_Node000001_Node000015"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M442.66,-462.19C457.8,-407.46 485.06,-325.08 525.5,-262 540.68,-238.31 560.46,-215.4 580.27,-195.25"/>
+<path fill="none" stroke="#63b8ff" d="M444.93,-454.11C460.45,-399.58 487.01,-322.05 525.5,-262 540.68,-238.31 560.46,-215.4 580.27,-195.25"/>
 <polygon fill="none" stroke="#63b8ff" points="580.22,-195.3 581.64,-188.23 588.72,-186.83 587.29,-193.9 580.22,-195.3"/>
 </a>
 </g>
@@ -559,8 +561,8 @@ var sectionId = 'dynsection-1';
 <g id="edge17_Node000015_Node000016" class="edge">
 <title>Node16&#45;&gt;Node15</title>
 <g id="a_edge17_Node000015_Node000016"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M385.04,-1006.38C390.27,-986.47 397.27,-957.63 401.25,-932 419.46,-814.81 425.4,-676.87 427.33,-594.86"/>
-<polygon fill="none" stroke="#63b8ff" points="427.33,-594.84 423.47,-588.76 427.6,-582.84 431.46,-588.93 427.33,-594.84"/>
+<path fill="none" stroke="#63b8ff" d="M385.04,-1006.38C390.27,-986.47 397.27,-957.63 401.25,-932 418.88,-818.53 425.02,-685.6 427.14,-602.83"/>
+<polygon fill="none" stroke="#63b8ff" points="427.14,-602.89 423.28,-596.79 427.42,-590.89 431.28,-596.98 427.14,-602.89"/>
 </a>
 </g>
 <text text-anchor="middle" x="433.65" y="-856.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;scene</text>
@@ -593,8 +595,8 @@ var sectionId = 'dynsection-1';
 <g id="edge18_Node000015_Node000017" class="edge">
 <title>Node17&#45;&gt;Node15</title>
 <g id="a_edge18_Node000015_Node000017"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M504.15,-834.02C491.94,-783.99 464.09,-669.85 445.73,-594.64"/>
-<polygon fill="none" stroke="#63b8ff" points="445.71,-594.53 440.4,-589.65 442.86,-582.87 448.17,-587.75 445.71,-594.53"/>
+<path fill="none" stroke="#63b8ff" d="M504.15,-834.02C492.34,-785.61 465.88,-677.2 447.55,-602.09"/>
+<polygon fill="none" stroke="#63b8ff" points="447.63,-602.41 442.32,-597.53 444.78,-590.75 450.09,-595.63 447.63,-602.41"/>
 </a>
 </g>
 <text text-anchor="middle" x="515.26" y="-760.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;fxmlLoader</text>
@@ -603,8 +605,8 @@ var sectionId = 'dynsection-1';
 <g id="edge19_Node000015_Node000018" class="edge">
 <title>Node18&#45;&gt;Node15</title>
 <g id="a_edge19_Node000015_Node000018"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M327.43,-806.15C327.84,-790.51 329.22,-773.44 332.5,-758 344.72,-700.52 370.2,-639.14 391.81,-593.53"/>
-<polygon fill="none" stroke="#63b8ff" points="391.77,-593.62 390.76,-586.48 396.96,-582.8 397.97,-589.94 391.77,-593.62"/>
+<path fill="none" stroke="#63b8ff" d="M327.43,-806.15C327.84,-790.51 329.22,-773.44 332.5,-758 344.02,-703.81 367.33,-646.15 388.07,-601.5"/>
+<polygon fill="none" stroke="#63b8ff" points="388.06,-601.53 386.99,-594.4 393.17,-590.67 394.23,-597.81 388.06,-601.53"/>
 </a>
 </g>
 <text text-anchor="middle" x="373.38" y="-760.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;dynamicFontSize</text>
