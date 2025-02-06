@@ -62,7 +62,7 @@ public class FullMenuViewModel {
         Optional<SoftwareDto> updatedSoftwareOptional = softwareService.updateSoftware(softwareDto);
         if (updatedSoftwareOptional.isPresent()) {
             int niveau=3;
-            int[][] grilles = iGridMaster.creerLesGrilles(3);
+            int[][] grilles = iGridMaster.creerLesGrilles(niveau);
             String grilleResolue = Arrays.toString(grilles[0]);
             String grilleAResoudre = Arrays.toString(grilles[1]);
             StringBuilder formattedGrilleResolue = new StringBuilder();

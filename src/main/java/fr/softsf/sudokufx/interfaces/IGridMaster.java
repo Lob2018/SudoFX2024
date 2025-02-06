@@ -7,17 +7,17 @@ public interface IGridMaster {
     /**
      * Crée les grilles de Sudoku (résolue et à résoudre) en fonction du niveau de difficulté.
      * Facile :
-     * 35-45 cases cachées, et difficulté théorique de 0 à 13797, et pratique de 4800 à 16533
+     * 35-45 cases cachées, possibilités théoriques de 0 à 13797, et pratique de 4800 à 16533
      * Moyen :
-     * 45-39 cases cachées, et difficulté théorique de 13797 à 27594, et pratique de 16533 à 28266
+     * 45-39 cases cachées, possibilités théoriques de 13797 à 27594, et pratique de 16533 à 28266
      * Difficile :
-     * 49 à 59 cases cachées, et difficulté théorique de 27594 à 41391, et pratique de 28266 à 40000
+     * 49 à 59 cases cachées, possibilités théoriques de 27594 à 41391, et pratique de 28266 à 40000
      *
      * @param niveau Le niveau de difficulté (1 : facile, 2 : moyen, 3 : difficile).
      * @return Un tableau à trois dimensions contenant :
      * La grille résolue.
      * La grille à résoudre avec les cases cachées.
-     * Le pourcentage de difficulté de la grille à résoudre (la plage retenue va de 4800 0% à 40000 100%).
+     * Le pourcentage de possibilités de la grille à résoudre (la plage retenue va de 4800 0% à 40000 100%).
      */
     int[][] creerLesGrilles(final int niveau);
 
