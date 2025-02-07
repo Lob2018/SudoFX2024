@@ -9,7 +9,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback_u_test =
     [ "testLogEntryMessageWithSpringContextIsOnRefresh", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback_u_test.html#a7f876a5f60979fa4d148a84ca74b8fe8", null ],
     [ "testLogs_real_folder_exists", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback_u_test.html#aaae6e0e253e96edfea257da26f11c734", null ],
     [ "testLogs_real_folder_path_is_correct", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback_u_test.html#a5b30d66f316f8ebe97244df0ff9ca788", null ],
-    [ "currentIOsFolderFactory", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback_u_test.html#a9bab8c1f24ac672c124eefb1735a5cbf", null ],
+    [ "iCurrentIOsFolderFactory", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback_u_test.html#a41e3795e9176bf86ae0c4fda1c20334e", null ],
     [ "logWatcher", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback_u_test.html#acf1e0ae74f992fbb48feb8df5d955e58", null ],
     [ "myLogback", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback_u_test.html#a3df46ee7e817e9a4632d3d18e8c63d8f", null ]
 ];

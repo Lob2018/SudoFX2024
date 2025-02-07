@@ -47,7 +47,7 @@
   </g>
 </defs>
 <script type="application/ecmascript">
-var viewWidth = 388;
+var viewWidth = 393;
 var viewHeight = 668;
 var sectionId = 'dynsection-0';
 </script>
@@ -67,7 +67,7 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="118.75" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setup()</text>
 <text text-anchor="start" x="108.75" y="-90.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
 <text text-anchor="start" x="118.75" y="-90.5" font-family="Helvetica,sans-Serif" font-size="10.00">void testOsFolderFactory</text>
-<text text-anchor="start" x="118.75" y="-78.5" font-family="Helvetica,sans-Serif" font-size="10.00">WithValidOS(String osType)</text>
+<text text-anchor="start" x="118.75" y="-78.5" font-family="Helvetica,sans-Serif" font-size="10.00">WithValidIOs(String osType)</text>
 <text text-anchor="start" x="108.75" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
 <text text-anchor="start" x="118.75" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">void testOsFoldersWithInvalidOs()</text>
 <text text-anchor="start" x="108.75" y="-46.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
@@ -110,7 +110,7 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="14" y="-462.5" font-family="Helvetica,sans-Serif" font-size="10.00">String windowsIntendedPath</text>
 <text text-anchor="start" x="14" y="-450.5" font-family="Helvetica,sans-Serif" font-size="10.00">LogsFolder</text>
 <text text-anchor="start" x="4" y="-434.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="14" y="-434.5" font-family="Helvetica,sans-Serif" font-size="10.00">IOsFolderFactory osFolder</text>
+<text text-anchor="start" x="14" y="-434.5" font-family="Helvetica,sans-Serif" font-size="10.00">IOsFolderFactory iOsFolder</text>
 <text text-anchor="start" x="14" y="-422.5" font-family="Helvetica,sans-Serif" font-size="10.00">Factory()</text>
 <text text-anchor="start" x="4" y="-406.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
 <text text-anchor="start" x="14" y="-406.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setEmptyOsForTests()</text>
@@ -176,7 +176,7 @@ var sectionId = 'dynsection-0';
 <polygon fill="none" stroke="#63b8ff" points="263.64,-175.56 257.43,-171.89 258.42,-164.75 264.63,-168.41 263.64,-175.56"/>
 </a>
 </g>
-<text text-anchor="middle" x="324.45" y="-184.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;currentIOsFolderFactory</text>
+<text text-anchor="middle" x="326.7" y="-184.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;iCurrentIOsFolderFactory</text>
 </g>
 </g>
 </svg>

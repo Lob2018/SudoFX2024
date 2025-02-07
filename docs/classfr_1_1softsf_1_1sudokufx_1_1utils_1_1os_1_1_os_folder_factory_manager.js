@@ -1,6 +1,6 @@
 var classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_os_folder_factory_manager =
 [
-    [ "osFolderFactory", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_os_folder_factory_manager.html#abe170d1d4c6183a0a6e9d7dd7904fd19", null ],
+    [ "iOsFolderFactory", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_os_folder_factory_manager.html#ade334c52c3a0fabe14ecf16d7332f0f4", null ],
     [ "setEmptyOsForTests", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_os_folder_factory_manager.html#af6a6120355ced36920fcff52a34164e5", null ],
     [ "setLinuxOsForTests", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_os_folder_factory_manager.html#a18d1e19ca0445cde8ad5484007de0613", null ],
     [ "setMacOSForTests", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_os_folder_factory_manager.html#ab07aeb68b793354c2fee844712b55c56", null ],

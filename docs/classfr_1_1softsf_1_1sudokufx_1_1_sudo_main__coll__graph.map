@@ -1,24 +1,24 @@
 <map id="fr.softsf.sudokufx.SudoMain" name="fr.softsf.sudokufx.SudoMain">
-<area shape="rect" id="Node000001" title="The application main class." alt="" coords="272,608,517,1008"/>
+<area shape="rect" id="Node000001" title="The application main class." alt="" coords="156,608,401,1008"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,419,80,488"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="59,501,76,543,101,582,140,626,183,666,274,734,271,738,180,670,136,630,97,586,72,545,54,504"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="155,13,202,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="173,83,156,167,144,284,144,349,149,415,161,481,182,543,219,610,264,671,260,675,214,613,178,545,156,482,144,416,139,349,139,284,151,166,168,82"/>
-<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_fxml_service.html" title="FxmlService is a Spring service that manages the loading of FXML files and updating the root of the J..." alt="" coords="192,363,378,544"/>
-<area shape="poly" id="edge8_Node000007_Node000003" title=" " alt="" coords="178,83,176,181,181,240,194,298,215,347,210,349,189,299,176,241,171,181,173,82"/>
-<area shape="rect" id="Node000010" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_dynamic_font_size.html" title="Manages dynamic font sizing based on the dimensions of a JavaFX Scene." alt="" coords="246,155,415,299"/>
-<area shape="poly" id="edge12_Node000010_Node000003" title=" " alt="" coords="204,75,261,140,257,144,200,79"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="402,419,496,488"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="447,488,431,592,426,591,442,487"/>
-<area shape="rect" id="Node000005" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_splash_screen_view.html" title="Interface defining methods to hide or show the splash screen." alt="" coords="520,400,698,507"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="580,508,527,595,522,592,575,505"/>
-<area shape="rect" id="Node000006" href="$interfacefr_1_1softsf_1_1sudokufx_1_1_sudo_main_1_1_i_primary_stage_view.html" title="Interface for the primary stage view." alt="" coords="722,395,952,512"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="767,514,532,701,528,697,764,510"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="316,543,331,591,325,593,311,545"/>
-<area shape="rect" id="Node000008" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_scene_provider.html" title="Interface ISceneProvider." alt="" coords="332,5,510,91"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="440,104,450,157,454,217,449,280,440,311,428,340,420,350,412,355,392,365,380,375,376,370,389,360,409,350,416,346,423,337,435,309,443,279,449,217,445,157,435,105"/>
-<area shape="poly" id="edge11_Node000010_Node000008" title=" " alt="" coords="395,105,369,156,365,153,391,103"/>
-<area shape="rect" id="Node000009" title=" " alt="" coords="490,192,574,261"/>
-<area shape="poly" id="edge9_Node000007_Node000009" title=" " alt="" coords="524,262,504,303,490,323,472,341,454,352,436,356,417,358,394,365,393,360,416,353,435,350,452,347,469,337,486,320,499,300,519,260"/>
-<area shape="poly" id="edge10_Node000007_Node000010" title=" " alt="" coords="319,299,309,347,304,346,314,298"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="69,500,94,543,159,639,154,642,90,545,65,503"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="104,419,198,488"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="154,488,158,534,168,583,170,591,165,593,162,585,152,534,148,488"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="272,13,320,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="294,83,277,206,263,363,260,453,263,544,265,591,259,591,257,544,255,453,257,363,272,205,288,82"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_fxml_service.html" title="FxmlService is a Spring service that manages the loading of FXML files and updating the root of the J..." alt="" coords="272,363,458,544"/>
+<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="297,82,298,180,303,239,312,298,325,346,319,347,306,299,297,240,293,180,292,82"/>
+<area shape="rect" id="Node000010" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_dynamic_font_size.html" title="Manages dynamic font sizing based on the dimensions of a JavaFX Scene." alt="" coords="364,155,532,299"/>
+<area shape="poly" id="edge12_Node000010_Node000004" title=" " alt="" coords="322,75,378,140,374,144,318,79"/>
+<area shape="rect" id="Node000005" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_splash_screen_view.html" title="Interface defining methods to hide or show the splash screen." alt="" coords="482,400,660,507"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="530,508,414,648,409,645,526,505"/>
+<area shape="rect" id="Node000006" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_main_stage_view.html" title="Interface defining method to open the main stage." alt="" coords="684,395,914,512"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="720,514,674,546,417,719,414,714,670,542,717,510"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="346,545,334,592,329,591,341,543"/>
+<area shape="rect" id="Node000008" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_scene_provider.html" title="Interface ISceneProvider." alt="" coords="450,5,628,91"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="550,105,556,197,554,248,547,299,541,322,527,341,513,351,499,355,486,358,471,365,459,372,456,368,468,360,484,353,498,350,510,346,523,337,536,320,541,298,549,248,551,197,545,106"/>
+<area shape="poly" id="edge11_Node000010_Node000008" title=" " alt="" coords="513,105,487,156,482,153,508,103"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="607,192,692,261"/>
+<area shape="poly" id="edge9_Node000007_Node000009" title=" " alt="" coords="642,262,622,304,608,324,590,341,561,355,535,357,507,358,474,365,473,359,507,352,534,352,560,349,586,336,604,320,618,301,637,260"/>
+<area shape="poly" id="edge10_Node000007_Node000010" title=" " alt="" coords="425,299,407,348,402,346,420,297"/>
 </map>

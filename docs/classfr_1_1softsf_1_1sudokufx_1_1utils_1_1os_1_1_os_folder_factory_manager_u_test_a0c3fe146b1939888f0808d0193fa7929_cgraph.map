@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.utils.os.OsFolderFactoryManagerUTest.testOsFolderFactoryWithValidOS" name="fr.softsf.sudokufx.utils.os.OsFolderFactoryManagerUTest.testOsFolderFactoryWithValidOS">
+<map id="testOsFolderFactoryWithValidIOs" name="testOsFolderFactoryWithValidIOs">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,180,235,239"/>
 <area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_os_folder_factory.html#ad2fbd0fa5081f7b023b0bbf262847cfb" title="Retrieves the path to the OS&#45;specific data folder." alt="" coords="300,5,551,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,178,201,117,240,85,281,58,293,52,296,57,284,62,243,89,205,120,147,182"/>

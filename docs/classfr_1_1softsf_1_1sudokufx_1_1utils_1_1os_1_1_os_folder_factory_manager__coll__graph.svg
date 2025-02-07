@@ -83,7 +83,7 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="14" y="-250.5" font-family="Helvetica,sans-Serif" font-size="10.00">String windowsIntendedPath</text>
 <text text-anchor="start" x="14" y="-238.5" font-family="Helvetica,sans-Serif" font-size="10.00">LogsFolder</text>
 <text text-anchor="start" x="4" y="-222.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="14" y="-222.5" font-family="Helvetica,sans-Serif" font-size="10.00">IOsFolderFactory osFolder</text>
+<text text-anchor="start" x="14" y="-222.5" font-family="Helvetica,sans-Serif" font-size="10.00">IOsFolderFactory iOsFolder</text>
 <text text-anchor="start" x="14" y="-210.5" font-family="Helvetica,sans-Serif" font-size="10.00">Factory()</text>
 <text text-anchor="start" x="4" y="-194.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
 <text text-anchor="start" x="14" y="-194.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setEmptyOsForTests()</text>

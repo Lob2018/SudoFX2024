@@ -38,6 +38,10 @@ var hierarchy =
     [ "fr.softsf.sudokufx.interfaces.IKeystore", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_keystore.html", [
       [ "fr.softsf.sudokufx.utils.database.keystore.ApplicationKeystore", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore.html", null ]
     ] ],
+    [ "fr.softsf.sudokufx.interfaces.IMainStageView", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_main_stage_view.html", [
+      [ "fr.softsf.sudokufx.view.CrashScreenView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html", null ],
+      [ "fr.softsf.sudokufx.view.FullMenuView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_full_menu_view.html", null ]
+    ] ],
     [ "fr.softsf.sudokufx.interfaces.mapper.IMenuMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_menu_mapper.html", null ],
     [ "fr.softsf.sudokufx.interfaces.IOsFolderFactory", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_os_folder_factory.html", [
       [ "fr.softsf.sudokufx.utils.os.LinuxFolderFactory", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_linux_folder_factory.html", null ],
@@ -46,10 +50,6 @@ var hierarchy =
     ] ],
     [ "fr.softsf.sudokufx.interfaces.mapper.IPlayerLanguageMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_player_language_mapper.html", null ],
     [ "fr.softsf.sudokufx.interfaces.mapper.IPlayerMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_player_mapper.html", null ],
-    [ "fr.softsf.sudokufx.SudoMain.IPrimaryStageView", "interfacefr_1_1softsf_1_1sudokufx_1_1_sudo_main_1_1_i_primary_stage_view.html", [
-      [ "fr.softsf.sudokufx.view.CrashScreenView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html", null ],
-      [ "fr.softsf.sudokufx.view.FullMenuView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_full_menu_view.html", null ]
-    ] ],
     [ "fr.softsf.sudokufx.interfaces.ISceneProvider", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_scene_provider.html", [
       [ "fr.softsf.sudokufx.service.FxmlService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_fxml_service.html", null ],
       [ "fr.softsf.sudokufx.utils.DynamicFontSize", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_dynamic_font_size.html", null ],

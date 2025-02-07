@@ -23,6 +23,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view =
     [ "crashscreenvboxTophboxRegionsudosvg", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a3977f5d0b2fced21d632dcfde8f79c8e", null ],
     [ "dropShadow", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#aeafb2651c347d16a52b08b48563f8476", null ],
     [ "FADE_IN_IN_SECONDS_AFTER_SPLASHSCREEN", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a9abd8cec04433b385cf595d25df8e01c", null ],
+    [ "iFileSystem", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#ac22878714431da3b35b070e436b245ff", null ],
     [ "iOsFolderFactory", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#ac1317aedacec7eafad5c78f4ee781e79", null ],
     [ "primaryStage", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#ac8f1e2c035b0d7b5947c0a1e32e7a41f", null ]
 ];

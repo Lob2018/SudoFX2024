@@ -59,10 +59,10 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_os_folder_factory_manager.html#abe170d1d4c6183a0a6e9d7dd7904fd19" target="_top" xlink:title="Creates and returns an OS&#45;specific folder factory.">
-<polygon fill="white" stroke="#666666" points="333.12,-94 166.38,-94 166.38,-50 333.12,-50 333.12,-94"/>
-<text text-anchor="start" x="174.38" y="-80.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.utils.os.</text>
-<text text-anchor="start" x="174.38" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">OsFolderFactoryManager.osFolder</text>
+<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_os_folder_factory_manager.html#ade334c52c3a0fabe14ecf16d7332f0f4" target="_top" xlink:title="Creates and returns an OS&#45;specific folder factory.">
+<polygon fill="white" stroke="#666666" points="335.38,-94 164.12,-94 164.12,-50 335.38,-50 335.38,-94"/>
+<text text-anchor="start" x="172.12" y="-80.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.utils.os.</text>
+<text text-anchor="start" x="172.12" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">OsFolderFactoryManager.iOsFolder</text>
 <text text-anchor="middle" x="249.75" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">Factory</text>
 </a>
 </g>
@@ -71,8 +71,8 @@
 <g id="edge3_Node000001_Node000004" class="edge">
 <title>Node1&#45;&gt;Node4</title>
 <g id="a_edge3_Node000001_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M119.98,-91.18C131.07,-89.53 142.91,-87.76 154.76,-86"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="155.22,-89.47 164.59,-84.53 154.19,-82.55 155.22,-89.47"/>
+<path fill="none" stroke="#63b8ff" d="M119.98,-91.18C130.39,-89.63 141.47,-87.98 152.58,-86.32"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="152.82,-89.83 162.19,-84.89 151.79,-82.9 152.82,-89.83"/>
 </a>
 </g>
 </g>

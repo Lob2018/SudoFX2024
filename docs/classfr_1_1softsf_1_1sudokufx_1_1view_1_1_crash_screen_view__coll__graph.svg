@@ -47,7 +47,7 @@
   </g>
 </defs>
 <script type="application/ecmascript">
-var viewWidth = 1453;
+var viewWidth = 1632;
 var viewHeight = 556;
 var sectionId = 'dynsection-1';
 </script>
@@ -59,56 +59,56 @@ var sectionId = 'dynsection-1';
 <g id="Node000001" class="node">
 <title>Node1</title>
 <g id="a_Node000001"><a xlink:title="View class for the crash screen without business logic.">
-<polygon fill="#999999" stroke="none" points="754.5,-340 582,-340 582,0 754.5,0 754.5,-340"/>
-<text text-anchor="start" x="617.25" y="-326.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.</text>
-<text text-anchor="start" x="628.88" y="-314.5" font-family="Helvetica,sans-Serif" font-size="10.00">CrashScreenView</text>
-<text text-anchor="start" x="587.5" y="-298.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="596" y="-298.5" font-family="Helvetica,sans-Serif" font-size="10.00">double crashScreenFontSize</text>
-<text text-anchor="start" x="587.5" y="-282.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="596" y="-282.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final double</text>
-<text text-anchor="start" x="596" y="-270.5" font-family="Helvetica,sans-Serif" font-size="10.00"> FADE_IN_IN_SECONDS</text>
-<text text-anchor="start" x="596" y="-258.5" font-family="Helvetica,sans-Serif" font-size="10.00">_AFTER_SPLASHSCREEN</text>
-<text text-anchor="start" x="586" y="-242.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="596" y="-242.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingMainStage</text>
-<text text-anchor="start" x="596" y="-230.5" font-family="Helvetica,sans-Serif" font-size="10.00">(ISplashScreenView iSplashScreen</text>
-<text text-anchor="start" x="596" y="-218.5" font-family="Helvetica,sans-Serif" font-size="10.00">View)</text>
-<text text-anchor="start" x="587.5" y="-202.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="596" y="-202.5" font-family="Helvetica,sans-Serif" font-size="10.00">void closeButtonClick()</text>
-<text text-anchor="start" x="587.5" y="-186.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="596" y="-186.5" font-family="Helvetica,sans-Serif" font-size="10.00">void createSVG(final</text>
-<text text-anchor="start" x="596" y="-174.5" font-family="Helvetica,sans-Serif" font-size="10.00"> Region region, final</text>
-<text text-anchor="start" x="596" y="-162.5" font-family="Helvetica,sans-Serif" font-size="10.00"> String path, final double</text>
-<text text-anchor="start" x="596" y="-150.5" font-family="Helvetica,sans-Serif" font-size="10.00"> width, final double height,</text>
-<text text-anchor="start" x="596" y="-138.5" font-family="Helvetica,sans-Serif" font-size="10.00"> final double offsetX, final</text>
-<text text-anchor="start" x="596" y="-126.5" font-family="Helvetica,sans-Serif" font-size="10.00"> double offsetY)</text>
-<text text-anchor="start" x="587.5" y="-110.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="596" y="-110.5" font-family="Helvetica,sans-Serif" font-size="10.00">void fadeIn(final Node</text>
-<text text-anchor="start" x="596" y="-98.5" font-family="Helvetica,sans-Serif" font-size="10.00"> node)</text>
-<text text-anchor="start" x="587.5" y="-82.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="596" y="-82.5" font-family="Helvetica,sans-Serif" font-size="10.00">void hidecrashscreen()</text>
-<text text-anchor="start" x="587.5" y="-66.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="596" y="-66.5" font-family="Helvetica,sans-Serif" font-size="10.00">void initialize()</text>
-<text text-anchor="start" x="587.5" y="-50.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="596" y="-50.5" font-family="Helvetica,sans-Serif" font-size="10.00">void resetButtonClick()</text>
-<text text-anchor="start" x="587.5" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="596" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setCrashscreenvboxTophbox</text>
-<text text-anchor="start" x="596" y="-22.5" font-family="Helvetica,sans-Serif" font-size="10.00">Logosudosvg()</text>
-<text text-anchor="start" x="587.5" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="596" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">void showcrashscreen()</text>
-<polygon fill="#666666" stroke="#666666" points="582,-310 582,-310 754.5,-310 754.5,-310 582,-310"/>
-<polygon fill="#666666" stroke="#666666" points="582,-254 582,-254 594,-254 594,-254 582,-254"/>
-<polygon fill="#666666" stroke="#666666" points="594,-254 594,-254 754.5,-254 754.5,-254 594,-254"/>
-<polygon fill="none" stroke="#666666" points="582,0 582,-340 754.5,-340 754.5,0 582,0"/>
+<polygon fill="#999999" stroke="none" points="891.5,-340 719,-340 719,0 891.5,0 891.5,-340"/>
+<text text-anchor="start" x="754.25" y="-326.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.</text>
+<text text-anchor="start" x="765.88" y="-314.5" font-family="Helvetica,sans-Serif" font-size="10.00">CrashScreenView</text>
+<text text-anchor="start" x="724.5" y="-298.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="733" y="-298.5" font-family="Helvetica,sans-Serif" font-size="10.00">double crashScreenFontSize</text>
+<text text-anchor="start" x="724.5" y="-282.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="733" y="-282.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final double</text>
+<text text-anchor="start" x="733" y="-270.5" font-family="Helvetica,sans-Serif" font-size="10.00"> FADE_IN_IN_SECONDS</text>
+<text text-anchor="start" x="733" y="-258.5" font-family="Helvetica,sans-Serif" font-size="10.00">_AFTER_SPLASHSCREEN</text>
+<text text-anchor="start" x="723" y="-242.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="733" y="-242.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingMainStage</text>
+<text text-anchor="start" x="733" y="-230.5" font-family="Helvetica,sans-Serif" font-size="10.00">(ISplashScreenView iSplashScreen</text>
+<text text-anchor="start" x="733" y="-218.5" font-family="Helvetica,sans-Serif" font-size="10.00">View)</text>
+<text text-anchor="start" x="724.5" y="-202.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="733" y="-202.5" font-family="Helvetica,sans-Serif" font-size="10.00">void closeButtonClick()</text>
+<text text-anchor="start" x="724.5" y="-186.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="733" y="-186.5" font-family="Helvetica,sans-Serif" font-size="10.00">void createSVG(final</text>
+<text text-anchor="start" x="733" y="-174.5" font-family="Helvetica,sans-Serif" font-size="10.00"> Region region, final</text>
+<text text-anchor="start" x="733" y="-162.5" font-family="Helvetica,sans-Serif" font-size="10.00"> String path, final double</text>
+<text text-anchor="start" x="733" y="-150.5" font-family="Helvetica,sans-Serif" font-size="10.00"> width, final double height,</text>
+<text text-anchor="start" x="733" y="-138.5" font-family="Helvetica,sans-Serif" font-size="10.00"> final double offsetX, final</text>
+<text text-anchor="start" x="733" y="-126.5" font-family="Helvetica,sans-Serif" font-size="10.00"> double offsetY)</text>
+<text text-anchor="start" x="724.5" y="-110.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="733" y="-110.5" font-family="Helvetica,sans-Serif" font-size="10.00">void fadeIn(final Node</text>
+<text text-anchor="start" x="733" y="-98.5" font-family="Helvetica,sans-Serif" font-size="10.00"> node)</text>
+<text text-anchor="start" x="724.5" y="-82.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="733" y="-82.5" font-family="Helvetica,sans-Serif" font-size="10.00">void hidecrashscreen()</text>
+<text text-anchor="start" x="724.5" y="-66.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="733" y="-66.5" font-family="Helvetica,sans-Serif" font-size="10.00">void initialize()</text>
+<text text-anchor="start" x="724.5" y="-50.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="733" y="-50.5" font-family="Helvetica,sans-Serif" font-size="10.00">void resetButtonClick()</text>
+<text text-anchor="start" x="724.5" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="733" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setCrashscreenvboxTophbox</text>
+<text text-anchor="start" x="733" y="-22.5" font-family="Helvetica,sans-Serif" font-size="10.00">Logosudosvg()</text>
+<text text-anchor="start" x="724.5" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="733" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">void showcrashscreen()</text>
+<polygon fill="#666666" stroke="#666666" points="719,-310 719,-310 891.5,-310 891.5,-310 719,-310"/>
+<polygon fill="#666666" stroke="#666666" points="719,-254 719,-254 731,-254 731,-254 719,-254"/>
+<polygon fill="#666666" stroke="#666666" points="731,-254 731,-254 891.5,-254 891.5,-254 731,-254"/>
+<polygon fill="none" stroke="#666666" points="719,0 719,-340 891.5,-340 891.5,0 719,0"/>
 </a>
 </g>
 </g>
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1_sudo_main_1_1_i_primary_stage_view.html" target="_top" xlink:title="Interface for the primary stage view.">
+<g id="a_Node000002"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_main_stage_view.html" target="_top" xlink:title="Interface defining method to open the main stage.">
 <polygon fill="white" stroke="none" points="172.5,-548 0,-548 0,-460 172.5,-460 172.5,-548"/>
-<text text-anchor="start" x="23.25" y="-534.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.SudoMain.</text>
-<text text-anchor="start" x="44.25" y="-522.5" font-family="Helvetica,sans-Serif" font-size="10.00">IPrimaryStageView</text>
+<text text-anchor="start" x="23.62" y="-534.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.interfaces.</text>
+<text text-anchor="start" x="50.62" y="-522.5" font-family="Helvetica,sans-Serif" font-size="10.00">IMainStageView</text>
 <text text-anchor="start" x="84.75" y="-506.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 <text text-anchor="start" x="4" y="-490.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="14" y="-490.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingMainStage</text>
@@ -124,8 +124,8 @@ var sectionId = 'dynsection-1';
 <g id="edge1_Node000001_Node000002" class="edge">
 <title>Node2&#45;&gt;Node1</title>
 <g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M161.7,-454.03C206.69,-425.29 265.21,-388.7 318.25,-358 406.94,-306.67 510.74,-251.85 582.13,-214.93"/>
-<polygon fill="none" stroke="#63b8ff" points="159.84,-451.07 153.3,-459.41 163.61,-456.97 159.84,-451.07"/>
+<path fill="none" stroke="#63b8ff" d="M162.2,-454.06C209.97,-424.33 273.49,-386.71 332.25,-358 463.75,-293.74 623.25,-234.3 719.37,-200.38"/>
+<polygon fill="none" stroke="#63b8ff" points="160.46,-451.02 153.84,-459.28 164.17,-456.95 160.46,-451.02"/>
 </a>
 </g>
 </g>
@@ -149,8 +149,8 @@ var sectionId = 'dynsection-1';
 <g id="edge2_Node000001_Node000003" class="edge">
 <title>Node3&#45;&gt;Node1</title>
 <g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M295.57,-464.33C325.99,-434.28 370.12,-392.1 411.25,-358 466.16,-312.48 531.13,-265.26 582.01,-229.66"/>
-<polygon fill="none" stroke="#63b8ff" points="293.46,-461.49 288.82,-471.02 298.39,-466.46 293.46,-461.49"/>
+<path fill="none" stroke="#63b8ff" d="M304.51,-465.45C343.81,-434.95 401.77,-391.63 455.25,-358 542.44,-303.17 647.16,-248.6 719.2,-212.7"/>
+<polygon fill="none" stroke="#63b8ff" points="302.85,-462.31 297.11,-471.21 307.15,-467.83 302.85,-462.31"/>
 </a>
 </g>
 </g>
@@ -176,23 +176,26 @@ var sectionId = 'dynsection-1';
 <g id="edge3_Node000001_Node000004" class="edge">
 <title>Node4&#45;&gt;Node1</title>
 <g id="a_edge3_Node000001_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M413.7,-464.19C414.15,-433.46 418.64,-390.47 437.25,-358 468.74,-303.06 523.12,-257.82 571.21,-225.61"/>
-<polygon fill="none" stroke="#63b8ff" points="571.22,-225.61 574.04,-218.97 581.25,-219.02 578.43,-225.66 571.22,-225.61"/>
+<path fill="none" stroke="#63b8ff" d="M442.14,-464.12C464.48,-433.36 498.18,-390.35 533.25,-358 586.65,-308.75 653.86,-262.42 708.11,-228.2"/>
+<polygon fill="none" stroke="#63b8ff" points="708.19,-228.15 711.16,-221.57 718.37,-221.78 715.4,-228.35 708.19,-228.15"/>
 </a>
 </g>
-<text text-anchor="middle" x="477.75" y="-396.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;iOsFolderFactory</text>
+<text text-anchor="middle" x="573.75" y="-396.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;iOsFolderFactory</text>
 </g>
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:title=" ">
-<polygon fill="white" stroke="none" points="540,-530 506.5,-530 506.5,-478 540,-478 540,-530"/>
-<text text-anchor="start" x="510.5" y="-516.5" font-family="Helvetica,sans-Serif" font-size="10.00">Stage</text>
-<text text-anchor="start" x="521.75" y="-500.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="521.75" y="-484.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polygon fill="#666666" stroke="#666666" points="506.5,-512 506.5,-512 540,-512 540,-512 506.5,-512"/>
-<polygon fill="#666666" stroke="#666666" points="506.5,-496 506.5,-496 540,-496 540,-496 506.5,-496"/>
-<polygon fill="none" stroke="#666666" points="506.5,-478 506.5,-530 540,-530 540,-478 506.5,-478"/>
+<g id="a_Node000005"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_file_system.html" target="_top" xlink:title="Interface defining a method to recursively deletes a folder and its contents.">
+<polygon fill="white" stroke="none" points="711.62,-542 506.88,-542 506.88,-466 711.62,-466 711.62,-542"/>
+<text text-anchor="start" x="546.62" y="-528.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.interfaces.</text>
+<text text-anchor="start" x="583" y="-516.5" font-family="Helvetica,sans-Serif" font-size="10.00">IFileSystem</text>
+<text text-anchor="start" x="607.75" y="-500.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="510.88" y="-484.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="520.88" y="-484.5" font-family="Helvetica,sans-Serif" font-size="10.00">boolean deleteFolderRecursively</text>
+<text text-anchor="start" x="520.88" y="-472.5" font-family="Helvetica,sans-Serif" font-size="10.00">(Path folderPath, String mustEndWithThat)</text>
+<polygon fill="#666666" stroke="#666666" points="506.88,-512 506.88,-512 711.62,-512 711.62,-512 506.88,-512"/>
+<polygon fill="#666666" stroke="#666666" points="506.88,-496 506.88,-496 711.62,-496 711.62,-496 506.88,-496"/>
+<polygon fill="none" stroke="#666666" points="506.88,-466 506.88,-542 711.62,-542 711.62,-466 506.88,-466"/>
 </a>
 </g>
 </g>
@@ -200,24 +203,23 @@ var sectionId = 'dynsection-1';
 <g id="edge4_Node000001_Node000005" class="edge">
 <title>Node5&#45;&gt;Node1</title>
 <g id="a_edge4_Node000001_Node000005"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M521.69,-478.03C520.7,-448.44 521.75,-398.09 536.5,-358 545.95,-332.3 559.87,-306.89 575.16,-283.46"/>
-<polygon fill="none" stroke="#63b8ff" points="575.09,-283.56 575.1,-276.35 581.77,-273.59 581.75,-280.8 575.09,-283.56"/>
+<path fill="none" stroke="#63b8ff" d="M614,-466.21C619,-435.87 628.7,-392.39 646.5,-358 663.4,-325.35 686.95,-293.46 710.75,-265.53"/>
+<polygon fill="none" stroke="#63b8ff" points="710.72,-265.56 711.62,-258.41 718.58,-256.5 717.67,-263.65 710.72,-265.56"/>
 </a>
 </g>
-<text text-anchor="middle" x="578.88" y="-402.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;crashscreenStage</text>
-<text text-anchor="middle" x="578.88" y="-390.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;primaryStage</text>
+<text text-anchor="middle" x="675.38" y="-396.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;iFileSystem</text>
 </g>
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
 <g id="a_Node000006"><a xlink:title=" ">
-<polygon fill="white" stroke="none" points="659.38,-530 595.12,-530 595.12,-478 659.38,-478 659.38,-530"/>
-<text text-anchor="start" x="599.12" y="-516.5" font-family="Helvetica,sans-Serif" font-size="10.00">DropShadow</text>
-<text text-anchor="start" x="625.75" y="-500.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="625.75" y="-484.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polygon fill="#666666" stroke="#666666" points="595.12,-512 595.12,-512 659.38,-512 659.38,-512 595.12,-512"/>
-<polygon fill="#666666" stroke="#666666" points="595.12,-496 595.12,-496 659.38,-496 659.38,-496 595.12,-496"/>
-<polygon fill="none" stroke="#666666" points="595.12,-478 595.12,-530 659.38,-530 659.38,-478 595.12,-478"/>
+<polygon fill="white" stroke="none" points="763,-530 729.5,-530 729.5,-478 763,-478 763,-530"/>
+<text text-anchor="start" x="733.5" y="-516.5" font-family="Helvetica,sans-Serif" font-size="10.00">Stage</text>
+<text text-anchor="start" x="744.75" y="-500.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="744.75" y="-484.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polygon fill="#666666" stroke="#666666" points="729.5,-512 729.5,-512 763,-512 763,-512 729.5,-512"/>
+<polygon fill="#666666" stroke="#666666" points="729.5,-496 729.5,-496 763,-496 763,-496 729.5,-496"/>
+<polygon fill="none" stroke="#666666" points="729.5,-478 729.5,-530 763,-530 763,-478 729.5,-478"/>
 </a>
 </g>
 </g>
@@ -225,23 +227,24 @@ var sectionId = 'dynsection-1';
 <g id="edge5_Node000001_Node000006" class="edge">
 <title>Node6&#45;&gt;Node1</title>
 <g id="a_edge5_Node000001_Node000006"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M625.88,-478.02C624.66,-449.06 623.67,-399.92 628.25,-358 628.44,-356.24 628.64,-354.46 628.86,-352.69"/>
-<polygon fill="none" stroke="#63b8ff" points="628.85,-352.75 625.65,-346.29 630.38,-340.85 633.58,-347.31 628.85,-352.75"/>
+<path fill="none" stroke="#63b8ff" d="M729.93,-478.26C723.81,-467.58 717.59,-454.64 714.5,-442 705.63,-405.74 706.14,-394.38 714.5,-358 714.94,-356.1 715.39,-354.21 715.87,-352.3"/>
+<polygon fill="none" stroke="#63b8ff" points="715.91,-352.18 713.64,-345.33 719.08,-340.61 721.35,-347.45 715.91,-352.18"/>
 </a>
 </g>
-<text text-anchor="middle" x="658.25" y="-396.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;dropShadow</text>
+<text text-anchor="middle" x="756.88" y="-402.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;crashscreenStage</text>
+<text text-anchor="middle" x="756.88" y="-390.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;primaryStage</text>
 </g>
 <!-- Node7 -->
 <g id="Node000007" class="node">
 <title>Node7</title>
 <g id="a_Node000007"><a xlink:title=" ">
-<polygon fill="white" stroke="none" points="726.25,-530 694.25,-530 694.25,-478 726.25,-478 726.25,-530"/>
-<text text-anchor="start" x="698.25" y="-516.5" font-family="Helvetica,sans-Serif" font-size="10.00">VBox</text>
-<text text-anchor="start" x="708.75" y="-500.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="708.75" y="-484.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polygon fill="#666666" stroke="#666666" points="694.25,-512 694.25,-512 726.25,-512 726.25,-512 694.25,-512"/>
-<polygon fill="#666666" stroke="#666666" points="694.25,-496 694.25,-496 726.25,-496 726.25,-496 694.25,-496"/>
-<polygon fill="none" stroke="#666666" points="694.25,-478 694.25,-530 726.25,-530 726.25,-478 694.25,-478"/>
+<polygon fill="white" stroke="none" points="845.38,-530 781.12,-530 781.12,-478 845.38,-478 845.38,-530"/>
+<text text-anchor="start" x="785.12" y="-516.5" font-family="Helvetica,sans-Serif" font-size="10.00">DropShadow</text>
+<text text-anchor="start" x="811.75" y="-500.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="811.75" y="-484.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polygon fill="#666666" stroke="#666666" points="781.12,-512 781.12,-512 845.38,-512 845.38,-512 781.12,-512"/>
+<polygon fill="#666666" stroke="#666666" points="781.12,-496 781.12,-496 845.38,-496 845.38,-496 781.12,-496"/>
+<polygon fill="none" stroke="#666666" points="781.12,-478 781.12,-530 845.38,-530 845.38,-478 781.12,-478"/>
 </a>
 </g>
 </g>
@@ -249,23 +252,23 @@ var sectionId = 'dynsection-1';
 <g id="edge6_Node000001_Node000007" class="edge">
 <title>Node7&#45;&gt;Node1</title>
 <g id="a_edge6_Node000001_Node000007"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M707.09,-478.05C703.56,-450.1 697.49,-402.17 691.2,-352.37"/>
-<polygon fill="none" stroke="#63b8ff" points="691.21,-352.49 686.49,-347.03 689.7,-340.58 694.42,-346.03 691.21,-352.49"/>
+<path fill="none" stroke="#63b8ff" d="M809.77,-478.12C808.38,-467.08 806.95,-453.92 806.25,-442 804.55,-413.13 803.6,-382.5 803.15,-352.62"/>
+<polygon fill="none" stroke="#63b8ff" points="803.15,-352.77 799.08,-346.82 803,-340.77 807.08,-346.72 803.15,-352.77"/>
 </a>
 </g>
-<text text-anchor="middle" x="742.34" y="-396.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;crashscreenvbox</text>
+<text text-anchor="middle" x="836.25" y="-396.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;dropShadow</text>
 </g>
 <!-- Node8 -->
 <g id="Node000008" class="node">
 <title>Node8</title>
 <g id="a_Node000008"><a xlink:title=" ">
-<polygon fill="white" stroke="none" points="832.62,-530 793.88,-530 793.88,-478 832.62,-478 832.62,-530"/>
-<text text-anchor="start" x="797.88" y="-516.5" font-family="Helvetica,sans-Serif" font-size="10.00">Region</text>
-<text text-anchor="start" x="811.75" y="-500.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="811.75" y="-484.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polygon fill="#666666" stroke="#666666" points="793.88,-512 793.88,-512 832.62,-512 832.62,-512 793.88,-512"/>
-<polygon fill="#666666" stroke="#666666" points="793.88,-496 793.88,-496 832.62,-496 832.62,-496 793.88,-496"/>
-<polygon fill="none" stroke="#666666" points="793.88,-478 793.88,-530 832.62,-530 832.62,-478 793.88,-478"/>
+<polygon fill="white" stroke="none" points="904.25,-530 872.25,-530 872.25,-478 904.25,-478 904.25,-530"/>
+<text text-anchor="start" x="876.25" y="-516.5" font-family="Helvetica,sans-Serif" font-size="10.00">VBox</text>
+<text text-anchor="start" x="886.75" y="-500.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="886.75" y="-484.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polygon fill="#666666" stroke="#666666" points="872.25,-512 872.25,-512 904.25,-512 904.25,-512 872.25,-512"/>
+<polygon fill="#666666" stroke="#666666" points="872.25,-496 872.25,-496 904.25,-496 904.25,-496 872.25,-496"/>
+<polygon fill="none" stroke="#666666" points="872.25,-478 872.25,-530 904.25,-530 904.25,-478 872.25,-478"/>
 </a>
 </g>
 </g>
@@ -273,23 +276,23 @@ var sectionId = 'dynsection-1';
 <g id="edge7_Node000001_Node000008" class="edge">
 <title>Node8&#45;&gt;Node1</title>
 <g id="a_edge7_Node000001_Node000008"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M811.49,-478.1C808.75,-448.58 802.04,-398.29 786.25,-358 779.17,-339.94 770.3,-321.73 760.6,-304.13"/>
-<polygon fill="none" stroke="#63b8ff" points="760.81,-304.49 754.38,-301.23 754.91,-294.04 761.34,-297.3 760.81,-304.49"/>
+<path fill="none" stroke="#63b8ff" d="M885.74,-478.13C882.51,-449.06 876.12,-399.62 866.25,-358 865.81,-356.13 865.35,-354.25 864.89,-352.37"/>
+<polygon fill="none" stroke="#63b8ff" points="864.89,-352.35 859.53,-347.52 861.93,-340.72 867.29,-345.55 864.89,-352.35"/>
 </a>
 </g>
-<text text-anchor="middle" x="898.93" y="-396.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;crashscreenvboxTophboxRegionsudosvg</text>
+<text text-anchor="middle" x="921.14" y="-396.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;crashscreenvbox</text>
 </g>
 <!-- Node9 -->
 <g id="Node000009" class="node">
 <title>Node9</title>
 <g id="a_Node000009"><a xlink:title=" ">
-<polygon fill="white" stroke="none" points="1036.88,-530 1005.62,-530 1005.62,-478 1036.88,-478 1036.88,-530"/>
-<text text-anchor="start" x="1009.62" y="-516.5" font-family="Helvetica,sans-Serif" font-size="10.00">Label</text>
-<text text-anchor="start" x="1019.75" y="-500.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="1019.75" y="-484.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polygon fill="#666666" stroke="#666666" points="1005.62,-512 1005.62,-512 1036.88,-512 1036.88,-512 1005.62,-512"/>
-<polygon fill="#666666" stroke="#666666" points="1005.62,-496 1005.62,-496 1036.88,-496 1036.88,-496 1005.62,-496"/>
-<polygon fill="none" stroke="#666666" points="1005.62,-478 1005.62,-530 1036.88,-530 1036.88,-478 1005.62,-478"/>
+<polygon fill="white" stroke="none" points="1010.62,-530 971.88,-530 971.88,-478 1010.62,-478 1010.62,-530"/>
+<text text-anchor="start" x="975.88" y="-516.5" font-family="Helvetica,sans-Serif" font-size="10.00">Region</text>
+<text text-anchor="start" x="989.75" y="-500.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="989.75" y="-484.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polygon fill="#666666" stroke="#666666" points="971.88,-512 971.88,-512 1010.62,-512 1010.62,-512 971.88,-512"/>
+<polygon fill="#666666" stroke="#666666" points="971.88,-496 971.88,-496 1010.62,-496 1010.62,-496 971.88,-496"/>
+<polygon fill="none" stroke="#666666" points="971.88,-478 971.88,-530 1010.62,-530 1010.62,-478 971.88,-478"/>
 </a>
 </g>
 </g>
@@ -297,29 +300,23 @@ var sectionId = 'dynsection-1';
 <g id="edge8_Node000001_Node000009" class="edge">
 <title>Node9&#45;&gt;Node1</title>
 <g id="a_edge8_Node000001_Node000009"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M1022.88,-478.02C1023.63,-447.04 1020.61,-393.95 995.25,-358 940.08,-279.79 841.11,-229.89 766.46,-201.49"/>
-<polygon fill="none" stroke="#63b8ff" points="766.33,-201.44 759.31,-203.1 755.08,-197.26 762.1,-195.6 766.33,-201.44"/>
+<path fill="none" stroke="#63b8ff" d="M990.72,-478.2C989.23,-448.34 983.87,-397.29 965.25,-358 948.89,-323.48 924.45,-290.27 899.56,-261.66"/>
+<polygon fill="none" stroke="#63b8ff" points="899.67,-261.79 892.7,-259.96 891.71,-252.81 898.69,-254.65 899.67,-261.79"/>
 </a>
 </g>
-<text text-anchor="start" x="1021.54" y="-432.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;crashscreenvboxBottomhbox</text>
-<text text-anchor="middle" x="1101.79" y="-420.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">Versionlabel</text>
-<text text-anchor="start" x="1021.54" y="-408.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;crashscreenvboxBottomhbox</text>
-<text text-anchor="middle" x="1101.79" y="-396.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">Yearlabel</text>
-<text text-anchor="middle" x="1101.79" y="-384.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;crashscreenvboxCenterhboxLabel</text>
-<text text-anchor="middle" x="1101.79" y="-372.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;crashscreenvboxCenterhboxLabel2</text>
-<text text-anchor="middle" x="1101.79" y="-360.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;crashscreenvboxTophboxNamelabel</text>
+<text text-anchor="middle" x="1079.29" y="-396.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;crashscreenvboxTophboxRegionsudosvg</text>
 </g>
 <!-- Node10 -->
 <g id="Node000010" class="node">
 <title>Node10</title>
 <g id="a_Node000010"><a xlink:title=" ">
-<polygon fill="white" stroke="none" points="1221.62,-530 1188.88,-530 1188.88,-478 1221.62,-478 1221.62,-530"/>
-<text text-anchor="start" x="1192.88" y="-516.5" font-family="Helvetica,sans-Serif" font-size="10.00">HBox</text>
-<text text-anchor="start" x="1203.75" y="-500.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="1203.75" y="-484.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polygon fill="#666666" stroke="#666666" points="1188.88,-512 1188.88,-512 1221.62,-512 1221.62,-512 1188.88,-512"/>
-<polygon fill="#666666" stroke="#666666" points="1188.88,-496 1188.88,-496 1221.62,-496 1221.62,-496 1188.88,-496"/>
-<polygon fill="none" stroke="#666666" points="1188.88,-478 1188.88,-530 1221.62,-530 1221.62,-478 1188.88,-478"/>
+<polygon fill="white" stroke="none" points="1214.88,-530 1183.62,-530 1183.62,-478 1214.88,-478 1214.88,-530"/>
+<text text-anchor="start" x="1187.62" y="-516.5" font-family="Helvetica,sans-Serif" font-size="10.00">Label</text>
+<text text-anchor="start" x="1197.75" y="-500.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="1197.75" y="-484.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polygon fill="#666666" stroke="#666666" points="1183.62,-512 1183.62,-512 1214.88,-512 1214.88,-512 1183.62,-512"/>
+<polygon fill="#666666" stroke="#666666" points="1183.62,-496 1183.62,-496 1214.88,-496 1214.88,-496 1183.62,-496"/>
+<polygon fill="none" stroke="#666666" points="1183.62,-478 1183.62,-530 1214.88,-530 1214.88,-478 1183.62,-478"/>
 </a>
 </g>
 </g>
@@ -327,23 +324,29 @@ var sectionId = 'dynsection-1';
 <g id="edge9_Node000001_Node000010" class="edge">
 <title>Node10&#45;&gt;Node1</title>
 <g id="a_edge9_Node000001_Node000010"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M1204.48,-478.15C1202.86,-441.65 1197.94,-375.92 1183.25,-358 1080.24,-232.31 885.35,-191.09 767.1,-177.58"/>
-<polygon fill="none" stroke="#63b8ff" points="766.96,-177.57 760.56,-180.9 755.03,-176.28 761.42,-172.95 766.96,-177.57"/>
+<path fill="none" stroke="#63b8ff" d="M1197.82,-478.05C1195.29,-441.75 1188.96,-376.66 1175.25,-358 1109.67,-268.7 989.18,-219.18 903.53,-193.89"/>
+<polygon fill="none" stroke="#63b8ff" points="903.55,-193.9 896.68,-196.08 892.02,-190.58 898.89,-188.4 903.55,-193.9"/>
 </a>
 </g>
-<text text-anchor="middle" x="1278.87" y="-396.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;crashscreenvboxCenterhboxHbox</text>
+<text text-anchor="start" x="1194.5" y="-432.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;crashscreenvboxBottomhbox</text>
+<text text-anchor="middle" x="1274.75" y="-420.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">Versionlabel</text>
+<text text-anchor="start" x="1194.5" y="-408.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;crashscreenvboxBottomhbox</text>
+<text text-anchor="middle" x="1274.75" y="-396.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">Yearlabel</text>
+<text text-anchor="middle" x="1274.75" y="-384.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;crashscreenvboxCenterhboxLabel</text>
+<text text-anchor="middle" x="1274.75" y="-372.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;crashscreenvboxCenterhboxLabel2</text>
+<text text-anchor="middle" x="1274.75" y="-360.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;crashscreenvboxTophboxNamelabel</text>
 </g>
 <!-- Node11 -->
 <g id="Node000011" class="node">
 <title>Node11</title>
 <g id="a_Node000011"><a xlink:title=" ">
-<polygon fill="white" stroke="none" points="1400.5,-530 1364,-530 1364,-478 1400.5,-478 1400.5,-530"/>
-<text text-anchor="start" x="1368" y="-516.5" font-family="Helvetica,sans-Serif" font-size="10.00">Button</text>
-<text text-anchor="start" x="1380.75" y="-500.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="1380.75" y="-484.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polygon fill="#666666" stroke="#666666" points="1364,-512 1364,-512 1400.5,-512 1400.5,-512 1364,-512"/>
-<polygon fill="#666666" stroke="#666666" points="1364,-496 1364,-496 1400.5,-496 1400.5,-496 1364,-496"/>
-<polygon fill="none" stroke="#666666" points="1364,-478 1364,-530 1400.5,-530 1400.5,-478 1364,-478"/>
+<polygon fill="white" stroke="none" points="1399.62,-530 1366.88,-530 1366.88,-478 1399.62,-478 1399.62,-530"/>
+<text text-anchor="start" x="1370.88" y="-516.5" font-family="Helvetica,sans-Serif" font-size="10.00">HBox</text>
+<text text-anchor="start" x="1381.75" y="-500.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="1381.75" y="-484.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polygon fill="#666666" stroke="#666666" points="1366.88,-512 1366.88,-512 1399.62,-512 1399.62,-512 1366.88,-512"/>
+<polygon fill="#666666" stroke="#666666" points="1366.88,-496 1366.88,-496 1399.62,-496 1399.62,-496 1366.88,-496"/>
+<polygon fill="none" stroke="#666666" points="1366.88,-478 1366.88,-530 1399.62,-530 1399.62,-478 1366.88,-478"/>
 </a>
 </g>
 </g>
@@ -351,12 +354,36 @@ var sectionId = 'dynsection-1';
 <g id="edge10_Node000001_Node000011" class="edge">
 <title>Node11&#45;&gt;Node1</title>
 <g id="a_edge10_Node000001_Node000011"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M1385.81,-478.05C1388.86,-446.12 1388.89,-390.99 1359.25,-358 1280.44,-270.27 938.73,-209.85 767.22,-184.45"/>
-<polygon fill="none" stroke="#63b8ff" points="767.19,-184.45 760.67,-187.54 755.31,-182.71 761.83,-179.62 767.19,-184.45"/>
+<path fill="none" stroke="#63b8ff" d="M1382.16,-478.09C1380.08,-441.51 1374.29,-375.69 1359.25,-358 1244.82,-223.42 1029.96,-185.39 904.09,-174.84"/>
+<polygon fill="none" stroke="#63b8ff" points="904.31,-174.86 898.01,-178.38 892.34,-173.92 898.64,-170.4 904.31,-174.86"/>
 </a>
 </g>
-<text text-anchor="middle" x="1416.17" y="-402.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;buttonClose</text>
-<text text-anchor="middle" x="1416.17" y="-390.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;buttonReset</text>
+<text text-anchor="middle" x="1456.06" y="-396.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;crashscreenvboxCenterhboxHbox</text>
+</g>
+<!-- Node12 -->
+<g id="Node000012" class="node">
+<title>Node12</title>
+<g id="a_Node000012"><a xlink:title=" ">
+<polygon fill="white" stroke="none" points="1578.5,-530 1542,-530 1542,-478 1578.5,-478 1578.5,-530"/>
+<text text-anchor="start" x="1546" y="-516.5" font-family="Helvetica,sans-Serif" font-size="10.00">Button</text>
+<text text-anchor="start" x="1558.75" y="-500.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="1558.75" y="-484.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polygon fill="#666666" stroke="#666666" points="1542,-512 1542,-512 1578.5,-512 1578.5,-512 1542,-512"/>
+<polygon fill="#666666" stroke="#666666" points="1542,-496 1542,-496 1578.5,-496 1578.5,-496 1542,-496"/>
+<polygon fill="none" stroke="#666666" points="1542,-478 1542,-530 1578.5,-530 1578.5,-478 1542,-478"/>
+</a>
+</g>
+</g>
+<!-- Node12&#45;&gt;Node1 -->
+<g id="edge11_Node000001_Node000012" class="edge">
+<title>Node12&#45;&gt;Node1</title>
+<g id="a_edge11_Node000001_Node000012"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M1563.85,-478.26C1567.01,-446.3 1567.21,-390.88 1537.25,-358 1452.53,-265.03 1083.87,-206.4 904.29,-182.84"/>
+<polygon fill="none" stroke="#63b8ff" points="904.22,-182.83 897.76,-186.03 892.32,-181.29 898.79,-178.09 904.22,-182.83"/>
+</a>
+</g>
+<text text-anchor="middle" x="1594.31" y="-402.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;buttonClose</text>
+<text text-anchor="middle" x="1594.31" y="-390.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;buttonReset</text>
 </g>
 </g>
 </svg>

@@ -1,6 +1,6 @@
 <map id="fr.softsf.sudokufx.view.FullMenuView" name="fr.softsf.sudokufx.view.FullMenuView">
 <area shape="rect" id="Node000001" title="View class for the full menu screen of the Sudoku application." alt="" coords="791,1260,989,1585"/>
-<area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudokufx_1_1_sudo_main_1_1_i_primary_stage_view.html" title="Interface for the primary stage view." alt="" coords="5,831,235,948"/>
+<area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_main_stage_view.html" title="Interface defining method to open the main stage." alt="" coords="5,831,235,948"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,962,146,1028,170,1101,205,1173,228,1205,255,1234,316,1281,383,1319,455,1350,528,1374,601,1391,671,1403,791,1416,791,1421,670,1409,600,1396,527,1379,453,1355,381,1324,313,1286,252,1238,224,1208,201,1175,165,1103,141,1029,127,963"/>
 <area shape="rect" id="Node000003" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_scene_provider.html" title="Interface ISceneProvider." alt="" coords="234,167,412,252"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="317,267,309,341,303,437,301,551,308,676,325,807,338,873,356,939,378,1003,404,1064,436,1123,473,1178,506,1217,543,1251,584,1282,626,1310,713,1355,792,1388,790,1393,710,1360,624,1314,581,1286,540,1255,502,1220,469,1182,431,1126,400,1067,373,1004,351,940,333,875,319,808,302,677,296,551,298,437,304,340,312,266"/>
