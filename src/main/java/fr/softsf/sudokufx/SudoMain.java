@@ -37,7 +37,7 @@ public class SudoMain extends Application {
 
     private final SpringContext context = new SpringContext(this);
     @Getter
-    private Scene scene;
+    private static Scene scene;
     private ISplashScreenView isplashScreenView;
     private IMainStageView iMainStageView;
     @Autowired
@@ -72,7 +72,7 @@ public class SudoMain extends Application {
      *
      * @param splashScreenStage The stage used for the splash screen
      */
-    private void initScene(Stage splashScreenStage) {
+    private static void initScene(Stage splashScreenStage) {
         scene = splashScreenStage.getScene();
     }
 
