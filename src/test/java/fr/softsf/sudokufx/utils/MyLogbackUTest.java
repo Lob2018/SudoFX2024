@@ -26,13 +26,13 @@ import static org.mockito.Mockito.verify;
 @ExtendWith(MockitoExtension.class)
 class MyLogbackUTest {
 
-    private final IOsFolderFactory currentIOsFolderFactory;
+    private final IOsFolderFactory iCurrentIOsFolderFactory;
     private final MyLogback myLogback;
     private ListAppender<ILoggingEvent> logWatcher;
 
     public MyLogbackUTest() {
         OsFolderFactoryManager osFolderFactoryManager = new OsFolderFactoryManager();
-        currentIOsFolderFactory = osFolderFactoryManager.osFolderFactory();
+        iCurrentIOsFolderFactory = osFolderFactoryManager.iOsFolderFactory();
         this.myLogback = new MyLogback(osFolderFactoryManager);
     }
 
@@ -50,7 +50,7 @@ class MyLogbackUTest {
 
     @Test
     void testLogs_real_folder_path_is_correct() {
-        assertEquals(myLogback.getLogsFolderPath(), currentIOsFolderFactory.getOsLogsFolderPath());
+        assertEquals(myLogback.getLogsFolderPath(), iCurrentIOsFolderFactory.getOsLogsFolderPath());
     }
 
     @Test

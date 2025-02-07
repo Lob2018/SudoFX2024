@@ -6,6 +6,7 @@ import java.security.SecureRandom;
 import javax.crypto.KeyGenerator;
 import javax.crypto.SecretKey;
 
+import fr.softsf.sudokufx.interfaces.IEncryptionService;
 import org.junit.jupiter.api.AfterEach;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -26,8 +27,8 @@ import fr.softsf.sudokufx.utils.database.keystore.SecretKeyEncryptionServiceAESG
 
 class SecretKeyEncryptionServiceAESGCMUTest {
 
-    private static SecretKeyEncryptionServiceAESGCM secretKeyEncryptionServiceAESGCM;
-    private static SecretKeyEncryptionServiceAESGCM secretKeyEncryptionServiceAESGCMNullSecretKey;
+    private static IEncryptionService iSecretKeyEncryptionServiceAESGCM;
+    private static IEncryptionService iSecretKeyEncryptionServiceAESGCMNullSecretKey;
 
     private ListAppender<ILoggingEvent> logWatcher;
 
@@ -36,8 +37,8 @@ class SecretKeyEncryptionServiceAESGCMUTest {
         KeyGenerator keyGen = KeyGenerator.getInstance("AES");
         keyGen.init(256, new SecureRandom());
         SecretKey symmetricKey = keyGen.generateKey();
-        secretKeyEncryptionServiceAESGCM = spy(new SecretKeyEncryptionServiceAESGCM(symmetricKey));
-        secretKeyEncryptionServiceAESGCMNullSecretKey = spy(new SecretKeyEncryptionServiceAESGCM(null));
+        iSecretKeyEncryptionServiceAESGCM = spy(new SecretKeyEncryptionServiceAESGCM(symmetricKey));
+        iSecretKeyEncryptionServiceAESGCMNullSecretKey = spy(new SecretKeyEncryptionServiceAESGCM(null));
     }
 
     @BeforeEach
@@ -55,22 +56,22 @@ class SecretKeyEncryptionServiceAESGCMUTest {
     @Test
     void encryptDecrypt_success() {
         String secret = "Secret";
-        String encrypted = secretKeyEncryptionServiceAESGCM.encrypt(secret);
-        String decrypted = secretKeyEncryptionServiceAESGCM.decrypt(encrypted);
+        String encrypted = iSecretKeyEncryptionServiceAESGCM.encrypt(secret);
+        String decrypted = iSecretKeyEncryptionServiceAESGCM.decrypt(encrypted);
         assertEquals(secret, decrypted);
     }
 
     @Test
     void encryptWithNullSecretKey_fail() {
-        secretKeyEncryptionServiceAESGCMNullSecretKey.encrypt("_");
-        verify(secretKeyEncryptionServiceAESGCMNullSecretKey).encrypt("_");
+        iSecretKeyEncryptionServiceAESGCMNullSecretKey.encrypt("_");
+        verify(iSecretKeyEncryptionServiceAESGCMNullSecretKey).encrypt("_");
         assert (logWatcher.list.get(logWatcher.list.size() - 1).getFormattedMessage()).contains("██ Exception catch inside encrypt");
     }
 
     @Test
     void decryptWithLessThanTwoBytesCypher_fail() {
-        secretKeyEncryptionServiceAESGCMNullSecretKey.decrypt("_");
-        verify(secretKeyEncryptionServiceAESGCMNullSecretKey).decrypt("_");
+        iSecretKeyEncryptionServiceAESGCMNullSecretKey.decrypt("_");
+        verify(iSecretKeyEncryptionServiceAESGCMNullSecretKey).decrypt("_");
         assert (logWatcher.list.get(logWatcher.list.size() - 1).getFormattedMessage()).contains("██ Exception catch inside decrypt(cypher)");
     }
 }

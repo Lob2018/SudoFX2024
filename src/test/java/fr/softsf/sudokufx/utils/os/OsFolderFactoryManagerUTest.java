@@ -13,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class OsFolderFactoryManagerUTest {
     private OsFolderFactoryManager osFolderFactoryManager;
-    private IOsFolderFactory currentIOsFolderFactory;
+    private IOsFolderFactory iCurrentIOsFolderFactory;
 
     static Stream<String> provideInvalidOperatingSystems() {
         return Stream.of(null, "");
@@ -22,14 +22,14 @@ class OsFolderFactoryManagerUTest {
     @BeforeEach
     void setup() {
         osFolderFactoryManager = new OsFolderFactoryManager();
-        currentIOsFolderFactory = osFolderFactoryManager.osFolderFactory();
+        iCurrentIOsFolderFactory = osFolderFactoryManager.iOsFolderFactory();
     }
 
     @Test
     void testOsFoldersWithInvalidOs() {
         osFolderFactoryManager.setWrongOsForTests();
         assertThrows(IllegalArgumentException.class, () -> {
-            osFolderFactoryManager.osFolderFactory();
+            osFolderFactoryManager.iOsFolderFactory();
         }, "Unsupported OS: ");
     }
 
@@ -42,29 +42,29 @@ class OsFolderFactoryManagerUTest {
             osFolderFactoryManager.setEmptyOsForTests();
         }
 
-        IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, osFolderFactoryManager::osFolderFactory);
+        IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, osFolderFactoryManager::iOsFolderFactory);
         assertTrue(exception.getMessage().contains("Operating system is not specified or null."));
     }
 
     @ParameterizedTest
     @ValueSource(strings = {"Windows", "Linux", "MacOS"})
-    void testOsFolderFactoryWithValidOS(String osType) {
+    void testOsFolderFactoryWithValidIOs(String osType) {
         switch (osType) {
             case "Windows":
-                osFolderFactoryManager.setWindowsOsForTests(currentIOsFolderFactory.getOsDataFolderPath(), currentIOsFolderFactory.getOsLogsFolderPath());
+                osFolderFactoryManager.setWindowsOsForTests(iCurrentIOsFolderFactory.getOsDataFolderPath(), iCurrentIOsFolderFactory.getOsLogsFolderPath());
                 break;
             case "Linux":
-                osFolderFactoryManager.setLinuxOsForTests(currentIOsFolderFactory.getOsDataFolderPath(), currentIOsFolderFactory.getOsLogsFolderPath());
+                osFolderFactoryManager.setLinuxOsForTests(iCurrentIOsFolderFactory.getOsDataFolderPath(), iCurrentIOsFolderFactory.getOsLogsFolderPath());
                 break;
             case "MacOS":
-                osFolderFactoryManager.setMacOSForTests(currentIOsFolderFactory.getOsDataFolderPath(), currentIOsFolderFactory.getOsLogsFolderPath());
+                osFolderFactoryManager.setMacOSForTests(iCurrentIOsFolderFactory.getOsDataFolderPath(), iCurrentIOsFolderFactory.getOsLogsFolderPath());
                 break;
             default:
                 throw new IllegalArgumentException("Unknown OS type");
         }
-        IOsFolderFactory factory = osFolderFactoryManager.osFolderFactory();
-        assertEquals(factory.getOsDataFolderPath(), currentIOsFolderFactory.getOsDataFolderPath());
-        assertEquals(factory.getOsLogsFolderPath(), currentIOsFolderFactory.getOsLogsFolderPath());
+        IOsFolderFactory factory = osFolderFactoryManager.iOsFolderFactory();
+        assertEquals(factory.getOsDataFolderPath(), iCurrentIOsFolderFactory.getOsDataFolderPath());
+        assertEquals(factory.getOsLogsFolderPath(), iCurrentIOsFolderFactory.getOsLogsFolderPath());
     }
 }
 

@@ -35,7 +35,7 @@ public class MyLogback {
      * @param osFolderFactory Factory for creating OS-specific folders
      */
     public MyLogback(OsFolderFactoryManager osFolderFactory) {
-        logsFolderPath = osFolderFactory.osFolderFactory().getOsLogsFolderPath();
+        logsFolderPath = osFolderFactory.iOsFolderFactory().getOsLogsFolderPath();
         System.setProperty("logs", logsFolderPath + "/" + LOGS_FILE_NAME.getPath());
         LoggerContext context = configureLogback();
         printLogStatus(context);

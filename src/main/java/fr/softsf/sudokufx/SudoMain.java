@@ -1,10 +1,11 @@
 package fr.softsf.sudokufx;
 
 import com.gluonhq.ignite.spring.SpringContext;
+import fr.softsf.sudokufx.interfaces.IMainStageView;
 import fr.softsf.sudokufx.interfaces.ISplashScreenView;
+import fr.softsf.sudokufx.service.FxmlService;
 import fr.softsf.sudokufx.utils.MyEnums;
 import fr.softsf.sudokufx.view.SplashScreenView;
-import fr.softsf.sudokufx.service.FxmlService;
 import javafx.animation.PauseTransition;
 import javafx.application.Application;
 import javafx.application.Platform;
@@ -34,11 +35,11 @@ import static fr.softsf.sudokufx.utils.ExceptionTools.getSQLInvalidAuthorization
 @ComponentScan({"com.gluonhq.ignite.spring", "fr.softsf.sudokufx.*",})
 public class SudoMain extends Application {
 
-    @Getter
-    private static Scene scene;
     private final SpringContext context = new SpringContext(this);
+    @Getter
+    private Scene scene;
     private ISplashScreenView isplashScreenView;
-    private IPrimaryStageView iPrimaryStageView;
+    private IMainStageView iMainStageView;
     @Autowired
     private FxmlService fxmlService;
 
@@ -71,7 +72,7 @@ public class SudoMain extends Application {
      *
      * @param splashScreenStage The stage used for the splash screen
      */
-    private static void initScene(Stage splashScreenStage) {
+    private void initScene(Stage splashScreenStage) {
         scene = splashScreenStage.getScene();
     }
 
@@ -187,18 +188,10 @@ public class SudoMain extends Application {
         PauseTransition pause = new PauseTransition(Duration.millis(minimumTimelapse));
         pause.setOnFinished(e -> {
             fxmlService.setRootByFXMLName(fxmlName);
-            iPrimaryStageView = fxmlService.getController();
-            iPrimaryStageView.openingMainStage(isplashScreenView);
+            iMainStageView = fxmlService.getController();
+            iMainStageView.openingMainStage(isplashScreenView);
         });
         return pause;
-    }
-
-    /**
-     * Interface for the primary stage view.
-     */
-    public interface IPrimaryStageView {
-
-        void openingMainStage(ISplashScreenView iSplashScreenView);
     }
 }
 

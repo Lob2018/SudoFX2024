@@ -2,7 +2,7 @@ package fr.softsf.sudokufx.utils.database.configuration;
 
 import com.zaxxer.hikari.HikariDataSource;
 import fr.softsf.sudokufx.annotations.ExcludedFromCoverageReportGenerated;
-import fr.softsf.sudokufx.utils.database.keystore.ApplicationKeystore;
+import fr.softsf.sudokufx.interfaces.IKeystore;
 import org.springframework.context.annotation.*;
 
 import static fr.softsf.sudokufx.utils.MyEnums.Paths.DATABASE_NAME;
@@ -19,10 +19,10 @@ public class DataSourceCds extends DataSource {
     @Bean
     @Override
     @DependsOn({"logbackInitialization"})
-    HikariDataSource hikariDataSource(final ApplicationKeystore keystore) {
+    HikariDataSource hikariDataSource(final IKeystore iKeystore) {
         this.setJdbcUrl("jdbc:hsqldb:mem:" + DATABASE_NAME.getPath() + "CDS;DB_CLOSE_DELAY=-1;shutdown=true");
         this.setPoolName("SudokuFXCDSHikariConnection");
-        return super.hikariDataSource(keystore);
+        return super.hikariDataSource(iKeystore);
     }
 }
 

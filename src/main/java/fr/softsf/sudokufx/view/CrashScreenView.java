@@ -1,12 +1,10 @@
 package fr.softsf.sudokufx.view;
 
-import fr.softsf.sudokufx.interfaces.IOsFolderFactory;
-import fr.softsf.sudokufx.interfaces.ISceneProvider;
-import fr.softsf.sudokufx.interfaces.ISplashScreenView;
-import fr.softsf.sudokufx.utils.FileSystemManager;
-import fr.softsf.sudokufx.utils.JVMApplicationProperties;
 import fr.softsf.sudokufx.SudoMain;
+import fr.softsf.sudokufx.interfaces.*;
+import fr.softsf.sudokufx.utils.FileSystemManager;
 import fr.softsf.sudokufx.utils.I18n;
+import fr.softsf.sudokufx.utils.JVMApplicationProperties;
 import fr.softsf.sudokufx.utils.os.OsFolderFactoryManager;
 import javafx.animation.FadeTransition;
 import javafx.application.Platform;
@@ -41,9 +39,10 @@ import static fr.softsf.sudokufx.utils.MyEnums.ScreenSize.DISPOSABLE_SIZE;
  * responsible for displaying and managing the crash screen UI.
  */
 @Slf4j
-public final class CrashScreenView implements SudoMain.IPrimaryStageView, ISceneProvider {
+public final class CrashScreenView implements IMainStageView, ISceneProvider {
 
-    private static final IOsFolderFactory iOsFolderFactory = new OsFolderFactoryManager().osFolderFactory();
+    private static final IOsFolderFactory iOsFolderFactory = new OsFolderFactoryManager().iOsFolderFactory();
+    private static final IFileSystem iFileSystem = new FileSystemManager();
     private static final double FADE_IN_IN_SECONDS_AFTER_SPLASHSCREEN = 0.5;
     private final Stage crashscreenStage = new Stage();
     private final DropShadow dropShadow = new DropShadow();
@@ -90,7 +89,7 @@ public final class CrashScreenView implements SudoMain.IPrimaryStageView, IScene
     private void resetButtonClick() {
         log.info("▓▓▓▓ The user choose to reset the application data");
         Path pathToDelete = Paths.get(iOsFolderFactory.getOsDataFolderPath());
-        if (new FileSystemManager().deleteFolderRecursively(pathToDelete, DATA_FOLDER.getPath())) {
+        if (iFileSystem.deleteFolderRecursively(pathToDelete, DATA_FOLDER.getPath())) {
             log.info("▓▓▓▓ The directory is deleted");
         } else {
             log.info("▓▓▓▓ The directory isn't deleted");

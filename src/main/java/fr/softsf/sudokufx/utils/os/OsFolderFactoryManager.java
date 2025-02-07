@@ -27,7 +27,7 @@ public class OsFolderFactoryManager {
      * @throws IllegalArgumentException if the OS is not supported
      */
     @Bean
-    public IOsFolderFactory osFolderFactory() throws IllegalArgumentException {
+    public IOsFolderFactory iOsFolderFactory() throws IllegalArgumentException {
         if (os == null || os.isEmpty()) {
             throw new IllegalArgumentException("Operating system is not specified or null.");
         }

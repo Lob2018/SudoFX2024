@@ -3,8 +3,8 @@ package fr.softsf.sudokufx.utils.database.configuration;
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 import fr.softsf.sudokufx.annotations.ExcludedFromCoverageReportGenerated;
+import fr.softsf.sudokufx.interfaces.IKeystore;
 import fr.softsf.sudokufx.utils.MyLogback;
-import fr.softsf.sudokufx.utils.database.keystore.ApplicationKeystore;
 import lombok.Setter;
 import org.flywaydb.core.Flyway;
 import org.springframework.context.annotation.Bean;
@@ -42,19 +42,19 @@ public abstract class DataSource {
      * depends on logbackInitialization to ensure Logback is properly set up.
      * This method sets up a connection pool for HSQLDB database.
      *
-     * @param keystore Application keystore for secure storage
+     * @param iKeystore Application keystore for secure storage
      * @return Configured DataSource
      */
     @Bean
     @DependsOn({"logbackInitialization"})
-    HikariDataSource hikariDataSource(final ApplicationKeystore keystore) {
-        keystore.setupApplicationKeystore();
+    HikariDataSource hikariDataSource(final IKeystore iKeystore) {
+        iKeystore.setupApplicationKeystore();
         final HikariConfig config = new HikariConfig();
         config.setPoolName(poolName);
         config.setDriverClassName("org.hsqldb.jdbc.JDBCDriver");
         config.setJdbcUrl(jdbcUrl);
-        config.setUsername(keystore.getUsername());
-        config.setPassword(keystore.getPassword());
+        config.setUsername(iKeystore.getUsername());
+        config.setPassword(iKeystore.getPassword());
         config.setMaximumPoolSize(2);
         config.setMinimumIdle(1);
         config.setAutoCommit(false);
