@@ -6,6 +6,8 @@ import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 
+import java.util.Locale;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
@@ -46,6 +48,24 @@ class I18nUTest {
     @Order(4)
     void testChange_english_language_to_french() {
         I18n.setLocaleBundle("");
+        String testFR = I18n.getValue("test");
+        assertEquals("testFR", testFR);
+    }
+
+    @Test
+    @Order(5)
+    void testDefaultLocale_as_english_then_locale_bundle_is_english() {
+        Locale.setDefault(Locale.ENGLISH);
+        I18n.setLanguageBasedOnTheHostEnvironment();
+        String testEN = I18n.getValue("test");
+        assertEquals("testUS", testEN);
+    }
+
+    @Test
+    @Order(6)
+    void testDefaultLocale_as_french_then_locale_bundle_is_french() {
+        Locale.setDefault(Locale.FRENCH);
+        I18n.setLanguageBasedOnTheHostEnvironment();
         String testFR = I18n.getValue("test");
         assertEquals("testFR", testFR);
     }

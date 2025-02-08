@@ -4,6 +4,7 @@ import com.gluonhq.ignite.spring.SpringContext;
 import fr.softsf.sudokufx.interfaces.IMainStageView;
 import fr.softsf.sudokufx.interfaces.ISplashScreenView;
 import fr.softsf.sudokufx.service.FxmlService;
+import fr.softsf.sudokufx.utils.I18n;
 import fr.softsf.sudokufx.utils.MyEnums;
 import fr.softsf.sudokufx.view.SplashScreenView;
 import javafx.animation.PauseTransition;
@@ -35,9 +36,9 @@ import static fr.softsf.sudokufx.utils.ExceptionTools.getSQLInvalidAuthorization
 @ComponentScan({"com.gluonhq.ignite.spring", "fr.softsf.sudokufx.*",})
 public class SudoMain extends Application {
 
-    private final SpringContext context = new SpringContext(this);
     @Getter
     private static Scene scene;
+    private final SpringContext context = new SpringContext(this);
     private ISplashScreenView isplashScreenView;
     private IMainStageView iMainStageView;
     @Autowired
@@ -81,6 +82,7 @@ public class SudoMain extends Application {
      * the main application context.
      * <p>
      * This method performs the following:
+     * 0. Sets the language based on the host environment.
      * 1. Initializes the splash screen view with the provided stage.
      * 2. Sets up the main scene for the splash screen.
      * 3. Creates and starts a background task to initialize the Spring context,
@@ -93,6 +95,7 @@ public class SudoMain extends Application {
     @Override
     public void start(final Stage splashScreenStage) {
         try {
+            I18n.setLanguageBasedOnTheHostEnvironment();
             isplashScreenView = new SplashScreenView(splashScreenStage);
             initScene(splashScreenStage);
             Task<Void> springContextTask = createSpringContextTask();
