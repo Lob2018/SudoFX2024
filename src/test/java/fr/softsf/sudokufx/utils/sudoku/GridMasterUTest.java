@@ -1,8 +1,8 @@
-package fr.softsf.sudokufx.unit.utils.sudoku;
+package fr.softsf.sudokufx.utils.sudoku;
 
 import fr.softsf.sudokufx.interfaces.IGridMaster;
 import fr.softsf.sudokufx.utils.SecureRandomGenerator;
-import fr.softsf.sudokufx.utils.sudoku.GridMaster;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
@@ -10,11 +10,20 @@ import org.junit.jupiter.params.provider.ValueSource;
 import static org.junit.jupiter.api.Assertions.*;
 
 class GridMasterUTest {
-    private static final IGridMaster iGridMaster = new GridMaster(new SecureRandomGenerator());
+    private static final SecureRandomGenerator secureRandomGenerator = new SecureRandomGenerator();
+    private IGridMaster iGridMaster;
+    private GridMaster gridMaster;
 
-    @Test
-    void createUnknownGrids_success() {
-        int[][] grids = iGridMaster.creerLesGrilles(-1);
+    @BeforeEach
+    void init() {
+        iGridMaster = new GridMaster(secureRandomGenerator);
+        gridMaster = new GridMaster(secureRandomGenerator);
+    }
+
+    @ParameterizedTest
+    @ValueSource(ints = {-1, -100, 300})
+    void createUnknownGrids_success(int difficulty) {
+        int[][] grids = iGridMaster.creerLesGrilles(difficulty);
         assertNotNull(grids);
         assertNotNull(grids[0]);
         assertNotNull(grids[1]);
@@ -34,19 +43,17 @@ class GridMasterUTest {
         }
         assertNotEquals(0, countForToBeResolvedGrid);
         // The difficulty
-        assertTrue(grids[2][0] >= 0 && grids[2][0] <= 100, "The unknown difficulty is set as easy and must be between 0 and 100");
+        assertTrue(grids[2][0] >= 0 && grids[2][0] <= 33, "The unknown difficulty is set as easy and must be between 0 and 33");
     }
 
     @ParameterizedTest
     @ValueSource(ints = {1, 2, 3})
     void createGrids_success(int difficulty) {
         int[][] grids = iGridMaster.creerLesGrilles(difficulty);
-
         assertNotNull(grids);
         assertNotNull(grids[0]);
         assertNotNull(grids[1]);
         assertNotNull(grids[2]);
-
         // The resolved grid
         assertEquals(81, grids[0].length);
         int countForResolvedGrid = 0;
@@ -54,7 +61,6 @@ class GridMasterUTest {
             if (value == 0) countForResolvedGrid++;
         }
         assertEquals(0, countForResolvedGrid);
-
         // The grid to be resolved
         assertEquals(81, grids[1].length);
         int countForToBeResolvedGrid = 0;
@@ -62,7 +68,6 @@ class GridMasterUTest {
             if (value == 0) countForToBeResolvedGrid++;
         }
         assertNotEquals(0, countForToBeResolvedGrid);
-
         // The difficulty
         assertTrue(grids[2][0] >= 0 && grids[2][0] <= 100,
                 "The difficulty must be between 0 and 100 for level : " + difficulty);
@@ -112,4 +117,53 @@ class GridMasterUTest {
         int result = iGridMaster.resoudreLaGrille(toBeResolvedGrid);
         assertEquals(-1, result);
     }
+
+    /**
+     * Generate a grid anyway after 1s if the level cannot be reached
+     *
+     * @param difficulty The difficulty that cannot be reached
+     * @implNote This test duration is minimum 3 seconds (one per level)
+     */
+    @ParameterizedTest
+    @ValueSource(ints = {1, 2, 3})
+    void createGridLevelCannotBeReached_success(int difficulty) {
+        switch (difficulty) {
+            case 1:
+                gridMaster.setDifficulteFacileInaccessibleForTests();
+                assertEquals(-1, gridMaster.getMoyenMinDifficulte());
+                break;
+            case 2:
+                gridMaster.setDifficulteMoyenneInaccessibleForTests();
+                assertEquals(50000, gridMaster.getMoyenMinDifficulte());
+                assertEquals(-1, gridMaster.getMoyenMaxDifficulte());
+                break;
+            case 3:
+                gridMaster.setDifficulteDifficileInaccessibleForTests();
+                assertEquals(50000, gridMaster.getMoyenMaxDifficulte());
+                break;
+        }
+        int[][] grids = gridMaster.creerLesGrilles(difficulty);
+        assertNotNull(grids);
+        assertNotNull(grids[0]);
+        assertNotNull(grids[1]);
+        assertNotNull(grids[2]);
+        // The resolved grid
+        assertEquals(81, grids[0].length);
+        int countForResolvedGrid = 0;
+        for (int value : grids[0]) {
+            if (value == 0) countForResolvedGrid++;
+        }
+        assertEquals(0, countForResolvedGrid);
+        // The grid to be resolved
+        assertEquals(81, grids[1].length);
+        int countForToBeResolvedGrid = 0;
+        for (int value : grids[1]) {
+            if (value == 0) countForToBeResolvedGrid++;
+        }
+        assertNotEquals(0, countForToBeResolvedGrid);
+        // The difficulty
+        assertTrue(grids[2][0] >= 0 && grids[2][0] <= 100,
+                "The difficulty must be between 0 and 100 for level : " + difficulty);
+    }
+
 }

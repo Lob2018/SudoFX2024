@@ -2,6 +2,7 @@ package fr.softsf.sudokufx.utils.sudoku;
 
 import fr.softsf.sudokufx.interfaces.IGridMaster;
 import fr.softsf.sudokufx.utils.SecureRandomGenerator;
+import lombok.Getter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -28,11 +29,12 @@ public class GridMaster implements IGridMaster {
     private static final int MOYEN_MOY_CACHEES = (MOYEN_MIN_CACHEES + MOYEN_MAX_CACHEES) / 2;
     private static final int DIFFICILE_MAX_CACHEES = 59;
     private static final int DIFFICILE_MOY_CACHEES = (MOYEN_MAX_CACHEES + DIFFICILE_MAX_CACHEES) / 2;
-    // Difficulté (théorique 0 à 41391, pratique 4800 à 40000) de la grille en fonction du niveau
-    private static final int MOYEN_MIN_DIFFICULTE = 16533;
-    private static final int MOYEN_MAX_DIFFICULTE = 28266;
-
     private final SecureRandomGenerator secureRandomGenerator;
+    // Difficulté (théorique 0 à 41391, pratique 4800 à 40000) de la grille en fonction du niveau
+    @Getter
+    private int moyenMinDifficulte = 16533;
+    @Getter
+    private int moyenMaxDifficulte = 28266;
     private LocalDateTime derniereDemande = LocalDateTime.now();
 
     /**
@@ -210,7 +212,7 @@ public class GridMaster implements IGridMaster {
         do {
             sommeDesPossibilites = getPossibilitesGrilleWhileNok(grilleResolue, grilleAResoudre, nombreDeCasesACacher);
             if (dureeEnMs() > 1000) break;
-        } while (sommeDesPossibilites > MOYEN_MIN_DIFFICULTE);
+        } while (sommeDesPossibilites > moyenMinDifficulte);
         derniereDemande = LocalDateTime.now();
         return sommeDesPossibilites;
     }
@@ -229,7 +231,7 @@ public class GridMaster implements IGridMaster {
         do {
             sommeDesPossibilites = getPossibilitesGrilleWhileNok(grilleResolue, grilleAResoudre, nombreDeCasesACacher);
             if (dureeEnMs() > 1000) break;
-        } while (sommeDesPossibilites < MOYEN_MIN_DIFFICULTE || sommeDesPossibilites > MOYEN_MAX_DIFFICULTE);
+        } while (sommeDesPossibilites < moyenMinDifficulte || sommeDesPossibilites > moyenMaxDifficulte);
         derniereDemande = LocalDateTime.now();
         return sommeDesPossibilites;
     }
@@ -248,7 +250,7 @@ public class GridMaster implements IGridMaster {
         do {
             sommeDesPossibilites = getPossibilitesGrilleWhileNok(grilleResolue, grilleAResoudre, nombreDeCasesACacher);
             if (dureeEnMs() > 1000) break;
-        } while (sommeDesPossibilites < MOYEN_MAX_DIFFICULTE);
+        } while (sommeDesPossibilites < moyenMaxDifficulte);
         derniereDemande = LocalDateTime.now();
         return sommeDesPossibilites;
     }
@@ -383,5 +385,29 @@ public class GridMaster implements IGridMaster {
         return new int[][]{grilleResolue, grilleAResoudre, new int[]{pourcentageDesPossibilites}};
     }
 
+    /**
+     * Définit une difficulté facile inaccessible, pour générer une grille par défaut après une seconde.
+     * Cette méthode est uniquement utilisée pour les tests.
+     */
+    void setDifficulteFacileInaccessibleForTests() {
+        this.moyenMinDifficulte = -1;
+    }
+
+    /**
+     * Définit une difficulté moyenne inaccessible, pour générer une grille par défaut après une seconde.
+     * Cette méthode est uniquement utilisée pour les tests.
+     */
+    void setDifficulteMoyenneInaccessibleForTests() {
+        this.moyenMinDifficulte = 50000;
+        this.moyenMaxDifficulte = -1;
+    }
+
+    /**
+     * Définit une difficulté difficile inaccessible, pour générer une grille par défaut après une seconde.
+     * Cette méthode est uniquement utilisée pour les tests.
+     */
+    void setDifficulteDifficileInaccessibleForTests() {
+        this.moyenMaxDifficulte = 50000;
+    }
 }
 
