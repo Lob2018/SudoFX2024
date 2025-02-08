@@ -1,5 +1,15 @@
 var NAVTREEINDEX5 =
 {
+"enumfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_enums_1_1_toast_levels.html":[1,0,0,0,0,9,11,4],
+"enumfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_enums_1_1_toast_levels.html":[2,0,0,0,0,8,11,4],
+"enumfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_enums_1_1_toast_levels.html#a53b96d2f61a42d1ae5d51e539acfffc4":[1,0,0,0,0,9,11,4,2],
+"enumfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_enums_1_1_toast_levels.html#a53b96d2f61a42d1ae5d51e539acfffc4":[2,0,0,0,0,8,11,4,2],
+"enumfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_enums_1_1_toast_levels.html#a5ececd6eb10b16fb937d5f391055ad3e":[1,0,0,0,0,9,11,4,1],
+"enumfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_enums_1_1_toast_levels.html#a5ececd6eb10b16fb937d5f391055ad3e":[2,0,0,0,0,8,11,4,1],
+"enumfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_enums_1_1_toast_levels.html#a786153530cd9c4e63d94f96e9021e859":[1,0,0,0,0,9,11,4,5],
+"enumfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_enums_1_1_toast_levels.html#a786153530cd9c4e63d94f96e9021e859":[2,0,0,0,0,8,11,4,5],
+"enumfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_enums_1_1_toast_levels.html#ab414b1a6a36e9df90ec431fb8ba06aec":[1,0,0,0,0,9,11,4,3],
+"enumfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_enums_1_1_toast_levels.html#ab414b1a6a36e9df90ec431fb8ba06aec":[2,0,0,0,0,8,11,4,3],
 "enumfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_enums_1_1_toast_levels.html#ac099c5dd7884d3908f57decdff1d8f3a":[1,0,0,0,0,9,11,4,4],
 "enumfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_enums_1_1_toast_levels.html#ac099c5dd7884d3908f57decdff1d8f3a":[2,0,0,0,0,8,11,4,4],
 "enumfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_enums_1_1_toast_levels.html#ad60e64f506e5e56bf2723d4dcc0267bf":[1,0,0,0,0,9,11,4,0],
@@ -239,15 +249,5 @@ var NAVTREEINDEX5 =
 "namespacefr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1configuration.html":[1,0,0,0,0,9,0,0],
 "namespacefr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore.html":[1,0,0,0,0,9,0,1],
 "namespacefr_1_1softsf_1_1sudokufx_1_1utils_1_1os.html":[1,0,0,0,0,9,1],
-"namespacefr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku.html":[1,0,0,0,0,9,2],
-"namespacefr_1_1softsf_1_1sudokufx_1_1view.html":[1,0,0,0,0,10],
-"namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1components.html":[1,0,0,0,0,10,0],
-"namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel.html":[1,0,0,0,0,11],
-"namespacemembers.html":[1,1,0],
-"namespacemembers_func.html":[1,1,1],
-"namespaces.html":[1,0],
-"pages.html":[],
-"":[1,0,0],
-"":[1,0,0,0],
-"":[1,0,0,0,0,2]
+"namespacefr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku.html":[1,0,0,0,0,9,2]
 };

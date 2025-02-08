@@ -1,5 +1,15 @@
 var NAVTREEINDEX2 =
 {
+"classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties.html#a82b1d6b8023051dc460d1aa23da73ff5":[1,0,0,0,0,9,9,13],
+"classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties.html#a82b1d6b8023051dc460d1aa23da73ff5":[2,0,0,0,0,8,9,13],
+"classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties.html#a9e08bf2d6e7311c1758254bec4580bf6":[1,0,0,0,0,9,9,4],
+"classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties.html#a9e08bf2d6e7311c1758254bec4580bf6":[2,0,0,0,0,8,9,4],
+"classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties.html#aba4d7515b055f0770b7815b0b0501225":[1,0,0,0,0,9,9,6],
+"classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties.html#aba4d7515b055f0770b7815b0b0501225":[2,0,0,0,0,8,9,6],
+"classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties.html#ac3952aa0a90a2cc0627da39b56c1814a":[1,0,0,0,0,9,9,10],
+"classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties.html#ac3952aa0a90a2cc0627da39b56c1814a":[2,0,0,0,0,8,9,10],
+"classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties.html#adbcee29256983486547f4fd6ea23f21a":[1,0,0,0,0,9,9,15],
+"classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties.html#adbcee29256983486547f4fd6ea23f21a":[2,0,0,0,0,8,9,15],
 "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties.html#af21e767828933fa183e5f98e01bd5ea7":[1,0,0,0,0,9,9,5],
 "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties.html#af21e767828933fa183e5f98e01bd5ea7":[2,0,0,0,0,8,9,5],
 "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties.html#afd79a2aeab3fe69dbb2ace62b5eddf83":[1,0,0,0,0,9,9,2],
@@ -239,15 +249,5 @@ var NAVTREEINDEX2 =
 "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_linux_folder_factory.html":[1,0,0,0,0,9,1,0],
 "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_linux_folder_factory.html":[2,0,0,0,0,8,1,0],
 "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_linux_folder_factory.html#a8bcd23d8f561526312a85aa46f324479":[1,0,0,0,0,9,1,0,4],
-"classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_linux_folder_factory.html#a8bcd23d8f561526312a85aa46f324479":[2,0,0,0,0,8,1,0,4],
-"classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_linux_folder_factory.html#a9d876507dbe88136fea5e8bd77a344d3":[1,0,0,0,0,9,1,0,3],
-"classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_linux_folder_factory.html#a9d876507dbe88136fea5e8bd77a344d3":[2,0,0,0,0,8,1,0,3],
-"classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_linux_folder_factory.html#ace02834f61e1d90d64766aa778ab9145":[1,0,0,0,0,9,1,0,0],
-"classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_linux_folder_factory.html#ace02834f61e1d90d64766aa778ab9145":[2,0,0,0,0,8,1,0,0],
-"classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_linux_folder_factory.html#ad9fe55bdf047110a1152b1cd7feff17c":[1,0,0,0,0,9,1,0,2],
-"classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_linux_folder_factory.html#ad9fe55bdf047110a1152b1cd7feff17c":[2,0,0,0,0,8,1,0,2],
-"classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_linux_folder_factory.html#ae9328d202dd3b041f817c7a049324586":[1,0,0,0,0,9,1,0,1],
-"classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_linux_folder_factory.html#ae9328d202dd3b041f817c7a049324586":[2,0,0,0,0,8,1,0,1],
-"classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_macos_folder_factory.html":[1,0,0,0,0,9,1,1],
-"classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_macos_folder_factory.html":[2,0,0,0,0,8,1,1]
+"classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_linux_folder_factory.html#a8bcd23d8f561526312a85aa46f324479":[2,0,0,0,0,8,1,0,4]
 };

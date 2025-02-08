@@ -6,8 +6,8 @@
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="317,267,309,341,303,437,301,551,308,676,325,807,338,873,356,939,378,1003,404,1064,436,1123,473,1178,506,1217,543,1251,584,1282,626,1310,713,1355,792,1388,790,1393,710,1360,624,1314,581,1286,540,1255,502,1220,469,1182,431,1126,400,1067,373,1004,351,940,333,875,319,808,302,677,296,551,298,437,304,340,312,266"/>
 <area shape="rect" id="Node000015" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_fxml_service.html" title="FxmlService is a Spring service that manages the loading of FXML files and updating the root of the J..." alt="" coords="483,799,669,980"/>
 <area shape="poly" id="edge16_Node000015_Node000003" title=" " alt="" coords="322,267,321,324,324,391,333,464,351,534,381,607,420,677,462,741,503,797,499,801,457,744,415,680,376,609,346,536,328,465,319,392,316,324,317,267"/>
-<area shape="rect" id="Node000018" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_dynamic_font_size.html" title="Manages dynamic font sizing based on the dimensions of a JavaFX Scene." alt="" coords="360,367,529,511"/>
-<area shape="poly" id="edge20_Node000018_Node000003" title=" " alt="" coords="355,264,409,366,404,368,350,266"/>
+<area shape="rect" id="Node000018" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_dynamic_font_size.html" title="Manages dynamic font sizing based on the dimensions of a JavaFX Scene." alt="" coords="360,356,529,521"/>
+<area shape="poly" id="edge20_Node000018_Node000003" title=" " alt="" coords="354,264,403,355,399,357,350,266"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="734,855,770,924"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="755,924,756,983,763,1062,776,1149,799,1235,802,1243,797,1245,794,1237,771,1150,757,1063,751,984,749,924"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="797,855,841,924"/>
@@ -34,10 +34,10 @@
 <area shape="poly" id="edge15_Node000001_Node000015" title=" " alt="" coords="601,979,643,1104,673,1171,708,1235,742,1281,781,1323,777,1327,738,1284,704,1237,668,1174,638,1106,596,981"/>
 <area shape="rect" id="Node000016" title=" " alt="" coords="486,175,534,244"/>
 <area shape="poly" id="edge17_Node000015_Node000016" title=" " alt="" coords="521,243,543,342,558,459,568,577,578,781,572,782,563,578,553,460,538,343,516,244"/>
-<area shape="poly" id="edge21_Node000018_Node000016" title=" " alt="" coords="503,244,472,351,467,350,498,243"/>
+<area shape="poly" id="edge21_Node000018_Node000016" title=" " alt="" coords="503,244,475,340,470,339,498,243"/>
 <area shape="rect" id="Node000017" title=" " alt="" coords="643,404,728,473"/>
 <area shape="poly" id="edge18_Node000015_Node000017" title=" " alt="" coords="680,474,605,783,599,782,675,473"/>
-<area shape="poly" id="edge19_Node000015_Node000018" title=" " alt="" coords="445,510,451,574,465,629,484,683,525,782,520,784,479,685,460,630,446,575,439,511"/>
+<area shape="poly" id="edge19_Node000015_Node000018" title=" " alt="" coords="445,521,451,574,465,629,484,683,525,782,520,784,479,685,460,630,446,575,440,521"/>
 <area shape="rect" id="Node000019" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_toaster_v_box.html" title="A custom VBox component for displaying toast notifications." alt="" coords="1319,599,1548,1180"/>
 <area shape="poly" id="edge22_Node000001_Node000019" title=" " alt="" coords="1321,1164,1309,1182,1279,1219,1244,1252,1206,1282,1165,1309,1083,1354,1006,1387,1004,1382,1081,1349,1163,1305,1202,1278,1240,1248,1275,1215,1305,1178,1317,1161"/>
 <area shape="rect" id="Node000020" title=" " alt="" coords="1439,404,1482,473"/>

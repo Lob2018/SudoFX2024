@@ -113,17 +113,23 @@ $(function(){initNavTree('classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_i18n.html',
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_i18n__coll__graph.svg" width="275" height="358"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_i18n__coll__graph.svg" width="292" height="432"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ae04bf081931205edbc3e139c7fd503f0" id="r_ae04bf081931205edbc3e139c7fd503f0"><td class="memItemLeft" align="right" valign="top">static String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae04bf081931205edbc3e139c7fd503f0">getHostEnvironmentLanguageCode</a> ()</td></tr>
+<tr class="memdesc:ae04bf081931205edbc3e139c7fd503f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the language code of the host environment.  <br /></td></tr>
+<tr class="separator:ae04bf081931205edbc3e139c7fd503f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc2117394501226d5e9b8c046926b622" id="r_acc2117394501226d5e9b8c046926b622"><td class="memItemLeft" align="right" valign="top">static String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc2117394501226d5e9b8c046926b622">getLanguage</a> ()</td></tr>
 <tr class="memdesc:acc2117394501226d5e9b8c046926b622"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current language of the application.  <br /></td></tr>
 <tr class="separator:acc2117394501226d5e9b8c046926b622"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7095fa285a498c3f20bf33488a69d22c" id="r_a7095fa285a498c3f20bf33488a69d22c"><td class="memItemLeft" align="right" valign="top">static String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7095fa285a498c3f20bf33488a69d22c">getValue</a> (final String key)</td></tr>
 <tr class="memdesc:a7095fa285a498c3f20bf33488a69d22c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the localized string value for a given key.  <br /></td></tr>
 <tr class="separator:a7095fa285a498c3f20bf33488a69d22c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67c20ba2a72f7933067b71bc5a810bb1" id="r_a67c20ba2a72f7933067b71bc5a810bb1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a67c20ba2a72f7933067b71bc5a810bb1">setLanguageBasedOnTheHostEnvironment</a> ()</td></tr>
+<tr class="memdesc:a67c20ba2a72f7933067b71bc5a810bb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the locale bundle based on the host environment's language.  <br /></td></tr>
+<tr class="separator:a67c20ba2a72f7933067b71bc5a810bb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b2d44cad34ffdf0fb3a297af88ee76e" id="r_a7b2d44cad34ffdf0fb3a297af88ee76e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b2d44cad34ffdf0fb3a297af88ee76e">setLocaleBundle</a> (final String i18n)</td></tr>
 <tr class="memdesc:a7b2d44cad34ffdf0fb3a297af88ee76e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the current language for the application.  <br /></td></tr>
 <tr class="separator:a7b2d44cad34ffdf0fb3a297af88ee76e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -181,6 +187,35 @@ Static Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae04bf081931205edbc3e139c7fd503f0" name="ae04bf081931205edbc3e139c7fd503f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae04bf081931205edbc3e139c7fd503f0">&#9670;&#160;</a></span>getHostEnvironmentLanguageCode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static String fr.softsf.sudokufx.utils.I18n.getHostEnvironmentLanguageCode </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the language code of the host environment. </p>
+<p>Uses the default locale to return the language code (e.g., "en" for English, "fr" for French).</p>
+<dl class="section return"><dt>Returns</dt><dd>The language code as a String. </dd></dl>
+
+</div>
+</div>
 <a id="acc2117394501226d5e9b8c046926b622" name="acc2117394501226d5e9b8c046926b622"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acc2117394501226d5e9b8c046926b622">&#9670;&#160;</a></span>getLanguage()</h2>
 
@@ -246,6 +281,41 @@ Static Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a67c20ba2a72f7933067b71bc5a810bb1" name="a67c20ba2a72f7933067b71bc5a810bb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67c20ba2a72f7933067b71bc5a810bb1">&#9670;&#160;</a></span>setLanguageBasedOnTheHostEnvironment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void fr.softsf.sudokufx.utils.I18n.setLanguageBasedOnTheHostEnvironment </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the locale bundle based on the host environment's language. </p>
+<p>If the host environment's language is French ("fr"), uses the default locale bundle. Otherwise, uses the English locale bundle ("EN"). </p>
+<div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_i18n_a67c20ba2a72f7933067b71bc5a810bb1_cgraph.svg" width="544" height="120"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 
 </div>
 </div>
@@ -424,7 +494,7 @@ Static Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1utils.html">utils</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_i18n.html">I18n</a></li>
-    <li class="footer">Generated on Fri Feb 7 2025 19:54:33 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Sat Feb 8 2025 13:47:04 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>
