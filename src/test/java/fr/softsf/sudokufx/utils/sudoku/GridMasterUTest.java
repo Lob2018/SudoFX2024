@@ -128,10 +128,6 @@ class GridMasterUTest {
     @ValueSource(ints = {1, 2, 3})
     void createGridLevelCannotBeReached_success(int difficulty) {
         switch (difficulty) {
-            case 1:
-                gridMaster.setDifficulteFacileInaccessibleForTests();
-                assertEquals(-1, gridMaster.getMoyenMinDifficulte());
-                break;
             case 2:
                 gridMaster.setDifficulteMoyenneInaccessibleForTests();
                 assertEquals(50000, gridMaster.getMoyenMinDifficulte());
@@ -140,6 +136,10 @@ class GridMasterUTest {
             case 3:
                 gridMaster.setDifficulteDifficileInaccessibleForTests();
                 assertEquals(50000, gridMaster.getMoyenMaxDifficulte());
+                break;
+            default:
+                gridMaster.setDifficulteFacileInaccessibleForTests();
+                assertEquals(-1, gridMaster.getMoyenMinDifficulte());
                 break;
         }
         int[][] grids = gridMaster.creerLesGrilles(difficulty);
