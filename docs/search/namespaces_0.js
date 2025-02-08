@@ -21,6 +21,6 @@ var searchData=
   ['fr_3a_3asoftsf_3a_3asudokufx_3a_3autils_3a_3aos_18',['os',['../namespacefr_1_1softsf_1_1sudokufx_1_1utils_1_1os.html',1,'fr::softsf::sudokufx::utils']]],
   ['fr_3a_3asoftsf_3a_3asudokufx_3a_3autils_3a_3asudoku_19',['sudoku',['../namespacefr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku.html',1,'fr::softsf::sudokufx::utils']]],
   ['fr_3a_3asoftsf_3a_3asudokufx_3a_3aview_20',['view',['../namespacefr_1_1softsf_1_1sudokufx_1_1view.html',1,'fr::softsf::sudokufx']]],
-  ['fr_3a_3asoftsf_3a_3asudokufx_3a_3aview_3a_3acomponents_21',['components',['../namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1components.html',1,'fr::softsf::sudokufx::view']]],
+  ['fr_3a_3asoftsf_3a_3asudokufx_3a_3aview_3a_3acomponents_3a_3atoaster_21',['toaster',['../namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster.html',1,'fr::softsf::sudokufx::view::components']]],
   ['fr_3a_3asoftsf_3a_3asudokufx_3a_3aviewmodel_22',['viewmodel',['../namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel.html',1,'fr::softsf::sudokufx']]]
 ];

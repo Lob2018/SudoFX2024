@@ -96,7 +96,8 @@ var NAVTREEINDEX0 =
 "_software_service_u_test_8java.html":[3,0,1,1,0,0,0,0,2,0,0],
 "_splash_screen_view_8java.html":[3,0,1,0,0,0,0,0,7,3],
 "_sudo_main_8java.html":[3,0,1,0,0,0,0,0,10],
-"_toaster_v_box_8java.html":[3,0,1,0,0,0,0,0,7,0,0],
+"_toaster_button_8java.html":[3,0,1,0,0,0,0,0,7,0,0,0],
+"_toaster_v_box_8java.html":[3,0,1,0,0,0,0,0,7,0,0,1],
 "_windows_folder_factory_8java.html":[3,0,1,0,0,0,0,0,6,1,4],
 "annotated.html":[2,0],
 "classes.html":[2,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_software.html":[2,0,0,0,0,4,7],
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_software.html#a1e19f5db5a5bddc941625bb081e64c30":[1,0,0,0,0,5,7,2],
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_software.html#a1e19f5db5a5bddc941625bb081e64c30":[2,0,0,0,0,4,7,2],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_software.html#a6748da9adbb19da31147350ec8003c7d":[1,0,0,0,0,5,7,4],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_software.html#a6748da9adbb19da31147350ec8003c7d":[2,0,0,0,0,4,7,4]
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_software.html#a6748da9adbb19da31147350ec8003c7d":[1,0,0,0,0,5,7,4]
 };

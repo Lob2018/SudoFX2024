@@ -127,8 +127,11 @@ var annotated_dup =
             [ "SecureRandomGenerator", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_secure_random_generator.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_secure_random_generator" ]
           ] ],
           [ "view", "namespacefr_1_1softsf_1_1sudokufx_1_1view.html", [
-            [ "components", "namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1components.html", [
-              [ "ToasterVBox", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_toaster_v_box.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_toaster_v_box" ]
+            [ "components", null, [
+              [ "toaster", "namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster.html", [
+                [ "ToasterButton", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_button.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_button" ],
+                [ "ToasterVBox", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box" ]
+              ] ]
             ] ],
             [ "CrashScreenView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view" ],
             [ "FullMenuView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_full_menu_view.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_full_menu_view" ],

@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.view.components.ToasterVBox.addToast" name="fr.softsf.sudokufx.view.components.ToasterVBox.addToast">
+<map id="fr.softsf.sudokufx.view.components.toaster.ToasterVBox.addToast" name="fr.softsf.sudokufx.view.components.toaster.ToasterVBox.addToast">
 <area shape="rect" id="Node000001" title="Adds a toast notification with an automatically calculated duration based on text length." alt="" coords="5,72,238,115"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_toaster_v_box.html#a7defa217c0655eafd9f2e17e82165097" title="Sets the accessibility text for the toast based on its level." alt="" coords="286,5,518,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="214,69,294,50,295,55,215,74"/>

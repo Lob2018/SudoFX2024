@@ -91,6 +91,9 @@ var hierarchy =
     [ "Application", null, [
       [ "fr.softsf.sudokufx.SudoMain", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html", null ]
     ] ],
+    [ "Button", null, [
+      [ "fr.softsf.sudokufx.view.components.toaster.ToasterButton", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_button.html", null ]
+    ] ],
     [ "JpaRepository", null, [
       [ "fr.softsf.sudokufx.repository.BackgroundRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_background_repository.html", null ],
       [ "fr.softsf.sudokufx.repository.GameLevelRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_game_level_repository.html", null ],
@@ -102,6 +105,6 @@ var hierarchy =
       [ "fr.softsf.sudokufx.repository.SoftwareRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_software_repository.html", null ]
     ] ],
     [ "VBox", null, [
-      [ "fr.softsf.sudokufx.view.components.ToasterVBox", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_toaster_v_box.html", null ]
+      [ "fr.softsf.sudokufx.view.components.toaster.ToasterVBox", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box.html", null ]
     ] ]
 ];

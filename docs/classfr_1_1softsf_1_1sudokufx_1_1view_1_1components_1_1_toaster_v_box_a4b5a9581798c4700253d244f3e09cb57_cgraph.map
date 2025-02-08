@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.view.components.ToasterVBox.getToastInfo" name="fr.softsf.sudokufx.view.components.ToasterVBox.getToastInfo">
+<map id="fr.softsf.sudokufx.view.components.toaster.ToasterVBox.getToastInfo" name="fr.softsf.sudokufx.view.components.toaster.ToasterVBox.getToastInfo">
 <area shape="rect" id="Node000001" title="Retrieves the information text corresponding to the specified toast level." alt="" coords="5,5,238,48"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_i18n.html#a7095fa285a498c3f20bf33488a69d22c" title="Retrieves the localized string value for a given key." alt="" coords="286,5,441,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="238,24,270,24,270,29,238,29"/>

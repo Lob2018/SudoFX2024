@@ -2,8 +2,8 @@ var searchData=
 [
   ['activity_20diagram_20for_20invalid_20authorization_0',['Activity diagram for invalid authorization',['../index.html#activity-diagram-for-invalid-authorization',1,'']]],
   ['addgame_1',['addGame',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#ac7690134cf62468d85216a67d1686dc7',1,'fr::softsf::sudokufx::model::Player']]],
-  ['addtoast_2',['addToast',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_toaster_v_box.html#a1b19810ab82b9dcac03ec0b5872716d3',1,'fr::softsf::sudokufx::view::components::ToasterVBox']]],
-  ['addtoastwithduration_3',['addToastWithDuration',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_toaster_v_box.html#ab87668da59b32d671cd3cca8975382f0',1,'fr::softsf::sudokufx::view::components::ToasterVBox']]],
+  ['addtoast_2',['addToast',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box.html#ae6e7053bcfad898d4855a8b02aba34c8',1,'fr::softsf::sudokufx::view::components::toaster::ToasterVBox']]],
+  ['addtoastwithduration_3',['addToastWithDuration',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box.html#a66788ac03073386e6dd000586ca6a504',1,'fr::softsf::sudokufx::view::components::toaster::ToasterVBox']]],
   ['addtokeystore_4',['addToKeystore',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_application_keystore.html#a33216f8f54d7cd930bad1447d08019ba',1,'fr::softsf::sudokufx::utils::database::keystore::ApplicationKeystore']]],
   ['alphanumeric_5',['ALPHANUMERIC',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex.html#a7e0216d7c53b9b2e6b3b9560fd351047',1,'fr::softsf::sudokufx::utils::MyRegex']]],
   ['alphanumeric_5fregex_6',['ALPHANUMERIC_REGEX',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties_u_test.html#a3836f24ac44690b5e0c953ae0d1a2ef0',1,'fr::softsf::sudokufx::utils::JVMApplicationPropertiesUTest']]],

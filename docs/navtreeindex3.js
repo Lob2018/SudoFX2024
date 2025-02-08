@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_macos_folder_factory.html#a8012fbddcce2430e62d86c339a7caec4":[2,0,0,0,0,8,1,1,2],
 "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_macos_folder_factory.html#a86366335699ce6536a7bd2f6c620327f":[1,0,0,0,0,9,1,1,4],
 "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_macos_folder_factory.html#a86366335699ce6536a7bd2f6c620327f":[2,0,0,0,0,8,1,1,4],
 "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_macos_folder_factory.html#a9077eec63616c12efdb66eb22688b99b":[1,0,0,0,0,9,1,1,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_full_menu_view.html#a62bb4e5483fa55703a94077290310289":[2,0,0,0,0,9,2,13],
 "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_full_menu_view.html#a823f94a89c1094d6692b91420bfaf542":[1,0,0,0,0,10,2,12],
 "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_full_menu_view.html#a823f94a89c1094d6692b91420bfaf542":[2,0,0,0,0,9,2,12],
-"classfr_1_1softsf_1_1sudokufx_1_1view_1_1_full_menu_view.html#a8786fa02ee9aec7ac7c324c83549b788":[1,0,0,0,0,10,2,4],
-"classfr_1_1softsf_1_1sudokufx_1_1view_1_1_full_menu_view.html#a8786fa02ee9aec7ac7c324c83549b788":[2,0,0,0,0,9,2,4]
+"classfr_1_1softsf_1_1sudokufx_1_1view_1_1_full_menu_view.html#a8786fa02ee9aec7ac7c324c83549b788":[1,0,0,0,0,10,2,4]
 };

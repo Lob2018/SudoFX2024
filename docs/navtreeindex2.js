@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties.html#af21e767828933fa183e5f98e01bd5ea7":[2,0,0,0,0,8,9,5],
 "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties.html#afd79a2aeab3fe69dbb2ace62b5eddf83":[1,0,0,0,0,9,9,2],
 "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties.html#afd79a2aeab3fe69dbb2ace62b5eddf83":[2,0,0,0,0,8,9,2],
 "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties_u_test.html":[1,0,0,0,0,9,10],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_linux_folder_factory.html#ae9328d202dd3b041f817c7a049324586":[2,0,0,0,0,8,1,0,1],
 "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_macos_folder_factory.html":[1,0,0,0,0,9,1,1],
 "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_macos_folder_factory.html":[2,0,0,0,0,8,1,1],
-"classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_macos_folder_factory.html#a8012fbddcce2430e62d86c339a7caec4":[1,0,0,0,0,9,1,1,2],
-"classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_macos_folder_factory.html#a8012fbddcce2430e62d86c339a7caec4":[2,0,0,0,0,8,1,1,2]
+"classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_macos_folder_factory.html#a8012fbddcce2430e62d86c339a7caec4":[1,0,0,0,0,9,1,1,2]
 };
