@@ -1,4 +1,4 @@
-package fr.softsf.sudokufx.view.components;
+package fr.softsf.sudokufx.view.components.toaster;
 
 import fr.softsf.sudokufx.utils.I18n;
 import fr.softsf.sudokufx.utils.MyEnums;
@@ -8,7 +8,6 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.geometry.Pos;
 import javafx.scene.Node;
-import javafx.scene.control.Button;
 import javafx.scene.control.Tooltip;
 import javafx.scene.input.Clipboard;
 import javafx.scene.input.ClipboardContent;
@@ -35,15 +34,18 @@ public final class ToasterVBox extends VBox {
     /**
      * Adds a toast notification with a specified duration.
      *
-     * @param text       The text content of the toast
-     * @param toastLevel The severity level of the toast (info, warn, error)
-     * @param duration   The display duration of the toast in milliseconds
+     * @param visibleText  The text content of the toast
+     * @param detailedText The detailed content of the text added to the system clipboard copy
+     * @param duration     The display duration of the toast in milliseconds
      */
     @FXML
-    public void addToastWithDuration(final String text, final MyEnums.ToastLevels toastLevel, final double duration) {
-        final Button toast = new Button(text);
+    public void addToastWithDuration(final String visibleText, final String detailedText, final MyEnums.ToastLevels toastLevel, final double duration) {
+        final String fullDetailText = visibleText +
+                System.lineSeparator() +
+                detailedText;
+        final ToasterButton toast = new ToasterButton(visibleText, fullDetailText);
         setToastStyle(toast, toastLevel);
-        setAccessibility(toast, toastLevel, text);
+        setAccessibility(toast, toastLevel, fullDetailText);
         toast.setAlignment(Pos.CENTER);
         temporizeToast(toast, duration);
         toast.setOnAction(this::toastActions);
@@ -54,16 +56,20 @@ public final class ToasterVBox extends VBox {
      * Adds a toast notification with an automatically calculated duration based
      * on text length.
      *
-     * @param text       The text content of the toast
-     * @param toastLevel The severity level of the toast (info, warn, error)
+     * @param visibleText  The text content of the toast
+     * @param detailedText The detailed content of the text added to the system clipboard copy
+     * @param toastLevel   The severity level of the toast (info, warn, error)
      */
     @FXML
-    public void addToast(final String text, final MyEnums.ToastLevels toastLevel) {
-        final Button toast = new Button(text);
+    public void addToast(final String visibleText, final String detailedText, final MyEnums.ToastLevels toastLevel) {
+        final String fullDetailText = visibleText +
+                System.lineSeparator() +
+                detailedText;
+        final ToasterButton toast = new ToasterButton(visibleText, fullDetailText);
         setToastStyle(toast, toastLevel);
-        setAccessibility(toast, toastLevel, text);
+        setAccessibility(toast, toastLevel, fullDetailText);
         toast.setAlignment(Pos.CENTER);
-        final double duration = Math.max(6000, (double) text.length() * 1000 / 5);
+        final double duration = Math.max(6000, (double) fullDetailText.length() * 1000 / 5);
         temporizeToast(toast, duration);
         toast.setOnAction(this::toastActions);
         getChildren().add(toast);
@@ -75,7 +81,7 @@ public final class ToasterVBox extends VBox {
      * @param toast      The toast button
      * @param toastLevel The severity level of the toast
      */
-    private void setToastStyle(final Button toast, final MyEnums.ToastLevels toastLevel) {
+    private void setToastStyle(final ToasterButton toast, final MyEnums.ToastLevels toastLevel) {
         toast.getStyleClass().add("toast");
         toast.getStyleClass().add(toastLevel.getLevel());
     }
@@ -90,7 +96,7 @@ public final class ToasterVBox extends VBox {
      * @param toast      The toast button to which the accessibility text and tooltip will be applied.
      * @param toastLevel The severity level of the toast, which determines the content of the accessibility text and tooltip.
      */
-    private void setAccessibility(final Button toast, final MyEnums.ToastLevels toastLevel, final String text) {
+    private void setAccessibility(final ToasterButton toast, final MyEnums.ToastLevels toastLevel, final String text) {
         Tooltip tooltip = new Tooltip();
         tooltip.setShowDelay(Duration.millis(0));
         String info = getToastInfo(toastLevel);
@@ -124,27 +130,26 @@ public final class ToasterVBox extends VBox {
      * @param event The action event triggered by clicking the toast
      */
     private void toastActions(final ActionEvent event) {
-        Button toast = (Button) event.getSource();
+        ToasterButton toast = (ToasterButton) event.getSource();
         copyToClipboard(toast);
         removeToast(toast);
     }
 
     /**
-     * Copies the text content of a toast to the system clipboard.
+     * Copies the full detail text content of a toast to the system clipboard.
      *
      * @param button The toast button whose text is to be copied
      */
-    private void copyToClipboard(final Button button) {
-        String text = button.getText();
+    private void copyToClipboard(final ToasterButton button) {
         Clipboard clipboard = Clipboard.getSystemClipboard();
         ClipboardContent content = new ClipboardContent();
-        content.putString(text);
+        content.putString(button.getFullDetailText());
         clipboard.setContent(content);
     }
 
     /**
      * Sets a timer to automatically remove the toast after a specified duration.
-     *
+     * <p>
      * This method ensures that the currently focused node is preserved when the toast
      * is removed, allowing for a seamless user experience. Additionally, it guarantees
      * that the narrator continues to read the toast message without interruption,
@@ -155,10 +160,10 @@ public final class ToasterVBox extends VBox {
      *                 be removed. The toast will be removed without disrupting
      *                 the focus of the currently active node.
      */
-    private void temporizeToast(final Button toast, final double duration) {
+    private void temporizeToast(final ToasterButton toast, final double duration) {
         Timeline timeline = new Timeline(new KeyFrame(Duration.millis(duration), event -> {
             getChildren().remove(toast);
-            if(this.getScene() != null){
+            if (this.getScene() != null) {
                 Node focusedNode = this.getScene().getFocusOwner();
                 if (focusedNode != null) {
                     focusedNode.requestFocus();
@@ -173,7 +178,7 @@ public final class ToasterVBox extends VBox {
      *
      * @param button The toast button to be removed
      */
-    private void removeToast(final Button button) {
+    private void removeToast(final ToasterButton button) {
         getChildren().remove(button);
     }
 }

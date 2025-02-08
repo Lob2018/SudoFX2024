@@ -7,7 +7,7 @@ import fr.softsf.sudokufx.interfaces.ISplashScreenView;
 import fr.softsf.sudokufx.service.FxmlService;
 import fr.softsf.sudokufx.utils.MyEnums;
 import fr.softsf.sudokufx.utils.SecureRandomGenerator;
-import fr.softsf.sudokufx.view.components.ToasterVBox;
+import fr.softsf.sudokufx.view.components.toaster.ToasterVBox;
 import fr.softsf.sudokufx.viewmodel.FullMenuViewModel;
 import javafx.animation.FadeTransition;
 import javafx.event.ActionEvent;
@@ -82,13 +82,13 @@ public final class FullMenuView implements IMainStageView, ISceneProvider {
 
         switch (secureRandomGenerator.nextInt(3)) {
             case 0:
-                toaster.addToastWithDuration("INFO 🔹 Work in progress... 🔹", MyEnums.ToastLevels.INFO, 6000);
+                toaster.addToastWithDuration("INFO 🔹 Work in progress... 🔹", "", MyEnums.ToastLevels.INFO, 6000);
                 break;
             case 1:
-                toaster.addToast("WARN", MyEnums.ToastLevels.WARN);
+                toaster.addToast("WARN", "", MyEnums.ToastLevels.WARN);
                 break;
             default:
-                toaster.addToast("(130 CHAR) ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR", MyEnums.ToastLevels.ERROR);
+                toaster.addToast("VISIBLE ERROR MESSAGE", "DETAILED ERROR MESSAGE DETAILED ERROR MESSAGE DETAILED ERROR MESSAGE DETAILED ERROR MESSAGE DETAILED ERROR MESSAGE DETAILED ERROR MESSAGE DETAILED ERROR MESSAGE DETAILED ERROR MESSAGE DETAILED ERROR MESSAGE DETAILED ERROR MESSAGE DETAILED ERROR MESSAGE DETAILED ERROR MESSAGE DETAILED ERROR MESSAGE DETAILED ERROR MESSAGE DETAILED ERROR MESSAGE DETAILED ERROR MESSAGE DETAILED ERROR MESSAGE DETAILED ERROR MESSAGE DETAILED ERROR MESSAGE DETAILED ERROR MESSAGE DETAILED ERROR MESSAGE", MyEnums.ToastLevels.ERROR);
                 break;
         }
         fullMenuViewModel.test();
