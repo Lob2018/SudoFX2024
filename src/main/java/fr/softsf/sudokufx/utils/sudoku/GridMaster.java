@@ -197,7 +197,7 @@ public class GridMaster implements IGridMaster {
     }
 
     /**
-     * Génère une grille de Sudoku de niveau facile.
+     * Génère une grille de Sudoku de niveau facile (sinon une grille par défaut est retournée après une seconde).
      *
      * @param grilleResolue   La grille résolue à partir de laquelle les cases seront cachées.
      * @param grilleAResoudre La grille à résoudre, avec ses cases cachées (valeur à zéro).
@@ -209,13 +209,14 @@ public class GridMaster implements IGridMaster {
         derniereDemande = LocalDateTime.now();
         do {
             sommeDesPossibilites = getPossibilitesGrilleWhileNok(grilleResolue, grilleAResoudre, nombreDeCasesACacher);
-        } while (sommeDesPossibilites > MOYEN_MIN_DIFFICULTE || dureeEnMs() > 1000);
+            if (dureeEnMs() > 1000) break;
+        } while (sommeDesPossibilites > MOYEN_MIN_DIFFICULTE);
         derniereDemande = LocalDateTime.now();
         return sommeDesPossibilites;
     }
 
     /**
-     * Génère une grille de Sudoku de niveau moyen.
+     * Génère une grille de Sudoku de niveau moyen (sinon une grille par défaut est retournée après une seconde).
      *
      * @param grilleResolue   La grille résolue à partir de laquelle les cases seront cachées.
      * @param grilleAResoudre La grille à résoudre, avec ses cases cachées (valeur à zéro).
@@ -227,13 +228,14 @@ public class GridMaster implements IGridMaster {
         derniereDemande = LocalDateTime.now();
         do {
             sommeDesPossibilites = getPossibilitesGrilleWhileNok(grilleResolue, grilleAResoudre, nombreDeCasesACacher);
-        } while (sommeDesPossibilites < MOYEN_MIN_DIFFICULTE || sommeDesPossibilites > MOYEN_MAX_DIFFICULTE || dureeEnMs() > 1000);
+            if (dureeEnMs() > 1000) break;
+        } while (sommeDesPossibilites < MOYEN_MIN_DIFFICULTE || sommeDesPossibilites > MOYEN_MAX_DIFFICULTE);
         derniereDemande = LocalDateTime.now();
         return sommeDesPossibilites;
     }
 
     /**
-     * Génère une grille de Sudoku de niveau difficile.
+     * Génère une grille de Sudoku de niveau difficile (sinon une grille par défaut est retournée après une seconde).
      *
      * @param grilleResolue   La grille résolue à partir de laquelle les cases seront cachées.
      * @param grilleAResoudre La grille à résoudre, avec ses cases cachées (valeur à zéro).
@@ -245,7 +247,8 @@ public class GridMaster implements IGridMaster {
         derniereDemande = LocalDateTime.now();
         do {
             sommeDesPossibilites = getPossibilitesGrilleWhileNok(grilleResolue, grilleAResoudre, nombreDeCasesACacher);
-        } while (sommeDesPossibilites < MOYEN_MAX_DIFFICULTE || dureeEnMs() > 1000);
+            if (dureeEnMs() > 1000) break;
+        } while (sommeDesPossibilites < MOYEN_MAX_DIFFICULTE);
         derniereDemande = LocalDateTime.now();
         return sommeDesPossibilites;
     }
