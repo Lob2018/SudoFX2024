@@ -78,9 +78,6 @@ var annotated_dup =
               [ "os", "namespacefr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1os.html", [
                 [ "OsInfoUTest", "classfr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1os_1_1_os_info_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1os_1_1_os_info_u_test" ]
               ] ],
-              [ "sudoku", "namespacefr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1sudoku.html", [
-                [ "GridMasterUTest", "classfr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1sudoku_1_1_grid_master_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1sudoku_1_1_grid_master_u_test" ]
-              ] ],
               [ "ExceptionToolsUTest", "classfr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1_exception_tools_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1_exception_tools_u_test" ],
               [ "I18nUTest", "classfr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1_i18n_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1_i18n_u_test" ],
               [ "MyEnumsUTest", "classfr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1_my_enums_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1_my_enums_u_test" ]
@@ -111,7 +108,8 @@ var annotated_dup =
               [ "WindowsFolderFactory", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_windows_folder_factory.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_windows_folder_factory" ]
             ] ],
             [ "sudoku", "namespacefr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku.html", [
-              [ "GridMaster", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master" ]
+              [ "GridMaster", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master" ],
+              [ "GridMasterUTest", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master_u_test" ]
             ] ],
             [ "DynamicFontSize", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_dynamic_font_size.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_dynamic_font_size" ],
             [ "DynamicFontSizeChangeE2ETest", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_dynamic_font_size_change_e2_e_test.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_dynamic_font_size_change_e2_e_test" ],

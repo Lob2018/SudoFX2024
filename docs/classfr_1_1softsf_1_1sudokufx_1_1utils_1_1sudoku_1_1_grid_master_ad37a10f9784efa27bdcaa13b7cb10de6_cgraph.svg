@@ -58,7 +58,7 @@ var sectionId = 'dynsection-8';
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Génère une grille de Sudoku de niveau facile.">
+<g id="a_Node000001"><a xlink:title="Génère une grille de Sudoku de niveau facile (sinon une grille par défaut est retournée après une sec...">
 <polygon fill="#999999" stroke="#666666" points="228.25,-165 0,-165 0,-133 228.25,-133 228.25,-165"/>
 <text text-anchor="start" x="8" y="-151.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.utils.sudoku.</text>
 <text text-anchor="middle" x="114.12" y="-139.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridMaster.getPossibilitesGrilleAResoudreFacile</text>

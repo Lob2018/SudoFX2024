@@ -56,10 +56,11 @@ var searchData=
   ['griddto_2ejava_53',['GridDto.java',['../_grid_dto_8java.html',1,'']]],
   ['gridid_54',['gridid',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a97e30ebf45c0f708967d8d7a54cda08c',1,'fr.softsf.sudokufx.model.Game.gridid'],['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#a9d4bc2b1dbdbd486f5d4b7b593bf1281',1,'fr.softsf.sudokufx.model.Grid.gridid']]],
   ['gridmaster_55',['GridMaster',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html',1,'fr.softsf.sudokufx.utils.sudoku.GridMaster'],['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a3a8f2b69240160d896b860a61eb7a059',1,'fr.softsf.sudokufx.utils.sudoku.GridMaster.GridMaster()']]],
-  ['gridmaster_2ejava_56',['GridMaster.java',['../_grid_master_8java.html',1,'']]],
-  ['gridmasterutest_57',['GridMasterUTest',['../classfr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1sudoku_1_1_grid_master_u_test.html',1,'fr::softsf::sudokufx::unit::utils::sudoku']]],
-  ['gridmasterutest_2ejava_58',['GridMasterUTest.java',['../_grid_master_u_test_8java.html',1,'']]],
-  ['gridrepository_59',['GridRepository',['../interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_grid_repository.html',1,'fr::softsf::sudokufx::repository']]],
-  ['gridrepository_2ejava_60',['GridRepository.java',['../_grid_repository_8java.html',1,'']]],
-  ['gridvalue_61',['gridvalue',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#a5c79e3e19586a5167a9b19231ebd1135',1,'fr::softsf::sudokufx::model::Grid']]]
+  ['gridmaster_56',['gridMaster',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master_u_test.html#ad7a6f1bb0465818a92b4284cde2748e3',1,'fr::softsf::sudokufx::utils::sudoku::GridMasterUTest']]],
+  ['gridmaster_2ejava_57',['GridMaster.java',['../_grid_master_8java.html',1,'']]],
+  ['gridmasterutest_58',['GridMasterUTest',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master_u_test.html',1,'fr::softsf::sudokufx::utils::sudoku']]],
+  ['gridmasterutest_2ejava_59',['GridMasterUTest.java',['../_grid_master_u_test_8java.html',1,'']]],
+  ['gridrepository_60',['GridRepository',['../interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_grid_repository.html',1,'fr::softsf::sudokufx::repository']]],
+  ['gridrepository_2ejava_61',['GridRepository.java',['../_grid_repository_8java.html',1,'']]],
+  ['gridvalue_62',['gridvalue',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#a5c79e3e19586a5167a9b19231ebd1135',1,'fr::softsf::sudokufx::model::Grid']]]
 ];

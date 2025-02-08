@@ -1,5 +1,5 @@
-<map id="src/test/java/fr/softsf/sudokufx/unit/utils/sudoku/GridMasterUTest.java" name="src/test/java/fr/softsf/sudokufx/unit/utils/sudoku/GridMasterUTest.java">
-<area shape="rect" id="Node000001" title=" " alt="" coords="11,5,188,64"/>
+<map id="src/test/java/fr/softsf/sudokufx/utils/sudoku/GridMasterUTest.java" name="src/test/java/fr/softsf/sudokufx/utils/sudoku/GridMasterUTest.java">
+<area shape="rect" id="Node000001" title=" " alt="" coords="23,5,176,64"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,112,194,155"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="102,64,102,97,97,97,97,64"/>
 </map>

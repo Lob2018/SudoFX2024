@@ -1,5 +1,18 @@
 var NAVTREEINDEX6 =
 {
+"namespacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper.html":[1,0,0,0,0,4,0],
+"namespacefr_1_1softsf_1_1sudokufx_1_1model.html":[1,0,0,0,0,5],
+"namespacefr_1_1softsf_1_1sudokufx_1_1repository.html":[1,0,0,0,0,6],
+"namespacefr_1_1softsf_1_1sudokufx_1_1service.html":[1,0,0,0,0,7],
+"namespacefr_1_1softsf_1_1sudokufx_1_1unit_1_1service.html":[1,0,0,0,0,8,0],
+"namespacefr_1_1softsf_1_1sudokufx_1_1unit_1_1utils.html":[1,0,0,0,0,8,1],
+"namespacefr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1database_1_1keystore.html":[1,0,0,0,0,8,1,0,0],
+"namespacefr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1os.html":[1,0,0,0,0,8,1,1],
+"namespacefr_1_1softsf_1_1sudokufx_1_1utils.html":[1,0,0,0,0,9],
+"namespacefr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1configuration.html":[1,0,0,0,0,9,0,0],
+"namespacefr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore.html":[1,0,0,0,0,9,0,1],
+"namespacefr_1_1softsf_1_1sudokufx_1_1utils_1_1os.html":[1,0,0,0,0,9,1],
+"namespacefr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku.html":[1,0,0,0,0,9,2],
 "namespacefr_1_1softsf_1_1sudokufx_1_1view.html":[1,0,0,0,0,10],
 "namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1components.html":[1,0,0,0,0,10,0],
 "namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel.html":[1,0,0,0,0,11],

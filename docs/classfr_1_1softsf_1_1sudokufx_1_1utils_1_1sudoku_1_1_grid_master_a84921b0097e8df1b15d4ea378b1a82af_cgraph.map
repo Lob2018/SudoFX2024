@@ -4,11 +4,11 @@
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="207,173,239,169,239,174,207,178"/>
 <area shape="rect" id="Node000015" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a8eba2a9a790e47d419e87446a003818f" title="Génère une grille de Sudoku complète à partir d&#39;une grille vide ou partiellement remplie." alt="" coords="596,267,797,309"/>
 <area shape="poly" id="edge21_Node000001_Node000015" title=" " alt="" coords="208,202,581,266,580,271,207,208"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a5a6f84fdb0becec787f87d0f11ce1b07" title="Génère une grille de Sudoku de niveau difficile." alt="" coords="564,88,828,147"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a5a6f84fdb0becec787f87d0f11ce1b07" title="Génère une grille de Sudoku de niveau difficile (sinon une grille par défaut est retournée après une ..." alt="" coords="564,88,828,147"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="496,138,549,132,550,137,497,143"/>
-<area shape="rect" id="Node000013" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#ad37a10f9784efa27bdcaa13b7cb10de6" title="Génère une grille de Sudoku de niveau facile." alt="" coords="544,171,848,213"/>
+<area shape="rect" id="Node000013" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#ad37a10f9784efa27bdcaa13b7cb10de6" title="Génère une grille de Sudoku de niveau facile (sinon une grille par défaut est retournée après une sec..." alt="" coords="544,171,848,213"/>
 <area shape="poly" id="edge13_Node000002_Node000013" title=" " alt="" coords="497,166,529,170,528,175,496,171"/>
-<area shape="rect" id="Node000014" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#ac77d16b1a583a51dc5770fc275222d8f" title="Génère une grille de Sudoku de niveau moyen." alt="" coords="562,5,831,64"/>
+<area shape="rect" id="Node000014" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#ac77d16b1a583a51dc5770fc275222d8f" title="Génère une grille de Sudoku de niveau moyen (sinon une grille par défaut est retournée après une seco..." alt="" coords="562,5,831,64"/>
 <area shape="poly" id="edge17_Node000002_Node000014" title=" " alt="" coords="417,130,476,102,543,74,562,67,564,72,545,78,478,107,419,135"/>
 <area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a7cd9c1114c0d87a5341aedac86f6407a" title="Calcule la durée de temps écoulé entre la dernière et la nouvelle demande de grille en millisecondes." alt="" coords="926,21,1128,64"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="828,85,914,65,915,71,829,90"/>

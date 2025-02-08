@@ -19,7 +19,7 @@ var hierarchy =
     [ "fr.softsf.sudokufx.utils.database.keystore.GenerateSecret", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1keystore_1_1_generate_secret.html", null ],
     [ "fr.softsf.sudokufx.integration.utils.database.GenerateSecretUTest", "classfr_1_1softsf_1_1sudokufx_1_1integration_1_1utils_1_1database_1_1_generate_secret_u_test.html", null ],
     [ "fr.softsf.sudokufx.model.Grid", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html", null ],
-    [ "fr.softsf.sudokufx.unit.utils.sudoku.GridMasterUTest", "classfr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1sudoku_1_1_grid_master_u_test.html", null ],
+    [ "fr.softsf.sudokufx.utils.sudoku.GridMasterUTest", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master_u_test.html", null ],
     [ "fr.softsf.sudokufx.utils.I18n", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_i18n.html", null ],
     [ "fr.softsf.sudokufx.unit.utils.I18nUTest", "classfr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1_i18n_u_test.html", null ],
     [ "fr.softsf.sudokufx.interfaces.mapper.IBackgroundMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_background_mapper.html", null ],

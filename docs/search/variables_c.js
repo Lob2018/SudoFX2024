@@ -9,9 +9,9 @@ var searchData=
   ['menuid_6',['menuid',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu.html#a3f22fcadef917fd3e98c562bb175052c',1,'fr.softsf.sudokufx.model.Menu.menuid'],['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a710b85491ff933d99300c8906989b5cc',1,'fr.softsf.sudokufx.model.Player.menuid']]],
   ['mode_7',['mode',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu.html#adcc1789944a1cc2204da0c9dec4bba57',1,'fr::softsf::sudokufx::model::Menu']]],
   ['moyen_5fmax_5fcachees_8',['MOYEN_MAX_CACHEES',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a3ebea586bc35752cc744c208be17e984',1,'fr::softsf::sudokufx::utils::sudoku::GridMaster']]],
-  ['moyen_5fmax_5fdifficulte_9',['MOYEN_MAX_DIFFICULTE',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#ae4398fa3b7a1c0a9a5a37a87355dd326',1,'fr::softsf::sudokufx::utils::sudoku::GridMaster']]],
-  ['moyen_5fmin_5fcachees_10',['MOYEN_MIN_CACHEES',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a5a1fa080d46674f7802a342b95806f9f',1,'fr::softsf::sudokufx::utils::sudoku::GridMaster']]],
-  ['moyen_5fmin_5fdifficulte_11',['MOYEN_MIN_DIFFICULTE',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a673c369b3e46f9a4a4eadfe26f34cfcf',1,'fr::softsf::sudokufx::utils::sudoku::GridMaster']]],
-  ['moyen_5fmoy_5fcachees_12',['MOYEN_MOY_CACHEES',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a7cae40d700e2fd6e73a057f551ea1e88',1,'fr::softsf::sudokufx::utils::sudoku::GridMaster']]],
+  ['moyen_5fmin_5fcachees_9',['MOYEN_MIN_CACHEES',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a5a1fa080d46674f7802a342b95806f9f',1,'fr::softsf::sudokufx::utils::sudoku::GridMaster']]],
+  ['moyen_5fmoy_5fcachees_10',['MOYEN_MOY_CACHEES',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a7cae40d700e2fd6e73a057f551ea1e88',1,'fr::softsf::sudokufx::utils::sudoku::GridMaster']]],
+  ['moyenmaxdifficulte_11',['moyenMaxDifficulte',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a56d83d27b5a8258fe15750c7954e1506',1,'fr::softsf::sudokufx::utils::sudoku::GridMaster']]],
+  ['moyenmindifficulte_12',['moyenMinDifficulte',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a49fd751dad938eb29b33886633bbe7b7',1,'fr::softsf::sudokufx::utils::sudoku::GridMaster']]],
   ['mylogback_13',['myLogback',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback_u_test.html#a3df46ee7e817e9a4632d3d18e8c63d8f',1,'fr::softsf::sudokufx::utils::MyLogbackUTest']]]
 ];

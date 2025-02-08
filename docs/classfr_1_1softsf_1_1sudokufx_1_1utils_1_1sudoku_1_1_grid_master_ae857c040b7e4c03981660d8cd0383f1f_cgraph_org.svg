@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a5a6f84fdb0becec787f87d0f11ce1b07" target="_top" xlink:title="Génère une grille de Sudoku de niveau difficile.">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a5a6f84fdb0becec787f87d0f11ce1b07" target="_top" xlink:title="Génère une grille de Sudoku de niveau difficile (sinon une grille par défaut est retournée après une ...">
 <polygon fill="white" stroke="#666666" points="429.88,-156 232.38,-156 232.38,-112 429.88,-112 429.88,-156"/>
 <text text-anchor="start" x="240.38" y="-142.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.utils.sudoku.</text>
 <text text-anchor="start" x="240.38" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridMaster.getPossibilitesGrilleAresoudre</text>
@@ -41,7 +41,7 @@
 <!-- Node12 -->
 <g id="Node000012" class="node">
 <title>Node12</title>
-<g id="a_Node000012"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#ad37a10f9784efa27bdcaa13b7cb10de6" target="_top" xlink:title="Génère une grille de Sudoku de niveau facile.">
+<g id="a_Node000012"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#ad37a10f9784efa27bdcaa13b7cb10de6" target="_top" xlink:title="Génère une grille de Sudoku de niveau facile (sinon une grille par défaut est retournée après une sec...">
 <polygon fill="white" stroke="#666666" points="445.25,-94 217,-94 217,-62 445.25,-62 445.25,-94"/>
 <text text-anchor="start" x="225" y="-80.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.utils.sudoku.</text>
 <text text-anchor="middle" x="331.12" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridMaster.getPossibilitesGrilleAResoudreFacile</text>
@@ -60,7 +60,7 @@
 <!-- Node13 -->
 <g id="Node000013" class="node">
 <title>Node13</title>
-<g id="a_Node000013"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#ac77d16b1a583a51dc5770fc275222d8f" target="_top" xlink:title="Génère une grille de Sudoku de niveau moyen.">
+<g id="a_Node000013"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#ac77d16b1a583a51dc5770fc275222d8f" target="_top" xlink:title="Génère une grille de Sudoku de niveau moyen (sinon une grille par défaut est retournée après une seco...">
 <polygon fill="white" stroke="#666666" points="432.12,-44 230.12,-44 230.12,0 432.12,0 432.12,-44"/>
 <text text-anchor="start" x="238.12" y="-30.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.utils.sudoku.</text>
 <text text-anchor="start" x="238.12" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridMaster.getPossibilitesGrilleAResoudre</text>
