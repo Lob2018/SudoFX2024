@@ -1,5 +1,6 @@
 package fr.softsf.sudokufx.utils;
 
+import fr.softsf.sudokufx.annotations.ExcludedFromCoverageReportGenerated;
 import fr.softsf.sudokufx.interfaces.ISceneProvider;
 import javafx.scene.Scene;
 import lombok.Getter;
@@ -23,9 +24,9 @@ public final class DynamicFontSize implements ISceneProvider {
     /**
      * Constructs a DynamicFontSize instance and initializes Scene listeners.
      */
+    @ExcludedFromCoverageReportGenerated
     public DynamicFontSize() {
-        scene.widthProperty().addListener((obs, oldW, newW) -> updateFontSize());
-        scene.heightProperty().addListener((obs, oldH, newH) -> updateFontSize());
+        initialize();
     }
 
     /**
@@ -33,6 +34,16 @@ public final class DynamicFontSize implements ISceneProvider {
      */
     DynamicFontSize(Scene scene) {
         this.scene = scene;
+        initialize();
+    }
+
+    /**
+     * Initializes the dynamic font size functionality.
+     * This method sets up listeners for the scene's width and height properties.
+     * When the scene's dimensions change, the {@link #updateFontSize()} method is called
+     * to adjust the font size dynamically.
+     */
+    private void initialize() {
         scene.widthProperty().addListener((obs, oldW, newW) -> updateFontSize());
         scene.heightProperty().addListener((obs, oldH, newH) -> updateFontSize());
     }
