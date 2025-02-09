@@ -3,6 +3,7 @@ package fr.softsf.sudokufx.utils.database.configuration;
 import com.zaxxer.hikari.HikariDataSource;
 import fr.softsf.sudokufx.annotations.ExcludedFromCoverageReportGenerated;
 import fr.softsf.sudokufx.interfaces.IKeystore;
+import fr.softsf.sudokufx.interfaces.IOsFolderFactory;
 import org.springframework.context.annotation.*;
 
 import static fr.softsf.sudokufx.utils.MyEnums.Paths.DATABASE_NAME;
@@ -18,9 +19,9 @@ public class DataSourceTest extends DataSource {
     @Bean
     @Override
     @DependsOn({"logbackInitialization"})
-    HikariDataSource hikariDataSource(final IKeystore iKeystore) {
+    HikariDataSource hikariDataSource(final IKeystore iKeystore, final IOsFolderFactory iOsFolderFactory) {
         this.setJdbcUrl("jdbc:hsqldb:mem:" + DATABASE_NAME.getPath() + "Test;DB_CLOSE_DELAY=-1;shutdown=true");
         this.setPoolName("SudokuFXTestHikariConnection");
-        return super.hikariDataSource(iKeystore);
+        return super.hikariDataSource(iKeystore, iOsFolderFactory);
     }
 }

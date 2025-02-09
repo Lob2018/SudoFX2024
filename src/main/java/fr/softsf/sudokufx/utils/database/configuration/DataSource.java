@@ -4,6 +4,7 @@ import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 import fr.softsf.sudokufx.annotations.ExcludedFromCoverageReportGenerated;
 import fr.softsf.sudokufx.interfaces.IKeystore;
+import fr.softsf.sudokufx.interfaces.IOsFolderFactory;
 import fr.softsf.sudokufx.utils.MyLogback;
 import lombok.Setter;
 import org.flywaydb.core.Flyway;
@@ -42,12 +43,13 @@ public abstract class DataSource {
      * depends on logbackInitialization to ensure Logback is properly set up.
      * This method sets up a connection pool for HSQLDB database.
      *
-     * @param iKeystore Application keystore for secure storage
+     * @param iKeystore        Application keystore for secure storage
+     * @param iOsFolderFactory Factory for creating OS-specific folder paths.
      * @return Configured DataSource
      */
     @Bean
     @DependsOn({"logbackInitialization"})
-    HikariDataSource hikariDataSource(final IKeystore iKeystore) {
+    HikariDataSource hikariDataSource(final IKeystore iKeystore, IOsFolderFactory iOsFolderFactory) {
         iKeystore.setupApplicationKeystore();
         final HikariConfig config = new HikariConfig();
         config.setPoolName(poolName);
