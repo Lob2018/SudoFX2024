@@ -31,9 +31,8 @@ class MyLogbackUTest {
     private ListAppender<ILoggingEvent> logWatcher;
 
     public MyLogbackUTest() {
-        OsFolderFactoryManager osFolderFactoryManager = new OsFolderFactoryManager();
-        iCurrentIOsFolderFactory = osFolderFactoryManager.iOsFolderFactory();
-        this.myLogback = new MyLogback(osFolderFactoryManager);
+        iCurrentIOsFolderFactory = new OsFolderFactoryManager().iOsFolderFactory();
+        this.myLogback = new MyLogback(iCurrentIOsFolderFactory);
     }
 
     @BeforeEach

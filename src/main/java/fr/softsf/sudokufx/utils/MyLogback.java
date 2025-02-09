@@ -4,7 +4,7 @@ import ch.qos.logback.classic.LoggerContext;
 import ch.qos.logback.classic.joran.JoranConfigurator;
 import ch.qos.logback.core.joran.spi.JoranException;
 import ch.qos.logback.core.util.StatusPrinter2;
-import fr.softsf.sudokufx.utils.os.OsFolderFactoryManager;
+import fr.softsf.sudokufx.interfaces.IOsFolderFactory;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 import org.slf4j.LoggerFactory;
@@ -32,10 +32,10 @@ public class MyLogback {
     /**
      * Constructor that initializes the logging configuration.
      *
-     * @param osFolderFactory Factory for creating OS-specific folders
+     * @param iOsFolderFactory Factory for creating OS-specific folder paths.
      */
-    public MyLogback(OsFolderFactoryManager osFolderFactory) {
-        logsFolderPath = osFolderFactory.iOsFolderFactory().getOsLogsFolderPath();
+    public MyLogback(IOsFolderFactory iOsFolderFactory) {
+        logsFolderPath = iOsFolderFactory.getOsLogsFolderPath();
         System.setProperty("logs", logsFolderPath + "/" + LOGS_FILE_NAME.getPath());
         LoggerContext context = configureLogback();
         printLogStatus(context);
