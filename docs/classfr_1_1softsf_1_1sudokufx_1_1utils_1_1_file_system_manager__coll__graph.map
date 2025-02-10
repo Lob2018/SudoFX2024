@@ -1,5 +1,0 @@
-<map id="fr.softsf.sudokufx.utils.FileSystemManager" name="fr.softsf.sudokufx.utils.FileSystemManager">
-<area shape="rect" id="Node000001" title="Manages file system operations, particularly folder deletion." alt="" coords="35,155,248,309"/>
-<area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_file_system.html" title="Interface defining a method to recursively deletes a folder and its contents." alt="" coords="5,5,278,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,122,144,155,139,155,139,122"/>
-</map>

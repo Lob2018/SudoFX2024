@@ -1,7 +1,0 @@
-<map id="fr.softsf.sudokufx.unit.utils.I18nUTest.testChange_language_to_english_with_value" name="fr.softsf.sudokufx.unit.utils.I18nUTest.testChange_language_to_english_with_value">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,217,89"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_i18n.html#a7095fa285a498c3f20bf33488a69d22c" title="Retrieves the localized string value for a given key." alt="" coords="265,5,420,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="217,42,249,37,249,43,218,47"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_i18n.html#a7b2d44cad34ffdf0fb3a297af88ee76e" title="Sets the current language for the application." alt="" coords="265,72,420,115"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="218,73,249,77,249,83,217,78"/>
-</map>

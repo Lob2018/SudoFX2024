@@ -1,7 +1,0 @@
-<map id="fr.softsf.sudokufx.utils.DynamicFontSize" name="fr.softsf.sudokufx.utils.DynamicFontSize">
-<area shape="rect" id="Node000001" title="Manages dynamic font sizing based on the dimensions of a JavaFX Scene." alt="" coords="78,155,247,320"/>
-<area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_scene_provider.html" title="Interface ISceneProvider." alt="" coords="5,5,183,91"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,103,135,154,130,156,112,105"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="208,13,255,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="222,83,201,140,196,138,217,81"/>
-</map>
