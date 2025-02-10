@@ -6,7 +6,7 @@ import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 
 public record GameLevelDto(
-        Long levelid,
+        Byte levelid,
         @NotNull
         @Min(1)
         @Max(3)

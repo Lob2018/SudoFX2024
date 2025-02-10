@@ -16,7 +16,7 @@ import lombok.*;
 public class GameLevel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long levelid;
+    private Byte levelid;
 
     @NotNull
     @Setter

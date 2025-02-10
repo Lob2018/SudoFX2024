@@ -8,7 +8,7 @@ updatedat TIMESTAMP NOT NULL
 );
 -- Création de la table "menu"
 CREATE TABLE menu (
-menuid BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+menuid TINYINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
 mode TINYINT NOT NULL
 );
 -- Création de la table "playerlanguage"
@@ -25,7 +25,7 @@ isimage BOOLEAN DEFAULT FALSE NOT NULL,
 );
 -- Création de la table "gamelevel"
 CREATE TABLE gamelevel (
-levelid BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+levelid TINYINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
 level TINYINT NOT NULL
 );
 -- Création de la table "grid"
@@ -40,7 +40,7 @@ CREATE TABLE player (
 playerid BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
 playerlanguageplayerlanguageid BIGINT FOREIGN KEY REFERENCES playerlanguage(playerlanguageid),
 backgroundbackgroundid BIGINT FOREIGN KEY REFERENCES background(backgroundid),
-menumenuid BIGINT FOREIGN KEY REFERENCES menu(menuid),
+menumenuid TINYINT FOREIGN KEY REFERENCES menu(menuid),
 name VARCHAR(256) NOT NULL UNIQUE,
 isselected BOOLEAN DEFAULT FALSE NOT NULL,
 createdat TIMESTAMP NOT NULL,
@@ -52,7 +52,7 @@ CREATE TABLE game (
 gameid BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
 gridgridid BIGINT FOREIGN KEY REFERENCES grid(gridid),
 playerplayerid BIGINT FOREIGN KEY REFERENCES player(playerid),
-levellevelid BIGINT FOREIGN KEY REFERENCES gamelevel(levelid),
+levellevelid TINYINT FOREIGN KEY REFERENCES gamelevel(levelid),
 isselected BOOLEAN DEFAULT FALSE,
 createdat TIMESTAMP NOT NULL,
 updatedat TIMESTAMP NOT NULL

@@ -16,7 +16,7 @@ public class Menu {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long menuid;
+    private Byte menuid;
 
     @NotNull
     @Setter
