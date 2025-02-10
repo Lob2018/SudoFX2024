@@ -1,6 +1,8 @@
 package fr.softsf.sudokufx.model;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
 
@@ -18,5 +20,7 @@ public class Menu {
 
     @NotNull
     @Setter
-    private int mode;
+    @Min(1)
+    @Max(3)
+    private Byte mode;
 }

@@ -9,7 +9,7 @@ updatedat TIMESTAMP NOT NULL
 -- Création de la table "menu"
 CREATE TABLE menu (
 menuid BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-mode INTEGER NOT NULL
+mode TINYINT NOT NULL
 );
 -- Création de la table "playerlanguage"
 CREATE TABLE playerlanguage (
@@ -26,7 +26,7 @@ isimage BOOLEAN DEFAULT FALSE NOT NULL,
 -- Création de la table "gamelevel"
 CREATE TABLE gamelevel (
 levelid BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-levelname VARCHAR(64) NOT NULL
+level TINYINT NOT NULL
 );
 -- Création de la table "grid"
 CREATE TABLE grid (
