@@ -33,6 +33,6 @@ public class Grid {
     @Setter
     @Min(0)
     @Max(100)
-    private Byte difficulty;
+    private Byte possibilities;
 
 }

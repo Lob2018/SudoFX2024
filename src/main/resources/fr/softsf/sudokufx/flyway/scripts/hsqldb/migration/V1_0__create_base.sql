@@ -33,7 +33,7 @@ CREATE TABLE grid (
 gridid BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
 defaultgridvalue VARCHAR(81) NOT NULL,
 gridvalue VARCHAR(810) NOT NULL,
-difficulty TINYINT
+possibilities TINYINT
 );
 -- Création de la table "player"
 CREATE TABLE player (

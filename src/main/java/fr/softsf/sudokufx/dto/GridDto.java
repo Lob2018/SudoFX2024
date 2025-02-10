@@ -16,6 +16,6 @@ public record GridDto(
         @NotNull
         @Min(0)
         @Max(100)
-        Byte difficulty
+        Byte possibilities
 ) {
 }
