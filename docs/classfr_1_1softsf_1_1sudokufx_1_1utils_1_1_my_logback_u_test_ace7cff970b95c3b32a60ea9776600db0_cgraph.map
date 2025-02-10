@@ -1,0 +1,11 @@
+<map id="fr.softsf.sudokufx.utils.MyLogbackUTest.testLogEntryMessageWithInitSpringContextExitForTests" name="fr.softsf.sudokufx.utils.MyLogbackUTest.testLogEntryMessageWithInitSpringContextExitForTests">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,59,260,117"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties.html#a7d07880db5617906582d43a95925ba8d" title="Determines if the Spring context should exit on refresh." alt="" coords="578,29,800,88"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="260,58,307,52,370,48,419,48,530,52,562,53,562,58,530,57,419,53,370,53,308,57,261,64"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback.html#a9d9a6da723690c5a62719faf90766adb" title="Prints the application&#39;s ASCII logo to the log as an entry message." alt="" coords="308,67,530,109"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="260,85,292,85,292,91,260,91"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties.html#aba4d7515b055f0770b7815b0b0501225" title="Initialize the Spring context exit behavior to &quot;_&quot; for testing purposes." alt="" coords="313,133,524,192"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="248,115,299,129,298,134,247,121"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="636,29,638,19,647,10,664,5,689,3,718,5,735,13,733,17,716,11,689,8,665,10,650,15,642,21,642,29"/>
+<area shape="poly" id="edge4_Node000003_Node000002" title=" " alt="" coords="530,73,562,70,563,75,531,79"/>
+</map>

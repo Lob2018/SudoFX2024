@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.SudoMain.initializeFxmlService" name="fr.softsf.sudokufx.SudoMain.initializeFxmlService">
+<area shape="rect" id="Node000001" title="Initialize the FxmlService if needed and set his DynamicFontSize." alt="" coords="5,5,242,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_fxml_service.html#a2da0594259f549aaea4855a5dddd3fe0" title="Initializes dynamic font sizing for the scene." alt="" coords="290,5,510,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="242,24,274,24,274,29,242,29"/>
+</map>

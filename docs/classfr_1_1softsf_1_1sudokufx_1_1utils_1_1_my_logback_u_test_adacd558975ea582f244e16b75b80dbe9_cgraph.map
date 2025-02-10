@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.utils.MyLogbackUTest.testConfigureLogbackWithInvalidPath" name="fr.softsf.sudokufx.utils.MyLogbackUTest.testConfigureLogbackWithInvalidPath">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,260,64"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback.html#a8ac665ba2d4ef6fab4ab138e0b5eae7a" title="Sets an invalid logback configuration path for testing purposes." alt="" coords="308,13,547,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="260,32,292,32,292,37,260,37"/>
+</map>

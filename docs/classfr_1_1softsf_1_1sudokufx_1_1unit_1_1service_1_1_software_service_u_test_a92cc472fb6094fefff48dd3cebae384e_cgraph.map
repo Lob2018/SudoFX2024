@@ -1,0 +1,8 @@
+<map id="fr.softsf.sudokufx.unit.service.SoftwareServiceUTest.testGetSoftware_NoSoftwareFound" name="fr.softsf.sudokufx.unit.service.SoftwareServiceUTest.testGetSoftware_NoSoftwareFound">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,257,64"/>
+<area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_software_repository.html#ae83142c4226c94b3b24f050848ae74c4" title=" " alt="" coords="544,13,782,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="257,29,305,28,496,28,529,29,529,34,496,33,305,33,257,34"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_software_service.html#a19dc59ca2cea75458d2d0a92ada59b34" title=" " alt="" coords="305,43,496,85"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="257,46,289,49,289,55,257,51"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="496,51,528,47,529,52,497,56"/>
+</map>
