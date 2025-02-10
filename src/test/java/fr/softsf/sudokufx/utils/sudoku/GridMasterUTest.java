@@ -22,8 +22,8 @@ class GridMasterUTest {
 
     @ParameterizedTest
     @ValueSource(ints = {-1, -100, 300})
-    void createUnknownGrids_success(int difficulty) {
-        int[][] grids = iGridMaster.creerLesGrilles(difficulty);
+    void createUnknownGrids_success(int level) {
+        int[][] grids = iGridMaster.creerLesGrilles(level);
         assertNotNull(grids);
         assertNotNull(grids[0]);
         assertNotNull(grids[1]);
@@ -42,14 +42,14 @@ class GridMasterUTest {
             if (value == 0) countForToBeResolvedGrid++;
         }
         assertNotEquals(0, countForToBeResolvedGrid);
-        // The difficulty
-        assertTrue(grids[2][0] >= 0 && grids[2][0] <= 33, "The unknown difficulty is set as easy and must be between 0 and 33");
+        // The possibilities
+        assertTrue(grids[2][0] >= 0 && grids[2][0] <= 33, "The unknown level is set as easy and must be between 0 and 33 percent of possibilities");
     }
 
     @ParameterizedTest
     @ValueSource(ints = {1, 2, 3})
-    void createGrids_success(int difficulty) {
-        int[][] grids = iGridMaster.creerLesGrilles(difficulty);
+    void createGrids_success(int level) {
+        int[][] grids = iGridMaster.creerLesGrilles(level);
         assertNotNull(grids);
         assertNotNull(grids[0]);
         assertNotNull(grids[1]);
@@ -68,9 +68,9 @@ class GridMasterUTest {
             if (value == 0) countForToBeResolvedGrid++;
         }
         assertNotEquals(0, countForToBeResolvedGrid);
-        // The difficulty
+        // The possibilities
         assertTrue(grids[2][0] >= 0 && grids[2][0] <= 100,
-                "The difficulty must be between 0 and 100 for level : " + difficulty);
+                "The possibilities must be between 0 and 100 for level : " + level);
     }
 
     @Test
@@ -119,30 +119,30 @@ class GridMasterUTest {
     }
 
     /**
-     * Generate a grid anyway after 1s if the level cannot be reached
+     * Generate a grid anyway after 1s if the possibilities per level cannot be reached
      *
-     * @param difficulty The difficulty that cannot be reached
+     * @param level The level that cannot reach his possibilities
      * @implNote This test duration is minimum 3 seconds (one per level)
      */
     @ParameterizedTest
     @ValueSource(ints = {1, 2, 3})
-    void createGridLevelCannotBeReached_success(int difficulty) {
-        switch (difficulty) {
+    void createGridLevelImpossiblePossibilities_success(int level) {
+        switch (level) {
             case 2:
-                gridMaster.setDifficulteMoyenneInaccessibleForTests();
-                assertEquals(50000, gridMaster.getMoyenMinDifficulte());
-                assertEquals(-1, gridMaster.getMoyenMaxDifficulte());
+                gridMaster.setAverageImpossiblePossibilitiesForTests();
+                assertEquals(50000, gridMaster.getMoyenMinPossibilites());
+                assertEquals(-1, gridMaster.getMoyenMaxPossibilites());
                 break;
             case 3:
-                gridMaster.setDifficulteDifficileInaccessibleForTests();
-                assertEquals(50000, gridMaster.getMoyenMaxDifficulte());
+                gridMaster.setDifficultImpossiblePossibilitiesForTests();
+                assertEquals(50000, gridMaster.getMoyenMaxPossibilites());
                 break;
             default:
-                gridMaster.setDifficulteFacileInaccessibleForTests();
-                assertEquals(-1, gridMaster.getMoyenMinDifficulte());
+                gridMaster.setEasyImpossiblePossibilitiesForTests();
+                assertEquals(-1, gridMaster.getMoyenMinPossibilites());
                 break;
         }
-        int[][] grids = gridMaster.creerLesGrilles(difficulty);
+        int[][] grids = gridMaster.creerLesGrilles(level);
         assertNotNull(grids);
         assertNotNull(grids[0]);
         assertNotNull(grids[1]);
@@ -161,9 +161,9 @@ class GridMasterUTest {
             if (value == 0) countForToBeResolvedGrid++;
         }
         assertNotEquals(0, countForToBeResolvedGrid);
-        // The difficulty
+        // The possibilities
         assertTrue(grids[2][0] >= 0 && grids[2][0] <= 100,
-                "The difficulty must be between 0 and 100 for level : " + difficulty);
+                "The possibilities must be between 0 and 100 for level : " + level);
     }
 
 }

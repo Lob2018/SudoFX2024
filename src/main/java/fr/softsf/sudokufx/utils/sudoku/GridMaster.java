@@ -30,11 +30,11 @@ public class GridMaster implements IGridMaster {
     private static final int DIFFICILE_MAX_CACHEES = 59;
     private static final int DIFFICILE_MOY_CACHEES = (MOYEN_MAX_CACHEES + DIFFICILE_MAX_CACHEES) / 2;
     private final SecureRandomGenerator secureRandomGenerator;
-    // Difficulté (théorique 0 à 41391, pratique 4800 à 40000) de la grille en fonction du niveau
+    // Possibilités (théorique 0 à 41391, pratique 4800 à 40000) de la grille en fonction du niveau
     @Getter
-    private int moyenMinDifficulte = 16533;
+    private int moyenMinPossibilites = 16533;
     @Getter
-    private int moyenMaxDifficulte = 28266;
+    private int moyenMaxPossibilites = 28266;
     private LocalDateTime derniereDemande = LocalDateTime.now();
 
     /**
@@ -186,8 +186,8 @@ public class GridMaster implements IGridMaster {
      * @param grilleAResoudre La grille à résoudre, avec ses cases masquées à 0.
      *                        IMPORTANT : Ce tableau est modifié directement par la fonction.
      * @return La somme du nombre de possibilités pour chaque case non résolue dans la grille à résoudre.
-     * @implNote La méthode utilise une approche itérative pour masquer des cases et évaluer la difficulté
-     * de la grille résultante jusqu'à ce qu'elle corresponde au niveau souhaité. Elle met
+     * @implNote La méthode utilise une approche itérative pour masquer des cases et évaluer les possibilités
+     * de la grille résultante jusqu'à ce qu'elle corresponde au niveau de difficulté souhaité. Elle met
      * également à jour l'horodatage interne derniereDemande.
      */
     private int genererLaGrilleAResoudre(final int niveau, final int[] grilleResolue, final int[] grilleAResoudre) {
@@ -212,7 +212,7 @@ public class GridMaster implements IGridMaster {
         do {
             sommeDesPossibilites = getPossibilitesGrilleWhileNok(grilleResolue, grilleAResoudre, nombreDeCasesACacher);
             if (dureeEnMs() > 1000) break;
-        } while (sommeDesPossibilites > moyenMinDifficulte);
+        } while (sommeDesPossibilites > moyenMinPossibilites);
         derniereDemande = LocalDateTime.now();
         return sommeDesPossibilites;
     }
@@ -231,7 +231,7 @@ public class GridMaster implements IGridMaster {
         do {
             sommeDesPossibilites = getPossibilitesGrilleWhileNok(grilleResolue, grilleAResoudre, nombreDeCasesACacher);
             if (dureeEnMs() > 1000) break;
-        } while (sommeDesPossibilites < moyenMinDifficulte || sommeDesPossibilites > moyenMaxDifficulte);
+        } while (sommeDesPossibilites < moyenMinPossibilites || sommeDesPossibilites > moyenMaxPossibilites);
         derniereDemande = LocalDateTime.now();
         return sommeDesPossibilites;
     }
@@ -250,7 +250,7 @@ public class GridMaster implements IGridMaster {
         do {
             sommeDesPossibilites = getPossibilitesGrilleWhileNok(grilleResolue, grilleAResoudre, nombreDeCasesACacher);
             if (dureeEnMs() > 1000) break;
-        } while (sommeDesPossibilites < moyenMaxDifficulte);
+        } while (sommeDesPossibilites < moyenMaxPossibilites);
         derniereDemande = LocalDateTime.now();
         return sommeDesPossibilites;
     }
@@ -386,28 +386,28 @@ public class GridMaster implements IGridMaster {
     }
 
     /**
-     * Définit une difficulté facile inaccessible, pour générer une grille par défaut après une seconde.
+     * Définit une possibilité facile inaccessible, pour générer une grille par défaut après une seconde.
      * Cette méthode est uniquement utilisée pour les tests.
      */
-    void setDifficulteFacileInaccessibleForTests() {
-        this.moyenMinDifficulte = -1;
+    void setEasyImpossiblePossibilitiesForTests() {
+        this.moyenMinPossibilites = -1;
     }
 
     /**
-     * Définit une difficulté moyenne inaccessible, pour générer une grille par défaut après une seconde.
+     * Définit une possibilité moyenne inaccessible, pour générer une grille par défaut après une seconde.
      * Cette méthode est uniquement utilisée pour les tests.
      */
-    void setDifficulteMoyenneInaccessibleForTests() {
-        this.moyenMinDifficulte = 50000;
-        this.moyenMaxDifficulte = -1;
+    void setAverageImpossiblePossibilitiesForTests() {
+        this.moyenMinPossibilites = 50000;
+        this.moyenMaxPossibilites = -1;
     }
 
     /**
-     * Définit une difficulté difficile inaccessible, pour générer une grille par défaut après une seconde.
+     * Définit une possibilité difficile inaccessible, pour générer une grille par défaut après une seconde.
      * Cette méthode est uniquement utilisée pour les tests.
      */
-    void setDifficulteDifficileInaccessibleForTests() {
-        this.moyenMaxDifficulte = 50000;
+    void setDifficultImpossiblePossibilitiesForTests() {
+        this.moyenMaxPossibilites = 50000;
     }
 }
 
