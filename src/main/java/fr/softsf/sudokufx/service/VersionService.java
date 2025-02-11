@@ -29,6 +29,7 @@ public class VersionService {
     private static final String GITHUB_URL = "https://github.com/";
     private static final String GITHUB_API_URL = "https://api.github.com/";
     private static final String GITHUB_API_URL_REPO_TAGS = GITHUB_API_URL + "repos/" + OWNER + "/" + REPO + "/tags";
+    private static final Pattern VERSION_PATTERN = Pattern.compile("(\\d++\\.\\d++\\.\\d++)");
     private final HttpClient httpClient;
     private final String currentVersion = getFormattedVersionNumberOnly(JVMApplicationProperties.getAppVersion());
     private String lastVersion = currentVersion;
@@ -93,8 +94,7 @@ public class VersionService {
      * @return the extracted version number SemVer-like format (only numeric MAJOR.MINOR.PATCH).
      */
     private String getFormattedVersionNumberOnly(final String version) {
-        Pattern pattern = Pattern.compile("(\\d+\\.\\d+\\.\\d+)");
-        Matcher matcher = pattern.matcher(version);
+        Matcher matcher = VERSION_PATTERN.matcher(version);
         if (matcher.find()) {
             return matcher.group(1);
         }
