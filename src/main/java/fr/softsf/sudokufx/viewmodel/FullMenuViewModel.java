@@ -3,6 +3,7 @@ package fr.softsf.sudokufx.viewmodel;
 import fr.softsf.sudokufx.dto.SoftwareDto;
 import fr.softsf.sudokufx.interfaces.IGridMaster;
 import fr.softsf.sudokufx.service.SoftwareService;
+import fr.softsf.sudokufx.service.VersionService;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,13 +20,15 @@ import java.util.Optional;
 public class FullMenuViewModel {
     private final SoftwareService softwareService;
     private final IGridMaster iGridMaster;
+    private final VersionService versionService;
 
     private StringProperty welcome;
 
     @Autowired
-    public FullMenuViewModel(SoftwareService softwareService, IGridMaster iGridMaster) {
+    public FullMenuViewModel(SoftwareService softwareService, IGridMaster iGridMaster, VersionService versionService) {
         this.softwareService = softwareService;
         this.iGridMaster = iGridMaster;
+        this.versionService=versionService;
     }
 
     public StringProperty welcomeProperty() {
@@ -83,6 +86,7 @@ public class FullMenuViewModel {
                     "\nMise à jour : " + updatedSoftwareOptional.get().updatedat() +
                     "\n" + formattedGrilleResolue +
                     "\n" + formattedGrilleAResoudre +
+                    "\n" + versionService.isLatestGitHubPublishedPackageVersion()+
                     "\n\n Niveau "+niveau+"/3 avec " + grilles[2][0] + "% de difficuté");
         } else {
             System.out.println("Erreur lors de la mise à jour du logiciel.");
