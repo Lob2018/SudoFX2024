@@ -14,6 +14,8 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.util.List;
 import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * Service for managing version information from a GitHub repository.
@@ -75,6 +77,9 @@ public class VersionService {
             }
             result = this.compareVersions(currentVersion, lastVersion) >= 0;
             log.info("▓▓ The result retrieving the last GitHub published package version is : currentVersion={}, lastVersion={}, result={})", currentVersion, lastVersion, result);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+            log.error("██ Interrupted while retrieving the last GitHub published package version then re-interrupt this method (currentVersion:{}, lastVersion:{}, result:{}) : {}", currentVersion, lastVersion, result, e.getMessage(), e);
         } catch (Exception e) {
             log.error("██ Exception retrieving the last GitHub published package version (currentVersion:{}, lastVersion:{}, result:{}) : {}", currentVersion, lastVersion, result, e.getMessage(), e);
         }
@@ -85,10 +90,15 @@ public class VersionService {
      * Extracts the version number from a string.
      *
      * @param version the version string.
-     * @return the extracted version number.
+     * @return the extracted version number SemVer-like format (only numeric MAJOR.MINOR.PATCH).
      */
     private String getFormattedVersionNumberOnly(final String version) {
-        return version.replaceAll(".*?(\\d+\\.\\d+\\.\\d+).*", "$1");
+        Pattern pattern = Pattern.compile("(\\d+\\.\\d+\\.\\d+)");
+        Matcher matcher = pattern.matcher(version);
+        if (matcher.find()) {
+            return matcher.group(1);
+        }
+        return "";
     }
 
     /**
