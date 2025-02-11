@@ -2,7 +2,7 @@ package fr.softsf.sudokufx.view;
 
 import fr.softsf.sudokufx.interfaces.ISplashScreenView;
 import fr.softsf.sudokufx.utils.I18n;
-import fr.softsf.sudokufx.utils.JVMApplicationProperties;
+import fr.softsf.sudokufx.configuration.JVMApplicationProperties;
 import javafx.animation.Animation;
 import javafx.animation.Interpolator;
 import javafx.animation.RotateTransition;
