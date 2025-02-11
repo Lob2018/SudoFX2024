@@ -3,6 +3,7 @@ package fr.softsf.sudokufx.service;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import fr.softsf.sudokufx.configuration.JVMApplicationProperties;
+import fr.softsf.sudokufx.utils.MyRegex;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,8 +15,6 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.util.List;
 import java.util.Map;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 /**
  * Service for managing version information from a GitHub repository.
@@ -29,9 +28,8 @@ public class VersionService {
     private static final String GITHUB_URL = "https://github.com/";
     private static final String GITHUB_API_URL = "https://api.github.com/";
     private static final String GITHUB_API_URL_REPO_TAGS = GITHUB_API_URL + "repos/" + OWNER + "/" + REPO + "/tags";
-    private static final Pattern VERSION_PATTERN = Pattern.compile("(\\d++\\.\\d++\\.\\d++)");
     private final HttpClient httpClient;
-    private final String currentVersion = getFormattedVersionNumberOnly(JVMApplicationProperties.getAppVersion());
+    private final String currentVersion = JVMApplicationProperties.getAppVersion().isEmpty() ? "" : JVMApplicationProperties.getAppVersion().substring(1);
     private String lastVersion = currentVersion;
 
     /**
@@ -74,7 +72,8 @@ public class VersionService {
             List<Map<String, Object>> list = objectMapper.readValue(response.body(), new TypeReference<>() {
             });
             if (!list.isEmpty()) {
-                lastVersion = getFormattedVersionNumberOnly((String) list.getFirst().get("name"));
+                lastVersion = ((String) list.getFirst().get("name")).substring(1);
+                if (!MyRegex.isValidatedByRegex(lastVersion, MyRegex.getVERSION())) return true;
             }
             result = this.compareVersions(currentVersion, lastVersion) >= 0;
             log.info("▓▓ The result retrieving the last GitHub published package version is : currentVersion={}, lastVersion={}, result={})", currentVersion, lastVersion, result);
@@ -85,20 +84,6 @@ public class VersionService {
             log.error("██ Exception retrieving the last GitHub published package version (currentVersion:{}, lastVersion:{}, result:{}) : {}", currentVersion, lastVersion, result, e.getMessage(), e);
         }
         return result;
-    }
-
-    /**
-     * Extracts the version number from a string.
-     *
-     * @param version the version string.
-     * @return the extracted version number SemVer-like format (only numeric MAJOR.MINOR.PATCH).
-     */
-    private String getFormattedVersionNumberOnly(final String version) {
-        Matcher matcher = VERSION_PATTERN.matcher(version);
-        if (matcher.find()) {
-            return matcher.group(1);
-        }
-        return "";
     }
 
     /**
