@@ -1,0 +1,5 @@
+var classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1_exception_tools_u_test =
+[
+    [ "getSQLInvalidAuthorizationSpecException_null", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1_exception_tools_u_test.html#a27ad3f8aa218a6852eff7b200dec511e", null ],
+    [ "getSQLInvalidAuthorizationSpecException_success", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1_exception_tools_u_test.html#afb0007b59774af0d218cebe9a9bfe490", null ]
+];

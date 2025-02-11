@@ -1,0 +1,9 @@
+<map id="fr.softsf.sudokufx.service.testIsLatestGitHubPublishedPackageVersion_onlineOldestSameAndNewerVersion" name="fr.softsf.sudokufx.service.testIsLatestGitHubPublishedPackageVersion_onlineOldestSameAndNewerVersion">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,35,266,93"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html#a5cc42147532c0bb27ac6cc0da4a27ba0" title="Checks if the current version is the latest published package version on GitHub." alt="" coords="314,35,570,93"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="266,61,298,61,298,67,266,67"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html#af166c049683464c03d118142b986ab71" title="Compares two version strings." alt="" coords="628,5,840,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="570,45,612,40,613,45,571,50"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html#a8922905373c21cbcfec9775ece45f9e5" title="Extracts the version number from a string." alt="" coords="618,72,850,131"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="571,78,603,82,602,87,570,83"/>
+</map>

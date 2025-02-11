@@ -1,5 +1,5 @@
-<map id="src/main/java/fr/softsf/sudokufx/utils/os/LinuxFolderFactory.java" name="src/main/java/fr/softsf/sudokufx/utils/os/LinuxFolderFactory.java">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,201,64"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="9,112,197,155"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="106,64,106,97,100,97,100,64"/>
+<map id="src/main/java/fr/softsf/sudokufx/configuration/os/LinuxFolderFactory.java" name="src/main/java/fr/softsf/sudokufx/configuration/os/LinuxFolderFactory.java">
+<area shape="rect" id="Node000001" title=" " alt="" coords="9,5,190,64"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,112,194,155"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="102,64,102,97,97,97,97,64"/>
 </map>

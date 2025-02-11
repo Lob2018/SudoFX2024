@@ -1,10 +1,9 @@
 var searchData=
 [
-  ['removegame_0',['removeGame',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a864d030d284389b6354c6f22be3d3d2a',1,'fr::softsf::sudokufx::model::Player']]],
-  ['removetoast_1',['removeToast',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box.html#a1d9be1b170f4ce116ef5d1399aad1c0d',1,'fr::softsf::sudokufx::view::components::toaster::ToasterVBox']]],
-  ['remplirlagrille_2',['remplirLaGrille',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#ad07acfe4c763044df860c349c6c565ef',1,'fr::softsf::sudokufx::utils::sudoku::GridMaster']]],
-  ['resetbuttonclick_3',['resetButtonClick',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#aeaffcff3e73ba2d59ecaf2df0dc1573f',1,'fr::softsf::sudokufx::view::CrashScreenView']]],
-  ['resolvegrid_5ffailed_4',['resolveGrid_failed',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master_u_test.html#ac4531f3f409112144e504bbab4498573',1,'fr::softsf::sudokufx::utils::sudoku::GridMasterUTest']]],
-  ['resolvegrid_5fsuccess_5',['resolveGrid_success',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master_u_test.html#ab46118d07379fad86339b9088f449b98',1,'fr::softsf::sudokufx::utils::sudoku::GridMasterUTest']]],
-  ['resoudrelagrille_6',['resoudreLaGrille',['../interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_grid_master.html#afb84090e48c5b78c25d6b2d0c034038c',1,'fr.softsf.sudokufx.interfaces.IGridMaster.resoudreLaGrille()'],['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a8eba2a9a790e47d419e87446a003818f',1,'fr.softsf.sudokufx.utils.sudoku.GridMaster.resoudreLaGrille()']]]
+  ['paths_0',['Paths',['../enumfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_enums_1_1_paths.html#a1d5340262dd5a263b6340a297f0a3c42',1,'fr::softsf::sudokufx::utils::MyEnums::Paths']]],
+  ['playerdto_1',['PlayerDto',['../namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a1ec66747e8dc472d375db5495929d95e',1,'fr::softsf::sudokufx::dto']]],
+  ['playerlanguagedto_2',['PlayerLanguageDto',['../namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a57e3465d00d6e83a9d0fd8c03223868d',1,'fr::softsf::sudokufx::dto']]],
+  ['printlogentrymessage_3',['printLogEntryMessage',['../classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_my_logback_config.html#abff1fed4c4636eee219c99cf8411b63e',1,'fr::softsf::sudokufx::configuration::MyLogbackConfig']]],
+  ['printlogstatus_4',['printLogStatus',['../classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_my_logback_config.html#a764a3472e63655858b4d301df2d22520',1,'fr::softsf::sudokufx::configuration::MyLogbackConfig']]],
+  ['provideinvalidoperatingsystems_5',['provideInvalidOperatingSystems',['../classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_os_folder_factory_manager_u_test.html#a1b8f58ae3c370c10f0d8a0bfe7ef8709',1,'fr::softsf::sudokufx::configuration::os::OsFolderFactoryManagerUTest']]]
 ];

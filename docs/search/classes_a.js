@@ -1,13 +1,6 @@
 var searchData=
 [
-  ['macosfolderfactory_0',['MacosFolderFactory',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_macos_folder_factory.html',1,'fr::softsf::sudokufx::utils::os']]],
-  ['menu_1',['Menu',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu.html',1,'fr::softsf::sudokufx::model']]],
-  ['menurepository_2',['MenuRepository',['../interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_menu_repository.html',1,'fr::softsf::sudokufx::repository']]],
-  ['myenums_3',['MyEnums',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_enums.html',1,'fr::softsf::sudokufx::utils']]],
-  ['myenumse2etest_4',['MyEnumsE2ETest',['../classfr_1_1softsf_1_1sudokufx_1_1e2e_1_1utils_1_1_my_enums_e2_e_test.html',1,'fr::softsf::sudokufx::e2e::utils']]],
-  ['myenumsutest_5',['MyEnumsUTest',['../classfr_1_1softsf_1_1sudokufx_1_1unit_1_1utils_1_1_my_enums_u_test.html',1,'fr::softsf::sudokufx::unit::utils']]],
-  ['mylogback_6',['MyLogback',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback.html',1,'fr::softsf::sudokufx::utils']]],
-  ['mylogbackutest_7',['MyLogbackUTest',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_logback_u_test.html',1,'fr::softsf::sudokufx::utils']]],
-  ['myregex_8',['MyRegex',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex.html',1,'fr::softsf::sudokufx::utils']]],
-  ['myregexutest_9',['MyRegexUTest',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex_u_test.html',1,'fr::softsf::sudokufx::utils']]]
+  ['launcher_0',['Launcher',['../classfr_1_1softsf_1_1sudokufx_1_1_launcher.html',1,'fr::softsf::sudokufx']]],
+  ['linuxfolderfactory_1',['LinuxFolderFactory',['../classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_linux_folder_factory.html',1,'fr::softsf::sudokufx::configuration::os']]],
+  ['logbacktxt_2',['LogBackTxt',['../enumfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_enums_1_1_log_back_txt.html',1,'fr::softsf::sudokufx::utils::MyEnums']]]
 ];

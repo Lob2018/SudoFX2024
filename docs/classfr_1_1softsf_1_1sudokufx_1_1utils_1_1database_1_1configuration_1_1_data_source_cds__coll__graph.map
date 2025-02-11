@@ -1,5 +1,0 @@
-<map id="fr.softsf.sudokufx.utils.database.configuration.DataSourceCds" name="fr.softsf.sudokufx.utils.database.configuration.DataSourceCds">
-<area shape="rect" id="Node000001" title="Overrides Abstract DataSource hikariDataSource for the CDS profile." alt="" coords="5,283,285,400"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1configuration_1_1_data_source.html" title="Abstract configuration class for setting up the application&#39;s data source." alt="" coords="5,5,285,235"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,249,148,283,142,283,142,249"/>
-</map>

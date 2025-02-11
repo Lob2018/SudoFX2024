@@ -30,7 +30,8 @@ var NAVTREE =
       [ "Package List", "namespaces.html", "namespaces_dup" ],
       [ "Package Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", null ],
-        [ "Functions", "namespacemembers_func.html", null ]
+        [ "Functions", "namespacemembers_func.html", null ],
+        [ "Variables", "namespacemembers_vars.html", null ]
       ] ]
     ] ],
     [ "Classes", "annotated.html", [
@@ -52,12 +53,12 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_application_keystore_8java.html",
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_software.html#a6748da9adbb19da31147350ec8003c7d",
-"classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties.html#af21e767828933fa183e5f98e01bd5ea7",
-"classfr_1_1softsf_1_1sudokufx_1_1utils_1_1os_1_1_macos_folder_factory.html#a8012fbddcce2430e62d86c339a7caec4",
-"classfr_1_1softsf_1_1sudokufx_1_1view_1_1_full_menu_view.html#a8786fa02ee9aec7ac7c324c83549b788",
-"enumfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_enums_1_1_paths.html#ad5d7f49d7ee9d196930c01d6970d5c0c",
-"namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a5cb837a4b352084f4dab3a4bc405d19c"
+"classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1database_1_1keystore_1_1_secret_key_adb6334248c7ac6276e5360489fcd40a.html",
+"classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1keystore_1_1_secret_key_encryption_service_a_e_s_g_c_m.html#a5b7197294145fbcc60e4921119020e80",
+"classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html#ada7b2b3bc786e330d262a4097c423768",
+"classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a3977f5d0b2fced21d632dcfde8f79c8e",
+"enumfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_enums_1_1_log_back_txt.html#a8cd0f4d88a60f75aeebfb779a29fa8a2",
+"interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_grid_mapper.html#a24899d95fdbe062b88ad92571724926a"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

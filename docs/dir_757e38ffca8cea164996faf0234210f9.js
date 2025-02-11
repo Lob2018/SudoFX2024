@@ -1,6 +1,7 @@
 var dir_757e38ffca8cea164996faf0234210f9 =
 [
     [ "annotations", "dir_b505b9574563ce0f663725cb1494ca32.html", "dir_b505b9574563ce0f663725cb1494ca32" ],
+    [ "configuration", "dir_5755d0788bd1e876ee75224cd106d57f.html", "dir_5755d0788bd1e876ee75224cd106d57f" ],
     [ "dto", "dir_312f66a432e0f9af30adae5d0c1eacbb.html", "dir_312f66a432e0f9af30adae5d0c1eacbb" ],
     [ "interfaces", "dir_07ad125c8f84d51d6217005f13950550.html", "dir_07ad125c8f84d51d6217005f13950550" ],
     [ "model", "dir_30ddad1f18ea0f0414c7deedb4a3f813.html", "dir_30ddad1f18ea0f0414c7deedb4a3f813" ],

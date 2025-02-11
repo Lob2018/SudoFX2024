@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['paths_0',['Paths',['../enumfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_enums_1_1_paths.html',1,'fr::softsf::sudokufx::utils::MyEnums']]],
-  ['player_1',['Player',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html',1,'fr::softsf::sudokufx::model']]],
-  ['playerlanguage_2',['PlayerLanguage',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html',1,'fr::softsf::sudokufx::model']]],
-  ['playerlanguagerepository_3',['PlayerLanguageRepository',['../interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_language_repository.html',1,'fr::softsf::sudokufx::repository']]],
-  ['playerrepository_4',['PlayerRepository',['../interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_repository.html',1,'fr::softsf::sudokufx::repository']]]
+  ['osfolderfactorymanager_0',['OsFolderFactoryManager',['../classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_os_folder_factory_manager.html',1,'fr::softsf::sudokufx::configuration::os']]],
+  ['osfolderfactorymanagerutest_1',['OsFolderFactoryManagerUTest',['../classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_os_folder_factory_manager_u_test.html',1,'fr::softsf::sudokufx::configuration::os']]],
+  ['osfolderinitializer_2',['OsFolderInitializer',['../classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_os_folder_initializer.html',1,'fr::softsf::sudokufx::configuration::os']]],
+  ['osfolderinitializerutest_3',['OsFolderInitializerUTest',['../classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_os_folder_initializer_u_test.html',1,'fr::softsf::sudokufx::configuration::os']]],
+  ['osinfoutest_4',['OsInfoUTest',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1os_1_1_os_info_u_test.html',1,'fr::softsf::sudokufx::common::unit::utils::os']]],
+  ['osname_5',['OsName',['../enumfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_enums_1_1_os_name.html',1,'fr::softsf::sudokufx::utils::MyEnums']]]
 ];

@@ -1,16 +1,20 @@
 <map id="fr.softsf.sudokufx.viewmodel.FullMenuViewModel" name="fr.softsf.sudokufx.viewmodel.FullMenuViewModel">
-<area shape="rect" id="Node000001" title="FullMenuViewModel with business logic (not final)" alt="" coords="386,599,612,855"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_software_service.html" title=" " alt="" coords="178,343,386,535"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="356,533,394,584,390,587,352,536"/>
+<area shape="rect" id="Node000001" title="FullMenuViewModel with business logic (not final)" alt="" coords="320,881,582,1153"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_software_service.html" title=" " alt="" coords="47,484,255,676"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="192,674,227,745,269,816,311,871,307,874,265,819,222,748,187,677"/>
 <area shape="rect" id="Node000003" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_software_mapper.html" title="This interface defines methods for mapping objects of type Software to objects of type SoftwareDto an..." alt="" coords="5,140,230,279"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="169,276,205,327,201,331,164,280"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="126,278,144,467,138,467,121,279"/>
 <area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="231,191,249,198,257,209,248,221,244,218,251,209,246,202,229,196"/>
 <area shape="rect" id="Node000004" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_software_repository.html" title=" " alt="" coords="359,159,535,260"/>
-<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="413,261,363,331,358,328,409,258"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="374,262,312,307,269,344,227,405,194,469,190,467,223,402,265,341,309,303,371,258"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="366,5,528,91"/>
 <area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="450,105,450,159,444,159,444,105"/>
-<area shape="rect" id="Node000006" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_grid_master.html" title="Interface defining methods to generate and solve Sudoku puzzles." alt="" coords="410,369,588,508"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="502,508,502,582,496,582,496,508"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="612,404,706,473"/>
-<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="643,475,580,586,576,583,638,472"/>
+<area shape="rect" id="Node000006" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_grid_master.html" title="Interface defining methods to generate and solve Sudoku puzzles." alt="" coords="280,511,457,649"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="384,649,425,864,420,865,379,650"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html" title="Service for managing version information from a GitHub repository." alt="" coords="482,343,711,817"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="520,818,504,866,499,865,515,816"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="562,175,631,244"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="599,244,599,326,594,326,594,244"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="735,545,828,615"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="783,615,779,658,769,711,752,767,725,819,698,854,667,885,598,940,595,935,663,882,694,850,721,816,747,765,764,710,773,657,778,614"/>
 </map>

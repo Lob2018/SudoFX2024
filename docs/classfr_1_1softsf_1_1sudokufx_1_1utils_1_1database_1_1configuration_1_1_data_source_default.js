@@ -1,4 +1,0 @@
-var classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1configuration_1_1_data_source_default =
-[
-    [ "hikariDataSource", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1database_1_1configuration_1_1_data_source_default.html#a97f9b0baca3f74248ae69c1740e64b94", null ]
-];

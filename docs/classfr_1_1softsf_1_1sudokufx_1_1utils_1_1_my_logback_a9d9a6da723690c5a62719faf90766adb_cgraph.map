@@ -1,6 +1,0 @@
-<map id="fr.softsf.sudokufx.utils.MyLogback.printLogEntryMessage" name="fr.softsf.sudokufx.utils.MyLogback.printLogEntryMessage">
-<area shape="rect" id="Node000001" title="Prints the application&#39;s ASCII logo to the log as an entry message." alt="" coords="5,37,228,80"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_j_v_m_application_properties.html#a7d07880db5617906582d43a95925ba8d" title="Determines if the Spring context should exit on refresh." alt="" coords="276,29,498,88"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="228,56,260,56,260,61,228,61"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="334,29,335,19,345,10,362,5,387,3,415,5,433,13,431,17,414,11,387,8,363,10,348,15,340,21,339,29"/>
-</map>
