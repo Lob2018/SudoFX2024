@@ -24,7 +24,7 @@ class JVMApplicationPropertiesUTest {
     @BeforeEach
     void eachSetup() {
         systemProperties.set(APP_NAME_PROPERTY, "SudokuFX");
-        systemProperties.set(APP_VERSION_PROPERTY, "1.0.0");
+        systemProperties.set(APP_VERSION_PROPERTY, "1.1.1");
     }
 
     @Test
@@ -48,11 +48,11 @@ class JVMApplicationPropertiesUTest {
     void testAppNameAppVersionWithNullSpringContext_Success() {
         JVMApplicationProperties.setInitSpringContextExitForTests();
         assertEquals("SudokuFX", JVMApplicationProperties.getAppName());
-        assertEquals("v1.0.0", JVMApplicationProperties.getAppVersion());
+        assertEquals("v1.1.1", JVMApplicationProperties.getAppVersion());
         // appName.isEmpty()'s branch
         assertFalse(JVMApplicationProperties.isSpringContextExitOnRefresh());
         assertEquals("SudokuFX", JVMApplicationProperties.getAppName());
-        assertEquals("v1.0.0", JVMApplicationProperties.getAppVersion());
+        assertEquals("v1.1.1", JVMApplicationProperties.getAppVersion());
     }
 
     @Test
