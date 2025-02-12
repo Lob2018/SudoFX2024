@@ -24,7 +24,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 import java.sql.SQLInvalidAuthorizationSpecException;
 
-import static fr.softsf.sudokufx.utils.ExceptionTools.getSQLInvalidAuthorizationSpecException;
+import static fr.softsf.sudokufx.exception.ExceptionTools.getSQLInvalidAuthorizationSpecException;
 
 /**
  * The application main class. This class initializes the
