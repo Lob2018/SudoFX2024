@@ -68,7 +68,7 @@ public class VersionServiceTest {
         logWatcher = new ListAppender<>();
         logWatcher.start();
         ((ch.qos.logback.classic.Logger) LoggerFactory.getLogger(VersionService.class)).addAppender(logWatcher);
-        systemProperties.set(APP_VERSION_PROPERTY, "1.0.0");
+        systemProperties.set(APP_VERSION_PROPERTY, "1.1.1");
         closeable = MockitoAnnotations.openMocks(this);
         Mockito.reset(mockHttpClient, mockResponse);
     }
@@ -117,8 +117,8 @@ public class VersionServiceTest {
     }
 
     @ParameterizedTest
-    @ValueSource(strings = {"", "v0.0.0", "v0.9.9", "v1.0.0", "v1.0.1", "v99.99.99"})
-    void testIsLatestGitHubPublishedPackageVersion_onlineOldestSameAndNewerVersion(String onLineVersion) throws Exception {
+    @ValueSource(strings = {"v1.1.1", "v0.0.0", "v0.1.1", "v1.0.1", "v1.1.0", "v2.1.1", "v1.2.1", "v1.1.2", "v99.99.99"})
+    void testIsLatestGitHubPublishedPackageVersion_onlineEmptyOldestSameAndNewerVersions(String onLineVersion) throws Exception {
         Mockito.when(mockResponse.statusCode()).thenReturn(200);
         String jsonResponse = String.format(JSON, onLineVersion);
         Mockito.when(mockResponse.body()).thenReturn(jsonResponse);
@@ -126,13 +126,42 @@ public class VersionServiceTest {
                 .thenReturn(mockResponse);
         VersionService versionService = new VersionService(mockHttpClient);
         boolean isLatestVersion = versionService.isLatestGitHubPublishedPackageVersion();
-        if (onLineVersion.equals("v1.0.1") || onLineVersion.equals("v99.99.99")) {
+        if (onLineVersion.equals("v2.1.1") ||
+                onLineVersion.equals("v1.2.1") ||
+                onLineVersion.equals("v1.1.2") ||
+                onLineVersion.equals("v99.99.99")
+        ) {
             assertFalse(isLatestVersion);
         } else {
             assertTrue(isLatestVersion);
         }
         Mockito.verify(mockHttpClient, Mockito.times(1))
                 .send(any(HttpRequest.class), any(HttpResponse.BodyHandler.class));
+    }
+
+    @ParameterizedTest
+    @ValueSource(strings = {"", "vv.v.v"})
+    void testIsLatestGitHubPublishedPackageVersion_onlineInvalidVersions(String onLineVersion) throws Exception {
+        Mockito.when(mockResponse.statusCode()).thenReturn(200);
+        String jsonResponse = String.format(JSON, onLineVersion);
+        Mockito.when(mockResponse.body()).thenReturn(jsonResponse);
+        Mockito.when(mockHttpClient.send(any(HttpRequest.class), any(HttpResponse.BodyHandler.class)))
+                .thenReturn(mockResponse);
+        VersionService versionService = new VersionService(mockHttpClient);
+        boolean isLatestVersion = versionService.isLatestGitHubPublishedPackageVersion();
+        assertTrue(isLatestVersion);
+        Mockito.verify(mockHttpClient, Mockito.times(1))
+                .send(any(HttpRequest.class), any(HttpResponse.BodyHandler.class));
+        String message = logWatcher.list.getFirst().getFormattedMessage();
+        switch (onLineVersion) {
+            case "vv.v.v" -> {
+                assert (message.contains("▓▓ GitHub version 'v.v.v' does not match expected semantic versioning format (X.Y.Z)."));
+            }
+            case "" -> {
+                assert (message.contains("▓▓ Invalid or too short tag received from GitHub: ''"));
+            }
+            default -> throw new AssertionError("Unexpected version format: " + onLineVersion);
+        }
     }
 }
 
