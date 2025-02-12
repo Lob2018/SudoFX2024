@@ -15,6 +15,7 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 
 /**
  * Service for managing version information from a GitHub repository.
@@ -28,6 +29,7 @@ public class VersionService {
     private static final String GITHUB_URL = "https://github.com/";
     private static final String GITHUB_API_URL = "https://api.github.com/";
     private static final String GITHUB_API_URL_REPO_TAGS = GITHUB_API_URL + "repos/" + OWNER + "/" + REPO + "/tags";
+    private static final ObjectMapper OBJECT_MAPPER = new ObjectMapper();
     private final HttpClient httpClient;
     private final String currentVersion = JVMApplicationProperties.getAppVersion().isEmpty() ? "" : JVMApplicationProperties.getAppVersion().substring(1);
     private String lastVersion = currentVersion;
@@ -57,8 +59,6 @@ public class VersionService {
      * @return true if the current version is the latest or if there was an error, false otherwise.
      */
     public boolean isLatestGitHubPublishedPackageVersion() {
-        ObjectMapper objectMapper = new ObjectMapper();
-        boolean result = true;
         try {
             HttpRequest request = HttpRequest.newBuilder()
                     .uri(URI.create(GITHUB_API_URL_REPO_TAGS))
@@ -66,43 +66,61 @@ public class VersionService {
                     .build();
             HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
             if (response.statusCode() != 200) {
-                log.error("██ The status code retrieving the last GitHub published package version isn't 200 : {}", response.statusCode());
+                log.error("██ GitHub API returned non 200 status code: {}", response.statusCode());
                 return true;
             }
-            List<Map<String, Object>> list = objectMapper.readValue(response.body(), new TypeReference<>() {
+            List<Map<String, Object>> list = OBJECT_MAPPER.readValue(response.body(), new TypeReference<>() {
             });
-            if (!list.isEmpty()) {
-                lastVersion = ((String) list.getFirst().get("name")).substring(1);
-                if (!MyRegex.isValidatedByRegex(lastVersion, MyRegex.getVERSION())) return true;
+            String tagName = list.stream()
+                    .findFirst()
+                    .map(entry -> (String) entry.get("name"))
+                    .map(String::trim)
+                    .orElse("");
+            if (tagName.length() < 6) {
+                log.warn("▓▓ Invalid or too short tag received from GitHub: '{}'", tagName);
+                return true;
             }
-            result = this.compareVersions(currentVersion, lastVersion) >= 0;
-            log.info("▓▓ The result retrieving the last GitHub published package version is : currentVersion={}, lastVersion={}, result={})", currentVersion, lastVersion, result);
+            lastVersion = tagName.substring(1);
+            if (!MyRegex.isValidatedByRegex(lastVersion, MyRegex.getVERSION())) {
+                log.warn("▓▓ GitHub version '{}' does not match expected semantic versioning format (X.Y.Z).", lastVersion);
+                return true;
+            }
+            boolean isLatest = this.compareVersions(currentVersion, lastVersion) >= 0;
+            log.info("▓▓ Version check: currentVersion={}, lastVersion={}, result={}", currentVersion, lastVersion, isLatest);
+            return isLatest;
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
-            log.error("██ Interrupted while retrieving the last GitHub published package version then re-interrupt this method (currentVersion:{}, lastVersion:{}, result:{}) : {}", currentVersion, lastVersion, result, e.getMessage(), e);
+            log.error("██ Interrupted while retrieving GitHub version (currentVersion:{}, lastVersion:{}): {}",
+                    currentVersion, Objects.toString(lastVersion, "null"), e.getMessage(), e);
         } catch (Exception e) {
-            log.error("██ Exception retrieving the last GitHub published package version (currentVersion:{}, lastVersion:{}, result:{}) : {}", currentVersion, lastVersion, result, e.getMessage(), e);
+            log.error("██ Exception retrieving GitHub version (currentVersion:{}, lastVersion:{}): {}",
+                    currentVersion, Objects.toString(lastVersion, "null"), e.getMessage(), e);
         }
-        return result;
+        return true;
     }
 
+
     /**
-     * Compares two version strings.
+     * Compares two version strings in the format MAJOR.MINOR.PATCH.
      *
-     * @param version1 the first version string.
-     * @param version2 the second version string.
-     * @return -1 if version1 is less than version2, 1 if version1 is greater than version2, and 0 if they are equal.
+     * @param version1 the first version string (e.g., "1.2.3").
+     * @param version2 the second version string (e.g., "1.3.0").
+     * @return a negative integer if version1 is older,
+     * a positive integer if version1 is newer,
+     * or 0 if both versions are equal.
+     * @throws NumberFormatException if the version strings are not properly formatted.
      */
     private int compareVersions(final String version1, final String version2) {
-        String[] parts1 = version1.split("\\.");
-        String[] parts2 = version2.split("\\.");
-        int length = Math.max(parts1.length, parts2.length);
-        for (int i = 0; i < length; i++) {
-            int part1 = (i < parts1.length) ? Integer.parseInt(parts1[i]) : 0;
-            int part2 = (i < parts2.length) ? Integer.parseInt(parts2[i]) : 0;
-            if (part1 < part2) return -1;
-            if (part1 > part2) return 1;
+        String[] v1 = version1.split("\\.");
+        String[] v2 = version2.split("\\.");
+        int majorComparison = Integer.compare(Integer.parseInt(v1[0]), Integer.parseInt(v2[0]));
+        if (majorComparison != 0) {
+            return majorComparison;
         }
-        return 0;
+        int minorComparison = Integer.compare(Integer.parseInt(v1[1]), Integer.parseInt(v2[1]));
+        if (minorComparison != 0) {
+            return minorComparison;
+        }
+        return Integer.compare(Integer.parseInt(v1[2]), Integer.parseInt(v2[2]));
     }
 }

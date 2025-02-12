@@ -113,7 +113,7 @@ public class VersionServiceTest {
         assertTrue(isLatestVersion);
         Mockito.verify(mockHttpClient, Mockito.times(1))
                 .send(any(HttpRequest.class), any(HttpResponse.BodyHandler.class));
-        assert (logWatcher.list.getFirst().getFormattedMessage()).contains("██ The status code retrieving the last GitHub published package version isn't 200 : " + httpStatusCode);
+        assert (logWatcher.list.getFirst().getFormattedMessage()).contains("██ GitHub API returned non 200 status code: " + httpStatusCode);
     }
 
     @ParameterizedTest
