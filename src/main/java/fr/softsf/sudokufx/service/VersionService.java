@@ -3,6 +3,7 @@ package fr.softsf.sudokufx.service;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import fr.softsf.sudokufx.configuration.JVMApplicationProperties;
+import fr.softsf.sudokufx.dto.github.TagDto;
 import fr.softsf.sudokufx.utils.MyRegex;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
@@ -14,7 +15,6 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.util.List;
-import java.util.Map;
 import java.util.Objects;
 
 /**
@@ -69,11 +69,11 @@ public class VersionService {
                 log.error("██ GitHub API returned non 200 status code: {}", response.statusCode());
                 return true;
             }
-            List<Map<String, Object>> list = OBJECT_MAPPER.readValue(response.body(), new TypeReference<>() {
+            List<TagDto> list = OBJECT_MAPPER.readValue(response.body(), new TypeReference<>() {
             });
             String tagName = list.stream()
                     .findFirst()
-                    .map(entry -> (String) entry.get("name"))
+                    .map(TagDto::name)
                     .map(String::trim)
                     .orElse("");
             if (tagName.length() < 6) {
