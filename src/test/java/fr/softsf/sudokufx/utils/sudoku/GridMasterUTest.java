@@ -128,19 +128,19 @@ class GridMasterUTest {
     @ValueSource(ints = {1, 2, 3})
     void createGridLevelImpossiblePossibilities_success(int level) {
         switch (level) {
-            case 2:
+            case 2 -> {
                 gridMaster.setAverageImpossiblePossibilitiesForTests();
                 assertEquals(50000, gridMaster.getMoyenMinPossibilites());
                 assertEquals(-1, gridMaster.getMoyenMaxPossibilites());
-                break;
-            case 3:
+            }
+            case 3 -> {
                 gridMaster.setDifficultImpossiblePossibilitiesForTests();
                 assertEquals(50000, gridMaster.getMoyenMaxPossibilites());
-                break;
-            default:
+            }
+            default -> {
                 gridMaster.setEasyImpossiblePossibilitiesForTests();
                 assertEquals(-1, gridMaster.getMoyenMinPossibilites());
-                break;
+            }
         }
         int[][] grids = gridMaster.creerLesGrilles(level);
         assertNotNull(grids);

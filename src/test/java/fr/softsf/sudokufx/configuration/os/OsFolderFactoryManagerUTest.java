@@ -50,17 +50,19 @@ class OsFolderFactoryManagerUTest {
     @ValueSource(strings = {"Windows", "Linux", "MacOS"})
     void testOsFolderFactoryWithValidIOs(String osType) {
         switch (osType) {
-            case "Windows":
-                osFolderFactoryManager.setWindowsOsForTests(iCurrentIOsFolderFactory.getOsDataFolderPath(), iCurrentIOsFolderFactory.getOsLogsFolderPath());
-                break;
-            case "Linux":
-                osFolderFactoryManager.setLinuxOsForTests(iCurrentIOsFolderFactory.getOsDataFolderPath(), iCurrentIOsFolderFactory.getOsLogsFolderPath());
-                break;
-            case "MacOS":
-                osFolderFactoryManager.setMacOSForTests(iCurrentIOsFolderFactory.getOsDataFolderPath(), iCurrentIOsFolderFactory.getOsLogsFolderPath());
-                break;
-            default:
-                throw new IllegalArgumentException("Unknown OS type");
+            case "Windows" -> osFolderFactoryManager.setWindowsOsForTests(
+                    iCurrentIOsFolderFactory.getOsDataFolderPath(),
+                    iCurrentIOsFolderFactory.getOsLogsFolderPath()
+            );
+            case "Linux" -> osFolderFactoryManager.setLinuxOsForTests(
+                    iCurrentIOsFolderFactory.getOsDataFolderPath(),
+                    iCurrentIOsFolderFactory.getOsLogsFolderPath()
+            );
+            case "MacOS" -> osFolderFactoryManager.setMacOSForTests(
+                    iCurrentIOsFolderFactory.getOsDataFolderPath(),
+                    iCurrentIOsFolderFactory.getOsLogsFolderPath()
+            );
+            default -> throw new IllegalArgumentException("Unknown OS type: " + osType);
         }
         IOsFolderFactory factory = osFolderFactoryManager.iOsFolderFactory();
         assertEquals(factory.getOsDataFolderPath(), iCurrentIOsFolderFactory.getOsDataFolderPath());

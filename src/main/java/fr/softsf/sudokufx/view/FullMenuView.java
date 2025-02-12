@@ -81,15 +81,13 @@ public final class FullMenuView implements IMainStageView, ISceneProvider {
     private void onHelloButtonClick(ActionEvent event) {
 
         switch (secureRandomGenerator.nextInt(3)) {
-            case 0:
-                toaster.addToastWithDuration("INFO 🔹 Work in progress... 🔹", "", MyEnums.ToastLevels.INFO, 6000);
-                break;
-            case 1:
-                toaster.addToast("WARN", "", MyEnums.ToastLevels.WARN);
-                break;
-            default:
-                toaster.addToast("VISIBLE ERROR MESSAGE", "DETAILED ERROR MESSAGE DETAILED ERROR MESSAGE DETAILED ERROR MESSAGE DETAILED ERROR MESSAGE DETAILED ERROR MESSAGE DETAILED ERROR MESSAGE DETAILED ERROR MESSAGE DETAILED ERROR MESSAGE DETAILED ERROR MESSAGE DETAILED ERROR MESSAGE DETAILED ERROR MESSAGE DETAILED ERROR MESSAGE DETAILED ERROR MESSAGE DETAILED ERROR MESSAGE DETAILED ERROR MESSAGE DETAILED ERROR MESSAGE DETAILED ERROR MESSAGE DETAILED ERROR MESSAGE DETAILED ERROR MESSAGE DETAILED ERROR MESSAGE DETAILED ERROR MESSAGE", MyEnums.ToastLevels.ERROR);
-                break;
+            case 0 -> toaster.addToastWithDuration("INFO 🔹 Work in progress... 🔹", "", MyEnums.ToastLevels.INFO, 6000);
+            case 1 -> toaster.addToast("WARN", "", MyEnums.ToastLevels.WARN);
+            default -> toaster.addToast(
+                    "VISIBLE ERROR MESSAGE",
+                    "DETAILED ERROR MESSAGE ".repeat(20), // Répète le message pour éviter la duplication excessive
+                    MyEnums.ToastLevels.ERROR
+            );
         }
         fullMenuViewModel.test();
 
