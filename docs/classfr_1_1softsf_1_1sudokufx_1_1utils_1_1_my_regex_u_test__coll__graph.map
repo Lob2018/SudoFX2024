@@ -1,7 +1,0 @@
-<map id="fr.softsf.sudokufx.utils.MyRegexUTest" name="fr.softsf.sudokufx.utils.MyRegexUTest">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,272,201,453"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="6,139,200,208"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="106,208,106,255,101,255,101,208"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="60,5,147,75"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="106,90,106,139,101,139,101,90"/>
-</map>

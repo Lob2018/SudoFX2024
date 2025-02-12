@@ -1,8 +1,0 @@
-<map id="fr.softsf.sudokufx.view.SplashScreenView.getLoadingOrOptimizingMessage" name="fr.softsf.sudokufx.view.SplashScreenView.getLoadingOrOptimizingMessage">
-<area shape="rect" id="Node000001" title="Retrieves a message indicating the current loading or optimizing state." alt="" coords="5,47,217,105"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_i18n.html#a7095fa285a498c3f20bf33488a69d22c" title="Retrieves the localized string value for a given key." alt="" coords="321,5,476,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="217,55,305,40,306,45,218,60"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_j_v_m_application_properties.html#a46753fc32c7d3156f3aed0f0c63c758e" title="Determines if the Spring context should exit on refresh." alt="" coords="265,96,533,155"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="218,92,249,97,249,102,217,97"/>
-<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="343,95,344,85,354,77,373,71,399,69,429,72,447,79,446,84,428,77,399,75,374,77,357,81,349,88,348,96"/>
-</map>

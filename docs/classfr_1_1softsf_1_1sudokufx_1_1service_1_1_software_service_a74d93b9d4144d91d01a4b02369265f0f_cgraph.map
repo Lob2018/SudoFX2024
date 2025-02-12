@@ -1,7 +1,0 @@
-<map id="fr.softsf.sudokufx.service.SoftwareService.updateSoftware" name="fr.softsf.sudokufx.service.SoftwareService.updateSoftware">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,39,218,81"/>
-<area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_software_mapper.html#a85adc191251bde9870609d4b2cb23ee6" title="Maps a SoftwareDto object to a Software object." alt="" coords="266,5,554,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="218,45,250,42,250,47,219,51"/>
-<area shape="rect" id="Node000003" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_software_mapper.html#addc8516cb5cc6171c663e132d5fdddd6" title="Maps a Software object to a SoftwareDto object." alt="" coords="292,72,528,115"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="219,69,277,76,276,81,218,75"/>
-</map>

@@ -1,5 +1,0 @@
-<map id="fr.softsf.sudokufx.configuration.database.DataSourceConfigDefault.hikariDataSource" name="fr.softsf.sudokufx.configuration.database.DataSourceConfigDefault.hikariDataSource">
-<area shape="rect" id="Node000001" title="Creates and configures the main DataSource for the application." alt="" coords="5,5,280,48"/>
-<area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_os_folder_factory.html#ad2fbd0fa5081f7b023b0bbf262847cfb" title="Retrieves the path to the OS&#45;specific data folder." alt="" coords="328,5,579,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="280,24,312,24,312,29,280,29"/>
-</map>

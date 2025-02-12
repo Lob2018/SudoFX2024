@@ -1,9 +1,0 @@
-<map id="fr.softsf.sudokufx.configuration.database.DataSourceConfig.hikariDataSource" name="fr.softsf.sudokufx.configuration.database.DataSourceConfig.hikariDataSource">
-<area shape="rect" id="Node000001" title="Creates and configures the main DataSource for the application." alt="" coords="5,72,268,115"/>
-<area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_keystore.html#a5ec3c1f09b73ee031b270efd4ded0ce0" title="Get database password." alt="" coords="336,5,524,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="233,69,320,49,322,54,234,74"/>
-<area shape="rect" id="Node000003" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_keystore.html#a8b68edc0def5161907fbd2f55b0940f3" title="Get database username." alt="" coords="336,72,524,115"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="268,91,321,91,321,96,268,96"/>
-<area shape="rect" id="Node000004" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_keystore.html#a9b027a910af9934b7549202c4e44350e" title="Set up the application keystore." alt="" coords="316,139,545,181"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="234,113,319,132,318,137,233,118"/>
-</map>
