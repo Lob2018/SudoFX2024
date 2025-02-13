@@ -1,0 +1,4 @@
+var namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1database_1_1keystore =
+[
+    [ "SecretKeyEncryptionServiceAESGCMUTest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1database_1_1keystore_1_1_secret_key_adb6334248c7ac6276e5360489fcd40a.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1database_1_1keystore_1_1_secret_key_adb6334248c7ac6276e5360489fcd40a" ]
+];

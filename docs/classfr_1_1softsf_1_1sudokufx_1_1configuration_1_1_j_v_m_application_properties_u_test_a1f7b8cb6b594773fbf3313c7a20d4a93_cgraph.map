@@ -1,0 +1,19 @@
+<map id="fr.softsf.sudokufx.configuration.JVMApplicationPropertiesUTest.testEmptyAppNameEmptyAppVersionWithOnRefreshSpringContext_Success" name="fr.softsf.sudokufx.configuration.JVMApplicationPropertiesUTest.testEmptyAppNameEmptyAppVersionWithOnRefreshSpringContext_Success">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,204,420,263"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_j_v_m_application_properties.html#a3f7b3c260ffbc879047a27ee9a1751f5" title="Retrieves the current application name from system properties." alt="" coords="476,5,728,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="247,201,342,129,403,91,467,58,482,51,484,56,469,62,406,95,345,134,250,206"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_j_v_m_application_properties.html#aa3d30fcaecd7e5f4b1f8fe6fee13570a" title="Retrieves the current application version from system properties." alt="" coords="472,72,732,115"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="276,201,366,162,467,124,490,117,492,122,469,129,368,167,279,206"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_j_v_m_application_properties.html#a46753fc32c7d3156f3aed0f0c63c758e" title="Determines if the Spring context should exit on refresh." alt="" coords="468,163,736,221"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="420,209,452,205,452,211,420,214"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_j_v_m_application_properties.html#ac2d2aaa636c175470f54ae741fc2ec56" title="Resets the application name to an empty string." alt="" coords="475,245,729,304"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="420,253,459,257,459,262,420,258"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_j_v_m_application_properties.html#ac97237fc1143b5144fd5711157630e19" title="Resets the application version to an empty string." alt="" coords="475,328,729,387"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="306,261,468,313,490,320,489,325,467,319,304,266"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_j_v_m_application_properties.html#a4574118c97df98fe67e546d028e19a97" title="Sets the Spring context exit behavior to &quot;onRefresh&quot; for testing purposes." alt="" coords="474,411,730,469"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="254,261,349,328,408,364,469,396,482,402,479,407,467,401,405,369,346,332,251,265"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex.html#a981702b076ee54a416d676b6f7a182fc" title="Validates the given text against the specified regular expression." alt="" coords="784,39,982,81"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="728,39,769,44,768,49,728,44"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="732,75,768,71,769,76,732,81"/>
+<area shape="poly" id="edge6_Node000005_Node000005" title=" " alt="" coords="547,162,548,152,558,143,576,138,602,136,631,139,649,146,647,151,630,144,602,141,577,143,561,148,553,155,552,163"/>
+</map>

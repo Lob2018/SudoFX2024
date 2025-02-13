@@ -1,0 +1,7 @@
+<map id="fr.softsf.sudokufx.service.VersionService" name="fr.softsf.sudokufx.service.VersionService">
+<area shape="rect" id="Node000001" title="Service for managing version information from a GitHub repository." alt="" coords="11,139,246,613"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,97,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="53,74,55,114,57,122,51,123,50,115,47,75"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="172,5,242,75"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="202,75,191,123,185,122,197,74"/>
+</map>

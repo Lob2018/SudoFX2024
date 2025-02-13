@@ -1,0 +1,7 @@
+<map id="fr.softsf.sudokufx.configuration.os.LinuxFolderFactory.LinuxFolderFactory" name="fr.softsf.sudokufx.configuration.os.LinuxFolderFactory.LinuxFolderFactory">
+<area shape="rect" id="Node000001" title="Constructor that initializes the data and logs folder paths." alt="" coords="5,5,252,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_os_folder_initializer.html#a7505afa6005e83ebe31d61016901edfd" title="Creates folders for data and logs." alt="" coords="300,5,523,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="252,24,284,24,284,29,252,29"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_os_folder_initializer.html#a0fab99a712c6bfc24d7025a7e667e734" title="Attempts to create a folder at the specified path and confirms its creation." alt="" coords="571,5,794,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="523,24,556,24,556,29,523,29"/>
+</map>

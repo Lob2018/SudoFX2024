@@ -1,0 +1,18 @@
+<map id="fr.softsf.sudokufx.view.CrashScreenView.initialize" name="fr.softsf.sudokufx.view.CrashScreenView.initialize">
+<area shape="rect" id="Node000001" title="Initializes the crash screen components." alt="" coords="5,139,182,181"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_j_v_m_application_properties.html#a3f7b3c260ffbc879047a27ee9a1751f5" title="Retrieves the current application name from system properties." alt="" coords="234,5,485,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,136,166,96,228,58,242,52,245,56,231,62,169,100,120,140"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_j_v_m_application_properties.html#aa3d30fcaecd7e5f4b1f8fe6fee13570a" title="Retrieves the current application version from system properties." alt="" coords="230,72,489,115"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="181,135,256,116,257,122,182,141"/>
+<area shape="rect" id="Node000005" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_os_folder_factory.html#ad2fbd0fa5081f7b023b0bbf262847cfb" title="Retrieves the path to the OS&#45;specific data folder." alt="" coords="234,139,485,181"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="182,157,218,157,218,163,182,163"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_i18n.html#a7095fa285a498c3f20bf33488a69d22c" title="Retrieves the localized string value for a given key." alt="" coords="282,205,437,248"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="182,179,267,201,266,206,181,185"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a5a135e72f1765ad2dc90d69994f7b657" title="Sets up the SVG logo for the crash screen." alt="" coords="235,272,484,331"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="121,180,170,219,231,258,242,263,240,268,228,262,167,223,117,184"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex.html#a981702b076ee54a416d676b6f7a182fc" title="Validates the given text against the specified regular expression." alt="" coords="537,39,735,81"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="486,39,522,44,521,49,485,44"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="489,75,521,71,522,76,490,80"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#aef8eba37009f641a92196a638a62d82c" title="Creates an SVG shape and applies it to a Region." alt="" coords="540,280,733,323"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="485,299,524,299,524,304,485,304"/>
+</map>

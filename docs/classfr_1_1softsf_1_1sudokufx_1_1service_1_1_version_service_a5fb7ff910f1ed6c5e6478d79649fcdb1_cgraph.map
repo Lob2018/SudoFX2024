@@ -1,0 +1,9 @@
+<map id="fr.softsf.sudokufx.service.VersionService.isLatestGitHubPublishedPackageVersion" name="fr.softsf.sudokufx.service.VersionService.isLatestGitHubPublishedPackageVersion">
+<area shape="rect" id="Node000001" title="Asynchronously checks if the current application version is the latest published version on GitHub." alt="" coords="5,31,262,89"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html#ac909ce26310a3c5b01262ad5f3affcbe" title="Parses the JSON response from the GitHub API to extract the latest published version." alt="" coords="310,39,513,81"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="262,57,294,57,294,63,262,63"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html#af166c049683464c03d118142b986ab71" title="Compares two version strings in the format MAJOR.MINOR.PATCH." alt="" coords="561,5,773,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="513,44,545,40,546,45,514,49"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex.html#a981702b076ee54a416d676b6f7a182fc" title="Validates the given text against the specified regular expression." alt="" coords="568,72,766,115"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="514,71,553,76,552,81,513,76"/>
+</map>
