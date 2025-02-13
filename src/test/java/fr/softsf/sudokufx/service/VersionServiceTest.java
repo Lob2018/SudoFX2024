@@ -89,7 +89,7 @@ class VersionServiceTest {
     }
 
     @Test
-    void testIsLatestGitHubPublishedPackageVersion_emptyResult_true() throws Exception {
+    void testIsLatestGitHubPublishedPackageVersion_emptyResult_true() {
         Mockito.when(mockResponse.statusCode()).thenReturn(200);
         Mockito.when(mockResponse.body()).thenReturn("[]");
         Mockito.when(mockHttpClient.sendAsync(any(HttpRequest.class), any(HttpResponse.BodyHandler.class)))
@@ -103,7 +103,7 @@ class VersionServiceTest {
 
     @ParameterizedTest
     @ValueSource(ints = {301, 302, 403, 404, 500})
-    void testIsLatestGitHubPublishedPackageVersion_wrongHttpStatusCodes_true(int httpStatusCode) throws Exception {
+    void testIsLatestGitHubPublishedPackageVersion_wrongHttpStatusCodes_true(int httpStatusCode) {
         Mockito.when(mockResponse.statusCode()).thenReturn(httpStatusCode);
         Mockito.when(mockHttpClient.sendAsync(any(HttpRequest.class), any(HttpResponse.BodyHandler.class)))
                 .thenReturn(CompletableFuture.completedFuture(mockResponse));
@@ -117,7 +117,7 @@ class VersionServiceTest {
 
     @ParameterizedTest
     @ValueSource(strings = {"v1.1.1", "v0.0.0", "v0.1.1", "v1.0.1", "v1.1.0", "v2.1.1", "v1.2.1", "v1.1.2", "v99.99.99"})
-    void testIsLatestGitHubPublishedPackageVersion_onlineEmptyOldestSameAndNewerVersions(String onLineVersion) throws Exception {
+    void testIsLatestGitHubPublishedPackageVersion_onlineEmptyOldestSameAndNewerVersions(String onLineVersion) {
         Mockito.when(mockResponse.statusCode()).thenReturn(200);
         String jsonResponse = String.format(JSON, onLineVersion);
         Mockito.when(mockResponse.body()).thenReturn(jsonResponse);
@@ -136,7 +136,7 @@ class VersionServiceTest {
 
     @ParameterizedTest
     @ValueSource(strings = {"", "vv.v.v"})
-    void testIsLatestGitHubPublishedPackageVersion_onlineInvalidVersions(String onLineVersion) throws Exception {
+    void testIsLatestGitHubPublishedPackageVersion_onlineInvalidVersions(String onLineVersion) {
         Mockito.when(mockResponse.statusCode()).thenReturn(200);
         String jsonResponse = String.format(JSON, onLineVersion);
         Mockito.when(mockResponse.body()).thenReturn(jsonResponse);
