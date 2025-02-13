@@ -24,9 +24,8 @@ public class FullMenuViewModel {
     private final SoftwareService softwareService;
     private final IGridMaster iGridMaster;
     private final VersionService versionService;
-
+    private final SimpleBooleanProperty version = new SimpleBooleanProperty(true);
     private StringProperty welcome;
-    private SimpleBooleanProperty version;
 
     @Autowired
     public FullMenuViewModel(SoftwareService softwareService, IGridMaster iGridMaster, VersionService versionService) {
@@ -36,9 +35,6 @@ public class FullMenuViewModel {
     }
 
     public BooleanProperty versionProperty() {
-        if (version == null) {
-            version = new SimpleBooleanProperty(false);
-        }
         return version;
     }
 

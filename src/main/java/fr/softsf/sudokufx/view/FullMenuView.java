@@ -72,8 +72,6 @@ public final class FullMenuView implements IMainStageView, ISceneProvider {
         buttonHello.setStyle("-fx-background-color: #00FF00;");
 
         welcomeText.textProperty().bindBidirectional(fullMenuViewModel.welcomeProperty());
-
-
         version.textProperty().bind(Bindings.when(fullMenuViewModel.versionProperty())
                 .then("Version à jour")
                 .otherwise("Mise à jour disponible"));
