@@ -20,7 +20,7 @@
 <area shape="rect" id="Node000008" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_software_mapper.html#addc8516cb5cc6171c663e132d5fdddd6" title="Maps a Software object to a SoftwareDto object." alt="" coords="1200,72,1436,115"/>
 <area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="1113,91,1184,91,1184,96,1113,96"/>
 <area shape="poly" id="edge17_Node000009_Node000006" title=" " alt="" coords="816,135,897,116,899,121,817,141"/>
-<area shape="rect" id="Node000010" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html#a5d1ec54faf65957f9b2dc35dd5a2bedb" title="Checks the latest version of the software by querying the GitHub API for the repository&#39;s tags." alt="" coords="893,139,1120,181"/>
+<area shape="rect" id="Node000010" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html#a5d1ec54faf65957f9b2dc35dd5a2bedb" title="Asynchronously checks if the current application version is up&#45;to&#45;date by querying the GitHub API." alt="" coords="893,139,1120,181"/>
 <area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="840,157,878,157,878,163,840,163"/>
 <area shape="rect" id="Node000014" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_grid_master.html#a7ae916d7f64607637b7bf5bf33fd0eb3" title="Crée les grilles de Sudoku (résolue et à résoudre) en fonction du niveau de difficulté." alt="" coords="912,205,1101,248"/>
 <area shape="poly" id="edge14_Node000009_Node000014" title=" " alt="" coords="817,179,899,199,897,204,816,185"/>

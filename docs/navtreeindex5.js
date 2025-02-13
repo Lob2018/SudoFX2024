@@ -1,11 +1,5 @@
 var NAVTREEINDEX5 =
 {
-"dir_b56e19f1982a33341ef13b7017338f1f.html":[3,0,1,0,0,0,0,0,10],
-"dir_bdba54636d4de766cb5b82a99afa88d5.html":[3,0,1,0,0,0,0,0,1,1],
-"dir_d1a24550bb8caec420db541cf087836b.html":[3,0,1,0,0,0,0,0,2,0],
-"dir_d730c1ae1b0625b900856646b3c75001.html":[3,0,1,1,0,0,0,0,3,0],
-"dir_df66706d7efa0a9fd8002f7f6346de3d.html":[3,0,1,0,0,0,0],
-"dir_e6e49ab56ac2c009f72932c50eb83c7d.html":[3,0,1,1,0,0,0,0,0,1,0,0],
 "dir_e750aab36d43a747687e10a289bead43.html":[3,0,1,1,0,0,0,0,2],
 "dir_e88d9e73c6e0437a7513b0750f81d5b5.html":[3,0,1,0,0,0,0,0,9,0,1],
 "dir_ec16d98db0fa01025d0805e1d7b6606d.html":[3,0,1,1,0,0,0,0,0,0],
@@ -249,5 +243,11 @@ var NAVTREEINDEX5 =
 "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_background_mapper.html#a6cd01faa12a74388449e434e716d74a5":[1,0,0,0,0,5,0,0,0],
 "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_background_mapper.html#a6cd01faa12a74388449e434e716d74a5":[2,0,0,0,0,4,0,0,0],
 "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_background_mapper.html#a764a7f4c4afe605bbaaa1f47615a2abb":[1,0,0,0,0,5,0,0,1],
-"interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_background_mapper.html#a764a7f4c4afe605bbaaa1f47615a2abb":[2,0,0,0,0,4,0,0,1]
+"interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_background_mapper.html#a764a7f4c4afe605bbaaa1f47615a2abb":[2,0,0,0,0,4,0,0,1],
+"interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_background_mapper.html#aef96f43d124b699cbce09df781ff02ce":[1,0,0,0,0,5,0,0,2],
+"interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_background_mapper.html#aef96f43d124b699cbce09df781ff02ce":[2,0,0,0,0,4,0,0,2],
+"interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_game_level_mapper.html":[1,0,0,0,0,5,0,1],
+"interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_game_level_mapper.html":[2,0,0,0,0,4,0,1],
+"interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_game_level_mapper.html#a63f9adc65e93a1bb4221e63e05e267d9":[1,0,0,0,0,5,0,1,2],
+"interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_game_level_mapper.html#a63f9adc65e93a1bb4221e63e05e267d9":[2,0,0,0,0,4,0,1,2]
 };

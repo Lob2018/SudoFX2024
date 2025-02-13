@@ -1,6 +1,6 @@
 <map id="fr.softsf.sudokufx.viewmodel.FullMenuViewModel.updateSoftware" name="fr.softsf.sudokufx.viewmodel.FullMenuViewModel.updateSoftware">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,139,239,181"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html#a5d1ec54faf65957f9b2dc35dd5a2bedb" title="Checks the latest version of the software by querying the GitHub API for the repository&#39;s tags." alt="" coords="287,39,513,81"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html#a5d1ec54faf65957f9b2dc35dd5a2bedb" title="Asynchronously checks if the current application version is up&#45;to&#45;date by querying the GitHub API." alt="" coords="287,39,513,81"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,136,286,91,306,84,308,89,288,96,174,141"/>
 <area shape="rect" id="Node000006" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_grid_master.html#a7ae916d7f64607637b7bf5bf33fd0eb3" title="Crée les grilles de Sudoku (résolue et à résoudre) en fonction du niveau de difficulté." alt="" coords="306,105,494,148"/>
 <area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="239,143,290,137,290,142,240,149"/>

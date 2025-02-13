@@ -1,11 +1,5 @@
 var NAVTREEINDEX6 =
 {
-"interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_background_mapper.html#aef96f43d124b699cbce09df781ff02ce":[1,0,0,0,0,5,0,0,2],
-"interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_background_mapper.html#aef96f43d124b699cbce09df781ff02ce":[2,0,0,0,0,4,0,0,2],
-"interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_game_level_mapper.html":[1,0,0,0,0,5,0,1],
-"interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_game_level_mapper.html":[2,0,0,0,0,4,0,1],
-"interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_game_level_mapper.html#a63f9adc65e93a1bb4221e63e05e267d9":[1,0,0,0,0,5,0,1,2],
-"interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_game_level_mapper.html#a63f9adc65e93a1bb4221e63e05e267d9":[2,0,0,0,0,4,0,1,2],
 "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_game_level_mapper.html#a7f617d923752b3af4579f0bbe1c3c7b4":[1,0,0,0,0,5,0,1,0],
 "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_game_level_mapper.html#a7f617d923752b3af4579f0bbe1c3c7b4":[2,0,0,0,0,4,0,1,0],
 "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_game_level_mapper.html#ac5efe602dc7bb97bd5eb62ad2976d7b4":[1,0,0,0,0,5,0,1,1],

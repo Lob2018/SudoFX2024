@@ -1,11 +1,7 @@
 <map id="fr.softsf.sudokufx.service.VersionService" name="fr.softsf.sudokufx.service.VersionService">
-<area shape="rect" id="Node000001" title="Service for managing version information from a GitHub repository." alt="" coords="164,139,393,635"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,131,75"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="98,86,167,197,162,200,94,88"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="156,5,247,75"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="203,74,206,114,207,121,202,122,201,115,198,75"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="323,5,392,75"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="353,75,342,123,336,122,347,74"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="416,5,563,75"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="472,76,404,186,400,183,467,73"/>
+<area shape="rect" id="Node000001" title="Service for checking if the application version is up to date by querying GitHub." alt="" coords="14,139,243,576"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,97,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="53,74,55,114,57,122,52,123,50,115,47,75"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="172,5,242,75"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="201,75,189,123,184,122,196,74"/>
 </map>
