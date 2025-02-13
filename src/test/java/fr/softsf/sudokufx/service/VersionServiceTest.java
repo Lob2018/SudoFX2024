@@ -27,7 +27,7 @@ import static org.mockito.ArgumentMatchers.any;
 
 @ExtendWith(MockitoExtension.class)
 @ExtendWith(SystemStubsExtension.class)
-public class VersionServiceTest {
+class VersionServiceTest {
     private static final String APP_VERSION_PROPERTY = "app.version";
     private static final String GITHUB_LINK_TO_REPOSITORY_RELEASES = "https://github.com/Lob2018/SudokuFX/releases";
     private static final String JSON = """
