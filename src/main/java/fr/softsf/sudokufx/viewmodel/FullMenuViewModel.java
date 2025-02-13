@@ -26,17 +26,19 @@ public class FullMenuViewModel {
     private final VersionService versionService;
 
     private StringProperty welcome;
-    private final BooleanProperty version = new SimpleBooleanProperty(false);
+    private SimpleBooleanProperty version;
 
     @Autowired
     public FullMenuViewModel(SoftwareService softwareService, IGridMaster iGridMaster, VersionService versionService) {
         this.softwareService = softwareService;
         this.iGridMaster = iGridMaster;
         this.versionService = versionService;
-        version.bind(versionService.versionUpToDateProperty());
     }
 
-    public BooleanProperty versionUpToDateProperty() {
+    public BooleanProperty versionProperty() {
+        if (version == null) {
+            version = new SimpleBooleanProperty(false);
+        }
         return version;
     }
 
@@ -64,7 +66,9 @@ public class FullMenuViewModel {
 
     private void updateSoftware(SoftwareDto softwareToUpdate) {
 
-        versionService.checkLatestVersion();
+        versionService.checkLatestVersion().thenAccept(result ->
+                Platform.runLater(() -> version.set(result))
+        );
 
         SoftwareDto softwareDto = new SoftwareDto(
                 softwareToUpdate.softwareid(),

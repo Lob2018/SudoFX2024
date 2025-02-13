@@ -5,13 +5,9 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import fr.softsf.sudokufx.configuration.JVMApplicationProperties;
 import fr.softsf.sudokufx.dto.github.TagDto;
 import fr.softsf.sudokufx.utils.MyRegex;
-import javafx.application.Platform;
-import javafx.beans.property.ReadOnlyBooleanProperty;
-import javafx.beans.property.SimpleBooleanProperty;
-import javafx.concurrent.Service;
-import javafx.concurrent.Task;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -23,11 +19,14 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
 /**
- * Service for managing version information from a GitHub repository.
+ * Service for checking if the application version is up to date by querying GitHub.
+ * <p>
+ * It retrieves the latest release tag from the GitHub API and compares it with the current version.
+ * If an update is available, the result can be used to notify the user.
  */
 @Slf4j
-@org.springframework.stereotype.Service
-public class VersionService extends Service<Boolean> {
+@Service
+public class VersionService {
 
     private static final String OWNER = "Lob2018";
     private static final String REPO = "SudokuFX";
@@ -37,7 +36,6 @@ public class VersionService extends Service<Boolean> {
     private static final ObjectMapper OBJECT_MAPPER = new ObjectMapper();
     private final HttpClient httpClient;
     private final String currentVersion = JVMApplicationProperties.getAppVersion().isEmpty() ? "" : JVMApplicationProperties.getAppVersion().substring(1);
-    private final SimpleBooleanProperty versionUpToDate = new SimpleBooleanProperty(true);
 
     /**
      * Constructs a VersionService with the provided HttpClient.
@@ -50,33 +48,6 @@ public class VersionService extends Service<Boolean> {
     }
 
     /**
-     * Creates a new task to check if the latest version of the software is up to date.
-     * The task checks the latest version and returns the result as a Boolean.
-     *
-     * @return A Task that performs the version check and returns true if up to date, false otherwise.
-     */
-    @Override
-    protected Task<Boolean> createTask() {
-        return new Task<>() {
-            @Override
-            protected Boolean call() {
-                checkLatestVersion();
-                return versionUpToDate.get();
-            }
-        };
-    }
-
-    /**
-     * Provides a read-only property that indicates whether the software version is up to date.
-     * This property can be used to bind UI elements or other components to the version status.
-     *
-     * @return A read-only Boolean property representing the version's up-to-date status.
-     */
-    public ReadOnlyBooleanProperty versionUpToDateProperty() {
-        return versionUpToDate;
-    }
-
-    /**
      * Gets the GitHub link to the repository releases page.
      *
      * @return the URL to the repository releases page.
@@ -86,16 +57,14 @@ public class VersionService extends Service<Boolean> {
     }
 
     /**
-     * Checks the latest version of the software by querying the GitHub API for the repository's tags.
-     * The method sends an asynchronous HTTP request to the GitHub API, processes the response,
-     * and updates the version status in the `versionUpToDate` property.
+     * Asynchronously checks if the current application version is up-to-date by querying the GitHub API.
+     * It compares the latest release version from the repository with the current application version.
      * <p>
-     * The boolean value returned by this method is primarily used for testing purposes, and in production,
-     * the version status is directly updated in the `versionUpToDate` property using `versionUpToDate.set(result)`.
+     * In case of errors (e.g., timeout, interruption, or network issues), it assumes the version is up-to-date
+     * and logs the exception details.
      *
-     * @return A CompletableFuture that returns a boolean value indicating whether the current version
-     * is up to date (true if up to date, false if an update is available). This return value is
-     * used exclusively for testing purposes and is not part of the production flow.
+     * @return A `CompletableFuture<Boolean>` that completes with `true` if the version is up-to-date,
+     * or `false` if an update is available. On error, it defaults to `true`.
      */
     public CompletableFuture<Boolean> checkLatestVersion() {
         HttpRequest request = HttpRequest.newBuilder()
@@ -105,34 +74,31 @@ public class VersionService extends Service<Boolean> {
                 .build();
         try {
             return httpClient.sendAsync(request, HttpResponse.BodyHandlers.ofString())
-                    .orTimeout(5, TimeUnit.SECONDS)
+                    .orTimeout(5, TimeUnit.SECONDS)  // Temps d'attente avant un timeout
                     .thenApply(response -> {
                         if (response.statusCode() != 200) {
                             log.error("██ GitHub API returned non 200 status code: {}", response.statusCode());
-                            return true; // En cas d'erreur, on considère la version actuelle comme à jour
+                            return true;
                         }
                         return parseResponse(response.body());
                     })
                     .exceptionally(ex -> {
                         if (ex.getCause() instanceof InterruptedException) {
                             log.warn("▓▓ GitHub version check was interrupted", ex);
-                            Thread.currentThread().interrupt();
+                            Thread.currentThread().interrupt();  // Réinitialisation de l'état d'interruption
                         } else if (ex.getCause() instanceof TimeoutException) {
                             log.warn("▓▓ Timeout while checking GitHub version");
                         } else {
                             log.error("██ Exception retrieving GitHub version: {}", ex.getMessage(), ex);
                         }
                         return true;
-                    })
-                    .thenApply(result -> {
-                        Platform.runLater(() -> versionUpToDate.set(result));
-                        return result;
                     });
         } catch (Exception ex) {
             log.error("██ Exception retrieving GitHub version: {}", ex.getMessage(), ex);
             return CompletableFuture.completedFuture(true);
         }
     }
+
 
     /**
      * Parses the JSON response from the GitHub API to extract the latest published version.

@@ -10,6 +10,7 @@ import fr.softsf.sudokufx.utils.SecureRandomGenerator;
 import fr.softsf.sudokufx.view.components.toaster.ToasterVBox;
 import fr.softsf.sudokufx.viewmodel.FullMenuViewModel;
 import javafx.animation.FadeTransition;
+import javafx.beans.binding.Bindings;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.geometry.Pos;
@@ -73,10 +74,10 @@ public final class FullMenuView implements IMainStageView, ISceneProvider {
         welcomeText.textProperty().bindBidirectional(fullMenuViewModel.welcomeProperty());
 
 
-        version.textProperty().bind(
-                fullMenuViewModel.versionUpToDateProperty().asString().map(isUpToDate ->
-                        isUpToDate.equals("true") ? "Votre application est à jour." : "Nouvelle version disponible !")
-        );
+        version.textProperty().bind(Bindings.when(fullMenuViewModel.versionProperty())
+                .then("Version à jour")
+                .otherwise("Mise à jour disponible"));
+
     }
 
     /**
@@ -98,7 +99,6 @@ public final class FullMenuView implements IMainStageView, ISceneProvider {
             );
         }
         fullMenuViewModel.test();
-        fullMenuViewModel.versionUpToDateProperty();
 
 //        fxmlService.setRootByFXMLName("crashscreen-view");
     }
