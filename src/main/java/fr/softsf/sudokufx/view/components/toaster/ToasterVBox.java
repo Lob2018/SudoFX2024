@@ -69,7 +69,7 @@ public final class ToasterVBox extends VBox {
         setToastStyle(toast, toastLevel);
         setAccessibility(toast, toastLevel, fullDetailText);
         toast.setAlignment(Pos.CENTER);
-        final double duration = Math.max(6000, (double) fullDetailText.length() * 1000 / 5);
+        final double duration = Math.max(6000, (double) visibleText.length() * 1000 / 5);
         temporizeToast(toast, duration);
         toast.setOnAction(this::toastActions);
         getChildren().add(toast);
