@@ -95,7 +95,7 @@ class VersionServiceTest {
         Mockito.when(mockHttpClient.sendAsync(any(HttpRequest.class), any(HttpResponse.BodyHandler.class)))
                 .thenReturn(CompletableFuture.completedFuture(mockResponse));
         VersionService versionService = new VersionService(mockHttpClient);
-        boolean isLatestVersion = versionService.isLatestGitHubPublishedPackageVersion().join();
+        boolean isLatestVersion = versionService.checkLatestVersion().join();
         assertTrue(isLatestVersion);
         Mockito.verify(mockHttpClient, Mockito.times(1))
                 .sendAsync(any(HttpRequest.class), any(HttpResponse.BodyHandler.class));
@@ -108,7 +108,7 @@ class VersionServiceTest {
         Mockito.when(mockHttpClient.sendAsync(any(HttpRequest.class), any(HttpResponse.BodyHandler.class)))
                 .thenReturn(CompletableFuture.completedFuture(mockResponse));
         VersionService versionService = new VersionService(mockHttpClient);
-        boolean isLatestVersion = versionService.isLatestGitHubPublishedPackageVersion().join();
+        boolean isLatestVersion = versionService.checkLatestVersion().join();
         assertTrue(isLatestVersion);
         Mockito.verify(mockHttpClient, Mockito.times(1))
                 .sendAsync(any(HttpRequest.class), any(HttpResponse.BodyHandler.class));
@@ -124,7 +124,7 @@ class VersionServiceTest {
         Mockito.when(mockHttpClient.sendAsync(any(HttpRequest.class), any(HttpResponse.BodyHandler.class)))
                 .thenReturn(CompletableFuture.completedFuture(mockResponse));
         VersionService versionService = new VersionService(mockHttpClient);
-        boolean isLatestVersion = versionService.isLatestGitHubPublishedPackageVersion().join();
+        boolean isLatestVersion = versionService.checkLatestVersion().join();
         if (onLineVersion.equals("v2.1.1") || onLineVersion.equals("v1.2.1") || onLineVersion.equals("v1.1.2") || onLineVersion.equals("v99.99.99")) {
             assertFalse(isLatestVersion);
         } else {
@@ -143,7 +143,7 @@ class VersionServiceTest {
         Mockito.when(mockHttpClient.sendAsync(any(HttpRequest.class), any(HttpResponse.BodyHandler.class)))
                 .thenReturn(CompletableFuture.completedFuture(mockResponse));
         VersionService versionService = new VersionService(mockHttpClient);
-        boolean isLatestVersion = versionService.isLatestGitHubPublishedPackageVersion().join();
+        boolean isLatestVersion = versionService.checkLatestVersion().join();
         assertTrue(isLatestVersion);
         Mockito.verify(mockHttpClient, Mockito.times(1))
                 .sendAsync(any(HttpRequest.class), any(HttpResponse.BodyHandler.class));

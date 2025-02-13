@@ -51,6 +51,8 @@ public final class FullMenuView implements IMainStageView, ISceneProvider {
     @FXML
     private Label welcomeText;
     @FXML
+    private Label version;
+    @FXML
     private Button buttonHello;
     private Text text2 = new Text("\ue86c");
 
@@ -69,6 +71,12 @@ public final class FullMenuView implements IMainStageView, ISceneProvider {
         buttonHello.setStyle("-fx-background-color: #00FF00;");
 
         welcomeText.textProperty().bindBidirectional(fullMenuViewModel.welcomeProperty());
+
+
+        version.textProperty().bind(
+                fullMenuViewModel.versionUpToDateProperty().asString().map(isUpToDate ->
+                        isUpToDate.equals("true") ? "Votre application est à jour." : "Nouvelle version disponible !")
+        );
     }
 
     /**
@@ -90,6 +98,7 @@ public final class FullMenuView implements IMainStageView, ISceneProvider {
             );
         }
         fullMenuViewModel.test();
+        fullMenuViewModel.versionUpToDateProperty();
 
 //        fxmlService.setRootByFXMLName("crashscreen-view");
     }

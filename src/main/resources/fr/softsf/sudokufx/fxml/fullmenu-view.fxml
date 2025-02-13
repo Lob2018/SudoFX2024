@@ -13,6 +13,7 @@
             <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
         </padding>
         <Label fx:id="welcomeText"/>
+        <Label fx:id="version"/>
         <Button fx:id="buttonHello" onAction="#onHelloButtonClick" text="Helloj!"/>
     </VBox>
     <ToasterVBox fx:id="toaster"/>

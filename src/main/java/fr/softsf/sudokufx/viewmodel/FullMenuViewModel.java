@@ -5,6 +5,8 @@ import fr.softsf.sudokufx.interfaces.IGridMaster;
 import fr.softsf.sudokufx.service.SoftwareService;
 import fr.softsf.sudokufx.service.VersionService;
 import javafx.application.Platform;
+import javafx.beans.property.BooleanProperty;
+import javafx.beans.property.SimpleBooleanProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +15,6 @@ import org.springframework.stereotype.Component;
 import java.time.LocalDateTime;
 import java.util.Arrays;
 import java.util.Optional;
-import java.util.concurrent.CompletableFuture;
 
 /**
  * FullMenuViewModel with business logic (not final)
@@ -25,12 +26,18 @@ public class FullMenuViewModel {
     private final VersionService versionService;
 
     private StringProperty welcome;
+    private final BooleanProperty version = new SimpleBooleanProperty(false);
 
     @Autowired
     public FullMenuViewModel(SoftwareService softwareService, IGridMaster iGridMaster, VersionService versionService) {
         this.softwareService = softwareService;
         this.iGridMaster = iGridMaster;
         this.versionService = versionService;
+        version.bind(versionService.versionUpToDateProperty());
+    }
+
+    public BooleanProperty versionUpToDateProperty() {
+        return version;
     }
 
     public StringProperty welcomeProperty() {
@@ -56,6 +63,9 @@ public class FullMenuViewModel {
     }
 
     private void updateSoftware(SoftwareDto softwareToUpdate) {
+
+        versionService.checkLatestVersion();
+
         SoftwareDto softwareDto = new SoftwareDto(
                 softwareToUpdate.softwareid(),
                 "1.0.0",
@@ -88,19 +98,9 @@ public class FullMenuViewModel {
                     "\n" + formattedGrilleAResoudre +
                     "\n\n Niveau " + niveau + "/3 avec " + grilles[2][0] + "% de difficuté");
 
-            CompletableFuture<Boolean> versionCheckFuture = CompletableFuture.supplyAsync(() -> {
-                return versionService.isLatestGitHubPublishedPackageVersion().join();
-            });
-            versionCheckFuture.thenAccept(isLatestVersion -> {
-                Platform.runLater(() -> {
-                    setWelcome("Version : " + updatedSoftwareOptional.get().currentversion() +
-                            "\nMise à jour : " + updatedSoftwareOptional.get().updatedat() +
-                            "\n" + formattedGrilleResolue +
-                            "\n" + formattedGrilleAResoudre +
-                            "\n\nDernière version GitHub : " + (isLatestVersion ? "à jour" : "non à jour") +
-                            "\n\n Niveau " + niveau + "/3 avec " + grilles[2][0] + "% de difficuté");
-                });
-            });
+
+//
+
         } else {
             System.out.println("Erreur lors de la mise à jour du logiciel.");
         }
