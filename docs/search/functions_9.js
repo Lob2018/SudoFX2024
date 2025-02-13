@@ -8,9 +8,8 @@ var searchData=
   ['initializefxmlservice_5',['initializeFxmlService',['../classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#afa5ef977463b6da726c91c4b3d67d1f4',1,'fr::softsf::sudokufx::SudoMain']]],
   ['initscene_6',['initScene',['../classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#a574a17236a0848e4ce394ff5077a15fc',1,'fr::softsf::sudokufx::SudoMain']]],
   ['iosfolderfactory_7',['iOsFolderFactory',['../classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_os_folder_factory_manager.html#a1cd5afd513804cfb585cfba63809f0d9',1,'fr::softsf::sudokufx::configuration::os::OsFolderFactoryManager']]],
-  ['islatestgithubpublishedpackageversion_8',['isLatestGitHubPublishedPackageVersion',['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html#a5fb7ff910f1ed6c5e6478d79649fcdb1',1,'fr::softsf::sudokufx::service::VersionService']]],
-  ['isspringcontextexitonrefresh_9',['isSpringContextExitOnRefresh',['../classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_j_v_m_application_properties.html#a46753fc32c7d3156f3aed0f0c63c758e',1,'fr::softsf::sudokufx::configuration::JVMApplicationProperties']]],
-  ['isvalidatedbyregex_10',['isValidatedByRegex',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex.html#a981702b076ee54a416d676b6f7a182fc',1,'fr::softsf::sudokufx::utils::MyRegex']]],
-  ['isvalidatedbyregexwithnullregex_5fexception_11',['isValidatedByRegexWithNullRegex_Exception',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex_u_test.html#a0c4240fb263d782f02b70d1c31c64dc7',1,'fr::softsf::sudokufx::utils::MyRegexUTest']]],
-  ['isvalidatedbyregexwithnulltext_5fexception_12',['isValidatedByRegexWithNullText_Exception',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex_u_test.html#a097c4cbc2ce04bc3ad9e4e24097e7c0e',1,'fr::softsf::sudokufx::utils::MyRegexUTest']]]
+  ['isspringcontextexitonrefresh_8',['isSpringContextExitOnRefresh',['../classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_j_v_m_application_properties.html#a46753fc32c7d3156f3aed0f0c63c758e',1,'fr::softsf::sudokufx::configuration::JVMApplicationProperties']]],
+  ['isvalidatedbyregex_9',['isValidatedByRegex',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex.html#a981702b076ee54a416d676b6f7a182fc',1,'fr::softsf::sudokufx::utils::MyRegex']]],
+  ['isvalidatedbyregexwithnullregex_5fexception_10',['isValidatedByRegexWithNullRegex_Exception',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex_u_test.html#a0c4240fb263d782f02b70d1c31c64dc7',1,'fr::softsf::sudokufx::utils::MyRegexUTest']]],
+  ['isvalidatedbyregexwithnulltext_5fexception_11',['isValidatedByRegexWithNullText_Exception',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex_u_test.html#a097c4cbc2ce04bc3ad9e4e24097e7c0e',1,'fr::softsf::sudokufx::utils::MyRegexUTest']]]
 ];

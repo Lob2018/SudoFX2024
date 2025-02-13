@@ -1,23 +1,23 @@
 <map id="fr.softsf.sudokufx.viewmodel.FullMenuViewModel.updateSoftware" name="fr.softsf.sudokufx.viewmodel.FullMenuViewModel.updateSoftware">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,117,239,160"/>
-<area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_grid_master.html#a7ae916d7f64607637b7bf5bf33fd0eb3" title="Crée les grilles de Sudoku (résolue et à résoudre) en fonction du niveau de difficulté." alt="" coords="321,5,509,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="162,114,220,86,286,58,306,51,308,56,288,62,222,90,165,119"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html#a5fb7ff910f1ed6c5e6478d79649fcdb1" title="Asynchronously checks if the current application version is the latest published version on GitHub." alt="" coords="287,72,543,131"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="239,121,271,117,272,122,240,126"/>
-<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_full_menu_view_model.html#a99e8ff186f421e303199bb273f082c40" title=" " alt="" coords="308,155,522,197"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="240,151,292,158,292,163,239,156"/>
-<area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_software_service.html#a74d93b9d4144d91d01a4b02369265f0f" title=" " alt="" coords="309,221,521,264"/>
-<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="170,158,288,207,310,214,308,219,286,212,168,163"/>
-<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html#ac909ce26310a3c5b01262ad5f3affcbe" title="Parses the JSON response from the GitHub API to extract the latest published version." alt="" coords="634,80,837,123"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="544,99,618,99,618,104,544,104"/>
-<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html#af166c049683464c03d118142b986ab71" title="Compares two version strings in the format MAJOR.MINOR.PATCH." alt="" coords="927,47,1140,89"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="837,87,912,79,912,84,838,93"/>
-<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex.html#a981702b076ee54a416d676b6f7a182fc" title="Validates the given text against the specified regular expression." alt="" coords="934,113,1133,156"/>
-<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="838,110,919,119,918,125,837,115"/>
-<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_full_menu_view_model.html#a574eda9c01df428c38524cc5acf49fbf" title=" " alt="" coords="614,155,857,197"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="522,173,598,173,598,179,522,179"/>
-<area shape="rect" id="Node000010" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_software_mapper.html#a85adc191251bde9870609d4b2cb23ee6" title="Maps a SoftwareDto object to a Software object." alt="" coords="591,221,879,264"/>
-<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="522,240,576,240,576,245,522,245"/>
-<area shape="rect" id="Node000011" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_software_mapper.html#addc8516cb5cc6171c663e132d5fdddd6" title="Maps a Software object to a SoftwareDto object." alt="" coords="617,288,853,331"/>
-<area shape="poly" id="edge10_Node000009_Node000011" title=" " alt="" coords="521,262,615,282,614,287,520,267"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,139,239,181"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html#a5d1ec54faf65957f9b2dc35dd5a2bedb" title="Checks the latest version of the software by querying the GitHub API for the repository&#39;s tags." alt="" coords="287,39,513,81"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,136,286,91,306,84,308,89,288,96,174,141"/>
+<area shape="rect" id="Node000006" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_grid_master.html#a7ae916d7f64607637b7bf5bf33fd0eb3" title="Crée les grilles de Sudoku (résolue et à résoudre) en fonction du niveau de difficulté." alt="" coords="306,105,494,148"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="239,143,290,137,290,142,240,149"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_full_menu_view_model.html#a99e8ff186f421e303199bb273f082c40" title=" " alt="" coords="293,172,507,215"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="240,171,278,176,277,181,239,177"/>
+<area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_software_service.html#a74d93b9d4144d91d01a4b02369265f0f" title=" " alt="" coords="294,239,506,281"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="174,179,288,224,308,231,306,236,286,229,172,184"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html#ac909ce26310a3c5b01262ad5f3affcbe" title="Parses the JSON response from the GitHub API to extract the latest published version." alt="" coords="604,39,807,81"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="513,57,588,57,588,63,513,63"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html#af166c049683464c03d118142b986ab71" title="Compares two version strings in the format MAJOR.MINOR.PATCH." alt="" coords="897,5,1110,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="807,46,882,38,882,43,808,51"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex.html#a981702b076ee54a416d676b6f7a182fc" title="Validates the given text against the specified regular expression." alt="" coords="904,72,1103,115"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="808,69,889,78,888,83,807,74"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_full_menu_view_model.html#a574eda9c01df428c38524cc5acf49fbf" title=" " alt="" coords="584,172,827,215"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="507,191,569,191,569,196,507,196"/>
+<area shape="rect" id="Node000010" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_software_mapper.html#a85adc191251bde9870609d4b2cb23ee6" title="Maps a SoftwareDto object to a Software object." alt="" coords="561,239,849,281"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="507,257,545,257,545,263,507,263"/>
+<area shape="rect" id="Node000011" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_software_mapper.html#addc8516cb5cc6171c663e132d5fdddd6" title="Maps a Software object to a SoftwareDto object." alt="" coords="587,305,823,348"/>
+<area shape="poly" id="edge10_Node000009_Node000011" title=" " alt="" coords="501,279,590,299,589,304,500,285"/>
 </map>

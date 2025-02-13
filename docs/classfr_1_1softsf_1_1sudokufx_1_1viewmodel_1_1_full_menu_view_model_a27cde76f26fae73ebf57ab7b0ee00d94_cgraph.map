@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.viewmodel.FullMenuViewModel.FullMenuViewModel" name="fr.softsf.sudokufx.viewmodel.FullMenuViewModel.FullMenuViewModel">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,265,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html#a4f0f67164951249e7c490512eda16bae" title="Provides a read&#45;only property that indicates whether the software version is up to date." alt="" coords="313,5,575,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="265,24,297,24,297,29,265,29"/>
+</map>

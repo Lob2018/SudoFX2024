@@ -99,6 +99,7 @@ $(function(){initNavTree('classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_s
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#pri-static-attribs">Static Private Attributes</a> &#124;
@@ -110,10 +111,17 @@ $(function(){initNavTree('classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_s
 <p>Service for managing version information from a GitHub repository.  
  <a href="#details">More...</a></p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for fr.softsf.sudokufx.service.VersionService:</div>
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for fr.softsf.sudokufx.service.VersionService:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service__inherit__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for fr.softsf.sudokufx.service.VersionService:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 <table class="memberdecls">
@@ -122,12 +130,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ada7b2b3bc786e330d262a4097c423768" id="r_ada7b2b3bc786e330d262a4097c423768"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada7b2b3bc786e330d262a4097c423768">VersionService</a> (HttpClient <a class="el" href="#ab848493a61107602eb1217a09b15db85">httpClient</a>)</td></tr>
 <tr class="memdesc:ada7b2b3bc786e330d262a4097c423768"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html" title="Service for managing version information from a GitHub repository.">VersionService</a> with the provided HttpClient.  <br /></td></tr>
 <tr class="separator:ada7b2b3bc786e330d262a4097c423768"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d1ec54faf65957f9b2dc35dd5a2bedb" id="r_a5d1ec54faf65957f9b2dc35dd5a2bedb"><td class="memItemLeft" align="right" valign="top">CompletableFuture&lt; Boolean &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d1ec54faf65957f9b2dc35dd5a2bedb">checkLatestVersion</a> ()</td></tr>
+<tr class="memdesc:a5d1ec54faf65957f9b2dc35dd5a2bedb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks the latest version of the software by querying the GitHub API for the repository's tags.  <br /></td></tr>
+<tr class="separator:a5d1ec54faf65957f9b2dc35dd5a2bedb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6347ab8be2c6df89fe71add044e10408" id="r_a6347ab8be2c6df89fe71add044e10408"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6347ab8be2c6df89fe71add044e10408">getGitHubLinkToRepositoryReleases</a> ()</td></tr>
 <tr class="memdesc:a6347ab8be2c6df89fe71add044e10408"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the GitHub link to the repository releases page.  <br /></td></tr>
 <tr class="separator:a6347ab8be2c6df89fe71add044e10408"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5fb7ff910f1ed6c5e6478d79649fcdb1" id="r_a5fb7ff910f1ed6c5e6478d79649fcdb1"><td class="memItemLeft" align="right" valign="top">CompletableFuture&lt; Boolean &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5fb7ff910f1ed6c5e6478d79649fcdb1">isLatestGitHubPublishedPackageVersion</a> ()</td></tr>
-<tr class="memdesc:a5fb7ff910f1ed6c5e6478d79649fcdb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asynchronously checks if the current application version is the latest published version on GitHub.  <br /></td></tr>
-<tr class="separator:a5fb7ff910f1ed6c5e6478d79649fcdb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f0f67164951249e7c490512eda16bae" id="r_a4f0f67164951249e7c490512eda16bae"><td class="memItemLeft" align="right" valign="top">ReadOnlyBooleanProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4f0f67164951249e7c490512eda16bae">versionUpToDateProperty</a> ()</td></tr>
+<tr class="memdesc:a4f0f67164951249e7c490512eda16bae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a read-only property that indicates whether the software version is up to date.  <br /></td></tr>
+<tr class="separator:a4f0f67164951249e7c490512eda16bae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a809120eaa51cfde1210c59995bba14a7" id="r_a809120eaa51cfde1210c59995bba14a7"><td class="memItemLeft" align="right" valign="top">Task&lt; Boolean &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a809120eaa51cfde1210c59995bba14a7">createTask</a> ()</td></tr>
+<tr class="memdesc:a809120eaa51cfde1210c59995bba14a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new task to check if the latest version of the software is up to date.  <br /></td></tr>
+<tr class="separator:a809120eaa51cfde1210c59995bba14a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -144,8 +161,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a2319896542b6615491c2ca61dee974ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab848493a61107602eb1217a09b15db85" id="r_ab848493a61107602eb1217a09b15db85"><td class="memItemLeft" align="right" valign="top">final HttpClient&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab848493a61107602eb1217a09b15db85">httpClient</a></td></tr>
 <tr class="separator:ab848493a61107602eb1217a09b15db85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2eeae9c9b7b39a630a50fd5b2cd2b8d" id="r_ae2eeae9c9b7b39a630a50fd5b2cd2b8d"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae2eeae9c9b7b39a630a50fd5b2cd2b8d">lastVersion</a> = <a class="el" href="#a2319896542b6615491c2ca61dee974ab">currentVersion</a></td></tr>
-<tr class="separator:ae2eeae9c9b7b39a630a50fd5b2cd2b8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8617792d8b22610cf6de46b56e8247ce" id="r_a8617792d8b22610cf6de46b56e8247ce"><td class="memItemLeft" align="right" valign="top">final SimpleBooleanProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8617792d8b22610cf6de46b56e8247ce">versionUpToDate</a> = new SimpleBooleanProperty(true)</td></tr>
+<tr class="separator:a8617792d8b22610cf6de46b56e8247ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
@@ -191,6 +208,35 @@ Static Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a5d1ec54faf65957f9b2dc35dd5a2bedb" name="a5d1ec54faf65957f9b2dc35dd5a2bedb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d1ec54faf65957f9b2dc35dd5a2bedb">&#9670;&#160;</a></span>checkLatestVersion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CompletableFuture&lt; Boolean &gt; fr.softsf.sudokufx.service.VersionService.checkLatestVersion </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks the latest version of the software by querying the GitHub API for the repository's tags. </p>
+<p>The method sends an asynchronous HTTP request to the GitHub API, processes the response, and updates the version status in the <code>versionUpToDate</code> property. </p>
+<p>The boolean value returned by this method is primarily used for testing purposes, and in production, the version status is directly updated in the <code>versionUpToDate</code> property using <code>versionUpToDate.set(result)</code>.</p>
+<dl class="section return"><dt>Returns</dt><dd>A CompletableFuture that returns a boolean value indicating whether the current version is up to date (true if up to date, false if an update is available). This return value is used exclusively for testing purposes and is not part of the production flow. </dd></dl>
+<div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service_a5d1ec54faf65957f9b2dc35dd5a2bedb_cgraph.svg" width="100%" height="390"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
 <a id="af166c049683464c03d118142b986ab71" name="af166c049683464c03d118142b986ab71"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af166c049683464c03d118142b986ab71">&#9670;&#160;</a></span>compareVersions()</h2>
 
@@ -236,6 +282,42 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a809120eaa51cfde1210c59995bba14a7" name="a809120eaa51cfde1210c59995bba14a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a809120eaa51cfde1210c59995bba14a7">&#9670;&#160;</a></span>createTask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Task&lt; Boolean &gt; fr.softsf.sudokufx.service.VersionService.createTask </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a new task to check if the latest version of the software is up to date. </p>
+<p>The task checks the latest version and returns the result as a Boolean.</p>
+<dl class="section return"><dt>Returns</dt><dd>A Task that performs the version check and returns true if up to date, false otherwise. </dd></dl>
+<div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service_a809120eaa51cfde1210c59995bba14a7_cgraph.svg" width="100%" height="390"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
 <a id="a6347ab8be2c6df89fe71add044e10408" name="a6347ab8be2c6df89fe71add044e10408"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6347ab8be2c6df89fe71add044e10408">&#9670;&#160;</a></span>getGitHubLinkToRepositoryReleases()</h2>
 
@@ -253,38 +335,6 @@ Static Private Attributes</h2></td></tr>
 
 <p>Gets the GitHub link to the repository releases page. </p>
 <dl class="section return"><dt>Returns</dt><dd>the URL to the repository releases page. </dd></dl>
-
-</div>
-</div>
-<a id="a5fb7ff910f1ed6c5e6478d79649fcdb1" name="a5fb7ff910f1ed6c5e6478d79649fcdb1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5fb7ff910f1ed6c5e6478d79649fcdb1">&#9670;&#160;</a></span>isLatestGitHubPublishedPackageVersion()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">CompletableFuture&lt; Boolean &gt; fr.softsf.sudokufx.service.VersionService.isLatestGitHubPublishedPackageVersion </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Asynchronously checks if the current application version is the latest published version on GitHub. </p>
-<p>This method sends a GET request to the GitHub API to fetch the latest repository tags (versions). It then processes the response to determine whether the current version is up to date.</p>
-<dl class="section return"><dt>Returns</dt><dd>A CompletableFuture&lt;Boolean&gt; that resolves to:<ul>
-<li>true if the current version is up to date or if an error occurs</li>
-<li>false if a newer version is available </li>
-</ul>
-</dd></dl>
-<div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service_a5fb7ff910f1ed6c5e6478d79649fcdb1_cgraph.svg" width="100%" height="390"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
 
 </div>
 </div>
@@ -320,13 +370,34 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the current version is up to date or if an error occurs, false if an update is available. </dd></dl>
-<div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service_ac909ce26310a3c5b01262ad5f3affcbe_cgraph.svg" width="475" height="120"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
+
+</div>
+</div>
+<a id="a4f0f67164951249e7c490512eda16bae" name="a4f0f67164951249e7c490512eda16bae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f0f67164951249e7c490512eda16bae">&#9670;&#160;</a></span>versionUpToDateProperty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ReadOnlyBooleanProperty fr.softsf.sudokufx.service.VersionService.versionUpToDateProperty </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Provides a read-only property that indicates whether the software version is up to date. </p>
+<p>This property can be used to bind UI elements or other components to the version status.</p>
+<dl class="section return"><dt>Returns</dt><dd>A read-only Boolean property representing the version's up-to-date status. </dd></dl>
 
 </div>
 </div>
@@ -441,28 +512,6 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ae2eeae9c9b7b39a630a50fd5b2cd2b8d" name="ae2eeae9c9b7b39a630a50fd5b2cd2b8d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae2eeae9c9b7b39a630a50fd5b2cd2b8d">&#9670;&#160;</a></span>lastVersion</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">String fr.softsf.sudokufx.service.VersionService.lastVersion = <a class="el" href="#a2319896542b6615491c2ca61dee974ab">currentVersion</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="abcde02f39c2b1bf89f17bf83f4990d04" name="abcde02f39c2b1bf89f17bf83f4990d04"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abcde02f39c2b1bf89f17bf83f4990d04">&#9670;&#160;</a></span>OBJECT_MAPPER</h2>
 
@@ -529,6 +578,28 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a8617792d8b22610cf6de46b56e8247ce" name="a8617792d8b22610cf6de46b56e8247ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8617792d8b22610cf6de46b56e8247ce">&#9670;&#160;</a></span>versionUpToDate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final SimpleBooleanProperty fr.softsf.sudokufx.service.VersionService.versionUpToDate = new SimpleBooleanProperty(true)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>src/main/java/fr/softsf/sudokufx/service/<a class="el" href="_version_service_8java.html">VersionService.java</a></li>
 </ul>
@@ -538,7 +609,7 @@ Static Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1service.html">service</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html">VersionService</a></li>
-    <li class="footer">Generated on Thu Feb 13 2025 13:55:04 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Thu Feb 13 2025 19:44:27 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

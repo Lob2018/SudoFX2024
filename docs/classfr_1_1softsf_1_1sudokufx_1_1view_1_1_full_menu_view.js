@@ -16,5 +16,6 @@ var classfr_1_1softsf_1_1sudokufx_1_1view_1_1_full_menu_view =
     [ "text1", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_full_menu_view.html#a62bb4e5483fa55703a94077290310289", null ],
     [ "text2", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_full_menu_view.html#ae93f5b019e0e1e5bc4a396e7eb93e071", null ],
     [ "toaster", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_full_menu_view.html#ab28f3e51b95f17d3abe97acde463427c", null ],
+    [ "version", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_full_menu_view.html#ac37466bc7cb2889fea1a1c5bc1263b67", null ],
     [ "welcomeText", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_full_menu_view.html#ad241c8075be7bd8548502ae18af42eab", null ]
 ];

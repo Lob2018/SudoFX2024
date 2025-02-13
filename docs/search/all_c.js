@@ -1,7 +1,7 @@
 var searchData=
 [
   ['lacasevideaveclemoinsdepossibilites_0',['laCaseVideAvecLeMoinsDePossibilites',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a2bfd5ca8d30b4f51db2a81d8c9a5b641',1,'fr::softsf::sudokufx::utils::sudoku::GridMaster']]],
-  ['lastversion_1',['lastVersion',['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html#ae2eeae9c9b7b39a630a50fd5b2cd2b8d',1,'fr.softsf.sudokufx.service.VersionService.lastVersion'],['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1service_1_1_software_service_u_test.html#ad229fe0e7a46ac9a0a2bffd95e1ee57f',1,'fr.softsf.sudokufx.common.unit.service.SoftwareServiceUTest.lastVersion']]],
+  ['lastversion_1',['lastVersion',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1service_1_1_software_service_u_test.html#ad229fe0e7a46ac9a0a2bffd95e1ee57f',1,'fr::softsf::sudokufx::common::unit::service::SoftwareServiceUTest']]],
   ['lastversion_2',['lastversion',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_software.html#a1e19f5db5a5bddc941625bb081e64c30',1,'fr::softsf::sudokufx::model::Software']]],
   ['launcher_3',['Launcher',['../classfr_1_1softsf_1_1sudokufx_1_1_launcher.html',1,'fr::softsf::sudokufx']]],
   ['launcher_2ejava_4',['Launcher.java',['../_launcher_8java.html',1,'']]],

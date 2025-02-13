@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['lastversion_0',['lastVersion',['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html#ae2eeae9c9b7b39a630a50fd5b2cd2b8d',1,'fr.softsf.sudokufx.service.VersionService.lastVersion'],['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1service_1_1_software_service_u_test.html#ad229fe0e7a46ac9a0a2bffd95e1ee57f',1,'fr.softsf.sudokufx.common.unit.service.SoftwareServiceUTest.lastVersion']]],
+  ['lastversion_0',['lastVersion',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1service_1_1_software_service_u_test.html#ad229fe0e7a46ac9a0a2bffd95e1ee57f',1,'fr::softsf::sudokufx::common::unit::service::SoftwareServiceUTest']]],
   ['lastversion_1',['lastversion',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_software.html#a1e19f5db5a5bddc941625bb081e64c30',1,'fr::softsf::sudokufx::model::Software']]],
   ['level_2',['level',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html#abe9a074e3da1e79ca64d457940772034',1,'fr.softsf.sudokufx.model.GameLevel.level'],['../enumfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_enums_1_1_toast_levels.html#ac099c5dd7884d3908f57decdff1d8f3a',1,'fr.softsf.sudokufx.utils.MyEnums.ToastLevels.level']]],
   ['levelid_3',['levelid',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#afcb89b4ea6fbc6fe15d86cfec2c316ba',1,'fr.softsf.sudokufx.model.Game.levelid'],['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html#a27185e215323e1ca00cfa3b86696c28f',1,'fr.softsf.sudokufx.model.GameLevel.levelid']]],

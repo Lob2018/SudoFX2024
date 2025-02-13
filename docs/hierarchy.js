@@ -90,7 +90,6 @@ var hierarchy =
     [ "fr.softsf.sudokufx.service.SoftwareService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_software_service.html", null ],
     [ "fr.softsf.sudokufx.common.unit.service.SoftwareServiceUTest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1service_1_1_software_service_u_test.html", null ],
     [ "fr.softsf.sudokufx.utils.MyEnums.ToastLevels", "enumfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_enums_1_1_toast_levels.html", null ],
-    [ "fr.softsf.sudokufx.service.VersionService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html", null ],
     [ "fr.softsf.sudokufx.service.VersionServiceTest", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service_test.html", null ],
     [ "Application", null, [
       [ "fr.softsf.sudokufx.SudoMain", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html", null ]
@@ -108,6 +107,9 @@ var hierarchy =
       [ "fr.softsf.sudokufx.repository.PlayerLanguageRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_language_repository.html", null ],
       [ "fr.softsf.sudokufx.repository.PlayerRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_repository.html", null ],
       [ "fr.softsf.sudokufx.repository.SoftwareRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_software_repository.html", null ]
+    ] ],
+    [ "Service", null, [
+      [ "fr.softsf.sudokufx.service.VersionService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html", null ]
     ] ],
     [ "VBox", null, [
       [ "fr.softsf.sudokufx.view.components.toaster.ToasterVBox", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box.html", null ]
