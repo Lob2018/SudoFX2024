@@ -8,6 +8,7 @@ import fr.softsf.sudokufx.utils.MyRegex;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 
 import java.net.URI;
@@ -16,6 +17,7 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.util.List;
 import java.util.Objects;
+import java.util.concurrent.CompletableFuture;
 
 /**
  * Service for managing version information from a GitHub repository.
@@ -54,22 +56,49 @@ public class VersionService {
     }
 
     /**
-     * Checks if the current version is the latest published package version on GitHub.
+     * Asynchronously checks if the current application version is the latest published version on GitHub.
+     * <p>
+     * This method sends a GET request to the GitHub API to fetch the latest repository tags (versions).
+     * It then processes the response to determine whether the current version is up to date.
      *
-     * @return true if the current version is the latest or if there was an error, false otherwise.
+     * @return A CompletableFuture<Boolean> that resolves to:
+     * - true if the current version is up to date or if an error occurs
+     * - false if a newer version is available
      */
-    public boolean isLatestGitHubPublishedPackageVersion() {
+    @Async
+    public CompletableFuture<Boolean> isLatestGitHubPublishedPackageVersion() {
+        HttpRequest request = HttpRequest.newBuilder()
+                .uri(URI.create(GITHUB_API_URL_REPO_TAGS))
+                .header("Accept", "application/json")
+                .GET()
+                .build();
+        return httpClient.sendAsync(request, HttpResponse.BodyHandlers.ofString())
+                .thenApplyAsync(response -> {
+                    if (response.statusCode() != 200) {
+                        log.error("██ GitHub API returned non 200 status code: {}", response.statusCode());
+                        return true;
+                    }
+                    return parseResponse(response.body());
+                })
+                .exceptionally(ex -> {
+                    log.error("██ Exception retrieving GitHub version (currentVersion:{}, lastVersion:{}): {}",
+                            currentVersion, Objects.toString(lastVersion, "null"), ex.getMessage(), ex);
+                    return true;
+                });
+    }
+
+    /**
+     * Parses the JSON response from the GitHub API to extract the latest published version.
+     * <p>
+     * The method retrieves the latest tag name from the response, validates its format,
+     * and compares it with the current application version.
+     *
+     * @param json The raw JSON response from the GitHub API.
+     * @return true if the current version is up to date or if an error occurs, false if an update is available.
+     */
+    private boolean parseResponse(String json) {
         try {
-            HttpRequest request = HttpRequest.newBuilder()
-                    .uri(URI.create(GITHUB_API_URL_REPO_TAGS))
-                    .header("Accept", "application/json")
-                    .build();
-            HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
-            if (response.statusCode() != 200) {
-                log.error("██ GitHub API returned non 200 status code: {}", response.statusCode());
-                return true;
-            }
-            List<TagDto> list = OBJECT_MAPPER.readValue(response.body(), new TypeReference<>() {
+            List<TagDto> list = OBJECT_MAPPER.readValue(json, new TypeReference<>() {
             });
             String tagName = list.stream()
                     .findFirst()
@@ -85,18 +114,13 @@ public class VersionService {
                 log.warn("▓▓ GitHub version '{}' does not match expected semantic versioning format (X.Y.Z).", lastVersion);
                 return true;
             }
-            boolean isLatest = this.compareVersions(currentVersion, lastVersion) >= 0;
+            boolean isLatest = compareVersions(currentVersion, lastVersion) >= 0;
             log.info("▓▓ Version check: currentVersion={}, lastVersion={}, result={}", currentVersion, lastVersion, isLatest);
             return isLatest;
-        } catch (InterruptedException e) {
-            Thread.currentThread().interrupt();
-            log.error("██ Interrupted while retrieving GitHub version (currentVersion:{}, lastVersion:{}): {}",
-                    currentVersion, Objects.toString(lastVersion, "null"), e.getMessage(), e);
         } catch (Exception e) {
-            log.error("██ Exception retrieving GitHub version (currentVersion:{}, lastVersion:{}): {}",
-                    currentVersion, Objects.toString(lastVersion, "null"), e.getMessage(), e);
+            log.error("██ Error parsing GitHub API response: {}", e.getMessage(), e);
+            return true;
         }
-        return true;
     }
 
 

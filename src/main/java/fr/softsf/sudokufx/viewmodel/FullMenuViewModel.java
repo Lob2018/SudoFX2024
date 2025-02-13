@@ -4,6 +4,7 @@ import fr.softsf.sudokufx.dto.SoftwareDto;
 import fr.softsf.sudokufx.interfaces.IGridMaster;
 import fr.softsf.sudokufx.service.SoftwareService;
 import fr.softsf.sudokufx.service.VersionService;
+import javafx.application.Platform;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,6 +13,7 @@ import org.springframework.stereotype.Component;
 import java.time.LocalDateTime;
 import java.util.Arrays;
 import java.util.Optional;
+import java.util.concurrent.CompletableFuture;
 
 /**
  * FullMenuViewModel with business logic (not final)
@@ -28,7 +30,7 @@ public class FullMenuViewModel {
     public FullMenuViewModel(SoftwareService softwareService, IGridMaster iGridMaster, VersionService versionService) {
         this.softwareService = softwareService;
         this.iGridMaster = iGridMaster;
-        this.versionService=versionService;
+        this.versionService = versionService;
     }
 
     public StringProperty welcomeProperty() {
@@ -64,7 +66,7 @@ public class FullMenuViewModel {
 
         Optional<SoftwareDto> updatedSoftwareOptional = softwareService.updateSoftware(softwareDto);
         if (updatedSoftwareOptional.isPresent()) {
-            int niveau=3;
+            int niveau = 3;
             int[][] grilles = iGridMaster.creerLesGrilles(niveau);
             String grilleResolue = Arrays.toString(grilles[0]);
             String grilleAResoudre = Arrays.toString(grilles[1]);
@@ -79,15 +81,26 @@ public class FullMenuViewModel {
                     formattedGrilleAResoudre.append("\n");
                 }
             }
-
-
             System.out.println("###### UPDATED ####### " + updatedSoftwareOptional.get());
             setWelcome("Version : " + updatedSoftwareOptional.get().currentversion() +
                     "\nMise à jour : " + updatedSoftwareOptional.get().updatedat() +
                     "\n" + formattedGrilleResolue +
                     "\n" + formattedGrilleAResoudre +
-                    "\n" + versionService.isLatestGitHubPublishedPackageVersion()+
-                    "\n\n Niveau "+niveau+"/3 avec " + grilles[2][0] + "% de difficuté");
+                    "\n\n Niveau " + niveau + "/3 avec " + grilles[2][0] + "% de difficuté");
+
+            CompletableFuture<Boolean> versionCheckFuture = CompletableFuture.supplyAsync(() -> {
+                return versionService.isLatestGitHubPublishedPackageVersion().join();
+            });
+            versionCheckFuture.thenAccept(isLatestVersion -> {
+                Platform.runLater(() -> {
+                    setWelcome("Version : " + updatedSoftwareOptional.get().currentversion() +
+                            "\nMise à jour : " + updatedSoftwareOptional.get().updatedat() +
+                            "\n" + formattedGrilleResolue +
+                            "\n" + formattedGrilleAResoudre +
+                            "\n\nDernière version GitHub : " + (isLatestVersion ? "à jour" : "non à jour") +
+                            "\n\n Niveau " + niveau + "/3 avec " + grilles[2][0] + "% de difficuté");
+                });
+            });
         } else {
             System.out.println("Erreur lors de la mise à jour du logiciel.");
         }

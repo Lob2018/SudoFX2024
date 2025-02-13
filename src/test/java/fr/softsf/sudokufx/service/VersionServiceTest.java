@@ -20,6 +20,7 @@ import uk.org.webcompere.systemstubs.properties.SystemProperties;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
+import java.util.concurrent.CompletableFuture;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
@@ -90,30 +91,28 @@ public class VersionServiceTest {
     @Test
     void testIsLatestGitHubPublishedPackageVersion_emptyResult_true() throws Exception {
         Mockito.when(mockResponse.statusCode()).thenReturn(200);
-        Mockito.when(mockResponse.body()).thenReturn("""
-                []
-                """);
-        Mockito.when(mockHttpClient.send(any(HttpRequest.class), any(HttpResponse.BodyHandler.class)))
-                .thenReturn(mockResponse);
+        Mockito.when(mockResponse.body()).thenReturn("[]");
+        Mockito.when(mockHttpClient.sendAsync(any(HttpRequest.class), any(HttpResponse.BodyHandler.class)))
+                .thenReturn(CompletableFuture.completedFuture(mockResponse));
         VersionService versionService = new VersionService(mockHttpClient);
-        boolean isLatestVersion = versionService.isLatestGitHubPublishedPackageVersion();
+        boolean isLatestVersion = versionService.isLatestGitHubPublishedPackageVersion().join();
         assertTrue(isLatestVersion);
         Mockito.verify(mockHttpClient, Mockito.times(1))
-                .send(any(HttpRequest.class), any(HttpResponse.BodyHandler.class));
+                .sendAsync(any(HttpRequest.class), any(HttpResponse.BodyHandler.class));
     }
 
     @ParameterizedTest
     @ValueSource(ints = {301, 302, 403, 404, 500})
     void testIsLatestGitHubPublishedPackageVersion_wrongHttpStatusCodes_true(int httpStatusCode) throws Exception {
         Mockito.when(mockResponse.statusCode()).thenReturn(httpStatusCode);
-        Mockito.when(mockHttpClient.send(any(HttpRequest.class), any(HttpResponse.BodyHandler.class)))
-                .thenReturn(mockResponse);
+        Mockito.when(mockHttpClient.sendAsync(any(HttpRequest.class), any(HttpResponse.BodyHandler.class)))
+                .thenReturn(CompletableFuture.completedFuture(mockResponse));
         VersionService versionService = new VersionService(mockHttpClient);
-        boolean isLatestVersion = versionService.isLatestGitHubPublishedPackageVersion();
+        boolean isLatestVersion = versionService.isLatestGitHubPublishedPackageVersion().join();
         assertTrue(isLatestVersion);
         Mockito.verify(mockHttpClient, Mockito.times(1))
-                .send(any(HttpRequest.class), any(HttpResponse.BodyHandler.class));
-        assert (logWatcher.list.getFirst().getFormattedMessage()).contains("██ GitHub API returned non 200 status code: " + httpStatusCode);
+                .sendAsync(any(HttpRequest.class), any(HttpResponse.BodyHandler.class));
+        assertTrue(logWatcher.list.getFirst().getFormattedMessage().contains("██ GitHub API returned non 200 status code: " + httpStatusCode));
     }
 
     @ParameterizedTest
@@ -122,21 +121,17 @@ public class VersionServiceTest {
         Mockito.when(mockResponse.statusCode()).thenReturn(200);
         String jsonResponse = String.format(JSON, onLineVersion);
         Mockito.when(mockResponse.body()).thenReturn(jsonResponse);
-        Mockito.when(mockHttpClient.send(any(HttpRequest.class), any(HttpResponse.BodyHandler.class)))
-                .thenReturn(mockResponse);
+        Mockito.when(mockHttpClient.sendAsync(any(HttpRequest.class), any(HttpResponse.BodyHandler.class)))
+                .thenReturn(CompletableFuture.completedFuture(mockResponse));
         VersionService versionService = new VersionService(mockHttpClient);
-        boolean isLatestVersion = versionService.isLatestGitHubPublishedPackageVersion();
-        if (onLineVersion.equals("v2.1.1") ||
-                onLineVersion.equals("v1.2.1") ||
-                onLineVersion.equals("v1.1.2") ||
-                onLineVersion.equals("v99.99.99")
-        ) {
+        boolean isLatestVersion = versionService.isLatestGitHubPublishedPackageVersion().join();
+        if (onLineVersion.equals("v2.1.1") || onLineVersion.equals("v1.2.1") || onLineVersion.equals("v1.1.2") || onLineVersion.equals("v99.99.99")) {
             assertFalse(isLatestVersion);
         } else {
             assertTrue(isLatestVersion);
         }
         Mockito.verify(mockHttpClient, Mockito.times(1))
-                .send(any(HttpRequest.class), any(HttpResponse.BodyHandler.class));
+                .sendAsync(any(HttpRequest.class), any(HttpResponse.BodyHandler.class));
     }
 
     @ParameterizedTest
@@ -145,20 +140,20 @@ public class VersionServiceTest {
         Mockito.when(mockResponse.statusCode()).thenReturn(200);
         String jsonResponse = String.format(JSON, onLineVersion);
         Mockito.when(mockResponse.body()).thenReturn(jsonResponse);
-        Mockito.when(mockHttpClient.send(any(HttpRequest.class), any(HttpResponse.BodyHandler.class)))
-                .thenReturn(mockResponse);
+        Mockito.when(mockHttpClient.sendAsync(any(HttpRequest.class), any(HttpResponse.BodyHandler.class)))
+                .thenReturn(CompletableFuture.completedFuture(mockResponse));
         VersionService versionService = new VersionService(mockHttpClient);
-        boolean isLatestVersion = versionService.isLatestGitHubPublishedPackageVersion();
+        boolean isLatestVersion = versionService.isLatestGitHubPublishedPackageVersion().join();
         assertTrue(isLatestVersion);
         Mockito.verify(mockHttpClient, Mockito.times(1))
-                .send(any(HttpRequest.class), any(HttpResponse.BodyHandler.class));
+                .sendAsync(any(HttpRequest.class), any(HttpResponse.BodyHandler.class));
         String message = logWatcher.list.getFirst().getFormattedMessage();
         switch (onLineVersion) {
             case "vv.v.v" -> {
-                assert (message.contains("▓▓ GitHub version 'v.v.v' does not match expected semantic versioning format (X.Y.Z)."));
+                assertTrue(message.contains("▓▓ GitHub version 'v.v.v' does not match expected semantic versioning format (X.Y.Z)."));
             }
             case "" -> {
-                assert (message.contains("▓▓ Invalid or too short tag received from GitHub: ''"));
+                assertTrue(message.contains("▓▓ Invalid or too short tag received from GitHub: ''"));
             }
             default -> throw new AssertionError("Unexpected version format: " + onLineVersion);
         }

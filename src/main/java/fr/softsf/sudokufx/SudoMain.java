@@ -21,18 +21,28 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.scheduling.annotation.EnableAsync;
 
 import java.sql.SQLInvalidAuthorizationSpecException;
 
 import static fr.softsf.sudokufx.exception.ExceptionTools.getSQLInvalidAuthorizationSpecException;
 
 /**
- * The application main class. This class initializes the
- * application, manages the splash screen, and handles the transition to the
- * main application view.
+ * Main entry point for the Sudo application, responsible for initializing
+ * the JavaFX interface and the Spring context. This class handles the splash screen,
+ * Spring context initialization, and transitions between views.
+ * <p>
+ * - Initializes the splash screen and Spring context asynchronously.
+ * - Handles errors such as SQL authorization exceptions during startup.
+ * - Manages dynamic FXML loading and view transitions for SplashScreen CrashScreen and the DefaultScreen.
+ *
+ * @SpringBootApplication: Bootstraps the Spring context.
+ * @EnableAsync: Enables asynchronous processing.
+ * @ComponentScan: Scans specified packages for Spring components.
  */
 @Slf4j
 @SpringBootApplication
+@EnableAsync
 @ComponentScan({"com.gluonhq.ignite.spring", "fr.softsf.sudokufx.*",})
 public class SudoMain extends Application {
 
