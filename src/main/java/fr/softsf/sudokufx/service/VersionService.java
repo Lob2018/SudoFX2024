@@ -13,6 +13,7 @@ import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
+import java.time.Duration;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.TimeUnit;
@@ -70,33 +71,30 @@ public class VersionService {
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create(GITHUB_API_URL_REPO_TAGS))
                 .header("Accept", "application/json")
+                .timeout(Duration.ofSeconds(5))
                 .GET()
                 .build();
-        try {
-            return httpClient.sendAsync(request, HttpResponse.BodyHandlers.ofString())
-                    .orTimeout(5, TimeUnit.SECONDS)  // Temps d'attente avant un timeout
-                    .thenApply(response -> {
-                        if (response.statusCode() != 200) {
-                            log.error("██ GitHub API returned non 200 status code: {}", response.statusCode());
-                            return true;
-                        }
-                        return parseResponse(response.body());
-                    })
-                    .exceptionally(ex -> {
-                        if (ex.getCause() instanceof InterruptedException) {
-                            log.warn("▓▓ GitHub version check was interrupted", ex);
-                            Thread.currentThread().interrupt();  // Réinitialisation de l'état d'interruption
-                        } else if (ex.getCause() instanceof TimeoutException) {
-                            log.warn("▓▓ Timeout while checking GitHub version");
-                        } else {
-                            log.error("██ Exception retrieving GitHub version: {}", ex.getMessage(), ex);
-                        }
+        return httpClient.sendAsync(request, HttpResponse.BodyHandlers.ofString())
+                .orTimeout(5, TimeUnit.SECONDS)
+                .thenApply(response -> {
+                    if (response.statusCode() != 200) {
+                        log.error("██ GitHub API returned non 200 status code: {}", response.statusCode());
                         return true;
-                    });
-        } catch (Exception ex) {
-            log.error("██ Exception retrieving GitHub version: {}", ex.getMessage(), ex);
-            return CompletableFuture.completedFuture(true);
-        }
+                    }
+                    return parseResponse(response.body());
+                })
+                .exceptionally(ex -> {
+                    switch (ex.getCause()) {
+                        case null -> log.error("██ Exception without cause: {}", ex.getMessage(), ex);
+                        case InterruptedException interruptedException -> {
+                            log.warn("▓▓ GitHub version check was interrupted", ex);
+                            Thread.currentThread().interrupt();
+                        }
+                        case TimeoutException timeoutException -> log.warn("▓▓ Timeout while checking GitHub version");
+                        default -> log.error("██ Exception retrieving GitHub version: {}", ex.getMessage(), ex);
+                    }
+                    return true;
+                });
     }
 
 
