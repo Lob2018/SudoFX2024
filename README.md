@@ -75,7 +75,6 @@ application allows you to solve the current Sudoku grid, but also other entries 
         - surefire
         - jacoco
         - testfx-junit5 (ex. : FxRobot to execute actions within the UI, or custom Hamcrest matchers org.testfx.matcher.*.)
-        - System Stubs for isolating tests that redefine system properties (see [Required Application Properties to Run](#required-application-properties-to-run))
 
 ## Project
 

@@ -85,7 +85,8 @@ public class VersionService {
                 })
                 .exceptionally(ex -> {
                     switch (ex.getCause()) {
-                        case null -> log.error("██ Exception without cause: {}", ex.getMessage(), ex);
+                        case null ->
+                                log.error("██ Exception without cause for GitHub version: {}", ex.getMessage(), ex);
                         case InterruptedException interruptedException -> {
                             log.warn("▓▓ GitHub version check was interrupted", ex);
                             Thread.currentThread().interrupt();
@@ -126,7 +127,7 @@ public class VersionService {
                 return true;
             }
             boolean isLatest = compareVersions(currentVersion, lastVersion) >= 0;
-            log.info("▓▓ Version check: currentVersion={}, lastVersion={}, result={}", currentVersion, lastVersion, isLatest);
+            log.info("▓▓ GitHub version check: currentVersion={}, lastVersion={}, result={}", currentVersion, lastVersion, isLatest);
             return isLatest;
         } catch (Exception e) {
             log.error("██ Error parsing GitHub API response: {}", e.getMessage(), e);

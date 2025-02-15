@@ -13,9 +13,6 @@ import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.slf4j.LoggerFactory;
-import uk.org.webcompere.systemstubs.jupiter.SystemStub;
-import uk.org.webcompere.systemstubs.jupiter.SystemStubsExtension;
-import uk.org.webcompere.systemstubs.properties.SystemProperties;
 
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
@@ -26,7 +23,6 @@ import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
 
 @ExtendWith(MockitoExtension.class)
-@ExtendWith(SystemStubsExtension.class)
 class VersionServiceTest {
     private static final String APP_VERSION_PROPERTY = "app.version";
     private static final String GITHUB_LINK_TO_REPOSITORY_RELEASES = "https://github.com/Lob2018/SudokuFX/releases";
@@ -57,8 +53,6 @@ class VersionServiceTest {
     private AutoCloseable closeable;
     private ListAppender<ILoggingEvent> logWatcher;
 
-    @SystemStub
-    private SystemProperties systemProperties;
     @Mock
     private HttpClient mockHttpClient;
     @Mock
@@ -69,7 +63,6 @@ class VersionServiceTest {
         logWatcher = new ListAppender<>();
         logWatcher.start();
         ((ch.qos.logback.classic.Logger) LoggerFactory.getLogger(VersionService.class)).addAppender(logWatcher);
-        systemProperties.set(APP_VERSION_PROPERTY, "1.1.1");
         closeable = MockitoAnnotations.openMocks(this);
         Mockito.reset(mockHttpClient, mockResponse);
     }
@@ -116,7 +109,7 @@ class VersionServiceTest {
     }
 
     @ParameterizedTest
-    @ValueSource(strings = {"v1.1.1", "v0.0.0", "v0.1.1", "v1.0.1", "v1.1.0", "v2.1.1", "v1.2.1", "v1.1.2", "v99.99.99"})
+    @ValueSource(strings = {"v0.0.0", "v0.0.1", "v0.1.1", "v2147483647.2147483647.2147483647"})
     void testIsLatestGitHubPublishedPackageVersion_onlineEmptyOldestSameAndNewerVersions(String onLineVersion) {
         Mockito.when(mockResponse.statusCode()).thenReturn(200);
         String jsonResponse = String.format(JSON, onLineVersion);
@@ -125,7 +118,7 @@ class VersionServiceTest {
                 .thenReturn(CompletableFuture.completedFuture(mockResponse));
         VersionService versionService = new VersionService(mockHttpClient);
         boolean isLatestVersion = versionService.checkLatestVersion().join();
-        if (onLineVersion.equals("v2.1.1") || onLineVersion.equals("v1.2.1") || onLineVersion.equals("v1.1.2") || onLineVersion.equals("v99.99.99")) {
+        if (onLineVersion.equals("v2147483647.2147483647.2147483647")) {
             assertFalse(isLatestVersion);
         } else {
             assertTrue(isLatestVersion);
