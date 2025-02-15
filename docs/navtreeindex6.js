@@ -1,14 +1,5 @@
 var NAVTREEINDEX6 =
 {
-"interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_game_level_mapper.html#a7f617d923752b3af4579f0bbe1c3c7b4":[1,0,0,0,0,5,0,1,0],
-"interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_game_level_mapper.html#a7f617d923752b3af4579f0bbe1c3c7b4":[2,0,0,0,0,4,0,1,0],
-"interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_game_level_mapper.html#ac5efe602dc7bb97bd5eb62ad2976d7b4":[1,0,0,0,0,5,0,1,1],
-"interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_game_level_mapper.html#ac5efe602dc7bb97bd5eb62ad2976d7b4":[2,0,0,0,0,4,0,1,1],
-"interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_game_mapper.html":[1,0,0,0,0,5,0,2],
-"interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_game_mapper.html":[2,0,0,0,0,4,0,2],
-"interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_game_mapper.html#a1d1c2729189e72c606e46e7c6043df6f":[1,0,0,0,0,5,0,2,1],
-"interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_game_mapper.html#a1d1c2729189e72c606e46e7c6043df6f":[2,0,0,0,0,4,0,2,1],
-"interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_game_mapper.html#a6e409a483563746a5605966986f65639":[1,0,0,0,0,5,0,2,0],
 "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_game_mapper.html#a6e409a483563746a5605966986f65639":[2,0,0,0,0,4,0,2,0],
 "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_game_mapper.html#abb51393a42b879f06f388d7fb24e0678":[1,0,0,0,0,5,0,2,2],
 "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_game_mapper.html#abb51393a42b879f06f388d7fb24e0678":[2,0,0,0,0,4,0,2,2],
@@ -110,7 +101,6 @@ var NAVTREEINDEX6 =
 "namespacefr_1_1softsf_1_1sudokufx_1_1service.html#a38091bbe4ac7a252c372d9bac9cdff75":[1,0,0,0,0,8,5],
 "namespacefr_1_1softsf_1_1sudokufx_1_1service.html#a5ce1b9c3e1b5aa6126949cab1712d863":[1,0,0,0,0,8,7],
 "namespacefr_1_1softsf_1_1sudokufx_1_1service.html#a61a86660dac8876f7088f6c0c120edc8":[1,0,0,0,0,8,14],
-"namespacefr_1_1softsf_1_1sudokufx_1_1service.html#a72dcdaf225fecb8148d5928b8e229891":[1,0,0,0,0,8,16],
 "namespacefr_1_1softsf_1_1sudokufx_1_1service.html#a8d04bd2abcbea03aa9067ada137c3ca3":[1,0,0,0,0,8,9],
 "namespacefr_1_1softsf_1_1sudokufx_1_1service.html#abe191594c13bdd5e2dd6538f6014dffb":[1,0,0,0,0,8,8],
 "namespacefr_1_1softsf_1_1sudokufx_1_1service.html#ae44f2ce437ffb95bb2a298f7fabf98e2":[1,0,0,0,0,8,13],

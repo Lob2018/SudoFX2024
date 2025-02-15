@@ -1,14 +1,5 @@
 var NAVTREEINDEX5 =
 {
-"dir_e750aab36d43a747687e10a289bead43.html":[3,0,1,1,0,0,0,0,2],
-"dir_e88d9e73c6e0437a7513b0750f81d5b5.html":[3,0,1,0,0,0,0,0,9,0,1],
-"dir_ec16d98db0fa01025d0805e1d7b6606d.html":[3,0,1,1,0,0,0,0,0,0],
-"dir_ee40662362c0aeffaddb9b822a5849c4.html":[3,0,1,1,0,0,0,0,0,2,0],
-"dir_eee43682c2d4ebe4079c3cfc44bc0448.html":[3,0,0,0],
-"dir_f986e95a817e666a2de4e4295b80f2f2.html":[3,0,1,1,0,0,0,0,1],
-"dir_fd3f6763802dee1ad875f6c80eac0bda.html":[3,0,1,0,0],
-"enumfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_enums_1_1_log_back_txt.html":[1,0,0,0,0,9,6,0],
-"enumfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_enums_1_1_log_back_txt.html":[2,0,0,0,0,8,6,0],
 "enumfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_enums_1_1_log_back_txt.html#a4ada90a6fb89441a46422ef05dfbef31":[1,0,0,0,0,9,6,0,1],
 "enumfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_enums_1_1_log_back_txt.html#a4ada90a6fb89441a46422ef05dfbef31":[2,0,0,0,0,8,6,0,1],
 "enumfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_enums_1_1_log_back_txt.html#a7dfce96f21d652de4f7fdbc78d215880":[1,0,0,0,0,9,6,0,0],
@@ -249,5 +240,14 @@ var NAVTREEINDEX5 =
 "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_game_level_mapper.html":[1,0,0,0,0,5,0,1],
 "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_game_level_mapper.html":[2,0,0,0,0,4,0,1],
 "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_game_level_mapper.html#a63f9adc65e93a1bb4221e63e05e267d9":[1,0,0,0,0,5,0,1,2],
-"interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_game_level_mapper.html#a63f9adc65e93a1bb4221e63e05e267d9":[2,0,0,0,0,4,0,1,2]
+"interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_game_level_mapper.html#a63f9adc65e93a1bb4221e63e05e267d9":[2,0,0,0,0,4,0,1,2],
+"interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_game_level_mapper.html#a7f617d923752b3af4579f0bbe1c3c7b4":[1,0,0,0,0,5,0,1,0],
+"interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_game_level_mapper.html#a7f617d923752b3af4579f0bbe1c3c7b4":[2,0,0,0,0,4,0,1,0],
+"interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_game_level_mapper.html#ac5efe602dc7bb97bd5eb62ad2976d7b4":[1,0,0,0,0,5,0,1,1],
+"interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_game_level_mapper.html#ac5efe602dc7bb97bd5eb62ad2976d7b4":[2,0,0,0,0,4,0,1,1],
+"interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_game_mapper.html":[1,0,0,0,0,5,0,2],
+"interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_game_mapper.html":[2,0,0,0,0,4,0,2],
+"interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_game_mapper.html#a1d1c2729189e72c606e46e7c6043df6f":[1,0,0,0,0,5,0,2,1],
+"interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_game_mapper.html#a1d1c2729189e72c606e46e7c6043df6f":[2,0,0,0,0,4,0,2,1],
+"interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_game_mapper.html#a6e409a483563746a5605966986f65639":[1,0,0,0,0,5,0,2,0]
 };

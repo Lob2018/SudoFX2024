@@ -12,6 +12,5 @@ var _version_service_test_8java =
     [ "closeable", "_version_service_test_8java.html#a2f4bb1fff99df12da67edf37994567bc", null ],
     [ "logWatcher", "_version_service_test_8java.html#ae44f2ce437ffb95bb2a298f7fabf98e2", null ],
     [ "mockHttpClient", "_version_service_test_8java.html#a61a86660dac8876f7088f6c0c120edc8", null ],
-    [ "mockResponse", "_version_service_test_8java.html#a12341aab00f4c4f124d41930932f6104", null ],
-    [ "systemProperties", "_version_service_test_8java.html#a72dcdaf225fecb8148d5928b8e229891", null ]
+    [ "mockResponse", "_version_service_test_8java.html#a12341aab00f4c4f124d41930932f6104", null ]
 ];
