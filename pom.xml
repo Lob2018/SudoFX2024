@@ -114,13 +114,6 @@
             <version>4.0.18</version>
             <scope>test</scope>
         </dependency>
-        <!-- System Stubs for isolating tests that redefine system properties -->
-        <dependency>
-            <groupId>uk.org.webcompere</groupId>
-            <artifactId>system-stubs-jupiter</artifactId>
-            <version>2.1.7</version>
-            <scope>test</scope>
-        </dependency>
     </dependencies>
     <!-- Build configuration -->
     <build>
@@ -185,12 +178,6 @@
                     </execution>
                 </executions>
             </plugin>
-            <!-- Surefire plugin for running tests -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.5.2</version>
-            </plugin>
             <!-- JaCoCo plugin for code coverage -->
             <plugin>
                 <groupId>org.jacoco</groupId>
@@ -211,6 +198,9 @@
                         <goals>
                             <goal>prepare-agent</goal>
                         </goals>
+                        <configuration>
+                            <propertyName>jacoco.argLine</propertyName>
+                        </configuration>
                     </execution>
                     <execution>
                         <id>report</id>
@@ -240,6 +230,16 @@
                         </configuration>
                     </execution>
                 </executions>
+            </plugin>
+            <!-- Surefire plugin for running tests -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.5.2</version>
+                <configuration>
+                    <argLine>@{jacoco.argLine} -Dapp.name=${project.artifactId} -Dapp.version=${project.version}
+                    </argLine>
+                </configuration>
             </plugin>
         </plugins>
     </build>
