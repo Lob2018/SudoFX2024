@@ -4,10 +4,7 @@ import fr.softsf.sudokufx.dto.SoftwareDto;
 import fr.softsf.sudokufx.interfaces.IGridMaster;
 import fr.softsf.sudokufx.service.SoftwareService;
 import fr.softsf.sudokufx.service.VersionService;
-import javafx.beans.property.BooleanProperty;
-import javafx.beans.property.SimpleBooleanProperty;
-import javafx.beans.property.SimpleStringProperty;
-import javafx.beans.property.StringProperty;
+import javafx.beans.property.*;
 import javafx.concurrent.Task;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,6 +24,7 @@ public class FullMenuViewModel {
     private final IGridMaster iGridMaster;
     private final VersionService versionService;
     private final SimpleBooleanProperty version = new SimpleBooleanProperty(true);
+    private final StringProperty githubVersion = new SimpleStringProperty("");
     private StringProperty welcome;
 
     @Autowired
@@ -38,6 +36,10 @@ public class FullMenuViewModel {
 
     public BooleanProperty versionProperty() {
         return version;
+    }
+
+    public ReadOnlyStringProperty githubVersionProperty() {
+        return githubVersion;
     }
 
     public StringProperty welcomeProperty() {
@@ -107,8 +109,12 @@ public class FullMenuViewModel {
 
     private void checkGitHubVersion() {
         Task<Boolean> task = versionService.checkLatestVersion();
-        //statusLabel.textProperty().bind(versionCheckTask.messageProperty());
-        task.setOnSucceeded(event -> version.set(task.getValue()));
+        githubVersion.bind(task.messageProperty());
+        task.setOnSucceeded(event -> {
+            version.set(task.getValue());
+            githubVersion.unbind();
+        });
+        task.setOnFailed(event -> githubVersion.unbind());
         new Thread(task).start();
     }
 

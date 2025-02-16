@@ -4,6 +4,8 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import fr.softsf.sudokufx.configuration.JVMApplicationProperties;
 import fr.softsf.sudokufx.dto.github.TagDto;
+import fr.softsf.sudokufx.utils.I18n;
+import fr.softsf.sudokufx.utils.MyDateTime;
 import fr.softsf.sudokufx.utils.MyRegex;
 import javafx.concurrent.Task;
 import lombok.extern.slf4j.Slf4j;
@@ -36,16 +38,20 @@ public class VersionService {
     private static final String GITHUB_API_URL_REPO_TAGS = GITHUB_API_URL + "repos/" + OWNER + "/" + REPO + "/tags";
     private static final ObjectMapper OBJECT_MAPPER = new ObjectMapper();
     private final HttpClient httpClient;
+    private final MyDateTime myDateTime;
     private final String currentVersion = JVMApplicationProperties.getAppVersion().isEmpty() ? "" : JVMApplicationProperties.getAppVersion().substring(1);
 
     /**
-     * Constructs a VersionService with the provided HttpClient.
+     * Initializes the VersionService with the provided HttpClient and MyDateTime utility.
+     * This service is responsible for checking the latest version by making HTTP requests.
      *
-     * @param httpClient the HttpClient to use for HTTP requests.
+     * @param httpClient  the HttpClient used to perform HTTP requests.
+     * @param myDateTime  the utility for handling date and time formatting.
      */
     @Autowired
-    public VersionService(HttpClient httpClient) {
+    public VersionService(HttpClient httpClient, MyDateTime myDateTime) {
         this.httpClient = httpClient;
+        this.myDateTime=myDateTime;
     }
 
     /**
@@ -68,12 +74,12 @@ public class VersionService {
      * @return A `Task<Boolean>` that returns `true` if the version is up-to-date,
      * or `false` if an update is available. On error, it defaults to `true`.
      */
-     public Task<Boolean> checkLatestVersion() {
+    public Task<Boolean> checkLatestVersion() {
         return new Task<>() {
             @Override
             protected Boolean call() {
                 try {
-                    updateMessage("Checking latest version...");
+                    updateMessage(I18n.getValue("githubrepositoryversion.checking") + myDateTime.getFormattedCurrentTime() + ")");
                     HttpRequest request = HttpRequest.newBuilder()
                             .uri(URI.create(GITHUB_API_URL_REPO_TAGS))
                             .header("Accept", "application/json")
@@ -83,22 +89,24 @@ public class VersionService {
                     HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
                     if (response.statusCode() != 200) {
                         log.error("██ GitHub API returned non 200 status code: {}", response.statusCode());
+                        updateMessage(I18n.getValue("githubrepositoryversion.error.statuscode"));
                         return true;
                     }
-                    updateMessage("Version check complete.");
+                    updateMessage(I18n.getValue("githubrepositoryversion.checked") + myDateTime.getFormattedCurrentTime() + ")");
                     return parseResponse(response.body());
                 } catch (HttpTimeoutException ex) {
                     log.warn("▓▓ Timeout while checking GitHub version");
+                    updateMessage(I18n.getValue("githubrepositoryversion.warn.timeout"));
                 } catch (InterruptedException ex) {
                     log.warn("▓▓ GitHub version check was interrupted", ex);
-                    updateMessage("Version check interrupted.");
+                    updateMessage(I18n.getValue("githubrepositoryversion.warn.interrupted"));
                     Thread.currentThread().interrupt();
                 } catch (IOException ex) {
                     log.error("██ Network error while retrieving GitHub version: {}", ex.getMessage(), ex);
-                    updateMessage("Network error while checking version.");
+                    updateMessage(I18n.getValue("githubrepositoryversion.error.network"));
                 } catch (Exception ex) {
                     log.error("██ Unexpected exception retrieving GitHub version: {}", ex.getMessage(), ex);
-                    updateMessage("Error checking version.");  // Message d'erreur générique
+                    updateMessage(I18n.getValue("githubrepositoryversion.error.unexpected"));
                 }
                 return true;
             }

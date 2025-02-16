@@ -54,6 +54,8 @@ public final class FullMenuView implements IMainStageView, ISceneProvider {
     @FXML
     private Label version;
     @FXML
+    private Label githubVersion;
+    @FXML
     private Button buttonHello;
     private Text text2 = new Text("\ue86c");
 
@@ -75,7 +77,7 @@ public final class FullMenuView implements IMainStageView, ISceneProvider {
         version.textProperty().bind(Bindings.when(fullMenuViewModel.versionProperty())
                 .then("Version à jour")
                 .otherwise("Mise à jour disponible"));
-
+        githubVersion.textProperty().bind(fullMenuViewModel.githubVersionProperty());
     }
 
     /**

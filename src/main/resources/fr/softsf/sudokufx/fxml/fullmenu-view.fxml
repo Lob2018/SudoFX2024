@@ -14,6 +14,7 @@
         </padding>
         <Label fx:id="welcomeText"/>
         <Label fx:id="version"/>
+        <Label fx:id="githubVersion"/>
         <Button fx:id="buttonHello" onAction="#onHelloButtonClick" text="Helloj!"/>
     </VBox>
     <ToasterVBox fx:id="toaster"/>
