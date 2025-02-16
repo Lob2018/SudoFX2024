@@ -2,6 +2,7 @@ package fr.softsf.sudokufx.service;
 
 import ch.qos.logback.classic.spi.ILoggingEvent;
 import ch.qos.logback.core.read.ListAppender;
+import javafx.concurrent.Task;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -14,16 +15,18 @@ import org.mockito.MockitoAnnotations;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.slf4j.LoggerFactory;
 
+import java.io.IOException;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
-import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ExecutionException;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
-class VersionServiceTest {
+class VersionServiceITest {
     private static final String GITHUB_LINK_TO_REPOSITORY_RELEASES = "https://github.com/Lob2018/SudokuFX/releases";
     private static final String JSON = """
             [
@@ -81,64 +84,70 @@ class VersionServiceTest {
     }
 
     @Test
-    void testIsLatestGitHubPublishedPackageVersion_emptyResult_true() {
-        Mockito.when(mockResponse.statusCode()).thenReturn(200);
-        Mockito.when(mockResponse.body()).thenReturn("[]");
-        Mockito.when(mockHttpClient.sendAsync(any(HttpRequest.class), any(HttpResponse.BodyHandler.class)))
-                .thenReturn(CompletableFuture.completedFuture(mockResponse));
-        VersionService versionService = new VersionService(mockHttpClient);
-        boolean isLatestVersion = versionService.checkLatestVersion().join();
+    void testIsLatestGitHubPublishedPackageVersion_emptyResult_true() throws Exception {
+        when(mockResponse.statusCode()).thenReturn(200);
+        when(mockResponse.body()).thenReturn("[]");
+        when(mockHttpClient.send(any(HttpRequest.class), any(HttpResponse.BodyHandler.class)))
+                .thenReturn(mockResponse);
+        Task<Boolean> versionCheckTask = new VersionService(mockHttpClient).checkLatestVersion();
+        versionCheckTask.run();
+        boolean isLatestVersion = versionCheckTask.get();
         assertTrue(isLatestVersion);
-        Mockito.verify(mockHttpClient, Mockito.times(1))
-                .sendAsync(any(HttpRequest.class), any(HttpResponse.BodyHandler.class));
+        verify(mockHttpClient, times(1))
+                .send(any(HttpRequest.class), any(HttpResponse.BodyHandler.class));
+        assertTrue(logWatcher.list.getFirst().getFormattedMessage().contains("▓▓ Invalid or too short tag received from GitHub: ''"));
     }
 
     @ParameterizedTest
     @ValueSource(ints = {301, 302, 403, 404, 500})
-    void testIsLatestGitHubPublishedPackageVersion_wrongHttpStatusCodes_true(int httpStatusCode) {
-        Mockito.when(mockResponse.statusCode()).thenReturn(httpStatusCode);
-        Mockito.when(mockHttpClient.sendAsync(any(HttpRequest.class), any(HttpResponse.BodyHandler.class)))
-                .thenReturn(CompletableFuture.completedFuture(mockResponse));
-        VersionService versionService = new VersionService(mockHttpClient);
-        boolean isLatestVersion = versionService.checkLatestVersion().join();
+    void testIsLatestGitHubPublishedPackageVersion_wrongHttpStatusCodes_true(int httpStatusCode) throws IOException, InterruptedException, ExecutionException {
+        when(mockResponse.statusCode()).thenReturn(httpStatusCode);
+        when(mockHttpClient.send(any(HttpRequest.class), any(HttpResponse.BodyHandler.class)))
+                .thenReturn(mockResponse);
+        Task<Boolean> versionCheckTask = new VersionService(mockHttpClient).checkLatestVersion();
+        versionCheckTask.run();
+        boolean isLatestVersion = versionCheckTask.get();
         assertTrue(isLatestVersion);
-        Mockito.verify(mockHttpClient, Mockito.times(1))
-                .sendAsync(any(HttpRequest.class), any(HttpResponse.BodyHandler.class));
+        verify(mockHttpClient, times(1))
+                .send(Mockito.any(HttpRequest.class), any(HttpResponse.BodyHandler.class));
         assertTrue(logWatcher.list.getFirst().getFormattedMessage().contains("██ GitHub API returned non 200 status code: " + httpStatusCode));
     }
 
     @ParameterizedTest
     @ValueSource(strings = {"v0.0.0", "v0.0.1", "v0.1.1", "v2147483647.2147483647.2147483647"})
-    void testIsLatestGitHubPublishedPackageVersion_onlineEmptyOldestSameAndNewerVersions(String onLineVersion) {
-        Mockito.when(mockResponse.statusCode()).thenReturn(200);
+    void testIsLatestGitHubPublishedPackageVersion_onlineEmptyOldestSameAndNewerVersions(String onLineVersion) throws ExecutionException, InterruptedException, IOException {
+        when(mockResponse.statusCode()).thenReturn(200);
         String jsonResponse = String.format(JSON, onLineVersion);
-        Mockito.when(mockResponse.body()).thenReturn(jsonResponse);
-        Mockito.when(mockHttpClient.sendAsync(any(HttpRequest.class), any(HttpResponse.BodyHandler.class)))
-                .thenReturn(CompletableFuture.completedFuture(mockResponse));
-        VersionService versionService = new VersionService(mockHttpClient);
-        boolean isLatestVersion = versionService.checkLatestVersion().join();
+        when(mockResponse.body()).thenReturn(jsonResponse);
+        when(mockHttpClient.send(any(HttpRequest.class), any(HttpResponse.BodyHandler.class)))
+                .thenReturn(mockResponse);
+        Task<Boolean> versionCheckTask = new VersionService(mockHttpClient).checkLatestVersion();
+        versionCheckTask.run();
+        boolean isLatestVersion = versionCheckTask.get();
         if (onLineVersion.equals("v2147483647.2147483647.2147483647")) {
             assertFalse(isLatestVersion);
         } else {
             assertTrue(isLatestVersion);
         }
-        Mockito.verify(mockHttpClient, Mockito.times(1))
-                .sendAsync(any(HttpRequest.class), any(HttpResponse.BodyHandler.class));
+        verify(mockHttpClient, times(1))
+                .send(any(HttpRequest.class), any(HttpResponse.BodyHandler.class));
+        assertTrue(logWatcher.list.getFirst().getFormattedMessage().contains("▓▓ GitHub version check: currentVersion=" ));
     }
 
     @ParameterizedTest
     @ValueSource(strings = {"", "vv.v.v"})
-    void testIsLatestGitHubPublishedPackageVersion_onlineInvalidVersions(String onLineVersion) {
-        Mockito.when(mockResponse.statusCode()).thenReturn(200);
+    void testIsLatestGitHubPublishedPackageVersion_onlineInvalidVersions(String onLineVersion) throws ExecutionException, InterruptedException, IOException {
+        when(mockResponse.statusCode()).thenReturn(200);
         String jsonResponse = String.format(JSON, onLineVersion);
-        Mockito.when(mockResponse.body()).thenReturn(jsonResponse);
-        Mockito.when(mockHttpClient.sendAsync(any(HttpRequest.class), any(HttpResponse.BodyHandler.class)))
-                .thenReturn(CompletableFuture.completedFuture(mockResponse));
-        VersionService versionService = new VersionService(mockHttpClient);
-        boolean isLatestVersion = versionService.checkLatestVersion().join();
+        when(mockResponse.body()).thenReturn(jsonResponse);
+        when(mockHttpClient.send(any(HttpRequest.class), any(HttpResponse.BodyHandler.class)))
+                .thenReturn(mockResponse);
+        Task<Boolean> versionCheckTask = new VersionService(mockHttpClient).checkLatestVersion();
+        versionCheckTask.run();
+        boolean isLatestVersion = versionCheckTask.get();
         assertTrue(isLatestVersion);
-        Mockito.verify(mockHttpClient, Mockito.times(1))
-                .sendAsync(any(HttpRequest.class), any(HttpResponse.BodyHandler.class));
+        verify(mockHttpClient, times(1))
+                .send(any(HttpRequest.class), any(HttpResponse.BodyHandler.class));
         String message = logWatcher.list.getFirst().getFormattedMessage();
         switch (onLineVersion) {
             case "vv.v.v" -> {

@@ -4,11 +4,12 @@ import fr.softsf.sudokufx.dto.SoftwareDto;
 import fr.softsf.sudokufx.interfaces.IGridMaster;
 import fr.softsf.sudokufx.service.SoftwareService;
 import fr.softsf.sudokufx.service.VersionService;
-import javafx.application.Platform;
 import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.SimpleBooleanProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
+import javafx.concurrent.Task;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -19,6 +20,7 @@ import java.util.Optional;
 /**
  * FullMenuViewModel with business logic (not final)
  */
+@Slf4j
 @Component
 public class FullMenuViewModel {
     private final SoftwareService softwareService;
@@ -62,9 +64,9 @@ public class FullMenuViewModel {
 
     private void updateSoftware(SoftwareDto softwareToUpdate) {
 
-        versionService.checkLatestVersion().thenAccept(result ->
-                Platform.runLater(() -> version.set(result))
-        );
+
+        checkGitHubVersion();
+
 
         SoftwareDto softwareDto = new SoftwareDto(
                 softwareToUpdate.softwareid(),
@@ -98,12 +100,17 @@ public class FullMenuViewModel {
                     "\n" + formattedGrilleAResoudre +
                     "\n\n Niveau " + niveau + "/3 avec " + grilles[2][0] + "% de difficuté");
 
-
-//
-
         } else {
             System.out.println("Erreur lors de la mise à jour du logiciel.");
         }
+    }
+
+    private void checkGitHubVersion() {
+        Task<Boolean> task = versionService.checkLatestVersion();
+        //statusLabel.textProperty().bind(versionCheckTask.messageProperty());
+        task.setOnSucceeded(event -> version.set(task.getValue()));
+        task.setOnFailed(event -> log.error("██ GitHub version check failed", task.getException()));
+        new Thread(task).start();
     }
 
     private void createSoftware() {

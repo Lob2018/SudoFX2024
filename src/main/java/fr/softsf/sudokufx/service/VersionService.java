@@ -5,19 +5,19 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import fr.softsf.sudokufx.configuration.JVMApplicationProperties;
 import fr.softsf.sudokufx.dto.github.TagDto;
 import fr.softsf.sudokufx.utils.MyRegex;
+import javafx.concurrent.Task;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
+import java.net.http.HttpTimeoutException;
 import java.time.Duration;
 import java.util.List;
-import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.TimeoutException;
 
 /**
  * Service for checking if the application version is up to date by querying GitHub.
@@ -58,44 +58,51 @@ public class VersionService {
     }
 
     /**
-     * Asynchronously checks if the current application version is up-to-date by querying the GitHub API.
-     * It compares the latest release version from the repository with the current application version.
+     * Checks if the current application version is up-to-date by querying the GitHub API.
+     * This method runs in the background using a JavaFX `Task` to avoid blocking the UI thread.
+     * It retrieves the latest release version from the repository and compares it with the current application version.
      * <p>
      * In case of errors (e.g., timeout, interruption, or network issues), it assumes the version is up-to-date
      * and logs the exception details.
      *
-     * @return A `CompletableFuture<Boolean>` that completes with `true` if the version is up-to-date,
+     * @return A `Task<Boolean>` that returns `true` if the version is up-to-date,
      * or `false` if an update is available. On error, it defaults to `true`.
      */
-    public CompletableFuture<Boolean> checkLatestVersion() {
-        HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create(GITHUB_API_URL_REPO_TAGS))
-                .header("Accept", "application/json")
-                .timeout(Duration.ofSeconds(5))
-                .GET()
-                .build();
-        return httpClient.sendAsync(request, HttpResponse.BodyHandlers.ofString())
-                .orTimeout(5, TimeUnit.SECONDS)
-                .thenApply(response -> {
+     public Task<Boolean> checkLatestVersion() {
+        return new Task<>() {
+            @Override
+            protected Boolean call() {
+                try {
+                    updateMessage("Checking latest version...");
+                    HttpRequest request = HttpRequest.newBuilder()
+                            .uri(URI.create(GITHUB_API_URL_REPO_TAGS))
+                            .header("Accept", "application/json")
+                            .timeout(Duration.ofSeconds(5))
+                            .GET()
+                            .build();
+                    HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
                     if (response.statusCode() != 200) {
                         log.error("██ GitHub API returned non 200 status code: {}", response.statusCode());
                         return true;
                     }
+                    updateMessage("Version check complete.");
                     return parseResponse(response.body());
-                })
-                .exceptionally(ex -> {
-                    switch (ex.getCause()) {
-                        case null ->
-                                log.error("██ Exception without cause for GitHub version: {}", ex.getMessage(), ex);
-                        case InterruptedException interruptedException -> {
-                            log.warn("▓▓ GitHub version check was interrupted", ex);
-                            Thread.currentThread().interrupt();
-                        }
-                        case TimeoutException timeoutException -> log.warn("▓▓ Timeout while checking GitHub version");
-                        default -> log.error("██ Exception retrieving GitHub version: {}", ex.getMessage(), ex);
-                    }
-                    return true;
-                });
+                } catch (HttpTimeoutException ex) {
+                    log.warn("▓▓ Timeout while checking GitHub version");
+                } catch (InterruptedException ex) {
+                    log.warn("▓▓ GitHub version check was interrupted", ex);
+                    updateMessage("Version check interrupted.");
+                    Thread.currentThread().interrupt();
+                } catch (IOException ex) {
+                    log.error("██ Network error while retrieving GitHub version: {}", ex.getMessage(), ex);
+                    updateMessage("Network error while checking version.");
+                } catch (Exception ex) {
+                    log.error("██ Unexpected exception retrieving GitHub version: {}", ex.getMessage(), ex);
+                    updateMessage("Error checking version.");  // Message d'erreur générique
+                }
+                return true;
+            }
+        };
     }
 
 
