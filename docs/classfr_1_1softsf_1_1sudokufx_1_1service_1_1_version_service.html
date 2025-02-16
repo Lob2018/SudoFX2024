@@ -122,9 +122,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ada7b2b3bc786e330d262a4097c423768" id="r_ada7b2b3bc786e330d262a4097c423768"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada7b2b3bc786e330d262a4097c423768">VersionService</a> (HttpClient <a class="el" href="#ab848493a61107602eb1217a09b15db85">httpClient</a>)</td></tr>
 <tr class="memdesc:ada7b2b3bc786e330d262a4097c423768"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html" title="Service for checking if the application version is up to date by querying GitHub.">VersionService</a> with the provided HttpClient.  <br /></td></tr>
 <tr class="separator:ada7b2b3bc786e330d262a4097c423768"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d1ec54faf65957f9b2dc35dd5a2bedb" id="r_a5d1ec54faf65957f9b2dc35dd5a2bedb"><td class="memItemLeft" align="right" valign="top">CompletableFuture&lt; Boolean &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d1ec54faf65957f9b2dc35dd5a2bedb">checkLatestVersion</a> ()</td></tr>
-<tr class="memdesc:a5d1ec54faf65957f9b2dc35dd5a2bedb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asynchronously checks if the current application version is up-to-date by querying the GitHub API.  <br /></td></tr>
-<tr class="separator:a5d1ec54faf65957f9b2dc35dd5a2bedb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a173ad44005d94ce47a1df66650170cbf" id="r_a173ad44005d94ce47a1df66650170cbf"><td class="memItemLeft" align="right" valign="top">Task&lt; Boolean &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a173ad44005d94ce47a1df66650170cbf">checkLatestVersion</a> ()</td></tr>
+<tr class="memdesc:a173ad44005d94ce47a1df66650170cbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the current application version is up-to-date by querying the GitHub API.  <br /></td></tr>
+<tr class="separator:a173ad44005d94ce47a1df66650170cbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6347ab8be2c6df89fe71add044e10408" id="r_a6347ab8be2c6df89fe71add044e10408"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6347ab8be2c6df89fe71add044e10408">getGitHubLinkToRepositoryReleases</a> ()</td></tr>
 <tr class="memdesc:a6347ab8be2c6df89fe71add044e10408"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the GitHub link to the repository releases page.  <br /></td></tr>
 <tr class="separator:a6347ab8be2c6df89fe71add044e10408"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -190,14 +190,14 @@ Static Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a5d1ec54faf65957f9b2dc35dd5a2bedb" name="a5d1ec54faf65957f9b2dc35dd5a2bedb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d1ec54faf65957f9b2dc35dd5a2bedb">&#9670;&#160;</a></span>checkLatestVersion()</h2>
+<a id="a173ad44005d94ce47a1df66650170cbf" name="a173ad44005d94ce47a1df66650170cbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a173ad44005d94ce47a1df66650170cbf">&#9670;&#160;</a></span>checkLatestVersion()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">CompletableFuture&lt; Boolean &gt; fr.softsf.sudokufx.service.VersionService.checkLatestVersion </td>
+          <td class="memname">Task&lt; Boolean &gt; fr.softsf.sudokufx.service.VersionService.checkLatestVersion </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -205,16 +205,16 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Asynchronously checks if the current application version is up-to-date by querying the GitHub API. </p>
-<p>It compares the latest release version from the repository with the current application version. </p>
+<p>Checks if the current application version is up-to-date by querying the GitHub API. </p>
+<p>This method runs in the background using a JavaFX <code>Task</code> to avoid blocking the UI thread. It retrieves the latest release version from the repository and compares it with the current application version. </p>
 <p>In case of errors (e.g., timeout, interruption, or network issues), it assumes the version is up-to-date and logs the exception details.</p>
-<dl class="section return"><dt>Returns</dt><dd>A <code>CompletableFuture&lt;Boolean&gt;</code> that completes with <code>true</code> if the version is up-to-date, or <code>false</code> if an update is available. On error, it defaults to <code>true</code>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A <code>Task&lt;Boolean&gt;</code> that returns <code>true</code> if the version is up-to-date, or <code>false</code> if an update is available. On error, it defaults to <code>true</code>. </dd></dl>
 <div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service_a5d1ec54faf65957f9b2dc35dd5a2bedb_cgraph.svg" width="100%" height="390"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service_a173ad44005d94ce47a1df66650170cbf_cgraph.svg" width="100%" height="390"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -512,7 +512,7 @@ Static Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1service.html">service</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html">VersionService</a></li>
-    <li class="footer">Generated on Sat Feb 15 2025 19:52:59 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Sun Feb 16 2025 14:52:58 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

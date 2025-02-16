@@ -1,6 +1,7 @@
 var classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_full_menu_view_model =
 [
     [ "FullMenuViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_full_menu_view_model.html#a27cde76f26fae73ebf57ab7b0ee00d94", null ],
+    [ "checkGitHubVersion", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_full_menu_view_model.html#a1be375991ea0677ec5c0e6b8dda0a394", null ],
     [ "createSoftware", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_full_menu_view_model.html#adce6b8020bad713a5457f19529475669", null ],
     [ "setWelcome", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_full_menu_view_model.html#a99e8ff186f421e303199bb273f082c40", null ],
     [ "test", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_full_menu_view_model.html#a2eca0432ba5e82eeea338615f06d5eea", null ],

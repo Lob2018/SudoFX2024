@@ -53,7 +53,7 @@ var searchData=
   ['getvalue_50',['getValue',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_i18n.html#a7095fa285a498c3f20bf33488a69d22c',1,'fr::softsf::sudokufx::utils::I18n']]],
   ['github_5fapi_5furl_51',['GITHUB_API_URL',['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html#a57166de46c5c0ff8cd849a5afb9bae9d',1,'fr::softsf::sudokufx::service::VersionService']]],
   ['github_5fapi_5furl_5frepo_5ftags_52',['GITHUB_API_URL_REPO_TAGS',['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html#a4ba262ec0abde4defe9f60fba219ca45',1,'fr::softsf::sudokufx::service::VersionService']]],
-  ['github_5flink_5fto_5frepository_5freleases_53',['GITHUB_LINK_TO_REPOSITORY_RELEASES',['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service_test.html#a822f7f0d217fc6ffcfee19d3d28f2201',1,'fr::softsf::sudokufx::service::VersionServiceTest']]],
+  ['github_5flink_5fto_5frepository_5freleases_53',['GITHUB_LINK_TO_REPOSITORY_RELEASES',['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service_i_test.html#a66c7b5fe2dfcd90a92a34d54d5192d91',1,'fr::softsf::sudokufx::service::VersionServiceITest']]],
   ['github_5furl_54',['GITHUB_URL',['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html#a9034b1b72d3361f4de971aff7d4979d8',1,'fr::softsf::sudokufx::service::VersionService']]],
   ['grid_55',['Grid',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html',1,'fr::softsf::sudokufx::model']]],
   ['grid_2ejava_56',['Grid.java',['../_grid_8java.html',1,'']]],

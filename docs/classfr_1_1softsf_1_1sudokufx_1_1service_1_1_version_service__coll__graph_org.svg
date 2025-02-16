@@ -35,8 +35,8 @@
 <text text-anchor="start" x="20.5" y="-142.5" font-family="Helvetica,sans-Serif" font-size="10.00">VersionService(HttpClient</text>
 <text text-anchor="start" x="20.5" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00"> httpClient)</text>
 <text text-anchor="start" x="10.5" y="-114.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="20.5" y="-114.5" font-family="Helvetica,sans-Serif" font-size="10.00">CompletableFuture&lt;</text>
-<text text-anchor="start" x="20.5" y="-102.5" font-family="Helvetica,sans-Serif" font-size="10.00"> Boolean &gt; checkLatestVersion()</text>
+<text text-anchor="start" x="20.5" y="-114.5" font-family="Helvetica,sans-Serif" font-size="10.00">Task&lt; Boolean &gt; checkLatest</text>
+<text text-anchor="start" x="20.5" y="-102.5" font-family="Helvetica,sans-Serif" font-size="10.00">Version()</text>
 <text text-anchor="start" x="10.5" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="20.5" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00">String getGitHubLinkToRepository</text>
 <text text-anchor="start" x="20.5" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">Releases()</text>

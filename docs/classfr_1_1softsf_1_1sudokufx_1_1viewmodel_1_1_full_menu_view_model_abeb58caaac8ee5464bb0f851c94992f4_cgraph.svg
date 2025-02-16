@@ -47,9 +47,9 @@
   </g>
 </defs>
 <script type="application/ecmascript">
-var viewWidth = 836;
+var viewWidth = 1051;
 var viewHeight = 265;
-var sectionId = 'dynsection-4';
+var sectionId = 'dynsection-5';
 </script>
 <script type="application/ecmascript" xlink:href="svg.min.js"/>
 <svg id="graph" class="graph">
@@ -68,10 +68,10 @@ var sectionId = 'dynsection-4';
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html#a5d1ec54faf65957f9b2dc35dd5a2bedb" target="_top" xlink:title="Asynchronously checks if the current application version is up&#45;to&#45;date by querying the GitHub API.">
-<polygon fill="white" stroke="#666666" points="380.75,-232 211,-232 211,-200 380.75,-200 380.75,-232"/>
-<text text-anchor="start" x="219" y="-218.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.service.</text>
-<text text-anchor="middle" x="295.88" y="-206.5" font-family="Helvetica,sans-Serif" font-size="10.00">VersionService.checkLatestVersion</text>
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_full_menu_view_model.html#a1be375991ea0677ec5c0e6b8dda0a394" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="407,-232 211,-232 211,-200 407,-200 407,-232"/>
+<text text-anchor="start" x="219" y="-218.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
+<text text-anchor="middle" x="309" y="-206.5" font-family="Helvetica,sans-Serif" font-size="10.00">FullMenuViewModel.checkGitHubVersion</text>
 </a>
 </g>
 </g>
@@ -79,37 +79,18 @@ var sectionId = 'dynsection-4';
 <g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
 <g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M125.94,-157.39C150,-167.65 182.08,-180.81 211,-191 215.94,-192.74 221.06,-194.46 226.24,-196.14"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="224.85,-199.37 235.44,-199.06 226.97,-192.7 224.85,-199.37"/>
-</a>
-</g>
-</g>
-<!-- Node6 -->
-<g id="Node000006" class="node">
-<title>Node6</title>
-<g id="a_Node000006"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_grid_master.html#a7ae916d7f64607637b7bf5bf33fd0eb3" target="_top" xlink:title="Crée les grilles de Sudoku (résolue et à résoudre) en fonction du niveau de difficulté.">
-<polygon fill="white" stroke="#666666" points="366.5,-182 225.25,-182 225.25,-150 366.5,-150 366.5,-182"/>
-<text text-anchor="start" x="233.25" y="-168.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.interfaces.</text>
-<text text-anchor="middle" x="295.88" y="-156.5" font-family="Helvetica,sans-Serif" font-size="10.00">IGridMaster.creerLesGrilles</text>
-</a>
-</g>
-</g>
-<!-- Node1&#45;&gt;Node6 -->
-<g id="edge5_Node000001_Node000006" class="edge">
-<title>Node1&#45;&gt;Node6</title>
-<g id="a_edge5_Node000001_Node000006"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M175.42,-151.53C188.07,-153.06 201.06,-154.64 213.59,-156.15"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="213.1,-159.62 223.45,-157.35 213.95,-152.67 213.1,-159.62"/>
+<path fill="none" stroke="#63b8ff" d="M125,-157.42C149.11,-167.88 181.56,-181.25 211,-191 216.67,-192.88 222.57,-194.71 228.54,-196.46"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="227.27,-199.74 237.84,-199.11 229.19,-193 227.27,-199.74"/>
 </a>
 </g>
 </g>
 <!-- Node7 -->
 <g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_full_menu_view_model.html#a99e8ff186f421e303199bb273f082c40" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="376.25,-132 215.5,-132 215.5,-100 376.25,-100 376.25,-132"/>
-<text text-anchor="start" x="223.5" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
-<text text-anchor="middle" x="295.88" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">FullMenuViewModel.setWelcome</text>
+<g id="a_Node000007"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_grid_master.html#a7ae916d7f64607637b7bf5bf33fd0eb3" target="_top" xlink:title="Crée les grilles de Sudoku (résolue et à résoudre) en fonction du niveau de difficulté.">
+<polygon fill="white" stroke="#666666" points="379.62,-182 238.38,-182 238.38,-150 379.62,-150 379.62,-182"/>
+<text text-anchor="start" x="246.38" y="-168.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.interfaces.</text>
+<text text-anchor="middle" x="309" y="-156.5" font-family="Helvetica,sans-Serif" font-size="10.00">IGridMaster.creerLesGrilles</text>
 </a>
 </g>
 </g>
@@ -117,37 +98,56 @@ var sectionId = 'dynsection-4';
 <g id="edge6_Node000001_Node000007" class="edge">
 <title>Node1&#45;&gt;Node7</title>
 <g id="a_edge6_Node000001_Node000007"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M175.42,-130.47C184.92,-129.32 194.61,-128.15 204.16,-126.99"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="204.27,-130.5 213.78,-125.82 203.43,-123.55 204.27,-130.5"/>
+<path fill="none" stroke="#63b8ff" d="M175.25,-150.88C192.19,-152.81 209.9,-154.83 226.66,-156.74"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="226.25,-160.21 236.58,-157.87 227.04,-153.26 226.25,-160.21"/>
 </a>
 </g>
 </g>
-<!-- Node9 -->
-<g id="Node000009" class="node">
-<title>Node9</title>
-<g id="a_Node000009"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1_software_service.html#a74d93b9d4144d91d01a4b02369265f0f" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="375.5,-82 216.25,-82 216.25,-50 375.5,-50 375.5,-82"/>
-<text text-anchor="start" x="224.25" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.service.</text>
-<text text-anchor="middle" x="295.88" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">SoftwareService.updateSoftware</text>
+<!-- Node8 -->
+<g id="Node000008" class="node">
+<title>Node8</title>
+<g id="a_Node000008"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_full_menu_view_model.html#a99e8ff186f421e303199bb273f082c40" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="389.38,-132 228.62,-132 228.62,-100 389.38,-100 389.38,-132"/>
+<text text-anchor="start" x="236.62" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
+<text text-anchor="middle" x="309" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">FullMenuViewModel.setWelcome</text>
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node9 -->
-<g id="edge8_Node000001_Node000009" class="edge">
-<title>Node1&#45;&gt;Node9</title>
-<g id="a_edge8_Node000001_Node000009"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M125.94,-124.61C150,-114.35 182.08,-101.19 211,-91 215.94,-89.26 221.06,-87.54 226.24,-85.86"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="226.97,-89.3 235.44,-82.94 224.85,-82.63 226.97,-89.3"/>
+<!-- Node1&#45;&gt;Node8 -->
+<g id="edge7_Node000001_Node000008" class="edge">
+<title>Node1&#45;&gt;Node8</title>
+<g id="a_edge7_Node000001_Node000008"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M175.25,-131.12C189.06,-129.55 203.37,-127.92 217.26,-126.33"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="217.26,-129.86 226.8,-125.25 216.46,-122.9 217.26,-129.86"/>
+</a>
+</g>
+</g>
+<!-- Node10 -->
+<g id="Node000010" class="node">
+<title>Node10</title>
+<g id="a_Node000010"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1_software_service.html#a74d93b9d4144d91d01a4b02369265f0f" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="388.62,-82 229.38,-82 229.38,-50 388.62,-50 388.62,-82"/>
+<text text-anchor="start" x="237.38" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.service.</text>
+<text text-anchor="middle" x="309" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">SoftwareService.updateSoftware</text>
+</a>
+</g>
+</g>
+<!-- Node1&#45;&gt;Node10 -->
+<g id="edge9_Node000001_Node000010" class="edge">
+<title>Node1&#45;&gt;Node10</title>
+<g id="a_edge9_Node000001_Node000010"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M125,-124.58C149.11,-114.12 181.56,-100.75 211,-91 216.67,-89.12 222.57,-87.29 228.54,-85.54"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="229.19,-89 237.84,-82.89 227.27,-82.26 229.19,-89"/>
 </a>
 </g>
 </g>
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html#ac909ce26310a3c5b01262ad5f3affcbe" target="_top" xlink:title="Parses the JSON response from the GitHub API to extract the latest published version.">
-<polygon fill="white" stroke="#666666" points="601.12,-232 448.62,-232 448.62,-200 601.12,-200 601.12,-232"/>
-<text text-anchor="start" x="456.62" y="-218.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.service.</text>
-<text text-anchor="middle" x="524.88" y="-206.5" font-family="Helvetica,sans-Serif" font-size="10.00">VersionService.parseResponse</text>
+<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html#a173ad44005d94ce47a1df66650170cbf" target="_top" xlink:title="Checks if the current application version is up&#45;to&#45;date by querying the GitHub API.">
+<polygon fill="white" stroke="#666666" points="636,-232 466.25,-232 466.25,-200 636,-200 636,-232"/>
+<text text-anchor="start" x="474.25" y="-218.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.service.</text>
+<text text-anchor="middle" x="551.12" y="-206.5" font-family="Helvetica,sans-Serif" font-size="10.00">VersionService.checkLatestVersion</text>
 </a>
 </g>
 </g>
@@ -155,18 +155,18 @@ var sectionId = 'dynsection-4';
 <g id="edge2_Node000002_Node000003" class="edge">
 <title>Node2&#45;&gt;Node3</title>
 <g id="a_edge2_Node000002_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M381.08,-216C399.36,-216 418.74,-216 437.12,-216"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="436.91,-219.5 446.91,-216 436.91,-212.5 436.91,-219.5"/>
+<path fill="none" stroke="#63b8ff" d="M407.32,-216C422.91,-216 439.03,-216 454.57,-216"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="454.26,-219.5 464.26,-216 454.26,-212.5 454.26,-219.5"/>
 </a>
 </g>
 </g>
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html#af166c049683464c03d118142b986ab71" target="_top" xlink:title="Compares two version strings in the format MAJOR.MINOR.PATCH.">
-<polygon fill="white" stroke="#666666" points="828.25,-257 669,-257 669,-225 828.25,-225 828.25,-257"/>
-<text text-anchor="start" x="677" y="-243.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.service.</text>
-<text text-anchor="middle" x="748.62" y="-231.5" font-family="Helvetica,sans-Serif" font-size="10.00">VersionService.compareVersions</text>
+<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html#ac909ce26310a3c5b01262ad5f3affcbe" target="_top" xlink:title="Parses the JSON response from the GitHub API to extract the latest published version.">
+<polygon fill="white" stroke="#666666" points="847.75,-232 695.25,-232 695.25,-200 847.75,-200 847.75,-232"/>
+<text text-anchor="start" x="703.25" y="-218.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.service.</text>
+<text text-anchor="middle" x="771.5" y="-206.5" font-family="Helvetica,sans-Serif" font-size="10.00">VersionService.parseResponse</text>
 </a>
 </g>
 </g>
@@ -174,84 +174,103 @@ var sectionId = 'dynsection-4';
 <g id="edge3_Node000003_Node000004" class="edge">
 <title>Node3&#45;&gt;Node4</title>
 <g id="a_edge3_Node000003_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M601.57,-224.53C619.54,-226.56 638.9,-228.74 657.45,-230.83"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="657.04,-234.31 667.37,-231.95 657.82,-227.35 657.04,-234.31"/>
+<path fill="none" stroke="#63b8ff" d="M636.24,-216C651.81,-216 668.09,-216 683.74,-216"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="683.48,-219.5 693.48,-216 683.48,-212.5 683.48,-219.5"/>
 </a>
 </g>
 </g>
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex.html#a981702b076ee54a416d676b6f7a182fc" target="_top" xlink:title="Validates the given text against the specified regular expression.">
-<polygon fill="white" stroke="#666666" points="823,-207 674.25,-207 674.25,-175 823,-175 823,-207"/>
-<text text-anchor="start" x="682.25" y="-193.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.utils.</text>
-<text text-anchor="middle" x="748.62" y="-181.5" font-family="Helvetica,sans-Serif" font-size="10.00">MyRegex.isValidatedByRegex</text>
+<g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html#af166c049683464c03d118142b986ab71" target="_top" xlink:title="Compares two version strings in the format MAJOR.MINOR.PATCH.">
+<polygon fill="white" stroke="#666666" points="1043,-257 883.75,-257 883.75,-225 1043,-225 1043,-257"/>
+<text text-anchor="start" x="891.75" y="-243.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.service.</text>
+<text text-anchor="middle" x="963.38" y="-231.5" font-family="Helvetica,sans-Serif" font-size="10.00">VersionService.compareVersions</text>
 </a>
 </g>
 </g>
-<!-- Node3&#45;&gt;Node5 -->
-<g id="edge4_Node000003_Node000005" class="edge">
-<title>Node3&#45;&gt;Node5</title>
-<g id="a_edge4_Node000003_Node000005"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M601.57,-207.47C621.17,-205.26 642.4,-202.86 662.45,-200.6"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="662.72,-204.09 672.27,-199.5 661.94,-197.14 662.72,-204.09"/>
+<!-- Node4&#45;&gt;Node5 -->
+<g id="edge4_Node000004_Node000005" class="edge">
+<title>Node4&#45;&gt;Node5</title>
+<g id="a_edge4_Node000004_Node000005"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M848.09,-225.95C855.96,-226.99 864.02,-228.05 872.03,-229.11"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="871.44,-232.56 881.81,-230.39 872.35,-225.62 871.44,-232.56"/>
 </a>
 </g>
 </g>
-<!-- Node8 -->
-<g id="Node000008" class="node">
-<title>Node8</title>
-<g id="a_Node000008"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_full_menu_view_model.html#a574eda9c01df428c38524cc5acf49fbf" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="616.12,-132 433.62,-132 433.62,-100 616.12,-100 616.12,-132"/>
-<text text-anchor="start" x="441.62" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
-<text text-anchor="middle" x="524.88" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">FullMenuViewModel.welcomeProperty</text>
+<!-- Node6 -->
+<g id="Node000006" class="node">
+<title>Node6</title>
+<g id="a_Node000006"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex.html#a981702b076ee54a416d676b6f7a182fc" target="_top" xlink:title="Validates the given text against the specified regular expression.">
+<polygon fill="white" stroke="#666666" points="1037.75,-207 889,-207 889,-175 1037.75,-175 1037.75,-207"/>
+<text text-anchor="start" x="897" y="-193.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.utils.</text>
+<text text-anchor="middle" x="963.38" y="-181.5" font-family="Helvetica,sans-Serif" font-size="10.00">MyRegex.isValidatedByRegex</text>
 </a>
 </g>
 </g>
-<!-- Node7&#45;&gt;Node8 -->
-<g id="edge7_Node000007_Node000008" class="edge">
-<title>Node7&#45;&gt;Node8</title>
-<g id="a_edge7_Node000007_Node000008"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M376.59,-116C391.39,-116 407.04,-116 422.39,-116"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="421.98,-119.5 431.98,-116 421.98,-112.5 421.98,-119.5"/>
+<!-- Node4&#45;&gt;Node6 -->
+<g id="edge5_Node000004_Node000006" class="edge">
+<title>Node4&#45;&gt;Node6</title>
+<g id="a_edge5_Node000004_Node000006"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M848.09,-206.05C857.68,-204.78 867.54,-203.49 877.27,-202.21"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="877.64,-205.69 887.09,-200.91 876.72,-198.75 877.64,-205.69"/>
 </a>
 </g>
 </g>
-<!-- Node10 -->
-<g id="Node000010" class="node">
-<title>Node10</title>
-<g id="a_Node000010"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_software_mapper.html#a85adc191251bde9870609d4b2cb23ee6" target="_top" xlink:title="Maps a SoftwareDto object to a Software object.">
-<polygon fill="white" stroke="#666666" points="633,-82 416.75,-82 416.75,-50 633,-50 633,-82"/>
-<text text-anchor="start" x="424.75" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.interfaces.mapper.</text>
-<text text-anchor="middle" x="524.88" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">ISoftwareMapper.mapSoftwareDtoToSoftware</text>
+<!-- Node9 -->
+<g id="Node000009" class="node">
+<title>Node9</title>
+<g id="a_Node000009"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_full_menu_view_model.html#a574eda9c01df428c38524cc5acf49fbf" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="642.38,-132 459.88,-132 459.88,-100 642.38,-100 642.38,-132"/>
+<text text-anchor="start" x="467.88" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
+<text text-anchor="middle" x="551.12" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">FullMenuViewModel.welcomeProperty</text>
 </a>
 </g>
 </g>
-<!-- Node9&#45;&gt;Node10 -->
-<g id="edge9_Node000009_Node000010" class="edge">
-<title>Node9&#45;&gt;Node10</title>
-<g id="a_edge9_Node000009_Node000010"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M375.95,-66C385.33,-66 395.06,-66 404.84,-66"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="404.82,-69.5 414.82,-66 404.82,-62.5 404.82,-69.5"/>
+<!-- Node8&#45;&gt;Node9 -->
+<g id="edge8_Node000008_Node000009" class="edge">
+<title>Node8&#45;&gt;Node9</title>
+<g id="a_edge8_Node000008_Node000009"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M389.62,-116C408.34,-116 428.54,-116 448.09,-116"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="447.99,-119.5 457.99,-116 447.99,-112.5 447.99,-119.5"/>
 </a>
 </g>
 </g>
 <!-- Node11 -->
 <g id="Node000011" class="node">
 <title>Node11</title>
-<g id="a_Node000011"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_software_mapper.html#addc8516cb5cc6171c663e132d5fdddd6" target="_top" xlink:title="Maps a Software object to a SoftwareDto object.">
-<polygon fill="white" stroke="#666666" points="613.5,-32 436.25,-32 436.25,0 613.5,0 613.5,-32"/>
-<text text-anchor="start" x="444.25" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.interfaces.mapper.</text>
-<text text-anchor="middle" x="524.88" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">ISoftwareMapper.mapSoftwareToDto</text>
+<g id="a_Node000011"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_software_mapper.html#a85adc191251bde9870609d4b2cb23ee6" target="_top" xlink:title="Maps a SoftwareDto object to a Software object.">
+<polygon fill="white" stroke="#666666" points="659.25,-82 443,-82 443,-50 659.25,-50 659.25,-82"/>
+<text text-anchor="start" x="451" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.interfaces.mapper.</text>
+<text text-anchor="middle" x="551.12" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">ISoftwareMapper.mapSoftwareDtoToSoftware</text>
 </a>
 </g>
 </g>
-<!-- Node9&#45;&gt;Node11 -->
-<g id="edge10_Node000009_Node000011" class="edge">
-<title>Node9&#45;&gt;Node11</title>
-<g id="a_edge10_Node000009_Node000011"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M371.52,-49.56C392.85,-44.86 416.27,-39.7 438.21,-34.87"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="438.7,-38.35 447.71,-32.78 437.19,-31.51 438.7,-38.35"/>
+<!-- Node10&#45;&gt;Node11 -->
+<g id="edge10_Node000010_Node000011" class="edge">
+<title>Node10&#45;&gt;Node11</title>
+<g id="a_edge10_Node000010_Node000011"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M388.96,-66C402.55,-66 416.94,-66 431.3,-66"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="431.29,-69.5 441.29,-66 431.29,-62.5 431.29,-69.5"/>
+</a>
+</g>
+</g>
+<!-- Node12 -->
+<g id="Node000012" class="node">
+<title>Node12</title>
+<g id="a_Node000012"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_software_mapper.html#addc8516cb5cc6171c663e132d5fdddd6" target="_top" xlink:title="Maps a Software object to a SoftwareDto object.">
+<polygon fill="white" stroke="#666666" points="639.75,-32 462.5,-32 462.5,0 639.75,0 639.75,-32"/>
+<text text-anchor="start" x="470.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.interfaces.mapper.</text>
+<text text-anchor="middle" x="551.12" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">ISoftwareMapper.mapSoftwareToDto</text>
+</a>
+</g>
+</g>
+<!-- Node10&#45;&gt;Node12 -->
+<g id="edge11_Node000010_Node000012" class="edge">
+<title>Node10&#45;&gt;Node12</title>
+<g id="a_edge11_Node000010_Node000012"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M388.96,-49.56C411.73,-44.82 436.75,-39.61 460.14,-34.74"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="460.56,-38.22 469.64,-32.76 459.13,-31.37 460.56,-38.22"/>
 </a>
 </g>
 </g>

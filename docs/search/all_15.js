@@ -8,6 +8,6 @@ var searchData=
   ['versionservice_5',['VersionService',['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html',1,'fr.softsf.sudokufx.service.VersionService'],['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html#ada7b2b3bc786e330d262a4097c423768',1,'fr.softsf.sudokufx.service.VersionService.VersionService()']]],
   ['versionservice_6',['versionService',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_full_menu_view_model.html#ad6497b57188c8cafd1741f17a6bda380',1,'fr::softsf::sudokufx::viewmodel::FullMenuViewModel']]],
   ['versionservice_2ejava_7',['VersionService.java',['../_version_service_8java.html',1,'']]],
-  ['versionservicetest_8',['VersionServiceTest',['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service_test.html',1,'fr::softsf::sudokufx::service']]],
-  ['versionservicetest_2ejava_9',['VersionServiceTest.java',['../_version_service_test_8java.html',1,'']]]
+  ['versionserviceitest_8',['VersionServiceITest',['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service_i_test.html',1,'fr::softsf::sudokufx::service']]],
+  ['versionserviceitest_2ejava_9',['VersionServiceITest.java',['../_version_service_i_test_8java.html',1,'']]]
 ];

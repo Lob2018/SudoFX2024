@@ -264,32 +264,34 @@ var sectionId = 'dynsection-1';
 <g id="Node000006" class="node">
 <title>Node6</title>
 <g id="a_Node000006"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_full_menu_view_model.html" target="_top" xlink:title="FullMenuViewModel with business logic (not final)">
-<polygon fill="white" stroke="none" points="961.5,-656 765,-656 765,-436 961.5,-436 961.5,-656"/>
-<text text-anchor="start" x="798.75" y="-642.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
-<text text-anchor="start" x="819.38" y="-630.5" font-family="Helvetica,sans-Serif" font-size="10.00">FullMenuViewModel</text>
-<text text-anchor="start" x="861.75" y="-614.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="769" y="-598.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="779" y="-598.5" font-family="Helvetica,sans-Serif" font-size="10.00">FullMenuViewModel</text>
-<text text-anchor="start" x="779" y="-586.5" font-family="Helvetica,sans-Serif" font-size="10.00">(SoftwareService softwareService,</text>
-<text text-anchor="start" x="779" y="-574.5" font-family="Helvetica,sans-Serif" font-size="10.00"> IGridMaster iGridMaster, VersionService</text>
-<text text-anchor="start" x="779" y="-562.5" font-family="Helvetica,sans-Serif" font-size="10.00"> versionService)</text>
-<text text-anchor="start" x="769" y="-546.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="779" y="-546.5" font-family="Helvetica,sans-Serif" font-size="10.00">void test()</text>
-<text text-anchor="start" x="769" y="-530.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="779" y="-530.5" font-family="Helvetica,sans-Serif" font-size="10.00">BooleanProperty versionProperty()</text>
-<text text-anchor="start" x="769" y="-514.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="779" y="-514.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringProperty welcomeProperty()</text>
-<text text-anchor="start" x="770.5" y="-498.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="779" y="-498.5" font-family="Helvetica,sans-Serif" font-size="10.00">void createSoftware()</text>
-<text text-anchor="start" x="770.5" y="-482.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="779" y="-482.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setWelcome(String</text>
-<text text-anchor="start" x="779" y="-470.5" font-family="Helvetica,sans-Serif" font-size="10.00"> output)</text>
-<text text-anchor="start" x="770.5" y="-454.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="779" y="-454.5" font-family="Helvetica,sans-Serif" font-size="10.00">void updateSoftware</text>
-<text text-anchor="start" x="779" y="-442.5" font-family="Helvetica,sans-Serif" font-size="10.00">(SoftwareDto softwareToUpdate)</text>
-<polygon fill="#666666" stroke="#666666" points="765,-626 765,-626 961.5,-626 961.5,-626 765,-626"/>
-<polygon fill="#666666" stroke="#666666" points="765,-610 765,-610 961.5,-610 961.5,-610 765,-610"/>
-<polygon fill="none" stroke="#666666" points="765,-436 765,-656 961.5,-656 961.5,-436 765,-436"/>
+<polygon fill="white" stroke="none" points="961.5,-664 765,-664 765,-428 961.5,-428 961.5,-664"/>
+<text text-anchor="start" x="798.75" y="-650.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
+<text text-anchor="start" x="819.38" y="-638.5" font-family="Helvetica,sans-Serif" font-size="10.00">FullMenuViewModel</text>
+<text text-anchor="start" x="861.75" y="-622.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="769" y="-606.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="779" y="-606.5" font-family="Helvetica,sans-Serif" font-size="10.00">FullMenuViewModel</text>
+<text text-anchor="start" x="779" y="-594.5" font-family="Helvetica,sans-Serif" font-size="10.00">(SoftwareService softwareService,</text>
+<text text-anchor="start" x="779" y="-582.5" font-family="Helvetica,sans-Serif" font-size="10.00"> IGridMaster iGridMaster, VersionService</text>
+<text text-anchor="start" x="779" y="-570.5" font-family="Helvetica,sans-Serif" font-size="10.00"> versionService)</text>
+<text text-anchor="start" x="769" y="-554.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="779" y="-554.5" font-family="Helvetica,sans-Serif" font-size="10.00">void test()</text>
+<text text-anchor="start" x="769" y="-538.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="779" y="-538.5" font-family="Helvetica,sans-Serif" font-size="10.00">BooleanProperty versionProperty()</text>
+<text text-anchor="start" x="769" y="-522.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="779" y="-522.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringProperty welcomeProperty()</text>
+<text text-anchor="start" x="770.5" y="-506.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="779" y="-506.5" font-family="Helvetica,sans-Serif" font-size="10.00">void checkGitHubVersion()</text>
+<text text-anchor="start" x="770.5" y="-490.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="779" y="-490.5" font-family="Helvetica,sans-Serif" font-size="10.00">void createSoftware()</text>
+<text text-anchor="start" x="770.5" y="-474.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="779" y="-474.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setWelcome(String</text>
+<text text-anchor="start" x="779" y="-462.5" font-family="Helvetica,sans-Serif" font-size="10.00"> output)</text>
+<text text-anchor="start" x="770.5" y="-446.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="779" y="-446.5" font-family="Helvetica,sans-Serif" font-size="10.00">void updateSoftware</text>
+<text text-anchor="start" x="779" y="-434.5" font-family="Helvetica,sans-Serif" font-size="10.00">(SoftwareDto softwareToUpdate)</text>
+<polygon fill="#666666" stroke="#666666" points="765,-634 765,-634 961.5,-634 961.5,-634 765,-634"/>
+<polygon fill="#666666" stroke="#666666" points="765,-618 765,-618 961.5,-618 961.5,-618 765,-618"/>
+<polygon fill="none" stroke="#666666" points="765,-428 765,-664 961.5,-664 961.5,-428 765,-428"/>
 </a>
 </g>
 </g>
@@ -297,7 +299,7 @@ var sectionId = 'dynsection-1';
 <g id="edge5_Node000001_Node000006" class="edge">
 <title>Node6&#45;&gt;Node1</title>
 <g id="a_edge5_Node000001_Node000006"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M848.37,-436.13C840.64,-383.38 830.47,-319.21 819.25,-262 818.88,-260.14 818.51,-258.26 818.13,-256.37"/>
+<path fill="none" stroke="#63b8ff" d="M847.22,-428.29C839.64,-377.1 829.92,-316.4 819.25,-262 818.88,-260.14 818.51,-258.26 818.13,-256.37"/>
 <polygon fill="none" stroke="#63b8ff" points="818.14,-256.43 813.01,-251.36 815.71,-244.68 820.85,-249.74 818.14,-256.43"/>
 </a>
 </g>
@@ -331,8 +333,8 @@ var sectionId = 'dynsection-1';
 <g id="edge6_Node000006_Node000007" class="edge">
 <title>Node7&#45;&gt;Node6</title>
 <g id="a_edge6_Node000006_Node000007"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M674.46,-928.09C689.62,-899.22 707.76,-865.72 725.25,-836 738.13,-814.11 744.17,-810.34 756.25,-788 776.92,-749.77 796.97,-706.76 814.02,-667.76"/>
-<polygon fill="none" stroke="#63b8ff" points="814.08,-667.63 812.8,-660.53 818.86,-656.62 820.14,-663.72 814.08,-667.63"/>
+<path fill="none" stroke="#63b8ff" d="M674.46,-928.09C689.62,-899.22 707.76,-865.72 725.25,-836 738.13,-814.11 744.17,-810.34 756.25,-788 775.5,-752.39 794.22,-712.62 810.48,-675.82"/>
+<polygon fill="none" stroke="#63b8ff" points="810.49,-675.8 809.23,-668.7 815.31,-664.81 816.56,-671.92 810.49,-675.8"/>
 </a>
 </g>
 <text text-anchor="middle" x="783.2" y="-808.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;softwareService</text>
@@ -452,8 +454,8 @@ var sectionId = 'dynsection-1';
 <g id="edge11_Node000006_Node000011" class="edge">
 <title>Node11&#45;&gt;Node6</title>
 <g id="a_edge11_Node000006_Node000011"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M808.24,-948.03C817.48,-880.66 834.06,-759.84 846.6,-668.37"/>
-<polygon fill="none" stroke="#63b8ff" points="846.59,-668.44 843.44,-661.96 848.22,-656.55 851.37,-663.04 846.59,-668.44"/>
+<path fill="none" stroke="#63b8ff" d="M808.24,-948.03C817.2,-882.72 833.05,-767.15 845.45,-676.8"/>
+<polygon fill="none" stroke="#63b8ff" points="845.46,-676.73 842.31,-670.24 847.09,-664.84 850.23,-671.33 845.46,-676.73"/>
 </a>
 </g>
 <text text-anchor="middle" x="854.82" y="-808.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;iGridMaster</text>
@@ -485,8 +487,8 @@ var sectionId = 'dynsection-1';
 <text text-anchor="start" x="900.38" y="-978.5" font-family="Helvetica,sans-Serif" font-size="10.00">VersionService(HttpClient</text>
 <text text-anchor="start" x="900.38" y="-966.5" font-family="Helvetica,sans-Serif" font-size="10.00"> httpClient)</text>
 <text text-anchor="start" x="890.38" y="-950.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="900.38" y="-950.5" font-family="Helvetica,sans-Serif" font-size="10.00">CompletableFuture&lt;</text>
-<text text-anchor="start" x="900.38" y="-938.5" font-family="Helvetica,sans-Serif" font-size="10.00"> Boolean &gt; checkLatestVersion()</text>
+<text text-anchor="start" x="900.38" y="-950.5" font-family="Helvetica,sans-Serif" font-size="10.00">Task&lt; Boolean &gt; checkLatest</text>
+<text text-anchor="start" x="900.38" y="-938.5" font-family="Helvetica,sans-Serif" font-size="10.00">Version()</text>
 <text text-anchor="start" x="890.38" y="-922.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="900.38" y="-922.5" font-family="Helvetica,sans-Serif" font-size="10.00">String getGitHubLinkToRepository</text>
 <text text-anchor="start" x="900.38" y="-910.5" font-family="Helvetica,sans-Serif" font-size="10.00">Releases()</text>
@@ -508,8 +510,8 @@ var sectionId = 'dynsection-1';
 <g id="edge12_Node000006_Node000012" class="edge">
 <title>Node12&#45;&gt;Node6</title>
 <g id="a_edge12_Node000006_Node000012"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M932.98,-836.14C919.62,-780.75 904.93,-719.86 892.5,-668.3"/>
-<polygon fill="none" stroke="#63b8ff" points="892.5,-668.29 887.2,-663.39 889.68,-656.62 894.98,-661.51 892.5,-668.29"/>
+<path fill="none" stroke="#63b8ff" d="M932.98,-836.14C920.29,-783.55 906.42,-726 894.4,-676.18"/>
+<polygon fill="none" stroke="#63b8ff" points="894.42,-676.24 889.12,-671.34 891.6,-664.57 896.9,-669.47 894.42,-676.24"/>
 </a>
 </g>
 <text text-anchor="middle" x="962.76" y="-808.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;versionService</text>
@@ -580,8 +582,8 @@ var sectionId = 'dynsection-1';
 <g id="edge15_Node000006_Node000015" class="edge">
 <title>Node15&#45;&gt;Node6</title>
 <g id="a_edge15_Node000006_Node000015"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M1127.3,-974.22C1120.59,-939.45 1103.95,-875.98 1067.25,-836 1050.99,-818.28 986.9,-805.36 970.25,-788 938.09,-754.48 914.62,-709.66 897.99,-667.78"/>
-<polygon fill="none" stroke="#63b8ff" points="898.01,-667.81 892.12,-663.64 893.7,-656.61 899.59,-660.77 898.01,-667.81"/>
+<path fill="none" stroke="#63b8ff" d="M1127.3,-974.22C1120.59,-939.45 1103.95,-875.98 1067.25,-836 1050.99,-818.28 986.9,-805.36 970.25,-788 940.1,-756.57 917.59,-715.22 901.19,-675.66"/>
+<polygon fill="none" stroke="#63b8ff" points="901.21,-675.7 895.26,-671.62 896.74,-664.57 902.69,-668.65 901.21,-675.7"/>
 </a>
 </g>
 <text text-anchor="middle" x="1051.97" y="-808.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;version</text>
@@ -604,8 +606,8 @@ var sectionId = 'dynsection-1';
 <g id="edge16_Node000006_Node000016" class="edge">
 <title>Node16&#45;&gt;Node6</title>
 <g id="a_edge16_Node000006_Node000016"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M1239.88,-974.19C1239.38,-938.51 1232.94,-872.92 1195.25,-836 1155.67,-797.23 1128.47,-817.4 1074.25,-806 1028.34,-796.35 1007.25,-816.84 970.25,-788 932.05,-758.22 907.15,-711.89 891.08,-667.78"/>
-<polygon fill="none" stroke="#63b8ff" points="891.12,-667.9 885.37,-663.55 887.18,-656.57 892.93,-660.92 891.12,-667.9"/>
+<path fill="none" stroke="#63b8ff" d="M1239.88,-974.19C1239.38,-938.51 1232.94,-872.92 1195.25,-836 1155.67,-797.23 1128.47,-817.4 1074.25,-806 1028.34,-796.35 1007.25,-816.84 970.25,-788 934.36,-760.02 910.2,-717.42 894.09,-675.78"/>
+<polygon fill="none" stroke="#63b8ff" points="894.12,-675.89 888.29,-671.65 889.96,-664.63 895.79,-668.87 894.12,-675.89"/>
 </a>
 </g>
 <text text-anchor="middle" x="1190.85" y="-808.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;welcome</text>

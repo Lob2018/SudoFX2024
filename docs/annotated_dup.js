@@ -114,7 +114,7 @@ var annotated_dup =
             [ "FxmlService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_fxml_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_fxml_service" ],
             [ "SoftwareService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_software_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_software_service" ],
             [ "VersionService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service" ],
-            [ "VersionServiceTest", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service_test.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service_test" ]
+            [ "VersionServiceITest", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service_i_test.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service_i_test" ]
           ] ],
           [ "utils", "namespacefr_1_1softsf_1_1sudokufx_1_1utils.html", [
             [ "sudoku", "namespacefr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku.html", [

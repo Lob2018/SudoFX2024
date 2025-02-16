@@ -1,7 +1,7 @@
 var searchData=
 [
   ['jdbcurl_0',['jdbcUrl',['../classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_data_source_config.html#a84ac2cf05bff4efa39e7d5d648ed3023',1,'fr::softsf::sudokufx::configuration::database::DataSourceConfig']]],
-  ['json_1',['JSON',['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service_test.html#ad4b5bd7459e99e7ffa014558e9a1afda',1,'fr::softsf::sudokufx::service::VersionServiceTest']]],
+  ['json_1',['JSON',['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service_i_test.html#a885ddaf1a81d4ffde02976ac6db3a606',1,'fr::softsf::sudokufx::service::VersionServiceITest']]],
   ['jvmapplicationproperties_2',['JVMApplicationProperties',['../classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_j_v_m_application_properties.html',1,'fr.softsf.sudokufx.configuration.JVMApplicationProperties'],['../classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_j_v_m_application_properties.html#a70bb14baa858274553ea87813194ff81',1,'fr.softsf.sudokufx.configuration.JVMApplicationProperties.JVMApplicationProperties()']]],
   ['jvmapplicationproperties_2ejava_3',['JVMApplicationProperties.java',['../_j_v_m_application_properties_8java.html',1,'']]],
   ['jvmapplicationpropertiesutest_4',['JVMApplicationPropertiesUTest',['../classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_j_v_m_application_properties_u_test.html',1,'fr::softsf::sudokufx::configuration']]],

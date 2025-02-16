@@ -3,7 +3,7 @@ var namespacefr_1_1softsf_1_1sudokufx_1_1service =
     [ "FxmlService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_fxml_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_fxml_service" ],
     [ "SoftwareService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_software_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_software_service" ],
     [ "VersionService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service" ],
-    [ "VersionServiceTest", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service_test.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service_test" ],
+    [ "VersionServiceITest", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service_i_test.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service_i_test" ],
     [ "[instance initializer]", "namespacefr_1_1softsf_1_1sudokufx_1_1service.html#a2247ff12de5ab684a39d55f29cf5c830", null ],
     [ "cleanup", "namespacefr_1_1softsf_1_1sudokufx_1_1service.html#a38091bbe4ac7a252c372d9bac9cdff75", null ],
     [ "eachSetup", "namespacefr_1_1softsf_1_1sudokufx_1_1service.html#a12f25f9bc82e97e3927e99c162dcf87f", null ],
