@@ -109,7 +109,6 @@ public class FullMenuViewModel {
         Task<Boolean> task = versionService.checkLatestVersion();
         //statusLabel.textProperty().bind(versionCheckTask.messageProperty());
         task.setOnSucceeded(event -> version.set(task.getValue()));
-        task.setOnFailed(event -> log.error("██ GitHub version check failed", task.getException()));
         new Thread(task).start();
     }
 
