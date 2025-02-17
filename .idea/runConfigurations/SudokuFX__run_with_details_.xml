@@ -12,9 +12,9 @@
           <option name="goals">
             <list>
               <option value="clean" />
-              <option value="-X" />
               <option value="javafx:run" />
               <option value="-Dprism.verbose=true" />
+              <option value="-X" />
             </list>
           </option>
           <option name="multimoduleDir" />
