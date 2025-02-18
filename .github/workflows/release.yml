@@ -230,7 +230,7 @@ jobs:
       
                - `hash_windows.txt` (for Windows)
                - `hash_linux.txt` (for Linux)
-               - `hash_macos.txt` (for macOS)
+               - `hash_macos.txt` or `hash_macos-x86_64.txt` (for macOS)
           artifacts: 'output/*'
       - name: Create Tag
         run: git tag v${{ env.POM_VERSION }}
