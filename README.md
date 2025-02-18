@@ -36,8 +36,7 @@
 
 ## Description
 
-SudokuFX is a Sudoku game, allowing you to create several player profiles and save and restore their games. The
-application allows you to solve the current Sudoku grid, but also other entries manually.
+SudokuFX is a Sudoku game that lets you create multiple player profiles, save your progress, and solve puzzles, including custom grids.
 
 ## Build with
 
