@@ -255,7 +255,7 @@
                         <version>3.5.0</version>
                         <executions>
                             <execution>
-                                <id>generate-doxygen-docs</id>
+                                <id>exec-generate-doxygen-docs</id>
                                 <phase>prepare-package</phase>
                                 <goals>
                                     <goal>exec</goal>
@@ -268,7 +268,7 @@
                                 </configuration>
                             </execution>
                             <execution>
-                                <id>git-add-all</id>
+                                <id>exec-git-add-all</id>
                                 <phase>prepare-package</phase>
                                 <goals>
                                     <goal>exec</goal>
@@ -345,7 +345,7 @@
                         <executions>
                             <execution>
                                 <!-- Linux package using shell script -->
-                                <id>exec-shell</id>
+                                <id>exec-linux-shell</id>
                                 <phase>package</phase>
                                 <goals>
                                     <goal>exec</goal>
@@ -386,7 +386,7 @@
                         <executions>
                             <execution>
                                 <!-- macOS package using shell script -->
-                                <id>exec-macos</id>
+                                <id>exec-macos-shell</id>
                                 <phase>package</phase>
                                 <goals>
                                     <goal>exec</goal>
@@ -428,7 +428,7 @@
                         <executions>
                             <execution>
                                 <!-- macOS package using shell script for x86_64 -->
-                                <id>exec-macos-x86_64</id>
+                                <id>exec-macos-x86_64-shell</id>
                                 <phase>package</phase>
                                 <goals>
                                     <goal>exec</goal>
