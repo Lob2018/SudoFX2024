@@ -1,5 +1,9 @@
 <map id="src/main/java/fr/softsf/sudokufx/repository/GameRepository.java" name="src/main/java/fr/softsf/sudokufx/repository/GameRepository.java">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,274,48"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="39,96,240,123"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="142,49,142,80,137,80,137,49"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="224,5,492,48"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,104,207,131"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="300,51,157,101,156,96,298,46"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="231,96,485,139"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="361,48,361,81,355,81,355,48"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="508,96,717,139"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="419,46,539,88,538,93,417,51"/>
 </map>

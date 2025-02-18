@@ -1,5 +1,15 @@
 <map id="src/main/java/fr/softsf/sudokufx/utils/MyRegex.java" name="src/main/java/fr/softsf/sudokufx/utils/MyRegex.java">
-<area shape="rect" id="Node000001" title=" " alt="" coords="38,5,233,48"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="537,5,731,48"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,96,266,139"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="138,48,138,81,133,81,133,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="537,48,268,95,267,90,536,43"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="289,96,480,139"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="577,51,458,93,456,88,575,46"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="505,104,608,131"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="618,50,580,94,576,90,614,47"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="632,104,794,131"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="654,47,694,90,690,94,650,50"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="818,104,971,131"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="696,46,844,96,842,101,694,51"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="995,104,1143,131"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="732,43,984,93,1003,97,1001,103,983,99,731,49"/>
 </map>

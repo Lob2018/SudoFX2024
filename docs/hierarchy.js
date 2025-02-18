@@ -1,7 +1,14 @@
 var hierarchy =
 [
+    [ "Application", null, [
+      [ "fr.softsf.sudokufx.SudoMain", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html", null ]
+    ] ],
     [ "fr.softsf.sudokufx.configuration.database.keystore.ApplicationKeystoreITest", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1keystore_1_1_application_keystore_i_test.html", null ],
     [ "fr.softsf.sudokufx.model.Background", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background.html", null ],
+    [ "Button", null, [
+      [ "fr.softsf.sudokufx.view.components.menu.MenuButton", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1menu_1_1_menu_button.html", null ],
+      [ "fr.softsf.sudokufx.view.components.toaster.ToasterButton", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_button.html", null ]
+    ] ],
     [ "fr.softsf.sudokufx.configuration.database.DataSourceConfig", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_data_source_config.html", [
       [ "fr.softsf.sudokufx.configuration.database.DataSourceConfigCds", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_data_source_config_cds.html", null ],
       [ "fr.softsf.sudokufx.configuration.database.DataSourceConfigDefault", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_data_source_config_default.html", null ],
@@ -62,11 +69,22 @@ var hierarchy =
     [ "fr.softsf.sudokufx.interfaces.ISplashScreenView", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_splash_screen_view.html", [
       [ "fr.softsf.sudokufx.view.SplashScreenView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html", null ]
     ] ],
+    [ "JpaRepository", null, [
+      [ "fr.softsf.sudokufx.repository.BackgroundRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_background_repository.html", null ],
+      [ "fr.softsf.sudokufx.repository.GameLevelRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_game_level_repository.html", null ],
+      [ "fr.softsf.sudokufx.repository.GameRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_game_repository.html", null ],
+      [ "fr.softsf.sudokufx.repository.GridRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_grid_repository.html", null ],
+      [ "fr.softsf.sudokufx.repository.MenuRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_menu_repository.html", null ],
+      [ "fr.softsf.sudokufx.repository.PlayerLanguageRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_language_repository.html", null ],
+      [ "fr.softsf.sudokufx.repository.PlayerRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_repository.html", null ],
+      [ "fr.softsf.sudokufx.repository.SoftwareRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_software_repository.html", null ]
+    ] ],
     [ "fr.softsf.sudokufx.configuration.JVMApplicationProperties", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_j_v_m_application_properties.html", null ],
     [ "fr.softsf.sudokufx.configuration.JVMApplicationPropertiesUTest", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_j_v_m_application_properties_u_test.html", null ],
     [ "fr.softsf.sudokufx.Launcher", "classfr_1_1softsf_1_1sudokufx_1_1_launcher.html", null ],
     [ "fr.softsf.sudokufx.utils.MyEnums.LogBackTxt", "enumfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_enums_1_1_log_back_txt.html", null ],
     [ "fr.softsf.sudokufx.model.Menu", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu.html", null ],
+    [ "fr.softsf.sudokufx.utils.MyDateTime", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_date_time.html", null ],
     [ "fr.softsf.sudokufx.utils.MyEnums", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_enums.html", null ],
     [ "fr.softsf.sudokufx.common.e2e.MyEnumsE2ETest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1e2e_1_1_my_enums_e2_e_test.html", null ],
     [ "fr.softsf.sudokufx.common.unit.utils.MyEnumsUTest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1_my_enums_u_test.html", null ],
@@ -90,26 +108,9 @@ var hierarchy =
     [ "fr.softsf.sudokufx.service.SoftwareService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_software_service.html", null ],
     [ "fr.softsf.sudokufx.common.unit.service.SoftwareServiceUTest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1service_1_1_software_service_u_test.html", null ],
     [ "fr.softsf.sudokufx.utils.MyEnums.ToastLevels", "enumfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_enums_1_1_toast_levels.html", null ],
-    [ "fr.softsf.sudokufx.service.VersionService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html", null ],
-    [ "fr.softsf.sudokufx.service.VersionServiceITest", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service_i_test.html", null ],
-    [ "Application", null, [
-      [ "fr.softsf.sudokufx.SudoMain", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html", null ]
-    ] ],
-    [ "Button", null, [
-      [ "fr.softsf.sudokufx.view.components.menu.MenuButton", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1menu_1_1_menu_button.html", null ],
-      [ "fr.softsf.sudokufx.view.components.toaster.ToasterButton", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_button.html", null ]
-    ] ],
-    [ "JpaRepository", null, [
-      [ "fr.softsf.sudokufx.repository.BackgroundRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_background_repository.html", null ],
-      [ "fr.softsf.sudokufx.repository.GameLevelRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_game_level_repository.html", null ],
-      [ "fr.softsf.sudokufx.repository.GameRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_game_repository.html", null ],
-      [ "fr.softsf.sudokufx.repository.GridRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_grid_repository.html", null ],
-      [ "fr.softsf.sudokufx.repository.MenuRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_menu_repository.html", null ],
-      [ "fr.softsf.sudokufx.repository.PlayerLanguageRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_language_repository.html", null ],
-      [ "fr.softsf.sudokufx.repository.PlayerRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_repository.html", null ],
-      [ "fr.softsf.sudokufx.repository.SoftwareRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_software_repository.html", null ]
-    ] ],
     [ "VBox", null, [
       [ "fr.softsf.sudokufx.view.components.toaster.ToasterVBox", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box.html", null ]
-    ] ]
+    ] ],
+    [ "fr.softsf.sudokufx.service.VersionService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html", null ],
+    [ "fr.softsf.sudokufx.service.VersionServiceITest", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service_i_test.html", null ]
 ];

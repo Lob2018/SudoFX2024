@@ -1,5 +1,11 @@
 <map id="src/main/java/fr/softsf/sudokufx/interfaces/mapper/ISoftwareMapper.java" name="src/main/java/fr/softsf/sudokufx/interfaces/mapper/ISoftwareMapper.java">
-<area shape="rect" id="Node000001" title=" " alt="" coords="23,5,210,64"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,112,228,139"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,64,119,96,114,96,114,64"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="333,5,519,64"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,120,228,147"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="335,67,172,117,171,112,333,62"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="252,112,418,155"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="401,66,367,103,363,99,397,62"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="442,120,591,147"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="454,62,496,107,492,110,451,66"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="615,120,813,147"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="512,62,662,112,661,117,511,67"/>
 </map>

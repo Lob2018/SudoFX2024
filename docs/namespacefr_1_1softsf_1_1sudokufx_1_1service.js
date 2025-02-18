@@ -15,5 +15,6 @@ var namespacefr_1_1softsf_1_1sudokufx_1_1service =
     [ "closeable", "namespacefr_1_1softsf_1_1sudokufx_1_1service.html#a2f4bb1fff99df12da67edf37994567bc", null ],
     [ "logWatcher", "namespacefr_1_1softsf_1_1sudokufx_1_1service.html#ae44f2ce437ffb95bb2a298f7fabf98e2", null ],
     [ "mockHttpClient", "namespacefr_1_1softsf_1_1sudokufx_1_1service.html#a61a86660dac8876f7088f6c0c120edc8", null ],
-    [ "mockResponse", "namespacefr_1_1softsf_1_1sudokufx_1_1service.html#a12341aab00f4c4f124d41930932f6104", null ]
+    [ "mockResponse", "namespacefr_1_1softsf_1_1sudokufx_1_1service.html#a12341aab00f4c4f124d41930932f6104", null ],
+    [ "myDateTime", "namespacefr_1_1softsf_1_1sudokufx_1_1service.html#ad2c2eb1933aa76854ea83b691b27354d", null ]
 ];

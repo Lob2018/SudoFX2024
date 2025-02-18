@@ -15,5 +15,6 @@ var searchData=
   ['moyen_5fmoy_5fcachees_12',['MOYEN_MOY_CACHEES',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a7cae40d700e2fd6e73a057f551ea1e88',1,'fr::softsf::sudokufx::utils::sudoku::GridMaster']]],
   ['moyenmaxpossibilites_13',['moyenMaxPossibilites',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#af589c25a56f5af7fb6810e4732e40c75',1,'fr::softsf::sudokufx::utils::sudoku::GridMaster']]],
   ['moyenminpossibilites_14',['moyenMinPossibilites',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a682ee764e32e46c754c477c00f8f748f',1,'fr::softsf::sudokufx::utils::sudoku::GridMaster']]],
-  ['mylogbackconfig_15',['myLogbackConfig',['../classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_my_logback_config_u_test.html#af3b53ad57d6f9b5b9df55a58e0533ed1',1,'fr::softsf::sudokufx::configuration::MyLogbackConfigUTest']]]
+  ['mydatetime_15',['myDateTime',['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html#a5fec87fc3f91c76e6e29f7746dccc528',1,'fr.softsf.sudokufx.service.VersionService.myDateTime'],['../namespacefr_1_1softsf_1_1sudokufx_1_1service.html#ad2c2eb1933aa76854ea83b691b27354d',1,'fr.softsf.sudokufx.service.myDateTime']]],
+  ['mylogbackconfig_16',['myLogbackConfig',['../classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_my_logback_config_u_test.html#af3b53ad57d6f9b5b9df55a58e0533ed1',1,'fr::softsf::sudokufx::configuration::MyLogbackConfigUTest']]]
 ];

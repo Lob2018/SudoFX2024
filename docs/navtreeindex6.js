@@ -1,12 +1,5 @@
 var NAVTREEINDEX6 =
 {
-"interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_game_mapper.html#a6e409a483563746a5605966986f65639":[2,0,0,0,0,4,0,2,0],
-"interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_game_mapper.html#abb51393a42b879f06f388d7fb24e0678":[1,0,0,0,0,5,0,2,2],
-"interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_game_mapper.html#abb51393a42b879f06f388d7fb24e0678":[2,0,0,0,0,4,0,2,2],
-"interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_grid_mapper.html":[1,0,0,0,0,5,0,3],
-"interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_grid_mapper.html":[2,0,0,0,0,4,0,3],
-"interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_grid_mapper.html#a24899d95fdbe062b88ad92571724926a":[1,0,0,0,0,5,0,3,0],
-"interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_grid_mapper.html#a24899d95fdbe062b88ad92571724926a":[2,0,0,0,0,4,0,3,0],
 "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_grid_mapper.html#a3a178db16107dc3291d37129584aaea5":[1,0,0,0,0,5,0,3,1],
 "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_grid_mapper.html#a3a178db16107dc3291d37129584aaea5":[2,0,0,0,0,4,0,3,1],
 "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_grid_mapper.html#aef5e5595f12b2a7dd75b5588e37bab85":[1,0,0,0,0,5,0,3,2],
@@ -103,6 +96,7 @@ var NAVTREEINDEX6 =
 "namespacefr_1_1softsf_1_1sudokufx_1_1service.html#a61a86660dac8876f7088f6c0c120edc8":[1,0,0,0,0,8,14],
 "namespacefr_1_1softsf_1_1sudokufx_1_1service.html#a8d04bd2abcbea03aa9067ada137c3ca3":[1,0,0,0,0,8,9],
 "namespacefr_1_1softsf_1_1sudokufx_1_1service.html#abe191594c13bdd5e2dd6538f6014dffb":[1,0,0,0,0,8,8],
+"namespacefr_1_1softsf_1_1sudokufx_1_1service.html#ad2c2eb1933aa76854ea83b691b27354d":[1,0,0,0,0,8,16],
 "namespacefr_1_1softsf_1_1sudokufx_1_1service.html#ae44f2ce437ffb95bb2a298f7fabf98e2":[1,0,0,0,0,8,13],
 "namespacefr_1_1softsf_1_1sudokufx_1_1utils.html":[1,0,0,0,0,9],
 "namespacefr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku.html":[1,0,0,0,0,9,0],

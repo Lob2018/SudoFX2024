@@ -1,5 +1,7 @@
 <map id="src/main/java/fr/softsf/sudokufx/utils/SecureRandomGenerator.java" name="src/main/java/fr/softsf/sudokufx/utils/SecureRandomGenerator.java">
-<area shape="rect" id="Node000001" title=" " alt="" coords="9,5,210,64"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="120,5,320,64"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,112,214,155"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="112,64,112,97,107,97,107,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="189,66,146,104,143,100,186,62"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="238,120,426,147"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="255,62,308,108,304,112,251,66"/>
 </map>

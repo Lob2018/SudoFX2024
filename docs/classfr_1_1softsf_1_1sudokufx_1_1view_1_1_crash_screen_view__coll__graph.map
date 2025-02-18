@@ -1,25 +1,11 @@
 <map id="fr.softsf.sudokufx.view.CrashScreenView" name="fr.softsf.sudokufx.view.CrashScreenView">
-<area shape="rect" id="Node000001" title="View class for the crash screen without business logic." alt="" coords="964,283,1194,736"/>
+<area shape="rect" id="Node000001" title="View class for the crash screen without business logic." alt="" coords="325,187,583,1013"/>
 <area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_main_stage_view.html" title="Interface defining method to open the main stage." alt="" coords="5,5,235,123"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="223,128,331,193,450,256,586,319,725,376,965,466,964,471,723,381,584,324,447,261,328,197,220,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="166,134,327,391,323,394,162,137"/>
 <area shape="rect" id="Node000003" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_scene_provider.html" title="Interface ISceneProvider." alt="" coords="260,21,437,107"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="413,113,506,183,614,256,797,363,965,450,963,455,795,367,611,261,503,188,410,118"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="362,120,375,186,370,187,357,122"/>
 <area shape="rect" id="Node000004" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_os_folder_factory.html" title="Interface defining methods to access OS&#45;specific folder paths." alt="" coords="461,11,657,117"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="597,116,651,185,718,257,774,305,834,351,951,430,948,434,831,355,771,309,714,261,647,189,593,119"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="551,117,541,170,536,169,546,116"/>
 <area shape="rect" id="Node000005" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_file_system.html" title="Interface defining a method to recursively deletes a folder and its contents." alt="" coords="681,13,954,115"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="827,114,842,184,854,222,870,257,909,321,955,380,951,384,905,324,865,260,849,223,837,185,821,115"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="978,29,1023,99"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="981,100,969,123,961,147,952,203,961,258,962,266,957,267,955,259,947,203,955,146,964,120,976,97"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="1047,29,1132,99"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="1088,99,1083,147,1079,266,1074,266,1078,146,1082,98"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="1168,29,1211,99"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="1189,99,1179,173,1163,259,1161,267,1156,266,1158,258,1174,172,1184,98"/>
-<area shape="rect" id="Node000009" title=" " alt="" coords="1301,29,1353,99"/>
-<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="1329,99,1321,174,1310,218,1295,260,1255,327,1207,389,1203,385,1251,324,1290,258,1305,216,1315,173,1324,98"/>
-<area shape="rect" id="Node000010" title=" " alt="" coords="1584,29,1625,99"/>
-<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="1605,99,1596,188,1587,231,1575,260,1538,303,1497,340,1451,374,1402,402,1304,448,1211,480,1209,475,1302,443,1400,398,1448,369,1493,336,1534,299,1570,257,1582,229,1590,187,1600,98"/>
-<area shape="rect" id="Node000011" title=" " alt="" coords="1828,29,1872,99"/>
-<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="1851,99,1842,188,1833,231,1820,260,1789,293,1756,322,1683,373,1604,414,1521,445,1437,469,1355,487,1211,506,1210,500,1355,481,1436,464,1519,440,1602,409,1681,368,1753,318,1786,289,1815,257,1828,230,1837,188,1846,98"/>
-<area shape="rect" id="Node000012" title=" " alt="" coords="2061,29,2110,99"/>
-<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="2093,98,2095,135,2092,178,2080,222,2070,242,2057,260,2031,283,1997,305,1910,346,1802,381,1681,413,1554,440,1428,463,1211,495,1211,490,1428,457,1553,435,1680,408,1801,376,1908,341,1995,301,2028,279,2053,257,2066,240,2075,220,2087,178,2090,135,2088,98"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="786,116,595,397,590,394,782,113"/>
 </map>

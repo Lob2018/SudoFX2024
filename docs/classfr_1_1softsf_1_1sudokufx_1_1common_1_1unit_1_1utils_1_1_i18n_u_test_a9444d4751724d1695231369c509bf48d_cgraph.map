@@ -1,5 +1,6 @@
 <map id="fr.softsf.sudokufx.common.unit.utils.I18nUTest.testDefaultLocale_as_french_then_locale_bundle_is_french" name="fr.softsf.sudokufx.common.unit.utils.I18nUTest.testDefaultLocale_as_french_then_locale_bundle_is_french">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,35,248,93"/>
+<area shape="poly" id="edge5_Node000001_Node000001" title=" " alt="" coords="71,34,73,24,83,15,101,10,127,8,156,11,174,18,172,23,155,16,126,13,102,15,85,20,77,27,77,35"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_i18n.html#a7095fa285a498c3f20bf33488a69d22c" title="Retrieves the localized string value for a given key." alt="" coords="332,5,488,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="248,45,316,36,317,42,248,51"/>
 <area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_i18n.html#a67c20ba2a72f7933067b71bc5a810bb1" title="Sets the locale bundle based on the host environment&#39;s language." alt="" coords="296,72,524,131"/>

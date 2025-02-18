@@ -1,5 +1,19 @@
 <map id="src/main/java/fr/softsf/sudokufx/configuration/HttpClientConfig.java" name="src/main/java/fr/softsf/sudokufx/configuration/HttpClientConfig.java">
-<area shape="rect" id="Node000001" title=" " alt="" coords="57,5,214,64"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="976,5,1132,64"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,112,266,155"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="138,64,138,97,133,97,133,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="976,45,675,72,282,114,281,109,675,67,975,40"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="289,120,574,147"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="976,51,529,120,528,114,976,45"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="598,112,852,155"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="976,61,811,110,809,105,975,56"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="876,120,1046,147"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="1029,66,985,111,981,107,1025,62"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="1071,120,1227,147"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="1084,62,1128,107,1124,111,1080,66"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="1251,112,1447,155"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="1134,59,1273,104,1271,109,1132,64"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="1471,112,1672,155"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="1133,48,1456,108,1456,113,1132,53"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="1696,120,1823,147"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="1133,39,1380,64,1532,84,1684,109,1702,113,1700,118,1683,115,1531,89,1379,69,1132,45"/>
 </map>

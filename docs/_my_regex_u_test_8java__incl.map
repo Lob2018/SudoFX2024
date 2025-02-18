@@ -1,5 +1,19 @@
 <map id="src/test/java/fr/softsf/sudokufx/utils/MyRegexUTest.java" name="src/test/java/fr/softsf/sudokufx/utils/MyRegexUTest.java">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,235,48"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="21,96,219,123"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,49,123,80,117,80,117,49"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="715,5,944,48"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,104,203,131"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="714,41,483,65,215,99,185,103,184,98,214,93,483,59,714,36"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="226,96,406,139"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="715,49,421,98,420,93,714,44"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="430,96,602,139"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="757,51,605,94,603,89,755,46"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="625,104,815,131"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="806,50,749,96,745,92,802,46"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="839,104,1038,131"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="856,46,913,92,910,96,853,50"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="1062,104,1218,131"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="903,46,1082,97,1080,102,901,51"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="1243,104,1397,131"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="945,43,1231,93,1251,98,1250,103,1230,99,944,48"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="1421,96,1654,139"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="945,38,1405,93,1405,98,944,43"/>
 </map>
