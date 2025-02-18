@@ -213,7 +213,24 @@ jobs:
         with:
           name: SudokuFX release v${{ env.POM_VERSION }}
           tag: v${{ env.POM_VERSION }}
-          body: <br>▪ The compressed files for Windows MacOS (ZIP) and Linux (TAR) do not include the Java Runtime Environment (the latest JRE must be installed on your machine), the .bat file (for Windows) and the .sh file (for Linux and MacOS) launch the application.<br><br>▪ Both the MSI .dmg and .deb files include the Java Runtime Environment and install the application on your machine.<br><br>▪ The hash_windows.txt file, the hash_linux.txt file, and the hash_macos.txt file, contain the files fingerprints.
+          body: |
+            Windows, macOS, and Linux ZIP/TAR Files: These compressed files do not include the Java Runtime Environment (JRE). You must have the latest JRE installed on your machine. To launch the application, use the following scripts:
+      
+               - **Windows**: `SudokuFX-${{ env.POM_VERSION }}_windows.zip` (Launch with .bat file)
+               - **Linux**: `SudokuFX-${{ env.POM_VERSION }}_linux.tar.gz` (Launch with .sh file)
+               - **macOS**: `SudokuFX-${{ env.POM_VERSION }}-x86_64_macos.zip` (Launch with .sh file)
+      
+            MSI, DMG, and DEB Files: These installation packages include the Java Runtime Environment (JRE) and will automatically install the application on your machine:
+      
+               - **Windows MSI**: `SudokuFX_JVM-${{ env.POM_VERSION }}.msi`
+               - **macOS DMG**: `SudokuFX-JVM-${{ env.POM_VERSION }}.dmg` or `SudokuFX-x86_64-JVM-${{ env.POM_VERSION }}.dmg`
+               - **Linux DEB**: `sudokufx-jvm_${{ env.POM_VERSION }}_amd64.deb`
+      
+            File Fingerprints: The integrity of the downloaded files can be verified using the corresponding hash files:
+      
+               - `hash_windows.txt` (for Windows)
+               - `hash_linux.txt` (for Linux)
+               - `hash_macos.txt` (for macOS)
           artifacts: 'output/*'
       - name: Create Tag
         run: git tag v${{ env.POM_VERSION }}
