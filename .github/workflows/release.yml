@@ -218,7 +218,7 @@ jobs:
       
                - **Windows**: `SudokuFX-${{ env.POM_VERSION }}_windows.zip` (Launch with .bat file)
                - **Linux**: `SudokuFX-${{ env.POM_VERSION }}_linux.tar.gz` (Launch with .sh file)
-               - **macOS**: `SudokuFX-${{ env.POM_VERSION }}-x86_64_macos.zip` (Launch with .sh file)
+               - **macOS**: `SudokuFX-${{ env.POM_VERSION }}_macos.zip` or `SudokuFX-${{ env.POM_VERSION }}-x86_64_macos.zip` (Launch with .sh file)
       
             MSI, DMG, and DEB Files: These installation packages include the Java Runtime Environment (JRE) and will automatically install the application on your machine:
       
