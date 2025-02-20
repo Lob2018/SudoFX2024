@@ -86,8 +86,8 @@
         <!-- Flyway database migration dependencies -->
         <dependency>
             <groupId>org.flywaydb</groupId>
-            <artifactId>flyway-database-hsqldb</artifactId>
-            <version>11.3.2</version>
+            <artifactId>q</artifactId>
+            <version>11.3.3</version>
         </dependency>
         <!-- Lombok for reducing boilerplate code -->
         <dependency>
