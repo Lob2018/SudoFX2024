@@ -32,7 +32,7 @@
     <properties>
         <deployment-folder>output</deployment-folder>
         <java.version>21</java.version>
-        <javafx.version>21</javafx.version>
+        <javafx.version>23.0.2</javafx.version>
         <macos-package-id>fr.soft64.sudokufx</macos-package-id>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <sonar.organization>lob2018</sonar.organization>
@@ -124,8 +124,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.13.0</version>
                 <configuration>
-                    <source>${javafx.version}</source>
-                    <target>${javafx.version}</target>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
                     <annotationProcessorPaths>
                         <path>
                             <groupId>org.mapstruct</groupId>
@@ -318,7 +318,7 @@
                                         <argument>${project.organization.name}</argument>
                                         <!-- The main module to execute -->
                                         <argument>${start-class}</argument>
-                                        <argument>${javafx.version}</argument>
+                                        <argument>${java.version}</argument>
                                         <argument>${deployment-folder}</argument>
                                         <argument>${maven.build.timestamp}</argument>
                                     </arguments>
@@ -359,7 +359,7 @@
                                         <argument>${project.organization.name}</argument>
                                         <!-- The main module to execute -->
                                         <argument>${start-class}</argument>
-                                        <argument>${javafx.version}</argument>
+                                        <argument>${java.version}</argument>
                                         <argument>${deployment-folder}</argument>
                                     </arguments>
                                 </configuration>
@@ -400,7 +400,7 @@
                                         <argument>${project.organization.name}</argument>
                                         <!-- The main module to execute -->
                                         <argument>${start-class}</argument>
-                                        <argument>${javafx.version}</argument>
+                                        <argument>${java.version}</argument>
                                         <argument>${deployment-folder}</argument>
                                         <argument>${macos-package-id}</argument>
                                     </arguments>
@@ -442,7 +442,7 @@
                                         <argument>${project.organization.name}</argument>
                                         <!-- The main module to execute -->
                                         <argument>${start-class}</argument>
-                                        <argument>${javafx.version}</argument>
+                                        <argument>${java.version}</argument>
                                         <argument>${deployment-folder}</argument>
                                         <argument>${macos-package-id}</argument>
                                         <argument>x86_64</argument>
