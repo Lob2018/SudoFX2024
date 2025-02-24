@@ -4,6 +4,8 @@ import org.junit.jupiter.api.Test;
 
 import static fr.softsf.sudokufx.utils.MyEnums.Paths.*;
 import static fr.softsf.sudokufx.utils.MyEnums.ToastLevels.*;
+import static fr.softsf.sudokufx.utils.MyEnums.Urls.GITHUB_API_REPOSITORY_TAGS_URL;
+import static fr.softsf.sudokufx.utils.MyEnums.Urls.GITHUB_REPOSITORY_RELEASES_URL;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 
@@ -55,12 +57,17 @@ class MyEnumsUTest {
         assertNotNull(MACOS_BASE_PATH.getPath());
     }
 
-
     @Test
     void testToastLevels() {
         assertNotNull(INFO.getLevel());
         assertNotNull(WARN.getLevel());
         assertNotNull(ERROR.getLevel());
+    }
+
+    @Test
+    void testUrls() {
+        assertNotNull(GITHUB_REPOSITORY_RELEASES_URL.getUrl());
+        assertNotNull(GITHUB_API_REPOSITORY_TAGS_URL.getUrl());
     }
 
 }

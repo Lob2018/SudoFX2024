@@ -78,7 +78,7 @@ public class VersionService {
                 try {
                     updateMessage(I18n.getValue("githubrepositoryversion.checking") + myDateTime.getFormattedCurrentTime() + ")");
                     HttpRequest request = HttpRequest.newBuilder()
-                            .uri(URI.create(GITHUB_API_URL_REPO_TAGS.getUrl()))
+                            .uri(URI.create(GITHUB_API_REPOSITORY_TAGS_URL.getUrl()))
                             .header("Accept", "application/json")
                             .timeout(Duration.ofSeconds(5))
                             .GET()
