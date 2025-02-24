@@ -66,6 +66,7 @@ SudokuFX is a Sudoku game that lets you create multiple player profiles, save yo
             - MapStruct processor (for code generation)
             - Lombok (for generating boilerplate code)
             - Lombok MapStruct Binding (to integrate Lombok with MapStruct)
+        - maven-enforcer-plugin (to define the minimum Maven version)
         - javafx-maven-plugin
         - spring-boot-maven-plugin (create the uber JAR)
         - exec-maven-plugin (for scripts generating the packages)

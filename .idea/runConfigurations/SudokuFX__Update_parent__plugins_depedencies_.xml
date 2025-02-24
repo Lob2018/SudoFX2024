@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="SudokuFX [Update depedencies]" type="MavenRunConfiguration" factoryName="Maven">
+  <configuration default="false" name="SudokuFX [Update parent, plugins,depedencies]" type="MavenRunConfiguration" factoryName="Maven">
     <MavenSettings>
       <option name="myGeneralSettings">
         <MavenGeneralSettings>
@@ -30,7 +30,11 @@
           </option>
           <option name="goals">
             <list>
+              <option value="versions:update-parent" />
+              <option value="versions:update-properties" />
+              <option value="-Dincludes=org.apache.maven.plugins:* -U" />
               <option value="versions:use-latest-releases" />
+              <option value="versions:display-plugin-updates" />
             </list>
           </option>
           <option name="multimoduleDir" />
