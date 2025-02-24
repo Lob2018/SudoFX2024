@@ -21,6 +21,8 @@ import java.net.http.HttpTimeoutException;
 import java.time.Duration;
 import java.util.List;
 
+import static fr.softsf.sudokufx.utils.MyEnums.Urls.*;
+
 /**
  * Service for checking if the application version is up to date by querying GitHub.
  * <p>
@@ -31,11 +33,6 @@ import java.util.List;
 @Service
 public class VersionService {
 
-    private static final String OWNER = "Lob2018";
-    private static final String REPO = "SudokuFX";
-    private static final String GITHUB_URL = "https://github.com/";
-    private static final String GITHUB_API_URL = "https://api.github.com/";
-    private static final String GITHUB_API_URL_REPO_TAGS = GITHUB_API_URL + "repos/" + OWNER + "/" + REPO + "/tags";
     private static final ObjectMapper OBJECT_MAPPER = new ObjectMapper();
     private final HttpClient httpClient;
     private final MyDateTime myDateTime;
@@ -45,13 +42,13 @@ public class VersionService {
      * Initializes the VersionService with the provided HttpClient and MyDateTime utility.
      * This service is responsible for checking the latest version by making HTTP requests.
      *
-     * @param httpClient  the HttpClient used to perform HTTP requests.
-     * @param myDateTime  the utility for handling date and time formatting.
+     * @param httpClient the HttpClient used to perform HTTP requests.
+     * @param myDateTime the utility for handling date and time formatting.
      */
     @Autowired
     public VersionService(HttpClient httpClient, MyDateTime myDateTime) {
         this.httpClient = httpClient;
-        this.myDateTime=myDateTime;
+        this.myDateTime = myDateTime;
     }
 
     /**
@@ -60,7 +57,7 @@ public class VersionService {
      * @return the URL to the repository releases page.
      */
     public String getGitHubLinkToRepositoryReleases() {
-        return GITHUB_URL + OWNER + "/" + REPO + "/releases";
+        return GITHUB_REPOSITORY_RELEASES_URL.getUrl();
     }
 
     /**
@@ -81,7 +78,7 @@ public class VersionService {
                 try {
                     updateMessage(I18n.getValue("githubrepositoryversion.checking") + myDateTime.getFormattedCurrentTime() + ")");
                     HttpRequest request = HttpRequest.newBuilder()
-                            .uri(URI.create(GITHUB_API_URL_REPO_TAGS))
+                            .uri(URI.create(GITHUB_API_URL_REPO_TAGS.getUrl()))
                             .header("Accept", "application/json")
                             .timeout(Duration.ofSeconds(5))
                             .GET()

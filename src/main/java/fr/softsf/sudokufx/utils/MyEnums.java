@@ -80,7 +80,7 @@ public final class MyEnums {
                 """),
         ASCII_LOGO("""
                 ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ Application entry ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
-                                
+                
                          ▒▒▒▒▒                                                                                     \s
                         ▒▒▒▒▒▒▒                                                                                    \s
                         ▒▒▒▒▒▒▒▒                                                                                   \s
@@ -146,6 +146,28 @@ public final class MyEnums {
 
         public final String getPath() {
             return path;
+        }
+    }
+
+    /**
+     * Enum for various application-specific url.
+     */
+    public enum Urls {
+        REPOSITORY_OWNER("Lob2018"),
+        REPOSITORY_NAME("SudokuFX"),
+        GITHUB_URL("https://github.com/"),
+        GITHUB_API_URL("https://api.github.com/"),
+        GITHUB_REPOSITORY_RELEASES_URL(GITHUB_URL.getUrl() + REPOSITORY_OWNER.getUrl() + "/" + REPOSITORY_NAME.getUrl() + "/releases"),
+        GITHUB_API_URL_REPO_TAGS(GITHUB_API_URL.getUrl() + "repos/" + REPOSITORY_OWNER.getUrl() + "/" + REPOSITORY_NAME.getUrl() + "/tags");
+
+        private final String url;
+
+        Urls(final String url_) {
+            url = url_;
+        }
+
+        public final String getUrl() {
+            return url;
         }
     }
 }
