@@ -13,7 +13,7 @@ import java.io.File;
  * This utility class is designed to be used statically and cannot be instantiated.
  */
 @Slf4j
-public class OsFolderInitializer {
+final class OsFolderInitializer {
 
     /**
      * Private constructor to prevent instantiation of this utility class.
