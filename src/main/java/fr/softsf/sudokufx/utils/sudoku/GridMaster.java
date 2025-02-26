@@ -1,6 +1,5 @@
 package fr.softsf.sudokufx.utils.sudoku;
 
-import fr.softsf.sudokufx.interfaces.IGridMaster;
 import fr.softsf.sudokufx.utils.SecureRandomGenerator;
 import lombok.Getter;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +15,7 @@ import java.util.Set;
  * Provides essential functionalities for generating and solving Sudoku puzzles.
  */
 @Component
-public class GridMaster implements IGridMaster {
+final class GridMaster implements IGridMaster {
 
     private static final int ORDRE = 3;
     private static final int DIMENSION = ORDRE * ORDRE;
@@ -362,14 +361,14 @@ public class GridMaster implements IGridMaster {
     }
 
     @Override
-    public final int resoudreLaGrille(final int[] grille) {
+    public int resoudreLaGrille(final int[] grille) {
         int[] possibilites = getPossibilites(grille);
         remplirLaGrille(grille, possibilites);
         return verifierLaCoherenceEntreLaGrilleEtLesPossibilites(grille, possibilites);
     }
 
     @Override
-    public final int[][] creerLesGrilles(final int niveau) {
+    public int[][] creerLesGrilles(final int niveau) {
         // Initialiser la grille résolue
         int[] grilleResolue = new int[NOMBRE_CASES];
         // Résoudre la grille

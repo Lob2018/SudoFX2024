@@ -1,7 +1,7 @@
 package fr.softsf.sudokufx.viewmodel;
 
 import fr.softsf.sudokufx.dto.SoftwareDto;
-import fr.softsf.sudokufx.interfaces.IGridMaster;
+import fr.softsf.sudokufx.utils.sudoku.IGridMaster;
 import fr.softsf.sudokufx.service.SoftwareService;
 import fr.softsf.sudokufx.service.VersionService;
 import javafx.beans.property.*;

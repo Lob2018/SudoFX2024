@@ -1,9 +1,9 @@
-package fr.softsf.sudokufx.interfaces;
+package fr.softsf.sudokufx.utils.sudoku;
 
 /**
  * Interface defining methods to generate and solve Sudoku puzzles
  */
-public interface IGridMaster {
+public sealed interface IGridMaster permits GridMaster {
     /**
      * Crée les grilles de Sudoku (résolue et à résoudre) en fonction du niveau de difficulté.
      * Facile :

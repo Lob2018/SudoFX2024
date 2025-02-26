@@ -1,6 +1,5 @@
 package fr.softsf.sudokufx.utils.sudoku;
 
-import fr.softsf.sudokufx.interfaces.IGridMaster;
 import fr.softsf.sudokufx.utils.SecureRandomGenerator;
 import org.awaitility.Awaitility;
 import org.junit.jupiter.api.BeforeEach;

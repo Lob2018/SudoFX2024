@@ -23,7 +23,7 @@ import java.util.UUID;
  */
 @Slf4j
 @Component
-public final class ApplicationKeystore implements IKeystore {
+final class ApplicationKeystore implements IKeystore {
 
     private static final String KEYSTORE_PASSWORD_FROM_UUID = String.valueOf(UUID.nameUUIDFromBytes(System.getProperty("user.name").getBytes()));
     private static final String KEYSTORE_TYPE = "pkcs12";
