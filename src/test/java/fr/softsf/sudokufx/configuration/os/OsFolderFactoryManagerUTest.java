@@ -1,6 +1,5 @@
 package fr.softsf.sudokufx.configuration.os;
 
-import fr.softsf.sudokufx.interfaces.IOsFolderFactory;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;

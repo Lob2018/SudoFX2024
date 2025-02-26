@@ -1,7 +1,7 @@
 package fr.softsf.sudokufx.configuration.database.keystore;
 
 import fr.softsf.sudokufx.annotations.ExcludedFromCoverageReportGenerated;
-import fr.softsf.sudokufx.interfaces.IOsFolderFactory;
+import fr.softsf.sudokufx.configuration.os.IOsFolderFactory;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

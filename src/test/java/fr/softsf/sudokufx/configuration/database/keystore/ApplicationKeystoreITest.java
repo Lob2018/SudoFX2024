@@ -4,7 +4,7 @@ import ch.qos.logback.classic.Logger;
 import ch.qos.logback.classic.spi.ILoggingEvent;
 import ch.qos.logback.core.read.ListAppender;
 import fr.softsf.sudokufx.SudoMain;
-import fr.softsf.sudokufx.interfaces.IOsFolderFactory;
+import fr.softsf.sudokufx.configuration.os.IMockIOsFolderFactory;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Order;
@@ -63,7 +63,7 @@ class ApplicationKeystoreITest {
 
     @Test
     void constructorException_fail() {
-        IOsFolderFactory iOsFolderFactoryMocked = mock(IOsFolderFactory.class);
+        IMockIOsFolderFactory iOsFolderFactoryMocked = mock(IMockIOsFolderFactory.class);
         when(iOsFolderFactoryMocked.getOsDataFolderPath()).thenThrow(new RuntimeException(new Exception("██ Exception")));
         keystore.setOsFolderFactoryForTests(iOsFolderFactoryMocked);
         keystore.setupApplicationKeystore();

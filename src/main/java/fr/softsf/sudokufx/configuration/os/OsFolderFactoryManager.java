@@ -1,6 +1,5 @@
 package fr.softsf.sudokufx.configuration.os;
 
-import fr.softsf.sudokufx.interfaces.IOsFolderFactory;
 import fr.softsf.sudokufx.utils.MyEnums;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

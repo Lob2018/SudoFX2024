@@ -3,7 +3,7 @@ package fr.softsf.sudokufx.configuration;
 import ch.qos.logback.classic.spi.ILoggingEvent;
 import ch.qos.logback.core.read.ListAppender;
 import fr.softsf.sudokufx.configuration.os.OsFolderFactoryManager;
-import fr.softsf.sudokufx.interfaces.IOsFolderFactory;
+import fr.softsf.sudokufx.configuration.os.IOsFolderFactory;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

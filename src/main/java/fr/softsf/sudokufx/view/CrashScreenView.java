@@ -1,6 +1,7 @@
 package fr.softsf.sudokufx.view;
 
 import fr.softsf.sudokufx.SudoMain;
+import fr.softsf.sudokufx.configuration.os.IOsFolderFactory;
 import fr.softsf.sudokufx.interfaces.*;
 import fr.softsf.sudokufx.utils.FileSystemManager;
 import fr.softsf.sudokufx.utils.I18n;
