@@ -7,7 +7,7 @@ import lombok.extern.slf4j.Slf4j;
  * Implements the OsDynamicFolders.IOsFoldersFactory interface.
  */
 @Slf4j
-public final class WindowsFolderFactory implements IOsFolderFactory {
+final class WindowsFolderFactory implements IOsFolderFactory {
     private final String logsFolderForSudoFx;
     private final String dataFolderForSudoFx;
 
