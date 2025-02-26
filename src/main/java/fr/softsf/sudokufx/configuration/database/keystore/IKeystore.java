@@ -1,9 +1,9 @@
-package fr.softsf.sudokufx.interfaces;
+package fr.softsf.sudokufx.configuration.database.keystore;
 
 /**
  * Interface defining methods to get the database username and his password.
  */
-public interface IKeystore {
+public sealed interface IKeystore permits ApplicationKeystore {
 
     /**
      * Set up the application keystore

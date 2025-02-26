@@ -2,7 +2,7 @@ package fr.softsf.sudokufx.configuration.database;
 
 import com.zaxxer.hikari.HikariDataSource;
 import fr.softsf.sudokufx.annotations.ExcludedFromCoverageReportGenerated;
-import fr.softsf.sudokufx.interfaces.IKeystore;
+import fr.softsf.sudokufx.configuration.database.keystore.IKeystore;
 import fr.softsf.sudokufx.interfaces.IOsFolderFactory;
 import org.springframework.context.annotation.*;
 

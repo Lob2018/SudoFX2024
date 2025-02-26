@@ -1,8 +1,6 @@
 package fr.softsf.sudokufx.configuration.database.keystore;
 
 import fr.softsf.sudokufx.annotations.ExcludedFromCoverageReportGenerated;
-import fr.softsf.sudokufx.interfaces.IEncryptionService;
-import fr.softsf.sudokufx.interfaces.IKeystore;
 import fr.softsf.sudokufx.interfaces.IOsFolderFactory;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,7 +23,7 @@ import java.util.UUID;
  */
 @Slf4j
 @Component
-public class ApplicationKeystore implements IKeystore {
+public final class ApplicationKeystore implements IKeystore {
 
     private static final String KEYSTORE_PASSWORD_FROM_UUID = String.valueOf(UUID.nameUUIDFromBytes(System.getProperty("user.name").getBytes()));
     private static final String KEYSTORE_TYPE = "pkcs12";

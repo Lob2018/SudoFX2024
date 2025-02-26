@@ -1,7 +1,6 @@
 package fr.softsf.sudokufx.configuration.database.keystore;
 
 import fr.softsf.sudokufx.annotations.ExcludedFromCoverageReportGenerated;
-import fr.softsf.sudokufx.interfaces.IEncryptionService;
 import jakarta.validation.constraints.NotBlank;
 import lombok.extern.slf4j.Slf4j;
 

@@ -6,7 +6,7 @@ import java.security.SecureRandom;
 import javax.crypto.KeyGenerator;
 import javax.crypto.SecretKey;
 
-import fr.softsf.sudokufx.interfaces.IEncryptionService;
+import fr.softsf.sudokufx.configuration.database.keystore.IEncryptionService;
 import org.junit.jupiter.api.AfterEach;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
