@@ -8,5 +8,6 @@ var classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1_my_enums_u_test
     [ "testResourcesCssPath", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1_my_enums_u_test.html#a8f2d778e2d41c7e52d8d09fcda42ab3a", null ],
     [ "testResourcesFxmlPath", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1_my_enums_u_test.html#a9c586b939aa81b1737513c012a900642", null ],
     [ "testToastLevels", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1_my_enums_u_test.html#a4f6ffce7516e0b80e322c2e195e5f80d", null ],
+    [ "testUrls", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1_my_enums_u_test.html#a35a910f2d2c75155672bc364742871c8", null ],
     [ "testUserHome", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1_my_enums_u_test.html#a34dfc14ce7ddaafbe58d02257bc978e6", null ]
 ];

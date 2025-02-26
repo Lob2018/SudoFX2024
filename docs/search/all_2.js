@@ -9,6 +9,6 @@ var searchData=
   ['backgroundrepository_2ejava_6',['BackgroundRepository.java',['../_background_repository_8java.html',1,'']]],
   ['bundle_7',['bundle',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_i18n.html#a2e96200101ff93267b8ef54dd238b1ff',1,'fr::softsf::sudokufx::utils::I18n']]],
   ['buttonclose_8',['buttonClose',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a7e5f099b70c5a8a4ee33fdab4dd144bd',1,'fr::softsf::sudokufx::view::CrashScreenView']]],
-  ['buttonhello_9',['buttonHello',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_full_menu_view.html#afa361fa9ce2fd4413bbc5fec706235a9',1,'fr::softsf::sudokufx::view::FullMenuView']]],
+  ['buttonhello_9',['buttonHello',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a3da1ed0e084c00ce7e0728f6aaf1b66a',1,'fr.softsf.sudokufx.view.DefaultView.buttonHello'],['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_full_menu_view.html#afa361fa9ce2fd4413bbc5fec706235a9',1,'fr.softsf.sudokufx.view.FullMenuView.buttonHello']]],
   ['buttonreset_10',['buttonReset',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a9a69dcdad012b735ce72ec5fdb956d01',1,'fr::softsf::sudokufx::view::CrashScreenView']]]
 ];

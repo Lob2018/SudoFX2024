@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['versionservice_0',['VersionService',['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html',1,'fr::softsf::sudokufx::service']]],
-  ['versionserviceitest_1',['VersionServiceITest',['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service_i_test.html',1,'fr::softsf::sudokufx::service']]]
+  ['urls_0',['Urls',['../enumfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_enums_1_1_urls.html',1,'fr::softsf::sudokufx::utils::MyEnums']]]
 ];

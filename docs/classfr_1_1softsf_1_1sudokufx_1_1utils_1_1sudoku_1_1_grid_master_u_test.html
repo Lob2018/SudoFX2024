@@ -118,8 +118,11 @@ Package Functions</h2></td></tr>
 <tr class="memitem:a85be9cc802723128e9505ea853bfcdc8" id="r_a85be9cc802723128e9505ea853bfcdc8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a85be9cc802723128e9505ea853bfcdc8">createGridLevelImpossiblePossibilities_success</a> (int level)</td></tr>
 <tr class="memdesc:a85be9cc802723128e9505ea853bfcdc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a grid anyway after 1s if the possibilities per level cannot be reached.  <br /></td></tr>
 <tr class="separator:a85be9cc802723128e9505ea853bfcdc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca9a1a8193974ab64012ed45a2a4d02b" id="r_aca9a1a8193974ab64012ed45a2a4d02b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca9a1a8193974ab64012ed45a2a4d02b">createGrids_success</a> (int level)</td></tr>
-<tr class="separator:aca9a1a8193974ab64012ed45a2a4d02b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72569a87687392c84e79b3c09778cdc8" id="r_a72569a87687392c84e79b3c09778cdc8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a72569a87687392c84e79b3c09778cdc8">createGridsNormally_success</a> (int level)</td></tr>
+<tr class="memdesc:a72569a87687392c84e79b3c09778cdc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests grid generation for different difficulty levels.  <br /></td></tr>
+<tr class="separator:a72569a87687392c84e79b3c09778cdc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af639c6517f7121d53dd2ba67ac4f463a" id="r_af639c6517f7121d53dd2ba67ac4f463a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af639c6517f7121d53dd2ba67ac4f463a">createGridsQuickly_success</a> (int level)</td></tr>
+<tr class="separator:af639c6517f7121d53dd2ba67ac4f463a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b77a7102a1ffd656522d0e01eb63321" id="r_a7b77a7102a1ffd656522d0e01eb63321"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b77a7102a1ffd656522d0e01eb63321">createUnknownGrids_success</a> (int level)</td></tr>
 <tr class="separator:a7b77a7102a1ffd656522d0e01eb63321"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a009730c1b0563760aef0d58b35163cbf" id="r_a009730c1b0563760aef0d58b35163cbf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a009730c1b0563760aef0d58b35163cbf">init</a> ()</td></tr>
@@ -138,6 +141,10 @@ Private Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
+<tr class="memitem:ae47a2901dbeefda5c5b20ce3c8efe884" id="r_ae47a2901dbeefda5c5b20ce3c8efe884"><td class="memItemLeft" align="right" valign="top">static final <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html">GridMaster</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae47a2901dbeefda5c5b20ce3c8efe884">gridMasterNormally</a> = new <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html">GridMaster</a>(<a class="el" href="#a65aa0a617a8548bb955ded62745e2cca">secureRandomGenerator</a>)</td></tr>
+<tr class="separator:ae47a2901dbeefda5c5b20ce3c8efe884"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cb9a632f548574807cf5875ef6603fa" id="r_a4cb9a632f548574807cf5875ef6603fa"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4cb9a632f548574807cf5875ef6603fa">gridMasterNormallyLastLevel</a> = -1</td></tr>
+<tr class="separator:a4cb9a632f548574807cf5875ef6603fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65aa0a617a8548bb955ded62745e2cca" id="r_a65aa0a617a8548bb955ded62745e2cca"><td class="memItemLeft" align="right" valign="top">static final <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_secure_random_generator.html">SecureRandomGenerator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65aa0a617a8548bb955ded62745e2cca">secureRandomGenerator</a> = new <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_secure_random_generator.html">SecureRandomGenerator</a>()</td></tr>
 <tr class="separator:a65aa0a617a8548bb955ded62745e2cca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -175,8 +182,8 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aca9a1a8193974ab64012ed45a2a4d02b" name="aca9a1a8193974ab64012ed45a2a4d02b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca9a1a8193974ab64012ed45a2a4d02b">&#9670;&#160;</a></span>createGrids_success()</h2>
+<a id="a72569a87687392c84e79b3c09778cdc8" name="a72569a87687392c84e79b3c09778cdc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72569a87687392c84e79b3c09778cdc8">&#9670;&#160;</a></span>createGridsNormally_success()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -185,7 +192,41 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void fr.softsf.sudokufx.utils.sudoku.GridMasterUTest.createGrids_success </td>
+          <td class="memname">void fr.softsf.sudokufx.utils.sudoku.GridMasterUTest.createGridsNormally_success </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>level</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel package">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Tests grid generation for different difficulty levels. </p>
+<p>Introduces a 600ms delay when the level changes to simulate processing time.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">level</td><td>The difficulty level. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af639c6517f7121d53dd2ba67ac4f463a" name="af639c6517f7121d53dd2ba67ac4f463a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af639c6517f7121d53dd2ba67ac4f463a">&#9670;&#160;</a></span>createGridsQuickly_success()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.utils.sudoku.GridMasterUTest.createGridsQuickly_success </td>
           <td>(</td>
           <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>level</em></span></td><td>)</td>
           <td></td>
@@ -323,6 +364,50 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ae47a2901dbeefda5c5b20ce3c8efe884" name="ae47a2901dbeefda5c5b20ce3c8efe884"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae47a2901dbeefda5c5b20ce3c8efe884">&#9670;&#160;</a></span>gridMasterNormally</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html">GridMaster</a> fr.softsf.sudokufx.utils.sudoku.GridMasterUTest.gridMasterNormally = new <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html">GridMaster</a>(<a class="el" href="#a65aa0a617a8548bb955ded62745e2cca">secureRandomGenerator</a>)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4cb9a632f548574807cf5875ef6603fa" name="a4cb9a632f548574807cf5875ef6603fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cb9a632f548574807cf5875ef6603fa">&#9670;&#160;</a></span>gridMasterNormallyLastLevel</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int fr.softsf.sudokufx.utils.sudoku.GridMasterUTest.gridMasterNormallyLastLevel = -1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a5cb906f41663ea1e8276c7f5cc15f8e2" name="a5cb906f41663ea1e8276c7f5cc15f8e2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5cb906f41663ea1e8276c7f5cc15f8e2">&#9670;&#160;</a></span>iGridMaster</h2>
 
@@ -376,7 +461,7 @@ Static Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1utils.html">utils</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku.html">sudoku</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master_u_test.html">GridMasterUTest</a></li>
-    <li class="footer">Generated on Tue Feb 18 2025 14:41:41 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Wed Feb 26 2025 19:37:02 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

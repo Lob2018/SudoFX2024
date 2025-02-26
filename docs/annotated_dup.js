@@ -45,7 +45,7 @@ var annotated_dup =
                 [ "ApplicationKeystore", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1keystore_1_1_application_keystore.html", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1keystore_1_1_application_keystore" ],
                 [ "ApplicationKeystoreITest", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1keystore_1_1_application_keystore_i_test.html", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1keystore_1_1_application_keystore_i_test" ],
                 [ "GenerateSecret", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1keystore_1_1_generate_secret.html", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1keystore_1_1_generate_secret" ],
-                [ "SecretKeyEncryptionServiceAESGCM", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1keystore_1_1_secret_key_encryption_service_a_e_s_g_c_m.html", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1keystore_1_1_secret_key_encryption_service_a_e_s_g_c_m" ]
+                [ "SecretKeyEncryptionServiceAESGCM", "interfacefr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1keystore_1_1_secret_key_encryption_service_a_e_s_g_c_m.html", "interfacefr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1keystore_1_1_secret_key_encryption_service_a_e_s_g_c_m" ]
               ] ],
               [ "DataSourceConfig", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_data_source_config.html", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_data_source_config" ],
               [ "DataSourceConfigCds", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_data_source_config_cds.html", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_data_source_config_cds" ],
@@ -81,10 +81,8 @@ var annotated_dup =
               [ "IPlayerMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_player_mapper.html", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_player_mapper" ],
               [ "ISoftwareMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_software_mapper.html", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_software_mapper" ]
             ] ],
-            [ "IEncryptionService", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_encryption_service.html", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_encryption_service" ],
             [ "IFileSystem", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_file_system.html", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_file_system" ],
             [ "IGridMaster", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_grid_master.html", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_grid_master" ],
-            [ "IKeystore", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_keystore.html", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_keystore" ],
             [ "IMainStageView", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_main_stage_view.html", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_main_stage_view" ],
             [ "IOsFolderFactory", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_os_folder_factory.html", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_os_folder_factory" ],
             [ "ISceneProvider", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_scene_provider.html", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_scene_provider" ],
@@ -143,7 +141,7 @@ var annotated_dup =
               ] ]
             ] ],
             [ "CrashScreenView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view" ],
-            [ "DefaultView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html", null ],
+            [ "DefaultView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view" ],
             [ "FullMenuView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_full_menu_view.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_full_menu_view" ],
             [ "SplashScreenView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view" ]
           ] ],

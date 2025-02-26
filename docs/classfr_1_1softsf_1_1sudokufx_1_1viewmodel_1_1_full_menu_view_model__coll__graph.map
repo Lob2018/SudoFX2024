@@ -1,18 +1,18 @@
 <map id="fr.softsf.sudokufx.viewmodel.FullMenuViewModel" name="fr.softsf.sudokufx.viewmodel.FullMenuViewModel">
-<area shape="rect" id="Node000001" title="FullMenuViewModel with business logic (not final)" alt="" coords="369,919,631,1345"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_software_service.html" title=" " alt="" coords="179,503,387,695"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="319,693,395,894,399,902,394,904,391,896,314,695"/>
+<area shape="rect" id="Node000001" title="FullMenuViewModel with business logic (not final)" alt="" coords="371,748,633,1175"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_software_service.html" title=" " alt="" coords="180,417,388,609"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="333,608,393,732,388,734,328,610"/>
 <area shape="rect" id="Node000003" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_software_mapper.html" title="This interface defines methods for mapping objects of type Software to objects of type SoftwareDto an..." alt="" coords="5,140,230,279"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="149,277,238,486,233,488,144,280"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="157,277,226,401,222,404,153,280"/>
 <area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="231,191,249,198,257,209,248,221,244,218,251,209,246,202,229,196"/>
 <area shape="rect" id="Node000004" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_software_repository.html" title=" " alt="" coords="359,159,535,260"/>
-<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="429,261,332,488,327,486,424,259"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="423,261,346,404,341,402,418,258"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="366,5,528,91"/>
 <area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="450,105,450,159,444,159,444,105"/>
-<area shape="rect" id="Node000006" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_grid_master.html" title="Interface defining methods to generate and solve Sudoku puzzles." alt="" coords="412,529,589,668"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="503,668,503,902,498,902,498,668"/>
-<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html" title="Service for checking if the application version is up to date by querying GitHub." alt="" coords="614,343,843,855"/>
-<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="621,856,601,904,596,902,617,853"/>
-<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_date_time.html" title="Utility class for working with date and time." alt="" coords="628,151,829,268"/>
-<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="731,268,731,326,726,326,726,268"/>
+<area shape="rect" id="Node000006" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_grid_master.html" title="Interface defining methods to generate and solve Sudoku puzzles." alt="" coords="413,444,590,583"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="504,582,504,731,499,731,499,582"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html" title="Service for checking if the application version is up to date by querying GitHub." alt="" coords="615,343,837,684"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="643,685,618,734,614,732,638,682"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_date_time.html" title="Utility class for working with date and time." alt="" coords="625,151,826,268"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="728,268,728,326,723,326,723,268"/>
 </map>

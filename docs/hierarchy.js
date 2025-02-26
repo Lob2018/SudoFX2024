@@ -14,7 +14,6 @@ var hierarchy =
       [ "fr.softsf.sudokufx.configuration.database.DataSourceConfigDefault", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_data_source_config_default.html", null ],
       [ "fr.softsf.sudokufx.configuration.database.DataSourceConfigTest", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_data_source_config_test.html", null ]
     ] ],
-    [ "fr.softsf.sudokufx.view.DefaultView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html", null ],
     [ "fr.softsf.sudokufx.utils.DynamicFontSizeChangeE2ETest", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_dynamic_font_size_change_e2_e_test.html", null ],
     [ "fr.softsf.sudokufx.exception.ExceptionTools", "classfr_1_1softsf_1_1sudokufx_1_1exception_1_1_exception_tools.html", null ],
     [ "fr.softsf.sudokufx.common.unit.utils.ExceptionToolsUTest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1_exception_tools_u_test.html", null ],
@@ -32,8 +31,8 @@ var hierarchy =
     [ "fr.softsf.sudokufx.utils.I18n", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_i18n.html", null ],
     [ "fr.softsf.sudokufx.common.unit.utils.I18nUTest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1_i18n_u_test.html", null ],
     [ "fr.softsf.sudokufx.interfaces.mapper.IBackgroundMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_background_mapper.html", null ],
-    [ "fr.softsf.sudokufx.interfaces.IEncryptionService", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_encryption_service.html", [
-      [ "fr.softsf.sudokufx.configuration.database.keystore.SecretKeyEncryptionServiceAESGCM", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1keystore_1_1_secret_key_encryption_service_a_e_s_g_c_m.html", null ]
+    [ "IEncryptionService", null, [
+      [ "fr.softsf.sudokufx.configuration.database.keystore.SecretKeyEncryptionServiceAESGCM", "interfacefr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1keystore_1_1_secret_key_encryption_service_a_e_s_g_c_m.html", null ]
     ] ],
     [ "fr.softsf.sudokufx.interfaces.IFileSystem", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_file_system.html", [
       [ "fr.softsf.sudokufx.utils.FileSystemManager", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_file_system_manager.html", null ]
@@ -44,11 +43,12 @@ var hierarchy =
     [ "fr.softsf.sudokufx.interfaces.IGridMaster", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_grid_master.html", [
       [ "fr.softsf.sudokufx.utils.sudoku.GridMaster", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html", null ]
     ] ],
-    [ "fr.softsf.sudokufx.interfaces.IKeystore", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_keystore.html", [
+    [ "IKeystore", null, [
       [ "fr.softsf.sudokufx.configuration.database.keystore.ApplicationKeystore", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1keystore_1_1_application_keystore.html", null ]
     ] ],
     [ "fr.softsf.sudokufx.interfaces.IMainStageView", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_main_stage_view.html", [
       [ "fr.softsf.sudokufx.view.CrashScreenView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html", null ],
+      [ "fr.softsf.sudokufx.view.DefaultView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html", null ],
       [ "fr.softsf.sudokufx.view.FullMenuView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_full_menu_view.html", null ]
     ] ],
     [ "fr.softsf.sudokufx.interfaces.mapper.IMenuMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_menu_mapper.html", null ],
@@ -63,6 +63,7 @@ var hierarchy =
       [ "fr.softsf.sudokufx.service.FxmlService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_fxml_service.html", null ],
       [ "fr.softsf.sudokufx.utils.DynamicFontSize", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_dynamic_font_size.html", null ],
       [ "fr.softsf.sudokufx.view.CrashScreenView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html", null ],
+      [ "fr.softsf.sudokufx.view.DefaultView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html", null ],
       [ "fr.softsf.sudokufx.view.FullMenuView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_full_menu_view.html", null ]
     ] ],
     [ "fr.softsf.sudokufx.interfaces.mapper.ISoftwareMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_software_mapper.html", null ],
@@ -108,6 +109,7 @@ var hierarchy =
     [ "fr.softsf.sudokufx.service.SoftwareService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_software_service.html", null ],
     [ "fr.softsf.sudokufx.common.unit.service.SoftwareServiceUTest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1service_1_1_software_service_u_test.html", null ],
     [ "fr.softsf.sudokufx.utils.MyEnums.ToastLevels", "enumfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_enums_1_1_toast_levels.html", null ],
+    [ "fr.softsf.sudokufx.utils.MyEnums.Urls", "enumfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_enums_1_1_urls.html", null ],
     [ "VBox", null, [
       [ "fr.softsf.sudokufx.view.components.toaster.ToasterVBox", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box.html", null ]
     ] ],

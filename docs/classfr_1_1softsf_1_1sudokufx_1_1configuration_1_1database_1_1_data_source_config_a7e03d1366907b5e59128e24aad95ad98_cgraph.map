@@ -1,12 +1,6 @@
 <map id="fr.softsf.sudokufx.configuration.database.DataSourceConfig.flyway" name="fr.softsf.sudokufx.configuration.database.DataSourceConfig.flyway">
-<area shape="rect" id="Node000001" title="Configures Flyway with a specified location for migration scripts." alt="" coords="5,72,268,115"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="79,72,76,62,86,53,106,47,137,45,170,48,189,54,188,59,169,53,136,51,107,53,88,57,81,63,84,71"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_data_source_config.html#aeec3198d3b639d46c8bf715dc2e3581d" title="Creates and configures the main DataSource for the application." alt="" coords="316,72,578,115"/>
-<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="268,91,300,91,300,96,268,96"/>
-<area shape="rect" id="Node000003" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_keystore.html#a5ec3c1f09b73ee031b270efd4ded0ce0" title="Get database password." alt="" coords="646,5,835,48"/>
-<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="543,69,631,49,632,54,545,74"/>
-<area shape="rect" id="Node000004" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_keystore.html#a8b68edc0def5161907fbd2f55b0940f3" title="Get database username." alt="" coords="646,72,835,115"/>
-<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="578,91,631,91,631,96,578,96"/>
-<area shape="rect" id="Node000005" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_keystore.html#a9b027a910af9934b7549202c4e44350e" title="Set up the application keystore." alt="" coords="626,139,855,181"/>
-<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="545,113,629,132,628,137,543,118"/>
+<area shape="rect" id="Node000001" title="Configures Flyway with a specified location for migration scripts." alt="" coords="5,29,268,72"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="79,29,76,19,86,10,106,5,137,3,170,5,189,11,188,16,169,10,136,8,107,10,88,15,81,21,84,28"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_data_source_config.html#aeec3198d3b639d46c8bf715dc2e3581d" title="Creates and configures the main DataSource for the application." alt="" coords="316,29,578,72"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="268,48,300,48,300,53,268,53"/>
 </map>
