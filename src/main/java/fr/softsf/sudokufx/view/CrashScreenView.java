@@ -7,6 +7,7 @@ import fr.softsf.sudokufx.utils.FileSystemManager;
 import fr.softsf.sudokufx.utils.I18n;
 import fr.softsf.sudokufx.configuration.JVMApplicationProperties;
 import fr.softsf.sudokufx.configuration.os.OsFolderFactoryManager;
+import fr.softsf.sudokufx.utils.IFileSystem;
 import javafx.animation.FadeTransition;
 import javafx.application.Platform;
 import javafx.fxml.FXML;

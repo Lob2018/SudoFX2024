@@ -1,6 +1,5 @@
 package fr.softsf.sudokufx.utils;
 
-import fr.softsf.sudokufx.interfaces.IFileSystem;
 import lombok.extern.slf4j.Slf4j;
 
 import java.nio.file.Files;
