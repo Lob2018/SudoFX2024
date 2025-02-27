@@ -14,11 +14,11 @@ class GenerateSecretUTest {
 
     @Autowired
     public GenerateSecretUTest(GenerateSecret generateSecret) {
-        this.generateSecret=generateSecret;
+        this.generateSecret = generateSecret;
     }
 
     @Test
-    void whenPasswordGeneratedUsingPassay_thenSuccessful() {
+    void givenPassayGenerator_whenGeneratePassword_thenPasswordMatchesRegex() {
         String password = generateSecret.generatePassaySecret();
         String regex = MyRegex.getSECRET();
         assertTrue(password.matches(regex));

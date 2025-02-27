@@ -25,7 +25,7 @@ class OsFolderFactoryManagerUTest {
     }
 
     @Test
-    void testOsFoldersWithInvalidOs() {
+    void givenInvalidOs_whenCreateOsFolderFactory_thenIllegalArgumentExceptionThrown() {
         osFolderFactoryManager.setWrongOsForTests();
         assertThrows(IllegalArgumentException.class, () -> {
             osFolderFactoryManager.iOsFolderFactory();
@@ -34,20 +34,19 @@ class OsFolderFactoryManagerUTest {
 
     @ParameterizedTest
     @MethodSource("provideInvalidOperatingSystems")
-    void testOsFoldersWithNullOrEmptyOs(String os) {
+    void givenNullOrEmptyOs_whenCreateOsFolderFactory_thenIllegalArgumentExceptionTh(String os) {
         if (os == null) {
             osFolderFactoryManager.setNullOsForTests();
         } else if (os.isEmpty()) {
             osFolderFactoryManager.setEmptyOsForTests();
         }
-
         IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, osFolderFactoryManager::iOsFolderFactory);
         assertTrue(exception.getMessage().contains("Operating system is not specified or null."));
     }
 
     @ParameterizedTest
     @ValueSource(strings = {"Windows", "Linux", "MacOS"})
-    void testOsFolderFactoryWithValidIOs(String osType) {
+    void givenValidOs_whenCreateOsFolderFactory_thenCorrectPathsReturned(String osType) {
         switch (osType) {
             case "Windows" -> osFolderFactoryManager.setWindowsOsForTests(
                     iCurrentIOsFolderFactory.getOsDataFolderPath(),

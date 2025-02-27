@@ -79,7 +79,7 @@ class VersionServiceITest {
     }
 
     @Test
-    void releasesLink_success() {
+    void givenVersionService_whenGetGitHubLinkToRepositoryReleases_thenCorrectLink() {
         VersionService versionService = new VersionService(mockHttpClient, myDateTime);
         assertEquals(GITHUB_LINK_TO_REPOSITORY_RELEASES,
                 versionService.getGitHubLinkToRepositoryReleases(),
@@ -87,7 +87,7 @@ class VersionServiceITest {
     }
 
     @Test
-    void testIsLatestGitHubPublishedPackageVersion_emptyResult_true() throws Exception {
+    void givenEmptyGitHubResponse_whenCheckLatestVersion_thenLatestVersionTrue() throws Exception {
         when(mockResponse.statusCode()).thenReturn(200);
         when(mockResponse.body()).thenReturn("[]");
         when(mockHttpClient.send(any(HttpRequest.class), any(HttpResponse.BodyHandler.class)))
@@ -103,7 +103,7 @@ class VersionServiceITest {
 
     @ParameterizedTest
     @ValueSource(ints = {301, 302, 403, 404, 500})
-    void testIsLatestGitHubPublishedPackageVersion_wrongHttpStatusCodes_true(int httpStatusCode) throws IOException, InterruptedException, ExecutionException {
+    void givenNon200HttpStatus_whenCheckLatestVersion_thenLatestVersionTrue(int httpStatusCode) throws IOException, InterruptedException, ExecutionException {
         when(mockResponse.statusCode()).thenReturn(httpStatusCode);
         when(mockHttpClient.send(any(HttpRequest.class), any(HttpResponse.BodyHandler.class)))
                 .thenReturn(mockResponse);
@@ -118,7 +118,7 @@ class VersionServiceITest {
 
     @ParameterizedTest
     @ValueSource(strings = {"v0.0.0", "v0.0.1", "v0.1.1", "v2147483647.2147483647.2147483647"})
-    void testIsLatestGitHubPublishedPackageVersion_onlineEmptyOldestSameAndNewerVersions(String onLineVersion) throws ExecutionException, InterruptedException, IOException {
+    void givenValidGitHubVersions_whenCheckLatestVersion_thenCorrectResultReturned(String onLineVersion) throws ExecutionException, InterruptedException, IOException {
         when(mockResponse.statusCode()).thenReturn(200);
         String jsonResponse = String.format(JSON, onLineVersion);
         when(mockResponse.body()).thenReturn(jsonResponse);
@@ -139,7 +139,7 @@ class VersionServiceITest {
 
     @ParameterizedTest
     @ValueSource(strings = {"", "vv.v.v"})
-    void testIsLatestGitHubPublishedPackageVersion_onlineInvalidVersions(String onLineVersion) throws ExecutionException, InterruptedException, IOException {
+    void givenInvalidGitHubVersions_whenCheckLatestVersion_thenLatestVersionTrue(String onLineVersion) throws ExecutionException, InterruptedException, IOException {
         when(mockResponse.statusCode()).thenReturn(200);
         String jsonResponse = String.format(JSON, onLineVersion);
         when(mockResponse.body()).thenReturn(jsonResponse);

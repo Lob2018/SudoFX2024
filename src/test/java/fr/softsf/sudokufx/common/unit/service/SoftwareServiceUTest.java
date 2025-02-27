@@ -45,7 +45,7 @@ class SoftwareServiceUTest {
     }
 
     @Test
-    void testGetSoftware_success() {
+    void givenSoftware_whenGetSoftware_thenSoftwareFound() {
         Mockito.when(softwareRepository.findFirstSoftware())
                 .thenReturn(Optional.of(software));
         Optional<SoftwareDto> softwareDto = softwareService.getSoftware();
@@ -55,7 +55,7 @@ class SoftwareServiceUTest {
     }
 
     @Test
-    void testGetSoftware_NoSoftwareFound() {
+    void givenSoftware_whenGetSoftware_thenNoSoftwareFound() {
         Mockito.when(softwareRepository.findFirstSoftware())
                 .thenReturn(Optional.empty());
         Optional<SoftwareDto> softwareDto = softwareService.getSoftware();
@@ -63,7 +63,7 @@ class SoftwareServiceUTest {
     }
 
     @Test
-    void testGetSoftware_ExceptionThrown() {
+    void givenSoftware_whenGetSoftware_thenDatabaseError() {
         Mockito.when(softwareRepository.findFirstSoftware())
                 .thenThrow(new RuntimeException("Database error"));
         Optional<SoftwareDto> softwareDto = softwareService.getSoftware();
@@ -71,7 +71,7 @@ class SoftwareServiceUTest {
     }
 
     @Test
-    void testUpdateSoftware_success() {
+    void givenSoftwareToUpdate_whenUpdateSoftware_thenSoftwareUpdated() {
         Mockito.when(softwareRepository.save(Mockito.any(Software.class)))
                 .thenReturn(software);
         software.setCurrentversion(lastVersion);
@@ -85,7 +85,7 @@ class SoftwareServiceUTest {
     }
 
     @Test
-    void testUpdateSoftware_ExceptionThrown() {
+    void givenSoftwareToUpdate_whenUpdateSoftware_thenDatabaseError() {
         Mockito.when(softwareRepository.save(Mockito.any(Software.class)))
                 .thenThrow(new RuntimeException("Database error"));
         software.setCurrentversion(lastVersion);

@@ -27,7 +27,7 @@ class MyEnumsE2ETest {
     }
 
     @Test
-    void testDISPOSABLE_SIZE() {
+    void givenScreenMinimumSize_whenGetSize_thenReturnFiniteFloatingPointValue() {
         assertTrue(Double.isFinite(DISPOSABLE_SIZE.getSize()));
     }
 

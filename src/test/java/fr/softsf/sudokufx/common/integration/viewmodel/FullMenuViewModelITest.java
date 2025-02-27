@@ -28,7 +28,7 @@ class FullMenuViewModelITest {
     private FullMenuViewModel fullMenuViewModel;
 
     @Test
-    void testSoftwareFound() {
+    void givenSoftware_whenGetSoftware_thenVersionMatch() {
         fullMenuViewModel.test();
         Optional<SoftwareDto> software = softwareService.getSoftware();
         assertTrue(software.isPresent(), "The software should be found.");

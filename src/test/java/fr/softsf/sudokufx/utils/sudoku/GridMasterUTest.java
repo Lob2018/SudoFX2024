@@ -27,7 +27,7 @@ class GridMasterUTest {
 
     @ParameterizedTest
     @ValueSource(ints = {-1, -100, 300})
-    void createUnknownGrids_success(int level) {
+    void givenUnknownLevel_whenCreateGrids_thenGridsGeneratedSuccessfully(int level) {
         int[][] grids = iGridMaster.creerLesGrilles(level);
         assertNotNull(grids);
         assertNotNull(grids[0]);
@@ -53,7 +53,7 @@ class GridMasterUTest {
 
     @ParameterizedTest
     @ValueSource(ints = {1, 2, 3})
-    void createGridsQuickly_success(int level) {
+    void givenValidLevel_whenCreateGridsQuickly_thenGridsGeneratedSuccessfully(int level) {
         int[][] grids = iGridMaster.creerLesGrilles(level);
         assertNotNull(grids);
         assertNotNull(grids[0]);
@@ -86,7 +86,7 @@ class GridMasterUTest {
      */
     @ParameterizedTest
     @ValueSource(ints = {1, 1, 2, 2, 3, 3})
-    void createGridsNormally_success(int level) {
+    void givenValidLevel_whenCreateGridsNormally_thenGridsGeneratedSuccessfully(int level) {
         int[][] grids = gridMasterNormally.creerLesGrilles(level);
         assertNotNull(grids);
         assertNotNull(grids[0]);
@@ -119,7 +119,7 @@ class GridMasterUTest {
     }
 
     @Test
-    void resolveGrid_success() {
+    void givenValidGrid_whenResolveGrid_thenGridResolvedSuccessfully() {
         int[] toBeResolvedGrid = new int[]{
                 5, 3, 4, 6, 7, 8, 9, 0, 2,
                 6, 7, 2, 1, 9, 5, 3, 4, 8,
@@ -147,7 +147,7 @@ class GridMasterUTest {
     }
 
     @Test
-    void resolveGrid_failed() {
+    void givenInvalidGrid_whenResolveGrid_thenResolutionFails() {
         int[] toBeResolvedGrid = new int[]{
                 5, 3, 4, 6, 7, 8, 9, 0, 2,
                 6, 7, 2, 1, 9, 5, 3, 4, 8,
@@ -171,7 +171,7 @@ class GridMasterUTest {
      */
     @ParameterizedTest
     @ValueSource(ints = {1, 2, 3})
-    void createGridLevelImpossiblePossibilities_success(int level) {
+    void givenImpossiblePossibilitiesForLevels_whenCreateGrids_thenGridsGeneratedAnyway(int level) {
         switch (level) {
             case 2 -> {
                 gridMaster.setAverageImpossiblePossibilitiesForTests();

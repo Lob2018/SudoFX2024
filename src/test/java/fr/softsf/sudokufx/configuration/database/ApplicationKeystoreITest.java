@@ -43,7 +43,7 @@ class ApplicationKeystoreITest {
 
     @Test
     @Order(0)
-    void constructorForKeystoreInitialization_success() {
+    void givenNewKeystore_whenSetupKeystore_thenCredentialsInitialized() {
         keystore.setupApplicationKeystore();
         passInit = keystore.getPassword();
         userInit = keystore.getUsername();
@@ -52,7 +52,7 @@ class ApplicationKeystoreITest {
 
     @Test
     @Order(1)
-    void constructorForAlreadyExistingKeystore_success() {
+    void givenExistingKeystore_whenSetupKeystore_thenCredentialsMatch() {
         keystore.setupApplicationKeystore();
         String pass = keystore.getPassword();
         String user = keystore.getUsername();
@@ -62,7 +62,7 @@ class ApplicationKeystoreITest {
     }
 
     @Test
-    void constructorException_fail() {
+    void givenOsFolderFactory_whenSetupKeystore_thenExceptionLogged() {
         IMockIOsFolderFactory iOsFolderFactoryMocked = mock(IMockIOsFolderFactory.class);
         when(iOsFolderFactoryMocked.getOsDataFolderPath()).thenThrow(new RuntimeException(new Exception("██ Exception")));
         keystore.setOsFolderFactoryForTests(iOsFolderFactoryMocked);

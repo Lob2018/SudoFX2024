@@ -12,60 +12,60 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 class MyEnumsUTest {
 
     @Test
-    void testResourcesFxmlPath() {
+    void givenFxmlResources_whenGetPath_thenPathExists() {
         assertNotNull(RESOURCES_FXML_PATH.getPath());
         assertNotNull(getClass().getResource(RESOURCES_FXML_PATH.getPath()));
     }
 
     @Test
-    void testResourcesCssPath() {
+    void givenCssResources_whenGetPath_thenPathExists() {
         assertNotNull(RESOURCES_CSS_PATH.getPath());
         assertNotNull(getClass().getResource(RESOURCES_CSS_PATH.getPath()));
     }
 
     @Test
-    void testI18nPath() {
+    void givenI18nResources_whenGetPath_thenPathExists() {
         assertNotNull(I18N_PATH.getPath());
         assertNotNull(getClass().getResource("/" + I18N_PATH.getPath() + ".properties"));
     }
 
     @Test
-    void testLogoSudoPngPath() {
+    void givenLogoSudoPngResource_whenGetPath_thenPathExists() {
         assertNotNull(LOGO_SUDO_PNG_PATH.getPath());
         assertNotNull(getClass().getResource(LOGO_SUDO_PNG_PATH.getPath()));
     }
 
     @Test
-    void testUserHome() {
+    void givenUserHome_whenGetPath_thenPathExists() {
         assertNotNull(USER_HOME.getPath());
     }
 
     @Test
-    void testDataFolder() {
+    void givenDataFolder_whenGetPath_thenPathExists() {
         assertNotNull(DATA_FOLDER.getPath());
     }
 
     @Test
-    void testLogsFolder() {
+    void givenLogsFolder_whenGetPath_thenPathExists() {
         assertNotNull(LOGS_FOLDER.getPath());
     }
 
     @Test
-    void testBasePaths() {
+    void givenBasePaths_whenGetPaths_thenPathsExist() {
         assertNotNull(WINDOWS_BASE_PATH.getPath());
         assertNotNull(LINUX_BASE_PATH.getPath());
         assertNotNull(MACOS_BASE_PATH.getPath());
     }
 
     @Test
-    void testToastLevels() {
+    void givenToastLevels_whenGetLevels_thenLevelsExist() {
         assertNotNull(INFO.getLevel());
         assertNotNull(WARN.getLevel());
         assertNotNull(ERROR.getLevel());
     }
 
     @Test
-    void testUrls() {
+    void givenUrls_whenGetUrls_thenUrlsExist() {
         assertNotNull(GITHUB_REPOSITORY_RELEASES_URL.getUrl());
         assertNotNull(GITHUB_API_REPOSITORY_TAGS_URL.getUrl());
     }

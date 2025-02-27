@@ -48,18 +48,18 @@ class MyLogbackConfigUTest {
     }
 
     @Test
-    void testLogs_real_folder_path_is_correct() {
+    void givenLogbackConfig_whenGetLogsFolderPath_thenCorrectPathReturned() {
         assertEquals(myLogbackConfig.getLogsFolderPath(), iCurrentIOsFolderFactory.getOsLogsFolderPath());
     }
 
     @Test
-    void testLogs_real_folder_exists() {
+    void givenLogsFolderPath_whenCheckFolderExists_thenFolderExists() {
         Path dossier = Path.of(myLogbackConfig.getLogsFolderPath());
         assertTrue(Files.exists(dossier));
     }
 
     @Test
-    void testLog_as_fatal(@Mock Logger logger) {
+    void givenLogger_whenLogFatalMessage_thenMessageLoggedCorrectly(@Mock Logger logger) {
         ArgumentCaptor<String> stringCaptor = ArgumentCaptor.forClass(String.class);
         logger.error("This is a critical message");
         verify(logger, times(1)).error(stringCaptor.capture());
@@ -67,13 +67,13 @@ class MyLogbackConfigUTest {
     }
 
     @Test
-    void testConfigureLogbackWithInvalidPath() {
+    void givenInvalidLogPath_whenConfigureLogback_thenRuntimeExceptionThrown() {
         myLogbackConfig.setLogBackPathForTests();
         assertThrows(RuntimeException.class, myLogbackConfig::configureLogback);
     }
 
     @Test
-    void testLogEntryMessageWithSpringContextIsOnRefresh() {
+    void givenSpringContextOnRefresh_whenPrintLogEntryMessage_thenCorrectMessageLogged() {
         JVMApplicationProperties.setOnRefreshSpringContextExitForTests();
         myLogbackConfig.printLogEntryMessage();
         assertTrue(JVMApplicationProperties.isSpringContextExitOnRefresh());
@@ -81,7 +81,7 @@ class MyLogbackConfigUTest {
     }
 
     @Test
-    void testLogEntryMessageWithInitSpringContextExitForTests() {
+    void givenInitSpringContextExit_whenPrintLogEntryMessage_thenCorrectMessageLogged() {
         JVMApplicationProperties.setInitSpringContextExitForTests();
         myLogbackConfig.printLogEntryMessage();
         assertFalse(JVMApplicationProperties.isSpringContextExitOnRefresh());

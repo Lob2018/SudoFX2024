@@ -34,7 +34,7 @@ class DynamicFontSizeChangeE2ETest {
     }
 
     @Test
-    void testUpdateFontSizeOnResize(FxRobot robot) {
+    void givenStageResized_whenUpdateFontSize_thenFontSizeAdjustedCorrectly(FxRobot robot) {
         robot.interact(() -> {
             stage.setWidth(300);
             stage.setHeight(350);

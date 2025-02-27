@@ -16,14 +16,14 @@ class I18nUTest {
 
     @Test
     @Order(0)
-    void testDefault_language_is_french() {
+    void givenDefaultLocale_whenGetLanguage_thenReturnsFrench() {
         String fr = I18n.getLanguage();
         assertEquals("fr", fr);
     }
 
     @Test
     @Order(1)
-    void testDefault_language_is_french_with_value() {
+    void givenDefaultLocale_whenGetValue_thenReturnsFrenchValue() {
         String testFR = I18n.getValue("test");
         assertEquals("testFR", testFR);
     }
@@ -31,7 +31,7 @@ class I18nUTest {
 
     @Test
     @Order(2)
-    void testChange_language_to_english_with_value() {
+    void givenEnglishLocale_whenGetValue_thenReturnsEnglishValue() {
         I18n.setLocaleBundle("EN");
         String testEN = I18n.getValue("test");
         assertEquals("testUS", testEN);
@@ -39,14 +39,14 @@ class I18nUTest {
 
     @Test
     @Order(3)
-    void testChanged_language_is_english() {
+    void givenEnglishLocale_whenGetLanguage_thenReturnsEnglish() {
         String en = I18n.getLanguage();
         assertEquals("en", en);
     }
 
     @Test
     @Order(4)
-    void testChange_english_language_to_french() {
+    void givenEmptyLocale_whenGetValue_thenReturnsFrenchValue() {
         I18n.setLocaleBundle("");
         String testFR = I18n.getValue("test");
         assertEquals("testFR", testFR);
@@ -54,7 +54,7 @@ class I18nUTest {
 
     @Test
     @Order(5)
-    void testDefaultLocale_as_english_then_locale_bundle_is_english() {
+    void givenHostEnvironmentWithEnglishLocale_whenGetValue_thenReturnsEnglishValu() {
         Locale.setDefault(Locale.ENGLISH);
         I18n.setLanguageBasedOnTheHostEnvironment();
         String testEN = I18n.getValue("test");
@@ -63,7 +63,7 @@ class I18nUTest {
 
     @Test
     @Order(6)
-    void testDefaultLocale_as_french_then_locale_bundle_is_french() {
+    void givenHostEnvironmentWithFrenchLocale_whenGetValue_thenReturnsFrenchValue() {
         Locale.setDefault(Locale.FRENCH);
         I18n.setLanguageBasedOnTheHostEnvironment();
         String testFR = I18n.getValue("test");

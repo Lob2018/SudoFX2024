@@ -9,12 +9,12 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class OsInfoUTest {
 
     @Test
-    void testOsInfoTest_UserHomePath_success() {
+    void givenUserHomePath_whenGetPath_thenPathMatchesSystemProperty() {
         assertEquals(System.getProperty("user.home").replace("\\", "/"), USER_HOME.getPath());
     }
 
     @Test
-    void testOsInfoTest_LowerCaseOsName_success() {
+    void givenOsName_whenGetOs_thenOsMatchesSystemProperty() {
         String expectedLowercaseOsName = System.getProperty("os.name").toLowerCase();
         assertEquals(expectedLowercaseOsName, OS_NAME.getOs());
     }

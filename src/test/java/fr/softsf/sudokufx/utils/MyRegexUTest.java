@@ -27,14 +27,14 @@ class MyRegexUTest {
     }
 
     @Test
-    void isValidatedByRegexWithNullText_Exception() {
+    void givenNullText_whenValidateByRegex_thenFalseAndErrorLogged() {
         boolean value = MyRegex.isValidatedByRegex(null, MyRegex.getALPHANUMERIC());
         assertFalse(value, "Text is null then it returns false");
         assert (logWatcher.list.getFirst().getFormattedMessage()).contains("██ Exception caught inside isValidatedByRegex, text is null, regex is");
     }
 
     @Test
-    void isValidatedByRegexWithNullRegex_Exception() {
+    void givenNullRegex_whenValidateByRegex_thenFalseAndErrorLogged() {
         boolean value = MyRegex.isValidatedByRegex("Test", null);
         assertFalse(value, "Regex is null then it returns false");
         assert (logWatcher.list.getFirst().getFormattedMessage()).contains("██ Exception caught inside isValidatedByRegex, text is Test, regex is null");

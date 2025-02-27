@@ -9,14 +9,14 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ExceptionToolsUTest {
     @Test
-    void getSQLInvalidAuthorizationSpecException_success() {
+    void givenThrowable_whenGetSQLInvalidAuthorizationSpecException_thenReturnsSQLInvalidAuthorizationSpecException() {
         Throwable t = new Throwable(new SQLInvalidAuthorizationSpecException());
         SQLInvalidAuthorizationSpecException result = ExceptionTools.getSQLInvalidAuthorizationSpecException(t);
         assertInstanceOf(SQLInvalidAuthorizationSpecException.class, result);
     }
 
     @Test
-    void getSQLInvalidAuthorizationSpecException_null() {
+    void givenThrowable_whenGetSQLInvalidAuthorizationSpecException_thenReturnsNul() {
         Throwable t = new Throwable(new Exception());
         SQLInvalidAuthorizationSpecException result = ExceptionTools.getSQLInvalidAuthorizationSpecException(t);
         assertNull(result);

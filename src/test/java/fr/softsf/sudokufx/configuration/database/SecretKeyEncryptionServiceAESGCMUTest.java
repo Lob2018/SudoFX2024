@@ -52,7 +52,7 @@ class SecretKeyEncryptionServiceAESGCMUTest {
     }
 
     @Test
-    void encryptDecrypt_success() {
+    void givenSecret_whenEncryptAndDecrypt_thenOriginalSecretReturned() {
         String secret = "Secret";
         String encrypted = iSecretKeyEncryptionServiceAESGCM.encrypt(secret);
         String decrypted = iSecretKeyEncryptionServiceAESGCM.decrypt(encrypted);
@@ -60,16 +60,16 @@ class SecretKeyEncryptionServiceAESGCMUTest {
     }
 
     @Test
-    void encryptWithNullSecretKey_fail() {
+    void givenInvalidOriginalText_whenEncrypt_thenExceptionLogged() {
         iSecretKeyEncryptionServiceAESGCMNullSecretKey.encrypt("_");
         verify(iSecretKeyEncryptionServiceAESGCMNullSecretKey).encrypt("_");
-        assert (logWatcher.list.get(logWatcher.list.size() - 1).getFormattedMessage()).contains("██ Exception catch inside encrypt");
+        assert (logWatcher.list.getLast().getFormattedMessage()).contains("██ Exception catch inside encrypt");
     }
 
     @Test
-    void decryptWithLessThanTwoBytesCypher_fail() {
+    void givenInvalidCipherText_whenDecrypt_thenExceptionLogged() {
         iSecretKeyEncryptionServiceAESGCMNullSecretKey.decrypt("_");
         verify(iSecretKeyEncryptionServiceAESGCMNullSecretKey).decrypt("_");
-        assert (logWatcher.list.get(logWatcher.list.size() - 1).getFormattedMessage()).contains("██ Exception catch inside decrypt(cypher)");
+        assert (logWatcher.list.getLast().getFormattedMessage()).contains("██ Exception catch inside decrypt(cypher)");
     }
 }
