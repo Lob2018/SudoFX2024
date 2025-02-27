@@ -40,7 +40,7 @@ class FileSystemManagerUTest {
     }
 
     @BeforeEach
-    public void setUp() {
+    void setUp() {
         try {
             Files.createDirectories(tempDir.resolve("testFolder/" + suffix + "/toto.txt"));
             path1 = tempDir.resolve("testFolder/" + suffix + "/toto.txt");
