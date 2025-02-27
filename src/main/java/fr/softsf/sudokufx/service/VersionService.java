@@ -25,7 +25,6 @@ import static fr.softsf.sudokufx.utils.MyEnums.Urls.*;
 
 /**
  * Service for checking if the application version is up to date by querying GitHub.
- * <p>
  * It retrieves the latest release tag from the GitHub API and compares it with the current version.
  * If an update is available, the result can be used to notify the user.
  */
@@ -35,20 +34,17 @@ public class VersionService {
 
     private static final ObjectMapper OBJECT_MAPPER = new ObjectMapper();
     private final HttpClient httpClient;
-    private final MyDateTime myDateTime;
     private final String currentVersion = JVMApplicationProperties.getAppVersion().isEmpty() ? "" : JVMApplicationProperties.getAppVersion().substring(1);
 
     /**
-     * Initializes the VersionService with the provided HttpClient and MyDateTime utility.
+     * Initializes the VersionService with the provided HttpClient.
      * This service is responsible for checking the latest version by making HTTP requests.
      *
      * @param httpClient the HttpClient used to perform HTTP requests.
-     * @param myDateTime the utility for handling date and time formatting.
      */
     @Autowired
-    public VersionService(HttpClient httpClient, MyDateTime myDateTime) {
+    public VersionService(HttpClient httpClient) {
         this.httpClient = httpClient;
-        this.myDateTime = myDateTime;
     }
 
     /**
@@ -64,19 +60,18 @@ public class VersionService {
      * Checks if the current application version is up-to-date by querying the GitHub API.
      * This method runs in the background using a JavaFX `Task` to avoid blocking the UI thread.
      * It retrieves the latest release version from the repository and compares it with the current application version.
-     * <p>
      * In case of errors (e.g., timeout, interruption, or network issues), it assumes the version is up-to-date
      * and logs the exception details.
      *
-     * @return A `Task<Boolean>` that returns `true` if the version is up-to-date,
-     * or `false` if an update is available. On error, it defaults to `true`.
+     * @return A `Task<Boolean>` that returns `true` if the version is up-to-date or if an error occurs,
+     * and `false` if an update is available.
      */
     public Task<Boolean> checkLatestVersion() {
         return new Task<>() {
             @Override
             protected Boolean call() {
                 try {
-                    updateMessage(I18n.getValue("githubrepositoryversion.checking") + myDateTime.getFormattedCurrentTime() + ")");
+                    updateMessage(I18n.getValue("githubrepositoryversion.checking") + MyDateTime.getFormattedCurrentTime() + ")");
                     HttpRequest request = HttpRequest.newBuilder()
                             .uri(URI.create(GITHUB_API_REPOSITORY_TAGS_URL.getUrl()))
                             .header("Accept", "application/json")
@@ -89,7 +84,7 @@ public class VersionService {
                         updateMessage(I18n.getValue("githubrepositoryversion.error.statuscode"));
                         return true;
                     }
-                    updateMessage(I18n.getValue("githubrepositoryversion.checked") + myDateTime.getFormattedCurrentTime() + ")");
+                    updateMessage(I18n.getValue("githubrepositoryversion.checked") + MyDateTime.getFormattedCurrentTime() + ")");
                     return parseResponse(response.body());
                 } catch (HttpTimeoutException ex) {
                     log.warn("▓▓ Timeout while checking GitHub version");
@@ -110,10 +105,8 @@ public class VersionService {
         };
     }
 
-
     /**
      * Parses the JSON response from the GitHub API to extract the latest published version.
-     * <p>
      * The method retrieves the latest tag name from the response, validates its format,
      * and compares it with the current application version.
      *
@@ -148,10 +141,11 @@ public class VersionService {
     }
 
     /**
-     * Compares two version strings in the format MAJOR.MINOR.PATCH.
+     * Compares two version strings in the format MAJOR.MINOR.PATCH (e.g., "1.2.3").
+     * The comparison is done based on the major, minor, and patch numbers.
      *
-     * @param version1 the first version string (e.g., "1.2.3").
-     * @param version2 the second version string (e.g., "1.3.0").
+     * @param version1 the first version string.
+     * @param version2 the second version string.
      * @return a negative integer if version1 is older,
      * a positive integer if version1 is newer,
      * or 0 if both versions are equal.
@@ -171,3 +165,4 @@ public class VersionService {
         return Integer.compare(Integer.parseInt(v1[2]), Integer.parseInt(v2[2]));
     }
 }
+
