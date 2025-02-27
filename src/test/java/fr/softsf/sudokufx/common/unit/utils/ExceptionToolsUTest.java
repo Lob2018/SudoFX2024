@@ -16,7 +16,7 @@ class ExceptionToolsUTest {
     }
 
     @Test
-    void givenThrowable_whenGetSQLInvalidAuthorizationSpecException_thenReturnsNul() {
+    void givenThrowable_whenGetSQLInvalidAuthorizationSpecException_thenReturnsNull() {
         Throwable t = new Throwable(new Exception());
         SQLInvalidAuthorizationSpecException result = ExceptionTools.getSQLInvalidAuthorizationSpecException(t);
         assertNull(result);

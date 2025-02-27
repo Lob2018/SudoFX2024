@@ -1,15 +1,9 @@
 package fr.softsf.sudokufx.configuration.database;
 
-import ch.qos.logback.classic.Logger;
-import ch.qos.logback.classic.spi.ILoggingEvent;
-import ch.qos.logback.core.read.ListAppender;
 import fr.softsf.sudokufx.SudoMain;
 
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -21,23 +15,10 @@ class ApplicationKeystoreITest {
     private static String passInit;
     private static String userInit;
     private final ApplicationKeystore keystore;
-    private ListAppender<ILoggingEvent> logWatcher;
 
     @Autowired
     public ApplicationKeystoreITest(ApplicationKeystore keystore) {
         this.keystore = keystore;
-    }
-
-    @BeforeEach
-    void setup() {
-        logWatcher = new ListAppender<>();
-        logWatcher.start();
-        ((Logger) LoggerFactory.getLogger(ApplicationKeystore.class)).addAppender(logWatcher);
-    }
-
-    @AfterEach
-    void tearDown() {
-        ((Logger) LoggerFactory.getLogger(ApplicationKeystore.class)).detachAndStopAllAppenders();
     }
 
     @Test
