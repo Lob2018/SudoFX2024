@@ -1,7 +1,5 @@
 var NAVTREEINDEX6 =
 {
-"interfacefr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_i_mock_i_os_folder_factory.html#a8905bb464593e71571d0dd682ecfe796":[2,0,0,0,0,2,1,0,0],
-"interfacefr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_i_mock_i_os_folder_factory.html#a9b203af5df22fa70a28b5485ea19bf73":[1,0,0,0,0,2,1,0,1],
 "interfacefr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_i_mock_i_os_folder_factory.html#a9b203af5df22fa70a28b5485ea19bf73":[2,0,0,0,0,2,1,0,1],
 "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_main_stage_view.html":[1,0,0,0,0,5,1],
 "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_main_stage_view.html":[2,0,0,0,0,4,1],
@@ -108,7 +106,6 @@ var NAVTREEINDEX6 =
 "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1os.html":[1,0,0,0,0,1,2,1,0],
 "namespacefr_1_1softsf_1_1sudokufx_1_1configuration.html":[1,0,0,0,0,2],
 "namespacefr_1_1softsf_1_1sudokufx_1_1configuration_1_1database.html":[1,0,0,0,0,2,0],
-"namespacefr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1keystore.html":[1,0,0,0,0,2,0,0],
 "namespacefr_1_1softsf_1_1sudokufx_1_1configuration_1_1os.html":[1,0,0,0,0,2,1],
 "namespacefr_1_1softsf_1_1sudokufx_1_1dto.html":[1,0,0,0,0,3],
 "namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a1ec66747e8dc472d375db5495929d95e":[1,0,0,0,0,3,6],
