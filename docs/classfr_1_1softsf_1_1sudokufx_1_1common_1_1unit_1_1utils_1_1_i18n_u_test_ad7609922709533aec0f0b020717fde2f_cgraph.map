@@ -1,0 +1,8 @@
+<map id="fr.softsf.sudokufx.common.unit.utils.I18nUTest.givenEmptyLocale_whenGetValue_thenReturnsFrenchValue" name="fr.softsf.sudokufx.common.unit.utils.I18nUTest.givenEmptyLocale_whenGetValue_thenReturnsFrenchValue">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,289,89"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="95,30,96,20,105,11,123,6,147,4,175,7,192,14,190,19,174,12,147,9,124,11,108,16,101,22,100,31"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_i18n.html#a7095fa285a498c3f20bf33488a69d22c" title="Retrieves the localized string value for a given key." alt="" coords="337,5,492,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="289,40,321,36,322,41,290,45"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_i18n.html#a7b2d44cad34ffdf0fb3a297af88ee76e" title="Sets the current language for the application." alt="" coords="337,72,492,115"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="290,75,322,79,321,84,289,80"/>
+</map>

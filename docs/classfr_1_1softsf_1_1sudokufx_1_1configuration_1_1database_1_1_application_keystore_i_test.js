@@ -1,9 +1,8 @@
 var classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_application_keystore_i_test =
 [
     [ "ApplicationKeystoreITest", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_application_keystore_i_test.html#acc1f7ef8772e47d22777115b8db60872", null ],
-    [ "constructorException_fail", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_application_keystore_i_test.html#a8aede6a5ef649a15f089f146f4a55856", null ],
-    [ "constructorForAlreadyExistingKeystore_success", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_application_keystore_i_test.html#a7faef69ee41def3ef794a5f4720d3d02", null ],
-    [ "constructorForKeystoreInitialization_success", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_application_keystore_i_test.html#a02beebaa0df2d0b997f1b80927955b6b", null ],
+    [ "givenExistingKeystore_whenSetupKeystore_thenCredentialsMatch", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_application_keystore_i_test.html#ac005ccd6b7cd59bcba5d851a83c94f8d", null ],
+    [ "givenNewKeystore_whenSetupKeystore_thenCredentialsInitialized", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_application_keystore_i_test.html#a176c4078dc81498602717d485021f910", null ],
     [ "setup", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_application_keystore_i_test.html#a89362bef44980db834bd88dd65b3c062", null ],
     [ "tearDown", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_application_keystore_i_test.html#a2291228c262104b6bacde7edd0fbbd5e", null ],
     [ "keystore", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_application_keystore_i_test.html#a4b25c0f6db4576d5061737a1375acf3c", null ],

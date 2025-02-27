@@ -1,5 +1,5 @@
 var classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1_exception_tools_u_test =
 [
-    [ "getSQLInvalidAuthorizationSpecException_null", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1_exception_tools_u_test.html#a27ad3f8aa218a6852eff7b200dec511e", null ],
-    [ "getSQLInvalidAuthorizationSpecException_success", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1_exception_tools_u_test.html#afb0007b59774af0d218cebe9a9bfe490", null ]
+    [ "givenThrowable_whenGetSQLInvalidAuthorizationSpecException_thenReturnsNul", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1_exception_tools_u_test.html#af9de08cf4d77bf093ac6081da8352afd", null ],
+    [ "givenThrowable_whenGetSQLInvalidAuthorizationSpecException_thenReturnsSQLInvalidAuthorizationSpecException", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1_exception_tools_u_test.html#ab8021baf7c271dd150767d8d0c2e0633", null ]
 ];

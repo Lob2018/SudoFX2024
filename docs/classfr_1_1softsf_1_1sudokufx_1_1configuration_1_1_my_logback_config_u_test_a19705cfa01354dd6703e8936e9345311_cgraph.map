@@ -1,0 +1,8 @@
+<map id="fr.softsf.sudokufx.configuration.MyLogbackConfigUTest.givenInitSpringContextExit_whenPrintLogEntryMessage_thenCorrectMessageLogged" name="fr.softsf.sudokufx.configuration.MyLogbackConfigUTest.givenInitSpringContextExit_whenPrintLogEntryMessage_thenCorrectMessageLogged">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,63,266,137"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_j_v_m_application_properties.html#a46753fc32c7d3156f3aed0f0c63c758e" title="Determines if the Spring context should exit on refresh." alt="" coords="314,29,582,88"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="266,80,298,76,298,81,266,85"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_j_v_m_application_properties.html#a72ea253190208e45cbc2ac5c83df5fbc" title="Initialize the Spring context exit behavior to &quot;_&quot; for testing purposes." alt="" coords="324,112,572,171"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="266,115,308,120,308,125,266,120"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="387,29,389,19,400,10,419,5,448,3,481,5,500,12,499,18,479,11,448,8,420,10,402,15,393,21,393,29"/>
+</map>

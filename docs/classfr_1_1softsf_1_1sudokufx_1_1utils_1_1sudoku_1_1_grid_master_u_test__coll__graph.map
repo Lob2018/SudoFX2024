@@ -1,10 +1,10 @@
 <map id="fr.softsf.sudokufx.utils.sudoku.GridMasterUTest" name="fr.softsf.sudokufx.utils.sudoku.GridMasterUTest">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,1979,211,2293"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_secure_random_generator.html" title="The SecureRandomGenerator class provides methods to generate random numbers securely using Java&#39;s Sec..." alt="" coords="28,5,207,181"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,181,102,246,89,497,81,710,79,897,80,1071,90,1433,102,1899,104,1962,98,1962,97,1899,85,1434,75,1072,73,897,76,710,83,497,97,245,103,181"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html" title="Provides essential functionalities for generating and solving Sudoku puzzles." alt="" coords="265,245,499,1899"/>
-<area shape="poly" id="edge4_Node000003_Node000002" title=" " alt="" coords="191,179,225,219,238,231,248,244,260,270,255,272,243,247,234,234,221,223,187,183"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="267,1843,248,1900,220,1965,215,1963,243,1898,262,1841"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="342,59,421,128"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="384,143,384,246,379,246,379,143"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,1979,260,2453"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_secure_random_generator.html" title="The SecureRandomGenerator class provides methods to generate random numbers securely using Java&#39;s Sec..." alt="" coords="53,5,232,181"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,181,126,246,113,497,106,710,104,897,106,1071,116,1433,126,1899,128,1962,122,1962,121,1899,111,1434,101,1072,99,897,101,710,108,497,121,245,127,181"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html" title="Provides essential functionalities for generating and solving Sudoku puzzles." alt="" coords="289,245,523,1899"/>
+<area shape="poly" id="edge4_Node000003_Node000002" title=" " alt="" coords="215,179,250,219,262,231,272,244,285,270,280,272,268,247,258,234,246,223,211,183"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="292,1830,273,1899,251,1964,246,1962,268,1898,287,1829"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="367,59,446,128"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="409,143,409,246,404,246,404,143"/>
 </map>

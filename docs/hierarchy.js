@@ -53,10 +53,9 @@ var hierarchy =
     ] ],
     [ "fr.softsf.sudokufx.interfaces.mapper.IMenuMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_menu_mapper.html", null ],
     [ "IOsFolderFactory", null, [
-      [ "fr.softsf.sudokufx.configuration.os.IMockIOsFolderFactory", "interfacefr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_i_mock_i_os_folder_factory.html", null ],
       [ "fr.softsf.sudokufx.configuration.os.LinuxFolderFactory", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_linux_folder_factory.html", null ],
       [ "fr.softsf.sudokufx.configuration.os.MacosFolderFactory", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_macos_folder_factory.html", null ],
-      [ "fr.softsf.sudokufx.configuration.os.WindowsFolderFactory", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_windows_folder_factory.html", null ]
+      [ "fr.softsf.sudokufx.configuration.os.WindowsFolderFactory", "interfacefr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_windows_folder_factory.html", null ]
     ] ],
     [ "fr.softsf.sudokufx.interfaces.mapper.IPlayerLanguageMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_player_language_mapper.html", null ],
     [ "fr.softsf.sudokufx.interfaces.mapper.IPlayerMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_player_mapper.html", null ],

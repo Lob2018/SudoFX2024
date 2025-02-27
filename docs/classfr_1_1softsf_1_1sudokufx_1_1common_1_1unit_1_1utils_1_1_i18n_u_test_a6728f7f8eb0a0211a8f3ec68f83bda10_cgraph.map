@@ -1,0 +1,12 @@
+<map id="fr.softsf.sudokufx.common.unit.utils.I18nUTest.givenHostEnvironmentWithEnglishLocale_whenGetValue_thenReturnsEnglishValu" name="fr.softsf.sudokufx.common.unit.utils.I18nUTest.givenHostEnvironmentWithEnglishLocale_whenGetValue_thenReturnsEnglishValu">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,35,302,93"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="93,34,95,24,106,15,125,10,154,8,186,11,206,18,204,23,185,16,153,13,126,15,108,20,99,27,99,35"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_i18n.html#a7095fa285a498c3f20bf33488a69d22c" title="Retrieves the localized string value for a given key." alt="" coords="386,5,542,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="302,44,371,35,371,40,302,49"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_i18n.html#a67c20ba2a72f7933067b71bc5a810bb1" title="Sets the locale bundle based on the host environment&#39;s language." alt="" coords="350,72,578,131"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="302,79,335,83,334,88,302,84"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_i18n.html#ae04bf081931205edbc3e139c7fd503f0" title="Gets the language code of the host environment." alt="" coords="626,47,882,89"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="578,86,610,82,611,87,579,91"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_i18n.html#a7b2d44cad34ffdf0fb3a297af88ee76e" title="Sets the current language for the application." alt="" coords="676,113,832,156"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="579,112,661,121,661,127,578,117"/>
+</map>

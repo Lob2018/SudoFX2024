@@ -11,7 +11,6 @@ var classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_application_k
     [ "getUsername", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_application_keystore.html#ab530dc8a379fbca2a4a579d5e2e6b99f", null ],
     [ "loadKeyStore", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_application_keystore.html#af9b2935d53713195a38a2a2fee61c2ac", null ],
     [ "setCredentials", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_application_keystore.html#a11f7f45df04c2a5c9cf71776b142b488", null ],
-    [ "setOsFolderFactoryForTests", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_application_keystore.html#a873d3007487c545ba2634f3b9e77db14", null ],
     [ "setupApplicationKeystore", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_application_keystore.html#ae7bbda2bb78e94e4c6b2baa403a6ef11", null ],
     [ "setupApplicationKeystore", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_application_keystore.html#ae7bbda2bb78e94e4c6b2baa403a6ef11", null ],
     [ "symmetricKey", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_application_keystore.html#ab5a3da56ae05a04d32f27b58fcd0d762", null ],
