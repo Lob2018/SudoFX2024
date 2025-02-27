@@ -1,7 +1,5 @@
 <map id="fr.softsf.sudokufx.configuration.os.OsFolderFactoryManagerUTest" name="fr.softsf.sudokufx.configuration.os.OsFolderFactoryManagerUTest">
-<area shape="rect" id="Node000001" title=" " alt="" coords="145,667,381,885"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="18,667,254,901"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_os_folder_factory_manager.html" title="Configuration class for managing OS&#45;specific dynamically." alt="" coords="5,5,267,603"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,602,211,642,213,650,208,651,206,643,194,603"/>
-<area shape="rect" id="Node000003" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_os_folder_factory.html" title="Interface defining methods to access OS&#45;specific folder paths." alt="" coords="292,251,488,357"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="396,357,398,417,395,490,384,568,363,644,359,652,354,650,358,642,379,567,389,489,392,417,391,357"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="139,603,139,650,134,650,134,603"/>
 </map>

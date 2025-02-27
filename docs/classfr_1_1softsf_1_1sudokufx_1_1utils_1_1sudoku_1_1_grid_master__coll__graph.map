@@ -1,7 +1,7 @@
 <map id="fr.softsf.sudokufx.utils.sudoku.GridMaster" name="fr.softsf.sudokufx.utils.sudoku.GridMaster">
-<area shape="rect" id="Node000001" title="Provides essential functionalities for generating and solving Sudoku puzzles." alt="" coords="78,245,312,1824"/>
-<area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_grid_master.html" title="Interface defining methods to generate and solve Sudoku puzzles." alt="" coords="5,24,183,163"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="106,178,113,245,108,246,100,178"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_secure_random_generator.html" title="The SecureRandomGenerator class provides methods to generate random numbers securely using Java&#39;s Sec..." alt="" coords="207,5,386,181"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="290,182,285,229,280,229,285,181"/>
+<area shape="rect" id="Node000001" title="Provides essential functionalities for generating and solving Sudoku puzzles." alt="" coords="5,245,239,1899"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="7,59,86,128"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="53,143,61,245,55,246,47,143"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_secure_random_generator.html" title="The SecureRandomGenerator class provides methods to generate random numbers securely using Java&#39;s Sec..." alt="" coords="110,5,289,181"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="195,181,192,229,186,229,190,181"/>
 </map>

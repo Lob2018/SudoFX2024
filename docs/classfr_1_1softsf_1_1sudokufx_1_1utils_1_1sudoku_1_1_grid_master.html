@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>SudokuFX: fr.softsf.sudokufx.utils.sudoku.GridMaster Class Reference</title>
+<title>SudokuFX: fr.softsf.sudokufx.utils.sudoku.GridMaster Interface Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,7 +105,7 @@ $(function(){initNavTree('classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_g
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">fr.softsf.sudokufx.utils.sudoku.GridMaster Class Reference</div></div>
+  <div class="headertitle"><div class="title">fr.softsf.sudokufx.utils.sudoku.GridMaster Interface Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -131,12 +131,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3a8f2b69240160d896b860a61eb7a059" id="r_a3a8f2b69240160d896b860a61eb7a059"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a8f2b69240160d896b860a61eb7a059">GridMaster</a> (<a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_secure_random_generator.html">SecureRandomGenerator</a> <a class="el" href="#ad5100e8da462814a76acdc95345ef06b">secureRandomGenerator</a>)</td></tr>
 <tr class="memdesc:a3a8f2b69240160d896b860a61eb7a059"><td class="mdescLeft">&#160;</td><td class="mdescRight">Générateur de grilles de Sudoku.  <br /></td></tr>
 <tr class="separator:a3a8f2b69240160d896b860a61eb7a059"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84921b0097e8df1b15d4ea378b1a82af" id="r_a84921b0097e8df1b15d4ea378b1a82af"><td class="memItemLeft" align="right" valign="top">final int[][]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a84921b0097e8df1b15d4ea378b1a82af">creerLesGrilles</a> (final int niveau)</td></tr>
-<tr class="memdesc:a84921b0097e8df1b15d4ea378b1a82af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crée les grilles de Sudoku (résolue et à résoudre) en fonction du niveau de difficulté.  <br /></td></tr>
-<tr class="separator:a84921b0097e8df1b15d4ea378b1a82af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8eba2a9a790e47d419e87446a003818f" id="r_a8eba2a9a790e47d419e87446a003818f"><td class="memItemLeft" align="right" valign="top">final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8eba2a9a790e47d419e87446a003818f">resoudreLaGrille</a> (final int[] grille)</td></tr>
-<tr class="memdesc:a8eba2a9a790e47d419e87446a003818f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Génère une grille de Sudoku complète à partir d'une grille vide ou partiellement remplie.  <br /></td></tr>
-<tr class="separator:a8eba2a9a790e47d419e87446a003818f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a149c25dfa7503f608c47688cfec7e59f" id="r_a149c25dfa7503f608c47688cfec7e59f"><td class="memItemLeft" align="right" valign="top">int[][]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a149c25dfa7503f608c47688cfec7e59f">creerLesGrilles</a> (final int niveau)</td></tr>
+<tr class="separator:a149c25dfa7503f608c47688cfec7e59f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a149c25dfa7503f608c47688cfec7e59f" id="r_a149c25dfa7503f608c47688cfec7e59f"><td class="memItemLeft" align="right" valign="top">int[][]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a149c25dfa7503f608c47688cfec7e59f">creerLesGrilles</a> (final int niveau)</td></tr>
+<tr class="memdesc:a149c25dfa7503f608c47688cfec7e59f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crée les grilles de Sudoku (résolue et à résoudre) en fonction du niveau de difficulté.  <br /></td></tr>
+<tr class="separator:a149c25dfa7503f608c47688cfec7e59f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dd6d1b4f01e548bf1a1735a7a2577af" id="r_a8dd6d1b4f01e548bf1a1735a7a2577af"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8dd6d1b4f01e548bf1a1735a7a2577af">resoudreLaGrille</a> (final int[] grille)</td></tr>
+<tr class="separator:a8dd6d1b4f01e548bf1a1735a7a2577af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dd6d1b4f01e548bf1a1735a7a2577af" id="r_a8dd6d1b4f01e548bf1a1735a7a2577af"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8dd6d1b4f01e548bf1a1735a7a2577af">resoudreLaGrille</a> (final int[] grille)</td></tr>
+<tr class="memdesc:a8dd6d1b4f01e548bf1a1735a7a2577af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Génère une grille de Sudoku complète à partir d'une grille vide ou partiellement remplie.  <br /></td></tr>
+<tr class="separator:a8dd6d1b4f01e548bf1a1735a7a2577af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pac-methods" name="pac-methods"></a>
 Package Functions</h2></td></tr>
@@ -243,6 +247,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides essential functionalities for generating and solving Sudoku puzzles. </p>
+<p>Interface defining methods to generate and solve Sudoku puzzles. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a3a8f2b69240160d896b860a61eb7a059" name="a3a8f2b69240160d896b860a61eb7a059"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3a8f2b69240160d896b860a61eb7a059">&#9670;&#160;</a></span>GridMaster()</h2>
@@ -377,14 +382,38 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a84921b0097e8df1b15d4ea378b1a82af" name="a84921b0097e8df1b15d4ea378b1a82af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a84921b0097e8df1b15d4ea378b1a82af">&#9670;&#160;</a></span>creerLesGrilles()</h2>
+<a id="a149c25dfa7503f608c47688cfec7e59f" name="a149c25dfa7503f608c47688cfec7e59f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a149c25dfa7503f608c47688cfec7e59f">&#9670;&#160;</a></span>creerLesGrilles() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">final int[][] fr.softsf.sudokufx.utils.sudoku.GridMaster.creerLesGrilles </td>
+          <td class="memname">int[][] fr.softsf.sudokufx.utils.sudoku.GridMaster.creerLesGrilles </td>
+          <td>(</td>
+          <td class="paramtype">final int</td>          <td class="paramname"><span class="paramname"><em>niveau</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master_a149c25dfa7503f608c47688cfec7e59f_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a149c25dfa7503f608c47688cfec7e59f" name="a149c25dfa7503f608c47688cfec7e59f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a149c25dfa7503f608c47688cfec7e59f">&#9670;&#160;</a></span>creerLesGrilles() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int[][] fr.softsf.sudokufx.utils.sudoku.GridMaster.creerLesGrilles </td>
           <td>(</td>
           <td class="paramtype">final int</td>          <td class="paramname"><span class="paramname"><em>niveau</em></span></td><td>)</td>
           <td></td>
@@ -401,15 +430,6 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Un tableau à trois dimensions contenant : La grille résolue. La grille à résoudre avec les cases cachées. Le pourcentage de possibilités de la grille à résoudre (la plage retenue va de 4800 0% à 40000 100%). </dd></dl>
-
-<p>Implements <a class="el" href="interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_grid_master.html#a7ae916d7f64607637b7bf5bf33fd0eb3">fr.softsf.sudokufx.interfaces.IGridMaster</a>.</p>
-<div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master_a84921b0097e8df1b15d4ea378b1a82af_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
 
 </div>
 </div>
@@ -952,14 +972,38 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a8eba2a9a790e47d419e87446a003818f" name="a8eba2a9a790e47d419e87446a003818f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8eba2a9a790e47d419e87446a003818f">&#9670;&#160;</a></span>resoudreLaGrille()</h2>
+<a id="a8dd6d1b4f01e548bf1a1735a7a2577af" name="a8dd6d1b4f01e548bf1a1735a7a2577af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8dd6d1b4f01e548bf1a1735a7a2577af">&#9670;&#160;</a></span>resoudreLaGrille() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">final int fr.softsf.sudokufx.utils.sudoku.GridMaster.resoudreLaGrille </td>
+          <td class="memname">int fr.softsf.sudokufx.utils.sudoku.GridMaster.resoudreLaGrille </td>
+          <td>(</td>
+          <td class="paramtype">final int[]</td>          <td class="paramname"><span class="paramname"><em>grille</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div id="dynsection-13" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master_a8dd6d1b4f01e548bf1a1735a7a2577af_cgraph.svg" width="100%" height="490"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a8dd6d1b4f01e548bf1a1735a7a2577af" name="a8dd6d1b4f01e548bf1a1735a7a2577af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8dd6d1b4f01e548bf1a1735a7a2577af">&#9670;&#160;</a></span>resoudreLaGrille() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int fr.softsf.sudokufx.utils.sudoku.GridMaster.resoudreLaGrille </td>
           <td>(</td>
           <td class="paramtype">final int[]</td>          <td class="paramname"><span class="paramname"><em>grille</em></span></td><td>)</td>
           <td></td>
@@ -980,15 +1024,6 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 si la grille est générée avec succès et cohérente, sinon -1. </dd></dl>
-
-<p>Implements <a class="el" href="interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_grid_master.html#afb84090e48c5b78c25d6b2d0c034038c">fr.softsf.sudokufx.interfaces.IGridMaster</a>.</p>
-<div id="dynsection-13" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master_a8eba2a9a790e47d419e87446a003818f_cgraph.svg" width="100%" height="490"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
 
 </div>
 </div>
@@ -1459,8 +1494,9 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this interface was generated from the following files:<ul>
 <li>src/main/java/fr/softsf/sudokufx/utils/sudoku/<a class="el" href="_grid_master_8java.html">GridMaster.java</a></li>
+<li>src/main/java/fr/softsf/sudokufx/utils/sudoku/<a class="el" href="_i_grid_master_8java.html">IGridMaster.java</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -1468,7 +1504,7 @@ Static Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1utils.html">utils</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku.html">sudoku</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html">GridMaster</a></li>
-    <li class="footer">Generated on Wed Feb 26 2025 19:37:02 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Thu Feb 27 2025 09:43:25 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

@@ -1,7 +1,5 @@
 <map id="fr.softsf.sudokufx.configuration.MyLogbackConfigUTest" name="fr.softsf.sudokufx.configuration.MyLogbackConfigUTest">
-<area shape="rect" id="Node000001" title=" " alt="" coords="111,309,327,693"/>
-<area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_os_folder_factory.html" title="Interface defining methods to access OS&#45;specific folder paths." alt="" coords="5,72,201,179"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,178,155,285,157,292,152,294,150,286,117,179"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_my_logback_config.html" title="Configuration class for Logback logging framework." alt="" coords="225,5,448,245"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="320,246,310,286,308,294,303,292,305,285,315,244"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="9,309,225,731"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_my_logback_config.html" title="Configuration class for Logback logging framework." alt="" coords="5,5,228,245"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,245,120,293,114,293,114,245"/>
 </map>

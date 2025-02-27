@@ -1,5 +1,5 @@
 <map id="fr.softsf.sudokufx.configuration.os.LinuxFolderFactory" name="fr.softsf.sudokufx.configuration.os.LinuxFolderFactory">
-<area shape="rect" id="Node000001" title="Factory class for creating and managing LINUX OS&#45;specific folders for the SudoFX application." alt="" coords="5,160,218,373"/>
-<area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_os_folder_factory.html" title="Interface defining methods to access OS&#45;specific folder paths." alt="" coords="14,5,210,112"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,127,114,160,109,160,109,127"/>
+<area shape="rect" id="Node000001" title="Factory class for creating and managing LINUX OS&#45;specific folders for the SudoFX application." alt="" coords="5,123,218,336"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="56,5,168,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,89,114,123,109,123,109,89"/>
 </map>

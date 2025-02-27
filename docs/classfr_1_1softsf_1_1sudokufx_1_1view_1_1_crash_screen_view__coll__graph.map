@@ -1,11 +1,7 @@
 <map id="fr.softsf.sudokufx.view.CrashScreenView" name="fr.softsf.sudokufx.view.CrashScreenView">
-<area shape="rect" id="Node000001" title="View class for the crash screen without business logic." alt="" coords="325,187,583,1013"/>
+<area shape="rect" id="Node000001" title="View class for the crash screen without business logic." alt="" coords="105,171,363,1072"/>
 <area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_main_stage_view.html" title="Interface defining method to open the main stage." alt="" coords="5,5,235,123"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="166,134,327,391,323,394,162,137"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="138,137,144,170,139,171,132,138"/>
 <area shape="rect" id="Node000003" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_scene_provider.html" title="Interface ISceneProvider." alt="" coords="260,21,437,107"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="362,120,375,186,370,187,357,122"/>
-<area shape="rect" id="Node000004" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_os_folder_factory.html" title="Interface defining methods to access OS&#45;specific folder paths." alt="" coords="461,11,657,117"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="551,117,541,170,536,169,546,116"/>
-<area shape="rect" id="Node000005" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_file_system.html" title="Interface defining a method to recursively deletes a folder and its contents." alt="" coords="681,13,954,115"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="786,116,595,397,590,394,782,113"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="339,122,329,171,324,170,334,121"/>
 </map>

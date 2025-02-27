@@ -1,10 +1,8 @@
 <map id="fr.softsf.sudokufx.configuration.MyLogbackConfig.configureLogback" name="fr.softsf.sudokufx.configuration.MyLogbackConfig.configureLogback">
-<area shape="rect" id="Node000001" title="Configures Logback using the specified configuration file." alt="" coords="5,39,238,81"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_my_logback_config.html#a6f72c3e944dc4bad5ad7ebf8e60ac763" title="Constructor that initializes the logging configuration." alt="" coords="286,39,521,81"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="238,66,270,66,270,72,238,72"/>
-<area shape="poly" id="edge2_Node000002_Node000001" title=" " alt="" coords="285,54,253,54,253,48,285,48"/>
-<area shape="rect" id="Node000003" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_os_folder_factory.html#a1977295e62b8132b09defe7cb7858534" title="Retrieves the path to the OS&#45;specific logs folder." alt="" coords="569,5,820,48"/>
-<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="521,44,553,40,554,45,522,49"/>
-<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_my_logback_config.html#a764a3472e63655858b4d301df2d22520" title="Prints the logger status to the log in case of errors or warnings." alt="" coords="588,72,802,115"/>
-<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="522,71,572,77,571,82,521,76"/>
+<area shape="rect" id="Node000001" title="Configures Logback using the specified configuration file." alt="" coords="5,5,238,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_my_logback_config.html#a6f72c3e944dc4bad5ad7ebf8e60ac763" title="Constructor that initializes the logging configuration." alt="" coords="286,5,521,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="238,33,270,33,270,38,238,38"/>
+<area shape="poly" id="edge2_Node000002_Node000001" title=" " alt="" coords="285,20,253,20,253,15,285,15"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_my_logback_config.html#a764a3472e63655858b4d301df2d22520" title="Prints the logger status to the log in case of errors or warnings." alt="" coords="569,5,783,48"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="522,24,553,24,553,29,522,29"/>
 </map>

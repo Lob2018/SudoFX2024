@@ -24,7 +24,7 @@ var hierarchy =
     [ "fr.softsf.sudokufx.model.Game", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html", null ],
     [ "fr.softsf.sudokufx.model.GameLevel", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html", null ],
     [ "fr.softsf.sudokufx.configuration.database.keystore.GenerateSecret", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1keystore_1_1_generate_secret.html", null ],
-    [ "fr.softsf.sudokufx.common.integration.utils.database.GenerateSecretUTest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1integration_1_1utils_1_1database_1_1_generate_secret_u_test.html", null ],
+    [ "fr.softsf.sudokufx.configuration.database.keystore.GenerateSecretUTest", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1keystore_1_1_generate_secret_u_test.html", null ],
     [ "fr.softsf.sudokufx.model.Grid", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html", null ],
     [ "fr.softsf.sudokufx.utils.sudoku.GridMasterUTest", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master_u_test.html", null ],
     [ "fr.softsf.sudokufx.configuration.HttpClientConfig", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_http_client_config.html", null ],
@@ -34,13 +34,13 @@ var hierarchy =
     [ "IEncryptionService", null, [
       [ "fr.softsf.sudokufx.configuration.database.keystore.SecretKeyEncryptionServiceAESGCM", "interfacefr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1keystore_1_1_secret_key_encryption_service_a_e_s_g_c_m.html", null ]
     ] ],
-    [ "fr.softsf.sudokufx.interfaces.IFileSystem", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_file_system.html", [
+    [ "IFileSystem", null, [
       [ "fr.softsf.sudokufx.utils.FileSystemManager", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_file_system_manager.html", null ]
     ] ],
     [ "fr.softsf.sudokufx.interfaces.mapper.IGameLevelMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_game_level_mapper.html", null ],
     [ "fr.softsf.sudokufx.interfaces.mapper.IGameMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_game_mapper.html", null ],
     [ "fr.softsf.sudokufx.interfaces.mapper.IGridMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_grid_mapper.html", null ],
-    [ "fr.softsf.sudokufx.interfaces.IGridMaster", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_grid_master.html", [
+    [ "IGridMaster", null, [
       [ "fr.softsf.sudokufx.utils.sudoku.GridMaster", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html", null ]
     ] ],
     [ "IKeystore", null, [
@@ -52,7 +52,8 @@ var hierarchy =
       [ "fr.softsf.sudokufx.view.FullMenuView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_full_menu_view.html", null ]
     ] ],
     [ "fr.softsf.sudokufx.interfaces.mapper.IMenuMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_menu_mapper.html", null ],
-    [ "fr.softsf.sudokufx.interfaces.IOsFolderFactory", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_os_folder_factory.html", [
+    [ "IOsFolderFactory", null, [
+      [ "fr.softsf.sudokufx.configuration.os.IMockIOsFolderFactory", "interfacefr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_i_mock_i_os_folder_factory.html", null ],
       [ "fr.softsf.sudokufx.configuration.os.LinuxFolderFactory", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_linux_folder_factory.html", null ],
       [ "fr.softsf.sudokufx.configuration.os.MacosFolderFactory", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_macos_folder_factory.html", null ],
       [ "fr.softsf.sudokufx.configuration.os.WindowsFolderFactory", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_windows_folder_factory.html", null ]
@@ -103,7 +104,7 @@ var hierarchy =
     [ "fr.softsf.sudokufx.model.Player", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html", null ],
     [ "fr.softsf.sudokufx.model.PlayerLanguage", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html", null ],
     [ "fr.softsf.sudokufx.utils.MyEnums.ScreenSize", "enumfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_enums_1_1_screen_size.html", null ],
-    [ "fr.softsf.sudokufx.common.unit.utils.database.keystore.SecretKeyEncryptionServiceAESGCMUTest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1database_1_1keystore_1_1_secret_key_adb6334248c7ac6276e5360489fcd40a.html", null ],
+    [ "fr.softsf.sudokufx.configuration.database.keystore.SecretKeyEncryptionServiceAESGCMUTest", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1keystore_1_1_secret_key_encryption_service_a_e_s_g_c_m_u_test.html", null ],
     [ "fr.softsf.sudokufx.utils.SecureRandomGenerator", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_secure_random_generator.html", null ],
     [ "fr.softsf.sudokufx.model.Software", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_software.html", null ],
     [ "fr.softsf.sudokufx.service.SoftwareService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_software_service.html", null ],
