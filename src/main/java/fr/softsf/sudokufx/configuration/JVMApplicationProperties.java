@@ -1,6 +1,5 @@
 package fr.softsf.sudokufx.configuration;
 
-import fr.softsf.sudokufx.annotations.ExcludedFromCoverageReportGenerated;
 import fr.softsf.sudokufx.utils.MyRegex;
 
 /**
@@ -19,7 +18,6 @@ public final class JVMApplicationProperties {
     /**
      * Private constructor to prevent instantiation of this utility class.
      */
-    @ExcludedFromCoverageReportGenerated
     private JVMApplicationProperties() {
     }
 

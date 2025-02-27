@@ -1,6 +1,5 @@
 package fr.softsf.sudokufx.configuration.os;
 
-import fr.softsf.sudokufx.annotations.ExcludedFromCoverageReportGenerated;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.File;
@@ -18,7 +17,6 @@ final class OsFolderInitializer {
     /**
      * Private constructor to prevent instantiation of this utility class.
      */
-    @ExcludedFromCoverageReportGenerated
     private OsFolderInitializer() {
     }
 

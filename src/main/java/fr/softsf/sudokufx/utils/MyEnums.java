@@ -1,6 +1,5 @@
 package fr.softsf.sudokufx.utils;
 
-import fr.softsf.sudokufx.annotations.ExcludedFromCoverageReportGenerated;
 import javafx.stage.Screen;
 
 /**
@@ -11,7 +10,6 @@ public final class MyEnums {
     /**
      * Private constructor to prevent instantiation of this utility class.
      */
-    @ExcludedFromCoverageReportGenerated
     private MyEnums() {
     }
 

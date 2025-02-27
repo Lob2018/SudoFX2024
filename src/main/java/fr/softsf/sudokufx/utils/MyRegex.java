@@ -1,6 +1,5 @@
 package fr.softsf.sudokufx.utils;
 
-import fr.softsf.sudokufx.annotations.ExcludedFromCoverageReportGenerated;
 import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
@@ -41,7 +40,6 @@ public final class MyRegex {
     /**
      * Private constructor to prevent instantiation of this utility class.
      */
-    @ExcludedFromCoverageReportGenerated
     private MyRegex() {
     }
 
