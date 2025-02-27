@@ -1,13 +1,5 @@
 var NAVTREEINDEX6 =
 {
-"interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_scene_provider.html#a674fc3569255ae7b6d2f34989574aacb":[1,0,0,0,0,5,2,0],
-"interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_scene_provider.html#a674fc3569255ae7b6d2f34989574aacb":[2,0,0,0,0,4,2,0],
-"interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_splash_screen_view.html":[1,0,0,0,0,5,3],
-"interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_splash_screen_view.html":[2,0,0,0,0,4,3],
-"interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_splash_screen_view.html#a7d48af9841e22c4f35680b95031f07e4":[1,0,0,0,0,5,3,0],
-"interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_splash_screen_view.html#a7d48af9841e22c4f35680b95031f07e4":[2,0,0,0,0,4,3,0],
-"interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_splash_screen_view.html#ac3e8276fa9273a90b9b04c7feb1dae54":[1,0,0,0,0,5,3,1],
-"interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_splash_screen_view.html#ac3e8276fa9273a90b9b04c7feb1dae54":[2,0,0,0,0,4,3,1],
 "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_background_mapper.html":[1,0,0,0,0,5,0,0],
 "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_background_mapper.html":[2,0,0,0,0,4,0,0],
 "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_background_mapper.html#a6cd01faa12a74388449e434e716d74a5":[1,0,0,0,0,5,0,0,0],
@@ -129,7 +121,6 @@ var NAVTREEINDEX6 =
 "namespacefr_1_1softsf_1_1sudokufx_1_1service.html#a7cbb1c6d141070b6a73b4367fd3605f2":[1,0,0,0,0,8,7],
 "namespacefr_1_1softsf_1_1sudokufx_1_1service.html#a824e4a0ff6a02822bb002fd7fdad5dd3":[1,0,0,0,0,8,11],
 "namespacefr_1_1softsf_1_1sudokufx_1_1service.html#aa558d6291b30e8ed8003e6bd66169683":[1,0,0,0,0,8,9],
-"namespacefr_1_1softsf_1_1sudokufx_1_1service.html#ad2c2eb1933aa76854ea83b691b27354d":[1,0,0,0,0,8,16],
 "namespacefr_1_1softsf_1_1sudokufx_1_1service.html#ae44f2ce437ffb95bb2a298f7fabf98e2":[1,0,0,0,0,8,13],
 "namespacefr_1_1softsf_1_1sudokufx_1_1utils.html":[1,0,0,0,0,9],
 "namespacefr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku.html":[1,0,0,0,0,9,0],

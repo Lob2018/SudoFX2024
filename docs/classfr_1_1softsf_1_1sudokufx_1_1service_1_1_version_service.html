@@ -114,14 +114,14 @@ $(function(){initNavTree('classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_s
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service__coll__graph.svg" width="234" height="534"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service__coll__graph.svg" width="234" height="336"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:acc86f45281f52787c79e443c04d0c93a" id="r_acc86f45281f52787c79e443c04d0c93a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc86f45281f52787c79e443c04d0c93a">VersionService</a> (HttpClient <a class="el" href="#ab848493a61107602eb1217a09b15db85">httpClient</a>, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_date_time.html">MyDateTime</a> <a class="el" href="#a5fec87fc3f91c76e6e29f7746dccc528">myDateTime</a>)</td></tr>
-<tr class="memdesc:acc86f45281f52787c79e443c04d0c93a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html" title="Service for checking if the application version is up to date by querying GitHub.">VersionService</a> with the provided HttpClient and <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_date_time.html" title="Utility class for working with date and time.">MyDateTime</a> utility.  <br /></td></tr>
-<tr class="separator:acc86f45281f52787c79e443c04d0c93a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada7b2b3bc786e330d262a4097c423768" id="r_ada7b2b3bc786e330d262a4097c423768"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada7b2b3bc786e330d262a4097c423768">VersionService</a> (HttpClient <a class="el" href="#ab848493a61107602eb1217a09b15db85">httpClient</a>)</td></tr>
+<tr class="memdesc:ada7b2b3bc786e330d262a4097c423768"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html" title="Service for checking if the application version is up to date by querying GitHub.">VersionService</a> with the provided HttpClient.  <br /></td></tr>
+<tr class="separator:ada7b2b3bc786e330d262a4097c423768"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a173ad44005d94ce47a1df66650170cbf" id="r_a173ad44005d94ce47a1df66650170cbf"><td class="memItemLeft" align="right" valign="top">Task&lt; Boolean &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a173ad44005d94ce47a1df66650170cbf">checkLatestVersion</a> ()</td></tr>
 <tr class="memdesc:a173ad44005d94ce47a1df66650170cbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the current application version is up-to-date by querying the GitHub API.  <br /></td></tr>
 <tr class="separator:a173ad44005d94ce47a1df66650170cbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -132,7 +132,7 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:af166c049683464c03d118142b986ab71" id="r_af166c049683464c03d118142b986ab71"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af166c049683464c03d118142b986ab71">compareVersions</a> (final String version1, final String version2)</td></tr>
-<tr class="memdesc:af166c049683464c03d118142b986ab71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares two version strings in the format MAJOR.MINOR.PATCH.  <br /></td></tr>
+<tr class="memdesc:af166c049683464c03d118142b986ab71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares two version strings in the format MAJOR.MINOR.PATCH (e.g., "1.2.3").  <br /></td></tr>
 <tr class="separator:af166c049683464c03d118142b986ab71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac909ce26310a3c5b01262ad5f3affcbe" id="r_ac909ce26310a3c5b01262ad5f3affcbe"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac909ce26310a3c5b01262ad5f3affcbe">parseResponse</a> (String json)</td></tr>
 <tr class="memdesc:ac909ce26310a3c5b01262ad5f3affcbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses the JSON response from the GitHub API to extract the latest published version.  <br /></td></tr>
@@ -144,8 +144,6 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a2319896542b6615491c2ca61dee974ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab848493a61107602eb1217a09b15db85" id="r_ab848493a61107602eb1217a09b15db85"><td class="memItemLeft" align="right" valign="top">final HttpClient&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab848493a61107602eb1217a09b15db85">httpClient</a></td></tr>
 <tr class="separator:ab848493a61107602eb1217a09b15db85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5fec87fc3f91c76e6e29f7746dccc528" id="r_a5fec87fc3f91c76e6e29f7746dccc528"><td class="memItemLeft" align="right" valign="top">final <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_date_time.html">MyDateTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5fec87fc3f91c76e6e29f7746dccc528">myDateTime</a></td></tr>
-<tr class="separator:a5fec87fc3f91c76e6e29f7746dccc528"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
@@ -156,8 +154,8 @@ Static Private Attributes</h2></td></tr>
 <div class="textblock"><p>Service for checking if the application version is up to date by querying GitHub. </p>
 <p>It retrieves the latest release tag from the GitHub API and compares it with the current version. If an update is available, the result can be used to notify the user. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="acc86f45281f52787c79e443c04d0c93a" name="acc86f45281f52787c79e443c04d0c93a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acc86f45281f52787c79e443c04d0c93a">&#9670;&#160;</a></span>VersionService()</h2>
+<a id="ada7b2b3bc786e330d262a4097c423768" name="ada7b2b3bc786e330d262a4097c423768"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada7b2b3bc786e330d262a4097c423768">&#9670;&#160;</a></span>VersionService()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -165,22 +163,17 @@ Static Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">fr.softsf.sudokufx.service.VersionService.VersionService </td>
           <td>(</td>
-          <td class="paramtype">HttpClient</td>          <td class="paramname"><span class="paramname"><em>httpClient</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">HttpClient</td>          <td class="paramname"><span class="paramname"><em>httpClient</em></span></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_date_time.html">MyDateTime</a></td>          <td class="paramname"><span class="paramname"><em>myDateTime</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initializes the <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html" title="Service for checking if the application version is up to date by querying GitHub.">VersionService</a> with the provided HttpClient and <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_date_time.html" title="Utility class for working with date and time.">MyDateTime</a> utility. </p>
+<p>Initializes the <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html" title="Service for checking if the application version is up to date by querying GitHub.">VersionService</a> with the provided HttpClient. </p>
 <p>This service is responsible for checking the latest version by making HTTP requests.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">httpClient</td><td>the HttpClient used to perform HTTP requests. </td></tr>
-    <tr><td class="paramname">myDateTime</td><td>the utility for handling date and time formatting. </td></tr>
   </table>
   </dd>
 </dl>
@@ -204,15 +197,14 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Checks if the current application version is up-to-date by querying the GitHub API. </p>
-<p>This method runs in the background using a JavaFX <code>Task</code> to avoid blocking the UI thread. It retrieves the latest release version from the repository and compares it with the current application version. </p>
-<p>In case of errors (e.g., timeout, interruption, or network issues), it assumes the version is up-to-date and logs the exception details.</p>
-<dl class="section return"><dt>Returns</dt><dd>A <code>Task&lt;Boolean&gt;</code> that returns <code>true</code> if the version is up-to-date, or <code>false</code> if an update is available. On error, it defaults to <code>true</code>. </dd></dl>
+<p>This method runs in the background using a JavaFX <code>Task</code> to avoid blocking the UI thread. It retrieves the latest release version from the repository and compares it with the current application version. In case of errors (e.g., timeout, interruption, or network issues), it assumes the version is up-to-date and logs the exception details.</p>
+<dl class="section return"><dt>Returns</dt><dd>A <code>Task&lt;Boolean&gt;</code> that returns <code>true</code> if the version is up-to-date or if an error occurs, and <code>false</code> if an update is available. </dd></dl>
 <div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service_a173ad44005d94ce47a1df66650170cbf_cgraph.svg" width="100%" height="415"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service_a173ad44005d94ce47a1df66650170cbf_cgraph.svg" width="100%" height="465"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -244,11 +236,12 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Compares two version strings in the format MAJOR.MINOR.PATCH. </p>
+<p>Compares two version strings in the format MAJOR.MINOR.PATCH (e.g., "1.2.3"). </p>
+<p>The comparison is done based on the major, minor, and patch numbers.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">version1</td><td>the first version string (e.g., "1.2.3"). </td></tr>
-    <tr><td class="paramname">version2</td><td>the second version string (e.g., "1.3.0"). </td></tr>
+    <tr><td class="paramname">version1</td><td>the first version string. </td></tr>
+    <tr><td class="paramname">version2</td><td>the second version string. </td></tr>
   </table>
   </dd>
 </dl>
@@ -369,28 +362,6 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a5fec87fc3f91c76e6e29f7746dccc528" name="a5fec87fc3f91c76e6e29f7746dccc528"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5fec87fc3f91c76e6e29f7746dccc528">&#9670;&#160;</a></span>myDateTime</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_date_time.html">MyDateTime</a> fr.softsf.sudokufx.service.VersionService.myDateTime</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="abcde02f39c2b1bf89f17bf83f4990d04" name="abcde02f39c2b1bf89f17bf83f4990d04"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abcde02f39c2b1bf89f17bf83f4990d04">&#9670;&#160;</a></span>OBJECT_MAPPER</h2>
 
@@ -422,7 +393,7 @@ Static Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1service.html">service</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html">VersionService</a></li>
-    <li class="footer">Generated on Thu Feb 27 2025 14:16:16 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Thu Feb 27 2025 17:35:42 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

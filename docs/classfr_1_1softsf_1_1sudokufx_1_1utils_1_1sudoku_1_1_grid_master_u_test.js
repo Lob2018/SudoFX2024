@@ -10,6 +10,5 @@ var classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master_u_test =
     [ "gridMaster", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master_u_test.html#ad7a6f1bb0465818a92b4284cde2748e3", null ],
     [ "gridMasterNormally", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master_u_test.html#ae47a2901dbeefda5c5b20ce3c8efe884", null ],
     [ "gridMasterNormallyLastLevel", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master_u_test.html#a4cb9a632f548574807cf5875ef6603fa", null ],
-    [ "iGridMaster", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master_u_test.html#a5cb906f41663ea1e8276c7f5cc15f8e2", null ],
-    [ "secureRandomGenerator", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master_u_test.html#a65aa0a617a8548bb955ded62745e2cca", null ]
+    [ "iGridMaster", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master_u_test.html#a5cb906f41663ea1e8276c7f5cc15f8e2", null ]
 ];

@@ -98,7 +98,8 @@ $(function(){initNavTree('classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_date_tim
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_date_time-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">fr.softsf.sudokufx.utils.MyDateTime Class Reference</div></div>
@@ -112,44 +113,111 @@ $(function(){initNavTree('classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_date_tim
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_date_time__coll__graph.svg" width="212" height="128"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_date_time__coll__graph.svg" width="212" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a60b04637ef992e666c163ac793ec8a3b" id="r_a60b04637ef992e666c163ac793ec8a3b"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a60b04637ef992e666c163ac793ec8a3b">getFormattedCurrentTime</a> ()</td></tr>
-<tr class="memdesc:a60b04637ef992e666c163ac793ec8a3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current time formatted as "HH:mm:ss".  <br /></td></tr>
-<tr class="separator:a60b04637ef992e666c163ac793ec8a3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:abae0f89d793767dd24256fc660db8523" id="r_abae0f89d793767dd24256fc660db8523"><td class="memItemLeft" align="right" valign="top">static String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abae0f89d793767dd24256fc660db8523">getFormattedCurrentTime</a> ()</td></tr>
+<tr class="memdesc:abae0f89d793767dd24256fc660db8523"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current time formatted as "HH:mm:ss".  <br /></td></tr>
+<tr class="separator:abae0f89d793767dd24256fc660db8523"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:aaa9a9239ed72fd24e632266215911dfb" id="r_aaa9a9239ed72fd24e632266215911dfb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa9a9239ed72fd24e632266215911dfb">MyDateTime</a> ()</td></tr>
+<tr class="memdesc:aaa9a9239ed72fd24e632266215911dfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Private constructor to prevent instantiation of this utility class.  <br /></td></tr>
+<tr class="separator:aaa9a9239ed72fd24e632266215911dfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
+<tr class="memitem:a2ee6217d88b633c9c9cb3c817599d523" id="r_a2ee6217d88b633c9c9cb3c817599d523"><td class="memItemLeft" align="right" valign="top">static final Clock&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ee6217d88b633c9c9cb3c817599d523">clock</a> = Clock.systemDefaultZone()</td></tr>
+<tr class="separator:a2ee6217d88b633c9c9cb3c817599d523"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79f647541ab7ff352addbfe9997fc4b0" id="r_a79f647541ab7ff352addbfe9997fc4b0"><td class="memItemLeft" align="right" valign="top">static final DateTimeFormatter&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a79f647541ab7ff352addbfe9997fc4b0">TIME_FORMATTER</a> = DateTimeFormatter.ofPattern(&quot;HH:mm:ss&quot;)</td></tr>
 <tr class="separator:a79f647541ab7ff352addbfe9997fc4b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Utility class for working with date and time. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a60b04637ef992e666c163ac793ec8a3b" name="a60b04637ef992e666c163ac793ec8a3b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60b04637ef992e666c163ac793ec8a3b">&#9670;&#160;</a></span>getFormattedCurrentTime()</h2>
+<p>This class provides static methods for date and time operations. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aaa9a9239ed72fd24e632266215911dfb" name="aaa9a9239ed72fd24e632266215911dfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa9a9239ed72fd24e632266215911dfb">&#9670;&#160;</a></span>MyDateTime()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">String fr.softsf.sudokufx.utils.MyDateTime.getFormattedCurrentTime </td>
+          <td class="memname">fr.softsf.sudokufx.utils.MyDateTime.MyDateTime </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Gets the current time formatted as "HH:mm:ss". </p>
+<p>Private constructor to prevent instantiation of this utility class. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="abae0f89d793767dd24256fc660db8523" name="abae0f89d793767dd24256fc660db8523"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abae0f89d793767dd24256fc660db8523">&#9670;&#160;</a></span>getFormattedCurrentTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static String fr.softsf.sudokufx.utils.MyDateTime.getFormattedCurrentTime </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the current time formatted as "HH:mm:ss". </p>
 <dl class="section return"><dt>Returns</dt><dd>A string representing the current time in "HH:mm:ss" format. </dd></dl>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a2ee6217d88b633c9c9cb3c817599d523" name="a2ee6217d88b633c9c9cb3c817599d523"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ee6217d88b633c9c9cb3c817599d523">&#9670;&#160;</a></span>clock</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final Clock fr.softsf.sudokufx.utils.MyDateTime.clock = Clock.systemDefaultZone()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a79f647541ab7ff352addbfe9997fc4b0" name="a79f647541ab7ff352addbfe9997fc4b0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a79f647541ab7ff352addbfe9997fc4b0">&#9670;&#160;</a></span>TIME_FORMATTER</h2>
 
@@ -181,7 +249,7 @@ Static Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1utils.html">utils</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_date_time.html">MyDateTime</a></li>
-    <li class="footer">Generated on Thu Feb 27 2025 14:16:16 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Thu Feb 27 2025 17:35:42 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

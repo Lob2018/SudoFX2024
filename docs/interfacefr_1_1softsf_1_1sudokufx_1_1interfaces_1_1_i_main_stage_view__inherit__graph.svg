@@ -171,60 +171,57 @@ var sectionId = 'dynsection-0';
 <g id="Node000003" class="node">
 <title>Node3</title>
 <g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html" target="_top" xlink:title="Default view class of the Sudoku application.">
-<polygon fill="white" stroke="none" points="360,-560 211.5,-560 211.5,-116 360,-116 360,-560"/>
-<text text-anchor="start" x="234.75" y="-546.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.</text>
-<text text-anchor="start" x="259.12" y="-534.5" font-family="Helvetica,sans-Serif" font-size="10.00">DefaultView</text>
-<text text-anchor="start" x="217" y="-518.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="225.5" y="-518.5" font-family="Helvetica,sans-Serif" font-size="10.00">Button buttonHello</text>
-<text text-anchor="start" x="217" y="-502.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="225.5" y="-502.5" font-family="Helvetica,sans-Serif" font-size="10.00">FullMenuViewModel fullMenu</text>
-<text text-anchor="start" x="225.5" y="-490.5" font-family="Helvetica,sans-Serif" font-size="10.00">ViewModel</text>
-<text text-anchor="start" x="217" y="-474.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="225.5" y="-474.5" font-family="Helvetica,sans-Serif" font-size="10.00">FxmlService fxmlService</text>
-<text text-anchor="start" x="217" y="-458.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="225.5" y="-458.5" font-family="Helvetica,sans-Serif" font-size="10.00">Label githubVersion</text>
-<text text-anchor="start" x="217" y="-442.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="225.5" y="-442.5" font-family="Helvetica,sans-Serif" font-size="10.00">final Stage primaryStage</text>
-<text text-anchor="start" x="217" y="-426.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="225.5" y="-426.5" font-family="Helvetica,sans-Serif" font-size="10.00">SecureRandomGenerator</text>
-<text text-anchor="start" x="225.5" y="-414.5" font-family="Helvetica,sans-Serif" font-size="10.00"> secureRandomGenerator</text>
-<text text-anchor="start" x="217" y="-398.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="225.5" y="-398.5" font-family="Helvetica,sans-Serif" font-size="10.00">final Text text1</text>
-<text text-anchor="start" x="217" y="-382.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="225.5" y="-382.5" font-family="Helvetica,sans-Serif" font-size="10.00">Text text2</text>
-<text text-anchor="start" x="217" y="-366.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="225.5" y="-366.5" font-family="Helvetica,sans-Serif" font-size="10.00">ToasterVBox toaster</text>
-<text text-anchor="start" x="217" y="-350.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="225.5" y="-350.5" font-family="Helvetica,sans-Serif" font-size="10.00">Label version</text>
-<text text-anchor="start" x="217" y="-334.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="225.5" y="-334.5" font-family="Helvetica,sans-Serif" font-size="10.00">Label welcomeText</text>
-<text text-anchor="start" x="217" y="-318.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="225.5" y="-318.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final double</text>
-<text text-anchor="start" x="225.5" y="-306.5" font-family="Helvetica,sans-Serif" font-size="10.00"> FADE_IN_IN_SECONDS</text>
-<text text-anchor="start" x="225.5" y="-294.5" font-family="Helvetica,sans-Serif" font-size="10.00">_AFTER_SPLASHSCREEN</text>
-<text text-anchor="start" x="215.5" y="-278.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="225.5" y="-278.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingMainStage</text>
-<text text-anchor="start" x="225.5" y="-266.5" font-family="Helvetica,sans-Serif" font-size="10.00">(final ISplashScreenView</text>
-<text text-anchor="start" x="225.5" y="-254.5" font-family="Helvetica,sans-Serif" font-size="10.00"> iSplashScreenView)</text>
-<text text-anchor="start" x="217" y="-238.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="225.5" y="-238.5" font-family="Helvetica,sans-Serif" font-size="10.00">void initialize()</text>
-<text text-anchor="start" x="217" y="-222.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="225.5" y="-222.5" font-family="Helvetica,sans-Serif" font-size="10.00">void onHelloButtonClick</text>
-<text text-anchor="start" x="225.5" y="-210.5" font-family="Helvetica,sans-Serif" font-size="10.00">(ActionEvent event)</text>
-<text text-anchor="start" x="217" y="-194.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="225.5" y="-194.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingConfigureStage()</text>
-<text text-anchor="start" x="217" y="-178.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="225.5" y="-178.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingFadeIn</text>
-<text text-anchor="start" x="225.5" y="-166.5" font-family="Helvetica,sans-Serif" font-size="10.00">(final Node node)</text>
-<text text-anchor="start" x="217" y="-150.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="225.5" y="-150.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingMaximizePrimary</text>
-<text text-anchor="start" x="225.5" y="-138.5" font-family="Helvetica,sans-Serif" font-size="10.00">Stage()</text>
-<text text-anchor="start" x="217" y="-122.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="225.5" y="-122.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingShowStage()</text>
-<polygon fill="#666666" stroke="#666666" points="211.5,-530 211.5,-530 360,-530 360,-530 211.5,-530"/>
-<polygon fill="#666666" stroke="#666666" points="211.5,-290 211.5,-290 223.5,-290 223.5,-290 211.5,-290"/>
-<polygon fill="#666666" stroke="#666666" points="223.5,-290 223.5,-290 360,-290 360,-290 223.5,-290"/>
-<polygon fill="none" stroke="#666666" points="211.5,-116 211.5,-560 360,-560 360,-116 211.5,-116"/>
+<polygon fill="white" stroke="none" points="360,-546 211.5,-546 211.5,-130 360,-130 360,-546"/>
+<text text-anchor="start" x="234.75" y="-532.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.</text>
+<text text-anchor="start" x="259.12" y="-520.5" font-family="Helvetica,sans-Serif" font-size="10.00">DefaultView</text>
+<text text-anchor="start" x="217" y="-504.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="225.5" y="-504.5" font-family="Helvetica,sans-Serif" font-size="10.00">Button buttonHello</text>
+<text text-anchor="start" x="217" y="-488.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="225.5" y="-488.5" font-family="Helvetica,sans-Serif" font-size="10.00">FullMenuViewModel fullMenu</text>
+<text text-anchor="start" x="225.5" y="-476.5" font-family="Helvetica,sans-Serif" font-size="10.00">ViewModel</text>
+<text text-anchor="start" x="217" y="-460.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="225.5" y="-460.5" font-family="Helvetica,sans-Serif" font-size="10.00">FxmlService fxmlService</text>
+<text text-anchor="start" x="217" y="-444.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="225.5" y="-444.5" font-family="Helvetica,sans-Serif" font-size="10.00">Label githubVersion</text>
+<text text-anchor="start" x="217" y="-428.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="225.5" y="-428.5" font-family="Helvetica,sans-Serif" font-size="10.00">final Stage primaryStage</text>
+<text text-anchor="start" x="217" y="-412.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="225.5" y="-412.5" font-family="Helvetica,sans-Serif" font-size="10.00">final Text text1</text>
+<text text-anchor="start" x="217" y="-396.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="225.5" y="-396.5" font-family="Helvetica,sans-Serif" font-size="10.00">Text text2</text>
+<text text-anchor="start" x="217" y="-380.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="225.5" y="-380.5" font-family="Helvetica,sans-Serif" font-size="10.00">ToasterVBox toaster</text>
+<text text-anchor="start" x="217" y="-364.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="225.5" y="-364.5" font-family="Helvetica,sans-Serif" font-size="10.00">Label version</text>
+<text text-anchor="start" x="217" y="-348.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="225.5" y="-348.5" font-family="Helvetica,sans-Serif" font-size="10.00">Label welcomeText</text>
+<text text-anchor="start" x="217" y="-332.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="225.5" y="-332.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final double</text>
+<text text-anchor="start" x="225.5" y="-320.5" font-family="Helvetica,sans-Serif" font-size="10.00"> FADE_IN_IN_SECONDS</text>
+<text text-anchor="start" x="225.5" y="-308.5" font-family="Helvetica,sans-Serif" font-size="10.00">_AFTER_SPLASHSCREEN</text>
+<text text-anchor="start" x="215.5" y="-292.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="225.5" y="-292.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingMainStage</text>
+<text text-anchor="start" x="225.5" y="-280.5" font-family="Helvetica,sans-Serif" font-size="10.00">(final ISplashScreenView</text>
+<text text-anchor="start" x="225.5" y="-268.5" font-family="Helvetica,sans-Serif" font-size="10.00"> iSplashScreenView)</text>
+<text text-anchor="start" x="217" y="-252.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="225.5" y="-252.5" font-family="Helvetica,sans-Serif" font-size="10.00">void initialize()</text>
+<text text-anchor="start" x="217" y="-236.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="225.5" y="-236.5" font-family="Helvetica,sans-Serif" font-size="10.00">void onHelloButtonClick</text>
+<text text-anchor="start" x="225.5" y="-224.5" font-family="Helvetica,sans-Serif" font-size="10.00">(ActionEvent event)</text>
+<text text-anchor="start" x="217" y="-208.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="225.5" y="-208.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingConfigureStage()</text>
+<text text-anchor="start" x="217" y="-192.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="225.5" y="-192.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingFadeIn</text>
+<text text-anchor="start" x="225.5" y="-180.5" font-family="Helvetica,sans-Serif" font-size="10.00">(final Node node)</text>
+<text text-anchor="start" x="217" y="-164.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="225.5" y="-164.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingMaximizePrimary</text>
+<text text-anchor="start" x="225.5" y="-152.5" font-family="Helvetica,sans-Serif" font-size="10.00">Stage()</text>
+<text text-anchor="start" x="217" y="-136.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="225.5" y="-136.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingShowStage()</text>
+<polygon fill="#666666" stroke="#666666" points="211.5,-516 211.5,-516 360,-516 360,-516 211.5,-516"/>
+<polygon fill="#666666" stroke="#666666" points="211.5,-304 211.5,-304 223.5,-304 223.5,-304 211.5,-304"/>
+<polygon fill="#666666" stroke="#666666" points="223.5,-304 223.5,-304 360,-304 360,-304 223.5,-304"/>
+<polygon fill="none" stroke="#666666" points="211.5,-130 211.5,-546 360,-546 360,-130 211.5,-130"/>
 </a>
 </g>
 </g>
@@ -232,7 +229,7 @@ var sectionId = 'dynsection-0';
 <g id="edge2_Node000001_Node000003" class="edge">
 <title>Node1&#45;&gt;Node3</title>
 <g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M285.75,-700.62C285.75,-663.79 285.75,-612.44 285.75,-559.98"/>
+<path fill="none" stroke="#63b8ff" d="M285.75,-700.68C285.75,-660.54 285.75,-603.13 285.75,-545.84"/>
 <polygon fill="none" stroke="#63b8ff" points="282.25,-700.53 285.75,-710.53 289.25,-700.53 282.25,-700.53"/>
 </a>
 </g>
@@ -241,60 +238,57 @@ var sectionId = 'dynsection-0';
 <g id="Node000004" class="node">
 <title>Node4</title>
 <g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1_full_menu_view.html" target="_top" xlink:title="View class for the full menu screen of the Sudoku application.">
-<polygon fill="white" stroke="none" points="527,-560 378.5,-560 378.5,-116 527,-116 527,-560"/>
-<text text-anchor="start" x="401.75" y="-546.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.</text>
-<text text-anchor="start" x="422" y="-534.5" font-family="Helvetica,sans-Serif" font-size="10.00">FullMenuView</text>
-<text text-anchor="start" x="384" y="-518.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="392.5" y="-518.5" font-family="Helvetica,sans-Serif" font-size="10.00">Button buttonHello</text>
-<text text-anchor="start" x="384" y="-502.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="392.5" y="-502.5" font-family="Helvetica,sans-Serif" font-size="10.00">FullMenuViewModel fullMenu</text>
-<text text-anchor="start" x="392.5" y="-490.5" font-family="Helvetica,sans-Serif" font-size="10.00">ViewModel</text>
-<text text-anchor="start" x="384" y="-474.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="392.5" y="-474.5" font-family="Helvetica,sans-Serif" font-size="10.00">FxmlService fxmlService</text>
-<text text-anchor="start" x="384" y="-458.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="392.5" y="-458.5" font-family="Helvetica,sans-Serif" font-size="10.00">Label githubVersion</text>
-<text text-anchor="start" x="384" y="-442.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="392.5" y="-442.5" font-family="Helvetica,sans-Serif" font-size="10.00">final Stage primaryStage</text>
-<text text-anchor="start" x="384" y="-426.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="392.5" y="-426.5" font-family="Helvetica,sans-Serif" font-size="10.00">SecureRandomGenerator</text>
-<text text-anchor="start" x="392.5" y="-414.5" font-family="Helvetica,sans-Serif" font-size="10.00"> secureRandomGenerator</text>
-<text text-anchor="start" x="384" y="-398.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="392.5" y="-398.5" font-family="Helvetica,sans-Serif" font-size="10.00">final Text text1</text>
-<text text-anchor="start" x="384" y="-382.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="392.5" y="-382.5" font-family="Helvetica,sans-Serif" font-size="10.00">Text text2</text>
-<text text-anchor="start" x="384" y="-366.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="392.5" y="-366.5" font-family="Helvetica,sans-Serif" font-size="10.00">ToasterVBox toaster</text>
-<text text-anchor="start" x="384" y="-350.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="392.5" y="-350.5" font-family="Helvetica,sans-Serif" font-size="10.00">Label version</text>
-<text text-anchor="start" x="384" y="-334.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="392.5" y="-334.5" font-family="Helvetica,sans-Serif" font-size="10.00">Label welcomeText</text>
-<text text-anchor="start" x="384" y="-318.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="392.5" y="-318.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final double</text>
-<text text-anchor="start" x="392.5" y="-306.5" font-family="Helvetica,sans-Serif" font-size="10.00"> FADE_IN_IN_SECONDS</text>
-<text text-anchor="start" x="392.5" y="-294.5" font-family="Helvetica,sans-Serif" font-size="10.00">_AFTER_SPLASHSCREEN</text>
-<text text-anchor="start" x="382.5" y="-278.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="392.5" y="-278.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingMainStage</text>
-<text text-anchor="start" x="392.5" y="-266.5" font-family="Helvetica,sans-Serif" font-size="10.00">(final ISplashScreenView</text>
-<text text-anchor="start" x="392.5" y="-254.5" font-family="Helvetica,sans-Serif" font-size="10.00"> iSplashScreenView)</text>
-<text text-anchor="start" x="384" y="-238.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="392.5" y="-238.5" font-family="Helvetica,sans-Serif" font-size="10.00">void initialize()</text>
-<text text-anchor="start" x="384" y="-222.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="392.5" y="-222.5" font-family="Helvetica,sans-Serif" font-size="10.00">void onHelloButtonClick</text>
-<text text-anchor="start" x="392.5" y="-210.5" font-family="Helvetica,sans-Serif" font-size="10.00">(ActionEvent event)</text>
-<text text-anchor="start" x="384" y="-194.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="392.5" y="-194.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingConfigureStage()</text>
-<text text-anchor="start" x="384" y="-178.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="392.5" y="-178.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingFadeIn</text>
-<text text-anchor="start" x="392.5" y="-166.5" font-family="Helvetica,sans-Serif" font-size="10.00">(final Node node)</text>
-<text text-anchor="start" x="384" y="-150.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="392.5" y="-150.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingMaximizePrimary</text>
-<text text-anchor="start" x="392.5" y="-138.5" font-family="Helvetica,sans-Serif" font-size="10.00">Stage()</text>
-<text text-anchor="start" x="384" y="-122.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="392.5" y="-122.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingShowStage()</text>
-<polygon fill="#666666" stroke="#666666" points="378.5,-530 378.5,-530 527,-530 527,-530 378.5,-530"/>
-<polygon fill="#666666" stroke="#666666" points="378.5,-290 378.5,-290 390.5,-290 390.5,-290 378.5,-290"/>
-<polygon fill="#666666" stroke="#666666" points="390.5,-290 390.5,-290 527,-290 527,-290 390.5,-290"/>
-<polygon fill="none" stroke="#666666" points="378.5,-116 378.5,-560 527,-560 527,-116 378.5,-116"/>
+<polygon fill="white" stroke="none" points="527,-546 378.5,-546 378.5,-130 527,-130 527,-546"/>
+<text text-anchor="start" x="401.75" y="-532.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.</text>
+<text text-anchor="start" x="422" y="-520.5" font-family="Helvetica,sans-Serif" font-size="10.00">FullMenuView</text>
+<text text-anchor="start" x="384" y="-504.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="392.5" y="-504.5" font-family="Helvetica,sans-Serif" font-size="10.00">Button buttonHello</text>
+<text text-anchor="start" x="384" y="-488.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="392.5" y="-488.5" font-family="Helvetica,sans-Serif" font-size="10.00">FullMenuViewModel fullMenu</text>
+<text text-anchor="start" x="392.5" y="-476.5" font-family="Helvetica,sans-Serif" font-size="10.00">ViewModel</text>
+<text text-anchor="start" x="384" y="-460.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="392.5" y="-460.5" font-family="Helvetica,sans-Serif" font-size="10.00">FxmlService fxmlService</text>
+<text text-anchor="start" x="384" y="-444.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="392.5" y="-444.5" font-family="Helvetica,sans-Serif" font-size="10.00">Label githubVersion</text>
+<text text-anchor="start" x="384" y="-428.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="392.5" y="-428.5" font-family="Helvetica,sans-Serif" font-size="10.00">final Stage primaryStage</text>
+<text text-anchor="start" x="384" y="-412.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="392.5" y="-412.5" font-family="Helvetica,sans-Serif" font-size="10.00">final Text text1</text>
+<text text-anchor="start" x="384" y="-396.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="392.5" y="-396.5" font-family="Helvetica,sans-Serif" font-size="10.00">Text text2</text>
+<text text-anchor="start" x="384" y="-380.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="392.5" y="-380.5" font-family="Helvetica,sans-Serif" font-size="10.00">ToasterVBox toaster</text>
+<text text-anchor="start" x="384" y="-364.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="392.5" y="-364.5" font-family="Helvetica,sans-Serif" font-size="10.00">Label version</text>
+<text text-anchor="start" x="384" y="-348.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="392.5" y="-348.5" font-family="Helvetica,sans-Serif" font-size="10.00">Label welcomeText</text>
+<text text-anchor="start" x="384" y="-332.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="392.5" y="-332.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final double</text>
+<text text-anchor="start" x="392.5" y="-320.5" font-family="Helvetica,sans-Serif" font-size="10.00"> FADE_IN_IN_SECONDS</text>
+<text text-anchor="start" x="392.5" y="-308.5" font-family="Helvetica,sans-Serif" font-size="10.00">_AFTER_SPLASHSCREEN</text>
+<text text-anchor="start" x="382.5" y="-292.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="392.5" y="-292.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingMainStage</text>
+<text text-anchor="start" x="392.5" y="-280.5" font-family="Helvetica,sans-Serif" font-size="10.00">(final ISplashScreenView</text>
+<text text-anchor="start" x="392.5" y="-268.5" font-family="Helvetica,sans-Serif" font-size="10.00"> iSplashScreenView)</text>
+<text text-anchor="start" x="384" y="-252.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="392.5" y="-252.5" font-family="Helvetica,sans-Serif" font-size="10.00">void initialize()</text>
+<text text-anchor="start" x="384" y="-236.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="392.5" y="-236.5" font-family="Helvetica,sans-Serif" font-size="10.00">void onHelloButtonClick</text>
+<text text-anchor="start" x="392.5" y="-224.5" font-family="Helvetica,sans-Serif" font-size="10.00">(ActionEvent event)</text>
+<text text-anchor="start" x="384" y="-208.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="392.5" y="-208.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingConfigureStage()</text>
+<text text-anchor="start" x="384" y="-192.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="392.5" y="-192.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingFadeIn</text>
+<text text-anchor="start" x="392.5" y="-180.5" font-family="Helvetica,sans-Serif" font-size="10.00">(final Node node)</text>
+<text text-anchor="start" x="384" y="-164.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="392.5" y="-164.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingMaximizePrimary</text>
+<text text-anchor="start" x="392.5" y="-152.5" font-family="Helvetica,sans-Serif" font-size="10.00">Stage()</text>
+<text text-anchor="start" x="384" y="-136.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="392.5" y="-136.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingShowStage()</text>
+<polygon fill="#666666" stroke="#666666" points="378.5,-516 378.5,-516 527,-516 527,-516 378.5,-516"/>
+<polygon fill="#666666" stroke="#666666" points="378.5,-304 378.5,-304 390.5,-304 390.5,-304 378.5,-304"/>
+<polygon fill="#666666" stroke="#666666" points="390.5,-304 390.5,-304 527,-304 527,-304 390.5,-304"/>
+<polygon fill="none" stroke="#666666" points="378.5,-130 378.5,-546 527,-546 527,-130 378.5,-130"/>
 </a>
 </g>
 </g>
@@ -302,7 +296,7 @@ var sectionId = 'dynsection-0';
 <g id="edge3_Node000001_Node000004" class="edge">
 <title>Node1&#45;&gt;Node4</title>
 <g id="a_edge3_Node000001_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M347.65,-704.04C355.61,-695.35 362.99,-685.9 368.75,-676 389.38,-640.56 404.97,-600.18 416.76,-559.97"/>
+<path fill="none" stroke="#63b8ff" d="M347.65,-704.04C355.61,-695.35 362.99,-685.9 368.75,-676 391.8,-636.4 408.57,-590.61 420.76,-545.79"/>
 <polygon fill="none" stroke="#63b8ff" points="345.32,-701.41 340.92,-711.04 350.37,-706.26 345.32,-701.41"/>
 </a>
 </g>

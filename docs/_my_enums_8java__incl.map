@@ -1,7 +1,5 @@
 <map id="src/main/java/fr/softsf/sudokufx/utils/MyEnums.java" name="src/main/java/fr/softsf/sudokufx/utils/MyEnums.java">
-<area shape="rect" id="Node000001" title=" " alt="" coords="148,5,345,48"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,96,266,139"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="222,50,175,88,172,84,219,46"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="290,104,427,131"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="274,46,332,92,329,96,270,51"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,203,48"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="35,96,173,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,49,107,80,101,80,101,49"/>
 </map>

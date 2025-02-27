@@ -11,21 +11,21 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="The SecureRandomGenerator class provides methods to generate random numbers securely using Java&#39;s Sec...">
+<g id="a_Node000001"><a xlink:title="Utility class for generating secure random numbers using Java&#39;s SecureRandom class.">
 <polygon fill="#999999" stroke="none" points="134.25,-132 0,-132 0,0 134.25,0 134.25,-132"/>
 <text text-anchor="start" x="12" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.utils.</text>
 <text text-anchor="start" x="12" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">SecureRandomGenerator</text>
 <text text-anchor="start" x="5.5" y="-90.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-90.5" font-family="Helvetica,sans-Serif" font-size="10.00">final SecureRandom</text>
-<text text-anchor="start" x="14" y="-78.5" font-family="Helvetica,sans-Serif" font-size="10.00"> secureRandom</text>
+<text text-anchor="start" x="14" y="-90.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final SecureRandom</text>
+<text text-anchor="start" x="14" y="-78.5" font-family="Helvetica,sans-Serif" font-size="10.00"> SECURE_RANDOM</text>
 <text text-anchor="start" x="4" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="14" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">SecureRandomGenerator()</text>
-<text text-anchor="start" x="4" y="-46.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="14" y="-46.5" font-family="Helvetica,sans-Serif" font-size="10.00">final int nextInt(int</text>
-<text text-anchor="start" x="14" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00"> bound)</text>
-<text text-anchor="start" x="4" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="14" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">final int nextInt(int</text>
-<text text-anchor="start" x="14" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00"> origin, int bound)</text>
+<text text-anchor="start" x="14" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">static int nextInt</text>
+<text text-anchor="start" x="14" y="-50.5" font-family="Helvetica,sans-Serif" font-size="10.00">(int bound)</text>
+<text text-anchor="start" x="4" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="14" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">static int nextInt</text>
+<text text-anchor="start" x="14" y="-22.5" font-family="Helvetica,sans-Serif" font-size="10.00">(int origin, int bound)</text>
+<text text-anchor="start" x="5.5" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="14" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">SecureRandomGenerator()</text>
 <polygon fill="#666666" stroke="#666666" points="0,-102 0,-102 134.25,-102 134.25,-102 0,-102"/>
 <polygon fill="#666666" stroke="#666666" points="0,-74 0,-74 12,-74 12,-74 0,-74"/>
 <polygon fill="#666666" stroke="#666666" points="12,-74 12,-74 134.25,-74 134.25,-74 12,-74"/>

@@ -1,11 +1,13 @@
 <map id="fr.softsf.sudokufx.service.VersionService.checkLatestVersion" name="fr.softsf.sudokufx.service.VersionService.checkLatestVersion">
-<area shape="rect" id="Node000001" title="Checks if the current application version is up&#45;to&#45;date by querying the GitHub API." alt="" coords="5,39,232,81"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_i18n.html#a7095fa285a498c3f20bf33488a69d22c" title="Retrieves the localized string value for a given key." alt="" coords="304,5,459,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="232,43,288,36,289,41,232,48"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html#ac909ce26310a3c5b01262ad5f3affcbe" title="Parses the JSON response from the GitHub API to extract the latest published version." alt="" coords="280,72,483,115"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="232,72,265,76,264,81,232,77"/>
-<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html#af166c049683464c03d118142b986ab71" title="Compares two version strings in the format MAJOR.MINOR.PATCH." alt="" coords="531,39,743,81"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="483,77,515,73,516,79,484,83"/>
-<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex.html#a981702b076ee54a416d676b6f7a182fc" title="Validates the given text against the specified regular expression." alt="" coords="538,105,736,148"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="484,104,523,109,522,114,483,109"/>
+<area shape="rect" id="Node000001" title="Checks if the current application version is up&#45;to&#45;date by querying the GitHub API." alt="" coords="5,72,232,115"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_date_time.html#abae0f89d793767dd24256fc660db8523" title="Returns the current time formatted as &quot;HH:mm:ss&quot;." alt="" coords="280,5,529,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="212,69,294,49,296,55,214,74"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_i18n.html#a7095fa285a498c3f20bf33488a69d22c" title="Retrieves the localized string value for a given key." alt="" coords="327,72,482,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="232,91,311,91,311,96,232,96"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html#ac909ce26310a3c5b01262ad5f3affcbe" title="Parses the JSON response from the GitHub API to extract the latest published version." alt="" coords="303,139,506,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="214,113,296,132,294,137,212,118"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html#af166c049683464c03d118142b986ab71" title="Compares two version strings in the format MAJOR.MINOR.PATCH (e.g., &quot;1.2.3&quot;)." alt="" coords="577,105,789,148"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="506,145,561,139,562,144,507,150"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex.html#a981702b076ee54a416d676b6f7a182fc" title="Validates the given text against the specified regular expression." alt="" coords="584,172,782,215"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="507,170,569,177,568,182,506,175"/>
 </map>

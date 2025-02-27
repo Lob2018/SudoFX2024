@@ -9,7 +9,7 @@ var searchData=
   ['getappversion_6',['getAppVersion',['../classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_j_v_m_application_properties.html#aa3d30fcaecd7e5f4b1f8fe6fee13570a',1,'fr::softsf::sudokufx::configuration::JVMApplicationProperties']]],
   ['getcontroller_7',['getController',['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1_fxml_service.html#a341c0d4daa25339aec7c3371c47a176f',1,'fr::softsf::sudokufx::service::FxmlService']]],
   ['getcredentials_8',['getCredentials',['../classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_application_keystore.html#a0d35372de341ee492a6d5fb3d51fb2ba',1,'fr::softsf::sudokufx::configuration::database::ApplicationKeystore']]],
-  ['getformattedcurrenttime_9',['getFormattedCurrentTime',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_date_time.html#a60b04637ef992e666c163ac793ec8a3b',1,'fr::softsf::sudokufx::utils::MyDateTime']]],
+  ['getformattedcurrenttime_9',['getFormattedCurrentTime',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_date_time.html#abae0f89d793767dd24256fc660db8523',1,'fr::softsf::sudokufx::utils::MyDateTime']]],
   ['getgithublinktorepositoryreleases_10',['getGitHubLinkToRepositoryReleases',['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html#a6347ab8be2c6df89fe71add044e10408',1,'fr::softsf::sudokufx::service::VersionService']]],
   ['gethostenvironmentlanguagecode_11',['getHostEnvironmentLanguageCode',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_i18n.html#ae04bf081931205edbc3e139c7fd503f0',1,'fr::softsf::sudokufx::utils::I18n']]],
   ['getlanguage_12',['getLanguage',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_i18n.html#acc2117394501226d5e9b8c046926b622',1,'fr::softsf::sudokufx::utils::I18n']]],
@@ -108,6 +108,5 @@ var searchData=
   ['givenvalidnameandversion_5fwhenvalidatebyregex_5fthenvalidationsucceeds_105',['givenValidNameAndVersion_whenValidateByRegex_thenValidationSucceeds',['../classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_j_v_m_application_properties_u_test.html#a4869c0613ff03f6538202d6e37ab9e87',1,'fr::softsf::sudokufx::configuration::JVMApplicationPropertiesUTest']]],
   ['givenvalidos_5fwhencreateosfolderfactory_5fthencorrectpathsreturned_106',['givenValidOs_whenCreateOsFolderFactory_thenCorrectPathsReturned',['../classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_os_folder_factory_manager_u_test.html#accd89e21d204afadc9f3119b628addec',1,'fr::softsf::sudokufx::configuration::os::OsFolderFactoryManagerUTest']]],
   ['givenversionservice_5fwhengetgithublinktorepositoryreleases_5fthencorrectlink_107',['givenVersionService_whenGetGitHubLinkToRepositoryReleases_thenCorrectLink',['../namespacefr_1_1softsf_1_1sudokufx_1_1service.html#a824e4a0ff6a02822bb002fd7fdad5dd3',1,'fr::softsf::sudokufx::service']]],
-  ['griddto_108',['GridDto',['../namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a55eaa4f45339420cc86114a3d8dab18b',1,'fr::softsf::sudokufx::dto']]],
-  ['gridmaster_109',['GridMaster',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a3a8f2b69240160d896b860a61eb7a059',1,'fr::softsf::sudokufx::utils::sudoku::GridMaster']]]
+  ['griddto_108',['GridDto',['../namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a55eaa4f45339420cc86114a3d8dab18b',1,'fr::softsf::sudokufx::dto']]]
 ];

@@ -13,7 +13,6 @@ var classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view =
     [ "fxmlService", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a45682596300a5ec04a6336bf9c73b28e", null ],
     [ "githubVersion", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#ac9d261901e7f3ae4d4db3424cf885ff6", null ],
     [ "primaryStage", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#aacf0f46b8a606da2235f24d811c7c4ab", null ],
-    [ "secureRandomGenerator", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a20d3300566827851d616650a8139a610", null ],
     [ "text1", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a979ae77bba02924cf7879a866df16bcb", null ],
     [ "text2", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#ad3207e656c4f364f11a9265c81e53a78", null ],
     [ "toaster", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a97bc1d86e231b15045c3b93c62277935", null ],
