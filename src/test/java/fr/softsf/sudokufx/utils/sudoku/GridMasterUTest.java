@@ -1,6 +1,5 @@
 package fr.softsf.sudokufx.utils.sudoku;
 
-import fr.softsf.sudokufx.utils.SecureRandomGenerator;
 import org.awaitility.Awaitility;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -12,17 +11,16 @@ import java.util.concurrent.TimeUnit;
 import static org.junit.jupiter.api.Assertions.*;
 
 class GridMasterUTest {
-    private static final SecureRandomGenerator secureRandomGenerator = new SecureRandomGenerator();
     private IGridMaster iGridMaster;
     private GridMaster gridMaster;
 
-    private static final GridMaster gridMasterNormally = new GridMaster(secureRandomGenerator);
+    private static final GridMaster gridMasterNormally = new GridMaster();
     private static int gridMasterNormallyLastLevel = -1;
 
     @BeforeEach
     void init() {
-        iGridMaster = new GridMaster(secureRandomGenerator);
-        gridMaster = new GridMaster(secureRandomGenerator);
+        iGridMaster = new GridMaster();
+        gridMaster = new GridMaster();
     }
 
     @ParameterizedTest

@@ -43,8 +43,6 @@ public final class FullMenuView implements IMainStageView, ISceneProvider {
     @Autowired
     private FullMenuViewModel fullMenuViewModel;
     @Autowired
-    private SecureRandomGenerator secureRandomGenerator;
-    @Autowired
     private FxmlService fxmlService;
     @FXML
     @Autowired
@@ -89,7 +87,7 @@ public final class FullMenuView implements IMainStageView, ISceneProvider {
     @FXML
     private void onHelloButtonClick(ActionEvent event) {
 
-        switch (secureRandomGenerator.nextInt(3)) {
+        switch (SecureRandomGenerator.nextInt(3)) {
             case 0 -> toaster.addToastWithDuration("INFO 🔹 Work in progress... 🔹", "", MyEnums.ToastLevels.INFO, 6000);
             case 1 -> toaster.addToast("WARN", "", MyEnums.ToastLevels.WARN);
             default -> toaster.addToast(

@@ -1,45 +1,56 @@
 package fr.softsf.sudokufx.utils;
 
-import org.springframework.stereotype.Component;
+import lombok.extern.slf4j.Slf4j;
 
 import java.security.SecureRandom;
 
-
 /**
- * The SecureRandomGenerator class provides methods to generate random numbers
- * securely using Java's SecureRandom class.
+ * Utility class for generating secure random numbers using Java's {@link SecureRandom} class.
+ * This class provides static methods to generate random integers securely.
+ * It cannot be instantiated.
  */
-@Component
-public class SecureRandomGenerator {
+@Slf4j
+public final class SecureRandomGenerator {
 
-    private final SecureRandom secureRandom;
+    private static final SecureRandom SECURE_RANDOM = new SecureRandom();
 
     /**
-     * Constructor for the SecureRandomGenerator class.
-     * Initializes an instance of SecureRandom to generate random numbers.
+     * Private constructor to prevent instantiation of this utility class.
      */
-    public SecureRandomGenerator() {
-        this.secureRandom = new SecureRandom();
+    private SecureRandomGenerator() {
     }
 
     /**
-     * Generates a random integer between 0 (inclusive) and the specified bound (exclusive).
+     * Generates a random integer between {@code 0} (inclusive) and the specified {@code bound} (exclusive).
      *
-     * @param bound The upper limit (exclusive) for generating the random number.
-     * @return A random integer between 0 and bound.
+     * @param bound The upper limit (exclusive) for generating the random number. Must be positive.
+     * @return A random integer between {@code 0} (inclusive) and {@code bound} (exclusive).
+     * @throws IllegalArgumentException if {@code bound} is not positive.
      */
-    public final int nextInt(int bound) {
-        return secureRandom.nextInt(bound);
+    public static int nextInt(int bound) {
+        if (bound <= 0) {
+            IllegalArgumentException e = new IllegalArgumentException("The nextInt bound must be positive");
+            log.error("██ Exception caught from nextInt(bound) : {}", e.getMessage(), e);
+            throw e;
+        }
+        return SECURE_RANDOM.nextInt(bound);
     }
 
     /**
-     * Generates a random integer between origin (inclusive) and bound (exclusive).
+     * Generates a random integer between {@code origin} (inclusive) and {@code bound} (exclusive).
      *
      * @param origin The lower limit (inclusive) for generating the random number.
      * @param bound  The upper limit (exclusive) for generating the random number.
-     * @return A random integer between origin and bound.
+     * @return A random integer between {@code origin} (inclusive) and {@code bound} (exclusive).
+     * @throws IllegalArgumentException if {@code origin} is greater than or equal to {@code bound}.
      */
-    public final int nextInt(int origin, int bound) {
-        return secureRandom.nextInt(bound - origin) + origin;
+    public static int nextInt(int origin, int bound) {
+        if (origin >= bound) {
+            IllegalArgumentException e = new IllegalArgumentException("The nextInt origin must be less than bound");
+            log.error("██ Exception caught from nextInt(origin,bound) : {}", e.getMessage(), e);
+            throw e;
+        }
+        return SECURE_RANDOM.nextInt(bound - origin) + origin;
     }
 }
+
