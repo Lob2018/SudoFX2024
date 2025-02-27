@@ -8,7 +8,6 @@ import fr.softsf.sudokufx.configuration.os.IOsFolderFactory;
 import lombok.Setter;
 import org.flywaydb.core.Flyway;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.DependsOn;
 
 import static fr.softsf.sudokufx.utils.MyEnums.Paths.DATABASE_MIGRATION_PATH;
@@ -18,9 +17,8 @@ import static fr.softsf.sudokufx.utils.MyEnums.Paths.DATABASE_MIGRATION_PATH;
  * This class provides configurations for different data source implementations.
  */
 @Setter
-@Configuration
 @ExcludedFromCoverageReportGenerated
-public abstract class DataSourceConfig {
+abstract class DataSourceConfig {
 
     private String jdbcUrl;
     private String poolName;
