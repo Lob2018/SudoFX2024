@@ -4,7 +4,7 @@ package fr.softsf.sudokufx.configuration.database.keystore;
  * Interface defining methods to encrypt and decrypt
  * using AES-GCM (Galois/Counter Mode) encryption.
  */
-public sealed interface IEncryptionService permits SecretKeyEncryptionServiceAESGCM {
+sealed interface IEncryptionService permits SecretKeyEncryptionServiceAESGCM {
     /**
      * Encrypts the given string using AES-GCM encryption.
      *

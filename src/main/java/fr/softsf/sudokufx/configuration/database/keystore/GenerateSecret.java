@@ -14,7 +14,7 @@ import static org.passay.IllegalCharacterRule.ERROR_CODE;
  * Utility class for generating secure passwords using the Passay library.
  */
 @Component
-public final class GenerateSecret {
+final class GenerateSecret {
 
     /**
      * Define the secret special characters

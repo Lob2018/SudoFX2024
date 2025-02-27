@@ -18,7 +18,7 @@ import java.util.Base64;
  * using AES-GCM (Galois/Counter Mode) encryption.
  */
 @Slf4j
-public final class SecretKeyEncryptionServiceAESGCM implements IEncryptionService {
+final class SecretKeyEncryptionServiceAESGCM implements IEncryptionService {
     private static final SecureRandom random = new SecureRandom();
     private final SecretKey secretKey;
     private Cipher cipher;

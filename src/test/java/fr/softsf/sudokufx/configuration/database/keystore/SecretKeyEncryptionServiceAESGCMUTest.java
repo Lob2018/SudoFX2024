@@ -1,4 +1,4 @@
-package fr.softsf.sudokufx.common.unit.utils.database.keystore;
+package fr.softsf.sudokufx.configuration.database.keystore;
 
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
@@ -6,7 +6,6 @@ import java.security.SecureRandom;
 import javax.crypto.KeyGenerator;
 import javax.crypto.SecretKey;
 
-import fr.softsf.sudokufx.configuration.database.keystore.IEncryptionService;
 import org.junit.jupiter.api.AfterEach;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -23,7 +22,6 @@ import org.slf4j.LoggerFactory;
 import ch.qos.logback.classic.Logger;
 import ch.qos.logback.classic.spi.ILoggingEvent;
 import ch.qos.logback.core.read.ListAppender;
-import fr.softsf.sudokufx.configuration.database.keystore.SecretKeyEncryptionServiceAESGCM;
 
 class SecretKeyEncryptionServiceAESGCMUTest {
 

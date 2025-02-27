@@ -1,8 +1,7 @@
-package fr.softsf.sudokufx.common.integration.utils.database;
+package fr.softsf.sudokufx.configuration.database.keystore;
 
 import fr.softsf.sudokufx.SudoMain;
 import fr.softsf.sudokufx.utils.MyRegex;
-import fr.softsf.sudokufx.configuration.database.keystore.GenerateSecret;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
