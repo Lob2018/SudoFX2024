@@ -1,4 +1,4 @@
-package fr.softsf.sudokufx.configuration.database.keystore;
+package fr.softsf.sudokufx.configuration.database;
 
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;

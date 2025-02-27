@@ -1,4 +1,4 @@
-package fr.softsf.sudokufx.configuration.database.keystore;
+package fr.softsf.sudokufx.configuration.database;
 
 import fr.softsf.sudokufx.annotations.ExcludedFromCoverageReportGenerated;
 import org.passay.CharacterData;

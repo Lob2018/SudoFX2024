@@ -4,7 +4,6 @@ import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 import fr.softsf.sudokufx.annotations.ExcludedFromCoverageReportGenerated;
 import fr.softsf.sudokufx.configuration.MyLogbackConfig;
-import fr.softsf.sudokufx.configuration.database.keystore.IKeystore;
 import fr.softsf.sudokufx.configuration.os.IOsFolderFactory;
 import lombok.Setter;
 import org.flywaydb.core.Flyway;
