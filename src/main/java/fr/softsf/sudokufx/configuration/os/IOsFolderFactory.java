@@ -4,7 +4,7 @@ package fr.softsf.sudokufx.configuration.os;
 /**
  * Interface defining methods to access OS-specific folder paths.
  */
-public sealed interface IOsFolderFactory permits LinuxFolderFactory, MacosFolderFactory, WindowsFolderFactory, IMockIOsFolderFactory {
+public sealed interface IOsFolderFactory permits LinuxFolderFactory, MacosFolderFactory, WindowsFolderFactory {
     /**
      * Retrieves the path to the OS-specific data folder.
      *

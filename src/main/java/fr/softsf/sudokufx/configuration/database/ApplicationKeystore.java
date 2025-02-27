@@ -243,15 +243,6 @@ final class ApplicationKeystore implements IKeystore {
         writeTheKeystore(ks, keystoreFilePath, pwdArray);
     }
 
-    /**
-     * Stubbing setter for OS folder factory
-     *
-     * @param osFolderFactoryP The OS folder factory
-     */
-    void setOsFolderFactoryForTests(IOsFolderFactory osFolderFactoryP) {
-        iOsFolderFactory = osFolderFactoryP;
-    }
-
     @Override
     public String getUsername() {
         return username;

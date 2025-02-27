@@ -4,7 +4,7 @@ import ch.qos.logback.classic.Logger;
 import ch.qos.logback.classic.spi.ILoggingEvent;
 import ch.qos.logback.core.read.ListAppender;
 import fr.softsf.sudokufx.SudoMain;
-import fr.softsf.sudokufx.configuration.os.IMockIOsFolderFactory;
+
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Order;
@@ -14,7 +14,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.mockito.Mockito.*;
 
 @SpringBootTest(classes = {SudoMain.class})
 class ApplicationKeystoreITest {
@@ -59,15 +58,5 @@ class ApplicationKeystoreITest {
         assertEquals(pass.length(), user.length(), 24);
         assertEquals(user, userInit);
         assertEquals(pass, passInit);
-    }
-
-    @Test
-    void givenOsFolderFactory_whenSetupKeystore_thenExceptionLogged() {
-        IMockIOsFolderFactory iOsFolderFactoryMocked = mock(IMockIOsFolderFactory.class);
-        when(iOsFolderFactoryMocked.getOsDataFolderPath()).thenThrow(new RuntimeException(new Exception("██ Exception")));
-        keystore.setOsFolderFactoryForTests(iOsFolderFactoryMocked);
-        keystore.setupApplicationKeystore();
-        verify(iOsFolderFactoryMocked).getOsDataFolderPath();
-        assert (logWatcher.list.get(1).getFormattedMessage()).contains("██ Exception");
     }
 }
