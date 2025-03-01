@@ -41,11 +41,12 @@
 }
 
 .button:focused,.toast:focused {
-    -fx-border-color: #0C8CE9;
     -fx-border-width: .2em;
     -fx-border-radius: .25em;
     -fx-border-insets: -.2em;
+    -fx-border-color:  radial-gradient(center 50% 150%, radius 100%, derive(#0C8CE9, -90%), derive(#0C8CE9, 55%));
  }
+
 
 .button {
     -fx-cursor: hand;
