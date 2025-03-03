@@ -35,16 +35,19 @@ public class VersionService {
     private static final ObjectMapper OBJECT_MAPPER = new ObjectMapper();
     private static final String CURRENT_VERSION = JVMApplicationProperties.INSTANCE.getAppVersion().isEmpty() ? "" : JVMApplicationProperties.INSTANCE.getAppVersion().substring(1);
     private final HttpClient httpClient;
+    private final MyDateTime myDateTime;
 
     /**
      * Initializes the VersionService with the provided HttpClient.
      * This service is responsible for checking the latest version by making HTTP requests.
      *
      * @param httpClient the HttpClient used to perform HTTP requests.
+     * @param myDateTime the MyDateTime used to date and time operations.
      */
     @Autowired
-    public VersionService(HttpClient httpClient) {
+    public VersionService(HttpClient httpClient, MyDateTime myDateTime) {
         this.httpClient = httpClient;
+        this.myDateTime = myDateTime;
     }
 
     /**
@@ -71,7 +74,7 @@ public class VersionService {
             @Override
             protected Boolean call() {
                 try {
-                    updateMessage(I18n.INSTANCE.getValue("githubrepositoryversion.checking") + MyDateTime.getFormattedCurrentTime() + ")");
+                    updateMessage(I18n.INSTANCE.getValue("githubrepositoryversion.checking") + myDateTime.getFormattedCurrentTime() + ")");
                     HttpRequest request = HttpRequest.newBuilder()
                             .uri(URI.create(GITHUB_API_REPOSITORY_TAGS_URL.getUrl()))
                             .header("Accept", "application/json")
@@ -84,7 +87,7 @@ public class VersionService {
                         updateMessage(I18n.INSTANCE.getValue("githubrepositoryversion.error.statuscode"));
                         return true;
                     }
-                    updateMessage(I18n.INSTANCE.getValue("githubrepositoryversion.checked") + MyDateTime.getFormattedCurrentTime() + ")");
+                    updateMessage(I18n.INSTANCE.getValue("githubrepositoryversion.checked") + myDateTime.getFormattedCurrentTime() + ")");
                     return parseResponse(response.body());
                 } catch (HttpTimeoutException ex) {
                     log.warn("▓▓ Timeout while checking GitHub version");
