@@ -92,7 +92,7 @@ public final class DefaultView  implements IMainStageView, ISceneProvider {
             case 1 -> toaster.addToast("WARN", "", MyEnums.ToastLevels.WARN);
             default -> toaster.addToast(
                     "VISIBLE ERROR MESSAGE",
-                    "DETAILED ERROR MESSAGE ".repeat(20), // Répète le message pour éviter la duplication excessive
+                    "DETAILED ERROR MESSAGE ".repeat(20),
                     MyEnums.ToastLevels.ERROR
             );
         }
