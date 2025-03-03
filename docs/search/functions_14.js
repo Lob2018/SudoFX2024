@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['verifierlacoherenceentrelagrilleetlespossibilites_0',['verifierLaCoherenceEntreLaGrilleEtLesPossibilites',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a5ead122504d9cd11a071e47ccd4610b3',1,'fr::softsf::sudokufx::utils::sudoku::GridMaster']]],
-  ['versionproperty_1',['versionProperty',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_full_menu_view_model.html#a3d101469afede8893a92473bf4028911',1,'fr::softsf::sudokufx::viewmodel::FullMenuViewModel']]],
-  ['versionservice_2',['VersionService',['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html#ada7b2b3bc786e330d262a4097c423768',1,'fr::softsf::sudokufx::service::VersionService']]]
+  ['welcomeproperty_0',['welcomeProperty',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_full_menu_view_model.html#a574eda9c01df428c38524cc5acf49fbf',1,'fr::softsf::sudokufx::viewmodel::FullMenuViewModel']]],
+  ['windowsfolderfactory_1',['WindowsFolderFactory',['../interfacefr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_windows_folder_factory.html#ab7e0b38c0ea0ead29e5ecd19f4ca0c0a',1,'fr::softsf::sudokufx::configuration::os::WindowsFolderFactory']]],
+  ['writethekeystore_2',['writeTheKeystore',['../classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_application_keystore.html#a47a29c9d920c90352ec1a7226e2707bf',1,'fr::softsf::sudokufx::configuration::database::ApplicationKeystore']]]
 ];

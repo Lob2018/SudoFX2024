@@ -1,16 +1,7 @@
 <map id="fr.softsf.sudokufx.view.CrashScreenView.initialize" name="fr.softsf.sudokufx.view.CrashScreenView.initialize">
-<area shape="rect" id="Node000001" title="Initializes the crash screen components." alt="" coords="5,105,182,148"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_j_v_m_application_properties.html#a3f7b3c260ffbc879047a27ee9a1751f5" title="Retrieves the current application name from system properties." alt="" coords="234,5,485,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,103,178,79,229,58,249,50,251,55,231,62,180,84,135,107"/>
-<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_j_v_m_application_properties.html#aa3d30fcaecd7e5f4b1f8fe6fee13570a" title="Retrieves the current application version from system properties." alt="" coords="230,72,489,115"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="182,113,214,109,215,114,182,118"/>
-<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_i18n.html#a7095fa285a498c3f20bf33488a69d22c" title="Retrieves the localized string value for a given key." alt="" coords="282,139,437,181"/>
-<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="182,135,267,146,266,151,182,140"/>
-<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a5a135e72f1765ad2dc90d69994f7b657" title="Sets up the SVG logo for the crash screen." alt="" coords="235,205,484,264"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="136,146,231,191,247,197,245,202,229,196,134,151"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex.html#a981702b076ee54a416d676b6f7a182fc" title="Validates the given text against the specified regular expression." alt="" coords="537,39,735,81"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="486,39,522,44,521,49,485,44"/>
-<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="489,75,521,71,522,76,490,80"/>
-<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#aef8eba37009f641a92196a638a62d82c" title="Creates an SVG shape and applies it to a Region." alt="" coords="540,213,733,256"/>
-<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="485,232,524,232,524,237,485,237"/>
+<area shape="rect" id="Node000001" title="Initializes the crash screen components." alt="" coords="5,13,182,56"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a5a135e72f1765ad2dc90d69994f7b657" title="Sets up the SVG logo for the crash screen." alt="" coords="230,5,479,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="182,32,214,32,214,37,182,37"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#aef8eba37009f641a92196a638a62d82c" title="Creates an SVG shape and applies it to a Region." alt="" coords="527,13,720,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="480,32,511,32,511,37,480,37"/>
 </map>

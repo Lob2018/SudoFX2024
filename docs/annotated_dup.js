@@ -47,18 +47,29 @@ var annotated_dup =
               [ "MacosFolderFactory", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_macos_folder_factory.html", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_macos_folder_factory" ],
               [ "OsFolderFactoryManager", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_os_folder_factory_manager.html", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_os_folder_factory_manager" ],
               [ "OsFolderFactoryManagerUTest", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_os_folder_factory_manager_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_os_folder_factory_manager_u_test" ],
-              [ "OsFolderInitializer", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_os_folder_initializer.html", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_os_folder_initializer" ],
+              [ "OsFolderInitializer", "enumfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_os_folder_initializer.html", "enumfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_os_folder_initializer" ],
               [ "OsFolderInitializerUTest", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_os_folder_initializer_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_os_folder_initializer_u_test" ],
               [ "WindowsFolderFactory", "interfacefr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_windows_folder_factory.html", "interfacefr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_windows_folder_factory" ]
             ] ],
             [ "HttpClientConfig", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_http_client_config.html", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_http_client_config" ],
-            [ "JVMApplicationProperties", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_j_v_m_application_properties.html", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_j_v_m_application_properties" ],
+            [ "JVMApplicationProperties", "enumfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_j_v_m_application_properties.html", "enumfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_j_v_m_application_properties" ],
             [ "JVMApplicationPropertiesUTest", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_j_v_m_application_properties_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_j_v_m_application_properties_u_test" ],
             [ "MyLogbackConfig", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_my_logback_config.html", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_my_logback_config" ],
             [ "MyLogbackConfigUTest", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_my_logback_config_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_my_logback_config_u_test" ]
           ] ],
-          [ "exception", "namespacefr_1_1softsf_1_1sudokufx_1_1exception.html", [
-            [ "ExceptionTools", "classfr_1_1softsf_1_1sudokufx_1_1exception_1_1_exception_tools.html", "classfr_1_1softsf_1_1sudokufx_1_1exception_1_1_exception_tools" ]
+          [ "enums", "namespacefr_1_1softsf_1_1sudokufx_1_1enums.html", [
+            [ "I18n", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_i18n.html", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_i18n" ],
+            [ "LogBackTxt", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_log_back_txt.html", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_log_back_txt" ],
+            [ "MyRegex", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_my_regex.html", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_my_regex" ],
+            [ "OsName", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_os_name.html", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_os_name" ],
+            [ "Paths", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_paths.html", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_paths" ],
+            [ "ScreenSize", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_screen_size.html", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_screen_size" ],
+            [ "SecureRandomGenerator", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_secure_random_generator.html", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_secure_random_generator" ],
+            [ "ToastLevels", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_toast_levels.html", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_toast_levels" ],
+            [ "Urls", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_urls.html", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_urls" ]
+          ] ],
+          [ "exceptions", "namespacefr_1_1softsf_1_1sudokufx_1_1exceptions.html", [
+            [ "ExceptionTools", "enumfr_1_1softsf_1_1sudokufx_1_1exceptions_1_1_exception_tools.html", "enumfr_1_1softsf_1_1sudokufx_1_1exceptions_1_1_exception_tools" ]
           ] ],
           [ "interfaces", "namespacefr_1_1softsf_1_1sudokufx_1_1interfaces.html", [
             [ "mapper", "namespacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper.html", [
@@ -110,12 +121,9 @@ var annotated_dup =
             [ "DynamicFontSizeChangeE2ETest", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_dynamic_font_size_change_e2_e_test.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_dynamic_font_size_change_e2_e_test" ],
             [ "FileSystemManager", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_file_system_manager.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_file_system_manager" ],
             [ "FileSystemManagerUTest", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_file_system_manager_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_file_system_manager_u_test" ],
-            [ "I18n", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_i18n.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_i18n" ],
             [ "MyDateTime", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_date_time.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_date_time" ],
-            [ "MyEnums", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_enums.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_enums" ],
-            [ "MyRegex", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex" ],
             [ "MyRegexUTest", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex_u_test" ],
-            [ "SecureRandomGenerator", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_secure_random_generator.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_secure_random_generator" ]
+            [ "SecureRandomGeneratorUTest", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_secure_random_generator_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_secure_random_generator_u_test" ]
           ] ],
           [ "view", "namespacefr_1_1softsf_1_1sudokufx_1_1view.html", [
             [ "components", null, [

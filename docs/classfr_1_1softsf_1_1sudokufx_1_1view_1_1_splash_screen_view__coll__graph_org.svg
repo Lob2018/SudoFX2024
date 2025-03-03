@@ -15,34 +15,34 @@
 <polygon fill="#999999" stroke="none" points="217.5,-596 0,-596 0,0 217.5,0 217.5,-596"/>
 <text text-anchor="start" x="57.75" y="-582.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.</text>
 <text text-anchor="start" x="67.5" y="-570.5" font-family="Helvetica,sans-Serif" font-size="10.00">SplashScreenView</text>
-<text text-anchor="start" x="4" y="-554.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="14" y="-554.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
-<text text-anchor="start" x="14" y="-542.5" font-family="Helvetica,sans-Serif" font-size="10.00"> FX_FONT_SIZE_0_8_EM</text>
-<text text-anchor="start" x="5.5" y="-526.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-526.5" font-family="Helvetica,sans-Serif" font-size="10.00">final DropShadow dropShadow</text>
-<text text-anchor="start" x="5.5" y="-510.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-510.5" font-family="Helvetica,sans-Serif" font-size="10.00">Scene scene</text>
-<text text-anchor="start" x="5.5" y="-494.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-494.5" font-family="Helvetica,sans-Serif" font-size="10.00">double splashScreenFontSize</text>
+<text text-anchor="start" x="5.5" y="-554.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="14" y="-554.5" font-family="Helvetica,sans-Serif" font-size="10.00">final DropShadow dropShadow</text>
+<text text-anchor="start" x="5.5" y="-538.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="14" y="-538.5" font-family="Helvetica,sans-Serif" font-size="10.00">Scene scene</text>
+<text text-anchor="start" x="5.5" y="-522.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="14" y="-522.5" font-family="Helvetica,sans-Serif" font-size="10.00">double splashScreenFontSize</text>
+<text text-anchor="start" x="5.5" y="-506.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="14" y="-506.5" font-family="Helvetica,sans-Serif" font-size="10.00">final Stage splashScreen</text>
+<text text-anchor="start" x="14" y="-494.5" font-family="Helvetica,sans-Serif" font-size="10.00">Stage</text>
 <text text-anchor="start" x="5.5" y="-478.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-478.5" font-family="Helvetica,sans-Serif" font-size="10.00">final Stage splashScreen</text>
-<text text-anchor="start" x="14" y="-466.5" font-family="Helvetica,sans-Serif" font-size="10.00">Stage</text>
-<text text-anchor="start" x="5.5" y="-450.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-450.5" font-family="Helvetica,sans-Serif" font-size="10.00">final VBox splashscreenvbox</text>
-<text text-anchor="start" x="5.5" y="-434.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-434.5" font-family="Helvetica,sans-Serif" font-size="10.00">final HBox splashscreenvboxbottomhbox</text>
-<text text-anchor="start" x="5.5" y="-418.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-418.5" font-family="Helvetica,sans-Serif" font-size="10.00">final HBox splashscreenvboxbottomhboxhbox</text>
+<text text-anchor="start" x="14" y="-478.5" font-family="Helvetica,sans-Serif" font-size="10.00">final VBox splashscreenvbox</text>
+<text text-anchor="start" x="5.5" y="-462.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="14" y="-462.5" font-family="Helvetica,sans-Serif" font-size="10.00">final HBox splashscreenvboxbottomhbox</text>
+<text text-anchor="start" x="5.5" y="-446.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="14" y="-446.5" font-family="Helvetica,sans-Serif" font-size="10.00">final HBox splashscreenvboxbottomhboxhbox</text>
+<text text-anchor="start" x="5.5" y="-430.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="14" y="-430.5" font-family="Helvetica,sans-Serif" font-size="10.00">final Label splashscreenvbox</text>
+<text text-anchor="start" x="14" y="-418.5" font-family="Helvetica,sans-Serif" font-size="10.00">BottomhboxHboxLoaderlabel</text>
 <text text-anchor="start" x="5.5" y="-402.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-402.5" font-family="Helvetica,sans-Serif" font-size="10.00">final Label splashscreenvbox</text>
-<text text-anchor="start" x="14" y="-390.5" font-family="Helvetica,sans-Serif" font-size="10.00">BottomhboxHboxLoaderlabel</text>
+<text text-anchor="start" x="14" y="-390.5" font-family="Helvetica,sans-Serif" font-size="10.00">BottomhboxVersionlabel</text>
 <text text-anchor="start" x="5.5" y="-374.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-374.5" font-family="Helvetica,sans-Serif" font-size="10.00">final Label splashscreenvbox</text>
-<text text-anchor="start" x="14" y="-362.5" font-family="Helvetica,sans-Serif" font-size="10.00">BottomhboxVersionlabel</text>
-<text text-anchor="start" x="5.5" y="-346.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-346.5" font-family="Helvetica,sans-Serif" font-size="10.00">final Label splashscreenvbox</text>
-<text text-anchor="start" x="14" y="-334.5" font-family="Helvetica,sans-Serif" font-size="10.00">BottomhboxYearlabel</text>
-<text text-anchor="start" x="14" y="-318.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 7 more...</text>
+<text text-anchor="start" x="14" y="-362.5" font-family="Helvetica,sans-Serif" font-size="10.00">BottomhboxYearlabel</text>
+<text text-anchor="start" x="14" y="-346.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 7 more...</text>
+<text text-anchor="start" x="5.5" y="-330.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="14" y="-330.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
+<text text-anchor="start" x="14" y="-318.5" font-family="Helvetica,sans-Serif" font-size="10.00"> FX_FONT_SIZE_0_8_EM</text>
 <text text-anchor="start" x="4" y="-302.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="14" y="-302.5" font-family="Helvetica,sans-Serif" font-size="10.00">SplashScreenView(final</text>
 <text text-anchor="start" x="14" y="-290.5" font-family="Helvetica,sans-Serif" font-size="10.00"> Stage splashScreenStageP)</text>

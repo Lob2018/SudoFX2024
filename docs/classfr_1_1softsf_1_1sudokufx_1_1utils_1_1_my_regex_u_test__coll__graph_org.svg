@@ -19,7 +19,7 @@
 <text text-anchor="start" x="14" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">ListAppender&lt; ILoggingEvent</text>
 <text text-anchor="start" x="14" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; logWatcher</text>
 <text text-anchor="start" x="4" y="-102.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="14" y="-102.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenNullRegex</text>
+<text text-anchor="start" x="14" y="-102.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenNullPattern</text>
 <text text-anchor="start" x="14" y="-90.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenValidateByRegex</text>
 <text text-anchor="start" x="14" y="-78.5" font-family="Helvetica,sans-Serif" font-size="10.00">_thenFalseAndErrorLogged()</text>
 <text text-anchor="start" x="4" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>

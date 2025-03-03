@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['data_5ffolder_0',['DATA_FOLDER',['../enumfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_enums_1_1_paths.html#aace6135242aa10d62fe8aa13fcdcca9b',1,'fr::softsf::sudokufx::utils::MyEnums::Paths']]],
-  ['database_5fmigration_5fpath_1',['DATABASE_MIGRATION_PATH',['../enumfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_enums_1_1_paths.html#a158f525cf469964f1b79aa997ac0a1dd',1,'fr::softsf::sudokufx::utils::MyEnums::Paths']]],
-  ['database_5fname_2',['DATABASE_NAME',['../enumfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_enums_1_1_paths.html#a3df7d28257ef5cc16b8c6d8e37562e63',1,'fr::softsf::sudokufx::utils::MyEnums::Paths']]],
+  ['data_5ffolder_0',['DATA_FOLDER',['../enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_paths.html#ad8d113eb1a33ce7a440192382c8b43a2',1,'fr::softsf::sudokufx::enums::Paths']]],
+  ['database_5fmigration_5fpath_1',['DATABASE_MIGRATION_PATH',['../enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_paths.html#af5176d541f5744d941adb37a1bd8b15a',1,'fr::softsf::sudokufx::enums::Paths']]],
+  ['database_5fname_2',['DATABASE_NAME',['../enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_paths.html#a622804ffc4214abe3c1d7adaf03e4265',1,'fr::softsf::sudokufx::enums::Paths']]],
   ['datafolderforsudofx_3',['dataFolderForSudoFx',['../classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_linux_folder_factory.html#a94b3ae2175b99167b2b01c4e58c6abb1',1,'fr.softsf.sudokufx.configuration.os.LinuxFolderFactory.dataFolderForSudoFx'],['../classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_macos_folder_factory.html#af29fdf061c890f5c3033a1c387646f70',1,'fr.softsf.sudokufx.configuration.os.MacosFolderFactory.dataFolderForSudoFx'],['../interfacefr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_windows_folder_factory.html#a6e9922a8593a4a1ca3f2f05189888ba9',1,'fr.softsf.sudokufx.configuration.os.WindowsFolderFactory.dataFolderForSudoFx']]],
   ['datasourceconfig_4',['DataSourceConfig',['../classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_data_source_config.html',1,'fr::softsf::sudokufx::configuration::database']]],
   ['datasourceconfig_2ejava_5',['DataSourceConfig.java',['../_data_source_config_8java.html',1,'']]],
@@ -24,7 +24,7 @@ var searchData=
   ['difficile_5fmax_5fcachees_21',['DIFFICILE_MAX_CACHEES',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#ac498e74f962fd88ec4c8781e50d074d3',1,'fr::softsf::sudokufx::utils::sudoku::GridMaster']]],
   ['difficile_5fmoy_5fcachees_22',['DIFFICILE_MOY_CACHEES',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#aca34f326170249676420a2c2645d5c44',1,'fr::softsf::sudokufx::utils::sudoku::GridMaster']]],
   ['dimension_23',['DIMENSION',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a1284fab4c8c6372cb09bee56bda96590',1,'fr::softsf::sudokufx::utils::sudoku::GridMaster']]],
-  ['disposable_5fsize_24',['DISPOSABLE_SIZE',['../enumfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_enums_1_1_screen_size.html#ae517fb587254e59ac81600fa5fccc2a8',1,'fr::softsf::sudokufx::utils::MyEnums::ScreenSize']]],
+  ['disposable_5fsize_24',['DISPOSABLE_SIZE',['../enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_screen_size.html#aad88e4595c21db3f7ce9aba2c568f165',1,'fr::softsf::sudokufx::enums::ScreenSize']]],
   ['documentation_20of_20sudokufx_25',['Documentation of SudokuFX',['../index.html',1,'']]],
   ['dropshadow_26',['dropShadow',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#aeafb2651c347d16a52b08b48563f8476',1,'fr.softsf.sudokufx.view.CrashScreenView.dropShadow'],['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a01c167e7e90f8ed24d30a5502ce17c9c',1,'fr.softsf.sudokufx.view.SplashScreenView.dropShadow']]],
   ['dureeenms_27',['dureeEnMs',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a7cd9c1114c0d87a5341aedac86f6407a',1,'fr::softsf::sudokufx::utils::sudoku::GridMaster']]],

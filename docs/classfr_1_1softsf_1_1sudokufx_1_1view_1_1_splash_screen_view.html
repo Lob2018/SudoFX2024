@@ -99,9 +99,9 @@ $(function(){initNavTree('classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_scree
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">fr.softsf.sudokufx.view.SplashScreenView Class Reference</div></div>
 </div><!--header-->
@@ -135,11 +135,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a202e9727891bebc7d520ec588134a0a7" id="r_a202e9727891bebc7d520ec588134a0a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a202e9727891bebc7d520ec588134a0a7">showSplashScreen</a> ()</td></tr>
 <tr class="memdesc:a202e9727891bebc7d520ec588134a0a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays the splash screen.  <br /></td></tr>
 <tr class="separator:a202e9727891bebc7d520ec588134a0a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:abf917fd760e0f30aeef7318058fc3358" id="r_abf917fd760e0f30aeef7318058fc3358"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abf917fd760e0f30aeef7318058fc3358">FX_FONT_SIZE_0_8_EM</a> = &quot;-fx-font-size: 0.8em;&quot;</td></tr>
-<tr class="separator:abf917fd760e0f30aeef7318058fc3358"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -207,6 +202,11 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a712d389a8f3828bdf7f19f6691cf294d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0623eff92a8e92248783d3766e6b0353" id="r_a0623eff92a8e92248783d3766e6b0353"><td class="memItemLeft" align="right" valign="top">final Region&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0623eff92a8e92248783d3766e6b0353">splashscreenvboxTophboxRegionsudosvg</a> = new Region()</td></tr>
 <tr class="separator:a0623eff92a8e92248783d3766e6b0353"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:abf917fd760e0f30aeef7318058fc3358" id="r_abf917fd760e0f30aeef7318058fc3358"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abf917fd760e0f30aeef7318058fc3358">FX_FONT_SIZE_0_8_EM</a> = &quot;-fx-font-size: 0.8em;&quot;</td></tr>
+<tr class="separator:abf917fd760e0f30aeef7318058fc3358"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>View class for the splash screen of the Sudoku application. </p>
@@ -240,7 +240,7 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view_acb7b1f749b8b04926b90c9b7c1f29d20_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view_acb7b1f749b8b04926b90c9b7c1f29d20_cgraph.svg" width="100%" height="588"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -388,13 +388,6 @@ Private Attributes</h2></td></tr>
 <p>Retrieves a message indicating the current loading or optimizing state. </p>
 <p>The message returned depends on whether the Spring context is set to exit on refresh.</p>
 <dl class="section return"><dt>Returns</dt><dd>A string message indicating either a loading or optimizing state. </dd></dl>
-<div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view_ad126ac2f2a90b2422490ca0d896fa398_cgraph.svg" width="539" height="160"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
 </div>
 </div>
@@ -470,12 +463,12 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Configures the properties and styles of the UI nodes. </p>
-<div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view_acddefac20ee4e90165233cb342d56fe0_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view_acddefac20ee4e90165233cb342d56fe0_cgraph.svg" width="100%" height="588"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -504,11 +497,11 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Sets up the SVG for the Soft64 text logo in the center of the splash screen. </p>
-<div id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view_aafe300850c83d75b03d338a68d19c892_cgraph.svg" width="516" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -538,11 +531,11 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Sets up the SVG for the flower logo in the center of the splash screen. </p>
-<div id="dynsection-6" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view_a762ac1d676ca1be22b521cd731b8d9ba_cgraph.svg" width="516" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -572,11 +565,11 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Sets up the SVG for the Sudoku logo in the top section of the splash screen. </p>
-<div id="dynsection-7" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-6" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view_a53ead1ea80a08e06c15ae42ae101fcdf_cgraph.svg" width="516" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -641,7 +634,7 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1009,7 +1002,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1view.html">view</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html">SplashScreenView</a></li>
-    <li class="footer">Generated on Thu Feb 27 2025 17:35:42 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Mon Mar 3 2025 16:44:45 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

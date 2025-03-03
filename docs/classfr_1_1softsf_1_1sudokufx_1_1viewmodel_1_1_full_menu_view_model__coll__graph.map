@@ -1,14 +1,13 @@
 <map id="fr.softsf.sudokufx.viewmodel.FullMenuViewModel" name="fr.softsf.sudokufx.viewmodel.FullMenuViewModel">
-<area shape="rect" id="Node000001" title="FullMenuViewModel with business logic (not final)" alt="" coords="271,732,533,1180"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_software_service.html" title=" " alt="" coords="178,409,386,601"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="310,600,340,715,335,716,304,602"/>
-<area shape="rect" id="Node000003" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_software_mapper.html" title="This interface defines methods for mapping objects of type Software to objects of type SoftwareDto an..." alt="" coords="5,140,230,279"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="158,277,223,393,218,396,153,280"/>
-<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="231,191,249,198,257,209,248,221,244,218,251,209,246,202,229,196"/>
-<area shape="rect" id="Node000004" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_software_repository.html" title=" " alt="" coords="359,159,535,260"/>
-<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="422,261,346,396,341,393,417,258"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="366,5,528,91"/>
-<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="450,105,450,159,444,159,444,105"/>
-<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html" title="Service for checking if the application version is up to date by querying GitHub." alt="" coords="409,343,631,668"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="480,668,468,716,462,715,475,667"/>
+<area shape="rect" id="Node000001" title="FullMenuViewModel with business logic (not final)" alt="" coords="97,780,359,1228"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_software_service.html" title=" " alt="" coords="5,441,213,633"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="136,632,170,763,164,765,131,634"/>
+<area shape="rect" id="Node000003" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_software_repository.html" title=" " alt="" coords="21,167,198,268"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="112,268,112,425,107,425,107,268"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="28,5,191,91"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="112,106,112,167,107,167,107,106"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html" title="Service for checking if the application version is up to date by querying GitHub." alt="" coords="237,359,459,716"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="305,716,292,765,287,763,300,715"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_date_time.html" title="Component working with date and time operations." alt="" coords="248,140,448,295"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="351,294,351,342,345,342,345,294"/>
 </map>

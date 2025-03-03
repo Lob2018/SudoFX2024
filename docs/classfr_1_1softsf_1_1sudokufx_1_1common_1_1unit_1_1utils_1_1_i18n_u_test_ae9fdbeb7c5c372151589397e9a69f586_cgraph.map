@@ -1,12 +1,4 @@
 <map id="fr.softsf.sudokufx.common.unit.utils.I18nUTest.givenHostEnvironmentWithFrenchLocale_whenGetValue_thenReturnsFrenchValue" name="fr.softsf.sudokufx.common.unit.utils.I18nUTest.givenHostEnvironmentWithFrenchLocale_whenGetValue_thenReturnsFrenchValue">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,35,306,93"/>
-<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="95,34,96,24,107,15,127,10,156,8,188,11,208,18,206,23,187,16,155,13,128,15,110,20,101,27,100,35"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_i18n.html#a7095fa285a498c3f20bf33488a69d22c" title="Retrieves the localized string value for a given key." alt="" coords="390,5,546,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="306,43,375,35,375,40,307,49"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_i18n.html#a67c20ba2a72f7933067b71bc5a810bb1" title="Sets the locale bundle based on the host environment&#39;s language." alt="" coords="354,72,582,131"/>
-<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="307,79,338,83,338,88,306,85"/>
-<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_i18n.html#ae04bf081931205edbc3e139c7fd503f0" title="Gets the language code of the host environment." alt="" coords="630,47,886,89"/>
-<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="582,86,614,82,615,87,583,91"/>
-<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_i18n.html#a7b2d44cad34ffdf0fb3a297af88ee76e" title="Sets the current language for the application." alt="" coords="680,113,836,156"/>
-<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="583,112,665,121,665,127,582,117"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,306,88"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="97,29,98,19,109,10,128,5,156,3,187,5,206,12,204,17,186,11,155,8,129,10,112,15,103,21,103,29"/>
 </map>

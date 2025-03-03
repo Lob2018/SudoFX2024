@@ -1,15 +1,13 @@
 <map id="fr.softsf.sudokufx.utils.sudoku.GridMaster.remplirLaGrille" name="fr.softsf.sudokufx.utils.sudoku.GridMaster.remplirLaGrille">
 <area shape="rect" id="Node000001" title="Remplit récursivement la grille Sudoku (backtracking)." alt="" coords="5,72,207,115"/>
-<area shape="poly" id="edge7_Node000001_Node000001" title=" " alt="" coords="54,72,52,62,61,53,79,47,106,45,136,48,153,54,151,59,134,53,106,51,80,53,64,57,57,63,60,71"/>
+<area shape="poly" id="edge6_Node000001_Node000001" title=" " alt="" coords="54,72,52,62,61,53,79,47,106,45,136,48,153,54,151,59,134,53,106,51,80,53,64,57,57,63,60,71"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a95ced6119d7d08726742be7d90c37948" title="Choisit une valeur aléatoire parmi les possibilités données." alt="" coords="274,5,488,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="196,69,275,50,276,55,197,74"/>
-<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#aab28df678a8069dd22b13a687bb2ba5b" title="Élimine la valeur des possibilités des cases alentours." alt="" coords="280,72,482,115"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="207,91,265,91,265,96,207,96"/>
-<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a2bfd5ca8d30b4f51db2a81d8c9a5b641" title="Trouve la case vide avec le moins de possibilités." alt="" coords="255,139,507,197"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="188,113,257,132,256,137,187,118"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#afa58a9e419a56117d305014b687b8079" title="Compte le nombre de bits à 1 dans un entier." alt="" coords="560,109,762,152"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="473,46,508,58,605,100,603,105,506,62,471,51"/>
-<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_secure_random_generator.html#a9f9536fac826d79183da75606d633e55" title="Generates a random integer between 0 (inclusive) and the specified bound (exclusive)." alt="" coords="555,5,767,48"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="488,24,540,24,540,29,488,29"/>
-<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="507,148,545,143,545,149,508,154"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#aab28df678a8069dd22b13a687bb2ba5b" title="Élimine la valeur des possibilités des cases alentours." alt="" coords="280,72,482,115"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="207,91,265,91,265,96,207,96"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a2bfd5ca8d30b4f51db2a81d8c9a5b641" title="Trouve la case vide avec le moins de possibilités." alt="" coords="255,139,507,197"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="188,113,257,132,256,137,187,118"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#afa58a9e419a56117d305014b687b8079" title="Compte le nombre de bits à 1 dans un entier." alt="" coords="555,76,756,119"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="467,46,556,69,555,74,466,51"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="497,135,554,121,556,126,498,141"/>
 </map>

@@ -1,25 +1,19 @@
 <map id="fr.softsf.sudokufx.SudoMain.start" name="fr.softsf.sudokufx.SudoMain.start">
-<area shape="rect" id="Node000001" title="Initializes the application by setting up the splash screen and loading the main application context." alt="" coords="5,147,221,173"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#ad38d74b9ba975c931a8f6aa3e3e45c73" title="Creates a new Task that initializes the Spring context." alt="" coords="270,5,496,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,144,189,102,267,58,282,51,284,56,270,62,192,107,133,148"/>
+<area shape="rect" id="Node000001" title="Initializes the application by setting up the splash screen and loading the main application context." alt="" coords="5,113,221,140"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#ad38d74b9ba975c931a8f6aa3e3e45c73" title="Creates a new Task that initializes the Spring context." alt="" coords="270,5,495,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="142,110,268,58,287,51,289,56,270,62,145,115"/>
 <area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#a5f0246399e65a32405abe1ed415219ee" title="Handles errors that occur during the Spring context initialization task." alt="" coords="269,139,496,181"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="221,157,254,157,254,163,221,163"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="222,137,254,141,253,147,221,143"/>
 <area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#afa5bb361c3c4da3cef227f656f09c3e3" title="Handles the success of the Spring context initialization task." alt="" coords="269,72,496,115"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="170,143,278,116,280,121,171,149"/>
-<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#a574a17236a0848e4ce394ff5077a15fc" title="Initializes the main scene." alt="" coords="280,205,486,248"/>
-<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="171,171,280,199,278,204,170,177"/>
-<area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_i18n.html#a67c20ba2a72f7933067b71bc5a810bb1" title="Sets the locale bundle based on the host environment&#39;s language." alt="" coords="269,272,497,331"/>
-<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="134,172,193,213,270,258,281,263,279,268,267,262,190,217,131,176"/>
-<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#a5f9601381fd0f35bc4a5c90205958aec" title="Creates a PauseTransition to delay loading of the next view." alt="" coords="570,139,777,181"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="497,157,554,157,554,163,497,163"/>
-<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#afa5ef977463b6da726c91c4b3d67d1f4" title="Initialize the FxmlService if needed and set his DynamicFontSize." alt="" coords="555,72,791,115"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="478,135,562,116,563,121,479,141"/>
-<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#a7f44ea69c674694f9ea334ec052a05b3" title="Handles SQL invalid authorization exceptions." alt="" coords="570,205,776,248"/>
-<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="479,179,563,199,562,204,478,185"/>
-<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="479,113,563,132,562,137,478,118"/>
-<area shape="poly" id="edge8_Node000007_Node000005" title=" " alt="" coords="497,91,539,91,539,96,497,96"/>
-<area shape="rect" id="Node000010" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_i18n.html#ae04bf081931205edbc3e139c7fd503f0" title="Gets the language code of the host environment." alt="" coords="545,343,801,385"/>
-<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="498,323,557,336,556,341,497,329"/>
-<area shape="rect" id="Node000011" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_i18n.html#a7b2d44cad34ffdf0fb3a297af88ee76e" title="Sets the current language for the application." alt="" coords="596,276,751,319"/>
-<area shape="poly" id="edge12_Node000009_Node000011" title=" " alt="" coords="497,297,580,296,580,301,497,302"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="221,111,253,107,254,112,222,116"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#a574a17236a0848e4ce394ff5077a15fc" title="Initializes the main scene." alt="" coords="279,205,486,248"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="145,138,270,191,289,198,287,203,268,196,142,143"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#a5f9601381fd0f35bc4a5c90205958aec" title="Creates a PauseTransition to delay loading of the next view." alt="" coords="558,139,766,181"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="496,157,543,157,543,163,496,163"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#afa5ef977463b6da726c91c4b3d67d1f4" title="Initialize the FxmlService if needed and set his DynamicFontSize." alt="" coords="544,72,780,115"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="474,135,554,116,555,121,475,141"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#a7f44ea69c674694f9ea334ec052a05b3" title="Handles SQL invalid authorization exceptions." alt="" coords="559,205,765,248"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="475,179,555,199,554,204,474,185"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="475,113,555,132,554,137,474,118"/>
+<area shape="poly" id="edge8_Node000007_Node000005" title=" " alt="" coords="496,91,529,91,529,96,496,96"/>
 </map>
