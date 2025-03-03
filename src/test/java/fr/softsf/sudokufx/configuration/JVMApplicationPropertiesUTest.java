@@ -3,6 +3,8 @@ package fr.softsf.sudokufx.configuration;
 import fr.softsf.sudokufx.utils.MyRegex;
 import org.junit.jupiter.api.Test;
 
+import java.util.regex.Pattern;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class JVMApplicationPropertiesUTest {
@@ -14,17 +16,17 @@ class JVMApplicationPropertiesUTest {
     void givenValidNameAndVersion_whenValidateByRegex_thenValidationSucceeds() {
         String validName = "MyApp";
         String validVersion = "0.0.1";
-        assertTrue(MyRegex.isValidatedByRegex(validName, ALPHANUMERIC_REGEX));
-        assertTrue(MyRegex.isValidatedByRegex(validVersion, VERSION_REGEX));
+        assertTrue(MyRegex.INSTANCE.isValidatedByRegex(validName, Pattern.compile(ALPHANUMERIC_REGEX)));
+        assertTrue(MyRegex.INSTANCE.isValidatedByRegex(validVersion, Pattern.compile(VERSION_REGEX)));
     }
 
     @Test
     void givenInvalidNameAndVersion_whenValidateByRegex_thenValidationFails() {
         String invalidName = "MyApp123!";
         String invalidVersion = "0.0.";
-        assertFalse(MyRegex.isValidatedByRegex(invalidName, ALPHANUMERIC_REGEX));
-        assertFalse(MyRegex.isValidatedByRegex(invalidVersion, VERSION_REGEX));
-        assertFalse(MyRegex.isValidatedByRegex("", VERSION_REGEX));
+        assertFalse(MyRegex.INSTANCE.isValidatedByRegex(invalidName, Pattern.compile(ALPHANUMERIC_REGEX)));
+        assertFalse(MyRegex.INSTANCE.isValidatedByRegex(invalidVersion, Pattern.compile(VERSION_REGEX)));
+        assertFalse(MyRegex.INSTANCE.isValidatedByRegex("", Pattern.compile(VERSION_REGEX)));
     }
 
     @Test

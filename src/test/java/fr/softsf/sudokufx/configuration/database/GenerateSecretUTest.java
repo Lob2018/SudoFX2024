@@ -20,7 +20,7 @@ class GenerateSecretUTest {
     @Test
     void givenPassayGenerator_whenGeneratePassword_thenPasswordMatchesRegex() {
         String password = generateSecret.generatePassaySecret();
-        String regex = MyRegex.getSECRET();
+        String regex = MyRegex.INSTANCE.getSecretPattern().pattern();
         assertTrue(password.matches(regex));
         assertFalse("".matches(regex));
         assertFalse("LLLLLLLLLLLLLLLLLLLLLLLL".matches(regex));

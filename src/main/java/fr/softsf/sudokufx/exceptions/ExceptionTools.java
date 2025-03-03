@@ -3,7 +3,7 @@ package fr.softsf.sudokufx.exceptions;
 import java.sql.SQLInvalidAuthorizationSpecException;
 
 /**
- * Utility enum for handling and analyzing exceptions. This class provides
+ * Utility enum for handling and analyzing exceptions. This enum provides
  * methods to search for specific exception types within exception chains.
  */
 public enum ExceptionTools {

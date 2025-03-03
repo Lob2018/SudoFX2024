@@ -130,7 +130,7 @@ public class VersionService {
                 return true;
             }
             String lastVersion = tagName.substring(1);
-            if (!MyRegex.isValidatedByRegex(lastVersion, MyRegex.getVERSION())) {
+            if (!MyRegex.INSTANCE.isValidatedByRegex(lastVersion, MyRegex.INSTANCE.getVersionPattern())) {
                 log.warn("▓▓ GitHub version '{}' does not match expected semantic versioning format (X.Y.Z).", lastVersion);
                 return true;
             }

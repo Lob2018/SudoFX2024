@@ -6,7 +6,7 @@ import java.util.Locale;
 import java.util.ResourceBundle;
 
 /**
- * Utility enum for internationalization (i18n) support. This class manages
+ * Utility enum for internationalization (i18n) support. This enum manages
  * language resources and provides methods to switch between languages and
  * retrieve localized strings.
  */

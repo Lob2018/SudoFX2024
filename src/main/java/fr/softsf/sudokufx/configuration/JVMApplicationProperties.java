@@ -48,7 +48,7 @@ public enum JVMApplicationProperties {
     public String getAppName() {
         if (appName.isEmpty()) {
             String systemValue = System.getProperty(APP_NAME_PROPERTY);
-            appName = MyRegex.isValidatedByRegex(systemValue, MyRegex.getALPHANUMERIC()) ? systemValue : "";
+            appName = MyRegex.INSTANCE.isValidatedByRegex(systemValue, MyRegex.INSTANCE.getAlphanumericPattern()) ? systemValue : "";
         }
         return appName;
     }
@@ -61,7 +61,7 @@ public enum JVMApplicationProperties {
     public String getAppVersion() {
         if (appVersion.isEmpty()) {
             String systemValue = System.getProperty(APP_VERSION_PROPERTY);
-            appVersion = MyRegex.isValidatedByRegex(systemValue, MyRegex.getVERSION()) ? "v" + systemValue : "";
+            appVersion = MyRegex.INSTANCE.isValidatedByRegex(systemValue, MyRegex.INSTANCE.getVersionPattern()) ? "v" + systemValue : "";
         }
         return appVersion;
     }

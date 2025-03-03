@@ -28,16 +28,16 @@ class MyRegexUTest {
 
     @Test
     void givenNullText_whenValidateByRegex_thenFalseAndErrorLogged() {
-        boolean value = MyRegex.isValidatedByRegex(null, MyRegex.getALPHANUMERIC());
+        boolean value = MyRegex.INSTANCE.isValidatedByRegex(null, MyRegex.INSTANCE.getAlphanumericPattern());
         assertFalse(value, "Text is null then it returns false");
-        assert (logWatcher.list.getFirst().getFormattedMessage()).contains("██ Exception caught inside isValidatedByRegex, text is null, regex is");
+        assert (logWatcher.list.getFirst().getFormattedMessage()).contains("██ Exception caught inside isValidatedByRegex, text is null, pattern is");
     }
 
     @Test
-    void givenNullRegex_whenValidateByRegex_thenFalseAndErrorLogged() {
-        boolean value = MyRegex.isValidatedByRegex("Test", null);
-        assertFalse(value, "Regex is null then it returns false");
-        assert (logWatcher.list.getFirst().getFormattedMessage()).contains("██ Exception caught inside isValidatedByRegex, text is Test, regex is null");
+    void givenNullPattern_whenValidateByRegex_thenFalseAndErrorLogged() {
+        boolean value = MyRegex.INSTANCE.isValidatedByRegex("Test", null);
+        assertFalse(value, "Pattern is null then it returns false");
+        assert (logWatcher.list.getFirst().getFormattedMessage()).contains("██ Exception caught inside isValidatedByRegex, text is Test, pattern is null");
     }
 
 
