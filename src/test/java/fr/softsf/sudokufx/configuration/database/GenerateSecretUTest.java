@@ -1,7 +1,7 @@
 package fr.softsf.sudokufx.configuration.database;
 
 import fr.softsf.sudokufx.SudoMain;
-import fr.softsf.sudokufx.utils.MyRegex;
+import fr.softsf.sudokufx.enums.MyRegex;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

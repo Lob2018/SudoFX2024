@@ -1,7 +1,5 @@
 package fr.softsf.sudokufx.enums;
 
-import fr.softsf.sudokufx.utils.MyEnums;
-
 import java.util.Locale;
 import java.util.ResourceBundle;
 
@@ -16,7 +14,7 @@ public enum I18n {
 
     private static final Locale LOCALE_FR = Locale.of("fr", "FR");
     private static final Locale LOCALE_EN = Locale.of("en", "US");
-    private static final String I_18_N_PATH = MyEnums.Paths.I18N_PATH.getPath();
+    private static final String I_18_N_PATH = Paths.I18N_PATH.getPath();
     private static final ResourceBundle FRENCH_BUNDLE = ResourceBundle.getBundle(I_18_N_PATH, LOCALE_FR);
     private static ResourceBundle bundle = FRENCH_BUNDLE;
     private static final ResourceBundle ENGLISH_BUNDLE = ResourceBundle.getBundle(I_18_N_PATH, LOCALE_EN);

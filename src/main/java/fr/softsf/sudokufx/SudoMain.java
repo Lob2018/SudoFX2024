@@ -1,12 +1,12 @@
 package fr.softsf.sudokufx;
 
 import com.gluonhq.ignite.spring.SpringContext;
+import fr.softsf.sudokufx.enums.LogBackTxt;
 import fr.softsf.sudokufx.exceptions.ExceptionTools;
 import fr.softsf.sudokufx.interfaces.IMainStageView;
 import fr.softsf.sudokufx.interfaces.ISplashScreenView;
 import fr.softsf.sudokufx.service.FxmlService;
 import fr.softsf.sudokufx.enums.I18n;
-import fr.softsf.sudokufx.utils.MyEnums;
 import fr.softsf.sudokufx.view.SplashScreenView;
 import javafx.animation.PauseTransition;
 import javafx.application.Application;
@@ -73,7 +73,7 @@ public class SudoMain extends Application {
         String sqlState = sqlException.getSQLState();
         if ("28000".equals(sqlState) || "28501".equals(sqlState)) {
             log.error("██ SQLInvalidAuthorizationSpecException with sqlstate==(28000||28501) catch : {}", e.getMessage(), e);
-            log.info("\n\n{}", MyEnums.LogBackTxt.SQL_INVALID_AUTHORIZATION_SPEC_EXCEPTION.getLogBackMessage());
+            log.info("\n\n{}", LogBackTxt.SQL_INVALID_AUTHORIZATION_SPEC_EXCEPTION.getLogBackMessage());
         }
     }
 

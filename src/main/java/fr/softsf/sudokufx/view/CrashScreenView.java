@@ -32,9 +32,9 @@ import java.nio.file.Paths;
 import java.util.Calendar;
 import java.util.Objects;
 
-import static fr.softsf.sudokufx.utils.MyEnums.Paths.DATA_FOLDER;
-import static fr.softsf.sudokufx.utils.MyEnums.Paths.LOGO_SUDO_PNG_PATH;
-import static fr.softsf.sudokufx.utils.MyEnums.ScreenSize.DISPOSABLE_SIZE;
+import static fr.softsf.sudokufx.enums.Paths.DATA_FOLDER;
+import static fr.softsf.sudokufx.enums.Paths.LOGO_SUDO_PNG_PATH;
+import static fr.softsf.sudokufx.enums.ScreenSize.DISPOSABLE_SIZE;
 
 /**
  * View class for the crash screen without business logic. This class is

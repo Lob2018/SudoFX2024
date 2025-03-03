@@ -2,7 +2,7 @@ package fr.softsf.sudokufx.utils;
 
 import java.util.concurrent.TimeoutException;
 
-import static fr.softsf.sudokufx.utils.MyEnums.ScreenSize.DISPOSABLE_SIZE;
+import static fr.softsf.sudokufx.enums.ScreenSize.DISPOSABLE_SIZE;
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.AfterEach;

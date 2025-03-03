@@ -5,7 +5,7 @@ import fr.softsf.sudokufx.annotations.ExcludedFromCoverageReportGenerated;
 import fr.softsf.sudokufx.configuration.os.IOsFolderFactory;
 import org.springframework.context.annotation.*;
 
-import static fr.softsf.sudokufx.utils.MyEnums.Paths.DATABASE_NAME;
+import static fr.softsf.sudokufx.enums.Paths.DATABASE_NAME;
 
 /**
  * Overrides Abstract DataSource hikariDataSource for the default profile.

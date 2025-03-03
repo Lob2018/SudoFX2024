@@ -1,7 +1,7 @@
 package fr.softsf.sudokufx.view.components.toaster;
 
 import fr.softsf.sudokufx.enums.I18n;
-import fr.softsf.sudokufx.utils.MyEnums;
+import fr.softsf.sudokufx.enums.ToastLevels;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
@@ -39,7 +39,7 @@ public final class ToasterVBox extends VBox {
      * @param duration     The display duration of the toast in milliseconds
      */
     @FXML
-    public void addToastWithDuration(final String visibleText, final String detailedText, final MyEnums.ToastLevels toastLevel, final double duration) {
+    public void addToastWithDuration(final String visibleText, final String detailedText, final ToastLevels toastLevel, final double duration) {
         final String fullDetailText = visibleText +
                 System.lineSeparator() +
                 detailedText;
@@ -61,7 +61,7 @@ public final class ToasterVBox extends VBox {
      * @param toastLevel   The severity level of the toast (info, warn, error)
      */
     @FXML
-    public void addToast(final String visibleText, final String detailedText, final MyEnums.ToastLevels toastLevel) {
+    public void addToast(final String visibleText, final String detailedText, final ToastLevels toastLevel) {
         final String fullDetailText = visibleText +
                 System.lineSeparator() +
                 detailedText;
@@ -81,7 +81,7 @@ public final class ToasterVBox extends VBox {
      * @param toast      The toast button
      * @param toastLevel The severity level of the toast
      */
-    private void setToastStyle(final ToasterButton toast, final MyEnums.ToastLevels toastLevel) {
+    private void setToastStyle(final ToasterButton toast, final ToastLevels toastLevel) {
         toast.getStyleClass().add("toast");
         toast.getStyleClass().add(toastLevel.getLevel());
     }
@@ -96,7 +96,7 @@ public final class ToasterVBox extends VBox {
      * @param toast      The toast button to which the accessibility text and tooltip will be applied.
      * @param toastLevel The severity level of the toast, which determines the content of the accessibility text and tooltip.
      */
-    private void setAccessibility(final ToasterButton toast, final MyEnums.ToastLevels toastLevel, final String text) {
+    private void setAccessibility(final ToasterButton toast, final ToastLevels toastLevel, final String text) {
         Tooltip tooltip = new Tooltip();
         tooltip.setShowDelay(Duration.millis(0));
         String info = getToastInfo(toastLevel);
@@ -115,7 +115,7 @@ public final class ToasterVBox extends VBox {
      * @param toastLevel The severity level of the toast, which can be WARN, ERROR, or INFO.
      * @return A string containing the localized message for the specified toast level.
      */
-    private String getToastInfo(MyEnums.ToastLevels toastLevel) {
+    private String getToastInfo(ToastLevels toastLevel) {
         return switch (toastLevel) {
             case WARN -> I18n.INSTANCE.getValue("toastlevel.warn");
             case ERROR -> I18n.INSTANCE.getValue("toastlevel.error");

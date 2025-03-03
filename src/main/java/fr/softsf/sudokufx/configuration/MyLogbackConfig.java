@@ -13,9 +13,10 @@ import org.springframework.context.annotation.Configuration;
 import java.io.IOException;
 import java.io.InputStream;
 
-import static fr.softsf.sudokufx.utils.MyEnums.LogBackTxt.ASCII_LOGO;
-import static fr.softsf.sudokufx.utils.MyEnums.LogBackTxt.OPTIMIZING;
-import static fr.softsf.sudokufx.utils.MyEnums.Paths.*;
+import static fr.softsf.sudokufx.enums.LogBackTxt.ASCII_LOGO;
+import static fr.softsf.sudokufx.enums.LogBackTxt.OPTIMIZING;
+import static fr.softsf.sudokufx.enums.Paths.*;
+
 
 /**
  * Configuration class for Logback logging framework. This class sets up and

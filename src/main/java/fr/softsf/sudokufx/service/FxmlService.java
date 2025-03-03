@@ -1,8 +1,8 @@
 package fr.softsf.sudokufx.service;
 
+import fr.softsf.sudokufx.enums.Paths;
 import fr.softsf.sudokufx.interfaces.ISceneProvider;
 import fr.softsf.sudokufx.utils.DynamicFontSize;
-import fr.softsf.sudokufx.utils.MyEnums;
 import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -51,7 +51,7 @@ public class FxmlService implements ISceneProvider {
      * @throws RuntimeException         Exits the application if an error occurs while loading the FXML file
      */
     public void setRootByFXMLName(final String fxml) {
-        String path = MyEnums.Paths.RESOURCES_FXML_PATH.getPath() + fxml + ".fxml";
+        String path = Paths.RESOURCES_FXML_PATH.getPath() + fxml + ".fxml";
         try {
             fxmlLoader.setRoot(null);
             fxmlLoader.setController(null);

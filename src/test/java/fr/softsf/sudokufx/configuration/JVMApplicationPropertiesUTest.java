@@ -1,6 +1,6 @@
 package fr.softsf.sudokufx.configuration;
 
-import fr.softsf.sudokufx.utils.MyRegex;
+import fr.softsf.sudokufx.enums.MyRegex;
 import org.junit.jupiter.api.Test;
 
 import java.util.regex.Pattern;

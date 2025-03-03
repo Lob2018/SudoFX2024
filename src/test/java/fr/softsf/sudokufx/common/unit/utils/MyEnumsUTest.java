@@ -2,10 +2,11 @@ package fr.softsf.sudokufx.common.unit.utils;
 
 import org.junit.jupiter.api.Test;
 
-import static fr.softsf.sudokufx.utils.MyEnums.Paths.*;
-import static fr.softsf.sudokufx.utils.MyEnums.ToastLevels.*;
-import static fr.softsf.sudokufx.utils.MyEnums.Urls.GITHUB_API_REPOSITORY_TAGS_URL;
-import static fr.softsf.sudokufx.utils.MyEnums.Urls.GITHUB_REPOSITORY_RELEASES_URL;
+
+import static fr.softsf.sudokufx.enums.Paths.*;
+import static fr.softsf.sudokufx.enums.ToastLevels.*;
+import static fr.softsf.sudokufx.enums.Urls.GITHUB_API_REPOSITORY_TAGS_URL;
+import static fr.softsf.sudokufx.enums.Urls.GITHUB_REPOSITORY_RELEASES_URL;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 

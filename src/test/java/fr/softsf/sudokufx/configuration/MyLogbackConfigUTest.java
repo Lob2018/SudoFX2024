@@ -17,8 +17,8 @@ import org.slf4j.LoggerFactory;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-import static fr.softsf.sudokufx.utils.MyEnums.LogBackTxt.ASCII_LOGO;
-import static fr.softsf.sudokufx.utils.MyEnums.LogBackTxt.OPTIMIZING;
+import static fr.softsf.sudokufx.enums.LogBackTxt.ASCII_LOGO;
+import static fr.softsf.sudokufx.enums.LogBackTxt.OPTIMIZING;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;

@@ -1,11 +1,12 @@
 package fr.softsf.sudokufx.view;
 
 import fr.softsf.sudokufx.SudoMain;
+import fr.softsf.sudokufx.enums.Paths;
+import fr.softsf.sudokufx.enums.ToastLevels;
 import fr.softsf.sudokufx.interfaces.IMainStageView;
 import fr.softsf.sudokufx.interfaces.ISceneProvider;
 import fr.softsf.sudokufx.interfaces.ISplashScreenView;
 import fr.softsf.sudokufx.service.FxmlService;
-import fr.softsf.sudokufx.utils.MyEnums;
 import fr.softsf.sudokufx.enums.SecureRandomGenerator;
 import fr.softsf.sudokufx.view.components.toaster.ToasterVBox;
 import fr.softsf.sudokufx.viewmodel.FullMenuViewModel;
@@ -88,12 +89,12 @@ public final class DefaultView  implements IMainStageView, ISceneProvider {
     private void onHelloButtonClick(ActionEvent event) {
 
         switch (SecureRandomGenerator.INSTANCE.nextInt(3)) {
-            case 0 -> toaster.addToastWithDuration("INFO 🔹 Work in progress... 🔹", "", MyEnums.ToastLevels.INFO, 6000);
-            case 1 -> toaster.addToast("WARN", "", MyEnums.ToastLevels.WARN);
+            case 0 -> toaster.addToastWithDuration("INFO 🔹 Work in progress... 🔹", "", ToastLevels.INFO, 6000);
+            case 1 -> toaster.addToast("WARN", "", ToastLevels.WARN);
             default -> toaster.addToast(
                     "VISIBLE ERROR MESSAGE",
                     "DETAILED ERROR MESSAGE ".repeat(20),
-                    MyEnums.ToastLevels.ERROR
+                    ToastLevels.ERROR
             );
         }
         fullMenuViewModel.test();
@@ -105,7 +106,7 @@ public final class DefaultView  implements IMainStageView, ISceneProvider {
      * Configures the primary stage for the full menu view.
      */
     private void openingConfigureStage() {
-        primaryStage.getIcons().add(new Image((Objects.requireNonNull(SudoMain.class.getResource(MyEnums.Paths.LOGO_SUDO_PNG_PATH.getPath()))).toExternalForm()));
+        primaryStage.getIcons().add(new Image((Objects.requireNonNull(SudoMain.class.getResource(Paths.LOGO_SUDO_PNG_PATH.getPath()))).toExternalForm()));
         primaryStage.initStyle(StageStyle.DECORATED);
         primaryStage.setScene(getScene());
         primaryStage.centerOnScreen();

@@ -25,9 +25,9 @@ import javafx.util.Duration;
 import java.util.Calendar;
 import java.util.Objects;
 
-import static fr.softsf.sudokufx.utils.MyEnums.Paths.LOGO_SUDO_PNG_PATH;
-import static fr.softsf.sudokufx.utils.MyEnums.Paths.RESOURCES_CSS_PATH;
-import static fr.softsf.sudokufx.utils.MyEnums.ScreenSize.DISPOSABLE_SIZE;
+import static fr.softsf.sudokufx.enums.Paths.LOGO_SUDO_PNG_PATH;
+import static fr.softsf.sudokufx.enums.Paths.RESOURCES_CSS_PATH;
+import static fr.softsf.sudokufx.enums.ScreenSize.DISPOSABLE_SIZE;
 import static javafx.scene.layout.Priority.ALWAYS;
 
 /**

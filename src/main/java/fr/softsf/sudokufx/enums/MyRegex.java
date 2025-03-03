@@ -1,4 +1,4 @@
-package fr.softsf.sudokufx.utils;
+package fr.softsf.sudokufx.enums;
 
 import jakarta.validation.constraints.NotNull;
 import lombok.Getter;

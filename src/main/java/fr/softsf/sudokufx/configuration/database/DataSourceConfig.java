@@ -10,7 +10,7 @@ import org.flywaydb.core.Flyway;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.DependsOn;
 
-import static fr.softsf.sudokufx.utils.MyEnums.Paths.DATABASE_MIGRATION_PATH;
+import static fr.softsf.sudokufx.enums.Paths.DATABASE_MIGRATION_PATH;
 
 /**
  * Abstract configuration class for setting up the application's data source.

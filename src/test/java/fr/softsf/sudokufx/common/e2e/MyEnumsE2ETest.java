@@ -12,7 +12,7 @@ import org.testfx.framework.junit5.Start;
 
 import java.util.concurrent.TimeoutException;
 
-import static fr.softsf.sudokufx.utils.MyEnums.ScreenSize.DISPOSABLE_SIZE;
+import static fr.softsf.sudokufx.enums.ScreenSize.DISPOSABLE_SIZE;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 

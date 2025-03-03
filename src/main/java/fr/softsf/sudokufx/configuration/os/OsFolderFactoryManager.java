@@ -1,6 +1,7 @@
 package fr.softsf.sudokufx.configuration.os;
 
-import fr.softsf.sudokufx.utils.MyEnums;
+import fr.softsf.sudokufx.enums.OsName;
+import fr.softsf.sudokufx.enums.Paths;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -10,14 +11,14 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class OsFolderFactoryManager {
 
-    private String os = MyEnums.OsName.OS_NAME.getOs();
+    private String os = OsName.OS_NAME.getOs();
 
-    private String windowsIntendedPathDataFolder = MyEnums.Paths.WINDOWS_SUPPOSED_DATA_FOLDER_FOR_SUDO_FX.getPath();
-    private String windowsIntendedPathLogsFolder = MyEnums.Paths.WINDOWS_SUPPOSED_LOGS_FOLDER_FOR_SUDO_FX.getPath();
-    private String linuxIntendedPathDataFolder = MyEnums.Paths.LINUX_SUPPOSED_DATA_FOLDER_FOR_SUDO_FX.getPath();
-    private String linuxIntendedPathLogsFolder = MyEnums.Paths.LINUX_SUPPOSED_LOGS_FOLDER_FOR_SUDO_FX.getPath();
-    private String macosIntendedPathDataFolder = MyEnums.Paths.MACOS_SUPPOSED_DATA_FOLDER_FOR_SUDO_FX.getPath();
-    private String macosIntendedPathLogsFolder = MyEnums.Paths.MACOS_SUPPOSED_LOGS_FOLDER_FOR_SUDO_FX.getPath();
+    private String windowsIntendedPathDataFolder = Paths.WINDOWS_SUPPOSED_DATA_FOLDER_FOR_SUDO_FX.getPath();
+    private String windowsIntendedPathLogsFolder = Paths.WINDOWS_SUPPOSED_LOGS_FOLDER_FOR_SUDO_FX.getPath();
+    private String linuxIntendedPathDataFolder = Paths.LINUX_SUPPOSED_DATA_FOLDER_FOR_SUDO_FX.getPath();
+    private String linuxIntendedPathLogsFolder = Paths.LINUX_SUPPOSED_LOGS_FOLDER_FOR_SUDO_FX.getPath();
+    private String macosIntendedPathDataFolder = Paths.MACOS_SUPPOSED_DATA_FOLDER_FOR_SUDO_FX.getPath();
+    private String macosIntendedPathLogsFolder = Paths.MACOS_SUPPOSED_LOGS_FOLDER_FOR_SUDO_FX.getPath();
 
     /**
      * Creates and returns an OS-specific folder factory.
@@ -52,7 +53,7 @@ public class OsFolderFactoryManager {
      * This method should only be used in test scenarios.
      */
     void setWrongOsForTests() {
-        os = MyEnums.OsName.WRONG_OS_FOR_TESTS.getOs();
+        os = OsName.WRONG_OS_FOR_TESTS.getOs();
     }
 
     /**

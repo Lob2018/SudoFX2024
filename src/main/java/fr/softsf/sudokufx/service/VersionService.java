@@ -6,7 +6,7 @@ import fr.softsf.sudokufx.configuration.JVMApplicationProperties;
 import fr.softsf.sudokufx.dto.github.TagDto;
 import fr.softsf.sudokufx.enums.I18n;
 import fr.softsf.sudokufx.utils.MyDateTime;
-import fr.softsf.sudokufx.utils.MyRegex;
+import fr.softsf.sudokufx.enums.MyRegex;
 import javafx.concurrent.Task;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +21,9 @@ import java.net.http.HttpTimeoutException;
 import java.time.Duration;
 import java.util.List;
 
-import static fr.softsf.sudokufx.utils.MyEnums.Urls.*;
+import static fr.softsf.sudokufx.enums.Urls.GITHUB_API_REPOSITORY_TAGS_URL;
+import static fr.softsf.sudokufx.enums.Urls.GITHUB_REPOSITORY_RELEASES_URL;
+
 
 /**
  * Service for checking if the application version is up to date by querying GitHub.
