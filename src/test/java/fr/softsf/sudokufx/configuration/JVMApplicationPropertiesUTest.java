@@ -9,7 +9,6 @@ class JVMApplicationPropertiesUTest {
 
     private static final String VERSION_REGEX = "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)$";
     private static final String ALPHANUMERIC_REGEX = "^[a-zA-Z0-9\\s]+$";
-    private static final JVMApplicationProperties jvmApplicationProperties = JVMApplicationProperties.INSTANCE;
 
     @Test
     void givenValidNameAndVersion_whenValidateByRegex_thenValidationSucceeds() {
@@ -30,31 +29,31 @@ class JVMApplicationPropertiesUTest {
 
     @Test
     void givenNullSpringContext_whenGetAppNameAndVersion_thenDefaultValuesReturned() {
-        jvmApplicationProperties.setInitSpringContextExitForTests();
-        assertEquals("SudokuFX", jvmApplicationProperties.getAppName());
-        assertFalse(jvmApplicationProperties.isSpringContextExitOnRefresh());
-        assertEquals("SudokuFX", jvmApplicationProperties.getAppName());
+        JVMApplicationProperties.INSTANCE.setInitSpringContextExitForTests();
+        assertEquals("SudokuFX", JVMApplicationProperties.INSTANCE.getAppName());
+        assertFalse(JVMApplicationProperties.INSTANCE.isSpringContextExitOnRefresh());
+        assertEquals("SudokuFX", JVMApplicationProperties.INSTANCE.getAppName());
     }
 
     @Test
     void givenEmptyAppNameAndVersionWithOnRefreshSpringContext_whenGetProperties_thenDefaultValuesAndExitOnRefresh() {
-        jvmApplicationProperties.setEmptyAppVersionPropertyForTests();
-        jvmApplicationProperties.setEmptyAppNamePropertyForTests();
-        jvmApplicationProperties.setOnRefreshSpringContextExitForTests();
-        assertEquals("SudokuFX", jvmApplicationProperties.getAppName());
-        assertTrue(jvmApplicationProperties.isSpringContextExitOnRefresh());
+        JVMApplicationProperties.INSTANCE.setEmptyAppVersionPropertyForTests();
+        JVMApplicationProperties.INSTANCE.setEmptyAppNamePropertyForTests();
+        JVMApplicationProperties.INSTANCE.setOnRefreshSpringContextExitForTests();
+        assertEquals("SudokuFX", JVMApplicationProperties.INSTANCE.getAppName());
+        assertTrue(JVMApplicationProperties.INSTANCE.isSpringContextExitOnRefresh());
     }
 
     @Test
     void givenNeverSpringContextExit_whenCheckExitOnRefresh_thenExitNever() {
-        jvmApplicationProperties.setNeverSpringContextExitForTests();
-        assertFalse(jvmApplicationProperties.isSpringContextExitOnRefresh());
+        JVMApplicationProperties.INSTANCE.setNeverSpringContextExitForTests();
+        assertFalse(JVMApplicationProperties.INSTANCE.isSpringContextExitOnRefresh());
     }
 
     @Test
     void givenUnknownSpringContext_whenCheckExitOnRefresh_thenExitNotTriggered() {
-        jvmApplicationProperties.setSpringContextExitInRefresh();
-        jvmApplicationProperties.setInitSpringContextExitForTests();
-        assertFalse(jvmApplicationProperties.isSpringContextExitOnRefresh());
+        JVMApplicationProperties.INSTANCE.setSpringContextExitInRefresh();
+        JVMApplicationProperties.INSTANCE.setInitSpringContextExitForTests();
+        assertFalse(JVMApplicationProperties.INSTANCE.isSpringContextExitOnRefresh());
     }
 }

@@ -15,7 +15,6 @@ import java.util.Optional;
 @Service
 public class SoftwareService {
 
-    private static final ISoftwareMapper iSoftwareMapper = ISoftwareMapper.INSTANCE;
     private final SoftwareRepository softwareRepository;
 
     @Autowired
@@ -26,7 +25,7 @@ public class SoftwareService {
     public Optional<SoftwareDto> getSoftware() {
         try {
             return softwareRepository.findFirstSoftware()
-                    .map(iSoftwareMapper::mapSoftwareToDto)
+                    .map(ISoftwareMapper.INSTANCE::mapSoftwareToDto)
                     .or(() -> {
                         log.error("██ No software found.");
                         return Optional.empty();
@@ -40,9 +39,9 @@ public class SoftwareService {
     @Transactional
     public Optional<SoftwareDto> updateSoftware(SoftwareDto softwareDto) {
         try {
-            Software software = iSoftwareMapper.mapSoftwareDtoToSoftware(softwareDto);
+            Software software = ISoftwareMapper.INSTANCE.mapSoftwareDtoToSoftware(softwareDto);
             Software updatedSoftware = softwareRepository.save(software);
-            return Optional.ofNullable(iSoftwareMapper.mapSoftwareToDto(updatedSoftware));
+            return Optional.ofNullable(ISoftwareMapper.INSTANCE.mapSoftwareToDto(updatedSoftware));
         } catch (Exception e) {
             log.error("██ Error updating software : {}", e.getMessage(), e);
             return Optional.empty();

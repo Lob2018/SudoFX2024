@@ -33,8 +33,7 @@ import static fr.softsf.sudokufx.utils.MyEnums.Urls.*;
 public class VersionService {
 
     private static final ObjectMapper OBJECT_MAPPER = new ObjectMapper();
-    private static final JVMApplicationProperties jvmApplicationProperties = JVMApplicationProperties.INSTANCE;
-    private static final String CURRENT_VERSION = jvmApplicationProperties.getAppVersion().isEmpty() ? "" : jvmApplicationProperties.getAppVersion().substring(1);
+    private static final String CURRENT_VERSION = JVMApplicationProperties.INSTANCE.getAppVersion().isEmpty() ? "" : JVMApplicationProperties.INSTANCE.getAppVersion().substring(1);
     private final HttpClient httpClient;
 
     /**

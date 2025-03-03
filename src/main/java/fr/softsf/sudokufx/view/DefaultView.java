@@ -87,7 +87,7 @@ public final class DefaultView  implements IMainStageView, ISceneProvider {
     @FXML
     private void onHelloButtonClick(ActionEvent event) {
 
-        switch (SecureRandomGenerator.nextInt(3)) {
+        switch (SecureRandomGenerator.INSTANCE.nextInt(3)) {
             case 0 -> toaster.addToastWithDuration("INFO 🔹 Work in progress... 🔹", "", MyEnums.ToastLevels.INFO, 6000);
             case 1 -> toaster.addToast("WARN", "", MyEnums.ToastLevels.WARN);
             default -> toaster.addToast(

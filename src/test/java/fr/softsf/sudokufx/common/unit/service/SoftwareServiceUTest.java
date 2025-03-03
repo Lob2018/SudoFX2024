@@ -23,7 +23,6 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 @ExtendWith(MockitoExtension.class)
 class SoftwareServiceUTest {
 
-    private static final ISoftwareMapper iSoftwareMapper = ISoftwareMapper.INSTANCE;
     private final String currentVersion = "1.0.0";
     private final String lastVersion = "1.0.1";
     @InjectMocks
@@ -77,7 +76,7 @@ class SoftwareServiceUTest {
         software.setCurrentversion(lastVersion);
         software.setLastversion("1.0.2");
         software.setUpdatedat(LocalDateTime.now());
-        SoftwareDto softwareDto = iSoftwareMapper.mapSoftwareToDto(software);
+        SoftwareDto softwareDto = ISoftwareMapper.INSTANCE.mapSoftwareToDto(software);
         Optional<SoftwareDto> softwareDtoUpdated = softwareService.updateSoftware(softwareDto);
         assertTrue(softwareDtoUpdated.isPresent());
         assertThat(softwareDtoUpdated.get().currentversion())
@@ -91,7 +90,7 @@ class SoftwareServiceUTest {
         software.setCurrentversion(lastVersion);
         software.setLastversion("1.0.2");
         software.setUpdatedat(LocalDateTime.now());
-        SoftwareDto softwareDto = iSoftwareMapper.mapSoftwareToDto(software);
+        SoftwareDto softwareDto = ISoftwareMapper.INSTANCE.mapSoftwareToDto(software);
         Optional<SoftwareDto> softwareDtoUpdated = softwareService.updateSoftware(softwareDto);
         assertFalse(softwareDtoUpdated.isPresent());
     }

@@ -46,7 +46,6 @@ public final class CrashScreenView implements IMainStageView, ISceneProvider {
     private static final IOsFolderFactory iOsFolderFactory = new OsFolderFactoryManager().iOsFolderFactory();
     private static final IFileSystem iFileSystem = new FileSystemManager();
     private static final double FADE_IN_IN_SECONDS_AFTER_SPLASHSCREEN = 0.5;
-    private static final JVMApplicationProperties jvmApplicationProperties = JVMApplicationProperties.INSTANCE;
 
     private final Stage crashscreenStage = new Stage();
     private final DropShadow dropShadow = new DropShadow();
@@ -145,7 +144,7 @@ public final class CrashScreenView implements IMainStageView, ISceneProvider {
         dropShadow.setRadius(crashScreenFontSize / 2);
         dropShadow.setOffsetX(crashScreenFontSize / 8);
         dropShadow.setOffsetY(crashScreenFontSize / 8);
-        crashscreenvboxTophboxNamelabel.setText(jvmApplicationProperties.getAppName());
+        crashscreenvboxTophboxNamelabel.setText(JVMApplicationProperties.INSTANCE.getAppName());
         crashscreenvboxTophboxNamelabel.setTextFill(crashDefaultFontColor);
         setCrashscreenvboxTophboxLogosudosvg();
         crashscreenvboxCenterhboxLabel.setText(I18n.getValue("crashscreen.message"));
@@ -158,7 +157,7 @@ public final class CrashScreenView implements IMainStageView, ISceneProvider {
         buttonClose.setText(I18n.getValue("crashscreen.close"));
         crashscreenvboxCenterhboxHbox.setSpacing(crashScreenFontSize);
         crashscreenvboxBottomhboxYearlabel.setText(Calendar.getInstance().get(Calendar.YEAR) + "");
-        crashscreenvboxBottomhboxVersionlabel.setText(jvmApplicationProperties.getAppVersion());
+        crashscreenvboxBottomhboxVersionlabel.setText(JVMApplicationProperties.INSTANCE.getAppVersion());
         crashscreenvboxBottomhboxYearlabel.setTextFill(crashDefaultFontColor);
         crashscreenvboxBottomhboxVersionlabel.setTextFill(crashDefaultFontColor);
     }

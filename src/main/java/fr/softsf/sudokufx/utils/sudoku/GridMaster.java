@@ -27,6 +27,7 @@ final class GridMaster implements IGridMaster {
     private static final int MOYEN_MOY_CACHEES = (MOYEN_MIN_CACHEES + MOYEN_MAX_CACHEES) / 2;
     private static final int DIFFICILE_MAX_CACHEES = 59;
     private static final int DIFFICILE_MOY_CACHEES = (MOYEN_MAX_CACHEES + DIFFICILE_MAX_CACHEES) / 2;
+
     // Possibilités (théorique 0 à 41391, pratique 4800 à 40000) de la grille en fonction du niveau
     @Getter
     private int moyenMinPossibilites = 16533;
@@ -281,7 +282,7 @@ final class GridMaster implements IGridMaster {
         Set<Integer> set = new HashSet<>();
         nombreDeCasesACacher = Math.min(nombreDeCasesACacher, NOMBRE_CASES);
         while (set.size() < nombreDeCasesACacher) {
-            int valeur = SecureRandomGenerator.nextInt(NOMBRE_CASES);
+            int valeur = SecureRandomGenerator.INSTANCE.nextInt(NOMBRE_CASES);
             if (set.add(valeur)) {
                 grilleAResoudre[valeur] = 0;
             }
@@ -296,7 +297,7 @@ final class GridMaster implements IGridMaster {
      * @return Un entier aléatoire compris entre minInclus (inclus) et maxExclus (exclus).
      */
     private int nombreAleatoire(final int minInclus, final int maxExclus) {
-        return SecureRandomGenerator.nextInt(minInclus, maxExclus);
+        return SecureRandomGenerator.INSTANCE.nextInt(minInclus, maxExclus);
     }
 
     /**
@@ -338,7 +339,7 @@ final class GridMaster implements IGridMaster {
     private int choisirValeurAleatoire(final int possibilitesDeLaCase) {
         int nombrePossibilites = compterBits(possibilitesDeLaCase);
         // Génère un index aléatoire parmi les possibilités
-        int choix = SecureRandomGenerator.nextInt(nombrePossibilites);
+        int choix = SecureRandomGenerator.INSTANCE.nextInt(nombrePossibilites);
         // Parcourt les bits de possibilitesDeLaCase
         for (int i = 0; i < DIMENSION; i++) {
             // Vérifie si le bit i est à 1 (donc si i+1 est une possibilité)

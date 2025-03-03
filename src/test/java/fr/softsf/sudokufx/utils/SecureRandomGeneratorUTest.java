@@ -29,7 +29,7 @@ class SecureRandomGeneratorUTest {
     @Test
     void givenNegativeBound_whenNextInt_thenErrorLogged() {
         assertThrows(IllegalArgumentException.class, () -> {
-            SecureRandomGenerator.nextInt(-1);
+            SecureRandomGenerator.INSTANCE.nextInt(-1);
         }, "The nextInt bound must be positive");
         assert (logWatcher.list.getFirst().getFormattedMessage()).contains("██ Exception caught from nextInt(bound) :");
     }
@@ -37,7 +37,7 @@ class SecureRandomGeneratorUTest {
     @Test
     void givenOriginEqualsBound_whenNextInt_thenErrorLogged() {
         assertThrows(IllegalArgumentException.class, () -> {
-            SecureRandomGenerator.nextInt(1, 1);
+            SecureRandomGenerator.INSTANCE.nextInt(1, 1);
         }, "The nextInt origin must be less than bound");
         assert (logWatcher.list.getFirst().getFormattedMessage()).contains("██ Exception caught from nextInt(origin,bound) :");
     }
@@ -45,7 +45,7 @@ class SecureRandomGeneratorUTest {
     @Test
     void givenOriginIsSuperiorBound_whenNextInt_thenErrorLogged() {
         assertThrows(IllegalArgumentException.class, () -> {
-            SecureRandomGenerator.nextInt(2, 1);
+            SecureRandomGenerator.INSTANCE.nextInt(2, 1);
         }, "The nextInt origin must be less than bound");
         assert (logWatcher.list.getFirst().getFormattedMessage()).contains("██ Exception caught from nextInt(origin,bound) :");
     }
