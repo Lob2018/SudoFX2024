@@ -4,11 +4,13 @@ import java.util.Locale;
 import java.util.ResourceBundle;
 
 /**
- * Utility class for internationalization (i18n) support. This class manages
+ * Utility enum for internationalization (i18n) support. This class manages
  * language resources and provides methods to switch between languages and
  * retrieve localized strings.
  */
-public final class I18n {
+public enum I18n {
+
+    INSTANCE;
 
     private static final Locale LOCALE_FR = Locale.of("fr", "FR");
     private static final Locale LOCALE_EN = Locale.of("en", "US");
@@ -18,19 +20,14 @@ public final class I18n {
     private static final ResourceBundle ENGLISH_BUNDLE = ResourceBundle.getBundle(I_18_N_PATH, LOCALE_EN);
 
     /**
-     * Private constructor to prevent instantiation of this utility class.
-     */
-    private I18n() {
-    }
-
-    /**
-     * Sets the current language for the application.
+     * Sets the application's current language.
      *
-     * @param i18n The String representation of the language ("EN" for English,
-     *             or any other value for French)
+     * @param i18n The language code ("EN" for English, any other value for French).
+     * @return The singleton instance of I18n.
      */
-    public static void setLocaleBundle(final String i18n) {
-        bundle = "EN".equals(i18n) ? ENGLISH_BUNDLE : FRENCH_BUNDLE;
+    public static I18n setLocaleBundle(final String i18n) {
+        I18n.bundle = "EN".equals(i18n) ? ENGLISH_BUNDLE : FRENCH_BUNDLE;
+        return INSTANCE;
     }
 
     /**
@@ -41,7 +38,7 @@ public final class I18n {
      * @throws java.util.MissingResourceException if the key is not found in the
      *                                            resource bundle
      */
-    public static String getValue(final String key) {
+    public String getValue(final String key) {
         return bundle.getString(key);
     }
 
@@ -51,7 +48,7 @@ public final class I18n {
      * @return The language code as a String (e.g., "fr" for French, "en" for
      * English)
      */
-    public static String getLanguage() {
+    public String getLanguage() {
         Locale locale = bundle.getLocale();
         return locale.getLanguage();
     }
@@ -62,7 +59,7 @@ public final class I18n {
      *
      * @return The language code as a String.
      */
-    public static String getHostEnvironmentLanguageCode() {
+    public String getHostEnvironmentLanguageCode() {
         return Locale.getDefault().getLanguage();
     }
 
@@ -71,7 +68,7 @@ public final class I18n {
      * If the host environment's language is French ("fr"), uses the default locale bundle.
      * Otherwise, uses the English locale bundle ("EN").
      */
-    public static void setLanguageBasedOnTheHostEnvironment() {
+    public void setLanguageBasedOnTheHostEnvironment() {
         setLocaleBundle("fr".equals(getHostEnvironmentLanguageCode()) ? "" : "EN");
     }
 

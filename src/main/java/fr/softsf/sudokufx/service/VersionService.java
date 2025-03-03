@@ -71,7 +71,7 @@ public class VersionService {
             @Override
             protected Boolean call() {
                 try {
-                    updateMessage(I18n.getValue("githubrepositoryversion.checking") + MyDateTime.getFormattedCurrentTime() + ")");
+                    updateMessage(I18n.INSTANCE.getValue("githubrepositoryversion.checking") + MyDateTime.getFormattedCurrentTime() + ")");
                     HttpRequest request = HttpRequest.newBuilder()
                             .uri(URI.create(GITHUB_API_REPOSITORY_TAGS_URL.getUrl()))
                             .header("Accept", "application/json")
@@ -81,24 +81,24 @@ public class VersionService {
                     HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
                     if (response.statusCode() != 200) {
                         log.error("██ GitHub API returned non 200 status code: {}", response.statusCode());
-                        updateMessage(I18n.getValue("githubrepositoryversion.error.statuscode"));
+                        updateMessage(I18n.INSTANCE.getValue("githubrepositoryversion.error.statuscode"));
                         return true;
                     }
-                    updateMessage(I18n.getValue("githubrepositoryversion.checked") + MyDateTime.getFormattedCurrentTime() + ")");
+                    updateMessage(I18n.INSTANCE.getValue("githubrepositoryversion.checked") + MyDateTime.getFormattedCurrentTime() + ")");
                     return parseResponse(response.body());
                 } catch (HttpTimeoutException ex) {
                     log.warn("▓▓ Timeout while checking GitHub version");
-                    updateMessage(I18n.getValue("githubrepositoryversion.warn.timeout"));
+                    updateMessage(I18n.INSTANCE.getValue("githubrepositoryversion.warn.timeout"));
                 } catch (InterruptedException ex) {
                     log.warn("▓▓ GitHub version check was interrupted", ex);
-                    updateMessage(I18n.getValue("githubrepositoryversion.warn.interrupted"));
+                    updateMessage(I18n.INSTANCE.getValue("githubrepositoryversion.warn.interrupted"));
                     Thread.currentThread().interrupt();
                 } catch (IOException ex) {
                     log.error("██ Network error while retrieving GitHub version: {}", ex.getMessage(), ex);
-                    updateMessage(I18n.getValue("githubrepositoryversion.error.network"));
+                    updateMessage(I18n.INSTANCE.getValue("githubrepositoryversion.error.network"));
                 } catch (Exception ex) {
                     log.error("██ Unexpected exception retrieving GitHub version: {}", ex.getMessage(), ex);
-                    updateMessage(I18n.getValue("githubrepositoryversion.error.unexpected"));
+                    updateMessage(I18n.INSTANCE.getValue("githubrepositoryversion.error.unexpected"));
                 }
                 return true;
             }

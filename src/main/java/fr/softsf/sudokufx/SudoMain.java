@@ -104,7 +104,7 @@ public class SudoMain extends Application {
     @Override
     public void start(final Stage splashScreenStage) {
         try {
-            I18n.setLanguageBasedOnTheHostEnvironment();
+            I18n.INSTANCE.setLanguageBasedOnTheHostEnvironment();
             isplashScreenView = new SplashScreenView(splashScreenStage);
             initScene(splashScreenStage);
             Task<Void> springContextTask = createSpringContextTask();

@@ -132,7 +132,7 @@ public final class SplashScreenView implements ISplashScreenView {
      * @return A string message indicating either a loading or optimizing state.
      */
     private String getLoadingOrOptimizingMessage() {
-        return JVMApplicationProperties.INSTANCE.isSpringContextExitOnRefresh() ? I18n.getValue("splashscreen.optimizing") : I18n.getValue("splashscreen.loading");
+        return JVMApplicationProperties.INSTANCE.isSpringContextExitOnRefresh() ? I18n.INSTANCE.getValue("splashscreen.optimizing") : I18n.INSTANCE.getValue("splashscreen.loading");
     }
 
     /**

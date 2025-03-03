@@ -147,14 +147,14 @@ public final class CrashScreenView implements IMainStageView, ISceneProvider {
         crashscreenvboxTophboxNamelabel.setText(JVMApplicationProperties.INSTANCE.getAppName());
         crashscreenvboxTophboxNamelabel.setTextFill(crashDefaultFontColor);
         setCrashscreenvboxTophboxLogosudosvg();
-        crashscreenvboxCenterhboxLabel.setText(I18n.getValue("crashscreen.message"));
+        crashscreenvboxCenterhboxLabel.setText(I18n.INSTANCE.getValue("crashscreen.message"));
         crashscreenvboxCenterhboxLabel.setWrapText(true);
         crashscreenvboxCenterhboxLabel.setTextFill(crashDefaultFontColor);
-        crashscreenvboxCenterhboxLabel2.setText(I18n.getValue("crashscreen.extramessage") + "\n" + iOsFolderFactory.getOsDataFolderPath());
+        crashscreenvboxCenterhboxLabel2.setText(I18n.INSTANCE.getValue("crashscreen.extramessage") + "\n" + iOsFolderFactory.getOsDataFolderPath());
         crashscreenvboxCenterhboxLabel2.setWrapText(true);
         crashscreenvboxCenterhboxLabel2.setTextFill(crashDefaultFontColor);
-        buttonReset.setText(I18n.getValue("crashscreen.reset"));
-        buttonClose.setText(I18n.getValue("crashscreen.close"));
+        buttonReset.setText(I18n.INSTANCE.getValue("crashscreen.reset"));
+        buttonClose.setText(I18n.INSTANCE.getValue("crashscreen.close"));
         crashscreenvboxCenterhboxHbox.setSpacing(crashScreenFontSize);
         crashscreenvboxBottomhboxYearlabel.setText(Calendar.getInstance().get(Calendar.YEAR) + "");
         crashscreenvboxBottomhboxVersionlabel.setText(JVMApplicationProperties.INSTANCE.getAppVersion());

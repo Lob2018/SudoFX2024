@@ -117,9 +117,9 @@ public final class ToasterVBox extends VBox {
      */
     private String getToastInfo(MyEnums.ToastLevels toastLevel) {
         return switch (toastLevel) {
-            case WARN -> I18n.getValue("toastlevel.warn");
-            case ERROR -> I18n.getValue("toastlevel.error");
-            default -> I18n.getValue("toastlevel.info");
+            case WARN -> I18n.INSTANCE.getValue("toastlevel.warn");
+            case ERROR -> I18n.INSTANCE.getValue("toastlevel.error");
+            default -> I18n.INSTANCE.getValue("toastlevel.info");
         };
     }
 
