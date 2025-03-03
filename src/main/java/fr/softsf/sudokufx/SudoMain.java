@@ -1,6 +1,7 @@
 package fr.softsf.sudokufx;
 
 import com.gluonhq.ignite.spring.SpringContext;
+import fr.softsf.sudokufx.exception.ExceptionTools;
 import fr.softsf.sudokufx.interfaces.IMainStageView;
 import fr.softsf.sudokufx.interfaces.ISplashScreenView;
 import fr.softsf.sudokufx.service.FxmlService;
@@ -24,8 +25,6 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.scheduling.annotation.EnableAsync;
 
 import java.sql.SQLInvalidAuthorizationSpecException;
-
-import static fr.softsf.sudokufx.exception.ExceptionTools.getSQLInvalidAuthorizationSpecException;
 
 /**
  * Main entry point for the Sudo application, responsible for initializing
@@ -170,7 +169,7 @@ public class SudoMain extends Application {
     private void handleSpringContextTaskFailed(Throwable throwable) {
         initializeFxmlService();
         log.error("██ Error in splash screen initialization thread : {}", throwable.getMessage(), throwable);
-        SQLInvalidAuthorizationSpecException sqlInvalidAuthorizationSpecException = getSQLInvalidAuthorizationSpecException(throwable);
+        SQLInvalidAuthorizationSpecException sqlInvalidAuthorizationSpecException = ExceptionTools.INSTANCE.getSQLInvalidAuthorizationSpecException(throwable);
         if (sqlInvalidAuthorizationSpecException == null) {
             Platform.exit();
         } else {
