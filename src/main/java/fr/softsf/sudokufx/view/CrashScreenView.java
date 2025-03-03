@@ -4,7 +4,7 @@ import fr.softsf.sudokufx.SudoMain;
 import fr.softsf.sudokufx.configuration.os.IOsFolderFactory;
 import fr.softsf.sudokufx.interfaces.*;
 import fr.softsf.sudokufx.utils.FileSystemManager;
-import fr.softsf.sudokufx.utils.I18n;
+import fr.softsf.sudokufx.enums.I18n;
 import fr.softsf.sudokufx.configuration.JVMApplicationProperties;
 import fr.softsf.sudokufx.configuration.os.OsFolderFactoryManager;
 import fr.softsf.sudokufx.utils.IFileSystem;

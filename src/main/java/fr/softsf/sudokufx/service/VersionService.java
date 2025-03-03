@@ -4,7 +4,7 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import fr.softsf.sudokufx.configuration.JVMApplicationProperties;
 import fr.softsf.sudokufx.dto.github.TagDto;
-import fr.softsf.sudokufx.utils.I18n;
+import fr.softsf.sudokufx.enums.I18n;
 import fr.softsf.sudokufx.utils.MyDateTime;
 import fr.softsf.sudokufx.utils.MyRegex;
 import javafx.concurrent.Task;

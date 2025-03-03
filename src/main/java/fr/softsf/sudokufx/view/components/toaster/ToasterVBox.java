@@ -1,6 +1,6 @@
 package fr.softsf.sudokufx.view.components.toaster;
 
-import fr.softsf.sudokufx.utils.I18n;
+import fr.softsf.sudokufx.enums.I18n;
 import fr.softsf.sudokufx.utils.MyEnums;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;

@@ -1,6 +1,6 @@
 package fr.softsf.sudokufx.utils.sudoku;
 
-import fr.softsf.sudokufx.utils.SecureRandomGenerator;
+import fr.softsf.sudokufx.enums.SecureRandomGenerator;
 import lombok.Getter;
 import org.springframework.stereotype.Component;
 

@@ -1,4 +1,6 @@
-package fr.softsf.sudokufx.utils;
+package fr.softsf.sudokufx.enums;
+
+import fr.softsf.sudokufx.utils.MyEnums;
 
 import java.util.Locale;
 import java.util.ResourceBundle;

@@ -1,6 +1,6 @@
 package fr.softsf.sudokufx.common.unit.utils;
 
-import fr.softsf.sudokufx.utils.I18n;
+import fr.softsf.sudokufx.enums.I18n;
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
