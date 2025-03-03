@@ -15,7 +15,7 @@ class OsFolderInitializerUTest {
         File mockFolder = mock(File.class);
         when(mockFolder.exists()).thenReturn(false);
         when(mockFolder.mkdirs()).thenReturn(true);
-        OsFolderInitializer.createFolder(mockFolder);
+        OsFolderInitializer.INSTANCE.createFolder(mockFolder);
         verify(mockFolder).exists();
         verify(mockFolder).mkdirs();
     }
@@ -26,7 +26,7 @@ class OsFolderInitializerUTest {
         when(mockFolder.exists()).thenReturn(false);
         when(mockFolder.mkdirs()).thenReturn(false);
         RuntimeException exception = assertThrows(RuntimeException.class, () -> {
-            OsFolderInitializer.createFolder(mockFolder);
+            OsFolderInitializer.INSTANCE.createFolder(mockFolder);
         });
         assertEquals("Error when creating needed folder: " + mockFolder.getPath(), exception.getMessage());
     }
@@ -35,7 +35,7 @@ class OsFolderInitializerUTest {
     void givenExistingFolder_whenCreateFolder_thenNoCreationAttempted() {
         File mockFolder = mock(File.class);
         when(mockFolder.exists()).thenReturn(true);
-        OsFolderInitializer.createFolder(mockFolder);
+        OsFolderInitializer.INSTANCE.createFolder(mockFolder);
         verify(mockFolder).exists();
         verify(mockFolder, never()).mkdirs();
     }
@@ -46,7 +46,7 @@ class OsFolderInitializerUTest {
         when(mockFolder.exists()).thenReturn(false);
         when(mockFolder.mkdirs()).thenThrow(new SecurityException("Security violation"));
         RuntimeException exception = assertThrows(RuntimeException.class, () -> {
-            OsFolderInitializer.createFolder(mockFolder);
+            OsFolderInitializer.INSTANCE.createFolder(mockFolder);
         });
         assertEquals("Security error when creating needed folder: " + mockFolder.getPath(), exception.getMessage());
     }
@@ -57,7 +57,7 @@ class OsFolderInitializerUTest {
         when(mockFolder.exists()).thenReturn(false);
         when(mockFolder.mkdirs()).thenThrow(new RuntimeException("General error"));
         RuntimeException exception = assertThrows(RuntimeException.class, () -> {
-            OsFolderInitializer.createFolder(mockFolder);
+            OsFolderInitializer.INSTANCE.createFolder(mockFolder);
         });
         assertEquals("Error when creating needed folder: " + mockFolder.getPath(), exception.getMessage());
     }

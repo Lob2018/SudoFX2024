@@ -5,20 +5,16 @@ import lombok.extern.slf4j.Slf4j;
 import java.io.File;
 
 /**
- * The FolderInitializer class is responsible for creating the necessary folders
+ * Utility enum responsible for creating the necessary folders
  * for the application to function properly. It provides methods to create
  * data and log folders at specified paths, ensuring that these essential
  * directories exist before the application proceeds.
  * This utility class is designed to be used statically and cannot be instantiated.
  */
 @Slf4j
-final class OsFolderInitializer {
+public enum OsFolderInitializer {
 
-    /**
-     * Private constructor to prevent instantiation of this utility class.
-     */
-    private OsFolderInitializer() {
-    }
+    INSTANCE;
 
     /**
      * Creates folders for data and logs. This method attempts to create the specified
@@ -28,7 +24,7 @@ final class OsFolderInitializer {
      * @param logsFolderPath The path to the logs folder to be created.
      * @return An array of strings containing the paths of the created folders.
      */
-    static String[] initializeFolders(String dataFolderPath, String logsFolderPath) {
+    String[] initializeFolders(String dataFolderPath, String logsFolderPath) {
         createFolder(new File(dataFolderPath));
         createFolder(new File(logsFolderPath));
         return new String[]{dataFolderPath, logsFolderPath};
@@ -39,7 +35,7 @@ final class OsFolderInitializer {
      *
      * @param folder The folder that should be created.
      */
-    static void createFolder(final File folder) {
+    void createFolder(final File folder) {
         try {
             if (!folder.exists()) {
                 if (!folder.mkdirs()) {

@@ -19,7 +19,7 @@ final class LinuxFolderFactory implements IOsFolderFactory {
      * @param logsFolderPath The intended path for the logs folder
      */
     public LinuxFolderFactory(String dataFolderPath, String logsFolderPath) {
-        final String[] folders = OsFolderInitializer.initializeFolders(
+        final String[] folders = OsFolderInitializer.INSTANCE.initializeFolders(
                 dataFolderPath, logsFolderPath
         );
         dataFolderForSudoFx = folders[0];
