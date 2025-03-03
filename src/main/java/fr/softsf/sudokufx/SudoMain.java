@@ -1,11 +1,11 @@
 package fr.softsf.sudokufx;
 
 import com.gluonhq.ignite.spring.SpringContext;
-import fr.softsf.sudokufx.exception.ExceptionTools;
+import fr.softsf.sudokufx.exceptions.ExceptionTools;
 import fr.softsf.sudokufx.interfaces.IMainStageView;
 import fr.softsf.sudokufx.interfaces.ISplashScreenView;
 import fr.softsf.sudokufx.service.FxmlService;
-import fr.softsf.sudokufx.utils.I18n;
+import fr.softsf.sudokufx.enums.I18n;
 import fr.softsf.sudokufx.utils.MyEnums;
 import fr.softsf.sudokufx.view.SplashScreenView;
 import javafx.animation.PauseTransition;

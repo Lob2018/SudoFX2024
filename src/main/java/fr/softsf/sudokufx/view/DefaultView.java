@@ -6,7 +6,7 @@ import fr.softsf.sudokufx.interfaces.ISceneProvider;
 import fr.softsf.sudokufx.interfaces.ISplashScreenView;
 import fr.softsf.sudokufx.service.FxmlService;
 import fr.softsf.sudokufx.utils.MyEnums;
-import fr.softsf.sudokufx.utils.SecureRandomGenerator;
+import fr.softsf.sudokufx.enums.SecureRandomGenerator;
 import fr.softsf.sudokufx.view.components.toaster.ToasterVBox;
 import fr.softsf.sudokufx.viewmodel.FullMenuViewModel;
 import javafx.animation.FadeTransition;

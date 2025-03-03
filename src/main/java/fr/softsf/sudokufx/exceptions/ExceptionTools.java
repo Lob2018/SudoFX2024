@@ -1,4 +1,4 @@
-package fr.softsf.sudokufx.exception;
+package fr.softsf.sudokufx.exceptions;
 
 import java.sql.SQLInvalidAuthorizationSpecException;
 

@@ -1,4 +1,4 @@
-package fr.softsf.sudokufx.utils;
+package fr.softsf.sudokufx.enums;
 
 import lombok.extern.slf4j.Slf4j;
 

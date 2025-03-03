@@ -1,6 +1,6 @@
 package fr.softsf.sudokufx.common.unit.utils;
 
-import fr.softsf.sudokufx.exception.ExceptionTools;
+import fr.softsf.sudokufx.exceptions.ExceptionTools;
 import org.junit.jupiter.api.Test;
 
 import java.sql.SQLInvalidAuthorizationSpecException;
