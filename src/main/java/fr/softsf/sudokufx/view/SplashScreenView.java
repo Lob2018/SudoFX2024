@@ -36,7 +36,8 @@ import static javafx.scene.layout.Priority.ALWAYS;
  */
 public final class SplashScreenView implements ISplashScreenView {
 
-    public static final String FX_FONT_SIZE_0_8_EM = "-fx-font-size: 0.8em;";
+    private static final String FX_FONT_SIZE_0_8_EM = "-fx-font-size: 0.8em;";
+    private static final JVMApplicationProperties jvmApplicationProperties= JVMApplicationProperties.INSTANCE;
     private final VBox splashscreenvbox = new VBox();
     private final HBox splashScreenvboxtophbox = new HBox();
     private final Region splashscreenvboxTophboxRegionsudosvg = new Region();
@@ -97,7 +98,7 @@ public final class SplashScreenView implements ISplashScreenView {
         dropShadow.setRadius(splashScreenFontSize / 2);
         dropShadow.setOffsetX(splashScreenFontSize / 8);
         dropShadow.setOffsetY(splashScreenFontSize / 8);
-        splashscreenvboxTophboxNamelabel.setText(JVMApplicationProperties.getAppName());
+        splashscreenvboxTophboxNamelabel.setText(jvmApplicationProperties.getAppName());
         splashscreenvboxTophboxNamelabel.setTextFill(splashDefaultFontColor);
         setSplashscreenvboxTophboxLogosudosvg();
         splashscreenvboxCenterhbox.setSpacing(splashScreenFontSize);
@@ -107,7 +108,7 @@ public final class SplashScreenView implements ISplashScreenView {
         splashscreenvboxBottomhboxYearlabel.setTextFill(splashDefaultFontColor);
         splashscreenvboxBottomhboxHboxLoaderlabel.setText(getLoadingOrOptimizingMessage());
         splashscreenvboxBottomhboxHboxLoaderlabel.setTextFill(splashDefaultFontColor);
-        splashscreenvboxBottomhboxVersionlabel.setText(JVMApplicationProperties.getAppVersion());
+        splashscreenvboxBottomhboxVersionlabel.setText(jvmApplicationProperties.getAppVersion());
         splashscreenvboxBottomhboxVersionlabel.setTextFill(splashDefaultFontColor);
         setSplashscreenvboxCenterhboxLogosoft64textsvg();
     }
@@ -132,7 +133,7 @@ public final class SplashScreenView implements ISplashScreenView {
      * @return A string message indicating either a loading or optimizing state.
      */
     private String getLoadingOrOptimizingMessage() {
-        return JVMApplicationProperties.isSpringContextExitOnRefresh() ? I18n.getValue("splashscreen.optimizing") : I18n.getValue("splashscreen.loading");
+        return jvmApplicationProperties.isSpringContextExitOnRefresh() ? I18n.getValue("splashscreen.optimizing") : I18n.getValue("splashscreen.loading");
     }
 
     /**

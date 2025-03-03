@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ExceptionToolsUTest {
 
-    private final ExceptionTools exceptionTools = ExceptionTools.INSTANCE;
+    private static final ExceptionTools exceptionTools = ExceptionTools.INSTANCE;
 
     @Test
     void givenThrowable_whenGetSQLInvalidAuthorizationSpecException_thenReturnsSQLInvalidAuthorizationSpecException() {

@@ -26,6 +26,7 @@ import static org.mockito.Mockito.verify;
 @ExtendWith(MockitoExtension.class)
 class MyLogbackConfigUTest {
 
+    private static final JVMApplicationProperties jvmApplicationProperties= JVMApplicationProperties.INSTANCE;
     private final IOsFolderFactory iCurrentIOsFolderFactory;
     private final MyLogbackConfig myLogbackConfig;
     private ListAppender<ILoggingEvent> logWatcher;
@@ -74,17 +75,17 @@ class MyLogbackConfigUTest {
 
     @Test
     void givenSpringContextOnRefresh_whenPrintLogEntryMessage_thenCorrectMessageLogged() {
-        JVMApplicationProperties.setOnRefreshSpringContextExitForTests();
+        jvmApplicationProperties.setOnRefreshSpringContextExitForTests();
         myLogbackConfig.printLogEntryMessage();
-        assertTrue(JVMApplicationProperties.isSpringContextExitOnRefresh());
+        assertTrue(jvmApplicationProperties.isSpringContextExitOnRefresh());
         assert (logWatcher.list.getLast().getFormattedMessage()).contains(OPTIMIZING.getLogBackMessage());
     }
 
     @Test
     void givenInitSpringContextExit_whenPrintLogEntryMessage_thenCorrectMessageLogged() {
-        JVMApplicationProperties.setInitSpringContextExitForTests();
+        jvmApplicationProperties.setInitSpringContextExitForTests();
         myLogbackConfig.printLogEntryMessage();
-        assertFalse(JVMApplicationProperties.isSpringContextExitOnRefresh());
+        assertFalse(jvmApplicationProperties.isSpringContextExitOnRefresh());
         assert (logWatcher.list.getLast().getFormattedMessage()).contains(ASCII_LOGO.getLogBackMessage());
     }
 

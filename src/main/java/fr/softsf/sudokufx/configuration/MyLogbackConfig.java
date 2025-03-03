@@ -58,7 +58,7 @@ public class MyLogbackConfig {
      */
     public void printLogEntryMessage() {
         log.info(ASCII_LOGO.getLogBackMessage());
-        if (JVMApplicationProperties.isSpringContextExitOnRefresh())
+        if (JVMApplicationProperties.INSTANCE.isSpringContextExitOnRefresh())
             log.info(OPTIMIZING.getLogBackMessage());
     }
 

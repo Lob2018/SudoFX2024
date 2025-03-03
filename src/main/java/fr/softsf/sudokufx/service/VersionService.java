@@ -33,8 +33,9 @@ import static fr.softsf.sudokufx.utils.MyEnums.Urls.*;
 public class VersionService {
 
     private static final ObjectMapper OBJECT_MAPPER = new ObjectMapper();
+    private static final JVMApplicationProperties jvmApplicationProperties = JVMApplicationProperties.INSTANCE;
+    private static final String CURRENT_VERSION = jvmApplicationProperties.getAppVersion().isEmpty() ? "" : jvmApplicationProperties.getAppVersion().substring(1);
     private final HttpClient httpClient;
-    private final String currentVersion = JVMApplicationProperties.getAppVersion().isEmpty() ? "" : JVMApplicationProperties.getAppVersion().substring(1);
 
     /**
      * Initializes the VersionService with the provided HttpClient.
@@ -131,8 +132,8 @@ public class VersionService {
                 log.warn("▓▓ GitHub version '{}' does not match expected semantic versioning format (X.Y.Z).", lastVersion);
                 return true;
             }
-            boolean isLatest = compareVersions(currentVersion, lastVersion) >= 0;
-            log.info("▓▓ GitHub version check: currentVersion={}, lastVersion={}, result={}", currentVersion, lastVersion, isLatest);
+            boolean isLatest = compareVersions(CURRENT_VERSION, lastVersion) >= 0;
+            log.info("▓▓ GitHub version check: currentVersion={}, lastVersion={}, result={}", CURRENT_VERSION, lastVersion, isLatest);
             return isLatest;
         } catch (Exception e) {
             log.error("██ Error parsing GitHub API response: {}", e.getMessage(), e);
