@@ -69,4 +69,19 @@ class I18nUTest {
         String testFR = I18n.INSTANCE.getValue("test");
         assertEquals("testFR", testFR);
     }
+
+    @Test
+    @Order(7)
+    void givenNullKey_whenGetValue_thenReturnsErrorString() {
+        String result = I18n.INSTANCE.getValue(null);
+        assertEquals("???null???", result);
+    }
+
+    @Test
+    @Order(8)
+    void givenMissingKey_whenGetValue_thenReturnsMissingKeyString() {
+        String result = I18n.INSTANCE.getValue("missingKey");
+        assertEquals("???missing:missingKey???", result);
+    }
+
 }
