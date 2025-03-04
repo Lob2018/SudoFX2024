@@ -34,10 +34,11 @@ import static fr.softsf.sudokufx.enums.Urls.GITHUB_REPOSITORY_RELEASES_URL;
 @Service
 public class VersionService {
 
-    private static final ObjectMapper OBJECT_MAPPER = new ObjectMapper();
     private static final String CURRENT_VERSION = JVMApplicationProperties.INSTANCE.getAppVersion().isEmpty() ? "" : JVMApplicationProperties.INSTANCE.getAppVersion().substring(1);
     private final HttpClient httpClient;
     private final MyDateTime myDateTime;
+    private final ObjectMapper objectMapper;
+
 
     /**
      * Initializes the VersionService with the provided HttpClient.
@@ -47,9 +48,10 @@ public class VersionService {
      * @param myDateTime the MyDateTime used to date and time operations.
      */
     @Autowired
-    public VersionService(HttpClient httpClient, MyDateTime myDateTime) {
+    public VersionService(HttpClient httpClient, MyDateTime myDateTime, ObjectMapper objectMapper) {
         this.httpClient = httpClient;
         this.myDateTime = myDateTime;
+        this.objectMapper=objectMapper;
     }
 
     /**
@@ -120,7 +122,7 @@ public class VersionService {
      */
     private boolean parseResponse(String json) {
         try {
-            List<TagDto> list = OBJECT_MAPPER.readValue(json, new TypeReference<>() {
+            List<TagDto> list = objectMapper.readValue(json, new TypeReference<>() {
             });
             String tagName = list.stream()
                     .findFirst()

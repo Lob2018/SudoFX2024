@@ -2,6 +2,7 @@ package fr.softsf.sudokufx.service;
 
 import ch.qos.logback.classic.spi.ILoggingEvent;
 import ch.qos.logback.core.read.ListAppender;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import fr.softsf.sudokufx.utils.MyDateTime;
 import javafx.concurrent.Task;
 import org.junit.jupiter.api.AfterEach;
@@ -13,8 +14,8 @@ import org.junit.jupiter.params.provider.ValueSource;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
-import org.mockito.junit.jupiter.MockitoExtension;
 import org.slf4j.LoggerFactory;
+import org.testfx.framework.junit5.ApplicationExtension;
 
 import java.io.IOException;
 import java.net.http.HttpClient;
@@ -26,7 +27,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
 
-@ExtendWith(MockitoExtension.class)
+@ExtendWith(ApplicationExtension.class)
 class VersionServiceITest {
     private static final String GITHUB_LINK_TO_REPOSITORY_RELEASES = "https://github.com/Lob2018/SudokuFX/releases";
     private static final String JSON = """
@@ -56,6 +57,7 @@ class VersionServiceITest {
     private AutoCloseable closeable;
     private ListAppender<ILoggingEvent> logWatcher;
 
+    private final ObjectMapper objectMapper = new ObjectMapper();
     @Mock
     private HttpClient mockHttpClient;
     @Mock
@@ -80,7 +82,7 @@ class VersionServiceITest {
 
     @Test
     void givenVersionService_whenGetGitHubLinkToRepositoryReleases_thenCorrectLink() {
-        VersionService versionService = new VersionService(mockHttpClient, myDateTime);
+        VersionService versionService = new VersionService(mockHttpClient, myDateTime, objectMapper);
         assertEquals(GITHUB_LINK_TO_REPOSITORY_RELEASES,
                 versionService.getGitHubLinkToRepositoryReleases(),
                 "The GitHub link to repository releases must be " + GITHUB_LINK_TO_REPOSITORY_RELEASES);
@@ -92,7 +94,7 @@ class VersionServiceITest {
         when(mockResponse.body()).thenReturn("[]");
         when(mockHttpClient.send(any(HttpRequest.class), any(HttpResponse.BodyHandler.class)))
                 .thenReturn(mockResponse);
-        Task<Boolean> versionCheckTask = new VersionService(mockHttpClient, myDateTime).checkLatestVersion();
+        Task<Boolean> versionCheckTask = new VersionService(mockHttpClient, myDateTime, objectMapper).checkLatestVersion();
         versionCheckTask.run();
         boolean isLatestVersion = versionCheckTask.get();
         assertTrue(isLatestVersion);
@@ -107,7 +109,7 @@ class VersionServiceITest {
         when(mockResponse.statusCode()).thenReturn(httpStatusCode);
         when(mockHttpClient.send(any(HttpRequest.class), any(HttpResponse.BodyHandler.class)))
                 .thenReturn(mockResponse);
-        Task<Boolean> versionCheckTask = new VersionService(mockHttpClient, myDateTime).checkLatestVersion();
+        Task<Boolean> versionCheckTask = new VersionService(mockHttpClient, myDateTime, objectMapper).checkLatestVersion();
         versionCheckTask.run();
         boolean isLatestVersion = versionCheckTask.get();
         assertTrue(isLatestVersion);
@@ -124,7 +126,7 @@ class VersionServiceITest {
         when(mockResponse.body()).thenReturn(jsonResponse);
         when(mockHttpClient.send(any(HttpRequest.class), any(HttpResponse.BodyHandler.class)))
                 .thenReturn(mockResponse);
-        Task<Boolean> versionCheckTask = new VersionService(mockHttpClient, myDateTime).checkLatestVersion();
+        Task<Boolean> versionCheckTask = new VersionService(mockHttpClient, myDateTime, objectMapper).checkLatestVersion();
         versionCheckTask.run();
         boolean isLatestVersion = versionCheckTask.get();
         if (onLineVersion.equals("v2147483647.2147483647.2147483647")) {
@@ -145,7 +147,7 @@ class VersionServiceITest {
         when(mockResponse.body()).thenReturn(jsonResponse);
         when(mockHttpClient.send(any(HttpRequest.class), any(HttpResponse.BodyHandler.class)))
                 .thenReturn(mockResponse);
-        Task<Boolean> versionCheckTask = new VersionService(mockHttpClient, myDateTime).checkLatestVersion();
+        Task<Boolean> versionCheckTask = new VersionService(mockHttpClient, myDateTime, objectMapper).checkLatestVersion();
         versionCheckTask.run();
         boolean isLatestVersion = versionCheckTask.get();
         assertTrue(isLatestVersion);
