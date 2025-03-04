@@ -29,7 +29,7 @@ import lombok.extern.slf4j.Slf4j;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.Calendar;
+import java.time.Year;
 import java.util.Objects;
 
 import static fr.softsf.sudokufx.enums.Paths.DATA_FOLDER;
@@ -156,7 +156,7 @@ public final class CrashScreenView implements IMainStageView, ISceneProvider {
         buttonReset.setText(I18n.INSTANCE.getValue("crashscreen.reset"));
         buttonClose.setText(I18n.INSTANCE.getValue("crashscreen.close"));
         crashscreenvboxCenterhboxHbox.setSpacing(crashScreenFontSize);
-        crashscreenvboxBottomhboxYearlabel.setText(Calendar.getInstance().get(Calendar.YEAR) + "");
+        crashscreenvboxBottomhboxYearlabel.setText(Year.now() + "");
         crashscreenvboxBottomhboxVersionlabel.setText(JVMApplicationProperties.INSTANCE.getAppVersion());
         crashscreenvboxBottomhboxYearlabel.setTextFill(crashDefaultFontColor);
         crashscreenvboxBottomhboxVersionlabel.setTextFill(crashDefaultFontColor);

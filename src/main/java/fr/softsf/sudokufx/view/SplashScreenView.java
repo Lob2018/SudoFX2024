@@ -22,7 +22,7 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javafx.util.Duration;
 
-import java.util.Calendar;
+import java.time.Year;
 import java.util.Objects;
 
 import static fr.softsf.sudokufx.enums.Paths.LOGO_SUDO_PNG_PATH;
@@ -103,7 +103,7 @@ public final class SplashScreenView implements ISplashScreenView {
         splashscreenvboxCenterhbox.setSpacing(splashScreenFontSize);
         setSplashscreenvboxCenterhboxStackpaneLogoflowersvg();
         animateFlowerSvg();
-        splashscreenvboxBottomhboxYearlabel.setText(Calendar.getInstance().get(Calendar.YEAR) + "");
+        splashscreenvboxBottomhboxYearlabel.setText(Year.now() + "");
         splashscreenvboxBottomhboxYearlabel.setTextFill(splashDefaultFontColor);
         splashscreenvboxBottomhboxHboxLoaderlabel.setText(getLoadingOrOptimizingMessage());
         splashscreenvboxBottomhboxHboxLoaderlabel.setTextFill(splashDefaultFontColor);
