@@ -13,5 +13,6 @@ var _version_service_i_test_8java =
     [ "fr.softsf.sudokufx.service.logWatcher", "namespacefr_1_1softsf_1_1sudokufx_1_1service.html#ae44f2ce437ffb95bb2a298f7fabf98e2", null ],
     [ "fr.softsf.sudokufx.service.mockHttpClient", "namespacefr_1_1softsf_1_1sudokufx_1_1service.html#a61a86660dac8876f7088f6c0c120edc8", null ],
     [ "fr.softsf.sudokufx.service.mockResponse", "namespacefr_1_1softsf_1_1sudokufx_1_1service.html#a12341aab00f4c4f124d41930932f6104", null ],
-    [ "fr.softsf.sudokufx.service.myDateTime", "namespacefr_1_1softsf_1_1sudokufx_1_1service.html#ad2c2eb1933aa76854ea83b691b27354d", null ]
+    [ "fr.softsf.sudokufx.service.myDateTime", "namespacefr_1_1softsf_1_1sudokufx_1_1service.html#ad2c2eb1933aa76854ea83b691b27354d", null ],
+    [ "fr.softsf.sudokufx.service.objectMapper", "namespacefr_1_1softsf_1_1sudokufx_1_1service.html#a2940c49270f43502e334da4828381ccd", null ]
 ];

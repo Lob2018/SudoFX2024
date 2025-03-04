@@ -92,6 +92,7 @@ var hierarchy =
     [ "fr.softsf.sudokufx.configuration.MyLogbackConfigUTest", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_my_logback_config_u_test.html", null ],
     [ "fr.softsf.sudokufx.enums.MyRegex", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_my_regex.html", null ],
     [ "fr.softsf.sudokufx.utils.MyRegexUTest", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex_u_test.html", null ],
+    [ "fr.softsf.sudokufx.configuration.ObjectMapperConfig", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_object_mapper_config.html", null ],
     [ "fr.softsf.sudokufx.configuration.os.OsFolderFactoryManager", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_os_folder_factory_manager.html", null ],
     [ "fr.softsf.sudokufx.configuration.os.OsFolderFactoryManagerUTest", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_os_folder_factory_manager_u_test.html", null ],
     [ "fr.softsf.sudokufx.configuration.os.OsFolderInitializer", "enumfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_os_folder_initializer.html", null ],

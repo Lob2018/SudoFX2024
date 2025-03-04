@@ -55,7 +55,8 @@ var annotated_dup =
             [ "JVMApplicationProperties", "enumfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_j_v_m_application_properties.html", "enumfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_j_v_m_application_properties" ],
             [ "JVMApplicationPropertiesUTest", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_j_v_m_application_properties_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_j_v_m_application_properties_u_test" ],
             [ "MyLogbackConfig", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_my_logback_config.html", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_my_logback_config" ],
-            [ "MyLogbackConfigUTest", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_my_logback_config_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_my_logback_config_u_test" ]
+            [ "MyLogbackConfigUTest", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_my_logback_config_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_my_logback_config_u_test" ],
+            [ "ObjectMapperConfig", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_object_mapper_config.html", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_object_mapper_config" ]
           ] ],
           [ "enums", "namespacefr_1_1softsf_1_1sudokufx_1_1enums.html", [
             [ "I18n", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_i18n.html", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_i18n" ],
