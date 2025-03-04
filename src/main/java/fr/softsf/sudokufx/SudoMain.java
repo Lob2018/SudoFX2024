@@ -30,7 +30,6 @@ import java.sql.SQLInvalidAuthorizationSpecException;
  * Main entry point for the Sudo application, responsible for initializing
  * the JavaFX interface and the Spring context. This class handles the splash screen,
  * Spring context initialization, and transitions between views.
- * <p>
  * - Initializes the splash screen and Spring context asynchronously.
  * - Handles errors such as SQL authorization exceptions during startup.
  * - Manages dynamic FXML loading and view transitions for SplashScreen CrashScreen and the DefaultScreen.
@@ -50,6 +49,18 @@ public class SudoMain extends Application {
     private final SpringContext context = new SpringContext(this);
     private ISplashScreenView isplashScreenView;
     private IMainStageView iMainStageView;
+    /**
+     * Task to initialize the Spring context asynchronously, preventing UI blockages.
+     * This runs {@code SpringApplication.run(SudoMain.class)} in a separate thread
+     * to keep the JavaFX Application Thread responsive.
+     */
+    private final Task<Void> springContextTask = new Task<>() {
+        @Override
+        protected Void call() {
+            context.init(() -> SpringApplication.run(SudoMain.class));
+            return null;
+        }
+    };
     @Autowired
     private FxmlService fxmlService;
 
@@ -88,16 +99,14 @@ public class SudoMain extends Application {
 
     /**
      * Initializes the application by setting up the splash screen and loading
-     * the main application context.
-     * <p>
-     * This method performs the following:
-     * 0. Sets the language based on the host environment.
-     * 1. Initializes the splash screen view with the provided stage.
-     * 2. Sets up the main scene for the splash screen.
-     * 3. Creates and starts a background task to initialize the Spring context,
-     * ensuring the JavaFX application thread remains unblocked.
-     * 4. Sets a handler to manage actions upon successful completion of the initialization.
-     * 5. Sets a handler to manage errors that occur during the initialization process.
+     * the main application context asynchronously.
+     * This method performs the following steps:
+     * 1. Sets the application language based on the host environment.
+     * 2. Initializes the splash screen view with the provided stage.
+     * 3. Records the start time for initialization tracking.
+     * 4. Sets up the main scene for the splash screen.
+     * 5. Starts a background task to initialize the Spring context, ensuring UI responsiveness.
+     * 6. Registers handlers to manage success and failure scenarios of the initialization task.
      *
      * @param splashScreenStage The primary stage for displaying the splash screen.
      */
@@ -106,10 +115,9 @@ public class SudoMain extends Application {
         try {
             I18n.INSTANCE.setLanguageBasedOnTheHostEnvironment();
             isplashScreenView = new SplashScreenView(splashScreenStage);
-            initScene(splashScreenStage);
-            Task<Void> springContextTask = createSpringContextTask();
-            new Thread(springContextTask).start();
             long startTime = System.currentTimeMillis();
+            initScene(splashScreenStage);
+            new Thread(springContextTask).start();
             springContextTask.setOnSucceeded(event -> handleSpringContextTaskSuccess(startTime));
             springContextTask.setOnFailed(event -> {
                 Throwable th = springContextTask.getException();
@@ -119,22 +127,6 @@ public class SudoMain extends Application {
             log.error("██ Exception catch inside start() : {}", ex.getMessage(), ex);
             throw new RuntimeException(ex);
         }
-    }
-
-    /**
-     * Creates a new Task that initializes the Spring context.
-     * This task is intended to be run in a background thread to avoid blocking the JavaFX application thread.
-     *
-     * @return A Task<Void> that performs the Spring context initialization.
-     */
-    private Task<Void> createSpringContextTask() {
-        return new Task<Void>() {
-            @Override
-            protected Void call() {
-                context.init(() -> SpringApplication.run(SudoMain.class));
-                return null;
-            }
-        };
     }
 
     /**
@@ -158,7 +150,6 @@ public class SudoMain extends Application {
     /**
      * Handles errors that occur during the Spring context initialization task.
      * This method is called when the initialization task fails.
-     * <p>
      * It attempts to initialize the FXML service, logs the error, and manages
      * the response based on the type of exception encountered. If the exception
      * is related to SQL authorization, it displays an appropriate error screen;
@@ -206,11 +197,3 @@ public class SudoMain extends Application {
         return pause;
     }
 }
-
-
-
-
-
-
-
-
