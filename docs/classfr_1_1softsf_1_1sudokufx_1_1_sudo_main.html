@@ -129,7 +129,7 @@ $(function(){initNavTree('classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html','');
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad12f6778560c28ec6b0e85dec1074a1b" id="r_ad12f6778560c28ec6b0e85dec1074a1b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad12f6778560c28ec6b0e85dec1074a1b">start</a> (final Stage splashScreenStage)</td></tr>
-<tr class="memdesc:ad12f6778560c28ec6b0e85dec1074a1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the application by setting up the splash screen and loading the main application context.  <br /></td></tr>
+<tr class="memdesc:ad12f6778560c28ec6b0e85dec1074a1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the application by setting up the splash screen and loading the main application context asynchronously.  <br /></td></tr>
 <tr class="separator:ad12f6778560c28ec6b0e85dec1074a1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
@@ -140,9 +140,6 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:ad38d74b9ba975c931a8f6aa3e3e45c73" id="r_ad38d74b9ba975c931a8f6aa3e3e45c73"><td class="memItemLeft" align="right" valign="top">Task&lt; Void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad38d74b9ba975c931a8f6aa3e3e45c73">createSpringContextTask</a> ()</td></tr>
-<tr class="memdesc:ad38d74b9ba975c931a8f6aa3e3e45c73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new Task that initializes the Spring context.  <br /></td></tr>
-<tr class="separator:ad38d74b9ba975c931a8f6aa3e3e45c73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f9601381fd0f35bc4a5c90205958aec" id="r_a5f9601381fd0f35bc4a5c90205958aec"><td class="memItemLeft" align="right" valign="top">PauseTransition&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f9601381fd0f35bc4a5c90205958aec">getPauseTransition</a> (String fxmlName, long minimumTimelapse)</td></tr>
 <tr class="memdesc:a5f9601381fd0f35bc4a5c90205958aec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a PauseTransition to delay loading of the next view.  <br /></td></tr>
 <tr class="separator:a5f9601381fd0f35bc4a5c90205958aec"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -175,6 +172,9 @@ Private Attributes</h2></td></tr>
 <tr class="separator:adc6ce5bc2ff2ef8936339a0ff7af50b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23e016b1db2d39f8b2ab09c12afcd958" id="r_a23e016b1db2d39f8b2ab09c12afcd958"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_splash_screen_view.html">ISplashScreenView</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a23e016b1db2d39f8b2ab09c12afcd958">isplashScreenView</a></td></tr>
 <tr class="separator:a23e016b1db2d39f8b2ab09c12afcd958"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a44ca01808ecbb7aec4a4ab17436d87" id="r_a7a44ca01808ecbb7aec4a4ab17436d87"><td class="memItemLeft" align="right" valign="top">final Task&lt; Void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a44ca01808ecbb7aec4a4ab17436d87">springContextTask</a></td></tr>
+<tr class="memdesc:a7a44ca01808ecbb7aec4a4ab17436d87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Task to initialize the Spring context asynchronously, preventing UI blockages.  <br /></td></tr>
+<tr class="separator:a7a44ca01808ecbb7aec4a4ab17436d87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
@@ -183,43 +183,13 @@ Static Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Main entry point for the Sudo application, responsible for initializing the JavaFX interface and the Spring context. </p>
-<p>This class handles the splash screen, Spring context initialization, and transitions between views. </p>
-<ul>
+<p>This class handles the splash screen, Spring context initialization, and transitions between views.</p><ul>
 <li>Initializes the splash screen and Spring context asynchronously.</li>
 <li>Handles errors such as SQL authorization exceptions during startup.</li>
 <li>Manages dynamic FXML loading and view transitions for SplashScreen CrashScreen and the DefaultScreen.</li>
 </ul>
 <p>@SpringBootApplication: Bootstraps the Spring context. @EnableAsync: Enables asynchronous processing. @ComponentScan: Scans specified packages for Spring components. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad38d74b9ba975c931a8f6aa3e3e45c73" name="ad38d74b9ba975c931a8f6aa3e3e45c73"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad38d74b9ba975c931a8f6aa3e3e45c73">&#9670;&#160;</a></span>createSpringContextTask()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Task&lt; Void &gt; fr.softsf.sudokufx.SudoMain.createSpringContextTask </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Creates a new Task that initializes the Spring context. </p>
-<p>This task is intended to be run in a background thread to avoid blocking the JavaFX application thread.</p>
-<dl class="section return"><dt>Returns</dt><dd>A Task&lt;Void&gt; that performs the Spring context initialization. </dd></dl>
-
-</div>
-</div>
 <a id="a5f9601381fd0f35bc4a5c90205958aec" name="a5f9601381fd0f35bc4a5c90205958aec"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5f9601381fd0f35bc4a5c90205958aec">&#9670;&#160;</a></span>getPauseTransition()</h2>
 
@@ -283,8 +253,7 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Handles errors that occur during the Spring context initialization task. </p>
-<p>This method is called when the initialization task fails. </p>
-<p>It attempts to initialize the FXML service, logs the error, and manages the response based on the type of exception encountered. If the exception is related to SQL authorization, it displays an appropriate error screen; otherwise, it exits the application.</p>
+<p>This method is called when the initialization task fails. It attempts to initialize the FXML service, logs the error, and manages the response based on the type of exception encountered. If the exception is related to SQL authorization, it displays an appropriate error screen; otherwise, it exits the application.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">throwable</td><td>The exception that occurred during the initialization process. </td></tr>
@@ -488,14 +457,14 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initializes the application by setting up the splash screen and loading the main application context. </p>
-<p>This method performs the following:</p><ol type="1">
-<li>Sets the language based on the host environment.</li>
+<p>Initializes the application by setting up the splash screen and loading the main application context asynchronously. </p>
+<p>This method performs the following steps:</p><ol type="1">
+<li>Sets the application language based on the host environment.</li>
 <li>Initializes the splash screen view with the provided stage.</li>
+<li>Records the start time for initialization tracking.</li>
 <li>Sets up the main scene for the splash screen.</li>
-<li>Creates and starts a background task to initialize the Spring context, ensuring the JavaFX application thread remains unblocked.</li>
-<li>Sets a handler to manage actions upon successful completion of the initialization.</li>
-<li>Sets a handler to manage errors that occur during the initialization process.</li>
+<li>Starts a background task to initialize the Spring context, ensuring UI responsiveness.</li>
+<li>Registers handlers to manage success and failure scenarios of the initialization task.</li>
 </ol>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -508,7 +477,7 @@ Static Private Attributes</h2></td></tr>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1_sudo_main_ad12f6778560c28ec6b0e85dec1074a1b_cgraph.svg" width="100%" height="490"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1_sudo_main_ad12f6778560c28ec6b0e85dec1074a1b_cgraph.svg" width="100%" height="440"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -624,6 +593,40 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a7a44ca01808ecbb7aec4a4ab17436d87" name="a7a44ca01808ecbb7aec4a4ab17436d87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a44ca01808ecbb7aec4a4ab17436d87">&#9670;&#160;</a></span>springContextTask</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final Task&lt;Void&gt; fr.softsf.sudokufx.SudoMain.springContextTask</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= <span class="keyword">new</span> Task&lt;&gt;() {</div>
+<div class="line">        @Override</div>
+<div class="line">        <span class="keyword">protected</span> Void call() {</div>
+<div class="line">            <a class="code hl_variable" href="#a2f1a22f74c20256e9598246c07b7e849">context</a>.init(() -&gt; SpringApplication.run(<a class="code hl_class" href="classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html">SudoMain</a>.class));</div>
+<div class="line">            <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="ttc" id="aclassfr_1_1softsf_1_1sudokufx_1_1_sudo_main_html"><div class="ttname"><a href="classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html">fr.softsf.sudokufx.SudoMain</a></div><div class="ttdoc">Main entry point for the Sudo application, responsible for initializing the JavaFX interface and the ...</div><div class="ttdef"><b>Definition</b> SudoMain.java:45</div></div>
+<div class="ttc" id="aclassfr_1_1softsf_1_1sudokufx_1_1_sudo_main_html_a2f1a22f74c20256e9598246c07b7e849"><div class="ttname"><a href="#a2f1a22f74c20256e9598246c07b7e849">fr.softsf.sudokufx.SudoMain.context</a></div><div class="ttdeci">final SpringContext context</div><div class="ttdef"><b>Definition</b> SudoMain.java:49</div></div>
+</div><!-- fragment -->
+<p>Task to initialize the Spring context asynchronously, preventing UI blockages. </p>
+<p>This runs <code class="JavaDocCode">SpringApplication.run(SudoMain.class)</code> in a separate thread to keep the JavaFX Application Thread responsive. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>src/main/java/fr/softsf/sudokufx/<a class="el" href="_sudo_main_8java.html">SudoMain.java</a></li>
 </ul>
@@ -633,7 +636,7 @@ Static Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html">SudoMain</a></li>
-    <li class="footer">Generated on Tue Mar 4 2025 13:42:24 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Wed Mar 5 2025 13:59:57 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

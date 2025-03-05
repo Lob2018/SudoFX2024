@@ -184,7 +184,7 @@ var sectionId = 'dynsection-4';
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a89fed8ecc70b911e60ca540cca93ef78" target="_top" xlink:title="Cache un nombre spécifié de cases dans la grille à résoudre en les remplaçant par zéro.">
+<g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a89fed8ecc70b911e60ca540cca93ef78" target="_top" xlink:title="Cache un nombre spécifié de cases dans la grille en les remplaçant par zéro.">
 <polygon fill="white" stroke="#666666" points="895.38,-144 744.38,-144 744.38,-112 895.38,-112 895.38,-144"/>
 <text text-anchor="start" x="752.38" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.utils.sudoku.</text>
 <text text-anchor="middle" x="819.88" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridMaster.cacherLesCases</text>

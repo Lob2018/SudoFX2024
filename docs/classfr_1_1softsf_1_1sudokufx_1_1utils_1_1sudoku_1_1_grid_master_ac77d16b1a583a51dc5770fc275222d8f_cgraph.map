@@ -6,7 +6,7 @@
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="275,91,307,91,307,96,275,96"/>
 <area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a5bb14564ed4b6a7cded51e1bedc72faf" title="Génère un nombre entier aléatoire dans un intervalle spécifié." alt="" coords="353,139,554,181"/>
 <area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="275,119,338,133,337,138,274,125"/>
-<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a89fed8ecc70b911e60ca540cca93ef78" title="Cache un nombre spécifié de cases dans la grille à résoudre en les remplaçant par zéro." alt="" coords="674,5,875,48"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a89fed8ecc70b911e60ca540cca93ef78" title="Cache un nombre spécifié de cases dans la grille en les remplaçant par zéro." alt="" coords="674,5,875,48"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="559,69,658,48,659,53,560,74"/>
 <area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a46d1bfadcbb911b5a718508185da341f" title="Calcule les possibilités pour chaque case de la grille de Sudoku." alt="" coords="674,72,875,115"/>
 <area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="585,91,658,91,658,96,585,96"/>

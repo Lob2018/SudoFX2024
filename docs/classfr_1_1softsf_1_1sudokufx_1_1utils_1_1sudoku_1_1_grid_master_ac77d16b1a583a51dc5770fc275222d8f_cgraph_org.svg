@@ -79,7 +79,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a89fed8ecc70b911e60ca540cca93ef78" target="_top" xlink:title="Cache un nombre spécifié de cases dans la grille à résoudre en les remplaçant par zéro.">
+<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a89fed8ecc70b911e60ca540cca93ef78" target="_top" xlink:title="Cache un nombre spécifié de cases dans la grille en les remplaçant par zéro.">
 <polygon fill="white" stroke="#666666" points="652.12,-132 501.12,-132 501.12,-100 652.12,-100 652.12,-132"/>
 <text text-anchor="start" x="509.12" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.utils.sudoku.</text>
 <text text-anchor="middle" x="576.62" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridMaster.cacherLesCases</text>
