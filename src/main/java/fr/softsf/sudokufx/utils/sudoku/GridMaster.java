@@ -2,17 +2,19 @@ package fr.softsf.sudokufx.utils.sudoku;
 
 import fr.softsf.sudokufx.enums.SecureRandomGenerator;
 import lombok.Getter;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.BitSet;
+import java.util.stream.IntStream;
 
 /**
  * Provides essential functionalities for generating and solving Sudoku puzzles.
  */
+@Slf4j
 @Component
 final class GridMaster implements IGridMaster {
 
@@ -273,19 +275,19 @@ final class GridMaster implements IGridMaster {
     }
 
     /**
-     * Cache un nombre spécifié de cases dans la grille à résoudre en les remplaçant par zéro.
+     * Cache un nombre spécifié de cases dans la grille en les remplaçant par zéro.
      *
      * @param nombreDeCasesACacher Le nombre de cases à cacher dans la grille (au maximum 81 cases).
-     * @param grilleAResoudre      Le tableau représentant la grille à résoudre, où les cases seront cachées.
+     * @param grilleAResoudre      Le tableau représentant la grille, où les cases sélectionnées seront mises à 0.
      */
     private void cacherLesCases(int nombreDeCasesACacher, final int[] grilleAResoudre) {
-        Set<Integer> set = new HashSet<>();
-        nombreDeCasesACacher = Math.min(nombreDeCasesACacher, NOMBRE_CASES);
-        while (set.size() < nombreDeCasesACacher) {
-            int valeur = SecureRandomGenerator.INSTANCE.nextInt(NOMBRE_CASES);
-            if (set.add(valeur)) {
-                grilleAResoudre[valeur] = 0;
-            }
+        nombreDeCasesACacher = Math.min(nombreDeCasesACacher, grilleAResoudre.length);
+        int[] indices = IntStream.range(0, grilleAResoudre.length).toArray();
+        for (int i = 0; i < nombreDeCasesACacher; i++) {
+            int randomIndex = SecureRandomGenerator.INSTANCE.nextInt(grilleAResoudre.length - i);
+            int indexToHide = indices[randomIndex];
+            grilleAResoudre[indexToHide] = 0;
+            indices[randomIndex] = indices[grilleAResoudre.length - 1 - i];
         }
     }
 
